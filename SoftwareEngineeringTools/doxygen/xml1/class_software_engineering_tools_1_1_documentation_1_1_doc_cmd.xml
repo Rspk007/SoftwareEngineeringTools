@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocCmd</compoundname>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_description" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.Description</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_char" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocChar</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocCmdGroup</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_empty" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocEmpty</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_index_entry" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocIndexEntry</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocList</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocParaList</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocParamList</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocSimpleSect</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocTable</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_text" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocText</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocTocList</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocVariableList</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocXRefSec</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9" kindref="member">DocKind</ref></type>
+        <definition>DocKind SoftwareEngineeringTools.Documentation.DocCmd.Kind</definition>
+        <argsstring></argsstring>
+        <name>Kind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="487" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="487" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocCmd.DocCmd</definition>
+        <argsstring>()</argsstring>
+        <name>DocCmd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="489" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="489" bodyend="492"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="88">
+        <label>SoftwareEngineeringTools.Documentation.DocImage</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>SoftwareEngineeringTools.Documentation.DocSimpleSect</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>SoftwareEngineeringTools.Documentation.DocTableCell</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_cell"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>SoftwareEngineeringTools.Documentation.DocSect</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_sect"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>SoftwareEngineeringTools.Documentation.DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="78">
+        <label>SoftwareEngineeringTools.Documentation.Description</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_description"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>SoftwareEngineeringTools.Documentation.DocTable</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>SoftwareEngineeringTools.Documentation.DocList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="101">
+        <label>SoftwareEngineeringTools.Documentation.DocListItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list_item"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>SoftwareEngineeringTools.Documentation.DocUrlLink</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_url_link"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>SoftwareEngineeringTools.Documentation.DocTitle</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_title"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>SoftwareEngineeringTools.Documentation.DocTocList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>SoftwareEngineeringTools.Documentation.DocAnchor</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_anchor"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>SoftwareEngineeringTools.Documentation.DocEmpty</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_empty"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="87">
+        <label>SoftwareEngineeringTools.Documentation.DocHeading</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_heading"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>SoftwareEngineeringTools.Documentation.DocCopy</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_copy"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>SoftwareEngineeringTools.Documentation.DocMarkup</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_markup"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>SoftwareEngineeringTools.Documentation.DocChar</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_char"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="100">
+        <label>SoftwareEngineeringTools.Documentation.DocLanguage</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>SoftwareEngineeringTools.Documentation.DocPara</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>SoftwareEngineeringTools.Documentation.DocParamList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>SoftwareEngineeringTools.Documentation.DocFormula</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_formula"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>SoftwareEngineeringTools.Documentation.DocCaption</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_caption"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>SoftwareEngineeringTools.Documentation.DocParaList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>SoftwareEngineeringTools.Documentation.DocDotFile</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_dot_file"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>SoftwareEngineeringTools.Documentation.DocIndexEntry</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_index_entry"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>SoftwareEngineeringTools.Documentation.DocSimpleSectItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_item"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>SoftwareEngineeringTools.Documentation.DocCmdGroup</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>SoftwareEngineeringTools.Documentation.DocBlockQuote</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_block_quote"/>
+        <childnode refid="98" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="107">
+        <label>SoftwareEngineeringTools.Documentation.DocText</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_text"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>SoftwareEngineeringTools.Documentation.DocReference</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>SoftwareEngineeringTools.Documentation.DocXRefSec</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>SoftwareEngineeringTools.Documentation.DocVariableList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list"/>
+        <childnode refid="77" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>SoftwareEngineeringTools.Documentation.DocTocItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_item"/>
+        <childnode refid="82" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="486" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="485" bodyend="493"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocCmd</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocCmd</scope><name>Kind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,11 @@
+digraph "ApiDocLib" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_04a3a2964b5202c6c6124a6d20f634b1 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_04a3a2964b5202c6c6124a6d20f634b1.html"];
+    dir_04a3a2964b5202c6c6124a6d20f634b1 [shape=plaintext label="ApiDocLib"];
+    dir_0aaf01deeceaed44222e9ea5e9a0bb93 [shape=box label="obj" color="red" fillcolor="white" style="filled" URL="dir_0aaf01deeceaed44222e9ea5e9a0bb93.html"];
+    dir_685b153b9a39cbca4bec69e92e5f9b07 [shape=box label="Properties" color="black" fillcolor="white" style="filled" URL="dir_685b153b9a39cbca4bec69e92e5f9b07.html"];
+  }
+}

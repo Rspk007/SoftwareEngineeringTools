@@ -1,0 +1,445 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_geometry_1_1_vector" kind="class" prot="public">
+    <compoundname>Geometry::Vector</compoundname>
+    <basecompoundref refid="class_geometry_1_1_point" prot="public" virt="non-virtual">Geometry::Point&lt; T &gt;</basecompoundref>
+    <includes refid="_vector_8h" local="no">Vector.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_geometry_1_1_vector_1a161dd947cc220fb28a09f9db73b67483" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector</definition>
+        <argsstring>(unsigned int dim=3)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>dim</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="16" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="67" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1a96419b5b9a2c3b07725b94690aef72ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector</definition>
+        <argsstring>(unsigned int dim, const T &amp;fillValue)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>fillValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="18" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1acf3021033f9ef47e1463826cac57d979" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector</definition>
+        <argsstring>(unsigned int dim, const T *coord_array)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>dim</declname>
+        </param>
+        <param>
+          <type>const T *</type>
+          <declname>coord_array</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="20" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1ae18a5c54fc21fb5fe69fbfb8e18275f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector</definition>
+        <argsstring>(const Vector &amp;other)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="22" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1abd9a214aef1c99357ceaeffb60352ba2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Vector</definition>
+        <argsstring>(const Point&lt; T &gt; &amp;other)</argsstring>
+        <name>Vector</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_point" kindref="compound">Point</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="24" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1aaa9fccd0cb7734271f7a15e5d9dc0d27" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Vector</definition>
+        <argsstring>()</argsstring>
+        <name>~Vector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="26" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="87" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1a071a16e2751b87f96d737ed29935504f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double getAbs</definition>
+        <argsstring>() const </argsstring>
+        <name>getAbs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="29" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="91" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1af79f2ffce20c5ea4419911b8e05ec010" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref></type>
+        <definition>Vector&lt; T &gt; getUnit</definition>
+        <argsstring>() const </argsstring>
+        <name>getUnit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="32" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="104" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1a46cadd1148ff6a6ee448d556c8b2a909" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; getNormal</definition>
+        <argsstring>() const </argsstring>
+        <name>getNormal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="35" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="111" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1a7159dc27804d89cb3b9a8269c6f886e7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; multiply</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;other) const </argsstring>
+        <name>multiply</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="38" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="153" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1a5a1c5bc7156428e3a99ebf29b1cb6a81" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref></type>
+        <definition>Vector&lt; T &gt; operator-</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="41" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="166" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1aefdc7a9f17403901c29166ff904a6622" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref></type>
+        <definition>Vector&lt; T &gt; operator+</definition>
+        <argsstring>(const Vector &amp;other) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="44" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="179" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1a89fa44215e15be0aac36dcd4b0f7b271" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+        <definition>Vector&lt; T &gt; &amp; operator+=</definition>
+        <argsstring>(const Vector &amp;other)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="45" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="193" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1adb3ea8daecc1a317f267016201fd48a8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref></type>
+        <definition>Vector&lt; T &gt; operator-</definition>
+        <argsstring>(const Vector &amp;other) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="48" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="209" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1ac22e1b7043ab74b8644187047b716ac9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+        <definition>Vector&lt; T &gt; &amp; operator-=</definition>
+        <argsstring>(const Vector &amp;other)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="49" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="223" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1a6fc6bcceeab50b1cde1f61aa42c6a658" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref></type>
+        <definition>Vector&lt; T &gt; operator*</definition>
+        <argsstring>(const T &amp;scalar) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="52" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="239" bodyend="249"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1af05c0999abc2400be5e94a2104ffb8ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+        <definition>Vector&lt; T &gt; &amp; operator*=</definition>
+        <argsstring>(const T &amp;scalar)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="53" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="251" bodyend="260"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_vector_1a6a0e13b8f2c0a47ca1a464247ec22b76" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T operator*</definition>
+        <argsstring>(const Vector &amp;other) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="58" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="276" bodyend="289"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_geometry_1_1_vector_1a0932eb5431eed6dc92356957b36aa71c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; U &gt;</type>
+        <definition>Vector&lt;U&gt; operator*</definition>
+        <argsstring>(const U &amp;scalar, const Vector&lt; U &gt; &amp;vect)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const U &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; U &gt; &amp;</type>
+          <declname>vect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="55" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="262" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_geometry_1_1_vector_1a13477f09efd58ff41e7a1ecef6c16776" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Vector&lt; U &gt; &amp;vect)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; U &gt; &amp;</type>
+          <declname>vect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="62" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="293" bodyend="304"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="198">
+        <label>Vector&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_vector"/>
+        <childnode refid="199" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="199">
+        <label>Point&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_point"/>
+        <childnode refid="200" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>Primitive</label>
+        <link refid="class_geometry_1_1_primitive"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="201">
+        <label>Vector&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_vector"/>
+        <childnode refid="202" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>Point&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_point"/>
+        <childnode refid="203" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="203">
+        <label>Primitive</label>
+        <link refid="class_geometry_1_1_primitive"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="13" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="12" bodyend="63"/>
+    <listofallmembers>
+      <member refid="class_geometry_1_1_point_1a529efcc7ac851fc35b2ac169251d9204" prot="protected" virt="non-virtual"><scope>Geometry::Vector</scope><name>coords</name></member>
+      <member refid="class_geometry_1_1_point_1ad335dc2821e58000fb6d0f0ed6ba835f" prot="protected" virt="non-virtual"><scope>Geometry::Vector</scope><name>dim</name></member>
+      <member refid="class_geometry_1_1_vector_1a071a16e2751b87f96d737ed29935504f" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>getAbs</name></member>
+      <member refid="class_geometry_1_1_point_1a0ec9df17ac56bb737d58485bf35eaf74" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>getDim</name></member>
+      <member refid="class_geometry_1_1_point_1a3511f63e157f5461231c38eaa7db801a" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>getDistance</name></member>
+      <member refid="class_geometry_1_1_vector_1a46cadd1148ff6a6ee448d556c8b2a909" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>getNormal</name></member>
+      <member refid="class_geometry_1_1_vector_1af79f2ffce20c5ea4419911b8e05ec010" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>getUnit</name></member>
+      <member refid="class_geometry_1_1_vector_1a7159dc27804d89cb3b9a8269c6f886e7" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>multiply</name></member>
+      <member refid="class_geometry_1_1_point_1a02de908c720261092f9384fe46cdc505" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator!=</name></member>
+      <member refid="class_geometry_1_1_vector_1a6fc6bcceeab50b1cde1f61aa42c6a658" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator*</name></member>
+      <member refid="class_geometry_1_1_vector_1a0932eb5431eed6dc92356957b36aa71c" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator*</name></member>
+      <member refid="class_geometry_1_1_vector_1a6a0e13b8f2c0a47ca1a464247ec22b76" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator*</name></member>
+      <member refid="class_geometry_1_1_vector_1af05c0999abc2400be5e94a2104ffb8ab" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator*=</name></member>
+      <member refid="class_geometry_1_1_vector_1aefdc7a9f17403901c29166ff904a6622" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator+</name></member>
+      <member refid="class_geometry_1_1_vector_1a89fa44215e15be0aac36dcd4b0f7b271" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator+=</name></member>
+      <member refid="class_geometry_1_1_vector_1a5a1c5bc7156428e3a99ebf29b1cb6a81" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator-</name></member>
+      <member refid="class_geometry_1_1_vector_1adb3ea8daecc1a317f267016201fd48a8" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator-</name></member>
+      <member refid="class_geometry_1_1_vector_1ac22e1b7043ab74b8644187047b716ac9" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator-=</name></member>
+      <member refid="class_geometry_1_1_vector_1a13477f09efd58ff41e7a1ecef6c16776" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_geometry_1_1_point_1a91533c7b122673f53e41b20c3f4ec7e3" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator=</name></member>
+      <member refid="class_geometry_1_1_point_1a1f3fdd51f39513a79c907ee69e0fa885" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator==</name></member>
+      <member refid="class_geometry_1_1_point_1a6335d7a8c9e1cda553d2d73621fcff77" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator[]</name></member>
+      <member refid="class_geometry_1_1_point_1aa4559350d6968f77e8c1d94965770f1e" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>operator[]</name></member>
+      <member refid="class_geometry_1_1_point_1a2f4d8ea275f33e07b31136fdd34c5c0f" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>Point</name></member>
+      <member refid="class_geometry_1_1_point_1a6c40b949236b5a3a9acd921d253b8249" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>Point</name></member>
+      <member refid="class_geometry_1_1_point_1a61bdd31845ff0ff50ae026c37b8a4486" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>Point</name></member>
+      <member refid="class_geometry_1_1_point_1a383ee92cd12d8fcafc7df62084caf7b2" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>Point</name></member>
+      <member refid="class_geometry_1_1_primitive_1a372847a827bf3fcf09859d22aa98c546" prot="protected" virt="non-virtual"><scope>Geometry::Vector</scope><name>Primitive</name></member>
+      <member refid="class_geometry_1_1_point_1ae4e043e657d0526c008a264b583ecfcd" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>setDim</name></member>
+      <member refid="class_geometry_1_1_vector_1a161dd947cc220fb28a09f9db73b67483" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>Vector</name></member>
+      <member refid="class_geometry_1_1_vector_1a96419b5b9a2c3b07725b94690aef72ee" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>Vector</name></member>
+      <member refid="class_geometry_1_1_vector_1acf3021033f9ef47e1463826cac57d979" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>Vector</name></member>
+      <member refid="class_geometry_1_1_vector_1ae18a5c54fc21fb5fe69fbfb8e18275f7" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>Vector</name></member>
+      <member refid="class_geometry_1_1_vector_1abd9a214aef1c99357ceaeffb60352ba2" prot="public" virt="non-virtual"><scope>Geometry::Vector</scope><name>Vector</name></member>
+      <member refid="class_geometry_1_1_point_1a7e2e45db495d5d441e5dcb1075925e60" prot="public" virt="virtual"><scope>Geometry::Vector</scope><name>~Point</name></member>
+      <member refid="class_geometry_1_1_vector_1aaa9fccd0cb7734271f7a15e5d9dc0d27" prot="public" virt="virtual"><scope>Geometry::Vector</scope><name>~Vector</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

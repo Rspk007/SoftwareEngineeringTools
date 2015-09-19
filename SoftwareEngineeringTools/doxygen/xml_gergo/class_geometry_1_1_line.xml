@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_geometry_1_1_line" kind="class" prot="public">
+    <compoundname>Geometry::Line</compoundname>
+    <basecompoundref refid="class_geometry_1_1_primitive" prot="public" virt="non-virtual">Primitive</basecompoundref>
+    <derivedcompoundref refid="class_geometry_1_1_ray" prot="public" virt="non-virtual">Ray&lt; T &gt;</derivedcompoundref>
+    <includes refid="_line_8h" local="no">Line.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_geometry_1_1_line_1ae1e7c02846f1a96c3a21310215d91dd6" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; dirVector</definition>
+        <argsstring></argsstring>
+        <name>dirVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Line.h" line="20" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Line.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geometry_1_1_line_1ad4e45818b9c5c15da68a84bb59576bd2" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; point</definition>
+        <argsstring></argsstring>
+        <name>point</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Line.h" line="21" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Line.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_geometry_1_1_line_1abe75f6ce7448a3f3aba4dd98ff4f9d0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Line</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;dirVector, const Vector&lt; T &gt; &amp;point)</argsstring>
+        <name>Line</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>dirVector</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>dirVector</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a direction vector of the line </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- a point fitting the line </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Line.h" line="29" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Line.h" bodystart="59" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_line_1ad79403432a09aebc40318f64daf9df2b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; getDirection</definition>
+        <argsstring>() const </argsstring>
+        <name>getDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can return the direction vector of the line. <simplesect kind="return"><para>- the direction vector (not necessarily unit vector!) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Line.h" line="38" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Line.h" bodystart="67" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_line_1a46cadd1148ff6a6ee448d556c8b2a909" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; getNormal</definition>
+        <argsstring>() const </argsstring>
+        <name>getNormal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can return a normal vector of the line. <simplesect kind="return"><para>- a normal vector (not necessarily unit vector!) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Line.h" line="45" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Line.h" bodystart="73" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_line_1a0ed558489fd932d65c18e1fe6ea5d36f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool fitsPoint</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;pointToCheck, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const </argsstring>
+        <name>fitsPoint</name>
+        <reimplementedby refid="class_geometry_1_1_ray_1a0ed558489fd932d65c18e1fe6ea5d36f">fitsPoint</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>pointToCheck</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can decide if a point fits the line or not. <simplesect kind="return"><para>- true if the point fits the line (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Line.h" line="53" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Line.h" bodystart="79" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents a line in the euclidian space. It is determined by a point fits the line, and a direction vector. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="89">
+        <label>Ray&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_ray"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>Primitive</label>
+        <link refid="class_geometry_1_1_primitive"/>
+      </node>
+      <node id="87">
+        <label>Line&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_line"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="91">
+        <label>Primitive</label>
+        <link refid="class_geometry_1_1_primitive"/>
+      </node>
+      <node id="90">
+        <label>Line&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_line"/>
+        <childnode refid="91" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Line.h" line="18" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Line.h" bodystart="17" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_geometry_1_1_line_1ae1e7c02846f1a96c3a21310215d91dd6" prot="protected" virt="non-virtual"><scope>Geometry::Line</scope><name>dirVector</name></member>
+      <member refid="class_geometry_1_1_line_1a0ed558489fd932d65c18e1fe6ea5d36f" prot="public" virt="virtual"><scope>Geometry::Line</scope><name>fitsPoint</name></member>
+      <member refid="class_geometry_1_1_line_1ad79403432a09aebc40318f64daf9df2b" prot="public" virt="non-virtual"><scope>Geometry::Line</scope><name>getDirection</name></member>
+      <member refid="class_geometry_1_1_line_1a46cadd1148ff6a6ee448d556c8b2a909" prot="public" virt="non-virtual"><scope>Geometry::Line</scope><name>getNormal</name></member>
+      <member refid="class_geometry_1_1_line_1abe75f6ce7448a3f3aba4dd98ff4f9d0d" prot="public" virt="non-virtual"><scope>Geometry::Line</scope><name>Line</name></member>
+      <member refid="class_geometry_1_1_line_1ad4e45818b9c5c15da68a84bb59576bd2" prot="protected" virt="non-virtual"><scope>Geometry::Line</scope><name>point</name></member>
+      <member refid="class_geometry_1_1_primitive_1a372847a827bf3fcf09859d22aa98c546" prot="protected" virt="non-virtual"><scope>Geometry::Line</scope><name>Primitive</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

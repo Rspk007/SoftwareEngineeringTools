@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_template" kind="class" prot="public" abstract="yes">
+    <compoundname>SoftwareEngineeringTools::Documentation::Template</compoundname>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_description_template" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DescriptionTemplate</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_object_template" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxygenObjectTemplate</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_section_template" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.SectionTemplate</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_text_template" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.TextTemplate</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.UmlClassDiagramTemplate</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a7b00a1e5b8de0528f665f5041ca69797" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref> &gt;</type>
+        <definition>List&lt;Template&gt; SoftwareEngineeringTools.Documentation.Template.Items</definition>
+        <argsstring></argsstring>
+        <name>Items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="119" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a7f9bc50ec9f9639c32308d3905ba92a1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.Template.Leaf</definition>
+        <argsstring></argsstring>
+        <name>Leaf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="117" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="117" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a66d27db7b9ae8045f5cfad58c6818f39" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.Parent</definition>
+        <argsstring></argsstring>
+        <name>Parent</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="118" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a584d4577dcd36a27254a3e340cfda808" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.Template.Template</definition>
+        <argsstring>(Template parent)</argsstring>
+        <name>Template</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+          <declname>parent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="121" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="121" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a3f3d0b0c9e8f137c09cefadee1c81135" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddBriefDescription</definition>
+        <argsstring>()</argsstring>
+        <name>AddBriefDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="287" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="287" bodyend="293"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a03533df58d5fbb793ea79936d026d503" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddClassifierList</definition>
+        <argsstring>()</argsstring>
+        <name>AddClassifierList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="199" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="199" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1ae5451e4d1f252f72f870d5584b9a4a17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddClassList</definition>
+        <argsstring>()</argsstring>
+        <name>AddClassList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="213" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="213" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1acad7b782d4d02ec17bebe0e280fd2423" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddDescription</definition>
+        <argsstring>()</argsstring>
+        <name>AddDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="279" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="279" bodyend="285"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a1069fe7991d86d1930dfc1195d80f901" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddEnumList</definition>
+        <argsstring>()</argsstring>
+        <name>AddEnumList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="227" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="227" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a6203709220eb324eceefe127445de320" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddEnumValueList</definition>
+        <argsstring>(bool groupByVisiblity=true)</argsstring>
+        <name>AddEnumValueList</name>
+        <param>
+          <type>bool</type>
+          <declname>groupByVisiblity</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="243" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="243" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1ac35f8ef04977633d60305d6287801dd2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddFieldList</definition>
+        <argsstring>(bool groupByVisiblity=true)</argsstring>
+        <name>AddFieldList</name>
+        <param>
+          <type>bool</type>
+          <declname>groupByVisiblity</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="252" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="252" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1add1d1b4746d8424d5902edadcbfde0b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddInterfaceList</definition>
+        <argsstring>()</argsstring>
+        <name>AddInterfaceList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="206" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="206" bodyend="211"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a2c022f0860170bb30ff1be6fd569a825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddMemberList</definition>
+        <argsstring>(bool groupByVisiblity=true)</argsstring>
+        <name>AddMemberList</name>
+        <param>
+          <type>bool</type>
+          <declname>groupByVisiblity</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="234" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="234" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a1000cc8bcd19f7cde420ffe4d7c366e8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddMethodList</definition>
+        <argsstring>(bool groupByVisiblity=true)</argsstring>
+        <name>AddMethodList</name>
+        <param>
+          <type>bool</type>
+          <declname>groupByVisiblity</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="270" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="270" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1ad37173018ec87606db32b3fcf8a05e10" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddNamespaceList</definition>
+        <argsstring>()</argsstring>
+        <name>AddNamespaceList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="192" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="192" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1ae25451886c449522399a348d0b79097b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddPropertyList</definition>
+        <argsstring>(bool groupByVisiblity=true)</argsstring>
+        <name>AddPropertyList</name>
+        <param>
+          <type>bool</type>
+          <declname>groupByVisiblity</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="261" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="261" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a1811e36dbb694edb713597fb9b685698" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddSection</definition>
+        <argsstring>(string title)</argsstring>
+        <name>AddSection</name>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="185" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="185" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a06378a401cd0e89dfb9dde97330c236a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddStructList</definition>
+        <argsstring>()</argsstring>
+        <name>AddStructList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="220" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="220" bodyend="225"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1ab216b0516ac0e543d9c8a4e60641f138" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddText</definition>
+        <argsstring>(Description text)</argsstring>
+        <name>AddText</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_description" kindref="compound">Description</ref></type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="302" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="302" bodyend="307"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a03c7c557faf8c5b066c6c4e096bc1ecb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_template" kindref="compound">Template</ref></type>
+        <definition>Template SoftwareEngineeringTools.Documentation.Template.AddUmlClassDiagram</definition>
+        <argsstring>()</argsstring>
+        <name>AddUmlClassDiagram</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="295" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="295" bodyend="300"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1ab13b45a10b7eb65a0b6c15dbc1318664" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.Template.Process</definition>
+        <argsstring>(IApiDocTemplateProcessor processor)</argsstring>
+        <name>Process</name>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_document_template_1acaca4259f80cb3ee1b853f16c1965f04">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_section_template_1afbc012c729c09b854cb6e9635ebc5337">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template_1a814da49180e02ea143f0337f7a69ff1f">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template_1a119ae8eeb938465c5aaf44780e2f8876">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_interface_list_template_1a9c3f88c7e8e3444af953ccc3b926ee13">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_class_list_template_1a310a651d73cc35f939bf302fd5233172">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_struct_list_template_1ae89463eba79df4d331672e9774a65885">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_enum_list_template_1ab40ecbc15d3643dcd54cc7c4fdc7a42e">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template_1a2aa1b88d7045524e082ad04043905b98">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_enum_value_list_template_1afe9c0fe4292f4fe2a72e93b9dce44da6">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_field_list_template_1ac0967577c807c358f3a2bdcab2570f72">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_property_list_template_1a308232062b498b6815f1925c37f65c16">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_method_list_template_1a504360f3018407ed36305b61013b7b04">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_description_template_1aacc8ff3057e26331de9f4f58ae0bc715">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_brief_description_template_1a8e800971557ae734f89ac200352402ab">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template_1a766af41d9501ca75b1020f0e65c173c2">Process</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_text_template_1a9625c56dd7a837fb77052c37eda17a2b">Process</reimplementedby>
+        <param>
+          <type><ref refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor" kindref="compound">IApiDocTemplateProcessor</ref></type>
+          <declname>processor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a1af5e797aa609a3c851e01f020cb01e6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.Template.ProcessItems</definition>
+        <argsstring>(IApiDocTemplateProcessor processor)</argsstring>
+        <name>ProcessItems</name>
+        <param>
+          <type><ref refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor" kindref="compound">IApiDocTemplateProcessor</ref></type>
+          <declname>processor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="130" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="130" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1aec4fcc425edcf7fa5e9b476957380e86" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>TItem</type>
+        <definition>TItem SoftwareEngineeringTools.Documentation.Template.Add&lt; TItem &gt;</definition>
+        <argsstring>(TItem item)</argsstring>
+        <name>Add&lt; TItem &gt;</name>
+        <param>
+          <type>TItem</type>
+          <declname>item</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="174" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="174" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1ae27ff3b5055f89b699cce549e8fd87d9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.Template.CheckNoParentOfType&lt; TParent &gt;</definition>
+        <argsstring>(string templateName)</argsstring>
+        <name>CheckNoParentOfType&lt; TParent &gt;</name>
+        <param>
+          <type>string</type>
+          <declname>templateName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="159" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="159" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_template_1a5df5cddf05f750b113eb331c663129ff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.Template.CheckParentOfType&lt; TParent &gt;</definition>
+        <argsstring>(string templateName)</argsstring>
+        <name>CheckParentOfType&lt; TParent &gt;</name>
+        <param>
+          <type>string</type>
+          <declname>templateName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="138" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="138" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="873">
+        <label>SoftwareEngineeringTools.Documentation.DocumentTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_document_template"/>
+        <childnode refid="872" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="860">
+        <label>SoftwareEngineeringTools.Documentation.DoxygenObjectTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_object_template"/>
+        <childnode refid="857" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="864">
+        <label>SoftwareEngineeringTools.Documentation.InterfaceListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_interface_list_template"/>
+        <childnode refid="861" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="875">
+        <label>SoftwareEngineeringTools.Documentation.UmlClassDiagramTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template"/>
+        <childnode refid="857" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="869">
+        <label>SoftwareEngineeringTools.Documentation.MethodListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_method_list_template"/>
+        <childnode refid="866" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="859">
+        <label>SoftwareEngineeringTools.Documentation.BriefDescriptionTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_brief_description_template"/>
+        <childnode refid="858" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="874">
+        <label>SoftwareEngineeringTools.Documentation.TextTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_text_template"/>
+        <childnode refid="857" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="868">
+        <label>SoftwareEngineeringTools.Documentation.FieldListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_field_list_template"/>
+        <childnode refid="866" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="870">
+        <label>SoftwareEngineeringTools.Documentation.PropertyListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_property_list_template"/>
+        <childnode refid="866" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="872">
+        <label>SoftwareEngineeringTools.Documentation.SectionTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_section_template"/>
+        <childnode refid="857" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="871">
+        <label>SoftwareEngineeringTools.Documentation.NamespaceListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template"/>
+        <childnode refid="860" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="867">
+        <label>SoftwareEngineeringTools.Documentation.EnumValueListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_enum_value_list_template"/>
+        <childnode refid="866" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="858">
+        <label>SoftwareEngineeringTools.Documentation.DescriptionTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_description_template"/>
+        <childnode refid="857" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="865">
+        <label>SoftwareEngineeringTools.Documentation.StructListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_struct_list_template"/>
+        <childnode refid="861" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="862">
+        <label>SoftwareEngineeringTools.Documentation.ClassListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_class_list_template"/>
+        <childnode refid="861" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="861">
+        <label>SoftwareEngineeringTools.Documentation.ClassifierListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template"/>
+        <childnode refid="860" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="857">
+        <label>SoftwareEngineeringTools.Documentation.Template</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_template"/>
+      </node>
+      <node id="863">
+        <label>SoftwareEngineeringTools.Documentation.EnumListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_enum_list_template"/>
+        <childnode refid="861" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="866">
+        <label>SoftwareEngineeringTools.Documentation.MemberListTemplate</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template"/>
+        <childnode refid="860" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="876">
+        <label>SoftwareEngineeringTools.Documentation.Template</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_template"/>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="116" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="115" bodyend="308"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1aec4fcc425edcf7fa5e9b476957380e86" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>Add&lt; TItem &gt;</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a3f3d0b0c9e8f137c09cefadee1c81135" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddBriefDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a03533df58d5fbb793ea79936d026d503" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddClassifierList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ae5451e4d1f252f72f870d5584b9a4a17" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddClassList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1acad7b782d4d02ec17bebe0e280fd2423" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a1069fe7991d86d1930dfc1195d80f901" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddEnumList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a6203709220eb324eceefe127445de320" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddEnumValueList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ac35f8ef04977633d60305d6287801dd2" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddFieldList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1add1d1b4746d8424d5902edadcbfde0b1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddInterfaceList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a2c022f0860170bb30ff1be6fd569a825" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddMemberList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a1000cc8bcd19f7cde420ffe4d7c366e8" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddMethodList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ad37173018ec87606db32b3fcf8a05e10" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddNamespaceList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ae25451886c449522399a348d0b79097b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddPropertyList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a1811e36dbb694edb713597fb9b685698" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddSection</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a06378a401cd0e89dfb9dde97330c236a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddStructList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ab216b0516ac0e543d9c8a4e60641f138" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddText</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a03c7c557faf8c5b066c6c4e096bc1ecb" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>AddUmlClassDiagram</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ae27ff3b5055f89b699cce549e8fd87d9" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>CheckNoParentOfType&lt; TParent &gt;</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a5df5cddf05f750b113eb331c663129ff" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>CheckParentOfType&lt; TParent &gt;</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a7b00a1e5b8de0528f665f5041ca69797" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>Items</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a7f9bc50ec9f9639c32308d3905ba92a1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>Leaf</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a66d27db7b9ae8045f5cfad58c6818f39" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>Parent</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ab13b45a10b7eb65a0b6c15dbc1318664" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a1af5e797aa609a3c851e01f020cb01e6" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>ProcessItems</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a584d4577dcd36a27254a3e340cfda808" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Template</scope><name>Template</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

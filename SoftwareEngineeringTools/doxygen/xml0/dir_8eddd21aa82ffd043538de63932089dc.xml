@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_8eddd21aa82ffd043538de63932089dc" kind="dir">
+    <compoundname>C:/Users/Jurecska/project/hf/src/FirstAssignment</compoundname>
+    <innerfile refid="_comp_net_first_assignment_main_8java">CompNetFirstAssignmentMain.java</innerfile>
+    <innerfile refid="_display_8java">Display.java</innerfile>
+    <innerfile refid="_web_page_analyzer_8java">WebPageAnalyzer.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/"/>
+  </compounddef>
+</doxygen>

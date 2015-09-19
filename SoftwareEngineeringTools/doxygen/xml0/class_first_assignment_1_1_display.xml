@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_first_assignment_1_1_display" kind="class" prot="public">
+    <compoundname>FirstAssignment::Display</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_first_assignment_1_1_display_1accfe2f91400da5db180669273218f5ad" prot="private" static="yes" mutable="no">
+        <type>String</type>
+        <definition>String FirstAssignment.Display.input</definition>
+        <argsstring></argsstring>
+        <name>input</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The last input red from the input stream. (Currently it is the System.in) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" line="18" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_first_assignment_1_1_display_1ae5493c585817c68566b0ebb2ab1fcb9f" prot="private" static="yes" mutable="no">
+        <type>BufferedReader</type>
+        <definition>BufferedReader FirstAssignment.Display.br</definition>
+        <argsstring></argsstring>
+        <name>br</name>
+        <initializer>= new BufferedReader(new InputStreamReader(System.in))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>It reads the input line-by-line. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" line="22" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_first_assignment_1_1_display_1a0ed079aab85a68831bb72a1c62f67599" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirstAssignment.Display.print</definition>
+        <argsstring>(String s)</argsstring>
+        <name>print</name>
+        <param>
+          <type>String</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function prints its parameter to the output without a line-break.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string, which will be printed out. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" line="29" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" bodystart="29" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_display_1a995a9396a18177e292ea932c2ae2694b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirstAssignment.Display.println</definition>
+        <argsstring>(String s)</argsstring>
+        <name>println</name>
+        <param>
+          <type>String</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function prints its parameter to the output with a line-break.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The string, which will be printed out. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" line="38" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_display_1aab4ec7fc4617ac43b99e199dbcfb55a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String FirstAssignment.Display.readInput</definition>
+        <argsstring>()</argsstring>
+        <name>readInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function reads a line from the input.</para><para><simplesect kind="return"><para>The read data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" line="47" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" bodystart="47" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class functions as a proxy for displaying content. It allows the developer to add later further display options.</para><para><simplesect kind="author"><para>GAndris </para></simplesect>
+</para>    </detaileddescription>
+    <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" line="13" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/Display.java" bodystart="13" bodyend="69"/>
+    <listofallmembers>
+      <member refid="class_first_assignment_1_1_display_1ae5493c585817c68566b0ebb2ab1fcb9f" prot="private" virt="non-virtual"><scope>FirstAssignment::Display</scope><name>br</name></member>
+      <member refid="class_first_assignment_1_1_display_1accfe2f91400da5db180669273218f5ad" prot="private" virt="non-virtual"><scope>FirstAssignment::Display</scope><name>input</name></member>
+      <member refid="class_first_assignment_1_1_display_1a0ed079aab85a68831bb72a1c62f67599" prot="public" virt="non-virtual"><scope>FirstAssignment::Display</scope><name>print</name></member>
+      <member refid="class_first_assignment_1_1_display_1a995a9396a18177e292ea932c2ae2694b" prot="public" virt="non-virtual"><scope>FirstAssignment::Display</scope><name>println</name></member>
+      <member refid="class_first_assignment_1_1_display_1aab4ec7fc4617ac43b99e199dbcfb55a7" prot="public" virt="non-virtual"><scope>FirstAssignment::Display</scope><name>readInput</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

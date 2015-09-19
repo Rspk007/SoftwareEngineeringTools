@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::ApiDocGenerator</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a26b85326394bc0661dd5e70dfafa6f23" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator" kindref="compound">IDocumentGenerator</ref></type>
+        <definition>IDocumentGenerator SoftwareEngineeringTools.Documentation.ApiDocGenerator.dg</definition>
+        <argsstring></argsstring>
+        <name>dg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="11" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a8b501fd71fe5f0bfcac455ba53edefd6" prot="private" static="no" mutable="no">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+        <definition>int SoftwareEngineeringTools.Documentation.ApiDocGenerator.sectionLevel</definition>
+        <argsstring></argsstring>
+        <name>sectionLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="12" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a38d0b57a5fd3a10ce73695874f2df980" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_document_template" kindref="compound">DocumentTemplate</ref></type>
+        <definition>DocumentTemplate SoftwareEngineeringTools.Documentation.ApiDocGenerator.Template</definition>
+        <argsstring></argsstring>
+        <name>Template</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="13" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1acdb2e8442924e1b733f9bfac3b6785de" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model" kindref="compound">DoxygenModel</ref></type>
+        <definition>DoxygenModel SoftwareEngineeringTools.Documentation.ApiDocGenerator.Model</definition>
+        <argsstring></argsstring>
+        <name>Model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="14" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1af3563160ca4e416c41488c75d73535da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.ApiDocGenerator.ApiDocGenerator</definition>
+        <argsstring>(IDocumentGenerator documentGenerator, DocumentTemplate template, DoxygenModel model)</argsstring>
+        <name>ApiDocGenerator</name>
+        <param>
+          <type><ref refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator" kindref="compound">IDocumentGenerator</ref></type>
+          <declname>documentGenerator</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_document_template" kindref="compound">DocumentTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model" kindref="compound">DoxygenModel</ref></type>
+          <declname>model</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="16" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="16" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a2dc688a3ed6507a6d096a8892e86d154" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocGenerator.Generate</definition>
+        <argsstring>()</argsstring>
+        <name>Generate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="24" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="24" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a6b66e322fd5d2c7362a6bcf6b472714d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocGenerator.Log</definition>
+        <argsstring>(string message)</argsstring>
+        <name>Log</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="30" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a988cd7a92cb0eda5e917c648f53da41a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.ApiDocGenerator.NormalizeName</definition>
+        <argsstring>(string name)</argsstring>
+        <name>NormalizeName</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="35" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="35" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1ad359ac0b2584664e99232093cbb2e749" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.ApiDocGenerator.GetPackage</definition>
+        <argsstring>(string name)</argsstring>
+        <name>GetPackage</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="49" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="49" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a9e249f84ffd24e3052eb273b937d4847" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocGenerator.PrintSection</definition>
+        <argsstring>(string title, string label)</argsstring>
+        <name>PrintSection</name>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="71" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1af58464eec9d1a29cf80b217f96ad3a38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocGenerator.PrintDocCmd</definition>
+        <argsstring>(DocCmd cmd)</argsstring>
+        <name>PrintDocCmd</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" kindref="compound">DocCmd</ref></type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="77" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="77" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a417b7c3d6e2fb7eaf96c5cc128693e1f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocGenerator.NextSectionLevel</definition>
+        <argsstring>()</argsstring>
+        <name>NextSectionLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="480" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="480" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1af71b89e5cacd5f0a6db62cc1989c56a5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocGenerator.PreviousSectionLevel</definition>
+        <argsstring>()</argsstring>
+        <name>PreviousSectionLevel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="485" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="485" bodyend="488"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a04ede5421a322b9ae43bb067be59b527" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocGenerator.NewLabel</definition>
+        <argsstring>(string id)</argsstring>
+        <name>NewLabel</name>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="490" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="490" bodyend="493"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="10" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="9" bodyend="494"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1af3563160ca4e416c41488c75d73535da" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>ApiDocGenerator</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a26b85326394bc0661dd5e70dfafa6f23" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>dg</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a2dc688a3ed6507a6d096a8892e86d154" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>Generate</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1ad359ac0b2584664e99232093cbb2e749" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>GetPackage</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a6b66e322fd5d2c7362a6bcf6b472714d" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>Log</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1acdb2e8442924e1b733f9bfac3b6785de" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>Model</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a04ede5421a322b9ae43bb067be59b527" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>NewLabel</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a417b7c3d6e2fb7eaf96c5cc128693e1f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>NextSectionLevel</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a988cd7a92cb0eda5e917c648f53da41a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>NormalizeName</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1af71b89e5cacd5f0a6db62cc1989c56a5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>PreviousSectionLevel</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1af58464eec9d1a29cf80b217f96ad3a38" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>PrintDocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a9e249f84ffd24e3052eb273b937d4847" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>PrintSection</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a8b501fd71fe5f0bfcac455ba53edefd6" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>sectionLevel</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a38d0b57a5fd3a10ce73695874f2df980" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocGenerator</scope><name>Template</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

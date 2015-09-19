@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxLinkedTextItem</compoundname>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxReference</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_text" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxText</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item_1a2bb49a433d3cd0bae57d844da0743c7e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxLinkedTextItem.Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="362" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="369">
+        <label>SoftwareEngineeringTools.Documentation.DoxCodeLine</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line"/>
+        <childnode refid="368" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="370">
+        <label>SoftwareEngineeringTools.Documentation.DoxText</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_text"/>
+        <childnode refid="367" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="367">
+        <label>SoftwareEngineeringTools.Documentation.DoxLinkedTextItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item"/>
+      </node>
+      <node id="368">
+        <label>SoftwareEngineeringTools.Documentation.DoxReference</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference"/>
+        <childnode refid="367" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="361" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="360" bodyend="363"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item_1a2bb49a433d3cd0bae57d844da0743c7e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxLinkedTextItem</scope><name>Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

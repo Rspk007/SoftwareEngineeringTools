@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_dox_text" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxText</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxLinkedTextItem</basecompoundref>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="409">
+        <label>DoxLinkedTextItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item"/>
+      </node>
+      <node id="408">
+        <label>SoftwareEngineeringTools.Documentation.DoxText</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_text"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="411">
+        <label>DoxLinkedTextItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item"/>
+      </node>
+      <node id="410">
+        <label>SoftwareEngineeringTools.Documentation.DoxText</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_text"/>
+        <childnode refid="411" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="366" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="365" bodyend="367"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item_1a2bb49a433d3cd0bae57d844da0743c7e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxText</scope><name>Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

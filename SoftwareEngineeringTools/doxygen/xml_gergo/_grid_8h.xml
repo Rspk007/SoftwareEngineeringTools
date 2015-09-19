@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_grid_8h" kind="file">
+    <compoundname>Grid.h</compoundname>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includes refid="_type_operators_8h" local="yes">TypeOperators.h</includes>
+    <includedby refid="_bcc_grid_8h" local="yes">Új mappa/BccGrid.h</includedby>
+    <includedby refid="_cc_grid_8h" local="yes">Új mappa/CcGrid.h</includedby>
+    <includedby refid="_filter_8h" local="yes">Új mappa/Filter.h</includedby>
+    <includedby refid="_linear_cube_filter_8h" local="yes">Új mappa/LinearCubeFilter.h</includedby>
+    <includedby refid="_linear_tetra_filter_8h" local="yes">Új mappa/LinearTetraFilter.h</includedby>
+    <incdepgraph>
+      <node id="134">
+        <label>Vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="135" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="137">
+        <label>cmath</label>
+      </node>
+      <node id="136">
+        <label>stdexcept</label>
+      </node>
+      <node id="138">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>Új mappa/Grid.h</label>
+        <link refid="Grid.h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="140" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>iostream</label>
+      </node>
+      <node id="140">
+        <label>TypeOperators.h</label>
+        <link refid="_type_operators_8h"/>
+      </node>
+      <node id="139">
+        <label>Primitive.h</label>
+        <link refid="_primitive_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="146">
+        <label>Új mappa/LinearCubeFilter.h</label>
+        <link refid="_linear_cube_filter_8h"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="144">
+        <label>Új mappa/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="141">
+        <label>Új mappa/Grid.h</label>
+        <link refid="Grid.h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="147" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
+        <label>Új mappa/BccGrid.h</label>
+        <link refid="_bcc_grid_8h"/>
+        <childnode refid="143" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="143">
+        <label>Új mappa/LinearTetraFilter.h</label>
+        <link refid="_linear_tetra_filter_8h"/>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+      <node id="147">
+        <label>Új mappa/Filter.h</label>
+        <link refid="_filter_8h"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
+        </childnode>
+      </node>
+      <node id="145">
+        <label>Új mappa/CcGrid.h</label>
+        <link refid="_cc_grid_8h"/>
+        <childnode refid="142" relation="include">
+        </childnode>
+        <childnode refid="146" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_geometry_1_1_grid" prot="public">Geometry::Grid</innerclass>
+    <innernamespace refid="namespace_geometry">Geometry</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GRID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GRID_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vector_8h" kindref="compound">Vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_type_operators_8h" kindref="compound">TypeOperators.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Geometry</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>type<sp/>of<sp/>the<sp/>coordinates<sp/>in<sp/>the<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="class_geometry_1_1_grid" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_geometry_1_1_grid" kindref="compound">Grid</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/><ref refid="class_geometry_1_1_grid_1a2cdc42bd1e012a3b8473d518b7c2f6b0" kindref="member">getNearestPoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>point,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>&amp;<sp/>Toperators)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;Vector&lt;T&gt;</ref>&gt;<sp/><ref refid="class_geometry_1_1_grid_1a7947b840d23ada9abd70df77ce4a9c06" kindref="member">getFirstNeighbourCellVertices</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>point)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;Vector&lt;T&gt;</ref>&gt;<sp/><ref refid="class_geometry_1_1_grid_1a43bd5e3ba4d39448cd92477df03b84a2" kindref="member">getLerpVertices</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>point,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>&amp;<sp/>Toperators)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>GRID_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Grid.h"/>
+  </compounddef>
+</doxygen>

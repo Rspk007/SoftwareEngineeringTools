@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_colour_8h" kind="file">
+    <compoundname>Colour.h</compoundname>
+    <includedby refid="_model_space_8h" local="yes">Új mappa/ModelSpace.h</includedby>
+    <includedby refid="_shader_8h" local="yes">Új mappa/Shader.h</includedby>
+    <includedby refid="_camera_8h" local="yes">Új mappa/Camera.h</includedby>
+    <includedby refid="_phong_shader_8h" local="yes">Új mappa/PhongShader.h</includedby>
+    <includedby refid="main_8cpp" local="yes">Új mappa/main.cpp</includedby>
+    <includedby refid="_t_g_a_image_8h" local="yes">Új mappa/TGAImage.h</includedby>
+    <invincdepgraph>
+      <node id="92">
+        <label>Új mappa/Shader.h</label>
+        <link refid="_shader_8h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>Új mappa/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="94">
+        <label>Új mappa/TGAImage.h</label>
+        <link refid="_t_g_a_image_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>Új mappa/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>Új mappa/PhongShader.h</label>
+        <link refid="_phong_shader_8h"/>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>Új mappa/ModelSpace.h</label>
+        <link refid="_model_space_8h"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>Új mappa/TGAImage.cpp</label>
+        <link refid="_t_g_a_image_8cpp"/>
+      </node>
+      <node id="88">
+        <label>Új mappa/Colour.h</label>
+        <link refid="Colour.h"/>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_visualisation_1_1_colour" prot="public">Visualisation::Colour</innerclass>
+    <innernamespace refid="namespace_visualisation">Visualisation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>COLOUR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COLOUR_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Visualisation</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="struct_visualisation_1_1_colour" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref><sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="11" refid="struct_visualisation_1_1_colour_1afd7b1ea9ff115205b65e0bffc92946ac" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour_1afd7b1ea9ff115205b65e0bffc92946ac" kindref="member">r</ref>,<ref refid="struct_visualisation_1_1_colour_1a83576af39a9f289a28c1263d61073508" kindref="member">g</ref>,<ref refid="struct_visualisation_1_1_colour_1a41cede1b4c0d05cff170ad5761f70964" kindref="member">b</ref>,<ref refid="struct_visualisation_1_1_colour_1a24420a9beaac7cee08b5e255a4c29db1" kindref="member">a</ref>;<sp/></highlight><highlight class="comment">//<sp/>colour<sp/>components</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour_1ae3eec6b1fc1ffafd6e3f907fa9590fdf" kindref="member">Colour</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour_1ae3eec6b1fc1ffafd6e3f907fa9590fdf" kindref="member">Colour</ref>(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour_1afd7b1ea9ff115205b65e0bffc92946ac" kindref="member">r</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour_1a83576af39a9f289a28c1263d61073508" kindref="member">g</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour_1a41cede1b4c0d05cff170ad5761f70964" kindref="member">b</ref>,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour_1a24420a9beaac7cee08b5e255a4c29db1" kindref="member">a</ref><sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>DEFINITIONS<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_visualisation_1_1_colour_1ae3eec6b1fc1ffafd6e3f907fa9590fdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour_1ae3eec6b1fc1ffafd6e3f907fa9590fdf" kindref="member">Colour::Colour</ref>():</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r(0),<sp/>g(0),<sp/>b(0),<sp/>a(0)<sp/></highlight><highlight class="comment">//<sp/>default:<sp/>initialize<sp/>values<sp/>with<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_visualisation_1_1_colour_1a214e2f82e282989afe4549a07d7d0041" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour_1ae3eec6b1fc1ffafd6e3f907fa9590fdf" kindref="member">Colour::Colour</ref>(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>r,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>g,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>b,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>a<sp/>):</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r(r),<sp/>g(g),<sp/>b(b),<sp/>a(a)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>COLOUR_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Colour.h"/>
+  </compounddef>
+</doxygen>

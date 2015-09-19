@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocTableRow</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row_1af7846b3111ccb5fc1821cacfdeda7b12" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_cell" kindref="compound">DocTableCell</ref> &gt;</type>
+        <definition>List&lt;DocTableCell&gt; SoftwareEngineeringTools.Documentation.DocTableRow.Cells</definition>
+        <argsstring></argsstring>
+        <name>Cells</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="861" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="861" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row_1ae53e40202ea4b80655dc566d4ed8f28d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocTableRow.DocTableRow</definition>
+        <argsstring>()</argsstring>
+        <name>DocTableRow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="863" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="863" bodyend="866"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="586">
+        <label>SoftwareEngineeringTools.Documentation.DocTableRow</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row"/>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="860" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="859" bodyend="867"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row_1af7846b3111ccb5fc1821cacfdeda7b12" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTableRow</scope><name>Cells</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row_1ae53e40202ea4b80655dc566d4ed8f28d" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTableRow</scope><name>DocTableRow</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,23 @@
+digraph "Osztályhierarchia-ábra"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SoftwareEngineeringTools.\lDocumentation.Compound",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_compound.html"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="SoftwareEngineeringTools.\lDocumentation.DoxClassifier",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_classifier.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="SoftwareEngineeringTools.\lDocumentation.DoxClass",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_class.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="SoftwareEngineeringTools.\lDocumentation.DoxEnum",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_enum.html"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="SoftwareEngineeringTools.\lDocumentation.DoxInterface",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_interface.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="SoftwareEngineeringTools.\lDocumentation.DoxStruct",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_struct.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="SoftwareEngineeringTools.\lDocumentation.DoxDirectory",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_directory.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="SoftwareEngineeringTools.\lDocumentation.DoxFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_file.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="SoftwareEngineeringTools.\lDocumentation.DoxNamespace",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_namespace.html"];
+}

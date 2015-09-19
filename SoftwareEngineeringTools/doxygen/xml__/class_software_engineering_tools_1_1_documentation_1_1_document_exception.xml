@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_document_exception" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocumentException</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Exception</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_exception_1a58122280f1857a8fbc9f0827ca096d6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocumentException.DocumentException</definition>
+        <argsstring>()</argsstring>
+        <name>DocumentException</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentException.cs" line="10" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentException.cs" bodystart="10" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_exception_1af8026ba267419e75df82a02cd25648a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocumentException.DocumentException</definition>
+        <argsstring>(string message)</argsstring>
+        <name>DocumentException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentException.cs" line="15" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentException.cs" bodystart="15" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_exception_1ac268dd481c1d85bf7abb917c0ca6b9e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocumentException.DocumentException</definition>
+        <argsstring>(string message, Exception innerException)</argsstring>
+        <name>DocumentException</name>
+        <param>
+          <type>string</type>
+          <declname>message</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1ab0d4998a26f5b5742ad38c4af8817e32" kindref="member">Exception</ref></type>
+          <declname>innerException</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentException.cs" line="20" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentException.cs" bodystart="20" bodyend="23"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="270">
+        <label>SoftwareEngineeringTools.Documentation.DocumentException</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception"/>
+        <childnode refid="271" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>Exception</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="272">
+        <label>SoftwareEngineeringTools.Documentation.DocumentException</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception"/>
+        <childnode refid="273" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="273">
+        <label>Exception</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentException.cs" line="9" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentException.cs" bodystart="8" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception_1a58122280f1857a8fbc9f0827ca096d6c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentException</scope><name>DocumentException</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception_1af8026ba267419e75df82a02cd25648a8" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentException</scope><name>DocumentException</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception_1ac268dd481c1d85bf7abb917c0ca6b9e0" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentException</scope><name>DocumentException</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

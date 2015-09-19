@@ -1,0 +1,770 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_geometry_1_1_matrix" kind="class" prot="public">
+    <compoundname>Geometry::Matrix</compoundname>
+    <includes refid="_matrix_8h" local="no">Matrix.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_geometry_1_1_matrix_1ab6006ee116558e64a0450ed85571e324" prot="private" static="no" mutable="no">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &gt;</type>
+        <definition>Vector&lt;Vector&lt;T&gt; &gt; rowVects</definition>
+        <argsstring></argsstring>
+        <name>rowVects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="14" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geometry_1_1_matrix_1a7d46b74409bd32b539089ef4721ea544" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="16" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geometry_1_1_matrix_1a4033037df26775dd60840e66d38a08ba" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="17" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1acba920a0f45f1897f7d829686e6fc866" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix</definition>
+        <argsstring>(unsigned int n=3, unsigned int m=3)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+          <defval>3</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>m</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="21" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="120" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a7acef296df8ffb0fdac4a98ee1ceebb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix</definition>
+        <argsstring>(unsigned int n, unsigned int m, T *elements)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>elements</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="23" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="129" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a7f4c5e25b1b023ae9aa954e19df2578b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix</definition>
+        <argsstring>(const Vector&lt; Vector&lt; T &gt;&gt; &amp;rows)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;&gt; &amp;</type>
+          <declname>rows</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="25" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="138" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a5e72b7c50059bf70eca50ada11a4cf88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Matrix</definition>
+        <argsstring>(const Matrix &amp;other)</argsstring>
+        <name>Matrix</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="27" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="146" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a2249c859d9c3503ec00d3a20fe963842" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>~Matrix</definition>
+        <argsstring>()</argsstring>
+        <name>~Matrix</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="29" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1ada86e8057bfee1ecc58f9c697f31e666" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getHeight</definition>
+        <argsstring>() const </argsstring>
+        <name>getHeight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="32" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="157" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1ae7f5205133978fea4b9de9165fef5d34" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int getWidth</definition>
+        <argsstring>() const </argsstring>
+        <name>getWidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="34" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a89a6bb46fa0494bfc4517958a6b7f97e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool isQuad</definition>
+        <argsstring>() const </argsstring>
+        <name>isQuad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="37" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="171" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a023fe3a9126ea5712956732212e2c3b3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix&lt; T &gt; getTransp</definition>
+        <argsstring>() const </argsstring>
+        <name>getTransp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="40" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="178" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a23c6d59f23f1ac9227af3eed332bc503" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix&lt; T &gt; getGauss</definition>
+        <argsstring>() const </argsstring>
+        <name>getGauss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="43" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="192" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a60f4bc5ba2e3e3641cd8adfe3220ce47" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix&lt; T &gt; getMinor</definition>
+        <argsstring>(unsigned int ni, unsigned int mi) const </argsstring>
+        <name>getMinor</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ni</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>mi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="46" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="237" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1ab577821468783592ec1e17b9831a745f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T getDet</definition>
+        <argsstring>() const </argsstring>
+        <name>getDet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="50" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="267" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1af4d2ab764acdc315eeee518996890688" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix&lt; T &gt; getAdj</definition>
+        <argsstring>() const </argsstring>
+        <name>getAdj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="53" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="286" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a0b7e52ecf23c67a0c9b28b0488428467" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix&lt; T &gt; getInv</definition>
+        <argsstring>() const </argsstring>
+        <name>getInv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="56" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="320" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a979fa9f2ef9ed49fe50843536b80ef64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; operator=</definition>
+        <argsstring>(const Matrix &amp;other)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="59" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="338" bodyend="356"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a3379ea51ab8e20aa8cc9b0e9fed95333" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+        <definition>const Vector&lt; T &gt; &amp; operator[]</definition>
+        <argsstring>(unsigned int ind) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="63" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="361" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a59468b5083322ec7ba701c1008d6a36c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; operator()</definition>
+        <argsstring>(unsigned int ind1, unsigned int ind2)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ind1</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>ind2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="66" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="371" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a3948cc41be8fbb1c45fc1c5e89b5ad0b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; operator()</definition>
+        <argsstring>(unsigned int ind1, unsigned int ind2) const </argsstring>
+        <name>operator()</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ind1</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>ind2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="67" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="379" bodyend="385"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a0505b89eda121fdff45c7a857e485557" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator==</definition>
+        <argsstring>(const Matrix &amp;other) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="70" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="389" bodyend="407"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a794f46a3822d62168c9892b12f605c9b" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool operator!=</definition>
+        <argsstring>(const Matrix &amp;other) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="71" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="410" bodyend="414"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1abe1cc06180dac9a63b50c976cfd64177" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix&lt; T &gt; operator-</definition>
+        <argsstring>() const </argsstring>
+        <name>operator-</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="74" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="418" bodyend="430"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a780f345c8ffec32c9998dd4ee7bb3f83" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix&lt; T &gt; operator+</definition>
+        <argsstring>(const Matrix &amp;other) const </argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="77" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="434" bodyend="448"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1aa518bac1257096533b04d8bbc0ef720d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; operator+=</definition>
+        <argsstring>(const Matrix &amp;other)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="79" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="451" bodyend="463"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1aafe24c6032210e26b7d5c5de4b465c4a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix operator-</definition>
+        <argsstring>(const Matrix &amp;other) const </argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="82" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a269caf81214ddca3d350f4f9abc92e53" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; operator-=</definition>
+        <argsstring>(const Matrix &amp;other)</argsstring>
+        <name>operator-=</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="84" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="484" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1ac89891039ea560e097eb08132f26aa16" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix operator*</definition>
+        <argsstring>(const Matrix &amp;other) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a604b5f84ed6de96ab488d2c03eae7547" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref></type>
+        <definition>Matrix&lt; T &gt; operator*</definition>
+        <argsstring>(const T &amp;scalar) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="90" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="524" bodyend="534"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1ad94bc05c753a821e904fac0a1b164b18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref> &amp;</type>
+        <definition>Matrix&lt; T &gt; &amp; operator*=</definition>
+        <argsstring>(const T &amp;scalar)</argsstring>
+        <name>operator*=</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="91" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="536" bodyend="545"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a2b2be23d8d328c53abdc80f175aebc94" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; operator*</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;vect) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>vect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="96" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="561" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a4c45c93b09aefe28888e515b59dac801" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void setHeight</definition>
+        <argsstring>(unsigned int newHeight)</argsstring>
+        <name>setHeight</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>newHeight</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="103" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="594" bodyend="601"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1ad17b14cee5af2ebc8012f5d6ba84ae40" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void setWidth</definition>
+        <argsstring>(unsigned int newWidth)</argsstring>
+        <name>setWidth</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>newWidth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="105" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="604" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a1f1906594042db4f2f5476d0fbd62dc0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>const Vector&lt; T &gt; getRow</definition>
+        <argsstring>(unsigned int ind) const </argsstring>
+        <name>getRow</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="108" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="619" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1afedf179b5676991a95e6278174614a26" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>const Vector&lt; T &gt; getCol</definition>
+        <argsstring>(unsigned int ind) const </argsstring>
+        <name>getCol</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="110" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="628" bodyend="642"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a84c53d147111d22a4169cefcd9df1f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setRow</definition>
+        <argsstring>(unsigned int ind, const Vector&lt; T &gt; &amp;newVect)</argsstring>
+        <name>setRow</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ind</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>newVect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="113" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="646" bodyend="656"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a3386131a5370853ac9c36b433ceb8922" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void setCol</definition>
+        <argsstring>(unsigned int ind, const Vector&lt; T &gt; &amp;newVect)</argsstring>
+        <name>setCol</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>ind</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>newVect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="115" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="659" bodyend="673"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_matrix_1a63b3686883388b1c88a567e5ec8076f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref>&lt; T &gt;</type>
+        <definition>Matrix&lt;T&gt; operator*</definition>
+        <argsstring>(const Matrix&lt; T &gt; &amp;other) const </argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref>&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="500" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="500" bodyend="520"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="class_geometry_1_1_matrix_1a54ed6b31deb5d960c7c89f723b805053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>friend <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref>&lt; U &gt;</type>
+        <definition>Matrix&lt;U&gt; operator*</definition>
+        <argsstring>(const U &amp;scalar, const Matrix&lt; U &gt; &amp;mat)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const U &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref>&lt; U &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="93" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="547" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="friend" id="class_geometry_1_1_matrix_1a70a651e13f8da005d47a8acf44953897" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>friend std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Matrix&lt; U &gt; &amp;mat)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref>&lt; U &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="100" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="578" bodyend="590"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="12" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="11" bodyend="116"/>
+    <listofallmembers>
+      <member refid="class_geometry_1_1_matrix_1af4d2ab764acdc315eeee518996890688" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getAdj</name></member>
+      <member refid="class_geometry_1_1_matrix_1afedf179b5676991a95e6278174614a26" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getCol</name></member>
+      <member refid="class_geometry_1_1_matrix_1ab577821468783592ec1e17b9831a745f" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getDet</name></member>
+      <member refid="class_geometry_1_1_matrix_1a23c6d59f23f1ac9227af3eed332bc503" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getGauss</name></member>
+      <member refid="class_geometry_1_1_matrix_1ada86e8057bfee1ecc58f9c697f31e666" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getHeight</name></member>
+      <member refid="class_geometry_1_1_matrix_1a0b7e52ecf23c67a0c9b28b0488428467" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getInv</name></member>
+      <member refid="class_geometry_1_1_matrix_1a60f4bc5ba2e3e3641cd8adfe3220ce47" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getMinor</name></member>
+      <member refid="class_geometry_1_1_matrix_1a1f1906594042db4f2f5476d0fbd62dc0" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getRow</name></member>
+      <member refid="class_geometry_1_1_matrix_1a023fe3a9126ea5712956732212e2c3b3" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getTransp</name></member>
+      <member refid="class_geometry_1_1_matrix_1ae7f5205133978fea4b9de9165fef5d34" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>getWidth</name></member>
+      <member refid="class_geometry_1_1_matrix_1a89a6bb46fa0494bfc4517958a6b7f97e" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>isQuad</name></member>
+      <member refid="class_geometry_1_1_matrix_1a4033037df26775dd60840e66d38a08ba" prot="private" virt="non-virtual"><scope>Geometry::Matrix</scope><name>m</name></member>
+      <member refid="class_geometry_1_1_matrix_1acba920a0f45f1897f7d829686e6fc866" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>Matrix</name></member>
+      <member refid="class_geometry_1_1_matrix_1a7acef296df8ffb0fdac4a98ee1ceebb8" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>Matrix</name></member>
+      <member refid="class_geometry_1_1_matrix_1a7f4c5e25b1b023ae9aa954e19df2578b" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>Matrix</name></member>
+      <member refid="class_geometry_1_1_matrix_1a5e72b7c50059bf70eca50ada11a4cf88" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>Matrix</name></member>
+      <member refid="class_geometry_1_1_matrix_1a7d46b74409bd32b539089ef4721ea544" prot="private" virt="non-virtual"><scope>Geometry::Matrix</scope><name>n</name></member>
+      <member refid="class_geometry_1_1_matrix_1a794f46a3822d62168c9892b12f605c9b" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator!=</name></member>
+      <member refid="class_geometry_1_1_matrix_1a59468b5083322ec7ba701c1008d6a36c" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator()</name></member>
+      <member refid="class_geometry_1_1_matrix_1a3948cc41be8fbb1c45fc1c5e89b5ad0b" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator()</name></member>
+      <member refid="class_geometry_1_1_matrix_1ac89891039ea560e097eb08132f26aa16" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator*</name></member>
+      <member refid="class_geometry_1_1_matrix_1a604b5f84ed6de96ab488d2c03eae7547" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator*</name></member>
+      <member refid="class_geometry_1_1_matrix_1a54ed6b31deb5d960c7c89f723b805053" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator*</name></member>
+      <member refid="class_geometry_1_1_matrix_1a2b2be23d8d328c53abdc80f175aebc94" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator*</name></member>
+      <member refid="class_geometry_1_1_matrix_1a63b3686883388b1c88a567e5ec8076f3" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator*</name></member>
+      <member refid="class_geometry_1_1_matrix_1ad94bc05c753a821e904fac0a1b164b18" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator*=</name></member>
+      <member refid="class_geometry_1_1_matrix_1a780f345c8ffec32c9998dd4ee7bb3f83" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator+</name></member>
+      <member refid="class_geometry_1_1_matrix_1aa518bac1257096533b04d8bbc0ef720d" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator+=</name></member>
+      <member refid="class_geometry_1_1_matrix_1abe1cc06180dac9a63b50c976cfd64177" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator-</name></member>
+      <member refid="class_geometry_1_1_matrix_1aafe24c6032210e26b7d5c5de4b465c4a" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator-</name></member>
+      <member refid="class_geometry_1_1_matrix_1a269caf81214ddca3d350f4f9abc92e53" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator-=</name></member>
+      <member refid="class_geometry_1_1_matrix_1a70a651e13f8da005d47a8acf44953897" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator&lt;&lt;</name></member>
+      <member refid="class_geometry_1_1_matrix_1a979fa9f2ef9ed49fe50843536b80ef64" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator=</name></member>
+      <member refid="class_geometry_1_1_matrix_1a0505b89eda121fdff45c7a857e485557" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator==</name></member>
+      <member refid="class_geometry_1_1_matrix_1a3379ea51ab8e20aa8cc9b0e9fed95333" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>operator[]</name></member>
+      <member refid="class_geometry_1_1_matrix_1ab6006ee116558e64a0450ed85571e324" prot="private" virt="non-virtual"><scope>Geometry::Matrix</scope><name>rowVects</name></member>
+      <member refid="class_geometry_1_1_matrix_1a3386131a5370853ac9c36b433ceb8922" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>setCol</name></member>
+      <member refid="class_geometry_1_1_matrix_1a4c45c93b09aefe28888e515b59dac801" prot="public" virt="virtual"><scope>Geometry::Matrix</scope><name>setHeight</name></member>
+      <member refid="class_geometry_1_1_matrix_1a84c53d147111d22a4169cefcd9df1f2d" prot="public" virt="non-virtual"><scope>Geometry::Matrix</scope><name>setRow</name></member>
+      <member refid="class_geometry_1_1_matrix_1ad17b14cee5af2ebc8012f5d6ba84ae40" prot="public" virt="virtual"><scope>Geometry::Matrix</scope><name>setWidth</name></member>
+      <member refid="class_geometry_1_1_matrix_1a2249c859d9c3503ec00d3a20fe963842" prot="public" virt="virtual"><scope>Geometry::Matrix</scope><name>~Matrix</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

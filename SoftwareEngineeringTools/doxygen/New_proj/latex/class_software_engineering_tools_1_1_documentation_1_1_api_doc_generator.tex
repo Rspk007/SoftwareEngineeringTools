@@ -1,0 +1,181 @@
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator}{\section{Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator Class Reference}
+\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator}\index{Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator@{Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_af3563160ca4e416c41488c75d73535da}{Api\+Doc\+Generator} (\hyperlink{interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator}{I\+Document\+Generator} document\+Generator, \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_template}{Document\+Template} template, \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_doxygen_model}{Doxygen\+Model} model)
+\item 
+void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a2dc688a3ed6507a6d096a8892e86d154}{Generate} ()
+\item 
+void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a6b66e322fd5d2c7362a6bcf6b472714d}{Log} (string message)
+\item 
+string \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a988cd7a92cb0eda5e917c648f53da41a}{Normalize\+Name} (string name)
+\item 
+string \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_ad359ac0b2584664e99232093cbb2e749}{Get\+Package} (string name)
+\item 
+void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a9e249f84ffd24e3052eb273b937d4847}{Print\+Section} (string title, string label)
+\item 
+void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_af58464eec9d1a29cf80b217f96ad3a38}{Print\+Doc\+Cmd} (\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_doc_cmd}{Doc\+Cmd} cmd)
+\item 
+void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a417b7c3d6e2fb7eaf96c5cc128693e1f}{Next\+Section\+Level} ()
+\item 
+void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_af71b89e5cacd5f0a6db62cc1989c56a5}{Previous\+Section\+Level} ()
+\item 
+void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a04ede5421a322b9ae43bb067be59b527}{New\+Label} (string id)
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_template}{Document\+Template} \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a38d0b57a5fd3a10ce73695874f2df980}{Template}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\item 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_doxygen_model}{Doxygen\+Model} \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_acdb2e8442924e1b733f9bfac3b6785de}{Model}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 9 of file Api\+Doc\+Generator.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_af3563160ca4e416c41488c75d73535da}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Api\+Doc\+Generator@{Api\+Doc\+Generator}}
+\index{Api\+Doc\+Generator@{Api\+Doc\+Generator}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Api\+Doc\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Api\+Doc\+Generator (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Document\+Generator}}]{document\+Generator, }
+\item[{{\bf Document\+Template}}]{template, }
+\item[{{\bf Doxygen\+Model}}]{model}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_af3563160ca4e416c41488c75d73535da}
+
+
+Definition at line 16 of file Api\+Doc\+Generator.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a2dc688a3ed6507a6d096a8892e86d154}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Generate@{Generate}}
+\index{Generate@{Generate}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Generate}]{\setlength{\rightskip}{0pt plus 5cm}void Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Generate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a2dc688a3ed6507a6d096a8892e86d154}
+
+
+Definition at line 24 of file Api\+Doc\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_ad359ac0b2584664e99232093cbb2e749}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Get\+Package@{Get\+Package}}
+\index{Get\+Package@{Get\+Package}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Get\+Package}]{\setlength{\rightskip}{0pt plus 5cm}string Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Get\+Package (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_ad359ac0b2584664e99232093cbb2e749}
+
+
+Definition at line 49 of file Api\+Doc\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a6b66e322fd5d2c7362a6bcf6b472714d}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Log@{Log}}
+\index{Log@{Log}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Log}]{\setlength{\rightskip}{0pt plus 5cm}void Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Log (
+\begin{DoxyParamCaption}
+\item[{string}]{message}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a6b66e322fd5d2c7362a6bcf6b472714d}
+
+
+Definition at line 30 of file Api\+Doc\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a04ede5421a322b9ae43bb067be59b527}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!New\+Label@{New\+Label}}
+\index{New\+Label@{New\+Label}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{New\+Label}]{\setlength{\rightskip}{0pt plus 5cm}void Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+New\+Label (
+\begin{DoxyParamCaption}
+\item[{string}]{id}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a04ede5421a322b9ae43bb067be59b527}
+
+
+Definition at line 490 of file Api\+Doc\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a417b7c3d6e2fb7eaf96c5cc128693e1f}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Next\+Section\+Level@{Next\+Section\+Level}}
+\index{Next\+Section\+Level@{Next\+Section\+Level}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Next\+Section\+Level}]{\setlength{\rightskip}{0pt plus 5cm}void Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Next\+Section\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a417b7c3d6e2fb7eaf96c5cc128693e1f}
+
+
+Definition at line 480 of file Api\+Doc\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a988cd7a92cb0eda5e917c648f53da41a}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Normalize\+Name@{Normalize\+Name}}
+\index{Normalize\+Name@{Normalize\+Name}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Normalize\+Name}]{\setlength{\rightskip}{0pt plus 5cm}string Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Normalize\+Name (
+\begin{DoxyParamCaption}
+\item[{string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a988cd7a92cb0eda5e917c648f53da41a}
+
+
+Definition at line 35 of file Api\+Doc\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_af71b89e5cacd5f0a6db62cc1989c56a5}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Previous\+Section\+Level@{Previous\+Section\+Level}}
+\index{Previous\+Section\+Level@{Previous\+Section\+Level}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Previous\+Section\+Level}]{\setlength{\rightskip}{0pt plus 5cm}void Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Previous\+Section\+Level (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_af71b89e5cacd5f0a6db62cc1989c56a5}
+
+
+Definition at line 485 of file Api\+Doc\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_af58464eec9d1a29cf80b217f96ad3a38}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Print\+Doc\+Cmd@{Print\+Doc\+Cmd}}
+\index{Print\+Doc\+Cmd@{Print\+Doc\+Cmd}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Print\+Doc\+Cmd}]{\setlength{\rightskip}{0pt plus 5cm}void Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Print\+Doc\+Cmd (
+\begin{DoxyParamCaption}
+\item[{{\bf Doc\+Cmd}}]{cmd}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_af58464eec9d1a29cf80b217f96ad3a38}
+
+
+Definition at line 77 of file Api\+Doc\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a9e249f84ffd24e3052eb273b937d4847}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Print\+Section@{Print\+Section}}
+\index{Print\+Section@{Print\+Section}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Print\+Section}]{\setlength{\rightskip}{0pt plus 5cm}void Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Print\+Section (
+\begin{DoxyParamCaption}
+\item[{string}]{title, }
+\item[{string}]{label}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a9e249f84ffd24e3052eb273b937d4847}
+
+
+Definition at line 71 of file Api\+Doc\+Generator.\+cs.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_acdb2e8442924e1b733f9bfac3b6785de}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Model@{Model}}
+\index{Model@{Model}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Doxygen\+Model} Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Model\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_acdb2e8442924e1b733f9bfac3b6785de}
+
+
+Definition at line 14 of file Api\+Doc\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a38d0b57a5fd3a10ce73695874f2df980}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}!Template@{Template}}
+\index{Template@{Template}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Api\+Doc\+Generator}}
+\subsubsection[{Template}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Document\+Template} Software\+Engineering\+Tools.\+Documentation.\+Api\+Doc\+Generator.\+Template\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_a38d0b57a5fd3a10ce73695874f2df980}
+
+
+Definition at line 13 of file Api\+Doc\+Generator.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Api\+Doc\+Lib/\hyperlink{_api_doc_generator_8cs}{Api\+Doc\+Generator.\+cs}\end{DoxyCompactItemize}

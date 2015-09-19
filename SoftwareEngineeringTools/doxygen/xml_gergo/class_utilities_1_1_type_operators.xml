@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_utilities_1_1_type_operators" kind="class" prot="public">
+    <compoundname>Utilities::TypeOperators</compoundname>
+    <includes refid="_type_operators_8h" local="no">TypeOperators.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_utilities_1_1_type_operators_1a01f8ffb315882112eded9817279c652c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool equals</definition>
+        <argsstring>(const T &amp;obj1, const T &amp;obj2) const </argsstring>
+        <name>equals</name>
+        <reimplementedby refid="class_utilities_1_1_float_operators_1a3634d4c6fb482cced6a9e29784185b82">equals</reimplementedby>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj1</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method exams if the objects are equal or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the first object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the second object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- true if the two objects are equal (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" line="24" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" bodystart="64" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utilities_1_1_type_operators_1ac0c4e4d72daedaf61ac5b3f10832abc2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool greaterThan</definition>
+        <argsstring>(const T &amp;obj1, const T &amp;obj2) const </argsstring>
+        <name>greaterThan</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj1</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method exams if the first object is greater than the second. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the first object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the second object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- true if the first object is greater than the second (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" line="33" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" bodystart="71" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utilities_1_1_type_operators_1a01d0fde7f2eb384eadefd35abadf5b12" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool greaterThanOrEquals</definition>
+        <argsstring>(const T &amp;obj1, const T &amp;obj2) const </argsstring>
+        <name>greaterThanOrEquals</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj1</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method exams if the first object is greater than the second or they are equal. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the first object </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>obj2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the second object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- true if the first object is greater than the second or they are equal (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" line="44" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" bodystart="78" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utilities_1_1_type_operators_1a568333198beb5cf8b2b822ed1f517586" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>T</type>
+        <definition>T abs</definition>
+        <argsstring>(const T &amp;obj) const </argsstring>
+        <name>abs</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method returns the absolute value of the object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the object whose absolute value we are looking for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- the absolute value of the object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" line="51" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utilities_1_1_type_operators_1a326e5fe91b362795523b3b705ddd3abe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>int</type>
+        <definition>int castToInt</definition>
+        <argsstring>(const T &amp;obj) const </argsstring>
+        <name>castToInt</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method casts an object of type T to an integer value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>obj</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the object to be casted </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- an integer representation of the object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" line="58" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" bodystart="85" bodyend="89"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><ref refid="class_utilities_1_1_type_operators" kindref="compound">TypeOperators</ref> class is a template class, which allows for base and custom types to realize their operators custom. The default definition defines the default operators. For custom types we have to derive from this class. </para>    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" line="15" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/TypeOperators.h" bodystart="14" bodyend="59"/>
+    <listofallmembers>
+      <member refid="class_utilities_1_1_type_operators_1a568333198beb5cf8b2b822ed1f517586" prot="public" virt="virtual"><scope>Utilities::TypeOperators</scope><name>abs</name></member>
+      <member refid="class_utilities_1_1_type_operators_1a326e5fe91b362795523b3b705ddd3abe" prot="public" virt="virtual"><scope>Utilities::TypeOperators</scope><name>castToInt</name></member>
+      <member refid="class_utilities_1_1_type_operators_1a01f8ffb315882112eded9817279c652c" prot="public" virt="virtual"><scope>Utilities::TypeOperators</scope><name>equals</name></member>
+      <member refid="class_utilities_1_1_type_operators_1ac0c4e4d72daedaf61ac5b3f10832abc2" prot="public" virt="virtual"><scope>Utilities::TypeOperators</scope><name>greaterThan</name></member>
+      <member refid="class_utilities_1_1_type_operators_1a01d0fde7f2eb384eadefd35abadf5b12" prot="public" virt="virtual"><scope>Utilities::TypeOperators</scope><name>greaterThanOrEquals</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

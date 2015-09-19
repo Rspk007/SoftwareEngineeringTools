@@ -1,0 +1,797 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::HTMLGenerator</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocumentGenerator</basecompoundref>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a86814d784071578546b204de6e0bbf11" prot="public" static="no">
+        <name>GenerateMode</name>
+        <enumvalue id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a86814d784071578546b204de6e0bbf11ad02f4a49036838ab477b993dd40479c5" prot="public">
+          <name>AllInOne</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a86814d784071578546b204de6e0bbf11a7a23203142435810e9f3ce22141f44fc" prot="public">
+          <name>UseDocumentTemplate</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="25" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="24" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a90bdb88c4d4605bbb4b991e09843bd14" prot="private" static="no" mutable="no">
+        <type>HtmlTextWriter</type>
+        <definition>HtmlTextWriter SoftwareEngineeringTools.Documentation.HTMLGenerator.indexWriter</definition>
+        <argsstring></argsstring>
+        <name>indexWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="13" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a583472e7d36705681e6b0aa62742aa3f" prot="private" static="no" mutable="no">
+        <type>HtmlTextWriter</type>
+        <definition>HtmlTextWriter SoftwareEngineeringTools.Documentation.HTMLGenerator.pageWriter</definition>
+        <argsstring></argsstring>
+        <name>pageWriter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="14" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ac0ca7c5ccd7cb452e680392b6c2c1993" prot="private" static="no" mutable="no">
+        <type>TextWriter</type>
+        <definition>TextWriter SoftwareEngineeringTools.Documentation.HTMLGenerator.textWriter</definition>
+        <argsstring></argsstring>
+        <name>textWriter</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="15" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ad384c678a01a3ce06d9e769f5a32c12a" prot="private" static="no" mutable="no">
+        <type>TextWriter</type>
+        <definition>TextWriter SoftwareEngineeringTools.Documentation.HTMLGenerator.pageTextWriter</definition>
+        <argsstring></argsstring>
+        <name>pageTextWriter</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="16" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a39d23e06ae5e9dc4f9517541600434b5" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SoftwareEngineeringTools.Documentation.HTMLGenerator.generatePath</definition>
+        <argsstring></argsstring>
+        <name>generatePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="18" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1af07c0533d38a1960c84b4e758ded0a18" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SoftwareEngineeringTools.Documentation.HTMLGenerator.currentPath</definition>
+        <argsstring></argsstring>
+        <name>currentPath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="19" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a17b45858c0c7f572b9d1c72f28ec068d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String SoftwareEngineeringTools.Documentation.HTMLGenerator.CSSFileName</definition>
+        <argsstring></argsstring>
+        <name>CSSFileName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="20" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1abfc277dc392957628974e3523254f65a" prot="private" static="no" mutable="no">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a86814d784071578546b204de6e0bbf11" kindref="member">GenerateMode</ref></type>
+        <definition>GenerateMode SoftwareEngineeringTools.Documentation.HTMLGenerator.mode</definition>
+        <argsstring></argsstring>
+        <name>mode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="21" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a227e4794d3732270a9b50cd75ba5ac87" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.HTMLGenerator.newline</definition>
+        <argsstring></argsstring>
+        <name>newline</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="22" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1abf005611d22fef04264c8d843ceee533" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.HTMLGenerator.HTMLGenerator</definition>
+        <argsstring>(string path, GenerateMode mode, string CSSName)</argsstring>
+        <name>HTMLGenerator</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a86814d784071578546b204de6e0bbf11" kindref="member">GenerateMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>CSSName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CSSName</parametername>
+</parameternamelist>
+<parameterdescription>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="36" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="36" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a1000929b230ac94f5ee47e8695c9ec0c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.HTMLGenerator.HTMLGenerator</definition>
+        <argsstring>(TextWriter inputWriter, GenerateMode mode, string CSSName)</argsstring>
+        <name>HTMLGenerator</name>
+        <param>
+          <type>TextWriter</type>
+          <declname>inputWriter</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a86814d784071578546b204de6e0bbf11" kindref="member">GenerateMode</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>CSSName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="46" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="46" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a18122215120a5a52844cac3b3b31059f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.SetContent</definition>
+        <argsstring>(bool enabled, int depth)</argsstring>
+        <name>SetContent</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1af39f74148f77d9e036a9a3b284c4d569">SetContent</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="56" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1adfcd6c7e94631406dc3ce075c62317ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9fe08809c64a81d6a915169cd655cc3f">Dispose</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="60" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a22166b2d3e73aba20bdc9a5d49c0a1e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.BeginSectionTitle</definition>
+        <argsstring>(int level, string title, string label)</argsstring>
+        <name>BeginSectionTitle</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aa6b7b1a10a275fa3833f79c21ad932f8">BeginSectionTitle</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="122" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="122" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a1a32fa3632df947d926d49917248223a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.EndSectionTitle</definition>
+        <argsstring>()</argsstring>
+        <name>EndSectionTitle</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a649acf880cf5cdbdf3fe71924de0954e">EndSectionTitle</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="178" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="178" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a18ea20897007ab1c778b5dcf21c650ae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.NewParagraph</definition>
+        <argsstring>()</argsstring>
+        <name>NewParagraph</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a589f93438eceb47c5fae148ec40418a6">NewParagraph</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="183" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="183" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a1eea3c55ddc1824e807b35b6e650db4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.PrintText</definition>
+        <argsstring>(string text, bool insertSpace=true)</argsstring>
+        <name>PrintText</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a17021c5059b0dee77f60d085567d6265">PrintText</reimplements>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>insertSpace</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="188" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="188" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ab70274fa5dcb13c561b34ac2f1408232" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.PrintVerbatimText</definition>
+        <argsstring>(string text)</argsstring>
+        <name>PrintVerbatimText</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9806a5f0d5c0fea55cc7247ca6ea1d70">PrintVerbatimText</reimplements>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="195" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="195" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1abf50ab24cd3a1112940a09542c1cb787" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.BeginMarkup</definition>
+        <argsstring>(DocumentMarkupKind markupKind)</argsstring>
+        <name>BeginMarkup</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9398de502d89f600ac1f8ec72e6f1f48">BeginMarkup</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9" kindref="member">DocumentMarkupKind</ref></type>
+          <declname>markupKind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="203" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="203" bodyend="232"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a8d9e908b055e1a844b8681542087760a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.EndMarkup</definition>
+        <argsstring>(DocumentMarkupKind markupKind)</argsstring>
+        <name>EndMarkup</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff9fa315e40775e63fd2b4dc184596">EndMarkup</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9" kindref="member">DocumentMarkupKind</ref></type>
+          <declname>markupKind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="234" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="234" bodyend="262"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a6bd052d1eeb8495f8eec86dd98e06186" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.NewLabel</definition>
+        <argsstring>(string id)</argsstring>
+        <name>NewLabel</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6e0fb6c2edbb674ec4f0048ac1984871">NewLabel</reimplements>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="264" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="264" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ae6cd34a01a45c94485bc4d50d7e065b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.BeginReference</definition>
+        <argsstring>(string id, bool url)</argsstring>
+        <name>BeginReference</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aacc6cff53b0298213c5bfbbae5cf39ec">BeginReference</reimplements>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="271" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="271" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a7596befae40e133150f8acf40ee6863b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.EndReference</definition>
+        <argsstring>()</argsstring>
+        <name>EndReference</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6bf9ae60215596599442591d3f8e2636">EndReference</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="284" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="284" bodyend="287"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a18d52185703fa6da3727b26297917383" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.BeginList</definition>
+        <argsstring>()</argsstring>
+        <name>BeginList</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ac293a5f636676bbf7f4183e9aa4439e5">BeginList</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="289" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="289" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a65fa0e91f8157b674d922dd5800d14d0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.EndList</definition>
+        <argsstring>()</argsstring>
+        <name>EndList</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a06d3076fc6cb5f27e0573fdbc79aa879">EndList</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="294" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="294" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a4da5442652b4dcd06bd011f43cd0c6ea" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.BeginListItem</definition>
+        <argsstring>(int index, string title)</argsstring>
+        <name>BeginListItem</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aebd2eac27c0ff8a1dcb9a9e4914a54b6">BeginListItem</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="299" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="299" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a241deff51afd30112c7cfe061f7fb328" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.EndListItem</definition>
+        <argsstring>(int index)</argsstring>
+        <name>EndListItem</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6cf51dcd959fe8b91f5278dc508cd704">EndListItem</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="305" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="305" bodyend="308"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a67e1d82b87791489e744011aeef987df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.BeginTable</definition>
+        <argsstring>(int rowCount, int colCount)</argsstring>
+        <name>BeginTable</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0b1b0b9fa405181afcca7297b0c429d7">BeginTable</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowCount</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>colCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="310" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="310" bodyend="314"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a1432777280c430247384c5e489dbfd61" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.BeginTableRow</definition>
+        <argsstring>(int rowIndex)</argsstring>
+        <name>BeginTableRow</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff1e9792b49b59731026e57040b3d4">BeginTableRow</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="316" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="316" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ad9498d5cd816ad63cf98f6ba78e5b400" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.EndTableRow</definition>
+        <argsstring>(int rowIndex)</argsstring>
+        <name>EndTableRow</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0c815504fc6e9d7e2c49f114fdd93a88">EndTableRow</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="329" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="329" bodyend="332"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a6450dee7b6db74a546d63e6dddeb319e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.BeginTableCell</definition>
+        <argsstring>(int rowIndex, int colIndex, bool head)</argsstring>
+        <name>BeginTableCell</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a142486e159cf18396bad17686c4ece3b">BeginTableCell</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>colIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="334" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="334" bodyend="344"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a3f2bcfe9461142b2918dba15ddf991ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.EndTableCell</definition>
+        <argsstring>(int rowIndex, int colIndex, bool head)</argsstring>
+        <name>EndTableCell</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ad7358d1047a392ce8d23e01d6c541e72">EndTableCell</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>colIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="346" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="346" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a48fe2e63828da71c3b77092c8e473259" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.EndTable</definition>
+        <argsstring>()</argsstring>
+        <name>EndTable</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6244abdf686183395fb44339111a7363">EndTable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="351" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="351" bodyend="354"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ab9828a528be4027dc37c6f674a40e007" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.BeginDocument</definition>
+        <argsstring>()</argsstring>
+        <name>BeginDocument</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6dcea40e796970bba1229a2e513fdb56">BeginDocument</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="65" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="65" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a09fe3f4c3a055d88f50bd281344c5ca6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.HTMLGenerator.GenerateBegin</definition>
+        <argsstring>(HtmlTextWriter htw, String title)</argsstring>
+        <name>GenerateBegin</name>
+        <param>
+          <type>HtmlTextWriter</type>
+          <declname>htw</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="77" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="77" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1af1190908a9867c982c993ab8a596435b" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.HTMLGenerator.EndDocument</definition>
+        <argsstring>()</argsstring>
+        <name>EndDocument</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ae367934e4153adfd260dec902d0e69d5">EndDocument</reimplements>
+        <briefdescription>
+<para>Close the index file. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="92" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="92" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a80935a88a81e9889b566e367f8f8ef97" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.HTMLGenerator.GenerateEnd</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="112" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="112" bodyend="120"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="457">
+        <label>SoftwareEngineeringTools.Documentation.HTMLGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator"/>
+        <childnode refid="458" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="460">
+        <label>IDisposable</label>
+      </node>
+      <node id="458">
+        <label>DocumentGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator"/>
+        <childnode refid="459" relation="public-inheritance">
+        </childnode>
+        <childnode refid="460" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="459">
+        <label>IDocumentGenerator</label>
+        <link refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="461">
+        <label>SoftwareEngineeringTools.Documentation.HTMLGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator"/>
+        <childnode refid="462" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="464">
+        <label>IDisposable</label>
+      </node>
+      <node id="462">
+        <label>DocumentGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator"/>
+        <childnode refid="463" relation="public-inheritance">
+        </childnode>
+        <childnode refid="464" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="463">
+        <label>IDocumentGenerator</label>
+        <link refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" line="12" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/HTMLGenerator.cs" bodystart="11" bodyend="355"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ab9828a528be4027dc37c6f674a40e007" prot="protected" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>BeginDocument</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a18d52185703fa6da3727b26297917383" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>BeginList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a4da5442652b4dcd06bd011f43cd0c6ea" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>BeginListItem</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1abf50ab24cd3a1112940a09542c1cb787" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>BeginMarkup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ae6cd34a01a45c94485bc4d50d7e065b7" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>BeginReference</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a22166b2d3e73aba20bdc9a5d49c0a1e0" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>BeginSectionTitle</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a67e1d82b87791489e744011aeef987df" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>BeginTable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a6450dee7b6db74a546d63e6dddeb319e" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>BeginTableCell</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a1432777280c430247384c5e489dbfd61" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>BeginTableRow</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a17b45858c0c7f572b9d1c72f28ec068d" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>CSSFileName</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1af07c0533d38a1960c84b4e758ded0a18" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>currentPath</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1adfcd6c7e94631406dc3ce075c62317ef" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>Dispose</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1af1190908a9867c982c993ab8a596435b" prot="protected" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>EndDocument</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a65fa0e91f8157b674d922dd5800d14d0" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>EndList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a241deff51afd30112c7cfe061f7fb328" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>EndListItem</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a8d9e908b055e1a844b8681542087760a" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>EndMarkup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a7596befae40e133150f8acf40ee6863b" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>EndReference</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a1a32fa3632df947d926d49917248223a" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>EndSectionTitle</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a48fe2e63828da71c3b77092c8e473259" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>EndTable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a3f2bcfe9461142b2918dba15ddf991ce" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>EndTableCell</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ad9498d5cd816ad63cf98f6ba78e5b400" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>EndTableRow</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a09fe3f4c3a055d88f50bd281344c5ca6" prot="protected" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>GenerateBegin</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a80935a88a81e9889b566e367f8f8ef97" prot="protected" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>GenerateEnd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a86814d784071578546b204de6e0bbf11" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>GenerateMode</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a39d23e06ae5e9dc4f9517541600434b5" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>generatePath</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1abf005611d22fef04264c8d843ceee533" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>HTMLGenerator</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a1000929b230ac94f5ee47e8695c9ec0c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>HTMLGenerator</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a90bdb88c4d4605bbb4b991e09843bd14" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>indexWriter</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1abfc277dc392957628974e3523254f65a" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>mode</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a6bd052d1eeb8495f8eec86dd98e06186" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>NewLabel</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a227e4794d3732270a9b50cd75ba5ac87" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>newline</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a18ea20897007ab1c778b5dcf21c650ae" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>NewParagraph</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ad384c678a01a3ce06d9e769f5a32c12a" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>pageTextWriter</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a583472e7d36705681e6b0aa62742aa3f" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>pageWriter</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a1eea3c55ddc1824e807b35b6e650db4b" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>PrintText</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ab70274fa5dcb13c561b34ac2f1408232" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>PrintVerbatimText</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1a18122215120a5a52844cac3b3b31059f" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>SetContent</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_h_t_m_l_generator_1ac0ca7c5ccd7cb452e680392b6c2c1993" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::HTMLGenerator</scope><name>textWriter</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

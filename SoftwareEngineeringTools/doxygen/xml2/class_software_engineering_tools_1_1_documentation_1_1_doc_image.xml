@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_image" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocImage</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocCmdGroup</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1aa73b29c8c230474bd80d01dfa25555ff" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ab21398cff938858e1d9ebdc672403015" kindref="member">DocImageKind</ref></type>
+        <definition>DocImageKind SoftwareEngineeringTools.Documentation.DocImage.ImageKind</definition>
+        <argsstring></argsstring>
+        <name>ImageKind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="876" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="876" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1a18a4f96074d4dad07c0811896dd4305b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DocImage.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="877" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="877" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1a697f5c432b0a513b53dec61f66ad43ee" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DocImage.Width</definition>
+        <argsstring></argsstring>
+        <name>Width</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="878" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="878" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1a13b59f2f69ce4f465c966637480cef6c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DocImage.Height</definition>
+        <argsstring></argsstring>
+        <name>Height</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="879" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="879" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1abffb80615eb570220bd038dd88c93ffe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocImage.DocImage</definition>
+        <argsstring>()</argsstring>
+        <name>DocImage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="881" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="881" bodyend="884"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="158">
+        <label>SoftwareEngineeringTools.Documentation.DocImage</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image"/>
+        <childnode refid="159" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="159">
+        <label>DocCmdGroup</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group"/>
+        <childnode refid="160" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="160">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="161">
+        <label>SoftwareEngineeringTools.Documentation.DocImage</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image"/>
+        <childnode refid="162" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="162">
+        <label>DocCmdGroup</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group"/>
+        <childnode refid="163" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="163">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="875" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="874" bodyend="885"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group_1ac6f2fb2ec29fc2eeac0f46740b2c5144" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocImage</scope><name>Commands</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocImage</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group_1adc2876c88d61e89b18cf833132a0def5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocImage</scope><name>DocCmdGroup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1abffb80615eb570220bd038dd88c93ffe" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocImage</scope><name>DocImage</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1a13b59f2f69ce4f465c966637480cef6c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocImage</scope><name>Height</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1aa73b29c8c230474bd80d01dfa25555ff" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocImage</scope><name>ImageKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocImage</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1a18a4f96074d4dad07c0811896dd4305b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocImage</scope><name>Name</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1a697f5c432b0a513b53dec61f66ad43ee" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocImage</scope><name>Width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

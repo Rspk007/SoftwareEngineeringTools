@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_table" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocTable</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocCmd</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a3cacca0fb8c937d9de2c1e9f9527af0e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+        <definition>int SoftwareEngineeringTools.Documentation.DocTable.RowCount</definition>
+        <argsstring></argsstring>
+        <name>RowCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="873" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="873" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a66bdd113fc822da038a8aa8b5268436d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+        <definition>int SoftwareEngineeringTools.Documentation.DocTable.ColCount</definition>
+        <argsstring></argsstring>
+        <name>ColCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="874" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="874" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1ab394c3a4a562c8e1fc14ba15181c0a17" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_caption" kindref="compound">DocCaption</ref></type>
+        <definition>DocCaption SoftwareEngineeringTools.Documentation.DocTable.Caption</definition>
+        <argsstring></argsstring>
+        <name>Caption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="875" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="875" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a5da78858e249a4869f87f771bb2c50cf" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row" kindref="compound">DocTableRow</ref> &gt;</type>
+        <definition>List&lt;DocTableRow&gt; SoftwareEngineeringTools.Documentation.DocTable.Rows</definition>
+        <argsstring></argsstring>
+        <name>Rows</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="876" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="876" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a834a37e8969331cf2b37a442724b47c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocTable.DocTable</definition>
+        <argsstring>()</argsstring>
+        <name>DocTable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="878" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="878" bodyend="882"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="238">
+        <label>SoftwareEngineeringTools.Documentation.DocTable</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table"/>
+        <childnode refid="239" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="240">
+        <label>SoftwareEngineeringTools.Documentation.DocTable</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table"/>
+        <childnode refid="241" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="872" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="871" bodyend="883"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1ab394c3a4a562c8e1fc14ba15181c0a17" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTable</scope><name>Caption</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a66bdd113fc822da038a8aa8b5268436d" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTable</scope><name>ColCount</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTable</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a834a37e8969331cf2b37a442724b47c8" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTable</scope><name>DocTable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTable</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a3cacca0fb8c937d9de2c1e9f9527af0e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTable</scope><name>RowCount</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a5da78858e249a4869f87f771bb2c50cf" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTable</scope><name>Rows</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

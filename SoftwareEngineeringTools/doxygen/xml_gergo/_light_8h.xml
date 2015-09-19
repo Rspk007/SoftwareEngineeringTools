@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_light_8h" kind="file">
+    <compoundname>Light.h</compoundname>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includedby refid="_model_space_8h" local="yes">Új mappa/ModelSpace.h</includedby>
+    <includedby refid="_shader_8h" local="yes">Új mappa/Shader.h</includedby>
+    <includedby refid="main_8cpp" local="yes">Új mappa/main.cpp</includedby>
+    <includedby refid="_phong_shader_8h" local="yes">Új mappa/PhongShader.h</includedby>
+    <incdepgraph>
+      <node id="238">
+        <label>Vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>cmath</label>
+      </node>
+      <node id="240">
+        <label>stdexcept</label>
+      </node>
+      <node id="242">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>Új mappa/Light.h</label>
+        <link refid="Light.h"/>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>iostream</label>
+      </node>
+      <node id="243">
+        <label>Primitive.h</label>
+        <link refid="_primitive_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="248">
+        <label>Új mappa/Shader.h</label>
+        <link refid="_shader_8h"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>Új mappa/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="246">
+        <label>Új mappa/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+      </node>
+      <node id="249">
+        <label>Új mappa/PhongShader.h</label>
+        <link refid="_phong_shader_8h"/>
+        <childnode refid="247" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>Új mappa/ModelSpace.h</label>
+        <link refid="_model_space_8h"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>Új mappa/Light.h</label>
+        <link refid="Light.h"/>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_visualisation_1_1_light" prot="public">Visualisation::Light</innerclass>
+    <innernamespace refid="namespace_visualisation">Visualisation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LIGHT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LIGHT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vector_8h" kindref="compound">Vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Geometry;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Visualisation</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="14" refid="class_visualisation_1_1_light" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_visualisation_1_1_light" kindref="compound">Light</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17" refid="class_visualisation_1_1_light_1a92c08fdee4c3d7ce4f5180f6222a9a13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/><ref refid="class_visualisation_1_1_light_1a92c08fdee4c3d7ce4f5180f6222a9a13" kindref="member">position</ref>;</highlight></codeline>
+<codeline lineno="18" refid="class_visualisation_1_1_light_1a698096589cf2bca9181d8eb166dc9852" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/><ref refid="class_visualisation_1_1_light_1a698096589cf2bca9181d8eb166dc9852" kindref="member">intensity</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="class_visualisation_1_1_light_1a7f8a7be05225f470c200f7e4ff914a3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_light_1a7f8a7be05225f470c200f7e4ff914a3c" kindref="member">Light</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_light" kindref="compound">Light</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>intensity<sp/>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>MEMBER<sp/>FUNCTIONS<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>getPosition()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setPosition(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>position<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>getIntensity()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setIntensity(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>intensity<sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>DEFINITIONS<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="61" refid="class_visualisation_1_1_light_1ac091eb6e677551efd41b02b4839396f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_light" kindref="compound">Light&lt;T&gt;::Light</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>intensity<sp/>):</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>position(position),<sp/>intensity(intensity)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="66" refid="class_visualisation_1_1_light_1aec0f566b4f80ad1f6bdffabd00fc1c53" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/><ref refid="class_visualisation_1_1_light_1aec0f566b4f80ad1f6bdffabd00fc1c53" kindref="member">Light&lt;T&gt;::getPosition</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="67"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>position;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="72" refid="class_visualisation_1_1_light_1acceeea5f3e89935b9ec259a0d6f78020" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_light_1acceeea5f3e89935b9ec259a0d6f78020" kindref="member">Light&lt;T&gt;::setPosition</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>position<sp/>)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;position<sp/>=<sp/>position;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="78" refid="class_visualisation_1_1_light_1ad42cb93f510686e71c32973cba0c3fc3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/><ref refid="class_visualisation_1_1_light_1ad42cb93f510686e71c32973cba0c3fc3" kindref="member">Light&lt;T&gt;::getIntensity</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="79"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>intensity;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="84" refid="class_visualisation_1_1_light_1a480aa666a77426e1db03b5f310c2d91d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_light_1a480aa666a77426e1db03b5f310c2d91d" kindref="member">Light&lt;T&gt;::setIntensity</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>intensity<sp/>)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;intensity<sp/>=<sp/>intensity;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>LIGHT_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h"/>
+  </compounddef>
+</doxygen>

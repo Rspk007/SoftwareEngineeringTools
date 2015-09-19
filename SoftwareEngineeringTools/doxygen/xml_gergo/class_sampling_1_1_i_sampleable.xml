@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_sampling_1_1_i_sampleable" kind="class" prot="public" abstract="yes">
+    <compoundname>Sampling::ISampleable</compoundname>
+    <derivedcompoundref refid="class_sampling_1_1_volume" prot="public" virt="non-virtual">Volume&lt; T &gt;</derivedcompoundref>
+    <includes refid="_i_sampleable_8h" local="no">ISampleable.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sampling_1_1_i_sampleable_1aaf6cee9a80b3085218861a5a8d6b34bc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>T</type>
+        <definition>virtual T getValueAt</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;point, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const =0</argsstring>
+        <name>getValueAt</name>
+        <reimplementedby refid="class_sampling_1_1_linear_cube_filter_1ae7fe064de3b279d74867a690bd6f4953">getValueAt</reimplementedby>
+        <reimplementedby refid="class_sampling_1_1_linear_tetra_filter_1ae7fe064de3b279d74867a690bd6f4953">getValueAt</reimplementedby>
+        <reimplementedby refid="class_sampling_1_1_volume_1aaf6cee9a80b3085218861a5a8d6b34bc">getValueAt</reimplementedby>
+        <reimplementedby refid="class_sampling_1_1_marschner_lobb_1ae7fe064de3b279d74867a690bd6f4953">getValueAt</reimplementedby>
+        <reimplementedby refid="class_sampling_1_1_filter_1aaf6cee9a80b3085218861a5a8d6b34bc">getValueAt</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that calculates the value of the sampleable object at the position specified by the argument &apos;point&apos;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point where the object must calculate the return value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- the value at the given point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ISampleable.h" line="27" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This abstract class represents the interface of any sampleable object (like Volumes, Filters, Functions, etc.). </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="75">
+        <label>LinearTetraFilter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_linear_tetra_filter"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="74">
+        <label>LinearCubeFilter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_linear_cube_filter"/>
+        <childnode refid="73" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="72">
+        <label>Volume&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_volume"/>
+        <childnode refid="71" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>ISampleable&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_i_sampleable"/>
+      </node>
+      <node id="73">
+        <label>Filter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_filter"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="76">
+        <label>MarschnerLobb&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_marschner_lobb"/>
+        <childnode refid="72" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/ISampleable.h" line="17" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ISampleable.h" bodystart="16" bodyend="28"/>
+    <listofallmembers>
+      <member refid="class_sampling_1_1_i_sampleable_1aaf6cee9a80b3085218861a5a8d6b34bc" prot="public" virt="pure-virtual"><scope>Sampling::ISampleable</scope><name>getValueAt</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

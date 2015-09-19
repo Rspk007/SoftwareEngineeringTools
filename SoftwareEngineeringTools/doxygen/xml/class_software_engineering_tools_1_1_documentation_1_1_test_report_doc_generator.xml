@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::TestReportDocGenerator</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1af09960dda823e1f8a1ff00aa305c316a" prot="private" static="no" mutable="no">
+        <type><ref refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator" kindref="compound">IDocumentGenerator</ref></type>
+        <definition>IDocumentGenerator SoftwareEngineeringTools.Documentation.TestReportDocGenerator.dg</definition>
+        <argsstring></argsstring>
+        <name>dg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" line="12" column="1" bodyfile="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1a99ffeb5c0a68c206dd07552de03cb83b" prot="private" static="no" mutable="no">
+        <type><ref refid="class_software_engineering_tools_1_1_testing_1_1_test_results" kindref="compound">TestResults</ref></type>
+        <definition>TestResults SoftwareEngineeringTools.Documentation.TestReportDocGenerator.testResults</definition>
+        <argsstring></argsstring>
+        <name>testResults</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" line="13" column="1" bodyfile="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1afec6435bdf731581e37380223801af05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.TestReportDocGenerator.TestReportDocGenerator</definition>
+        <argsstring>(IDocumentGenerator documentGenerator, TestResults testResults)</argsstring>
+        <name>TestReportDocGenerator</name>
+        <param>
+          <type><ref refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator" kindref="compound">IDocumentGenerator</ref></type>
+          <declname>documentGenerator</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_testing_1_1_test_results" kindref="compound">TestResults</ref></type>
+          <declname>testResults</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" line="15" column="1" bodyfile="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" bodystart="15" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1a9ad34ec49fd12f6e2386ec343fd397ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.TestReportDocGenerator.Generate</definition>
+        <argsstring>()</argsstring>
+        <name>Generate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" line="21" column="1" bodyfile="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" bodystart="21" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" line="11" column="1" bodyfile="C:/SoftwareEngineeringTools/TestReportDocLib/TestReportDocGenerator.cs" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1af09960dda823e1f8a1ff00aa305c316a" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::TestReportDocGenerator</scope><name>dg</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1a9ad34ec49fd12f6e2386ec343fd397ef" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::TestReportDocGenerator</scope><name>Generate</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1afec6435bdf731581e37380223801af05" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::TestReportDocGenerator</scope><name>TestReportDocGenerator</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1a99ffeb5c0a68c206dd07552de03cb83b" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::TestReportDocGenerator</scope><name>testResults</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

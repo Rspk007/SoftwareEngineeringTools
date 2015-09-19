@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxHighlightText</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text_1aeb0aa6b4874d74f6b8e23ceaef539539" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" kindref="compound">DoxReference</ref></type>
+        <definition>DoxReference SoftwareEngineeringTools.Documentation.DoxHighlightText.Reference</definition>
+        <argsstring></argsstring>
+        <name>Reference</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="399" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text_1abb881a24f22da09b0445870ae92f5705" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxHighlightText.Space</definition>
+        <argsstring></argsstring>
+        <name>Space</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="397" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text_1ad242ac8b899f16d9562e4b3cf0d4ae89" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxHighlightText.Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="398" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="686">
+        <label>SoftwareEngineeringTools.Documentation.DoxHighlightText</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text"/>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="396" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="395" bodyend="400"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text_1aeb0aa6b4874d74f6b8e23ceaef539539" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxHighlightText</scope><name>Reference</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text_1abb881a24f22da09b0445870ae92f5705" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxHighlightText</scope><name>Space</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text_1ad242ac8b899f16d9562e4b3cf0d4ae89" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxHighlightText</scope><name>Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

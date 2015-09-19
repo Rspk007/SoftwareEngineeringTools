@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_geometry_1_1_bounding_volume" kind="class" prot="public" abstract="yes">
+    <compoundname>Geometry::BoundingVolume</compoundname>
+    <basecompoundref refid="class_geometry_1_1_i_shape" prot="public" virt="non-virtual">Geometry::IShape&lt; T &gt;</basecompoundref>
+    <derivedcompoundref refid="class_geometry_1_1_a_a_b_b" prot="public" virt="non-virtual">AABB&lt; T &gt;</derivedcompoundref>
+    <includes refid="_bounding_volume_8h" local="no">BoundingVolume.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_geometry_1_1_bounding_volume_1a68b13a7b73dc378f894c8e05b4e0dfd4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool containsPoint</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;pointToCheck, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const =0</argsstring>
+        <name>containsPoint</name>
+        <reimplementedby refid="class_geometry_1_1_a_a_b_b_1ab976492875a5b4b96d5953b135f163ba">containsPoint</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>pointToCheck</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can decide if a point is in the bounding volume, or not. (points of the surface are also true) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point to be checked </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- true if the point is in the Bounding Volume (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/BoundingVolume.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_bounding_volume_1af76e4d614fde54d8572ff3686b157456" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool fitsPoint</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;pointToCheck, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const =0</argsstring>
+        <name>fitsPoint</name>
+        <reimplements refid="class_geometry_1_1_i_shape_1af76e4d614fde54d8572ff3686b157456">fitsPoint</reimplements>
+        <reimplementedby refid="class_geometry_1_1_a_a_b_b_1a0ed558489fd932d65c18e1fe6ea5d36f">fitsPoint</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>pointToCheck</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can decide if a point fits the surface of the Bounding Volume or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point to be checked </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- true if the point fits the surface of the Bounding Volume (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/BoundingVolume.h" line="40" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_bounding_volume_1ab7b27cca569f9eae8628dd93e54c2d3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>&lt; T &gt; &gt;</type>
+        <definition>virtual Vector&lt;Intersection&lt;T&gt; &gt; intersect</definition>
+        <argsstring>(const Ray&lt; T &gt; &amp;ray, const Vector&lt; Intersection&lt; T &gt;&gt; *bounds=0, const T &amp;scale=T(), const Utilities::TypeOperators&lt; T &gt; &amp;Toperators=Utilities::TypeOperators&lt; T &gt;()) const =0</argsstring>
+        <name>intersect</name>
+        <reimplements refid="class_geometry_1_1_i_shape_1ab7b27cca569f9eae8628dd93e54c2d3e">intersect</reimplements>
+        <reimplementedby refid="class_geometry_1_1_a_a_b_b_1aae711dcbf18946964b9c42502e9d3377">intersect</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_ray" kindref="compound">Ray</ref>&lt; T &gt; &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>&lt; T &gt;&gt; *</type>
+          <declname>bounds</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scale</declname>
+          <defval>T()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+          <defval><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that implements the intersection with the concrete object. If no intersection was found, it will return an empty <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>. (0D <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the intersection ray </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the bounds between the intersection will be looked for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- scale used by ray casting algorithms </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- The collection of intersections in ascending order of dimension time. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/BoundingVolume.h" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This abstract class represents a bounding volume, like bounding box, <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref>, bounding sphere, etc. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="12">
+        <label>BoundingVolume&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_bounding_volume"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>IShape&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_shape"/>
+        <childnode refid="14" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>AABB&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_a_a_b_b"/>
+        <childnode refid="12" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="16">
+        <label>BoundingVolume&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_bounding_volume"/>
+        <childnode refid="17" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>IShape&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_shape"/>
+        <childnode refid="18" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/BoundingVolume.h" line="18" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/BoundingVolume.h" bodystart="17" bodyend="54"/>
+    <listofallmembers>
+      <member refid="class_geometry_1_1_bounding_volume_1a68b13a7b73dc378f894c8e05b4e0dfd4" prot="public" virt="pure-virtual"><scope>Geometry::BoundingVolume</scope><name>containsPoint</name></member>
+      <member refid="class_geometry_1_1_bounding_volume_1af76e4d614fde54d8572ff3686b157456" prot="public" virt="pure-virtual"><scope>Geometry::BoundingVolume</scope><name>fitsPoint</name></member>
+      <member refid="class_geometry_1_1_bounding_volume_1ab7b27cca569f9eae8628dd93e54c2d3e" prot="public" virt="pure-virtual"><scope>Geometry::BoundingVolume</scope><name>intersect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_testing_1_1_test_command_result" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Testing::TestCommandResult</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a7f7e746bda7b3cd7cb1125c0e9f805f9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13a" kindref="member">TestCommandKind</ref></type>
+        <definition>TestCommandKind SoftwareEngineeringTools.Testing.TestCommandResult.Kind</definition>
+        <argsstring></argsstring>
+        <name>Kind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="79" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a2f1d65eb07c34822f08e885f844ca0b2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Testing.TestCommandResult.Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="81" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a17ca5a787ca781abace162b7d7a0a3b9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Testing.TestCommandResult.ExpectedValue</definition>
+        <argsstring></argsstring>
+        <name>ExpectedValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="83" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1ae17ea10460ef9dacbd3cbe9345e0f9ed" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Testing.TestCommandResult.ActualValue</definition>
+        <argsstring></argsstring>
+        <name>ActualValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="85" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1aa8ac8fa72a9daa74b028ffafab0fbdd1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2" kindref="member">TestResultKind</ref></type>
+        <definition>TestResultKind SoftwareEngineeringTools.Testing.TestCommandResult.Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="87" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a02274834bcb07e11f6027e5371cacc9c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Testing.TestCommandResult.Comment</definition>
+        <argsstring></argsstring>
+        <name>Comment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="89" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1ab9477a5a7793419071f22eb65c225a4f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Testing.TestCommandResult.TestCommandResult</definition>
+        <argsstring>()</argsstring>
+        <name>TestCommandResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="91" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1adf3582b7e8c937a2fb27ec29c6c7dc47" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Testing.TestCommandResult.TestCommandResult</definition>
+        <argsstring>(TestCommandKind kind, string text, string expectedValue, string actualValue, TestResultKind result, string comment)</argsstring>
+        <name>TestCommandResult</name>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13a" kindref="member">TestCommandKind</ref></type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>expectedValue</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>actualValue</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2" kindref="member">TestResultKind</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>comment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="95" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="95" bodyend="103"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="77" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="76" bodyend="104"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1ae17ea10460ef9dacbd3cbe9345e0f9ed" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCommandResult</scope><name>ActualValue</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a02274834bcb07e11f6027e5371cacc9c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCommandResult</scope><name>Comment</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a17ca5a787ca781abace162b7d7a0a3b9" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCommandResult</scope><name>ExpectedValue</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a7f7e746bda7b3cd7cb1125c0e9f805f9" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCommandResult</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1aa8ac8fa72a9daa74b028ffafab0fbdd1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCommandResult</scope><name>Result</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1ab9477a5a7793419071f22eb65c225a4f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCommandResult</scope><name>TestCommandResult</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1adf3582b7e8c937a2fb27ec29c6c7dc47" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCommandResult</scope><name>TestCommandResult</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a2f1d65eb07c34822f08e885f844ca0b2" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCommandResult</scope><name>Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

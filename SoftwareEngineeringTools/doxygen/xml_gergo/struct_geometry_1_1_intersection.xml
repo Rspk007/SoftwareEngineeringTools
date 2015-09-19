@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct_geometry_1_1_intersection" kind="struct" prot="public">
+    <compoundname>Geometry::Intersection</compoundname>
+    <includes refid="_i_intersectable_8h" local="no">IIntersectable.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_geometry_1_1_intersection_1ab8d449d29d16e7cbf5997c030c8a401a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_geometry_1_1_i_intersectable" kindref="compound">IIntersectable</ref>&lt; T &gt; *</type>
+        <definition>const IIntersectable&lt;T&gt;* obj</definition>
+        <argsstring></argsstring>
+        <name>obj</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" line="26" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_geometry_1_1_intersection_1a92c08fdee4c3d7ce4f5180f6222a9a13" prot="public" static="no" mutable="no">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" line="27" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_geometry_1_1_intersection_1a6f88871e9000141586c249d6bb326e51" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T time</definition>
+        <argsstring></argsstring>
+        <name>time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" line="28" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_geometry_1_1_intersection_1aa2a46d8387923389a3aad30be0b8a8b5" prot="public" static="no" mutable="no">
+        <type>const <ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>const Material* material</definition>
+        <argsstring></argsstring>
+        <name>material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" line="29" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_geometry_1_1_intersection_1ab6e431ff5ef4b9a0ccecd75250c8fa9e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_geometry_1_1_ray" kindref="compound">Ray</ref>&lt; T &gt; *</type>
+        <definition>const Ray&lt;T&gt;* ray</definition>
+        <argsstring></argsstring>
+        <name>ray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" line="30" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_geometry_1_1_intersection_1a4fc7f59e3113e19697159919a5aad095" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T value</definition>
+        <argsstring></argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" line="32" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_geometry_1_1_intersection_1ae8bc77e85ab6570502b0596aac795e84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Intersection</definition>
+        <argsstring>()</argsstring>
+        <name>Intersection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default c&apos;tor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" line="19" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_geometry_1_1_intersection_1ad248b158cd16092526935f1a93c3ce7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Intersection</definition>
+        <argsstring>(const IIntersectable&lt; T &gt; *obj, const Vector&lt; T &gt; &amp;position, const T &amp;time, const Ray&lt; T &gt; *ray=0, const T &amp;value=T(), const Material *material=0)</argsstring>
+        <name>Intersection</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_i_intersectable" kindref="compound">IIntersectable</ref>&lt; T &gt; *</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>time</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_ray" kindref="compound">Ray</ref>&lt; T &gt; *</type>
+          <declname>ray</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+          <defval>T()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" line="24" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h" bodystart="43" bodyend="45"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="69">
+        <label>Point&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_point"/>
+        <childnode refid="70" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>Material</label>
+        <link refid="struct_visualisation_1_1_material"/>
+        <childnode refid="68" relation="usage">
+          <edgelabel>ka</edgelabel>
+          <edgelabel>ks</edgelabel>
+          <edgelabel>kd</edgelabel>
+        </childnode>
+      </node>
+      <node id="66">
+        <label>Intersection&lt; T &gt;</label>
+        <link refid="struct_geometry_1_1_intersection"/>
+        <childnode refid="67" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+      </node>
+      <node id="70">
+        <label>Primitive</label>
+        <link refid="class_geometry_1_1_primitive"/>
+      </node>
+      <node id="68">
+        <label>Vector&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_vector"/>
+        <childnode refid="69" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/IIntersectable.h" line="12" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/IIntersectable.h" bodystart="12" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="struct_geometry_1_1_intersection_1ae8bc77e85ab6570502b0596aac795e84" prot="public" virt="non-virtual"><scope>Geometry::Intersection</scope><name>Intersection</name></member>
+      <member refid="struct_geometry_1_1_intersection_1ad248b158cd16092526935f1a93c3ce7c" prot="public" virt="non-virtual"><scope>Geometry::Intersection</scope><name>Intersection</name></member>
+      <member refid="struct_geometry_1_1_intersection_1aa2a46d8387923389a3aad30be0b8a8b5" prot="public" virt="non-virtual"><scope>Geometry::Intersection</scope><name>material</name></member>
+      <member refid="struct_geometry_1_1_intersection_1ab8d449d29d16e7cbf5997c030c8a401a" prot="public" virt="non-virtual"><scope>Geometry::Intersection</scope><name>obj</name></member>
+      <member refid="struct_geometry_1_1_intersection_1a92c08fdee4c3d7ce4f5180f6222a9a13" prot="public" virt="non-virtual"><scope>Geometry::Intersection</scope><name>position</name></member>
+      <member refid="struct_geometry_1_1_intersection_1ab6e431ff5ef4b9a0ccecd75250c8fa9e" prot="public" virt="non-virtual"><scope>Geometry::Intersection</scope><name>ray</name></member>
+      <member refid="struct_geometry_1_1_intersection_1a6f88871e9000141586c249d6bb326e51" prot="public" virt="non-virtual"><scope>Geometry::Intersection</scope><name>time</name></member>
+      <member refid="struct_geometry_1_1_intersection_1a4fc7f59e3113e19697159919a5aad095" prot="public" virt="non-virtual"><scope>Geometry::Intersection</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1860 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespace_software_engineering_tools_1_1_documentation" kind="namespace">
+    <compoundname>SoftwareEngineeringTools::Documentation</compoundname>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config" prot="public">SoftwareEngineeringTools::Documentation::ApiDocConfig</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator" prot="public">SoftwareEngineeringTools::Documentation::ApiDocGenerator</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor" prot="public">SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_brief_description_template" prot="public">SoftwareEngineeringTools::Documentation::BriefDescriptionTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template" prot="public">SoftwareEngineeringTools::Documentation::ClassifierListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_class_list_template" prot="public">SoftwareEngineeringTools::Documentation::ClassListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_compound" prot="public">SoftwareEngineeringTools::Documentation::Compound</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index" prot="public">SoftwareEngineeringTools::Documentation::CompoundIndex</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_description" prot="public">SoftwareEngineeringTools::Documentation::Description</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_description_template" prot="public">SoftwareEngineeringTools::Documentation::DescriptionTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_anchor" prot="public">SoftwareEngineeringTools::Documentation::DocAnchor</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_block_quote" prot="public">SoftwareEngineeringTools::Documentation::DocBlockQuote</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_caption" prot="public">SoftwareEngineeringTools::Documentation::DocCaption</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_char" prot="public">SoftwareEngineeringTools::Documentation::DocChar</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" prot="public">SoftwareEngineeringTools::Documentation::DocCmd</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group" prot="public">SoftwareEngineeringTools::Documentation::DocCmdGroup</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_copy" prot="public">SoftwareEngineeringTools::Documentation::DocCopy</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_dot_file" prot="public">SoftwareEngineeringTools::Documentation::DocDotFile</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_empty" prot="public">SoftwareEngineeringTools::Documentation::DocEmpty</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_formula" prot="public">SoftwareEngineeringTools::Documentation::DocFormula</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_heading" prot="public">SoftwareEngineeringTools::Documentation::DocHeading</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image" prot="public">SoftwareEngineeringTools::Documentation::DocImage</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_index_entry" prot="public">SoftwareEngineeringTools::Documentation::DocIndexEntry</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language" prot="public">SoftwareEngineeringTools::Documentation::DocLanguage</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list" prot="public">SoftwareEngineeringTools::Documentation::DocList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list_item" prot="public">SoftwareEngineeringTools::Documentation::DocListItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_markup" prot="public">SoftwareEngineeringTools::Documentation::DocMarkup</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para" prot="public">SoftwareEngineeringTools::Documentation::DocPara</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list" prot="public">SoftwareEngineeringTools::Documentation::DocParaList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list" prot="public">SoftwareEngineeringTools::Documentation::DocParamList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item" prot="public">SoftwareEngineeringTools::Documentation::DocParamListItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name" prot="public">SoftwareEngineeringTools::Documentation::DocParamName</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_list" prot="public">SoftwareEngineeringTools::Documentation::DocParamNameList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference" prot="public">SoftwareEngineeringTools::Documentation::DocReference</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_sect" prot="public">SoftwareEngineeringTools::Documentation::DocSect</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect" prot="public">SoftwareEngineeringTools::Documentation::DocSimpleSect</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_item" prot="public">SoftwareEngineeringTools::Documentation::DocSimpleSectItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table" prot="public">SoftwareEngineeringTools::Documentation::DocTable</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_cell" prot="public">SoftwareEngineeringTools::Documentation::DocTableCell</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row" prot="public">SoftwareEngineeringTools::Documentation::DocTableRow</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_text" prot="public">SoftwareEngineeringTools::Documentation::DocText</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_title" prot="public">SoftwareEngineeringTools::Documentation::DocTitle</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_item" prot="public">SoftwareEngineeringTools::Documentation::DocTocItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list" prot="public">SoftwareEngineeringTools::Documentation::DocTocList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception" prot="public">SoftwareEngineeringTools::Documentation::DocumentException</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator" prot="public">SoftwareEngineeringTools::Documentation::DocumentGenerator</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_document_template" prot="public">SoftwareEngineeringTools::Documentation::DocumentTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_url_link" prot="public">SoftwareEngineeringTools::Documentation::DocUrlLink</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable" prot="public">SoftwareEngineeringTools::Documentation::DocVariable</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list" prot="public">SoftwareEngineeringTools::Documentation::DocVariableList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec" prot="public">SoftwareEngineeringTools::Documentation::DocXRefSec</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_class" prot="public">SoftwareEngineeringTools::Documentation::DoxClass</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier" prot="public">SoftwareEngineeringTools::Documentation::DoxClassifier</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line" prot="public">SoftwareEngineeringTools::Documentation::DoxCodeLine</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory" prot="public">SoftwareEngineeringTools::Documentation::DoxDirectory</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum" prot="public">SoftwareEngineeringTools::Documentation::DoxEnum</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum_value" prot="public">SoftwareEngineeringTools::Documentation::DoxEnumValue</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_field" prot="public">SoftwareEngineeringTools::Documentation::DoxField</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_file" prot="public">SoftwareEngineeringTools::Documentation::DoxFile</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight" prot="public">SoftwareEngineeringTools::Documentation::DoxHighlight</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text" prot="public">SoftwareEngineeringTools::Documentation::DoxHighlightText</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_interface" prot="public">SoftwareEngineeringTools::Documentation::DoxInterface</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text" prot="public">SoftwareEngineeringTools::Documentation::DoxLinkedText</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item" prot="public">SoftwareEngineeringTools::Documentation::DoxLinkedTextItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" prot="public">SoftwareEngineeringTools::Documentation::DoxMember</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_method" prot="public">SoftwareEngineeringTools::Documentation::DoxMethod</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace" prot="public">SoftwareEngineeringTools::Documentation::DoxNamespace</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param" prot="public">SoftwareEngineeringTools::Documentation::DoxParam</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_program_listing" prot="public">SoftwareEngineeringTools::Documentation::DoxProgramListing</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_property" prot="public">SoftwareEngineeringTools::Documentation::DoxProperty</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" prot="public">SoftwareEngineeringTools::Documentation::DoxReference</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_struct" prot="public">SoftwareEngineeringTools::Documentation::DoxStruct</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_text" prot="public">SoftwareEngineeringTools::Documentation::DoxText</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index" prot="public">SoftwareEngineeringTools::Documentation::DoxygenIndex</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model" prot="public">SoftwareEngineeringTools::Documentation::DoxygenModel</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_object_template" prot="public">SoftwareEngineeringTools::Documentation::DoxygenObjectTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser" prot="public">SoftwareEngineeringTools::Documentation::DoxygenParser</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_enum_list_template" prot="public">SoftwareEngineeringTools::Documentation::EnumListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_enum_value_list_template" prot="public">SoftwareEngineeringTools::Documentation::EnumValueListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_field_list_template" prot="public">SoftwareEngineeringTools::Documentation::FieldListTemplate</innerclass>
+    <innerclass refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor" prot="public">SoftwareEngineeringTools::Documentation::IApiDocTemplateProcessor</innerclass>
+    <innerclass refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator" prot="public">SoftwareEngineeringTools::Documentation::IDocumentGenerator</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_interface_list_template" prot="public">SoftwareEngineeringTools::Documentation::InterfaceListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator" prot="public">SoftwareEngineeringTools::Documentation::LatexGenerator</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_location" prot="public">SoftwareEngineeringTools::Documentation::Location</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_member_enum" prot="public">SoftwareEngineeringTools::Documentation::MemberEnum</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_member_index" prot="public">SoftwareEngineeringTools::Documentation::MemberIndex</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template" prot="public">SoftwareEngineeringTools::Documentation::MemberListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_method_list_template" prot="public">SoftwareEngineeringTools::Documentation::MethodListTemplate</innerclass>
+    <innerclass refid="struct_software_engineering_tools_1_1_documentation_1_1_model_version" prot="public">SoftwareEngineeringTools::Documentation::ModelVersion</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template" prot="public">SoftwareEngineeringTools::Documentation::NamespaceListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_property_list_template" prot="public">SoftwareEngineeringTools::Documentation::PropertyListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_section_template" prot="public">SoftwareEngineeringTools::Documentation::SectionTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_struct_list_template" prot="public">SoftwareEngineeringTools::Documentation::StructListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_template" prot="public">SoftwareEngineeringTools::Documentation::Template</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator" prot="public">SoftwareEngineeringTools::Documentation::TestReportDocGenerator</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_text_template" prot="public">SoftwareEngineeringTools::Documentation::TextTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template" prot="public">SoftwareEngineeringTools::Documentation::UmlClassDiagramTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator" prot="public">SoftwareEngineeringTools::Documentation::WordGenerator</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1ab6e4765a967d9dc6f381992efce40c89" prot="public" static="no">
+        <name>Language</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ab6e4765a967d9dc6f381992efce40c89a7b86112ec6401fd8f06ab5251d1a68fe" prot="public">
+          <name>Hungarian</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ab6e4765a967d9dc6f381992efce40c89a78463a384a5aa4fad5fa73e2f506ecfc" prot="public">
+          <name>English</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocConfig.cs" line="9" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocConfig.cs" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1aa472de3f279941ba19162a135b8e92d1" prot="public" static="no">
+        <name>ProgrammingLanguage</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa472de3f279941ba19162a135b8e92d1a83925001a044cdfe0c64e9a44345b66d" prot="public">
+          <name>CSharp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa472de3f279941ba19162a135b8e92d1ad52387880e1ea22817a72d3759213819" prot="public">
+          <name>Java</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa472de3f279941ba19162a135b8e92d1adb4a39bf594c9fbcf318dd39ea19fed3" prot="public">
+          <name>Cpp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" line="10" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs" bodystart="9" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1" prot="public" static="no">
+        <name>CompoundKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a9bd81329febf6efe22788e03ddeaf0af" prot="public">
+          <name>Class</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a886ef5dbd655a6c97726d7091c6b173e" prot="public">
+          <name>Struct</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1aaef12e903e606a4895a16b393bfdec8c" prot="public">
+          <name>Union</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a3c1aac82863ed9e5a9aca8ce687f711d" prot="public">
+          <name>Interface</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1acf20423ed48998082c20099488a0917c" prot="public">
+          <name>Enum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a888a77f5ac0748b6c8001822417df8b6" prot="public">
+          <name>Protocol</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a3adbdb3ac060038aa0e6e6c138ef9873" prot="public">
+          <name>Category</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1ab0d4998a26f5b5742ad38c4af8817e32" prot="public">
+          <name>Exception</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a0b27918290ff5323bea1e3b78a9cf04e" prot="public">
+          <name>File</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1ab3ba0fe968ce39dcfc6fe8cc0f1b02da" prot="public">
+          <name>Namespace</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a03937134cedab9078be39a77ee3a48a0" prot="public">
+          <name>Group</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a193cfc9be3b995831c6af2fea6650e60" prot="public">
+          <name>Page</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a0a52730597fb4ffa01fc117d9e71e3a9" prot="public">
+          <name>Example</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a3c4e6dbf3e1df93a734d9959bac9ee94" prot="public">
+          <name>Dir</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="44" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="43" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3" prot="public" static="no">
+        <name>MemberKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a9312cc2f02f42764c70c3713f80fe219" prot="public">
+          <name>Define</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a5ad234cb2cde4266195252a23ca7d84e" prot="public">
+          <name>Property</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3aa4ecfc70574394990cf17bd83df499f7" prot="public">
+          <name>Event</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a47c14840d8e15331fa420b9b2f757cd9" prot="public">
+          <name>Variable</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3ad48e0d4689ad692f867af172e92b7e97" prot="public">
+          <name>TypeDef</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3acf20423ed48998082c20099488a0917c" prot="public">
+          <name>Enum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a29785ae7827639b31b629cc7f9c150e0" prot="public">
+          <name>EnumValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a86408593c34af77fdd90df932f8b5261" prot="public">
+          <name>Function</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a085fea7abdc5d904fe69a3081efd7398" prot="public">
+          <name>Signal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a4ca8a95edcb45a890a2efa4c12cd3c61" prot="public">
+          <name>Prototype</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a930a91848917f92cf7e2f8d744fa4177" prot="public">
+          <name>Friend</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3ac73be3410826f90df7d806a711a47efd" prot="public">
+          <name>Dcop</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a9234cc57c43f272b55a94b0069fe62d1" prot="public">
+          <name>Slot</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="62" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="61" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040" prot="public" static="no">
+        <name>ProtectionKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040a3d067bedfe2f4677470dd6ccf64d05ed" prot="public">
+          <name>Public</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040a56f0605c9795b173abd2e34fab7fc164" prot="public">
+          <name>Protected</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040a47f9082fc380ca62d531096aa1d110f1" prot="public">
+          <name>Private</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040a209802fb858e2c83205027dbbb5d9e6c" prot="public">
+          <name>Package</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="164" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="163" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626f" prot="public" static="no">
+        <name>VirtualKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626fad2c1d5c91493be25d3edb933c4a9262f" prot="public">
+          <name>NonVirtual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626fa615e6f9baca5553d44683a098d342b70" prot="public">
+          <name>Virtual</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626fae353dbe42c8654f33588d4da0b517469" prot="public">
+          <name>Abstract</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="172" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="171" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205" prot="public" static="no">
+        <name>DoxHighlightKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a0be8406951cdfda82f00f79328cf4efc" prot="public">
+          <name>Comment</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a960b44c579bc2f6818d2daaf9e4c16f0" prot="public">
+          <name>Normal</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205aee2cf0b15cefb66dee3a04bb3cd59a0f" prot="public">
+          <name>Preprocessor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a220f3d3750583b9db48568a0b5b9a5f1" prot="public">
+          <name>Keyword</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a518f2f556dbcd4a9b514f3b6f5f9c5e0" prot="public">
+          <name>KeywordType</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205af94816a0a83a1c201f547ea04ad6baeb" prot="public">
+          <name>KeywordFlow</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a7029cff17180550e1214f19dba74a32a" prot="public">
+          <name>StringLiteral</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a616b859bc3920670a4509686f20de06e" prot="public">
+          <name>CharLiteral</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="412" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="411" bodyend="421"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9" prot="public" static="no">
+        <name>DocKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab5a7adde1af5c87d7fd797b6245c2a39" prot="public">
+          <name>Description</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab5272fc6223db73c6f142bfa552c70f8" prot="public">
+          <name>Cmd</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ae8a3dc4c26c1bd72eb0859b2a197a501" prot="public">
+          <name>CmdGroup</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab8ac40eab9b51da960788ecba0c24588" prot="public">
+          <name>Para</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9aabb8d55dc31470a576c8585913d43765" prot="public">
+          <name>ParaList</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ae51e08a727173e8719e480316459991e" prot="public">
+          <name>Markup</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a9dffbf69ffba8bc38bc4e01abf4b1675" prot="public">
+          <name>Text</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a8e95e84813830072b7516cfaa7dbc1a9" prot="public">
+          <name>Char</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ace2c8aed9c2fa0cfbed56cbda4d8bf07" prot="public">
+          <name>Empty</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a02474157438110314438190c16632d45" prot="public">
+          <name>UrlLink</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9aa34285645af2703a9501db6fc881e5df" prot="public">
+          <name>Anchor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a313a6a3d25aa041ee3dc3cbd65d4f22b" prot="public">
+          <name>Formula</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a63d5049791d9d79d86e9a108b0a999ca" prot="public">
+          <name>Reference</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4351521286272888a7b5093834949f33" prot="public">
+          <name>IndexEntry</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" prot="public">
+          <name>List</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab332941182f94d378ce2013a80c61075" prot="public">
+          <name>ListItem</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a325981dd17610d956d4463c5cbf62390" prot="public">
+          <name>Sect</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a8b73831904852845be75d7fa1321e3e2" prot="public">
+          <name>SimpleSect</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4687fb4676018516efe4c759df63acdb" prot="public">
+          <name>SimpleSectItem</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab78a3223503896721cca1303f776159b" prot="public">
+          <name>Title</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a272ba7d164aa836995be6319a698be84" prot="public">
+          <name>Caption</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a0101316665d4f82adaa26d86fbbb2d6e" prot="public">
+          <name>Heading</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a214554bc78f178177c21f5576efa7d2a" prot="public">
+          <name>VariableList</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a51c45b795d5d18a3e4e0c37e8b20a141" prot="public">
+          <name>Table</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9abe53a0541a6d36f6ecb879fa2c584b08" prot="public">
+          <name>Image</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a24b282564a61c1885448580755c4408b" prot="public">
+          <name>DotFile</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a857eabf9a639509040bb2b86925cae3b" prot="public">
+          <name>TocList</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a7fcd495ac192508fb9b0a6d09d9f48af" prot="public">
+          <name>TocItem</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4994a8ffeba4ac3140beb89e8d41f174" prot="public">
+          <name>Language</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a1ead2a1f0aa1686d20f3697bce2e94d9" prot="public">
+          <name>ParamList</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9aba6e40007beabe5acc27819a29b589ab" prot="public">
+          <name>XRefSec</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a5fb63579fc981698f97d55bfecb213ea" prot="public">
+          <name>Copy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a337311fa1a232ef73ae2dc6c8e5ca5c8" prot="public">
+          <name>BlockQuote</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="449" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="448" bodyend="483"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183f" prot="public" static="no">
+        <name>DocMarkupKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa114c3050111d8b8ddd830b99ccebd246" prot="public">
+          <name>Bold</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa43268d52aef2fbd0ba6661b51da1001a" prot="public">
+          <name>Emphasis</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa0f3e8b2d58097e48c8b7c563a39e1b8d" prot="public">
+          <name>ComputerOutput</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fab77dd152c7c8f548139fff358b4bcbfa" prot="public">
+          <name>SubScript</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fac8e556630b23f59e22ca247ba837027d" prot="public">
+          <name>SuperScript</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa4f1f6016fc9f3f2353c0cc7c67b292bd" prot="public">
+          <name>Center</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa2660064e68655415da2628c2ae2f7592" prot="public">
+          <name>Small</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fab4d91030e8bedef67605e32731df7c31" prot="public">
+          <name>Preformatted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="567" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="566" bodyend="576"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2" prot="public" static="no">
+        <name>DocTextKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a4cd8413207629a963225f4314b53adcd" prot="public">
+          <name>Plain</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a9125d6de13eac2095f2dfc0d817bba12" prot="public">
+          <name>Verbatim</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a454cbeea19c0c751711204565ee5001c" prot="public">
+          <name>HtmlOnly</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a879a8ed64e5e0c9af0908b7386f351a8" prot="public">
+          <name>ManOnly</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2af9c5c67798dd96ac3299ad1be83252a5" prot="public">
+          <name>XmlOnly</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2ac042ed671e6ae3c82e0c976fb0bb9153" prot="public">
+          <name>RtfOnly</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a5dc84bc7c20b95d3b35a8aeccc1ffa41" prot="public">
+          <name>LatexOnly</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2aaf6c6cf7a454b4ef4a850ac4d960a2cc" prot="public">
+          <name>Dot</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="579" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="578" bodyend="588"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35" prot="public" static="no">
+        <name>DocCharKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a2422db5c30ae25931668ca0d14ceaa54" prot="public">
+          <name>Umlaut</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a61a2c3bd1a5ca49353ab5fcbf78c68a8" prot="public">
+          <name>Acute</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35aed24ff8971b1fa43a1efbb386618ce35" prot="public">
+          <name>Grave</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a08976095181451b11a36c321a2d7c96b" prot="public">
+          <name>Circ</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a358cfe58715d680d9ab09f82e4010cbc" prot="public">
+          <name>Slash</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a77a804418d76dc407383a618b60853ab" prot="public">
+          <name>Tilde</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a9e3f3a7e242ff57b038edb815c868c3c" prot="public">
+          <name>Cedil</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35ad4db177c94738b72bf9ce61e988ab1f1" prot="public">
+          <name>Ring</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="591" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="590" bodyend="600"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7" prot="public" static="no">
+        <name>DocEmptyKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a04e54acbb8765a5695b7613cb1a17665" prot="public">
+          <name>simplesectsep</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a7fa1b685c847251e0527742b59b31ada" prot="public">
+          <name>linebreak</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ab574250935db3a8ae1c50fea69c9ef3b" prot="public">
+          <name>hruler</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a12cba3ee81cf4a793796a51b6327c678" prot="public">
+          <name>copy</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a9ebf51b8e23b419c371e5ebf58d49c71" prot="public">
+          <name>trademark</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aa2b8ed9c305b8ea86116b603cca78a97" prot="public">
+          <name>registered</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad2dc2b7362f5989dfa104505710bd2e8" prot="public">
+          <name>lsquo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a7a5ec04cbe499d3f84cde5decfe33620" prot="public">
+          <name>rsquo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ade9833c3b6907335d6fa8a4ee30266d9" prot="public">
+          <name>ldquo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a64c59949a198c53eb96a08187ca66880" prot="public">
+          <name>rdquo</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a359f7ae1bf74d7a44d4218ac7686c3fb" prot="public">
+          <name>ndash</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a350c829a6af279898f0c0ca4c599991d" prot="public">
+          <name>mdash</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a84f7e02d73961232472bde83196f9084" prot="public">
+          <name>szlig</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a7e15a2f5238d0e23d0ae698495feb64b" prot="public">
+          <name>nonbreakablespace</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a93b044a94f2831bac55e94a51f26c04e" prot="public">
+          <name>aelig</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ab61a6417b08bcf8ba0567601af7fb709" prot="public">
+          <name>AElig</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad9cdb0f6e0d556347c10a8695545a4b5" prot="public">
+          <name>Gamma</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7adb1f4ab5845def61a83d5df13e0c2397" prot="public">
+          <name>Delta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad21c855a168b8f09d1ebb1bc596be927" prot="public">
+          <name>Theta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a04a7da3c5b04cad85da1eebb92315b8b" prot="public">
+          <name>Lambda</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a5c24affd3aba4a2851c3b1bf42b9d3fd" prot="public">
+          <name>Xi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a127125672f1e85d1e676d4394d24e066" prot="public">
+          <name>Pi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a827faff1bdcfe446237c4d6289abce66" prot="public">
+          <name>Sigma</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aefbc93c5b70630ff04c9b7ef15cfdc02" prot="public">
+          <name>Upsilon</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a5a82bece4586ad7cb17ba739a2db7f67" prot="public">
+          <name>Phi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ace1cb2d98c19288ad0fc47cbc07a7a6c" prot="public">
+          <name>Psi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a39e25ac3d737c46452305eefe324372c" prot="public">
+          <name>Omega</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a2c1743a391305fbf367df8e4f069f9f9" prot="public">
+          <name>alpha</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a987bcab01b929eb2c07877b224215c92" prot="public">
+          <name>beta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a05b048d7242cb7b8b57cfa3b1d65ecea" prot="public">
+          <name>gamma</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a63bcabf86a9a991864777c631c5b7617" prot="public">
+          <name>delta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a3cd38ab30e1e7002d239dd1a75a6dfa8" prot="public">
+          <name>epsilon</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ae26026b73cdc3b59012c318ba26b5518" prot="public">
+          <name>zeta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aeba021d91b44a97dec2588bbea58a447" prot="public">
+          <name>eta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a61a74be60d291cc4678ab46cc1cdaf91" prot="public">
+          <name>theta</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a57e5fba4ce5b4cb9ffd595beb63e7389" prot="public">
+          <name>iota</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afe1480ff8b6ed22e7723cda0145ef23d" prot="public">
+          <name>kappa</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a945f3fc449518a73b9f5f32868db466c" prot="public">
+          <name>lambda</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a89aa4b196b48c8a13a6549bb1eaebd80" prot="public">
+          <name>mu</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a0288bde0c2d593f2b5766f61b826a650" prot="public">
+          <name>nu</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad88468fb83a6d5675fcd2bdcb8fa57bf" prot="public">
+          <name>xi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a72ab8af56bddab33b269c5964b26620a" prot="public">
+          <name>pi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a843a28dfdc5b2d5463ba2a7b83fdec7c" prot="public">
+          <name>rho</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ae773536932c61c7ee11944cefde49e30" prot="public">
+          <name>sigma</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a4580c2740ab6d9222ef06d7c6865583e" prot="public">
+          <name>tau</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a36ea51c3032c76487abc87f239bffead" prot="public">
+          <name>upsilon</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7acb7a24bb7528f934b841b34c3a73e0c7" prot="public">
+          <name>phi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a1e6086b705c7161eeb93a8b249a5ca7c" prot="public">
+          <name>chi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a6115baa419ebbdc15cb267c7bec45d26" prot="public">
+          <name>psi</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ac6d6bd7ebf806f43c76acc3681703b81" prot="public">
+          <name>omega</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a2149d7b5f88fa8b7b5e8236f15ca679e" prot="public">
+          <name>sigmaf</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a590f8e60c02b64a7ae3a064dd47c8869" prot="public">
+          <name>sect</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a3e9eb617073a0597ec590d7bd0f2a407" prot="public">
+          <name>deg</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a10f12151ef41361b91ee3fc1065e14d2" prot="public">
+          <name>prime</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7abe7938e9a87618a98a7b6b47e12aa44b" prot="public">
+          <name>Prime</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a6d5c88753c87098973c8e945604d1ce1" prot="public">
+          <name>infin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aa2e4822a98337283e39f7b60acf85ec9" prot="public">
+          <name>empty</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a793f33831b72142b115b2e29f38921c4" prot="public">
+          <name>plusmn</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7af2b798f672d4b42c0359ced11d4f10cd" prot="public">
+          <name>times</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7adabe6e597b70e5760826aea1dcc564f7" prot="public">
+          <name>minus</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad055878b0f9a581664b53d615ff0ec94" prot="public">
+          <name>sdot</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7af4c9385f1902f7334b00b9b4ecd164de" prot="public">
+          <name>part</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aa40b9db0a4ab344566e5d1a4c04d8175" prot="public">
+          <name>nabla</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a88195b2144d1ae920738c1194432f826" prot="public">
+          <name>radic</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a077c307e128497a814f44395db42f9d1" prot="public">
+          <name>perp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a1d623b89683f9ce4e074de1676d12416" prot="public">
+          <name>sum</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" prot="public">
+          <name>int</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad6e4a9b6646c62fc48baa6dd6150d1f7" prot="public">
+          <name>prod</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ae9064b74d28acc053231170bb8c858b3" prot="public">
+          <name>sim</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7af71777de47ae31462ee31723d33c32b0" prot="public">
+          <name>asymp</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad4f917633649a3c47c7ab917fa990146" prot="public">
+          <name>ne</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7abbfd8f991129b1d05c8ce817449307c7" prot="public">
+          <name>equiv</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a23a5b8ab834cb5140fa6665622eb6417" prot="public">
+          <name>prop</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad9180594744f870aeefb086982e980bb" prot="public">
+          <name>le</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a0ba64a0dea00947916dfb6a66866e1ca" prot="public">
+          <name>ge</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a53b7027347eeaea905d664888fdfe40f" prot="public">
+          <name>larr</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afc859493bfd7387faa9a9ea032fa55cf" prot="public">
+          <name>rarr</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a0d9959e8150fc305808d8838e888b622" prot="public">
+          <name>isin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a935f754ecc68ca688f61c154c404ed06" prot="public">
+          <name>notin</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a64538574dea653366b5e0f3cc38042d8" prot="public">
+          <name>lceil</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ab25d6f7fd87f0075c1841cf64f4902f1" prot="public">
+          <name>rceil</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afd5848a957d6b2749418163ca977ddd5" prot="public">
+          <name>lfloor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afc071abb127a6e4ffdb7d263ca8a959d" prot="public">
+          <name>rfloor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="603" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="602" bodyend="687"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1adb41ca18779eed53175de394c3d2bb67" prot="public" static="no">
+        <name>DocRefKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1adb41ca18779eed53175de394c3d2bb67a26154ea007c65f860de5333a555a56cf" prot="public">
+          <name>Compound</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1adb41ca18779eed53175de394c3d2bb67a858ba4765e53c712ef672a9570474b1d" prot="public">
+          <name>Member</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="733" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="732" bodyend="736"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555d" prot="public" static="no">
+        <name>DocSimpleSectKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da4ff2e716a7d06ce5274b4090b39abad3" prot="public">
+          <name>See</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da988fd738de9c6d177440c5dcf69e73ce" prot="public">
+          <name>Return</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555daa517747c3d12f99244ae598910d979c5" prot="public">
+          <name>Author</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da02684cc6b6ea1811a064f475a5fd1d18" prot="public">
+          <name>Authors</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da34b6cd75171affba6957e308dcbd92be" prot="public">
+          <name>Version</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da38c50b731f70abc42c8baa3e7399b413" prot="public">
+          <name>Since</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da44749712dbec183e983dcd78a7736c41" prot="public">
+          <name>Date</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da3b0649c72650c313a357338dcdfb64ec" prot="public">
+          <name>Note</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da0eaadb4fcb48a0a0ed7bc9868be9fbaa" prot="public">
+          <name>Warning</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555dafb55a965b77791b31ffd2bb548f71080" prot="public">
+          <name>Pre</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da03d947a2158373c3b9d74325850cb8b9" prot="public">
+          <name>Post</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da6016a2b341113bf496b719905398ecd2" prot="public">
+          <name>Copyright</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da19c8367b361b73364ac49ad35e5199ab" prot="public">
+          <name>Invariant</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da91921ada405fd6ba65dff028df047cb6" prot="public">
+          <name>Remark</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da2aa97e44cace7cb882c9dcba32940f8f" prot="public">
+          <name>Attention</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555dacb6c0944022191538e11ec9cbda20ab5" prot="public">
+          <name>Par</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555daa1e7b02dcb26fa3eb3e5f21ccee10233" prot="public">
+          <name>Rcs</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="781" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="780" bodyend="799"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1ab21398cff938858e1d9ebdc672403015" prot="public" static="no">
+        <name>DocImageKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ab21398cff938858e1d9ebdc672403015a3135f4019bee015e2d1ae7f77f9f3f64" prot="public">
+          <name>Html</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ab21398cff938858e1d9ebdc672403015a08e3b0db5b64cd1da774369814896b78" prot="public">
+          <name>Latex</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1ab21398cff938858e1d9ebdc672403015aca9a0e8f64d43d81dd7b0225ea1b19c5" prot="public">
+          <name>Rtf</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="897" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="896" bodyend="901"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15" prot="public" static="no">
+        <name>DocParamListKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15a83f499a540b1323009c200d6f8cc9396" prot="public">
+          <name>Parameter</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15aef075575efe2059289041f1118338f18" prot="public">
+          <name>ReturnValue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15ab0d4998a26f5b5742ad38c4af8817e32" prot="public">
+          <name>Exception</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15a26a8c112add071583da644dba9dd1ba2" prot="public">
+          <name>TemplateParam</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="957" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="956" bodyend="962"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1a1884fb8c74d10c2aa19068ac530df736" prot="public" static="no">
+        <name>DocParamDir</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a1884fb8c74d10c2aa19068ac530df736aefeb369cccbd560588a756610865664c" prot="public">
+          <name>In</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a1884fb8c74d10c2aa19068ac530df736a7c147cda9e49590f6abe83d118b7353b" prot="public">
+          <name>Out</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a1884fb8c74d10c2aa19068ac530df736a47a54d9da8952a3980d27488b00a21c1" prot="public">
+          <name>InOut</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="994" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="993" bodyend="998"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9" prot="public" static="no">
+        <name>DocumentMarkupKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a114c3050111d8b8ddd830b99ccebd246" prot="public">
+          <name>Bold</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a43268d52aef2fbd0ba6661b51da1001a" prot="public">
+          <name>Emphasis</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a0f3e8b2d58097e48c8b7c563a39e1b8d" prot="public">
+          <name>ComputerOutput</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9ab77dd152c7c8f548139fff358b4bcbfa" prot="public">
+          <name>SubScript</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9ac8e556630b23f59e22ca247ba837027d" prot="public">
+          <name>SuperScript</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a4f1f6016fc9f3f2353c0cc7c67b292bd" prot="public">
+          <name>Center</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a2660064e68655415da2628c2ae2f7592" prot="public">
+          <name>Small</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9ab4d91030e8bedef67605e32731df7c31" prot="public">
+          <name>Preformatted</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="10" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" bodystart="9" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocConfig.cs" line="7" column="1"/>
+  </compounddef>
+</doxygen>

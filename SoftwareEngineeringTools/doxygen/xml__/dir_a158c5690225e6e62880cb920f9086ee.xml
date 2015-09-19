@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_a158c5690225e6e62880cb920f9086ee" kind="dir">
+    <compoundname>C:/SoftwareEngineeringTools/DocumentGeneratorLib/obj</compoundname>
+    <innerdir refid="dir_ffe411271d88d1a0204e8dbcd571ed7d">C:/SoftwareEngineeringTools/DocumentGeneratorLib/obj/Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/obj/"/>
+  </compounddef>
+</doxygen>

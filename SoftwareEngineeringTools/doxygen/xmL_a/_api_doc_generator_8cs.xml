@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_api_doc_generator_8cs" kind="file">
+    <compoundname>ApiDocGenerator.cs</compoundname>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator" prot="public">SoftwareEngineeringTools::Documentation::ApiDocGenerator</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor" prot="public">SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</innerclass>
+    <innernamespace refid="namespace_software_engineering_tools_1_1_documentation">SoftwareEngineeringTools::Documentation</innernamespace>
+    <innernamespace refid="namespace_software_engineering_tools_1_1_documentation_1_1_doxygen">SoftwareEngineeringTools::Documentation::Doxygen</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs"/>
+  </compounddef>
+</doxygen>

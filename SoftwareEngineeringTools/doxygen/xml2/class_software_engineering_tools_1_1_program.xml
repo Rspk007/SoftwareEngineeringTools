@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_program" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Program</compoundname>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_program_1a9c39b9f8c3af17bfdfb5d018f6d10b50" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SoftwareEngineeringTools.Program.Main</definition>
+        <argsstring>(string[] args)</argsstring>
+        <name>Main</name>
+        <param>
+          <type>string[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/Program.cs" line="13" column="1" bodyfile="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/Program.cs" bodystart="13" bodyend="49"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_program_1a310c870769cf7663eb7f09ec6e0b1dbb" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_testing_1_1_test_results" kindref="compound">TestResults</ref></type>
+        <definition>static TestResults SoftwareEngineeringTools.Program.GenerateTestResults</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateTestResults</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/Program.cs" line="52" column="1" bodyfile="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/Program.cs" bodystart="52" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_program_1a2c63ac2791ba20957b0a7013c3843183" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SoftwareEngineeringTools.Program.Generator_Test</definition>
+        <argsstring>(WordGenerator g)</argsstring>
+        <name>Generator_Test</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator" kindref="compound">WordGenerator</ref></type>
+          <declname>g</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/Program.cs" line="131" column="1" bodyfile="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/Program.cs" bodystart="131" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/Program.cs" line="12" column="1" bodyfile="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/Program.cs" bodystart="11" bodyend="202"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_program_1a310c870769cf7663eb7f09ec6e0b1dbb" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Program</scope><name>GenerateTestResults</name></member>
+      <member refid="class_software_engineering_tools_1_1_program_1a2c63ac2791ba20957b0a7013c3843183" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Program</scope><name>Generator_Test</name></member>
+      <member refid="class_software_engineering_tools_1_1_program_1a9c39b9f8c3af17bfdfb5d018f6d10b50" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Program</scope><name>Main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

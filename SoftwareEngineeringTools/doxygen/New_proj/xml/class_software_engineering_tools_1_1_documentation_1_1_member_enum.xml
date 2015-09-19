@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_member_enum" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::MemberEnum</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxMember</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_member_enum_1a4927d56af27eaf1216151983d8589169" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.MemberEnum.MemberEnum</definition>
+        <argsstring>()</argsstring>
+        <name>MemberEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="344" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="344" bodyend="347"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="492">
+        <label>SoftwareEngineeringTools.Documentation.MemberEnum</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_member_enum"/>
+        <childnode refid="493" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="493">
+        <label>DoxMember</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="494">
+        <label>SoftwareEngineeringTools.Documentation.MemberEnum</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_member_enum"/>
+        <childnode refid="495" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>DoxMember</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="343" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="342" bodyend="348"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ad343e6c7bcd05756ce2c32b737a67634" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Add</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a832335a27473fb2cd348609854556035" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>ArgsString</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac371e61e89ce19bf524d30efd7b518d1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>BitField</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1aba71314188536b49b64189113bd7a8c7" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>BriefDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a478632bedd498e8f8e61dfa6e0f22831" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Const</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1eb51308b74281eaf7d522c9d4e06632" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Definition</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a70bbb9b6d616ed7ae54d01e671faad1a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Description</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1015480bc35f7c3c593953915eb8610c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>DetailedDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4c854f8c5483f1a92a6ebd615326a927" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>DoxMember</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a9fe1bde6686105a9dd6c0c9910a549e5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Exceptions</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1abe888f0db0f72339276c31c9de1e646c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Explicit</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acbbd2c091cfc64128719320a1839444f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Final</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a15a1af098da781facc9b519a4b9e59d2" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Gettable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1af9385f70bb9c39e283ce280067b8baf1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Identifier</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac1cf4b21006d18bb9a291a4c4a556a95" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>InBodyDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a3b4a9d6d45d4382a792fa1db689d4814" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Initializer</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4be4b627d2edf35cadde999039251b78" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Initonly</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a332d236ae4b3488460384d71aa0292c4" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Inline</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a194d376e6cba04cf08962b9655bdcd7c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a8add67cbd787bb019b7b0c7fead1f5e1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Location</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_member_enum_1a4927d56af27eaf1216151983d8589169" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>MemberEnum</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a26a1a38c4fa0066238fccd59fe07e96b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Mutable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acb73cc5a890fa845f8378dbc75248887" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Name</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1abb4ca84b97c69c8a03e3d4c1944b10" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>New</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acfbe71d778fd8cfac409ba43453f0ee4" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Params</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1e12aca663094e4886ffa64905131542" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>ProtectionKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a5c7171ec293e53085550a9a15917b846" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Raise</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a3a6fdbc6523b8aec0841bdc15d7989d7" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Read</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a31aaea33b676da9bfc08ac72bbfc4b60" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>ReferencedBy</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4ab078fa155542c4eb4c0ac661113a86" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>References</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a33a5f8417e8ad3688c3e64da1661d90e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>ReimplementedBy</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1aa37bc34ea6508dbfe714f3ab07bff7ef" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Reimplements</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac7a045bbb7c9e46cf9d05d33ddba4d7b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Remove</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1af4888e13a3903de283573176fff0456f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Sealed</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a86aa36a2a0fedb126b3ea28a3f15cb99" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Settable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac1fe197cd1631d3005cc8cc098a8f8e0" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Static</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ab351c52b2848bc058313dcdc6cf28a88" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>TemplateParams</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ae3b4ea987fe5642fd3f2de0161e7f6c5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>ToString</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a41432e4c58c8c01199ed6cdc85fe985c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Type</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a2701496d26aaf620ea10bc2f019c9444" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>VirtualKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a09bcdd32b6686c94fa9f6d2c84b748c9" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Volatile</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1365d972474a2979c3b743adab712344" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::MemberEnum</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

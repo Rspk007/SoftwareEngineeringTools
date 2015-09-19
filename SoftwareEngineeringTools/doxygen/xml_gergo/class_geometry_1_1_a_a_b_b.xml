@@ -1,0 +1,385 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_geometry_1_1_a_a_b_b" kind="class" prot="public">
+    <compoundname>Geometry::AABB</compoundname>
+    <basecompoundref refid="class_geometry_1_1_bounding_volume" prot="public" virt="non-virtual">Geometry::BoundingVolume&lt; T &gt;</basecompoundref>
+    <includes refid="_a_a_b_b_8h" local="no">AABB.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_geometry_1_1_a_a_b_b_1aa208d421f143ee7d1c3987da538043e0" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; cornerNear</definition>
+        <argsstring></argsstring>
+        <name>cornerNear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="20" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geometry_1_1_a_a_b_b_1a73dd6c8490ac3e7704472f3d2e9714eb" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; cornerFar</definition>
+        <argsstring></argsstring>
+        <name>cornerFar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="21" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_geometry_1_1_a_a_b_b_1ac9c90479b27ea8d59c674275220a389e" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; extents</definition>
+        <argsstring></argsstring>
+        <name>extents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="22" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_geometry_1_1_a_a_b_b_1abd87d1a03c4fa06e281c83b24a08b8cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>AABB</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;corner, const Vector&lt; T &gt; &amp;extents)</argsstring>
+        <name>AABB</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>corner</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>extents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point of the corner in the space, from which the extents will be measured </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>extents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the extents of the <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref> for each dimension </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="31" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="102" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_a_a_b_b_1a5ad7083826748770cbb479eeef716e62" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; getCorner</definition>
+        <argsstring>() const </argsstring>
+        <name>getCorner</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method can return the corner of the <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref>. <simplesect kind="return"><para>- the corner of the <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="39" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="110" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_a_a_b_b_1aa0fa13dd17584cfb58b20ad1c0210a38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setCorner</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;corner)</argsstring>
+        <name>setCorner</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>corner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method can set the corner of the <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>corner</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new corner of the <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="45" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="116" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_a_a_b_b_1afad9994c82c17faf59480d592f84faed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; getExtents</definition>
+        <argsstring>() const </argsstring>
+        <name>getExtents</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method can return the extents of the <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref> for each dimension. <simplesect kind="return"><para>- the extents of the <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="52" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_a_a_b_b_1a6335d7a8c9e1cda553d2d73621fcff77" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; operator[]</definition>
+        <argsstring>(unsigned int index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>index operators They return the extent for the selected dimension. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="60" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="130" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_a_a_b_b_1aa4559350d6968f77e8c1d94965770f1e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const T &amp;</type>
+        <definition>const T &amp; operator[]</definition>
+        <argsstring>(unsigned int index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="61" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_a_a_b_b_1ab976492875a5b4b96d5953b135f163ba" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool containsPoint</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;pointToCheck, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const </argsstring>
+        <name>containsPoint</name>
+        <reimplements refid="class_geometry_1_1_bounding_volume_1a68b13a7b73dc378f894c8e05b4e0dfd4">containsPoint</reimplements>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>pointToCheck</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can decide if a point is in the bounding volume, or not. (points of the surface are also true) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point to be checked </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- true if the point is in the Bounding Volume (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="73" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="141" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_a_a_b_b_1a0ed558489fd932d65c18e1fe6ea5d36f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool fitsPoint</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;pointToCheck, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const </argsstring>
+        <name>fitsPoint</name>
+        <reimplements refid="class_geometry_1_1_bounding_volume_1af76e4d614fde54d8572ff3686b157456">fitsPoint</reimplements>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>pointToCheck</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can decide if a point fits the <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref> or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point to be checked </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- true if the point fits the <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref> (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="83" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="155" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_a_a_b_b_1aae711dcbf18946964b9c42502e9d3377" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>&lt; T &gt; &gt;</type>
+        <definition>Vector&lt; Intersection&lt; T &gt; &gt; intersect</definition>
+        <argsstring>(const Ray&lt; T &gt; &amp;ray, const Vector&lt; Intersection&lt; T &gt;&gt; *bounds=0, const T &amp;scale=T(), const Utilities::TypeOperators&lt; T &gt; &amp;Toperators=Utilities::TypeOperators&lt; T &gt;()) const </argsstring>
+        <name>intersect</name>
+        <reimplements refid="class_geometry_1_1_bounding_volume_1ab7b27cca569f9eae8628dd93e54c2d3e">intersect</reimplements>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_ray" kindref="compound">Ray</ref>&lt; T &gt; &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>&lt; T &gt;&gt; *</type>
+          <declname>bounds</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scale</declname>
+          <defval>T()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+          <defval><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that implements the intersection with the concrete object. If no intersection was found, it will return an empty <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>. (0D <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the intersection ray </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the bounds between the intersection will be looked for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- scale used by ray casting algorithms </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- The collection of intersections in ascending order of dimension time. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="95" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="162" bodyend="233"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents an &quot;Axis Aligned Bounding Box&quot;. It defines all important operations of <ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB</ref>, like intersection with ray, etc. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>IShape&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_shape"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>BoundingVolume&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_bounding_volume"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="0">
+        <label>AABB&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_a_a_b_b"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>IShape&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_shape"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>BoundingVolume&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_bounding_volume"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>AABB&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_a_a_b_b"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="18" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" bodystart="17" bodyend="97"/>
+    <listofallmembers>
+      <member refid="class_geometry_1_1_a_a_b_b_1abd87d1a03c4fa06e281c83b24a08b8cf" prot="public" virt="non-virtual"><scope>Geometry::AABB</scope><name>AABB</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1ab976492875a5b4b96d5953b135f163ba" prot="public" virt="virtual"><scope>Geometry::AABB</scope><name>containsPoint</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1a73dd6c8490ac3e7704472f3d2e9714eb" prot="protected" virt="non-virtual"><scope>Geometry::AABB</scope><name>cornerFar</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1aa208d421f143ee7d1c3987da538043e0" prot="protected" virt="non-virtual"><scope>Geometry::AABB</scope><name>cornerNear</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1ac9c90479b27ea8d59c674275220a389e" prot="protected" virt="non-virtual"><scope>Geometry::AABB</scope><name>extents</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1a0ed558489fd932d65c18e1fe6ea5d36f" prot="public" virt="virtual"><scope>Geometry::AABB</scope><name>fitsPoint</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1a5ad7083826748770cbb479eeef716e62" prot="public" virt="non-virtual"><scope>Geometry::AABB</scope><name>getCorner</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1afad9994c82c17faf59480d592f84faed" prot="public" virt="non-virtual"><scope>Geometry::AABB</scope><name>getExtents</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1aae711dcbf18946964b9c42502e9d3377" prot="public" virt="virtual"><scope>Geometry::AABB</scope><name>intersect</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1a6335d7a8c9e1cda553d2d73621fcff77" prot="public" virt="non-virtual"><scope>Geometry::AABB</scope><name>operator[]</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1aa4559350d6968f77e8c1d94965770f1e" prot="public" virt="non-virtual"><scope>Geometry::AABB</scope><name>operator[]</name></member>
+      <member refid="class_geometry_1_1_a_a_b_b_1aa0fa13dd17584cfb58b20ad1c0210a38" prot="public" virt="non-virtual"><scope>Geometry::AABB</scope><name>setCorner</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

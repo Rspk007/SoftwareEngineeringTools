@@ -1,0 +1,137 @@
+\select@language {magyar}
+\contentsline {chapter}{\numberline {1.}Documentation of the enums}{2}{chapter*.1}
+\contentsline {chapter}{\numberline {2.}Documentation of the interfaces}{3}{chapter*.1}
+\contentsline {chapter}{\numberline {3.}Documentation of the classes}{4}{chapter*.1}
+\contentsline {section}{\numberline {3.1.}Class: AABB}{4}{section*.2}
+\contentsline {subsection}{\numberline {3.1.1.}Fields}{4}{section*.2}
+\contentsline {subsection}{\numberline {3.1.2.}Properties}{4}{section*.2}
+\contentsline {subsection}{\numberline {3.1.3.}Methods}{4}{section*.2}
+\contentsline {section}{\numberline {3.2.}Class: BccGrid}{6}{section*.2}
+\contentsline {subsection}{\numberline {3.2.1.}Fields}{6}{section*.2}
+\contentsline {subsection}{\numberline {3.2.2.}Properties}{6}{section*.2}
+\contentsline {subsection}{\numberline {3.2.3.}Methods}{6}{section*.2}
+\contentsline {section}{\numberline {3.3.}Class: BoundingVolume}{8}{section*.2}
+\contentsline {subsection}{\numberline {3.3.1.}Fields}{8}{section*.2}
+\contentsline {subsection}{\numberline {3.3.2.}Properties}{8}{section*.2}
+\contentsline {subsection}{\numberline {3.3.3.}Methods}{8}{section*.2}
+\contentsline {section}{\numberline {3.4.}Class: CcGrid}{9}{section*.2}
+\contentsline {subsection}{\numberline {3.4.1.}Fields}{9}{section*.2}
+\contentsline {subsection}{\numberline {3.4.2.}Properties}{9}{section*.2}
+\contentsline {subsection}{\numberline {3.4.3.}Methods}{9}{section*.2}
+\contentsline {section}{\numberline {3.5.}Class: Grid}{11}{section*.2}
+\contentsline {subsection}{\numberline {3.5.1.}Fields}{11}{section*.2}
+\contentsline {subsection}{\numberline {3.5.2.}Properties}{11}{section*.2}
+\contentsline {subsection}{\numberline {3.5.3.}Methods}{11}{section*.2}
+\contentsline {section}{\numberline {3.6.}Class: IIntersectable}{11}{section*.2}
+\contentsline {subsection}{\numberline {3.6.1.}Fields}{11}{section*.2}
+\contentsline {subsection}{\numberline {3.6.2.}Properties}{11}{section*.2}
+\contentsline {subsection}{\numberline {3.6.3.}Methods}{11}{section*.2}
+\contentsline {section}{\numberline {3.7.}Class: IShape}{12}{section*.2}
+\contentsline {subsection}{\numberline {3.7.1.}Fields}{12}{section*.2}
+\contentsline {subsection}{\numberline {3.7.2.}Properties}{12}{section*.2}
+\contentsline {subsection}{\numberline {3.7.3.}Methods}{12}{section*.2}
+\contentsline {section}{\numberline {3.8.}Class: Line}{13}{section*.2}
+\contentsline {subsection}{\numberline {3.8.1.}Fields}{13}{section*.2}
+\contentsline {subsection}{\numberline {3.8.2.}Properties}{13}{section*.2}
+\contentsline {subsection}{\numberline {3.8.3.}Methods}{13}{section*.2}
+\contentsline {section}{\numberline {3.9.}Class: Matrix}{14}{section*.2}
+\contentsline {subsection}{\numberline {3.9.1.}Fields}{14}{section*.2}
+\contentsline {subsection}{\numberline {3.9.2.}Properties}{15}{section*.2}
+\contentsline {subsection}{\numberline {3.9.3.}Methods}{15}{section*.2}
+\contentsline {section}{\numberline {3.10.}Class: Plane}{15}{section*.2}
+\contentsline {subsection}{\numberline {3.10.1.}Fields}{15}{section*.2}
+\contentsline {subsection}{\numberline {3.10.2.}Properties}{16}{section*.2}
+\contentsline {subsection}{\numberline {3.10.3.}Methods}{16}{section*.2}
+\contentsline {section}{\numberline {3.11.}Class: Point}{17}{section*.2}
+\contentsline {subsection}{\numberline {3.11.1.}Fields}{17}{section*.2}
+\contentsline {subsection}{\numberline {3.11.2.}Properties}{17}{section*.2}
+\contentsline {subsection}{\numberline {3.11.3.}Methods}{17}{section*.2}
+\contentsline {section}{\numberline {3.12.}Class: Primitive}{17}{section*.2}
+\contentsline {subsection}{\numberline {3.12.1.}Fields}{17}{section*.2}
+\contentsline {subsection}{\numberline {3.12.2.}Properties}{17}{section*.2}
+\contentsline {subsection}{\numberline {3.12.3.}Methods}{17}{section*.2}
+\contentsline {section}{\numberline {3.13.}Class: Ray}{18}{section*.2}
+\contentsline {subsection}{\numberline {3.13.1.}Fields}{18}{section*.2}
+\contentsline {subsection}{\numberline {3.13.2.}Properties}{18}{section*.2}
+\contentsline {subsection}{\numberline {3.13.3.}Methods}{18}{section*.2}
+\contentsline {section}{\numberline {3.14.}Class: Surface}{18}{section*.2}
+\contentsline {subsection}{\numberline {3.14.1.}Fields}{18}{section*.2}
+\contentsline {subsection}{\numberline {3.14.2.}Properties}{18}{section*.2}
+\contentsline {subsection}{\numberline {3.14.3.}Methods}{18}{section*.2}
+\contentsline {section}{\numberline {3.15.}Class: Vector}{20}{section*.2}
+\contentsline {subsection}{\numberline {3.15.1.}Fields}{20}{section*.2}
+\contentsline {subsection}{\numberline {3.15.2.}Properties}{20}{section*.2}
+\contentsline {subsection}{\numberline {3.15.3.}Methods}{20}{section*.2}
+\contentsline {section}{\numberline {3.16.}Class: Filter}{20}{section*.2}
+\contentsline {subsection}{\numberline {3.16.1.}Fields}{20}{section*.2}
+\contentsline {subsection}{\numberline {3.16.2.}Properties}{20}{section*.2}
+\contentsline {subsection}{\numberline {3.16.3.}Methods}{20}{section*.2}
+\contentsline {section}{\numberline {3.17.}Class: ISampleable}{22}{section*.2}
+\contentsline {subsection}{\numberline {3.17.1.}Fields}{22}{section*.2}
+\contentsline {subsection}{\numberline {3.17.2.}Properties}{22}{section*.2}
+\contentsline {subsection}{\numberline {3.17.3.}Methods}{22}{section*.2}
+\contentsline {section}{\numberline {3.18.}Class: LinearCubeFilter}{22}{section*.2}
+\contentsline {subsection}{\numberline {3.18.1.}Fields}{22}{section*.2}
+\contentsline {subsection}{\numberline {3.18.2.}Properties}{22}{section*.2}
+\contentsline {subsection}{\numberline {3.18.3.}Methods}{22}{section*.2}
+\contentsline {section}{\numberline {3.19.}Class: LinearTetraFilter}{23}{section*.2}
+\contentsline {subsection}{\numberline {3.19.1.}Fields}{23}{section*.2}
+\contentsline {subsection}{\numberline {3.19.2.}Properties}{23}{section*.2}
+\contentsline {subsection}{\numberline {3.19.3.}Methods}{23}{section*.2}
+\contentsline {section}{\numberline {3.20.}Class: MarschnerLobb}{23}{section*.2}
+\contentsline {subsection}{\numberline {3.20.1.}Fields}{23}{section*.2}
+\contentsline {subsection}{\numberline {3.20.2.}Properties}{24}{section*.2}
+\contentsline {subsection}{\numberline {3.20.3.}Methods}{24}{section*.2}
+\contentsline {section}{\numberline {3.21.}Class: Volume}{25}{section*.2}
+\contentsline {subsection}{\numberline {3.21.1.}Fields}{25}{section*.2}
+\contentsline {subsection}{\numberline {3.21.2.}Properties}{25}{section*.2}
+\contentsline {subsection}{\numberline {3.21.3.}Methods}{25}{section*.2}
+\contentsline {section}{\numberline {3.22.}Class: FloatOperators}{27}{section*.2}
+\contentsline {subsection}{\numberline {3.22.1.}Fields}{27}{section*.2}
+\contentsline {subsection}{\numberline {3.22.2.}Properties}{27}{section*.2}
+\contentsline {subsection}{\numberline {3.22.3.}Methods}{27}{section*.2}
+\contentsline {section}{\numberline {3.23.}Class: TypeOperators}{28}{section*.2}
+\contentsline {subsection}{\numberline {3.23.1.}Fields}{28}{section*.2}
+\contentsline {subsection}{\numberline {3.23.2.}Properties}{28}{section*.2}
+\contentsline {subsection}{\numberline {3.23.3.}Methods}{28}{section*.2}
+\contentsline {section}{\numberline {3.24.}Class: Camera}{29}{section*.2}
+\contentsline {subsection}{\numberline {3.24.1.}Fields}{29}{section*.2}
+\contentsline {subsection}{\numberline {3.24.2.}Properties}{30}{section*.2}
+\contentsline {subsection}{\numberline {3.24.3.}Methods}{30}{section*.2}
+\contentsline {section}{\numberline {3.25.}Class: Light}{32}{section*.2}
+\contentsline {subsection}{\numberline {3.25.1.}Fields}{32}{section*.2}
+\contentsline {subsection}{\numberline {3.25.2.}Properties}{32}{section*.2}
+\contentsline {subsection}{\numberline {3.25.3.}Methods}{32}{section*.2}
+\contentsline {section}{\numberline {3.26.}Class: ModelSpace}{33}{section*.2}
+\contentsline {subsection}{\numberline {3.26.1.}Fields}{33}{section*.2}
+\contentsline {subsection}{\numberline {3.26.2.}Properties}{33}{section*.2}
+\contentsline {subsection}{\numberline {3.26.3.}Methods}{33}{section*.2}
+\contentsline {section}{\numberline {3.27.}Class: PhongShader}{35}{section*.2}
+\contentsline {subsection}{\numberline {3.27.1.}Fields}{35}{section*.2}
+\contentsline {subsection}{\numberline {3.27.2.}Properties}{35}{section*.2}
+\contentsline {subsection}{\numberline {3.27.3.}Methods}{35}{section*.2}
+\contentsline {section}{\numberline {3.28.}Class: Shader}{36}{section*.2}
+\contentsline {subsection}{\numberline {3.28.1.}Fields}{36}{section*.2}
+\contentsline {subsection}{\numberline {3.28.2.}Properties}{36}{section*.2}
+\contentsline {subsection}{\numberline {3.28.3.}Methods}{36}{section*.2}
+\contentsline {section}{\numberline {3.29.}Class: TGAImage}{37}{section*.2}
+\contentsline {subsection}{\numberline {3.29.1.}Fields}{37}{section*.2}
+\contentsline {subsection}{\numberline {3.29.2.}Properties}{37}{section*.2}
+\contentsline {subsection}{\numberline {3.29.3.}Methods}{37}{section*.2}
+\contentsline {chapter}{\numberline {4.}Documentation of the structs}{38}{section*.2}
+\contentsline {section}{\numberline {4.1.}Struct: Intersection}{38}{section*.3}
+\contentsline {subsection}{\numberline {4.1.1.}Fields}{38}{section*.3}
+\contentsline {subsection}{\numberline {4.1.2.}Properties}{38}{section*.3}
+\contentsline {subsection}{\numberline {4.1.3.}Methods}{38}{section*.3}
+\contentsline {section}{\numberline {4.2.}Struct: Colour}{38}{section*.3}
+\contentsline {subsection}{\numberline {4.2.1.}Fields}{38}{section*.3}
+\contentsline {subsection}{\numberline {4.2.2.}Properties}{38}{section*.3}
+\contentsline {subsection}{\numberline {4.2.3.}Methods}{38}{section*.3}
+\contentsline {section}{\numberline {4.3.}Struct: ImagePlane}{39}{section*.3}
+\contentsline {subsection}{\numberline {4.3.1.}Fields}{39}{section*.3}
+\contentsline {subsection}{\numberline {4.3.2.}Properties}{39}{section*.3}
+\contentsline {subsection}{\numberline {4.3.3.}Methods}{39}{section*.3}
+\contentsline {section}{\numberline {4.4.}Struct: Material}{39}{section*.3}
+\contentsline {subsection}{\numberline {4.4.1.}Fields}{39}{section*.3}
+\contentsline {subsection}{\numberline {4.4.2.}Properties}{39}{section*.3}
+\contentsline {subsection}{\numberline {4.4.3.}Methods}{39}{section*.3}

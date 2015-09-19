@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_api_doc_template_8cs" kind="file">
+    <compoundname>ApiDocTemplate.cs</compoundname>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_brief_description_template" prot="public">SoftwareEngineeringTools::Documentation::BriefDescriptionTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template" prot="public">SoftwareEngineeringTools::Documentation::ClassifierListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_class_list_template" prot="public">SoftwareEngineeringTools::Documentation::ClassListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_description_template" prot="public">SoftwareEngineeringTools::Documentation::DescriptionTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_document_template" prot="public">SoftwareEngineeringTools::Documentation::DocumentTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_object_template" prot="public">SoftwareEngineeringTools::Documentation::DoxygenObjectTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_enum_list_template" prot="public">SoftwareEngineeringTools::Documentation::EnumListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_enum_value_list_template" prot="public">SoftwareEngineeringTools::Documentation::EnumValueListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_field_list_template" prot="public">SoftwareEngineeringTools::Documentation::FieldListTemplate</innerclass>
+    <innerclass refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor" prot="public">SoftwareEngineeringTools::Documentation::IApiDocTemplateProcessor</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_interface_list_template" prot="public">SoftwareEngineeringTools::Documentation::InterfaceListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template" prot="public">SoftwareEngineeringTools::Documentation::MemberListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_method_list_template" prot="public">SoftwareEngineeringTools::Documentation::MethodListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template" prot="public">SoftwareEngineeringTools::Documentation::NamespaceListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_property_list_template" prot="public">SoftwareEngineeringTools::Documentation::PropertyListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_section_template" prot="public">SoftwareEngineeringTools::Documentation::SectionTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_struct_list_template" prot="public">SoftwareEngineeringTools::Documentation::StructListTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_template" prot="public">SoftwareEngineeringTools::Documentation::Template</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_text_template" prot="public">SoftwareEngineeringTools::Documentation::TextTemplate</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template" prot="public">SoftwareEngineeringTools::Documentation::UmlClassDiagramTemplate</innerclass>
+    <innernamespace refid="namespace_software_engineering_tools_1_1_documentation">SoftwareEngineeringTools::Documentation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocTemplate.cs"/>
+  </compounddef>
+</doxygen>

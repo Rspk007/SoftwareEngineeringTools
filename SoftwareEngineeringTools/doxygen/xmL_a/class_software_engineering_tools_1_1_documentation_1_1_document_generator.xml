@@ -1,0 +1,548 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_document_generator" kind="class" prot="public" abstract="yes">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocumentGenerator</compoundname>
+    <basecompoundref refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.IDocumentGenerator</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">IDisposable</basecompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.LatexGenerator</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.WordGenerator</derivedcompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ac293a5f636676bbf7f4183e9aa4439e5" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.BeginList</definition>
+        <argsstring>()</argsstring>
+        <name>BeginList</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a8bb16673fa645991c4ff1c27f3fc78c5">BeginList</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7341918f8ef12c497964a3da86681b4a">BeginList</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a8e6c89f64b72dc406aab016d39ee3c60">BeginList</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="58" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aebd2eac27c0ff8a1dcb9a9e4914a54b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.BeginListItem</definition>
+        <argsstring>(int index, string title)</argsstring>
+        <name>BeginListItem</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1aa6c2854f4670d91a3f16ff52b01c1d44">BeginListItem</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a5c8335a734a3a1df797b23fbb660cfdf">BeginListItem</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a21cf3f4b0aabac4e3a64b0da78cd0212">BeginListItem</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="60" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9398de502d89f600ac1f8ec72e6f1f48" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.BeginMarkup</definition>
+        <argsstring>(DocumentMarkupKind markupKind)</argsstring>
+        <name>BeginMarkup</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a3cc12daff5435cee9b1ab979cf16fa02">BeginMarkup</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ad6732108c1739d704defce5722e112ad">BeginMarkup</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a7606e1f460a2b58245d6dd1418058a11">BeginMarkup</reimplementedby>
+        <param>
+          <type>DocumentMarkupKind</type>
+          <declname>markupKind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a91a317695490efb79505d444d3a6a13b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.BeginReference</definition>
+        <argsstring>(string id)</argsstring>
+        <name>BeginReference</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a13214fe4e418d41d950fc4a10d555de5">BeginReference</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ad2775d476fd5031313f09cb2b47ccefd">BeginReference</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a4b9375291d76298ec961a341f9755996">BeginReference</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="56" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aa6b7b1a10a275fa3833f79c21ad932f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.BeginSectionTitle</definition>
+        <argsstring>(int level, string title, string label)</argsstring>
+        <name>BeginSectionTitle</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a8f4c05966722692fccdd777204393380">BeginSectionTitle</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a0987b0d6682e4edabf9df277a382eecb">BeginSectionTitle</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1accc00e23ef4d7fa36359715ce4bd3845">BeginSectionTitle</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="48" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0b1b0b9fa405181afcca7297b0c429d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.BeginTable</definition>
+        <argsstring>(int rowCount, int colCount)</argsstring>
+        <name>BeginTable</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a5d8fb01ae06f90081dd3a963bcd9f651">BeginTable</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a22a8ae8070617740885509fab8fbb1f1">BeginTable</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1ad25649a8518696de278f7e7c9e36b86f">BeginTable</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>rowCount</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="62" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a142486e159cf18396bad17686c4ece3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.BeginTableCell</definition>
+        <argsstring>(int rowIndex, int colIndex, bool head)</argsstring>
+        <name>BeginTableCell</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ad66435c1af84d56700e94b5dbc3b9b61">BeginTableCell</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a332122bd834cdb6857fab0d76032ffe8">BeginTableCell</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a6cca87392b3e19aa9517edf9d9fec1bc">BeginTableCell</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>rowIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="65" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff1e9792b49b59731026e57040b3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.BeginTableRow</definition>
+        <argsstring>(int rowIndex)</argsstring>
+        <name>BeginTableRow</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a02fae45bd4fcfa6487bb6bafe640a6a3">BeginTableRow</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a285da4d48fe002d10b25a5355317c89d">BeginTableRow</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a4d8c494b4539d97470ea2117a4534439">BeginTableRow</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>rowIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="63" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9fe08809c64a81d6a915169cd655cc3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a87139c6552aa29fbfdc20e07175ca9b5">Dispose</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1adf9f0b03760f695ece98b7c529de9e08">Dispose</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="44" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a06d3076fc6cb5f27e0573fdbc79aa879" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.EndList</definition>
+        <argsstring>()</argsstring>
+        <name>EndList</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ab1245da1f965e0970ee6e9ed8f896621">EndList</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9e77a36261f8f09aa84cf7d15474bf6a">EndList</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a254b01c1abbc805bce33d0827ca12988">EndList</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6cf51dcd959fe8b91f5278dc508cd704" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.EndListItem</definition>
+        <argsstring>(int index)</argsstring>
+        <name>EndListItem</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a2412179b1293273002b7eded51e559b7">EndListItem</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7f8d2121f9dcec7761f7e6ca0416f30a">EndListItem</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a9ef1000c9b7091ca5d654b79edac09a1">EndListItem</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="61" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff9fa315e40775e63fd2b4dc184596" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.EndMarkup</definition>
+        <argsstring>(DocumentMarkupKind markupKind)</argsstring>
+        <name>EndMarkup</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a4d9530cd6d8301f556425393f2548975">EndMarkup</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ab7ca15a96f967639bffafc568bd1723c">EndMarkup</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1ac480b4e09794677ff4c3abce6455aa32">EndMarkup</reimplementedby>
+        <param>
+          <type>DocumentMarkupKind</type>
+          <declname>markupKind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="54" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6bf9ae60215596599442591d3f8e2636" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.EndReference</definition>
+        <argsstring>()</argsstring>
+        <name>EndReference</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a9ff3eb62a7b4c0cea6c861a1cc91d7a9">EndReference</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a8f91c6a140732071c6aaa2fe0e0cdf5d">EndReference</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a7032d09ad0e77686dd17fd063bfd1c90">EndReference</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="57" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a649acf880cf5cdbdf3fe71924de0954e" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.EndSectionTitle</definition>
+        <argsstring>()</argsstring>
+        <name>EndSectionTitle</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ad55a14f9d43ac04deeca2dd038f0d0f3">EndSectionTitle</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a07c29242cafcbc0a0a0ef817ac818ee1">EndSectionTitle</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a6742f94e53dbe5073a80742657e6c938">EndSectionTitle</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="49" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6244abdf686183395fb44339111a7363" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.EndTable</definition>
+        <argsstring>()</argsstring>
+        <name>EndTable</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1aa60905bc36132ff347199ce77b348276">EndTable</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7cce6ca1e8aa6b8cef90411891514e03">EndTable</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1ada6e8d07b97aad9bec46da135423fe99">EndTable</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ad7358d1047a392ce8d23e01d6c541e72" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.EndTableCell</definition>
+        <argsstring>(int rowIndex, int colIndex, bool head)</argsstring>
+        <name>EndTableCell</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1aaf8ae2a4cf6bfe5d9f8ddf5e773a11cd">EndTableCell</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9578ee4b9d513bfcce6b67e60edf2daa">EndTableCell</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a711cd215309963e8548e90ecd98dded4">EndTableCell</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>rowIndex</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>colIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="66" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0c815504fc6e9d7e2c49f114fdd93a88" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.EndTableRow</definition>
+        <argsstring>(int index)</argsstring>
+        <name>EndTableRow</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a7083a998e1f36b78b63b8b6e44fab464">EndTableRow</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a2bdf8d06abfbbd14a61098d04f257811">EndTableRow</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a4b2bf59e116c66b1122740bfc67c53ec">EndTableRow</reimplementedby>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6e0fb6c2edbb674ec4f0048ac1984871" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.NewLabel</definition>
+        <argsstring>(string id)</argsstring>
+        <name>NewLabel</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ad185c68d20bd69fc2ca73c3bae2c40b1">NewLabel</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a013f4974ae15a09e971e8a4ad2d9aca7">NewLabel</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1abb9105e0709c711c7199faa29dbf9331">NewLabel</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="55" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a589f93438eceb47c5fae148ec40418a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.NewParagraph</definition>
+        <argsstring>()</argsstring>
+        <name>NewParagraph</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a7a72bc7b1aa079a13a858377a17e6f36">NewParagraph</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9633a779ddcb54100666f79e0de6c168">NewParagraph</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a30e09031fd81ba57185fb44d9b0d5f2f">NewParagraph</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="50" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a17021c5059b0dee77f60d085567d6265" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.PrintText</definition>
+        <argsstring>(string text, bool insertSpace=true)</argsstring>
+        <name>PrintText</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a7f9eb01667e631ecb1b682db6caabbf7">PrintText</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a0f9a35a1a27283cdb3d521c10439b9c0">PrintText</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1aeea13e32835b1af446a27f4ed4977c5a">PrintText</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>insertSpace</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="51" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9806a5f0d5c0fea55cc7247ca6ea1d70" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.PrintVerbatimText</definition>
+        <argsstring>(string text)</argsstring>
+        <name>PrintVerbatimText</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ae34962fbf96a9e96668dcc2c7782db5f">PrintVerbatimText</reimplements>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a675486162fd632b87673d1533cce276a">PrintVerbatimText</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a888eb271c27f9419b29eb38cbd00af66">PrintVerbatimText</reimplementedby>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="52" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6dcea40e796970bba1229a2e513fdb56" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.BeginDocument</definition>
+        <argsstring>()</argsstring>
+        <name>BeginDocument</name>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a415cd0402059b26675d15c4679013635">BeginDocument</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a8bde307f2f0e1951ef630820826d87d0">BeginDocument</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="46" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ae367934e4153adfd260dec902d0e69d5" prot="protected" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>abstract void</type>
+        <definition>abstract void SoftwareEngineeringTools.Documentation.DocumentGenerator.EndDocument</definition>
+        <argsstring>()</argsstring>
+        <name>EndDocument</name>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a24103014a84ca959b9df44d9c298af48">EndDocument</reimplementedby>
+        <reimplementedby refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a0aadbc1dd71ab337f09e4e939915666e">EndDocument</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="47" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="614">
+        <label>SoftwareEngineeringTools.Documentation.LatexGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator"/>
+        <childnode refid="611" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="613">
+        <label>IDisposable</label>
+      </node>
+      <node id="615">
+        <label>SoftwareEngineeringTools.Documentation.WordGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator"/>
+        <childnode refid="611" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="611">
+        <label>SoftwareEngineeringTools.Documentation.DocumentGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator"/>
+        <childnode refid="612" relation="public-inheritance">
+        </childnode>
+        <childnode refid="613" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="612">
+        <label>IDocumentGenerator</label>
+        <link refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="618">
+        <label>IDisposable</label>
+      </node>
+      <node id="616">
+        <label>SoftwareEngineeringTools.Documentation.DocumentGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator"/>
+        <childnode refid="617" relation="public-inheritance">
+        </childnode>
+        <childnode refid="618" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="617">
+        <label>IDocumentGenerator</label>
+        <link refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator"/>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" line="43" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/DocumentGeneratorLib/DocumentGenerator.cs" bodystart="42" bodyend="68"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6dcea40e796970bba1229a2e513fdb56" prot="protected" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>BeginDocument</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ac293a5f636676bbf7f4183e9aa4439e5" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>BeginList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aebd2eac27c0ff8a1dcb9a9e4914a54b6" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>BeginListItem</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9398de502d89f600ac1f8ec72e6f1f48" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>BeginMarkup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a91a317695490efb79505d444d3a6a13b" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>BeginReference</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aa6b7b1a10a275fa3833f79c21ad932f8" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>BeginSectionTitle</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0b1b0b9fa405181afcca7297b0c429d7" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>BeginTable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a142486e159cf18396bad17686c4ece3b" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>BeginTableCell</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff1e9792b49b59731026e57040b3d4" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>BeginTableRow</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9fe08809c64a81d6a915169cd655cc3f" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>Dispose</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ae367934e4153adfd260dec902d0e69d5" prot="protected" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>EndDocument</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a06d3076fc6cb5f27e0573fdbc79aa879" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>EndList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6cf51dcd959fe8b91f5278dc508cd704" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>EndListItem</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff9fa315e40775e63fd2b4dc184596" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>EndMarkup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6bf9ae60215596599442591d3f8e2636" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>EndReference</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a649acf880cf5cdbdf3fe71924de0954e" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>EndSectionTitle</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6244abdf686183395fb44339111a7363" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>EndTable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ad7358d1047a392ce8d23e01d6c541e72" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>EndTableCell</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0c815504fc6e9d7e2c49f114fdd93a88" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>EndTableRow</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6e0fb6c2edbb674ec4f0048ac1984871" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>NewLabel</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a589f93438eceb47c5fae148ec40418a6" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>NewParagraph</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a17021c5059b0dee77f60d085567d6265" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>PrintText</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9806a5f0d5c0fea55cc7247ca6ea1d70" prot="public" virt="pure-virtual"><scope>SoftwareEngineeringTools::Documentation::DocumentGenerator</scope><name>PrintVerbatimText</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

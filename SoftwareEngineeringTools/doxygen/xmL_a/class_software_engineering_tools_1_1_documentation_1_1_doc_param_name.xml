@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocParamName</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_1a84eadb221dca0122ae106517972c7ad4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>DocParamDir</type>
+        <definition>DocParamDir SoftwareEngineeringTools.Documentation.DocParamName.Direction</definition>
+        <argsstring></argsstring>
+        <name>Direction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="981" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="981" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_1ab7dec2f8730fe0d01e3e58ea7005ea2b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference" kindref="compound">DocReference</ref></type>
+        <definition>DocReference SoftwareEngineeringTools.Documentation.DocParamName.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="980" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="980" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="549">
+        <label>SoftwareEngineeringTools.Documentation.DocParamName</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name"/>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="979" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="978" bodyend="982"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_1a84eadb221dca0122ae106517972c7ad4" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocParamName</scope><name>Direction</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_1ab7dec2f8730fe0d01e3e58ea7005ea2b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocParamName</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

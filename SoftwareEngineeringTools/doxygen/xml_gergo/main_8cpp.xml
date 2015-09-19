@@ -1,0 +1,617 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="main_8cpp" kind="file">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includes refid="_constants_8h" local="yes">Constants.h</includes>
+    <includes refid="_type_operators_8h" local="yes">TypeOperators.h</includes>
+    <includes refid="_float_operators_8h" local="yes">FloatOperators.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includes refid="_marschner_lobb_8h" local="yes">MarschnerLobb.h</includes>
+    <includes refid="_bcc_grid_8h" local="yes">BccGrid.h</includes>
+    <includes refid="_cc_grid_8h" local="yes">CcGrid.h</includes>
+    <includes refid="_linear_tetra_filter_8h" local="yes">LinearTetraFilter.h</includes>
+    <includes refid="_linear_cube_filter_8h" local="yes">LinearCubeFilter.h</includes>
+    <includes refid="_a_a_b_b_8h" local="yes">AABB.h</includes>
+    <includes refid="_light_8h" local="yes">Light.h</includes>
+    <includes refid="_phong_shader_8h" local="yes">PhongShader.h</includes>
+    <includes refid="_model_space_8h" local="yes">ModelSpace.h</includes>
+    <includes refid="_image_plane_8h" local="yes">ImagePlane.h</includes>
+    <includes refid="_camera_8h" local="yes">Camera.h</includes>
+    <includes refid="_colour_8h" local="yes">Colour.h</includes>
+    <includes refid="_t_g_a_image_8h" local="yes">TGAImage.h</includes>
+    <incdepgraph>
+      <node id="344">
+        <label>LinearCubeFilter.h</label>
+        <link refid="_linear_cube_filter_8h"/>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>Shader.h</label>
+        <link refid="_shader_8h"/>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>Vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>Új mappa/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="329" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="342" relation="include">
+        </childnode>
+        <childnode refid="344" relation="include">
+        </childnode>
+        <childnode refid="345" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>TGAImage.h</label>
+        <link refid="_t_g_a_image_8h"/>
+        <childnode refid="357" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="320" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="352" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>cmath</label>
+      </node>
+      <node id="324">
+        <label>stdexcept</label>
+      </node>
+      <node id="330">
+        <label>MarschnerLobb.h</label>
+        <link refid="_marschner_lobb_8h"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+      </node>
+      <node id="321">
+        <label>string</label>
+      </node>
+      <node id="354">
+        <label>ImagePlane.h</label>
+        <link refid="_image_plane_8h"/>
+      </node>
+      <node id="358">
+        <label>fstream</label>
+      </node>
+      <node id="326">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="324" relation="include">
+        </childnode>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+      </node>
+      <node id="337">
+        <label>Line.h</label>
+        <link refid="_line_8h"/>
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="340">
+        <label>Grid.h</label>
+        <link refid="_grid_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="335">
+        <label>IIntersectable.h</label>
+        <link refid="_i_intersectable_8h"/>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="347">
+        <label>IShape.h</label>
+        <link refid="_i_shape_8h"/>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+      <node id="334">
+        <label>Material.h</label>
+        <link refid="_material_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="339">
+        <label>BccGrid.h</label>
+        <link refid="_bcc_grid_8h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>PhongShader.h</label>
+        <link refid="_phong_shader_8h"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="331">
+        <label>Volume.h</label>
+        <link refid="_volume_8h"/>
+        <childnode refid="332" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+      </node>
+      <node id="329">
+        <label>FloatOperators.h</label>
+        <link refid="_float_operators_8h"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>ModelSpace.h</label>
+        <link refid="_model_space_8h"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="338" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="348" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>vector</label>
+      </node>
+      <node id="348">
+        <label>Light.h</label>
+        <link refid="_light_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="336">
+        <label>Ray.h</label>
+        <link refid="_ray_8h"/>
+        <childnode refid="337" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>iostream</label>
+      </node>
+      <node id="328">
+        <label>TypeOperators.h</label>
+        <link refid="_type_operators_8h"/>
+      </node>
+      <node id="346">
+        <label>BoundingVolume.h</label>
+        <link refid="_bounding_volume_8h"/>
+        <childnode refid="347" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+      </node>
+      <node id="342">
+        <label>LinearTetraFilter.h</label>
+        <link refid="_linear_tetra_filter_8h"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="343" relation="include">
+        </childnode>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="339" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>Primitive.h</label>
+        <link refid="_primitive_8h"/>
+      </node>
+      <node id="322">
+        <label>Constants.h</label>
+        <link refid="_constants_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+      </node>
+      <node id="343">
+        <label>Filter.h</label>
+        <link refid="_filter_8h"/>
+        <childnode refid="331" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="340" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+      </node>
+      <node id="332">
+        <label>ISampleable.h</label>
+        <link refid="_i_sampleable_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>set</label>
+      </node>
+      <node id="341">
+        <label>CcGrid.h</label>
+        <link refid="_cc_grid_8h"/>
+        <childnode refid="340" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="345">
+        <label>AABB.h</label>
+        <link refid="_a_a_b_b_8h"/>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+      <node id="338">
+        <label>Surface.h</label>
+        <link refid="_surface_8h"/>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="333" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>Intersection.h</label>
+        <link refid="_intersection_8h"/>
+        <childnode refid="323" relation="include">
+        </childnode>
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="335" relation="include">
+        </childnode>
+        <childnode refid="336" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>(int argc, char **argv)</argsstring>
+        <name>main</name>
+        <param>
+          <type>int</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>char **</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/main.cpp" line="26" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/main.cpp" bodystart="26" bodyend="129"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_constants_8h" kindref="compound">Constants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_type_operators_8h" kindref="compound">TypeOperators.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_float_operators_8h" kindref="compound">FloatOperators.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vector_8h" kindref="compound">Vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_marschner_lobb_8h" kindref="compound">MarschnerLobb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bcc_grid_8h" kindref="compound">BccGrid.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_cc_grid_8h" kindref="compound">CcGrid.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_linear_tetra_filter_8h" kindref="compound">LinearTetraFilter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_linear_cube_filter_8h" kindref="compound">LinearCubeFilter.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_a_b_b_8h" kindref="compound">AABB.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_light_8h" kindref="compound">Light.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_phong_shader_8h" kindref="compound">PhongShader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_model_space_8h" kindref="compound">ModelSpace.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_image_plane_8h" kindref="compound">ImagePlane.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_camera_8h" kindref="compound">Camera.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_colour_8h" kindref="compound">Colour.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_t_g_a_image_8h" kindref="compound">TGAImage.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Visualisation;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Geometry;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Sampling;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kindref="member">main</ref><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">**<sp/>argv)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|--------------------------------------------|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|----<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>----|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|----<sp/><sp/>VOLUME<sp/>VISUALISATION<sp/>ON<sp/>BCC<sp/>GRID<sp/><sp/>----|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|----<sp/>Created<sp/>by:<sp/>Gergely<sp/>Racz,<sp/>BME<sp/>2014<sp/>----|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|----<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>----|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;|--------------------------------------------|&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>INITIALISATIONS<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>ask<sp/>user<sp/>for<sp/>filename</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>fileName;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Please<sp/>give<sp/>in<sp/>the<sp/>filename:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cin<sp/>&gt;&gt;<sp/>fileName;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>TypeOperator<sp/>object<sp/>for<sp/>the<sp/>computations<sp/>(float)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_utilities_1_1_float_operators" kindref="compound">Utilities::FloatOperators</ref><sp/>floatOperators<sp/>=<sp/><ref refid="class_utilities_1_1_float_operators" kindref="compound">Utilities::FloatOperators</ref>(<sp/><ref refid="namespace_constants_1afe01386a82fedc016455a43c20280a97" kindref="member">Constants::EPS</ref><sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>allocate<sp/>buffer<sp/>for<sp/>the<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref><sp/>imgBuffer[<ref refid="namespace_constants_1ae417092bdc7c7f8cb0cd094d96ef5b61" kindref="member">Constants::H_RES</ref><sp/>*<sp/><ref refid="namespace_constants_1ab4ffa4d639f6b402cafb60f8a66a1e2e" kindref="member">Constants::V_RES</ref>];</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>and<sp/>parametrize<sp/>the<sp/>volume<sp/>for<sp/>visualisation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sampling_1_1_marschner_lobb" kindref="compound">MarschnerLobb&lt;float&gt;</ref><sp/>volume<sp/>=<sp/><ref refid="class_sampling_1_1_marschner_lobb" kindref="compound">MarschnerLobb&lt;float&gt;</ref>(</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_constants_1a2a2465cdd41a4755301d4ee247449d1e" kindref="member">Constants::ML_FM</ref>,<sp/><ref refid="namespace_constants_1aa006eac16e80c605250da41918c1ede3" kindref="member">Constants::ML_ALPHA</ref>,<sp/><ref refid="namespace_constants_1add93784f94503f27d7d821e9a9bf3ded" kindref="member">Constants::ML_ISO</ref>,<sp/>&amp;<ref refid="namespace_visualisation_1a8b565f7ca802e43cee5406f2d6c06206" kindref="member">Visualisation::MATERIAL_CYAN_PLASTIC</ref><sp/>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>a<sp/>grid,<sp/>on<sp/>which<sp/>the<sp/>volume<sp/>can<sp/>be<sp/>filtered</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>girdBaseCoords[]<sp/>=<sp/>{0.0f,<sp/>0.0f,<sp/>0.0f};</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>gridBase(<sp/>3,<sp/>girdBaseCoords<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_bcc_grid" kindref="compound">BccGrid&lt;float&gt;</ref><sp/>bcc<sp/>=<sp/><ref refid="class_geometry_1_1_bcc_grid" kindref="compound">BccGrid&lt;float&gt;</ref>(<sp/>gridBase,<sp/><ref refid="namespace_constants_1a483d920d2dc7b2bc287c698a71f37e33" kindref="member">Constants::GRID_SIDELENGTH</ref><sp/>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>a<sp/>filter<sp/>for<sp/>the<sp/>volume</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sampling_1_1_linear_tetra_filter" kindref="compound">LinearTetraFilter&lt;float&gt;</ref><sp/>filter<sp/>=<sp/><ref refid="class_sampling_1_1_linear_tetra_filter" kindref="compound">LinearTetraFilter&lt;float&gt;</ref>(<sp/>&amp;volume,<sp/>&amp;bcc<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>filter.deactivate();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>DEFINE<sp/>MODEL<sp/>SPACE<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>bounding<sp/>volume</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>boundingVolumeCornerCoords[]<sp/>=<sp/>{-1.0f,<sp/>-1.0f,<sp/>-1.0f};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>boundingVolumeCorner(<sp/>3,<sp/>boundingVolumeCornerCoords<sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>boundingVolumeExtentsCoords[]<sp/>=<sp/>{2.0f,<sp/>2.0f,<sp/>2.0f};</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>boundingVolumeExtents(<sp/>3,<sp/>boundingVolumeExtentsCoords<sp/>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB&lt;float&gt;</ref><sp/>boundingVolume<sp/>=<sp/><ref refid="class_geometry_1_1_a_a_b_b" kindref="compound">AABB&lt;float&gt;</ref>(<sp/>boundingVolumeCorner,<sp/>boundingVolumeExtents<sp/>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>define<sp/>light<sp/>sources<sp/>in<sp/>the<sp/>model<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lightPositionCoords1[]<sp/>=<sp/>{2.0f,<sp/>2.0f,<sp/>2.0f};</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>lightPosition1(<sp/>3,<sp/>lightPositionCoords1<sp/>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>lightIntensityCoords1[]<sp/>=<sp/>{1.0f,<sp/>1.0f,<sp/>1.0f};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>lightIntensity1<sp/>=<sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;float&gt;</ref>(3,<sp/>lightIntensityCoords1);<sp/></highlight><highlight class="comment">//<sp/>light<sp/>intensity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_light" kindref="compound">Light&lt;float&gt;</ref><sp/>light1<sp/>=<sp/><ref refid="class_visualisation_1_1_light" kindref="compound">Light&lt;float&gt;</ref>(<sp/>lightPosition1,<sp/>lightIntensity1<sp/>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/>float<sp/>lightPositionCoords2[]<sp/>=<sp/>{2.0f,<sp/>-2.0f,<sp/>2.0f};</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/>Vector&lt;float&gt;<sp/>lightPosition2(<sp/>3,<sp/>lightPositionCoords2<sp/>);</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/>float<sp/>lightIntensityCoords2[]<sp/>=<sp/>{1.0f,<sp/>1.0f,<sp/>1.0f};</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/>Vector&lt;float&gt;<sp/>lightIntensity2<sp/>=<sp/>Vector&lt;float&gt;(3,<sp/>lightIntensityCoords2);<sp/>//<sp/>light<sp/>intensity</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/>Light&lt;float&gt;<sp/>light2<sp/>=<sp/>Light&lt;float&gt;(<sp/>lightPosition2,<sp/>lightIntensity2<sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>a<sp/>shader<sp/>object<sp/>to<sp/>be<sp/>used<sp/>for<sp/>shading<sp/>the<sp/>objects<sp/>in<sp/>the<sp/>model<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_phong_shader" kindref="compound">PhongShader&lt;float&gt;</ref><sp/>shader;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>the<sp/>model<sp/>space<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_model_space" kindref="compound">ModelSpace&lt;float&gt;</ref><sp/>modelSpace<sp/>=<sp/><ref refid="class_visualisation_1_1_model_space" kindref="compound">ModelSpace&lt;float&gt;</ref>(<sp/>&amp;boundingVolume,<sp/>&amp;shader<sp/>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>modelSpace.<ref refid="class_visualisation_1_1_model_space_1a33ce733b69b82b6c7cad50fcc752525b" kindref="member">addObject</ref>(<sp/>&amp;filter<sp/>);<sp/></highlight><highlight class="comment">//<sp/>adding<sp/>objects<sp/>to<sp/>the<sp/>model<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>modelSpace.<ref refid="class_visualisation_1_1_model_space_1a4c60888619e96eb8ca8fb827a84e4a8a" kindref="member">addLight</ref>(<sp/>&amp;light1<sp/>);<sp/></highlight><highlight class="comment">//<sp/>adding<sp/>lightsources<sp/>to<sp/>the<sp/>model<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//modelSpace.addLight(<sp/>&amp;light2<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>define<sp/>the<sp/>image<sp/>plane<sp/>for<sp/>the<sp/>camera<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_image_plane" kindref="compound">ImagePlane&lt;float&gt;</ref><sp/>imagePlane<sp/>=<sp/><ref refid="struct_visualisation_1_1_image_plane" kindref="compound">ImagePlane&lt;float&gt;</ref>(</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_constants_1a1a3b68052f0b109e562e7647944a2366" kindref="member">Constants::IMGPLANE_D</ref>,</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_constants_1a50838ab1127ceb8d0ddde9aefa1a627f" kindref="member">Constants::IMGPLANE_L</ref>,<sp/><ref refid="namespace_constants_1a401a5aee262e4a428bc2fffc62bdb77f" kindref="member">Constants::IMGPLANE_R</ref>,</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespace_constants_1a8ba6842600e3c0fda4cbb86704a7ffae" kindref="member">Constants::IMGPLANE_B</ref>,<sp/><ref refid="namespace_constants_1a19fe007947c86f93941d4a70a4816988" kindref="member">Constants::IMGPLANE_T</ref><sp/>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>define<sp/>the<sp/>camera<sp/>object<sp/>to<sp/>be<sp/>able<sp/>to<sp/>capture<sp/>the<sp/>model<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cameraPositionCoords[]<sp/>=<sp/>{5.0f,<sp/>0.0f,<sp/>4.0f};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>cameraPosition(<sp/>3,<sp/>cameraPositionCoords<sp/>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cameraTargetCoords[]<sp/>=<sp/>{0.5f,<sp/>0.0f,<sp/>0.0f};</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>cameraTarget(<sp/>3,<sp/>cameraTargetCoords<sp/>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>cameraUpCoords[]<sp/>=<sp/>{0.0f,<sp/>0.0f,<sp/>1.0f};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;float&gt;</ref><sp/>cameraUp(<sp/>3,<sp/>cameraUpCoords<sp/>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_camera" kindref="compound">Camera&lt;float&gt;</ref><sp/>camera<sp/>=<sp/><ref refid="class_visualisation_1_1_camera" kindref="compound">Camera&lt;float&gt;</ref>(<sp/>cameraPosition,<sp/>cameraTarget,<sp/>cameraUp,<sp/>imagePlane,<sp/><ref refid="namespace_constants_1a4f159bf187491542eb50806dfdc1110f" kindref="member">Constants::SCALE</ref><sp/>);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>COMPUTING<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Starting<sp/>to<sp/>create<sp/>the<sp/>image,<sp/>please<sp/>wait!<sp/>It<sp/>may<sp/>take<sp/>a<sp/>long<sp/>time.<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>capture<sp/>the<sp/>model<sp/>with<sp/>the<sp/>camera<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>camera.<ref refid="class_visualisation_1_1_camera_1ae82c208ee6495d11bd3055cf4db8772a" kindref="member">capture</ref>(<sp/>modelSpace,<sp/>imgBuffer,<sp/><ref refid="namespace_constants_1ae417092bdc7c7f8cb0cd094d96ef5b61" kindref="member">Constants::H_RES</ref>,<sp/><ref refid="namespace_constants_1ab4ffa4d639f6b402cafb60f8a66a1e2e" kindref="member">Constants::V_RES</ref>,<sp/>floatOperators<sp/>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>std::endl<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Ready.<sp/>The<sp/>image<sp/>has<sp/>been<sp/>successfully<sp/>built.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Start<sp/>to<sp/>save<sp/>the<sp/>image<sp/>into<sp/>the<sp/>file<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fileName<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>save<sp/>the<sp/>captured<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_t_g_a_image" kindref="compound">TGAImage</ref><sp/>tga<sp/>=<sp/><ref refid="class_visualisation_1_1_t_g_a_image" kindref="compound">TGAImage</ref>(<sp/>imgBuffer,<sp/><ref refid="namespace_constants_1ae417092bdc7c7f8cb0cd094d96ef5b61" kindref="member">Constants::H_RES</ref>,<sp/><ref refid="namespace_constants_1ab4ffa4d639f6b402cafb60f8a66a1e2e" kindref="member">Constants::V_RES</ref><sp/>);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>tga.<ref refid="class_visualisation_1_1_t_g_a_image_1a0a81640808e5f881d8eca703459781a6" kindref="member">WriteImage</ref>(<sp/>fileName<sp/>)<sp/>)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;The<sp/>image<sp/>has<sp/>been<sp/>successfully<sp/>saved<sp/>into<sp/>the<sp/>file<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>fileName<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;.\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;An<sp/>error<sp/>has<sp/>occured<sp/>while<sp/>saving<sp/>the<sp/>image!\n<sp/>Please<sp/>check<sp/>the<sp/>parameters,<sp/>and<sp/>run<sp/>the<sp/>program<sp/>again.\n&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>-1;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/main.cpp"/>
+  </compounddef>
+</doxygen>

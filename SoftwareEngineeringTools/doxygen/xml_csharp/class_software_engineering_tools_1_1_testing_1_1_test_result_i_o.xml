@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_testing_1_1_test_result_i_o" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Testing::TestResultIO</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_testing_1_1_test_result_i_o_1a5b7698d8f3e9d5cef0ba629868824756" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void SoftwareEngineeringTools.Testing.TestResultIO.SaveTestResults</definition>
+        <argsstring>(TestResults testResults, string fileName)</argsstring>
+        <name>SaveTestResults</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_testing_1_1_test_results" kindref="compound">TestResults</ref></type>
+          <declname>testResults</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="182" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="182" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_testing_1_1_test_result_i_o_1a955bfe384c2b89548664dd8d0f176824" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_testing_1_1_test_results" kindref="compound">TestResults</ref></type>
+        <definition>static TestResults SoftwareEngineeringTools.Testing.TestResultIO.LoadTestResults</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadTestResults</name>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="193" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="193" bodyend="200"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="181" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="180" bodyend="201"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_result_i_o_1a955bfe384c2b89548664dd8d0f176824" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestResultIO</scope><name>LoadTestResults</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_result_i_o_1a5b7698d8f3e9d5cef0ba629868824756" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestResultIO</scope><name>SaveTestResults</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

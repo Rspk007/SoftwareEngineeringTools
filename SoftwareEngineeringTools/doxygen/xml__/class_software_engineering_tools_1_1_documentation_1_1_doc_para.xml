@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_para" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocPara</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocCmdGroup</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_para_1af311f79854670eededd4fc6d7525882f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocPara.DocPara</definition>
+        <argsstring>()</argsstring>
+        <name>DocPara</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="508" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="508" bodyend="511"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="191">
+        <label>DocCmdGroup</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="190">
+        <label>SoftwareEngineeringTools.Documentation.DocPara</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para"/>
+        <childnode refid="191" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="194">
+        <label>DocCmdGroup</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group"/>
+        <childnode refid="195" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="193">
+        <label>SoftwareEngineeringTools.Documentation.DocPara</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para"/>
+        <childnode refid="194" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="507" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="506" bodyend="512"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group_1ac6f2fb2ec29fc2eeac0f46740b2c5144" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocPara</scope><name>Commands</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocPara</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group_1adc2876c88d61e89b18cf833132a0def5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocPara</scope><name>DocCmdGroup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_1af311f79854670eededd4fc6d7525882f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocPara</scope><name>DocPara</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocPara</scope><name>Kind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

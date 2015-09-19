@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxReference</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxLinkedTextItem</basecompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxCodeLine</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1af1adff120d9414e232e8d95edcb3a206" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kindref="compound">Compound</ref></type>
+        <definition>Compound SoftwareEngineeringTools.Documentation.DoxReference.Compound</definition>
+        <argsstring></argsstring>
+        <name>Compound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="345" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1ac5ed2eb3dd985eab60870b9c08d4f372" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxReference.External</definition>
+        <argsstring></argsstring>
+        <name>External</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="349" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="349" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1adb1f886d99397b8aae2b710d179ce78a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref></type>
+        <definition>DoxMember SoftwareEngineeringTools.Documentation.DoxReference.Member</definition>
+        <argsstring></argsstring>
+        <name>Member</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="346" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1acfca92115ed5987873af1cb404b777a8" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>ProtectionKind</type>
+        <definition>ProtectionKind SoftwareEngineeringTools.Documentation.DoxReference.ProtectionKind</definition>
+        <argsstring></argsstring>
+        <name>ProtectionKind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="347" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1a4a90f69f52eef9dc448ab9224b0bd2ba" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxReference.Tooltip</definition>
+        <argsstring></argsstring>
+        <name>Tooltip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="350" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="350" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1a607a1e892b5e0ab21af53d75a6cad17b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>VirtualKind</type>
+        <definition>VirtualKind SoftwareEngineeringTools.Documentation.DoxReference.VirtualKind</definition>
+        <argsstring></argsstring>
+        <name>VirtualKind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="348" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="348" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="723">
+        <label>DoxLinkedTextItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item"/>
+      </node>
+      <node id="724">
+        <label>SoftwareEngineeringTools.Documentation.DoxCodeLine</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line"/>
+        <childnode refid="722" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="722">
+        <label>SoftwareEngineeringTools.Documentation.DoxReference</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference"/>
+        <childnode refid="723" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="726">
+        <label>DoxLinkedTextItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item"/>
+      </node>
+      <node id="725">
+        <label>SoftwareEngineeringTools.Documentation.DoxReference</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference"/>
+        <childnode refid="726" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="344" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="343" bodyend="351"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1af1adff120d9414e232e8d95edcb3a206" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxReference</scope><name>Compound</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1ac5ed2eb3dd985eab60870b9c08d4f372" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxReference</scope><name>External</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1adb1f886d99397b8aae2b710d179ce78a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxReference</scope><name>Member</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1acfca92115ed5987873af1cb404b777a8" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxReference</scope><name>ProtectionKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item_1a2bb49a433d3cd0bae57d844da0743c7e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxReference</scope><name>Text</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1a4a90f69f52eef9dc448ab9224b0bd2ba" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxReference</scope><name>Tooltip</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1a607a1e892b5e0ab21af53d75a6cad17b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxReference</scope><name>VirtualKind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxygenIndex</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a88b89adaec87d27c1f8bcc591fad568b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Dictionary&lt; string, <ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index" kindref="compound">CompoundIndex</ref> &gt;</type>
+        <definition>Dictionary&lt;string,CompoundIndex&gt; SoftwareEngineeringTools.Documentation.DoxygenIndex.CompoundIndexRefs</definition>
+        <argsstring></argsstring>
+        <name>CompoundIndexRefs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="10" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a622b810e809f28139b79b1f68219d4a3" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Dictionary&lt; string, <ref refid="class_software_engineering_tools_1_1_documentation_1_1_member_index" kindref="compound">MemberIndex</ref> &gt;</type>
+        <definition>Dictionary&lt;string,MemberIndex&gt; SoftwareEngineeringTools.Documentation.DoxygenIndex.MemberIndexRefs</definition>
+        <argsstring></argsstring>
+        <name>MemberIndexRefs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="11" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a2404d2a8a639f5a475a044a1ce37f6df" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxygenIndex.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="12" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a947083d15b69cc2e070f905c0e10c129" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index" kindref="compound">CompoundIndex</ref> &gt;</type>
+        <definition>List&lt;CompoundIndex&gt; SoftwareEngineeringTools.Documentation.DoxygenIndex.Compounds</definition>
+        <argsstring></argsstring>
+        <name>Compounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="13" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1afe55b8cfea9c3832ed08b9bff3bbc270" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DoxygenIndex.DoxygenIndex</definition>
+        <argsstring>()</argsstring>
+        <name>DoxygenIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="14" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="14" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="9" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="8" bodyend="20"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a88b89adaec87d27c1f8bcc591fad568b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenIndex</scope><name>CompoundIndexRefs</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a947083d15b69cc2e070f905c0e10c129" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenIndex</scope><name>Compounds</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1afe55b8cfea9c3832ed08b9bff3bbc270" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenIndex</scope><name>DoxygenIndex</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a622b810e809f28139b79b1f68219d4a3" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenIndex</scope><name>MemberIndexRefs</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a2404d2a8a639f5a475a044a1ce37f6df" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenIndex</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

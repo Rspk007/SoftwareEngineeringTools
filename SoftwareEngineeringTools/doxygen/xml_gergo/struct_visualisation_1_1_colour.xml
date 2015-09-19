@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct_visualisation_1_1_colour" kind="struct" prot="public">
+    <compoundname>Visualisation::Colour</compoundname>
+    <includes refid="_colour_8h" local="no">Colour.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_visualisation_1_1_colour_1afd7b1ea9ff115205b65e0bffc92946ac" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" line="11" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_colour_1a83576af39a9f289a28c1263d61073508" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" line="11" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_colour_1a41cede1b4c0d05cff170ad5761f70964" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" line="11" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_colour_1a24420a9beaac7cee08b5e255a4c29db1" prot="public" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" line="11" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_visualisation_1_1_colour_1ae3eec6b1fc1ffafd6e3f907fa9590fdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Colour</definition>
+        <argsstring>()</argsstring>
+        <name>Colour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default c&apos;tor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" line="16" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" bodystart="26" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_visualisation_1_1_colour_1a214e2f82e282989afe4549a07d7d0041" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Colour</definition>
+        <argsstring>(unsigned char r, unsigned char g, unsigned char b, unsigned char a)</argsstring>
+        <name>Colour</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" line="21" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" bodystart="30" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure to store color values. </para>    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" line="10" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Colour.h" bodystart="9" bodyend="22"/>
+    <listofallmembers>
+      <member refid="struct_visualisation_1_1_colour_1a24420a9beaac7cee08b5e255a4c29db1" prot="public" virt="non-virtual"><scope>Visualisation::Colour</scope><name>a</name></member>
+      <member refid="struct_visualisation_1_1_colour_1a41cede1b4c0d05cff170ad5761f70964" prot="public" virt="non-virtual"><scope>Visualisation::Colour</scope><name>b</name></member>
+      <member refid="struct_visualisation_1_1_colour_1ae3eec6b1fc1ffafd6e3f907fa9590fdf" prot="public" virt="non-virtual"><scope>Visualisation::Colour</scope><name>Colour</name></member>
+      <member refid="struct_visualisation_1_1_colour_1a214e2f82e282989afe4549a07d7d0041" prot="public" virt="non-virtual"><scope>Visualisation::Colour</scope><name>Colour</name></member>
+      <member refid="struct_visualisation_1_1_colour_1a83576af39a9f289a28c1263d61073508" prot="public" virt="non-virtual"><scope>Visualisation::Colour</scope><name>g</name></member>
+      <member refid="struct_visualisation_1_1_colour_1afd7b1ea9ff115205b65e0bffc92946ac" prot="public" virt="non-virtual"><scope>Visualisation::Colour</scope><name>r</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

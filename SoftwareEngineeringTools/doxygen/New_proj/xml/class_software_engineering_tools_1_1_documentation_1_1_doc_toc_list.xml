@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocTocList</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocCmd</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list_1a2651cd51e7a7cfd9aeb241ca842316dd" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_item" kindref="compound">DocTocItem</ref> &gt;</type>
+        <definition>List&lt;DocTocItem&gt; SoftwareEngineeringTools.Documentation.DocTocList.Items</definition>
+        <argsstring></argsstring>
+        <name>Items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="932" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="932" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list_1aa5b4b3df90602c001abc87ca73a805df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocTocList.DocTocList</definition>
+        <argsstring>()</argsstring>
+        <name>DocTocList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="934" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="934" bodyend="938"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="266">
+        <label>SoftwareEngineeringTools.Documentation.DocTocList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list"/>
+        <childnode refid="267" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="267">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="268">
+        <label>SoftwareEngineeringTools.Documentation.DocTocList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list"/>
+        <childnode refid="269" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="931" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="930" bodyend="939"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTocList</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list_1aa5b4b3df90602c001abc87ca73a805df" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTocList</scope><name>DocTocList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list_1a2651cd51e7a7cfd9aeb241ca842316dd" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTocList</scope><name>Items</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocTocList</scope><name>Kind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

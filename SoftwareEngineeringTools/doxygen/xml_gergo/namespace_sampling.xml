@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespace_sampling" kind="namespace">
+    <compoundname>Sampling</compoundname>
+    <innerclass refid="class_sampling_1_1_filter" prot="public">Sampling::Filter</innerclass>
+    <innerclass refid="class_sampling_1_1_i_sampleable" prot="public">Sampling::ISampleable</innerclass>
+    <innerclass refid="class_sampling_1_1_linear_cube_filter" prot="public">Sampling::LinearCubeFilter</innerclass>
+    <innerclass refid="class_sampling_1_1_linear_tetra_filter" prot="public">Sampling::LinearTetraFilter</innerclass>
+    <innerclass refid="class_sampling_1_1_marschner_lobb" prot="public">Sampling::MarschnerLobb</innerclass>
+    <innerclass refid="class_sampling_1_1_volume" prot="public">Sampling::Volume</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_sampling_1a42e746bb67d4dac83a4dcf06ad91c73d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Sampling::getParallelepipedVolume</definition>
+        <argsstring>(const Vector&lt; Vector&lt; T &gt;&gt; &amp;spanners, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators)</argsstring>
+        <name>getParallelepipedVolume</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;&gt; &amp;</type>
+          <declname>spanners</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that calculates the volume of a parallelepied spanned by three vectors in parameter spanners. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>spanners</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the spanner vectors of the parallelepiped. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- the volume of the parallelepiped </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/LinearTetraFilter.h" line="124" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/LinearTetraFilter.h" bodystart="124" bodyend="143"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Filter.h" line="11" column="1"/>
+  </compounddef>
+</doxygen>

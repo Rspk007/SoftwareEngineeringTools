@@ -1,0 +1,1050 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxygenParser</compoundname>
+      <sectiondef kind="private-type">
+      <memberdef kind="enum" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6ad6b214d97bac3f13fa67e1f11b30e8" prot="private" static="no">
+        <name>LogKind</name>
+        <enumvalue id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6ad6b214d97bac3f13fa67e1f11b30e8a4059b0251f66a18cb56f544728796875" prot="public">
+          <name>Info</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6ad6b214d97bac3f13fa67e1f11b30e8a0eaadb4fcb48a0a0ed7bc9868be9fbaa" prot="public">
+          <name>Warning</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6ad6b214d97bac3f13fa67e1f11b30e8a902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="1166" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="1165" bodyend="1170"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a4de5a48595379cd41d316bab6894d8ee" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; string &gt;</type>
+        <definition>readonly List&lt;string&gt; SoftwareEngineeringTools.Documentation.DoxygenParser.DocEmptyTags</definition>
+        <argsstring></argsstring>
+        <name>DocEmptyTags</name>
+        <initializer>= new <ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt;string&gt;(Enum.GetNames(typeof(<ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7" kindref="member">DocEmptyKind</ref>)))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="13" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a0de2ea89c5e7b3666c8a9f507d56f31b" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; string &gt;</type>
+        <definition>readonly List&lt;string&gt; SoftwareEngineeringTools.Documentation.DoxygenParser.DocMarkupTags</definition>
+        <argsstring></argsstring>
+        <name>DocMarkupTags</name>
+        <initializer>= new <ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt;string&gt;(Enum.GetNames(typeof(<ref refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183f" kindref="member">DocMarkupKind</ref>)).Select(e =&gt; e.ToLower()))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="14" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab7519bc0117e0960ca3cf56d5f658d6f" prot="private" static="yes" mutable="no">
+        <type>readonly <ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; string &gt;</type>
+        <definition>readonly List&lt;string&gt; SoftwareEngineeringTools.Documentation.DoxygenParser.DocReferenceTags</definition>
+        <argsstring></argsstring>
+        <name>DocReferenceTags</name>
+        <initializer>= new <ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt;string&gt;(Enum.GetNames(typeof(<ref refid="namespace_software_engineering_tools_1_1_documentation_1adb41ca18779eed53175de394c3d2bb67" kindref="member">DocRefKind</ref>)).Select(e =&gt; e.ToLower()))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="15" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a137acf262f250da3be61817cf8496ba5" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxygenParser.currentFileName</definition>
+        <argsstring></argsstring>
+        <name>currentFileName</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="28" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ae8d0d252d0783ea8d98e89aa86dec131" prot="private" static="no" mutable="no">
+        <type>StreamWriter</type>
+        <definition>StreamWriter SoftwareEngineeringTools.Documentation.DoxygenParser.LogFile</definition>
+        <argsstring></argsstring>
+        <name>LogFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="29" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1abfeef404cab333dbfa1602536f94c4e7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxygenParser.IndexFile</definition>
+        <argsstring></argsstring>
+        <name>IndexFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="31" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a0b088e4a6affa57fa82d10bf05730c6b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index" kindref="compound">DoxygenIndex</ref></type>
+        <definition>DoxygenIndex SoftwareEngineeringTools.Documentation.DoxygenParser.Index</definition>
+        <argsstring></argsstring>
+        <name>Index</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="32" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab197aca4cd631c97157434f374cc40d6" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model" kindref="compound">DoxygenModel</ref></type>
+        <definition>DoxygenModel SoftwareEngineeringTools.Documentation.DoxygenParser.Model</definition>
+        <argsstring></argsstring>
+        <name>Model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="33" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ade05bc6069a11bd0e2368e9eadbbe30a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DoxygenParser.DoxygenParser</definition>
+        <argsstring>(string indexFile, string logFile=null)</argsstring>
+        <name>DoxygenParser</name>
+        <param>
+          <type>string</type>
+          <declname>indexFile</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>logFile</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="17" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="17" bodyend="26"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a3d9f4daab9cac14a6db9706866e9471a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.DoxygenParser.Log</definition>
+        <argsstring>(LogKind kind, string text, XObject xobj=null)</argsstring>
+        <name>Log</name>
+        <param>
+          <type>LogKind</type>
+          <declname>kind</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>XObject</type>
+          <declname>xobj</declname>
+          <defval>null</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="35" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="35" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1abd6098588fd37d9e1daa1fe48f5cbcee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>XDocument</type>
+        <definition>XDocument SoftwareEngineeringTools.Documentation.DoxygenParser.LoadXml</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>LoadXml</name>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="64" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="64" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aaf0df0e0c9bac0eedc58ba6c7f327dc4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.DoxygenParser.Parse</definition>
+        <argsstring>()</argsstring>
+        <name>Parse</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="74" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="74" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a64aa3ddfcd697d4b59dac94a9fd83876" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.DoxygenParser.ParseIndex</definition>
+        <argsstring>()</argsstring>
+        <name>ParseIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="83" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="83" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a2fcc322de421beb5477b3af04737f291" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.DoxygenParser.CreateModelElements</definition>
+        <argsstring>()</argsstring>
+        <name>CreateModelElements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="144" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="144" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ac8faf1d350e5ee8d462bcf0b25d37c1b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kindref="compound">Compound</ref></type>
+        <definition>Compound SoftwareEngineeringTools.Documentation.DoxygenParser.CreateCompound</definition>
+        <argsstring>(CompoundIndex ci)</argsstring>
+        <name>CreateCompound</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index" kindref="compound">CompoundIndex</ref></type>
+          <declname>ci</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="198" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="198" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab6802c2cd8f35d2ce9a30aa5f4d2b7c2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref></type>
+        <definition>DoxMember SoftwareEngineeringTools.Documentation.DoxygenParser.CreateMember</definition>
+        <argsstring>(MemberIndex mi)</argsstring>
+        <name>CreateMember</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_member_index" kindref="compound">MemberIndex</ref></type>
+          <declname>mi</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="250" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="250" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1abd24cbc0432dfcde455bf197ce5ceb18" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.DoxygenParser.ParseModel</definition>
+        <argsstring>()</argsstring>
+        <name>ParseModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="299" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="299" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a871a51671f008c1c515cab67256db6ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.DoxygenParser.ParseCompound</definition>
+        <argsstring>(Compound c)</argsstring>
+        <name>ParseCompound</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kindref="compound">Compound</ref></type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+<para>XML reader and processing. </para>        </briefdescription>
+        <detaileddescription>
+<para>Read the XML file of the specified class and than process it. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="311" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="311" bodyend="371"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a9a6cbaaaef7cf859bd892273cb315b12" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseCompound</definition>
+        <argsstring>(Compound c, XElement cde)</argsstring>
+        <name>ParseCompound</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kindref="compound">Compound</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>cde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kindref="compound">Compound</ref> Parser Get info from the <ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kindref="compound">Compound</ref> </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="376" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="376" bodyend="420"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a9e3cf8fb6a1c8626c38b5ecd1a92e94a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseLocation</definition>
+        <argsstring>(Location l, XElement le)</argsstring>
+        <name>ParseLocation</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_location" kindref="compound">Location</ref></type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>le</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="422" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="422" bodyend="436"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a40590dc1e3e999fda740c47128da1a1d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseClassifier</definition>
+        <argsstring>(DoxClassifier c, XElement cde)</argsstring>
+        <name>ParseClassifier</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier" kindref="compound">DoxClassifier</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>cde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="438" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="438" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab18d2822675f8ab14ba4318358bd0587" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseCompoundRef</definition>
+        <argsstring>(DoxReference r, XElement re)</argsstring>
+        <name>ParseCompoundRef</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" kindref="compound">DoxReference</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="473" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="473" bodyend="499"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aa6343362a8aac67a1031ab4fa80501fe" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseRef</definition>
+        <argsstring>(DoxReference r, XElement re)</argsstring>
+        <name>ParseRef</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" kindref="compound">DoxReference</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="501" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="501" bodyend="531"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ae72302e2f89d734436f45806d2757133" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.GetVirtualKind</definition>
+        <argsstring>(string value, out VirtualKind vk, XObject xobj)</argsstring>
+        <name>GetVirtualKind</name>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>out <ref refid="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626f" kindref="member">VirtualKind</ref></type>
+          <declname>vk</declname>
+        </param>
+        <param>
+          <type>XObject</type>
+          <declname>xobj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="533" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="533" bodyend="551"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ad3a9825ffe37989922b16c9cf7ebe68d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseTemplateParamList</definition>
+        <argsstring>(List&lt; DoxParam &gt; tpl, XElement tple)</argsstring>
+        <name>ParseTemplateParamList</name>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param" kindref="compound">DoxParam</ref> &gt;</type>
+          <declname>tpl</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>tple</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="553" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="553" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aedae025c2aeeff4b4fc22d7bdf5da826" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseParam</definition>
+        <argsstring>(DoxParam p, XElement pe)</argsstring>
+        <name>ParseParam</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param" kindref="compound">DoxParam</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>pe</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="564" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="564" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a173f1d1017acd066c9a72ba8ca6f9f3f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseLinkedText</definition>
+        <argsstring>(DoxLinkedText r, XElement re)</argsstring>
+        <name>ParseLinkedText</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text" kindref="compound">DoxLinkedText</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="593" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="593" bodyend="625"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a31514448cd0043059af51e29ca6e6723" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseRefText</definition>
+        <argsstring>(DoxReference r, XElement re)</argsstring>
+        <name>ParseRefText</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" kindref="compound">DoxReference</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="627" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="627" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a65cc3f5543a20e948b9e1b58eae59089" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseClass</definition>
+        <argsstring>(DoxClass c, XElement cde)</argsstring>
+        <name>ParseClass</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_class" kindref="compound">DoxClass</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>cde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="656" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="656" bodyend="660"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a4bb4fab212ba2818fe271e222ecb529d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseStruct</definition>
+        <argsstring>(DoxStruct c, XElement cde)</argsstring>
+        <name>ParseStruct</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_struct" kindref="compound">DoxStruct</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>cde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="662" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="662" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab2030bd5e910940e59c0973c19925dcd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseInterface</definition>
+        <argsstring>(DoxInterface c, XElement cde)</argsstring>
+        <name>ParseInterface</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_interface" kindref="compound">DoxInterface</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>cde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="668" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="668" bodyend="672"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ae11e71c043df86c230a08c3a72cc451b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseEnum</definition>
+        <argsstring>(DoxEnum c, XElement cde)</argsstring>
+        <name>ParseEnum</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum" kindref="compound">DoxEnum</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>cde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="674" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="674" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a36105b21ce31ca63ac2cc667e82b1a43" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseInnerClasses</definition>
+        <argsstring>(List&lt; DoxClassifier &gt; cl, IEnumerable&lt; XElement &gt; ices)</argsstring>
+        <name>ParseInnerClasses</name>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier" kindref="compound">DoxClassifier</ref> &gt;</type>
+          <declname>cl</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; XElement &gt;</type>
+          <declname>ices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="680" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="680" bodyend="697"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a5552887ab986d2fded79437e1e8a8e51" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseInnerNamespaces</definition>
+        <argsstring>(List&lt; DoxNamespace &gt; nl, IEnumerable&lt; XElement &gt; ices)</argsstring>
+        <name>ParseInnerNamespaces</name>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace" kindref="compound">DoxNamespace</ref> &gt;</type>
+          <declname>nl</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; XElement &gt;</type>
+          <declname>ices</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="699" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="699" bodyend="716"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aaaf30c00086620e2cdaa3339313d534d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseFile</definition>
+        <argsstring>(DoxFile c, XElement cde)</argsstring>
+        <name>ParseFile</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_file" kindref="compound">DoxFile</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>cde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="718" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="718" bodyend="723"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a221839eabdf920fbc420f49d16887358" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseNamespace</definition>
+        <argsstring>(DoxNamespace c, XElement cde)</argsstring>
+        <name>ParseNamespace</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace" kindref="compound">DoxNamespace</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>cde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="725" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="725" bodyend="730"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aa9ef78940358d02e185393a20681aa49" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseDirectory</definition>
+        <argsstring>(DoxDirectory c, XElement cde)</argsstring>
+        <name>ParseDirectory</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory" kindref="compound">DoxDirectory</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>cde</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="732" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="732" bodyend="737"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a65a5583f8778ea44d00b0b228d384025" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseFiles</definition>
+        <argsstring>(List&lt; DoxFile &gt; fl, IEnumerable&lt; XElement &gt; fle)</argsstring>
+        <name>ParseFiles</name>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_file" kindref="compound">DoxFile</ref> &gt;</type>
+          <declname>fl</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; XElement &gt;</type>
+          <declname>fle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="739" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="739" bodyend="756"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a98557aa3fdebeac438450c12b45b66b7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseDirectories</definition>
+        <argsstring>(List&lt; DoxDirectory &gt; dl, IEnumerable&lt; XElement &gt; dle)</argsstring>
+        <name>ParseDirectories</name>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory" kindref="compound">DoxDirectory</ref> &gt;</type>
+          <declname>dl</declname>
+        </param>
+        <param>
+          <type>IEnumerable&lt; XElement &gt;</type>
+          <declname>dle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="758" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="758" bodyend="775"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a3596e590466a58d2594074e7ebe7b77b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseSection</definition>
+        <argsstring>(DoxClassifier c, XElement se)</argsstring>
+        <name>ParseSection</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier" kindref="compound">DoxClassifier</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>se</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="777" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="777" bodyend="796"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6905e29244c9fc4f76ad711d42201028" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.GetBoolAttributeValue</definition>
+        <argsstring>(XElement e, string name)</argsstring>
+        <name>GetBoolAttributeValue</name>
+        <param>
+          <type>XElement</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="798" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="798" bodyend="802"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a65470a175295ac8fb9590417492fc42d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.CheckMember</definition>
+        <argsstring>(DoxMember m, XElement me)</argsstring>
+        <name>CheckMember</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="804" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="804" bodyend="819"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a16e777ec425c17cd3e903e1aab2dc8cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseMember</definition>
+        <argsstring>(DoxMember m, XElement me)</argsstring>
+        <name>ParseMember</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>me</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="821" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="821" bodyend="952"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aa4205e312666b82a6e7f23d0f3403131" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseListing</definition>
+        <argsstring>(DoxProgramListing pl, XElement ple)</argsstring>
+        <name>ParseListing</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_program_listing" kindref="compound">DoxProgramListing</ref></type>
+          <declname>pl</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>ple</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="954" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="954" bodyend="1026"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a240e32796cc324a886cd0055d7ba3e63" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseDescription</definition>
+        <argsstring>(Description d, XElement de, int level=1)</argsstring>
+        <name>ParseDescription</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_description" kindref="compound">Description</ref></type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>de</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>level</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="1028" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="1028" bodyend="1052"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aafdc8fe0684f997660f26397bef577b8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseDocCmdGroup</definition>
+        <argsstring>(DocCmdGroup g, XElement ge)</argsstring>
+        <name>ParseDocCmdGroup</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group" kindref="compound">DocCmdGroup</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>ge</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="1054" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="1054" bodyend="1121"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a817e3a8506124b1db554a0e9242c7050" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseDocCmd</definition>
+        <argsstring>(out DocCmd c, XElement ce)</argsstring>
+        <name>ParseDocCmd</name>
+        <param>
+          <type>out <ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" kindref="compound">DocCmd</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>ce</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="1123" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="1123" bodyend="1137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a165e5a4f22f7c21a018d94d90b03cf8e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.ParseDocReference</definition>
+        <argsstring>(DocReference r, XElement re)</argsstring>
+        <name>ParseDocReference</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference" kindref="compound">DocReference</ref></type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>XElement</type>
+          <declname>re</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="1139" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="1139" bodyend="1163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a70904da6ab98823e905e303c45dd59cd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxygenParser.FromEnum&lt; TEnum &gt;</definition>
+        <argsstring>(string value, out TEnum result, bool ignoreCase, XObject xobj)</argsstring>
+        <name>FromEnum&lt; TEnum &gt;</name>
+        <param>
+          <type>string</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>out TEnum</type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignoreCase</declname>
+        </param>
+        <param>
+          <type>XObject</type>
+          <declname>xobj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="1172" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="1172" bodyend="1183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" line="12" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/DoxygenParser.cs" bodystart="11" bodyend="1184"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a65470a175295ac8fb9590417492fc42d" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>CheckMember</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ac8faf1d350e5ee8d462bcf0b25d37c1b" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>CreateCompound</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab6802c2cd8f35d2ce9a30aa5f4d2b7c2" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>CreateMember</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a2fcc322de421beb5477b3af04737f291" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>CreateModelElements</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a137acf262f250da3be61817cf8496ba5" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>currentFileName</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a4de5a48595379cd41d316bab6894d8ee" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>DocEmptyTags</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a0de2ea89c5e7b3666c8a9f507d56f31b" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>DocMarkupTags</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab7519bc0117e0960ca3cf56d5f658d6f" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>DocReferenceTags</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ade05bc6069a11bd0e2368e9eadbbe30a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>DoxygenParser</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a70904da6ab98823e905e303c45dd59cd" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>FromEnum&lt; TEnum &gt;</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6905e29244c9fc4f76ad711d42201028" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>GetBoolAttributeValue</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ae72302e2f89d734436f45806d2757133" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>GetVirtualKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a0b088e4a6affa57fa82d10bf05730c6b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>Index</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1abfeef404cab333dbfa1602536f94c4e7" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>IndexFile</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1abd6098588fd37d9e1daa1fe48f5cbcee" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>LoadXml</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a3d9f4daab9cac14a6db9706866e9471a" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>Log</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ae8d0d252d0783ea8d98e89aa86dec131" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>LogFile</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6ad6b214d97bac3f13fa67e1f11b30e8" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>LogKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab197aca4cd631c97157434f374cc40d6" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>Model</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aaf0df0e0c9bac0eedc58ba6c7f327dc4" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>Parse</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a65cc3f5543a20e948b9e1b58eae59089" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseClass</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a40590dc1e3e999fda740c47128da1a1d" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseClassifier</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a871a51671f008c1c515cab67256db6ae" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseCompound</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a9a6cbaaaef7cf859bd892273cb315b12" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseCompound</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab18d2822675f8ab14ba4318358bd0587" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseCompoundRef</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a240e32796cc324a886cd0055d7ba3e63" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a98557aa3fdebeac438450c12b45b66b7" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseDirectories</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aa9ef78940358d02e185393a20681aa49" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseDirectory</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a817e3a8506124b1db554a0e9242c7050" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseDocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aafdc8fe0684f997660f26397bef577b8" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseDocCmdGroup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a165e5a4f22f7c21a018d94d90b03cf8e" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseDocReference</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ae11e71c043df86c230a08c3a72cc451b" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseEnum</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aaaf30c00086620e2cdaa3339313d534d" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseFile</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a65a5583f8778ea44d00b0b228d384025" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseFiles</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a64aa3ddfcd697d4b59dac94a9fd83876" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseIndex</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a36105b21ce31ca63ac2cc667e82b1a43" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseInnerClasses</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a5552887ab986d2fded79437e1e8a8e51" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseInnerNamespaces</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab2030bd5e910940e59c0973c19925dcd" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseInterface</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a173f1d1017acd066c9a72ba8ca6f9f3f" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseLinkedText</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aa4205e312666b82a6e7f23d0f3403131" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseListing</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a9e3cf8fb6a1c8626c38b5ecd1a92e94a" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseLocation</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a16e777ec425c17cd3e903e1aab2dc8cc" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseMember</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1abd24cbc0432dfcde455bf197ce5ceb18" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseModel</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a221839eabdf920fbc420f49d16887358" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseNamespace</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aedae025c2aeeff4b4fc22d7bdf5da826" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseParam</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aa6343362a8aac67a1031ab4fa80501fe" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseRef</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a31514448cd0043059af51e29ca6e6723" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseRefText</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a3596e590466a58d2594074e7ebe7b77b" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseSection</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a4bb4fab212ba2818fe271e222ecb529d" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseStruct</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ad3a9825ffe37989922b16c9cf7ebe68d" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenParser</scope><name>ParseTemplateParamList</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

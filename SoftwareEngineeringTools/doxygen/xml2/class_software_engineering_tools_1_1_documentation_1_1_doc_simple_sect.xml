@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocSimpleSect</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocCmd</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1a6a4b4036b16ccfb60f48c5e7df50ac40" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555d" kindref="member">DocSimpleSectKind</ref></type>
+        <definition>DocSimpleSectKind SoftwareEngineeringTools.Documentation.DocSimpleSect.SimpleSectKind</definition>
+        <argsstring></argsstring>
+        <name>SimpleSectKind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="761" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="761" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1a1315d0d038a955a9ba38da4d299f05e2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DocSimpleSect.Title</definition>
+        <argsstring></argsstring>
+        <name>Title</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="762" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="762" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1ab7d54f32f51a5ee11242cd37f1bd39dc" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_item" kindref="compound">DocSimpleSectItem</ref> &gt;</type>
+        <definition>List&lt;DocSimpleSectItem&gt; SoftwareEngineeringTools.Documentation.DocSimpleSect.Items</definition>
+        <argsstring></argsstring>
+        <name>Items</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="763" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="763" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1a0a6d8e79010d9e03c6319fef6e08aff7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocSimpleSect.DocSimpleSect</definition>
+        <argsstring>()</argsstring>
+        <name>DocSimpleSect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="765" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="765" bodyend="768"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="228">
+        <label>SoftwareEngineeringTools.Documentation.DocSimpleSect</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect"/>
+        <childnode refid="229" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="229">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="230">
+        <label>SoftwareEngineeringTools.Documentation.DocSimpleSect</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect"/>
+        <childnode refid="231" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="760" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="759" bodyend="769"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocSimpleSect</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1a0a6d8e79010d9e03c6319fef6e08aff7" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocSimpleSect</scope><name>DocSimpleSect</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1ab7d54f32f51a5ee11242cd37f1bd39dc" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocSimpleSect</scope><name>Items</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocSimpleSect</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1a6a4b4036b16ccfb60f48c5e7df50ac40" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocSimpleSect</scope><name>SimpleSectKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1a1315d0d038a955a9ba38da4d299f05e2" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocSimpleSect</scope><name>Title</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

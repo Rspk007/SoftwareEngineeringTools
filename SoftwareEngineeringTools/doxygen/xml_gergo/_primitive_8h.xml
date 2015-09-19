@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_primitive_8h" kind="file">
+    <compoundname>Primitive.h</compoundname>
+    <includedby refid="_line_8h" local="yes">Új mappa/Line.h</includedby>
+    <includedby refid="_point_8h" local="yes">Új mappa/Point.h</includedby>
+    <invincdepgraph>
+      <node id="510">
+        <label>Új mappa/LinearCubeFilter.h</label>
+        <link refid="_linear_cube_filter_8h"/>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="517">
+        <label>Új mappa/Shader.h</label>
+        <link refid="_shader_8h"/>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>Új mappa/Vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="519" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="522" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="523" relation="include">
+        </childnode>
+        <childnode refid="524" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+        <childnode refid="525" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+      </node>
+      <node id="503">
+        <label>Új mappa/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="505">
+        <label>Új mappa/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="512">
+        <label>Új mappa/MarschnerLobb.h</label>
+        <link refid="_marschner_lobb_8h"/>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>Új mappa/Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="515" relation="include">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>Új mappa/Line.h</label>
+        <link refid="_line_8h"/>
+        <childnode refid="498" relation="include">
+        </childnode>
+      </node>
+      <node id="519">
+        <label>Új mappa/Grid.h</label>
+        <link refid="_grid_8h"/>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="521" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+      </node>
+      <node id="499">
+        <label>Új mappa/IIntersectable.h</label>
+        <link refid="_i_intersectable_8h"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+      </node>
+      <node id="500">
+        <label>Új mappa/IShape.h</label>
+        <link refid="_i_shape_8h"/>
+        <childnode refid="501" relation="include">
+        </childnode>
+      </node>
+      <node id="516">
+        <label>Új mappa/Material.h</label>
+        <link refid="_material_8h"/>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+      </node>
+      <node id="520">
+        <label>Új mappa/BccGrid.h</label>
+        <link refid="_bcc_grid_8h"/>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="518">
+        <label>Új mappa/PhongShader.h</label>
+        <link refid="_phong_shader_8h"/>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="508">
+        <label>Új mappa/Volume.h</label>
+        <link refid="_volume_8h"/>
+        <childnode refid="509" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+      </node>
+      <node id="525">
+        <label>Új mappa/Matrix.h</label>
+        <link refid="_matrix_8h"/>
+      </node>
+      <node id="504">
+        <label>Új mappa/ModelSpace.h</label>
+        <link refid="_model_space_8h"/>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="522">
+        <label>Új mappa/Light.h</label>
+        <link refid="_light_8h"/>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="517" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="518" relation="include">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>Új mappa/Ray.h</label>
+        <link refid="_ray_8h"/>
+        <childnode refid="499" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+      </node>
+      <node id="501">
+        <label>Új mappa/BoundingVolume.h</label>
+        <link refid="_bounding_volume_8h"/>
+        <childnode refid="502" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+      </node>
+      <node id="511">
+        <label>Új mappa/LinearTetraFilter.h</label>
+        <link refid="_linear_tetra_filter_8h"/>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="496">
+        <label>Új mappa/Primitive.h</label>
+        <link refid="Primitive.h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="514" relation="include">
+        </childnode>
+      </node>
+      <node id="523">
+        <label>Új mappa/Constants.h</label>
+        <link refid="_constants_8h"/>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+      </node>
+      <node id="509">
+        <label>Új mappa/Filter.h</label>
+        <link refid="_filter_8h"/>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="511" relation="include">
+        </childnode>
+      </node>
+      <node id="524">
+        <label>Új mappa/ISampleable.h</label>
+        <link refid="_i_sampleable_8h"/>
+        <childnode refid="508" relation="include">
+        </childnode>
+      </node>
+      <node id="513">
+        <label>Új mappa/Plane.h</label>
+        <link refid="_plane_8h"/>
+      </node>
+      <node id="521">
+        <label>Új mappa/CcGrid.h</label>
+        <link refid="_cc_grid_8h"/>
+        <childnode refid="520" relation="include">
+        </childnode>
+        <childnode refid="510" relation="include">
+        </childnode>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="502">
+        <label>Új mappa/AABB.h</label>
+        <link refid="_a_a_b_b_8h"/>
+        <childnode refid="503" relation="include">
+        </childnode>
+      </node>
+      <node id="507">
+        <label>Új mappa/Surface.h</label>
+        <link refid="_surface_8h"/>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+      </node>
+      <node id="506">
+        <label>Új mappa/Intersection.h</label>
+        <link refid="_intersection_8h"/>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="513" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_geometry_1_1_primitive" prot="public">Geometry::Primitive</innerclass>
+    <innernamespace refid="namespace_geometry">Geometry</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PRIMITIVE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PRIMITIVE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Geometry</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10" refid="class_geometry_1_1_primitive" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_geometry_1_1_primitive" kindref="compound">Primitive</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="18" refid="class_geometry_1_1_primitive_1a372847a827bf3fcf09859d22aa98c546" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_primitive_1a372847a827bf3fcf09859d22aa98c546" kindref="member">Primitive</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>PRIMITIVE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Primitive.h"/>
+  </compounddef>
+</doxygen>

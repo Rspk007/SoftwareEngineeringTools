@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxHighlight</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_1a8f3b0370587461cf4dc68f558b76df87" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205" kindref="member">DoxHighlightKind</ref></type>
+        <definition>DoxHighlightKind SoftwareEngineeringTools.Documentation.DoxHighlight.Kind</definition>
+        <argsstring></argsstring>
+        <name>Kind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="412" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_1abcc420fbf26093bfee830c81b6d1f0d2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text" kindref="compound">DoxHighlightText</ref> &gt;</type>
+        <definition>List&lt;DoxHighlightText&gt; SoftwareEngineeringTools.Documentation.DoxHighlight.Text</definition>
+        <argsstring></argsstring>
+        <name>Text</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="413" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_1a347420ce54532e345cfcab096e094c60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DoxHighlight.DoxHighlight</definition>
+        <argsstring>()</argsstring>
+        <name>DoxHighlight</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="415" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="415" bodyend="418"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="411" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="410" bodyend="419"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_1a347420ce54532e345cfcab096e094c60" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxHighlight</scope><name>DoxHighlight</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_1a8f3b0370587461cf4dc68f558b76df87" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxHighlight</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_1abcc420fbf26093bfee830c81b6d1f0d2" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxHighlight</scope><name>Text</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

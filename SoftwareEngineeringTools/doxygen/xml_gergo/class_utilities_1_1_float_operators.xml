@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_utilities_1_1_float_operators" kind="class" prot="public">
+    <compoundname>Utilities::FloatOperators</compoundname>
+    <basecompoundref refid="class_utilities_1_1_type_operators" prot="public" virt="non-virtual">TypeOperators&lt; float &gt;</basecompoundref>
+    <includes refid="_float_operators_8h" local="no">FloatOperators.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_utilities_1_1_float_operators_1a8699e9cea9e8bd0b1b3a3bb7d6cf671c" prot="private" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float EPS</definition>
+        <argsstring></argsstring>
+        <name>EPS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/FloatOperators.h" line="17" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/FloatOperators.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_utilities_1_1_float_operators_1a3e605251b6520f5962e85bb4e2f6f97d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FloatOperators</definition>
+        <argsstring>(float eps=0.0f)</argsstring>
+        <name>FloatOperators</name>
+        <param>
+          <type>float</type>
+          <declname>eps</declname>
+          <defval>0.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default c&apos;tor <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>eps</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- epsilon value for the equality check </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/FloatOperators.h" line="24" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/FloatOperators.h" bodystart="38" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_utilities_1_1_float_operators_1a3634d4c6fb482cced6a9e29784185b82" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>bool equals</definition>
+        <argsstring>(const float &amp;num1, const float &amp;num2) const </argsstring>
+        <name>equals</name>
+        <reimplements refid="class_utilities_1_1_type_operators_1a01f8ffb315882112eded9817279c652c">equals</reimplements>
+        <param>
+          <type>const float &amp;</type>
+          <declname>num1</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>num2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Method exams if the objects are equal or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>num1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the first float number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>num2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the second float number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- true if the two numbers are equal (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/FloatOperators.h" line="33" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/FloatOperators.h" bodystart="42" bodyend="46"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class overrides (or extends) the functionality of the default operators of the built-in c++ type FLOAT. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="43">
+        <label>FloatOperators</label>
+        <link refid="class_utilities_1_1_float_operators"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>TypeOperators&lt; float &gt;</label>
+        <link refid="class_utilities_1_1_type_operators"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="45">
+        <label>FloatOperators</label>
+        <link refid="class_utilities_1_1_float_operators"/>
+        <childnode refid="46" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>TypeOperators&lt; float &gt;</label>
+        <link refid="class_utilities_1_1_type_operators"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/FloatOperators.h" line="15" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/FloatOperators.h" bodystart="14" bodyend="34"/>
+    <listofallmembers>
+      <member refid="class_utilities_1_1_type_operators_1a568333198beb5cf8b2b822ed1f517586" prot="public" virt="virtual"><scope>Utilities::FloatOperators</scope><name>abs</name></member>
+      <member refid="class_utilities_1_1_type_operators_1a326e5fe91b362795523b3b705ddd3abe" prot="public" virt="virtual"><scope>Utilities::FloatOperators</scope><name>castToInt</name></member>
+      <member refid="class_utilities_1_1_float_operators_1a8699e9cea9e8bd0b1b3a3bb7d6cf671c" prot="private" virt="non-virtual"><scope>Utilities::FloatOperators</scope><name>EPS</name></member>
+      <member refid="class_utilities_1_1_float_operators_1a3634d4c6fb482cced6a9e29784185b82" prot="public" virt="virtual"><scope>Utilities::FloatOperators</scope><name>equals</name></member>
+      <member refid="class_utilities_1_1_float_operators_1a3e605251b6520f5962e85bb4e2f6f97d" prot="public" virt="non-virtual"><scope>Utilities::FloatOperators</scope><name>FloatOperators</name></member>
+      <member refid="class_utilities_1_1_type_operators_1ac0c4e4d72daedaf61ac5b3f10832abc2" prot="public" virt="virtual"><scope>Utilities::FloatOperators</scope><name>greaterThan</name></member>
+      <member refid="class_utilities_1_1_type_operators_1a01d0fde7f2eb384eadefd35abadf5b12" prot="public" virt="virtual"><scope>Utilities::FloatOperators</scope><name>greaterThanOrEquals</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

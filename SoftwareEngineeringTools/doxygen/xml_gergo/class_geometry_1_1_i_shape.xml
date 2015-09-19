@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_geometry_1_1_i_shape" kind="class" prot="public" abstract="yes">
+    <compoundname>Geometry::IShape</compoundname>
+    <basecompoundref refid="class_geometry_1_1_i_intersectable" prot="public" virt="non-virtual">Geometry::IIntersectable&lt; T &gt;</basecompoundref>
+    <derivedcompoundref refid="class_geometry_1_1_bounding_volume" prot="public" virt="non-virtual">BoundingVolume&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_geometry_1_1_plane" prot="public" virt="non-virtual">Plane&lt; T &gt;</derivedcompoundref>
+    <includes refid="_i_shape_8h" local="no">IShape.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_geometry_1_1_i_shape_1af76e4d614fde54d8572ff3686b157456" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>bool</type>
+        <definition>virtual bool fitsPoint</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;pointToCheck, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const =0</argsstring>
+        <name>fitsPoint</name>
+        <reimplementedby refid="class_geometry_1_1_bounding_volume_1af76e4d614fde54d8572ff3686b157456">fitsPoint</reimplementedby>
+        <reimplementedby refid="class_geometry_1_1_plane_1a0ed558489fd932d65c18e1fe6ea5d36f">fitsPoint</reimplementedby>
+        <reimplementedby refid="class_geometry_1_1_a_a_b_b_1a0ed558489fd932d65c18e1fe6ea5d36f">fitsPoint</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>pointToCheck</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can decide if a point fits the Shape or not. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point to be checked </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- true if the point fits the Shape (and false otherwise) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/IShape.h" line="28" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_i_shape_1ab7b27cca569f9eae8628dd93e54c2d3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>&lt; T &gt; &gt;</type>
+        <definition>virtual Vector&lt;Intersection&lt;T&gt; &gt; intersect</definition>
+        <argsstring>(const Ray&lt; T &gt; &amp;ray, const Vector&lt; Intersection&lt; T &gt;&gt; *bounds=0, const T &amp;scale=T(), const Utilities::TypeOperators&lt; T &gt; &amp;Toperators=Utilities::TypeOperators&lt; T &gt;()) const =0</argsstring>
+        <name>intersect</name>
+        <reimplements refid="class_geometry_1_1_i_intersectable_1ab7b27cca569f9eae8628dd93e54c2d3e">intersect</reimplements>
+        <reimplementedby refid="class_geometry_1_1_bounding_volume_1ab7b27cca569f9eae8628dd93e54c2d3e">intersect</reimplementedby>
+        <reimplementedby refid="class_geometry_1_1_plane_1aae711dcbf18946964b9c42502e9d3377">intersect</reimplementedby>
+        <reimplementedby refid="class_geometry_1_1_a_a_b_b_1aae711dcbf18946964b9c42502e9d3377">intersect</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_ray" kindref="compound">Ray</ref>&lt; T &gt; &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>&lt; T &gt;&gt; *</type>
+          <declname>bounds</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scale</declname>
+          <defval>T()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+          <defval><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that implements the intersection with the concrete object. If no intersection was found, it will return an empty <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>. (0D <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the intersection ray </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the bounds between the intersection will be looked for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- scale used by ray casting algorithms </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- The collection of intersections in ascending order of dimension time. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/IShape.h" line="42" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This abstract class represents the common interface of geometry shapes. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="78">
+        <label>IShape&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_shape"/>
+        <childnode refid="79" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>AABB&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_a_a_b_b"/>
+        <childnode refid="80" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="82">
+        <label>Plane&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_plane"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>BoundingVolume&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_bounding_volume"/>
+        <childnode refid="78" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="83">
+        <label>IShape&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_shape"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="84">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/IShape.h" line="18" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/IShape.h" bodystart="17" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_geometry_1_1_i_shape_1af76e4d614fde54d8572ff3686b157456" prot="public" virt="pure-virtual"><scope>Geometry::IShape</scope><name>fitsPoint</name></member>
+      <member refid="class_geometry_1_1_i_shape_1ab7b27cca569f9eae8628dd93e54c2d3e" prot="public" virt="pure-virtual"><scope>Geometry::IShape</scope><name>intersect</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

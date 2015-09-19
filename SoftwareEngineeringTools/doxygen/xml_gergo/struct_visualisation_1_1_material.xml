@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct_visualisation_1_1_material" kind="struct" prot="public">
+    <compoundname>Visualisation::Material</compoundname>
+    <includes refid="_material_8h" local="no">Material.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_visualisation_1_1_material_1adcbbb333b6d941fddfe1ea6143fa5762" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; float &gt;</type>
+        <definition>const Vector&lt;float&gt; ka</definition>
+        <argsstring></argsstring>
+        <name>ka</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="22" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_material_1ac5454dea13fcc74f22cabb7c3278be55" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; float &gt;</type>
+        <definition>const Vector&lt;float&gt; kd</definition>
+        <argsstring></argsstring>
+        <name>kd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="23" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_material_1a4d9761d66c65f3bcf95f37685c771d0c" prot="public" static="no" mutable="no">
+        <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; float &gt;</type>
+        <definition>const Vector&lt;float&gt; ks</definition>
+        <argsstring></argsstring>
+        <name>ks</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="24" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_material_1ab46d5dac624eb0e9a38071be6291cdb2" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float n</definition>
+        <argsstring></argsstring>
+        <name>n</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="25" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_material_1a18bec5279be0e082ea275e09fe43e4ad" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float opacity</definition>
+        <argsstring></argsstring>
+        <name>opacity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="27" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_visualisation_1_1_material_1a59ff61970c48a0fa575db309b6b37019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Material</definition>
+        <argsstring>(const Vector&lt; float &gt; &amp;ka, const Vector&lt; float &gt; &amp;kd, const Vector&lt; float &gt; &amp;ks, const float &amp;n, const float &amp;opacity=1.0f)</argsstring>
+        <name>Material</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; float &gt; &amp;</type>
+          <declname>ka</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; float &gt; &amp;</type>
+          <declname>kd</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; float &gt; &amp;</type>
+          <declname>ks</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>const float &amp;</type>
+          <declname>opacity</declname>
+          <defval>1.0f</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="20" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="32" bodyend="34"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This structure represents a material, that have the parameters for the shading. </para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="141">
+        <label>Point&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_point"/>
+        <childnode refid="142" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="139">
+        <label>Material</label>
+        <link refid="struct_visualisation_1_1_material"/>
+        <childnode refid="140" relation="usage">
+          <edgelabel>ka</edgelabel>
+          <edgelabel>ks</edgelabel>
+          <edgelabel>kd</edgelabel>
+        </childnode>
+      </node>
+      <node id="142">
+        <label>Primitive</label>
+        <link refid="class_geometry_1_1_primitive"/>
+      </node>
+      <node id="140">
+        <label>Vector&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_vector"/>
+        <childnode refid="141" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="16" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="15" bodyend="28"/>
+    <listofallmembers>
+      <member refid="struct_visualisation_1_1_material_1adcbbb333b6d941fddfe1ea6143fa5762" prot="public" virt="non-virtual"><scope>Visualisation::Material</scope><name>ka</name></member>
+      <member refid="struct_visualisation_1_1_material_1ac5454dea13fcc74f22cabb7c3278be55" prot="public" virt="non-virtual"><scope>Visualisation::Material</scope><name>kd</name></member>
+      <member refid="struct_visualisation_1_1_material_1a4d9761d66c65f3bcf95f37685c771d0c" prot="public" virt="non-virtual"><scope>Visualisation::Material</scope><name>ks</name></member>
+      <member refid="struct_visualisation_1_1_material_1a59ff61970c48a0fa575db309b6b37019" prot="public" virt="non-virtual"><scope>Visualisation::Material</scope><name>Material</name></member>
+      <member refid="struct_visualisation_1_1_material_1ab46d5dac624eb0e9a38071be6291cdb2" prot="public" virt="non-virtual"><scope>Visualisation::Material</scope><name>n</name></member>
+      <member refid="struct_visualisation_1_1_material_1a18bec5279be0e082ea275e09fe43e4ad" prot="public" virt="non-virtual"><scope>Visualisation::Material</scope><name>opacity</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

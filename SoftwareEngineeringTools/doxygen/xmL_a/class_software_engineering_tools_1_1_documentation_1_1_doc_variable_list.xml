@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocVariableList</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocCmd</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list_1ab46ea15f19c87b8ce4bffd1daa3b057e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable" kindref="compound">DocVariable</ref> &gt;</type>
+        <definition>List&lt;DocVariable&gt; SoftwareEngineeringTools.Documentation.DocVariableList.Variables</definition>
+        <argsstring></argsstring>
+        <name>Variables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="830" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="830" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list_1a32c4a8be02e31c5f6cff125e80632d31" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocVariableList.DocVariableList</definition>
+        <argsstring>()</argsstring>
+        <name>DocVariableList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="832" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="832" bodyend="836"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="634">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="633">
+        <label>SoftwareEngineeringTools.Documentation.DocVariableList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list"/>
+        <childnode refid="634" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="636">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="635">
+        <label>SoftwareEngineeringTools.Documentation.DocVariableList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list"/>
+        <childnode refid="636" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="829" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="828" bodyend="837"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocVariableList</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list_1a32c4a8be02e31c5f6cff125e80632d31" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocVariableList</scope><name>DocVariableList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocVariableList</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list_1ab46ea15f19c87b8ce4bffd1daa3b057e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocVariableList</scope><name>Variables</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

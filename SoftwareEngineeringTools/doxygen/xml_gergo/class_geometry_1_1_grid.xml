@@ -1,0 +1,144 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_geometry_1_1_grid" kind="class" prot="public" abstract="yes">
+    <compoundname>Geometry::Grid</compoundname>
+    <derivedcompoundref refid="class_geometry_1_1_bcc_grid" prot="public" virt="non-virtual">BccGrid&lt; T &gt;</derivedcompoundref>
+    <derivedcompoundref refid="class_geometry_1_1_cc_grid" prot="public" virt="non-virtual">CcGrid&lt; T &gt;</derivedcompoundref>
+    <includes refid="_grid_8h" local="no">Grid.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_geometry_1_1_grid_1a2cdc42bd1e012a3b8473d518b7c2f6b0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>virtual Vector&lt;T&gt; getNearestPoint</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;point, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const =0</argsstring>
+        <name>getNearestPoint</name>
+        <reimplementedby refid="class_geometry_1_1_cc_grid_1a4bbb251dd45b8dab47447f175b8e791c">getNearestPoint</reimplementedby>
+        <reimplementedby refid="class_geometry_1_1_bcc_grid_1a4bbb251dd45b8dab47447f175b8e791c">getNearestPoint</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method can return the lattice point in whose Voronoi-region is the given point. This lattice point is the nearest neighbour point of the given point. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point whose nearest neighbour we are looking for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- the nearest neighbour point in the lattice in world coordinates (not in lattice locale coordinates!) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Grid.h" line="27" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_grid_1a7947b840d23ada9abd70df77ce4a9c06" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &gt;</type>
+        <definition>virtual Vector&lt;Vector&lt;T&gt; &gt; getFirstNeighbourCellVertices</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;point) const =0</argsstring>
+        <name>getFirstNeighbourCellVertices</name>
+        <reimplementedby refid="class_geometry_1_1_cc_grid_1a08afd8625c48e19c2f0e14d92eb50167">getFirstNeighbourCellVertices</reimplementedby>
+        <reimplementedby refid="class_geometry_1_1_bcc_grid_1a08afd8625c48e19c2f0e14d92eb50167">getFirstNeighbourCellVertices</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method gets a point, and returns in a vector all of the first neighbour points of this. The method doesn&apos;t check, if the point in the argument fits a lattice point, or not! <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point whose first neighbours we are looking for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- a vector of the first neighbours (each is given in world coordinates!) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Grid.h" line="36" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_grid_1a43bd5e3ba4d39448cd92477df03b84a2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &gt;</type>
+        <definition>virtual Vector&lt;Vector&lt;T&gt; &gt; getLerpVertices</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;point, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const =0</argsstring>
+        <name>getLerpVertices</name>
+        <reimplementedby refid="class_geometry_1_1_cc_grid_1ab4c0f69ae16cd070e5612327aac89159">getLerpVertices</reimplementedby>
+        <reimplementedby refid="class_geometry_1_1_bcc_grid_1ab4c0f69ae16cd070e5612327aac89159">getLerpVertices</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This method gets a point, and returns in a vector all of the vertices whose value influences the linear interpolation of the selected point. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point whose lerp-vertices we are looking for </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Grid.h" line="44" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This abstract class represents a grid in n-dimensional space. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="47">
+        <label>Grid&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_grid"/>
+      </node>
+      <node id="48">
+        <label>BccGrid&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_bcc_grid"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>CcGrid&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_cc_grid"/>
+        <childnode refid="47" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Grid.h" line="15" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Grid.h" bodystart="14" bodyend="45"/>
+    <listofallmembers>
+      <member refid="class_geometry_1_1_grid_1a7947b840d23ada9abd70df77ce4a9c06" prot="public" virt="pure-virtual"><scope>Geometry::Grid</scope><name>getFirstNeighbourCellVertices</name></member>
+      <member refid="class_geometry_1_1_grid_1a43bd5e3ba4d39448cd92477df03b84a2" prot="public" virt="pure-virtual"><scope>Geometry::Grid</scope><name>getLerpVertices</name></member>
+      <member refid="class_geometry_1_1_grid_1a2cdc42bd1e012a3b8473d518b7c2f6b0" prot="public" virt="pure-virtual"><scope>Geometry::Grid</scope><name>getNearestPoint</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

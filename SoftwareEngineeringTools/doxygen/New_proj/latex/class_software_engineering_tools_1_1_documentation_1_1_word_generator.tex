@@ -1,0 +1,592 @@
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator}{\section{Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator Class Reference}
+\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator}\index{Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator@{Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator}}
+}
+Inheritance diagram for Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.240000cm]{class_software_engineering_tools_1_1_documentation_1_1_word_generator}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0e}{Word\+Template} \{ \\*
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ead35b51b639528d580362ca7042de6a0e}{Word\+Template.\+Classic}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea7a1920d61156abc05a60135aefe8bc67}{Word\+Template.\+Default}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eafa93a4d83268508082592625efe8dddf}{Word\+Template.\+Default\+Black\+And\+White}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eae0571f6ddf64425a966e860cb12ea11d}{Word\+Template.\+Distinctive}, 
+\\*
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea87ce766ce5c0b6317258df8c2eb0908c}{Word\+Template.\+Elegant}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea7f6ec4d9d12421a15cc0cb2f4003f293}{Word\+Template.\+Fancy}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea557c6481538b93bfe0a10a1cbc11aa07}{Word\+Template.\+Formal}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea9b2478b417960fda209e14947b7c3d37}{Word\+Template.\+Manuscript}, 
+\\*
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eaad1c9cd3e7b07e2c364c985f73188054}{Word\+Template.\+Modern}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea390ab2af184e8c03159ab21fc143be1e}{Word\+Template.\+Newsprint}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eaa80420eef88d11f77532f1b9cb467fa3}{Word\+Template.\+Perspective}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea1fbb1e3943c2c6c560247ac8f9289780}{Word\+Template.\+Simple}, 
+\\*
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eae99f9fde61f40b0011c33a26ca83fd30}{Word\+Template.\+Thatch}, 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea1bfbcce75c3c9a52a464d4cb0984488a}{Word\+Template.\+Traditional}
+ \}
+\begin{DoxyCompactList}\small\item\em Standard Word templates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_af0b26d8845bfd80b944d4a11a2c1124f}{Word\+Generator} (string path, bool show\+Word=true, \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0e}{Word\+Template} template=Word\+Template.\+Default)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_adf9f0b03760f695ece98b7c529de9e08}{Dispose} ()
+\begin{DoxyCompactList}\small\item\em A dispose. \end{DoxyCompactList}\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_acb1d23ef351f76260a319a98751273c2}{Set\+Content} (bool enabled, \hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} depth)
+\begin{DoxyCompactList}\small\item\em Set the Table of Content. \end{DoxyCompactList}\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_accc00e23ef4d7fa36359715ce4bd3845}{Begin\+Section\+Title} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} level, string title, string label)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a6742f94e53dbe5073a80742657e6c938}{End\+Section\+Title} ()
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a30e09031fd81ba57185fb44d9b0d5f2f}{New\+Paragraph} ()
+\begin{DoxyCompactList}\small\item\em Make new Paragraph. \end{DoxyCompactList}\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_aeea13e32835b1af446a27f4ed4977c5a}{Print\+Text} (string text, bool insert\+Space=true)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a888eb271c27f9419b29eb38cbd00af66}{Print\+Verbatim\+Text} (string text)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a7606e1f460a2b58245d6dd1418058a11}{Begin\+Markup} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4eed17ca0ed06a8b62b953b063f857d9}{Document\+Markup\+Kind} markup\+Kind)
+\begin{DoxyCompactList}\small\item\em Begin Markup. \end{DoxyCompactList}\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_ac480b4e09794677ff4c3abce6455aa32}{End\+Markup} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4eed17ca0ed06a8b62b953b063f857d9}{Document\+Markup\+Kind} markup\+Kind)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_abb9105e0709c711c7199faa29dbf9331}{New\+Label} (string id)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_acdb54490629705960c7544904a96f8b9}{Begin\+Reference} (string id, bool url=false)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a7032d09ad0e77686dd17fd063bfd1c90}{End\+Reference} ()
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a8e6c89f64b72dc406aab016d39ee3c60}{Begin\+List} ()
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a254b01c1abbc805bce33d0827ca12988}{End\+List} ()
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a21cf3f4b0aabac4e3a64b0da78cd0212}{Begin\+List\+Item} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} index, string title)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a9ef1000c9b7091ca5d654b79edac09a1}{End\+List\+Item} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} index)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_ad25649a8518696de278f7e7c9e36b86f}{Begin\+Table} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} row\+Count, \hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} col\+Count)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a4d8c494b4539d97470ea2117a4534439}{Begin\+Table\+Row} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} row\+Index)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a4b2bf59e116c66b1122740bfc67c53ec}{End\+Table\+Row} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} row\+Index)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a6cca87392b3e19aa9517edf9d9fec1bc}{Begin\+Table\+Cell} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} row\+Index, \hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} col\+Index, bool head)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a711cd215309963e8548e90ecd98dded4}{End\+Table\+Cell} (\hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} row\+Index, \hyperlink{namespace_software_engineering_tools_1_1_documentation_a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748}{int} col\+Index, bool head)
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_ada6e8d07b97aad9bec46da135423fe99}{End\+Table} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a8bde307f2f0e1951ef630820826d87d0}{Begin\+Document} ()
+\begin{DoxyCompactList}\small\item\em Begin the document. \end{DoxyCompactList}\item 
+override void \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a0aadbc1dd71ab337f09e4e939915666e}{End\+Document} ()
+\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a56054cd420c6dc071f83b05bf9cb1dc3}{Show\+Word}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file Word\+Generator.\+cs.
+
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0e}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Word\+Template@{Word\+Template}}
+\index{Word\+Template@{Word\+Template}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Word\+Template}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Word\+Template}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0e}
+
+
+Standard Word templates. 
+
+These are the standard, \char`\"{}build in\char`\"{} Word templates \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{Classic@{Classic}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Classic@{Classic}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ead35b51b639528d580362ca7042de6a0e}{Classic}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ead35b51b639528d580362ca7042de6a0e}
+}]\index{Default@{Default}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Default@{Default}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea7a1920d61156abc05a60135aefe8bc67}{Default}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea7a1920d61156abc05a60135aefe8bc67}
+}]Klasszikus kinézet. \index{Default\+Black\+And\+White@{Default\+Black\+And\+White}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Default\+Black\+And\+White@{Default\+Black\+And\+White}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eafa93a4d83268508082592625efe8dddf}{Default\+Black\+And\+White}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eafa93a4d83268508082592625efe8dddf}
+}]\index{Distinctive@{Distinctive}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Distinctive@{Distinctive}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eae0571f6ddf64425a966e860cb12ea11d}{Distinctive}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eae0571f6ddf64425a966e860cb12ea11d}
+}]klasszikus kinézet fekete és fehér beállításokkal. \index{Elegant@{Elegant}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Elegant@{Elegant}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea87ce766ce5c0b6317258df8c2eb0908c}{Elegant}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea87ce766ce5c0b6317258df8c2eb0908c}
+}]\index{Fancy@{Fancy}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Fancy@{Fancy}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea7f6ec4d9d12421a15cc0cb2f4003f293}{Fancy}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea7f6ec4d9d12421a15cc0cb2f4003f293}
+}]\index{Formal@{Formal}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Formal@{Formal}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea557c6481538b93bfe0a10a1cbc11aa07}{Formal}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea557c6481538b93bfe0a10a1cbc11aa07}
+}]\index{Manuscript@{Manuscript}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Manuscript@{Manuscript}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea9b2478b417960fda209e14947b7c3d37}{Manuscript}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea9b2478b417960fda209e14947b7c3d37}
+}]\index{Modern@{Modern}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Modern@{Modern}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eaad1c9cd3e7b07e2c364c985f73188054}{Modern}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eaad1c9cd3e7b07e2c364c985f73188054}
+}]\index{Newsprint@{Newsprint}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Newsprint@{Newsprint}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea390ab2af184e8c03159ab21fc143be1e}{Newsprint}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea390ab2af184e8c03159ab21fc143be1e}
+}]\index{Perspective@{Perspective}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Perspective@{Perspective}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eaa80420eef88d11f77532f1b9cb467fa3}{Perspective}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eaa80420eef88d11f77532f1b9cb467fa3}
+}]\index{Simple@{Simple}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Simple@{Simple}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea1fbb1e3943c2c6c560247ac8f9289780}{Simple}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea1fbb1e3943c2c6c560247ac8f9289780}
+}]\index{Thatch@{Thatch}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Thatch@{Thatch}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eae99f9fde61f40b0011c33a26ca83fd30}{Thatch}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0eae99f9fde61f40b0011c33a26ca83fd30}
+}]\index{Traditional@{Traditional}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Traditional@{Traditional}}\item[{\em 
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea1bfbcce75c3c9a52a464d4cb0984488a}{Traditional}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a25625d01bb20e4edcaeede4fde7dcd0ea1bfbcce75c3c9a52a464d4cb0984488a}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 40 of file Word\+Generator.\+cs.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_af0b26d8845bfd80b944d4a11a2c1124f}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Word\+Generator@{Word\+Generator}}
+\index{Word\+Generator@{Word\+Generator}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Word\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Word\+Generator (
+\begin{DoxyParamCaption}
+\item[{string}]{path, }
+\item[{bool}]{show\+Word = {\ttfamily true}, }
+\item[{{\bf Word\+Template}}]{template = {\ttfamily WordTemplate.Default}}
+\end{DoxyParamCaption}
+)}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_af0b26d8845bfd80b944d4a11a2c1124f}
+
+
+
+
+Constructor of \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_word_generator}{Word\+Generator}. 
+\begin{DoxyParams}{Parameters}
+{\em path} & Elérési út\\
+\hline
+\end{DoxyParams}
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Az elérési út\\
+\hline
+{\em show\+Word} & Legyen látható a Word?\\
+\hline
+{\em template} & Milyen template-\/t kell használni hozzá\\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file Word\+Generator.\+cs.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a8bde307f2f0e1951ef630820826d87d0}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Begin\+Document@{Begin\+Document}}
+\index{Begin\+Document@{Begin\+Document}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Begin\+Document}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Begin\+Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a8bde307f2f0e1951ef630820826d87d0}
+
+
+Begin the document. 
+
+Open a new Word application and a new document with the given template. After that it set the styles 
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a6dcea40e796970bba1229a2e513fdb56}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 92 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a8e6c89f64b72dc406aab016d39ee3c60}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Begin\+List@{Begin\+List}}
+\index{Begin\+List@{Begin\+List}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Begin\+List}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Begin\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a8e6c89f64b72dc406aab016d39ee3c60}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_ac293a5f636676bbf7f4183e9aa4439e5}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 353 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a21cf3f4b0aabac4e3a64b0da78cd0212}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Begin\+List\+Item@{Begin\+List\+Item}}
+\index{Begin\+List\+Item@{Begin\+List\+Item}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Begin\+List\+Item}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Begin\+List\+Item (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index, }
+\item[{string}]{title}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a21cf3f4b0aabac4e3a64b0da78cd0212}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_aebd2eac27c0ff8a1dcb9a9e4914a54b6}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 371 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a7606e1f460a2b58245d6dd1418058a11}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Begin\+Markup@{Begin\+Markup}}
+\index{Begin\+Markup@{Begin\+Markup}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Begin\+Markup}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Begin\+Markup (
+\begin{DoxyParamCaption}
+\item[{{\bf Document\+Markup\+Kind}}]{markup\+Kind}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a7606e1f460a2b58245d6dd1418058a11}
+
+
+Begin Markup. 
+
+Store the starting position of the markup, so it can be used in the ending. 
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a9398de502d89f600ac1f8ec72e6f1f48}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 256 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_acdb54490629705960c7544904a96f8b9}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Begin\+Reference@{Begin\+Reference}}
+\index{Begin\+Reference@{Begin\+Reference}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Begin\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Begin\+Reference (
+\begin{DoxyParamCaption}
+\item[{string}]{id, }
+\item[{bool}]{url = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_acdb54490629705960c7544904a96f8b9}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_aacc6cff53b0298213c5bfbbae5cf39ec}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 305 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_accc00e23ef4d7fa36359715ce4bd3845}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Begin\+Section\+Title@{Begin\+Section\+Title}}
+\index{Begin\+Section\+Title@{Begin\+Section\+Title}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Begin\+Section\+Title}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Begin\+Section\+Title (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{level, }
+\item[{string}]{title, }
+\item[{string}]{label}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_accc00e23ef4d7fa36359715ce4bd3845}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_aa6b7b1a10a275fa3833f79c21ad932f8}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 174 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_ad25649a8518696de278f7e7c9e36b86f}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Begin\+Table@{Begin\+Table}}
+\index{Begin\+Table@{Begin\+Table}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Begin\+Table}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Begin\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{row\+Count, }
+\item[{{\bf int}}]{col\+Count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_ad25649a8518696de278f7e7c9e36b86f}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a0b1b0b9fa405181afcca7297b0c429d7}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 396 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a6cca87392b3e19aa9517edf9d9fec1bc}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Begin\+Table\+Cell@{Begin\+Table\+Cell}}
+\index{Begin\+Table\+Cell@{Begin\+Table\+Cell}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Begin\+Table\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Begin\+Table\+Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{row\+Index, }
+\item[{{\bf int}}]{col\+Index, }
+\item[{bool}]{head}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a6cca87392b3e19aa9517edf9d9fec1bc}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a142486e159cf18396bad17686c4ece3b}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 425 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a4d8c494b4539d97470ea2117a4534439}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Begin\+Table\+Row@{Begin\+Table\+Row}}
+\index{Begin\+Table\+Row@{Begin\+Table\+Row}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Begin\+Table\+Row}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Begin\+Table\+Row (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{row\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a4d8c494b4539d97470ea2117a4534439}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a11ff1e9792b49b59731026e57040b3d4}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 414 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_adf9f0b03760f695ece98b7c529de9e08}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Dispose@{Dispose}}
+\index{Dispose@{Dispose}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Dispose}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Dispose (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_adf9f0b03760f695ece98b7c529de9e08}
+
+
+A dispose. 
+
+Calls the ending of the document. 
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a9fe08809c64a81d6a915169cd655cc3f}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 77 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a0aadbc1dd71ab337f09e4e939915666e}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!End\+Document@{End\+Document}}
+\index{End\+Document@{End\+Document}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{End\+Document}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+End\+Document (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a0aadbc1dd71ab337f09e4e939915666e}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_ae367934e4153adfd260dec902d0e69d5}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 134 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a254b01c1abbc805bce33d0827ca12988}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!End\+List@{End\+List}}
+\index{End\+List@{End\+List}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{End\+List}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+End\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a254b01c1abbc805bce33d0827ca12988}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a06d3076fc6cb5f27e0573fdbc79aa879}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 358 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a9ef1000c9b7091ca5d654b79edac09a1}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!End\+List\+Item@{End\+List\+Item}}
+\index{End\+List\+Item@{End\+List\+Item}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{End\+List\+Item}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+End\+List\+Item (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a9ef1000c9b7091ca5d654b79edac09a1}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a6cf51dcd959fe8b91f5278dc508cd704}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 387 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_ac480b4e09794677ff4c3abce6455aa32}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!End\+Markup@{End\+Markup}}
+\index{End\+Markup@{End\+Markup}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{End\+Markup}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+End\+Markup (
+\begin{DoxyParamCaption}
+\item[{{\bf Document\+Markup\+Kind}}]{markup\+Kind}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_ac480b4e09794677ff4c3abce6455aa32}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a11ff9fa315e40775e63fd2b4dc184596}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 261 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a7032d09ad0e77686dd17fd063bfd1c90}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!End\+Reference@{End\+Reference}}
+\index{End\+Reference@{End\+Reference}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{End\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+End\+Reference (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a7032d09ad0e77686dd17fd063bfd1c90}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a6bf9ae60215596599442591d3f8e2636}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 312 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a6742f94e53dbe5073a80742657e6c938}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!End\+Section\+Title@{End\+Section\+Title}}
+\index{End\+Section\+Title@{End\+Section\+Title}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{End\+Section\+Title}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+End\+Section\+Title (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a6742f94e53dbe5073a80742657e6c938}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a649acf880cf5cdbdf3fe71924de0954e}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 206 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_ada6e8d07b97aad9bec46da135423fe99}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!End\+Table@{End\+Table}}
+\index{End\+Table@{End\+Table}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{End\+Table}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+End\+Table (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_ada6e8d07b97aad9bec46da135423fe99}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a6244abdf686183395fb44339111a7363}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 461 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a711cd215309963e8548e90ecd98dded4}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!End\+Table\+Cell@{End\+Table\+Cell}}
+\index{End\+Table\+Cell@{End\+Table\+Cell}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{End\+Table\+Cell}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+End\+Table\+Cell (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{row\+Index, }
+\item[{{\bf int}}]{col\+Index, }
+\item[{bool}]{head}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a711cd215309963e8548e90ecd98dded4}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_ad7358d1047a392ce8d23e01d6c541e72}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 441 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a4b2bf59e116c66b1122740bfc67c53ec}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!End\+Table\+Row@{End\+Table\+Row}}
+\index{End\+Table\+Row@{End\+Table\+Row}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{End\+Table\+Row}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+End\+Table\+Row (
+\begin{DoxyParamCaption}
+\item[{{\bf int}}]{row\+Index}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a4b2bf59e116c66b1122740bfc67c53ec}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a0c815504fc6e9d7e2c49f114fdd93a88}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 420 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_abb9105e0709c711c7199faa29dbf9331}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!New\+Label@{New\+Label}}
+\index{New\+Label@{New\+Label}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{New\+Label}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+New\+Label (
+\begin{DoxyParamCaption}
+\item[{string}]{id}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_abb9105e0709c711c7199faa29dbf9331}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a6e0fb6c2edbb674ec4f0048ac1984871}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 297 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a30e09031fd81ba57185fb44d9b0d5f2f}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!New\+Paragraph@{New\+Paragraph}}
+\index{New\+Paragraph@{New\+Paragraph}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{New\+Paragraph}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+New\+Paragraph (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a30e09031fd81ba57185fb44d9b0d5f2f}
+
+
+Make new Paragraph. 
+
+It make a new paragraph with normal style. 
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a589f93438eceb47c5fae148ec40418a6}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 215 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_aeea13e32835b1af446a27f4ed4977c5a}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Print\+Text@{Print\+Text}}
+\index{Print\+Text@{Print\+Text}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Print\+Text}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Print\+Text (
+\begin{DoxyParamCaption}
+\item[{string}]{text, }
+\item[{bool}]{insert\+Space = {\ttfamily true}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_aeea13e32835b1af446a27f4ed4977c5a}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a17021c5059b0dee77f60d085567d6265}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 230 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a888eb271c27f9419b29eb38cbd00af66}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Print\+Verbatim\+Text@{Print\+Verbatim\+Text}}
+\index{Print\+Verbatim\+Text@{Print\+Verbatim\+Text}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Print\+Verbatim\+Text}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Print\+Verbatim\+Text (
+\begin{DoxyParamCaption}
+\item[{string}]{text}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a888eb271c27f9419b29eb38cbd00af66}
+
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_a9806a5f0d5c0fea55cc7247ca6ea1d70}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 244 of file Word\+Generator.\+cs.
+
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_acb1d23ef351f76260a319a98751273c2}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Set\+Content@{Set\+Content}}
+\index{Set\+Content@{Set\+Content}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Set\+Content}]{\setlength{\rightskip}{0pt plus 5cm}override void Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Set\+Content (
+\begin{DoxyParamCaption}
+\item[{bool}]{enabled, }
+\item[{{\bf int}}]{depth}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_acb1d23ef351f76260a319a98751273c2}
+
+
+Set the Table of Content. 
+
+Set the depth of the Table of Content in relation of the usen template. 
+
+Implements \hyperlink{class_software_engineering_tools_1_1_documentation_1_1_document_generator_af39f74148f77d9e036a9a3b284c4d569}{Software\+Engineering\+Tools.\+Documentation.\+Document\+Generator}.
+
+
+
+Definition at line 164 of file Word\+Generator.\+cs.
+
+
+
+\subsection{Property Documentation}
+\hypertarget{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a56054cd420c6dc071f83b05bf9cb1dc3}{\index{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}!Show\+Word@{Show\+Word}}
+\index{Show\+Word@{Show\+Word}!Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator@{Software\+Engineering\+Tools\+::\+Documentation\+::\+Word\+Generator}}
+\subsubsection[{Show\+Word}]{\setlength{\rightskip}{0pt plus 5cm}bool Software\+Engineering\+Tools.\+Documentation.\+Word\+Generator.\+Show\+Word\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}}\label{class_software_engineering_tools_1_1_documentation_1_1_word_generator_a56054cd420c6dc071f83b05bf9cb1dc3}
+
+
+Definition at line 83 of file Word\+Generator.\+cs.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Document\+Generator\+Lib/\hyperlink{_word_generator_8cs}{Word\+Generator.\+cs}\end{DoxyCompactItemize}

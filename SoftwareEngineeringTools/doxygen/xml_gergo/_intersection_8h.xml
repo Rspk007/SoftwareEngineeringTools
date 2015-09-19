@@ -1,0 +1,262 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_intersection_8h" kind="file">
+    <compoundname>Intersection.h</compoundname>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includes refid="_material_8h" local="yes">Material.h</includes>
+    <includes refid="_i_intersectable_8h" local="yes">IIntersectable.h</includes>
+    <includes refid="_ray_8h" local="yes">Ray.h</includes>
+    <includedby refid="_i_shape_8h" local="yes">Új mappa/IShape.h</includedby>
+    <includedby refid="_bounding_volume_8h" local="yes">Új mappa/BoundingVolume.h</includedby>
+    <includedby refid="_surface_8h" local="yes">Új mappa/Surface.h</includedby>
+    <includedby refid="_model_space_8h" local="yes">Új mappa/ModelSpace.h</includedby>
+    <includedby refid="_volume_8h" local="yes">Új mappa/Volume.h</includedby>
+    <includedby refid="_plane_8h" local="yes">Új mappa/Plane.h</includedby>
+    <incdepgraph>
+      <node id="178">
+        <label>Vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>cmath</label>
+      </node>
+      <node id="180">
+        <label>stdexcept</label>
+      </node>
+      <node id="182">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>Line.h</label>
+        <link refid="_line_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>IIntersectable.h</label>
+        <link refid="_i_intersectable_8h"/>
+        <childnode refid="186" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>Material.h</label>
+        <link refid="_material_8h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>Ray.h</label>
+        <link refid="_ray_8h"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>iostream</label>
+      </node>
+      <node id="188">
+        <label>TypeOperators.h</label>
+        <link refid="_type_operators_8h"/>
+      </node>
+      <node id="183">
+        <label>Primitive.h</label>
+        <link refid="_primitive_8h"/>
+      </node>
+      <node id="177">
+        <label>Új mappa/Intersection.h</label>
+        <link refid="Intersection.h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="199">
+        <label>Új mappa/LinearCubeFilter.h</label>
+        <link refid="_linear_cube_filter_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>Új mappa/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="195">
+        <label>Új mappa/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="201">
+        <label>Új mappa/MarschnerLobb.h</label>
+        <link refid="_marschner_lobb_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>Új mappa/IShape.h</label>
+        <link refid="_i_shape_8h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>Új mappa/Volume.h</label>
+        <link refid="_volume_8h"/>
+        <childnode refid="198" relation="include">
+        </childnode>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+        <childnode refid="201" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>Új mappa/ModelSpace.h</label>
+        <link refid="_model_space_8h"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>Új mappa/BoundingVolume.h</label>
+        <link refid="_bounding_volume_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="200">
+        <label>Új mappa/LinearTetraFilter.h</label>
+        <link refid="_linear_tetra_filter_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="198">
+        <label>Új mappa/Filter.h</label>
+        <link refid="_filter_8h"/>
+        <childnode refid="199" relation="include">
+        </childnode>
+        <childnode refid="200" relation="include">
+        </childnode>
+      </node>
+      <node id="202">
+        <label>Új mappa/Plane.h</label>
+        <link refid="_plane_8h"/>
+      </node>
+      <node id="192">
+        <label>Új mappa/AABB.h</label>
+        <link refid="_a_a_b_b_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="196">
+        <label>Új mappa/Surface.h</label>
+        <link refid="_surface_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>Új mappa/Intersection.h</label>
+        <link refid="Intersection.h"/>
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="202" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_geometry_1_1_intersection" prot="public">Geometry::Intersection</innerclass>
+    <innernamespace refid="namespace_geometry">Geometry</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INTERSECTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INTERSECTION_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vector_8h" kindref="compound">Vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_material_8h" kindref="compound">Material.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_intersectable_8h" kindref="compound">IIntersectable.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_ray_8h" kindref="compound">Ray.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Visualisation;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Geometry</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>type<sp/>of<sp/>the<sp/>coordinates<sp/>in<sp/>the<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_i_intersectable" kindref="compound">IIntersectable&lt;T&gt;</ref>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>time,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_ray" kindref="compound">Ray&lt;T&gt;</ref>*<sp/>ray<sp/>=<sp/>0,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value<sp/>=<sp/>T(),<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref>*<sp/>material<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_geometry_1_1_intersection_1ab8d449d29d16e7cbf5997c030c8a401a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_i_intersectable" kindref="compound">IIntersectable&lt;T&gt;</ref>*<sp/><ref refid="struct_geometry_1_1_intersection_1ab8d449d29d16e7cbf5997c030c8a401a" kindref="member">obj</ref>;<sp/></highlight><highlight class="comment">//<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>intersected<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="struct_geometry_1_1_intersection_1a92c08fdee4c3d7ce4f5180f6222a9a13" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/><ref refid="struct_geometry_1_1_intersection_1a92c08fdee4c3d7ce4f5180f6222a9a13" kindref="member">position</ref>;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>position<sp/>of<sp/>the<sp/>intersection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="struct_geometry_1_1_intersection_1a6f88871e9000141586c249d6bb326e51" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="struct_geometry_1_1_intersection_1a6f88871e9000141586c249d6bb326e51" kindref="member">time</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>position<sp/>of<sp/>the<sp/>intersection<sp/>in<sp/>the<sp/>ray<sp/>in<sp/>dimension<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="struct_geometry_1_1_intersection_1aa2a46d8387923389a3aad30be0b8a8b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref>*<sp/><ref refid="struct_geometry_1_1_intersection_1aa2a46d8387923389a3aad30be0b8a8b5" kindref="member">material</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>material<sp/>at<sp/>the<sp/>intersection<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="struct_geometry_1_1_intersection_1ab6e431ff5ef4b9a0ccecd75250c8fa9e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_ray" kindref="compound">Ray&lt;T&gt;</ref>*<sp/><ref refid="struct_geometry_1_1_intersection_1ab6e431ff5ef4b9a0ccecd75250c8fa9e" kindref="member">ray</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>ray<sp/>of<sp/>the<sp/>intersection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="struct_geometry_1_1_intersection_1a4fc7f59e3113e19697159919a5aad095" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="struct_geometry_1_1_intersection_1a4fc7f59e3113e19697159919a5aad095" kindref="member">value</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>value<sp/>of<sp/>the<sp/>intersected<sp/>object<sp/>in<sp/>the<sp/>intersection<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>DEFINITIONS<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="38" refid="struct_geometry_1_1_intersection_1ae8bc77e85ab6570502b0596aac795e84" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection&lt;T&gt;::Intersection</ref>():</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj(0),<sp/>position(<ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt;T&gt;(0)),<sp/>time(T()),<sp/>material(0),<sp/>ray(0)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="43" refid="struct_geometry_1_1_intersection_1ad248b158cd16092526935f1a93c3ce7c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_geometry_1_1_intersection_1ae8bc77e85ab6570502b0596aac795e84" kindref="member">Intersection&lt;T&gt;::Intersection</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_i_intersectable" kindref="compound">IIntersectable&lt;T&gt;</ref>*<sp/>obj,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref>&amp;<sp/>position,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>time,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_ray" kindref="compound">Ray&lt;T&gt;</ref>*<sp/>ray,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref>*<sp/>material<sp/>):</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>obj(obj),<sp/>position(position),<sp/>time(time),<sp/>ray(ray),<sp/>value(value),<sp/>material(material)</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>INTERSECTION_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Intersection.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_first_assignment_1_1_web_page_analyzer" kind="class" prot="public">
+    <compoundname>FirstAssignment::WebPageAnalyzer</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_first_assignment_1_1_web_page_analyzer_1aad386977103985798dfd07970a5c9079" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String FirstAssignment.WebPageAnalyzer.webPage</definition>
+        <argsstring></argsstring>
+        <name>webPage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="25" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_first_assignment_1_1_web_page_analyzer_1a2291b3cc0b111e0743b680ea357be40d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String FirstAssignment.WebPageAnalyzer.IPAddress</definition>
+        <argsstring></argsstring>
+        <name>IPAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="26" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_first_assignment_1_1_web_page_analyzer_1acd5102128e9dc1d5d6d70b00247c0850" prot="private" static="no" mutable="no">
+        <type><ref refid="class_first_assignment_1_1_display" kindref="compound">Display</ref></type>
+        <definition>Display FirstAssignment.WebPageAnalyzer.display</definition>
+        <argsstring></argsstring>
+        <name>display</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="27" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_first_assignment_1_1_web_page_analyzer_1a9e58d50ebb1ce1f15e332b7832c93016" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>ArrayList&lt;String&gt; FirstAssignment.WebPageAnalyzer.URLList</definition>
+        <argsstring></argsstring>
+        <name>URLList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="28" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_first_assignment_1_1_web_page_analyzer_1a18b13080a562f67b45e53d1017771262" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>ArrayList&lt;String&gt; FirstAssignment.WebPageAnalyzer.URLIPList</definition>
+        <argsstring></argsstring>
+        <name>URLIPList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="29" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_first_assignment_1_1_web_page_analyzer_1a7c7c5ef9a693a12830aa64db60625504" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; String[]&gt;</type>
+        <definition>ArrayList&lt;String[]&gt; FirstAssignment.WebPageAnalyzer.safeSourceList</definition>
+        <argsstring></argsstring>
+        <name>safeSourceList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="30" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_first_assignment_1_1_web_page_analyzer_1aaed0a4c4c15e029314a8ea8f18948cba" prot="private" static="no" mutable="no">
+        <type>ArrayList&lt; String[]&gt;</type>
+        <definition>ArrayList&lt;String[]&gt; FirstAssignment.WebPageAnalyzer.dangerousSourceList</definition>
+        <argsstring></argsstring>
+        <name>dangerousSourceList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="31" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_first_assignment_1_1_web_page_analyzer_1a6d4f8b0e02cd499591ccf77b69d0f688" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>FirstAssignment.WebPageAnalyzer.WebPageAnalyzer</definition>
+        <argsstring>()</argsstring>
+        <name>WebPageAnalyzer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor of the <ref refid="class_first_assignment_1_1_web_page_analyzer" kindref="compound">WebPageAnalyzer</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="36" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="36" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_web_page_analyzer_1a06e93c3d8f34eab7ff053c7f2d09b847" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirstAssignment.WebPageAnalyzer.setDisplay</definition>
+        <argsstring>(Display display)</argsstring>
+        <name>setDisplay</name>
+        <param>
+          <type><ref refid="class_first_assignment_1_1_display" kindref="compound">Display</ref></type>
+          <declname>display</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter function of the display variable.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>display</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The global display instance. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="50" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="50" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_web_page_analyzer_1a841469ac4394d838d1e2866544f88883" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirstAssignment.WebPageAnalyzer.setWebpage</definition>
+        <argsstring>(String webPageURL)</argsstring>
+        <name>setWebpage</name>
+        <param>
+          <type>String</type>
+          <declname>webPageURL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter function of the webPage variable.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>webPageURL</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The URL of the page, which has to be examined. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="59" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_web_page_analyzer_1aa4dfe30eb77c38e36c84789c2f4d7b51" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String FirstAssignment.WebPageAnalyzer.getWebPageIP</definition>
+        <argsstring>()</argsstring>
+        <name>getWebPageIP</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determines the IP Address of the webpage.</para><para><simplesect kind="return"><para>The IP Address of the webpage. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>UnknownHostException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="69" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="69" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_web_page_analyzer_1a0b20478f77ceb57a20808c241ce683bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String[]</type>
+        <definition>String [] FirstAssignment.WebPageAnalyzer.getWebpageLocation</definition>
+        <argsstring>()</argsstring>
+        <name>getWebpageLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the geo-informations of the webpage.</para><para><simplesect kind="return"><para>A String array. The first element should be the latitude, the second the longitude. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="97" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="97" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_web_page_analyzer_1a29a625b61259159bfe31246f03936981" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>ArrayList&lt;String&gt; FirstAssignment.WebPageAnalyzer.getURLList</definition>
+        <argsstring>()</argsstring>
+        <name>getURLList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the URLs found in the body of the webpage.</para><para><simplesect kind="return"><para>An ArrayList of the URLs. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="137" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="137" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_web_page_analyzer_1a785ddb5bb7ec547c7662b4cfa7cc5770" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String &gt;</type>
+        <definition>ArrayList&lt;String&gt; FirstAssignment.WebPageAnalyzer.getIPList</definition>
+        <argsstring>()</argsstring>
+        <name>getIPList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the IP addresses of the found URLs.</para><para><simplesect kind="return"><para>An ArrayList of the IP addresses. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="230" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="230" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_web_page_analyzer_1af2bba1d088f1664a26e1d13f31869582" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String[]&gt;</type>
+        <definition>ArrayList&lt;String[]&gt; FirstAssignment.WebPageAnalyzer.getSafeSourceList</definition>
+        <argsstring>()</argsstring>
+        <name>getSafeSourceList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a list of safe URLs and the belonging IP address.</para><para><simplesect kind="return"><para>An ArrayList of URLs and IP addresses. They should be returned as a string array with 4 elements: URL, IP, latitude, longitude. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="266" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="266" bodyend="297"/>
+      </memberdef>
+      <memberdef kind="function" id="class_first_assignment_1_1_web_page_analyzer_1ae8b6f03c1f54c4fcf3d37c56723333f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayList&lt; String[]&gt;</type>
+        <definition>ArrayList&lt;String[]&gt; FirstAssignment.WebPageAnalyzer.getDangerousSourceList</definition>
+        <argsstring>()</argsstring>
+        <name>getDangerousSourceList</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns a list of dangerous URLs and the belonging IP address.</para><para><simplesect kind="return"><para>An ArrayList of URLs and IP addresses. They should be returned as a string array with 4 elements: URL, IP, latitude, longitude. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="305" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="305" bodyend="308"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class has to be completed by the students as their first assignment.</para><para><simplesect kind="author"><para>??? </para></simplesect>
+</para>    </detaileddescription>
+    <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" line="23" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/WebPageAnalyzer.java" bodystart="23" bodyend="309"/>
+    <listofallmembers>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1aaed0a4c4c15e029314a8ea8f18948cba" prot="private" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>dangerousSourceList</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1acd5102128e9dc1d5d6d70b00247c0850" prot="private" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>display</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1ae8b6f03c1f54c4fcf3d37c56723333f5" prot="public" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>getDangerousSourceList</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a785ddb5bb7ec547c7662b4cfa7cc5770" prot="public" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>getIPList</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1af2bba1d088f1664a26e1d13f31869582" prot="public" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>getSafeSourceList</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a29a625b61259159bfe31246f03936981" prot="public" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>getURLList</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1aa4dfe30eb77c38e36c84789c2f4d7b51" prot="public" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>getWebPageIP</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a0b20478f77ceb57a20808c241ce683bb" prot="public" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>getWebpageLocation</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a2291b3cc0b111e0743b680ea357be40d" prot="private" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>IPAddress</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a7c7c5ef9a693a12830aa64db60625504" prot="private" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>safeSourceList</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a06e93c3d8f34eab7ff053c7f2d09b847" prot="public" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>setDisplay</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a841469ac4394d838d1e2866544f88883" prot="public" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>setWebpage</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a18b13080a562f67b45e53d1017771262" prot="private" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>URLIPList</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a9e58d50ebb1ce1f15e332b7832c93016" prot="private" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>URLList</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1aad386977103985798dfd07970a5c9079" prot="private" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>webPage</name></member>
+      <member refid="class_first_assignment_1_1_web_page_analyzer_1a6d4f8b0e02cd499591ccf77b69d0f688" prot="public" virt="non-virtual"><scope>FirstAssignment::WebPageAnalyzer</scope><name>WebPageAnalyzer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

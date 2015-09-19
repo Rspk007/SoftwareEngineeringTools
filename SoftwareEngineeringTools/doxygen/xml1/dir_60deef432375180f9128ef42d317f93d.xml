@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_60deef432375180f9128ef42d317f93d" kind="dir">
+    <compoundname>C:/SoftwareEngineeringTools/ApiDocLib</compoundname>
+    <innerdir refid="dir_8c5f0277573d128819a774c8ccf834e6">C:/SoftwareEngineeringTools/ApiDocLib/obj</innerdir>
+    <innerdir refid="dir_f7d7fe7e76f0d7636722cb7be8ba5bcc">C:/SoftwareEngineeringTools/ApiDocLib/Properties</innerdir>
+    <innerfile refid="_api_doc_config_8cs">ApiDocConfig.cs</innerfile>
+    <innerfile refid="_api_doc_generator_8cs">ApiDocGenerator.cs</innerfile>
+    <innerfile refid="_api_doc_template_8cs">ApiDocTemplate.cs</innerfile>
+    <innerfile refid="_doxygen_8cs">Doxygen.cs</innerfile>
+    <innerfile refid="_doxygen_parser_8cs">DoxygenParser.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/"/>
+  </compounddef>
+</doxygen>

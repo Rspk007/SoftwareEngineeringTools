@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_0ae392f2db1249f19e0b37021b04257f" kind="dir">
+    <compoundname>DocumentGeneratorLib/Properties</compoundname>
+    <innerfile refid="_document_generator_lib_2_properties_2_assembly_info_8cs">AssemblyInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/Properties/"/>
+  </compounddef>
+</doxygen>

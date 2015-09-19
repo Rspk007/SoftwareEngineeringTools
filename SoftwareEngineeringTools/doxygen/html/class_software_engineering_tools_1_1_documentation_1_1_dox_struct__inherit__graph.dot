@@ -1,0 +1,10 @@
+digraph "SoftwareEngineeringTools.Documentation.DoxStruct"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SoftwareEngineeringTools.\lDocumentation.DoxStruct\n||+ DoxStruct()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{DoxClassifier\n|+ Abstract\l+ BaseClassifiers\l+ DerivedClassifiers\l+ Final\l+ InnerClassifiers\l+ Members\l+ ProtectionKind\l+ Sealed\l+ TemplateParams\l|+ DoxClassifier()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_classifier.html"];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{Compound\n|+ BriefDescription\l+ Description\l+ Identifier\l+ Kind\l+ Location\l+ Name\l+ ProgramListing\l+ Title\l|+ Compound()\l+ ToString()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_compound.html"];
+}

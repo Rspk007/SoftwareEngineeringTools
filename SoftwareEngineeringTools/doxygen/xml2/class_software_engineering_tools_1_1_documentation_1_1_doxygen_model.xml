@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxygenModel</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1aca1bd90e5926767d75f0ce49de702d7f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Dictionary&lt; string, <ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kindref="compound">Compound</ref> &gt;</type>
+        <definition>Dictionary&lt;string, Compound&gt; SoftwareEngineeringTools.Documentation.DoxygenModel.CompoundRefs</definition>
+        <argsstring></argsstring>
+        <name>CompoundRefs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="79" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1ae96d35852eb333d0653ea4f0f15e1d95" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>Dictionary&lt; string, <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref> &gt;</type>
+        <definition>Dictionary&lt;string, DoxMember&gt; SoftwareEngineeringTools.Documentation.DoxygenModel.MemberRefs</definition>
+        <argsstring></argsstring>
+        <name>MemberRefs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="80" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1a8ec831e8902cd1fde6146631e6bf13c9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="struct_software_engineering_tools_1_1_documentation_1_1_model_version" kindref="compound">ModelVersion</ref></type>
+        <definition>ModelVersion SoftwareEngineeringTools.Documentation.DoxygenModel.Version</definition>
+        <argsstring></argsstring>
+        <name>Version</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="81" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1ab07d3d395d1701a66e1d5f6f73ce7d61" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kindref="compound">Compound</ref> &gt;</type>
+        <definition>List&lt;Compound&gt; SoftwareEngineeringTools.Documentation.DoxygenModel.Compounds</definition>
+        <argsstring></argsstring>
+        <name>Compounds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="82" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1a31cf5108804d276a3fdd4389b87066e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DoxygenModel.DoxygenModel</definition>
+        <argsstring>()</argsstring>
+        <name>DoxygenModel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="83" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="83" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="78" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="77" bodyend="89"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1aca1bd90e5926767d75f0ce49de702d7f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenModel</scope><name>CompoundRefs</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1ab07d3d395d1701a66e1d5f6f73ce7d61" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenModel</scope><name>Compounds</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1a31cf5108804d276a3fdd4389b87066e5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenModel</scope><name>DoxygenModel</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1ae96d35852eb333d0653ea4f0f15e1d95" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenModel</scope><name>MemberRefs</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1a8ec831e8902cd1fde6146631e6bf13c9" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxygenModel</scope><name>Version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,987 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>
+			Index
+		</title><meta http-equiv="Content-type" content="text/html;charset=iso-8859-2">
+
+	</head><link rel="stylesheet" type="text/css" href="css\Java.css"><body>
+		<a name="Cinema"></a><h1>
+			Namespace: Cinema<br />
+		</h1><a name="Cinema_Program"></a><h2>
+			Class: Program<br />
+		</h2><a name=""></a><h3>
+			Methods: <br />
+		</h3><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> main(<a name="Cinema_Program_main_String__"></a> String[] args )<br /></td>
+			</tr><tr class="rowColor">
+				<td> Public <br /></td><td> Program ()<a name="Cinema_Program_Program_"></a><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation"></a><h2>
+			Namespace: SeatReservation<br />
+		</h2><a name="SeatReservation_ArrayOfSeat"></a><h3>
+			Class: ArrayOfSeat<br />
+		</h3><br /> Java class for ArrayOfSeat complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;ArrayOfSeat&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;Seat&quot; type=&quot;{http://www.iit.bme.hu/soi/hw/SeatReservation}Seat&quot; maxOccurs=&quot;unbounded&quot; minOccurs=&quot;0&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  List&lt;Seat&gt;<br /></td><td> seat<a name="SeatReservation_ArrayOfSeat_seat"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> ArrayOfSeat ()<a name="SeatReservation_ArrayOfSeat_ArrayOfSeat_"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  List&lt;Seat&gt;<br /></td><td> getSeat ()<a name="SeatReservation_ArrayOfSeat_getSeat_"></a><br /> Gets the value of the seat property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  List&lt;Seat&gt; getSeat ()<a name="SeatReservation_ArrayOfSeat_getSeat_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the seat property. <br /><br />  This accessor method returns a reference to the live list,<br /> not a snapshot. Therefore any modification you make to the<br /> returned list will be present inside the JAXB object.<br /> This is why there is not a <br /><i> set</i>  method for the seat property. <br /><br />  For example, to add a new item, do as follows:<br /> <br /><i>     getSeat().add(newItem);<br /> <br /></i>  <br /> <br /><br />  Objects of the following type(s) are allowed in the list<br /> <br /><a href="#SeatReservation_Seat"> Seat</a><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_Buy"></a><h3>
+			Class: Buy<br />
+		</h3><br /> Java class for Buy complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;Buy&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;lockId&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}string&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  String<br /></td><td> lockId<a name="SeatReservation_Buy_lockId"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> Buy ()<a name="SeatReservation_Buy_Buy_"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  String<br /></td><td> getLockId ()<a name="SeatReservation_Buy_getLockId_"></a><br /> Gets the value of the lockId property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setLockId(<a name="SeatReservation_Buy_setLockId_String_"></a> String value )<br /> Sets the value of the lockId property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  String getLockId ()<a name="SeatReservation_Buy_getLockId_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the lockId property.<br /><b>Returns:</b><br /> possible object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setLockId(<a name="SeatReservation_Buy_setLockId_String_"></a> String value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the lockId property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_BuyResponse"></a><h3>
+			Class: BuyResponse<br />
+		</h3><br /> Java class for BuyResponse complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;BuyResponse&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> BuyResponse ()<a name="SeatReservation_BuyResponse_BuyResponse_"></a><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_CinemaException"></a><h3>
+			Class: CinemaException<br />
+		</h3><br /> Java class for CinemaException complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;CinemaException&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;ErrorCode&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}int&quot;/&gt;<br />         &lt;element name=&quot;ErrorMessage&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}string&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  int<br /></td><td> errorCode<a name="SeatReservation_CinemaException_errorCode"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Protected  String<br /></td><td> errorMessage<a name="SeatReservation_CinemaException_errorMessage"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> CinemaException ()<a name="SeatReservation_CinemaException_CinemaException_"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  int<br /></td><td> getErrorCode ()<a name="SeatReservation_CinemaException_getErrorCode_"></a><br /> Gets the value of the errorCode property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  String<br /></td><td> getErrorMessage ()<a name="SeatReservation_CinemaException_getErrorMessage_"></a><br /> Gets the value of the errorMessage property.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  void<br /></td><td> setErrorCode(<a name="SeatReservation_CinemaException_setErrorCode_int_"></a> int value )<br /> Sets the value of the errorCode property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setErrorMessage(<a name="SeatReservation_CinemaException_setErrorMessage_String_"></a> String value )<br /> Sets the value of the errorMessage property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  int getErrorCode ()<a name="SeatReservation_CinemaException_getErrorCode_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the errorCode property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  String getErrorMessage ()<a name="SeatReservation_CinemaException_getErrorMessage_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the errorMessage property.<br /><b>Returns:</b><br /> possible object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setErrorCode(<a name="SeatReservation_CinemaException_setErrorCode_int_"></a> int value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the errorCode property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setErrorMessage(<a name="SeatReservation_CinemaException_setErrorMessage_String_"></a> String value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the errorMessage property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_CinemaService"></a><h3>
+			Class: CinemaService<br />
+		</h3> This class was generated by the JAX-WS RI. JAX-WS RI 2.2.9-b130926.1035<br /> Generated source version: 2.2<br /><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> CinemaService ()<a name="SeatReservation_CinemaService_CinemaService_"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public <br /></td><td> CinemaService(<a name="SeatReservation_CinemaService_CinemaService_URL_"></a> URL wsdlLocation )<br /></td>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> CinemaService(<a name="SeatReservation_CinemaService_CinemaService_URL_QName_"></a> QName serviceName )<br /></td>
+			</tr><tr class="rowColor">
+				<td> Public <br /></td><td> CinemaService(<a name="SeatReservation_CinemaService_CinemaService_URL_QName_WebServiceFeature_"></a> WebServiceFeature… features )<br /></td>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> CinemaService(<a name="SeatReservation_CinemaService_CinemaService_URL_WebServiceFeature_"></a> WebServiceFeature… features )<br /></td>
+			</tr><tr class="rowColor">
+				<td> Public <br /></td><td> CinemaService(<a name="SeatReservation_CinemaService_CinemaService_WebServiceFeature_"></a> WebServiceFeature… features )<br /></td>
+			</tr><tr class="altColor">
+				<td> Package  ICinema<br /></td><td> getICinemaHttpSoap11Port ()<a name="SeatReservation_CinemaService_getICinemaHttpSoap11Port_"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Package  ICinema<br /></td><td> getICinemaHttpSoap11Port(<a name="SeatReservation_CinemaService_getICinemaHttpSoap11Port_WebServiceFeature_"></a> WebServiceFeature… features )<br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Package  ICinema getICinemaHttpSoap11Port ()<a name="SeatReservation_CinemaService_getICinemaHttpSoap11Port_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td><b>Returns:</b><br /> returns ICinema<br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Package  ICinema getICinemaHttpSoap11Port(<a name="SeatReservation_CinemaService_getICinemaHttpSoap11Port_WebServiceFeature_"></a> WebServiceFeature… features )<br /></th>
+			</tr><tr class="altColor">
+				<td><b>Parameters:</b><br /><i> features</i>  - A list of <i> WebServiceFeature</i>  to configure on the proxy.  Supported features not in the <i> features</i>  parameter will have their default values.<br /><b>Returns:</b><br /> returns ICinema<br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_GetAllSeats"></a><h3>
+			Class: GetAllSeats<br />
+		</h3><br /> Java class for GetAllSeats complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;GetAllSeats&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> GetAllSeats ()<a name="SeatReservation_GetAllSeats_GetAllSeats_"></a><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_GetAllSeatsResponse"></a><h3>
+			Class: GetAllSeatsResponse<br />
+		</h3><br /> Java class for GetAllSeatsResponse complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;GetAllSeatsResponse&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;GetAllSeatsResult&quot; type=&quot;{http://www.iit.bme.hu/soi/hw/SeatReservation}ArrayOfSeat&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  ArrayOfSeat<br /></td><td> getAllSeatsResult<a name="SeatReservation_GetAllSeatsResponse_getAllSeatsResult"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> GetAllSeatsResponse ()<a name="SeatReservation_GetAllSeatsResponse_GetAllSeatsResponse_"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  ArrayOfSeat<br /></td><td> getGetAllSeatsResult ()<a name="SeatReservation_GetAllSeatsResponse_getGetAllSeatsResult_"></a><br /> Gets the value of the getAllSeatsResult property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setGetAllSeatsResult(<a name="SeatReservation_GetAllSeatsResponse_setGetAllSeatsResult_ArrayOfSeat_"></a> ArrayOfSeat value )<br /> Sets the value of the getAllSeatsResult property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  ArrayOfSeat getGetAllSeatsResult ()<a name="SeatReservation_GetAllSeatsResponse_getGetAllSeatsResult_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the getAllSeatsResult property.<br /><b>Returns:</b><br /> possible object is     <br /><a href="#SeatReservation_ArrayOfSeat"> ArrayOfSeat</a><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setGetAllSeatsResult(<a name="SeatReservation_GetAllSeatsResponse_setGetAllSeatsResult_ArrayOfSeat_"></a> ArrayOfSeat value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the getAllSeatsResult property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><a href="#SeatReservation_ArrayOfSeat"> ArrayOfSeat</a><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_GetSeatStatus"></a><h3>
+			Class: GetSeatStatus<br />
+		</h3><br /> Java class for GetSeatStatus complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;GetSeatStatus&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;seat&quot; type=&quot;{http://www.iit.bme.hu/soi/hw/SeatReservation}Seat&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  Seat<br /></td><td> seat<a name="SeatReservation_GetSeatStatus_seat"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  Seat<br /></td><td> getSeat ()<a name="SeatReservation_GetSeatStatus_getSeat_"></a><br /> Gets the value of the seat property.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public <br /></td><td> GetSeatStatus ()<a name="SeatReservation_GetSeatStatus_GetSeatStatus_"></a><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setSeat(<a name="SeatReservation_GetSeatStatus_setSeat_Seat_"></a> Seat value )<br /> Sets the value of the seat property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  Seat getSeat ()<a name="SeatReservation_GetSeatStatus_getSeat_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the seat property.<br /><b>Returns:</b><br /> possible object is     <br /><a href="#SeatReservation_Seat"> Seat</a><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setSeat(<a name="SeatReservation_GetSeatStatus_setSeat_Seat_"></a> Seat value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the seat property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><a href="#SeatReservation_Seat"> Seat</a><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_GetSeatStatusResponse"></a><h3>
+			Class: GetSeatStatusResponse<br />
+		</h3><br /> Java class for GetSeatStatusResponse complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;GetSeatStatusResponse&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;GetSeatStatusResult&quot; type=&quot;{http://www.iit.bme.hu/soi/hw/SeatReservation}SeatStatus&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  SeatStatus<br /></td><td> getSeatStatusResult<a name="SeatReservation_GetSeatStatusResponse_getSeatStatusResult"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  SeatStatus<br /></td><td> getGetSeatStatusResult ()<a name="SeatReservation_GetSeatStatusResponse_getGetSeatStatusResult_"></a><br /> Gets the value of the getSeatStatusResult property.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public <br /></td><td> GetSeatStatusResponse ()<a name="SeatReservation_GetSeatStatusResponse_GetSeatStatusResponse_"></a><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setGetSeatStatusResult(<a name="SeatReservation_GetSeatStatusResponse_setGetSeatStatusResult_SeatStatus_"></a> SeatStatus value )<br /> Sets the value of the getSeatStatusResult property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  SeatStatus getGetSeatStatusResult ()<a name="SeatReservation_GetSeatStatusResponse_getGetSeatStatusResult_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the getSeatStatusResult property.<br /><b>Returns:</b><br /> possible object is     <br /><a href="#SeatReservation_SeatStatus"> SeatStatus</a><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setGetSeatStatusResult(<a name="SeatReservation_GetSeatStatusResponse_setGetSeatStatusResult_SeatStatus_"></a> SeatStatus value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the getSeatStatusResult property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><a href="#SeatReservation_SeatStatus"> SeatStatus</a><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_Init"></a><h3>
+			Class: Init<br />
+		</h3><br /> Java class for Init complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;Init&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;rows&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}int&quot;/&gt;<br />         &lt;element name=&quot;columns&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}int&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  int<br /></td><td> columns<a name="SeatReservation_Init_columns"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Protected  int<br /></td><td> rows<a name="SeatReservation_Init_rows"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  int<br /></td><td> getColumns ()<a name="SeatReservation_Init_getColumns_"></a><br /> Gets the value of the columns property.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  int<br /></td><td> getRows ()<a name="SeatReservation_Init_getRows_"></a><br /> Gets the value of the rows property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> Init ()<a name="SeatReservation_Init_Init_"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  void<br /></td><td> setColumns(<a name="SeatReservation_Init_setColumns_int_"></a> int value )<br /> Sets the value of the columns property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setRows(<a name="SeatReservation_Init_setRows_int_"></a> int value )<br /> Sets the value of the rows property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  int getColumns ()<a name="SeatReservation_Init_getColumns_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the columns property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  int getRows ()<a name="SeatReservation_Init_getRows_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the rows property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setColumns(<a name="SeatReservation_Init_setColumns_int_"></a> int value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the columns property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setRows(<a name="SeatReservation_Init_setRows_int_"></a> int value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the rows property.<br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_InitResponse"></a><h3>
+			Class: InitResponse<br />
+		</h3><br /> Java class for InitResponse complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;InitResponse&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> InitResponse ()<a name="SeatReservation_InitResponse_InitResponse_"></a><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_Lock"></a><h3>
+			Class: Lock<br />
+		</h3><br /> Java class for Lock complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;Lock&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;seat&quot; type=&quot;{http://www.iit.bme.hu/soi/hw/SeatReservation}Seat&quot;/&gt;<br />         &lt;element name=&quot;count&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}int&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  int<br /></td><td> count<a name="SeatReservation_Lock_count"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Protected  Seat<br /></td><td> seat<a name="SeatReservation_Lock_seat"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  int<br /></td><td> getCount ()<a name="SeatReservation_Lock_getCount_"></a><br /> Gets the value of the count property.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  Seat<br /></td><td> getSeat ()<a name="SeatReservation_Lock_getSeat_"></a><br /> Gets the value of the seat property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> Lock ()<a name="SeatReservation_Lock_Lock_"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  void<br /></td><td> setCount(<a name="SeatReservation_Lock_setCount_int_"></a> int value )<br /> Sets the value of the count property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setSeat(<a name="SeatReservation_Lock_setSeat_Seat_"></a> Seat value )<br /> Sets the value of the seat property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  int getCount ()<a name="SeatReservation_Lock_getCount_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the count property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  Seat getSeat ()<a name="SeatReservation_Lock_getSeat_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the seat property.<br /><b>Returns:</b><br /> possible object is     <br /><a href="#SeatReservation_Seat"> Seat</a><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setCount(<a name="SeatReservation_Lock_setCount_int_"></a> int value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the count property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setSeat(<a name="SeatReservation_Lock_setSeat_Seat_"></a> Seat value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the seat property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><a href="#SeatReservation_Seat"> Seat</a><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_LockResponse"></a><h3>
+			Class: LockResponse<br />
+		</h3><br /> Java class for LockResponse complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;LockResponse&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;LockResult&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}string&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  String<br /></td><td> lockResult<a name="SeatReservation_LockResponse_lockResult"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  String<br /></td><td> getLockResult ()<a name="SeatReservation_LockResponse_getLockResult_"></a><br /> Gets the value of the lockResult property.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public <br /></td><td> LockResponse ()<a name="SeatReservation_LockResponse_LockResponse_"></a><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setLockResult(<a name="SeatReservation_LockResponse_setLockResult_String_"></a> String value )<br /> Sets the value of the lockResult property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  String getLockResult ()<a name="SeatReservation_LockResponse_getLockResult_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the lockResult property.<br /><b>Returns:</b><br /> possible object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setLockResult(<a name="SeatReservation_LockResponse_setLockResult_String_"></a> String value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the lockResult property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_ObjectFactory"></a><h3>
+			Class: ObjectFactory<br />
+		</h3> This object contains factory methods for each  Java content interface and Java element interface <br /> generated in the SeatReservation package. <br /> <br /><br /> An ObjectFactory allows you to programatically  construct new instances of the Java representation <br /> for XML content. The Java representation of XML <br /> content can consist of schema derived interfaces <br /> and classes representing the binding of schema <br /> type definitions, element declarations and model <br /> groups.  Factory methods for each of these are <br /> provided in this class.<br /><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  ArrayOfSeat<br /></td><td> createArrayOfSeat ()<a name="SeatReservation_ObjectFactory_createArrayOfSeat_"></a><br /> Create an instance of <a href="#SeatReservation_ArrayOfSeat"> ArrayOfSeat</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;ArrayOfSeat&gt;<br /></td><td> createArrayOfSeat(<a name="SeatReservation_ObjectFactory_createArrayOfSeat_ArrayOfSeat_"></a> ArrayOfSeat value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_ArrayOfSeat"> ArrayOfSeat</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  Buy<br /></td><td> createBuy ()<a name="SeatReservation_ObjectFactory_createBuy_"></a><br /> Create an instance of <a href="#SeatReservation_Buy"> Buy</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;Buy&gt;<br /></td><td> createBuy(<a name="SeatReservation_ObjectFactory_createBuy_Buy_"></a> Buy value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Buy"> Buy</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  BuyResponse<br /></td><td> createBuyResponse ()<a name="SeatReservation_ObjectFactory_createBuyResponse_"></a><br /> Create an instance of <a href="#SeatReservation_BuyResponse"> BuyResponse</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;BuyResponse&gt;<br /></td><td> createBuyResponse(<a name="SeatReservation_ObjectFactory_createBuyResponse_BuyResponse_"></a> BuyResponse value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_BuyResponse"> BuyResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  CinemaException<br /></td><td> createCinemaException ()<a name="SeatReservation_ObjectFactory_createCinemaException_"></a><br /> Create an instance of <a href="#SeatReservation_CinemaException"> CinemaException</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;CinemaException&gt;<br /></td><td> createCinemaException(<a name="SeatReservation_ObjectFactory_createCinemaException_CinemaException_"></a> CinemaException value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_CinemaException"> CinemaException</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  GetAllSeats<br /></td><td> createGetAllSeats ()<a name="SeatReservation_ObjectFactory_createGetAllSeats_"></a><br /> Create an instance of <a href="#SeatReservation_GetAllSeats"> GetAllSeats</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;GetAllSeats&gt;<br /></td><td> createGetAllSeats(<a name="SeatReservation_ObjectFactory_createGetAllSeats_GetAllSeats_"></a> GetAllSeats value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_GetAllSeats"> GetAllSeats</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  GetAllSeatsResponse<br /></td><td> createGetAllSeatsResponse ()<a name="SeatReservation_ObjectFactory_createGetAllSeatsResponse_"></a><br /> Create an instance of <a href="#SeatReservation_GetAllSeatsResponse"> GetAllSeatsResponse</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;GetAllSeatsResponse&gt;<br /></td><td> createGetAllSeatsResponse(<a name="SeatReservation_ObjectFactory_createGetAllSeatsResponse_GetAllSeatsResponse_"></a> GetAllSeatsResponse value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_GetAllSeatsResponse"> GetAllSeatsResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  GetSeatStatus<br /></td><td> createGetSeatStatus ()<a name="SeatReservation_ObjectFactory_createGetSeatStatus_"></a><br /> Create an instance of <a href="#SeatReservation_GetSeatStatus"> GetSeatStatus</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;GetSeatStatus&gt;<br /></td><td> createGetSeatStatus(<a name="SeatReservation_ObjectFactory_createGetSeatStatus_GetSeatStatus_"></a> GetSeatStatus value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_GetSeatStatus"> GetSeatStatus</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  GetSeatStatusResponse<br /></td><td> createGetSeatStatusResponse ()<a name="SeatReservation_ObjectFactory_createGetSeatStatusResponse_"></a><br /> Create an instance of <a href="#SeatReservation_GetSeatStatusResponse"> GetSeatStatusResponse</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;GetSeatStatusResponse&gt;<br /></td><td> createGetSeatStatusResponse(<a name="SeatReservation_ObjectFactory_createGetSeatStatusResponse_GetSeatStatusResponse_"></a> GetSeatStatusResponse value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_GetSeatStatusResponse"> GetSeatStatusResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  Init<br /></td><td> createInit ()<a name="SeatReservation_ObjectFactory_createInit_"></a><br /> Create an instance of <a href="#SeatReservation_Init"> Init</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;Init&gt;<br /></td><td> createInit(<a name="SeatReservation_ObjectFactory_createInit_Init_"></a> Init value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Init"> Init</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  InitResponse<br /></td><td> createInitResponse ()<a name="SeatReservation_ObjectFactory_createInitResponse_"></a><br /> Create an instance of <a href="#SeatReservation_InitResponse"> InitResponse</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;InitResponse&gt;<br /></td><td> createInitResponse(<a name="SeatReservation_ObjectFactory_createInitResponse_InitResponse_"></a> InitResponse value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_InitResponse"> InitResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  Lock<br /></td><td> createLock ()<a name="SeatReservation_ObjectFactory_createLock_"></a><br /> Create an instance of <a href="#SeatReservation_Lock"> Lock</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;Lock&gt;<br /></td><td> createLock(<a name="SeatReservation_ObjectFactory_createLock_Lock_"></a> Lock value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Lock"> Lock</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  LockResponse<br /></td><td> createLockResponse ()<a name="SeatReservation_ObjectFactory_createLockResponse_"></a><br /> Create an instance of <a href="#SeatReservation_LockResponse"> LockResponse</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;LockResponse&gt;<br /></td><td> createLockResponse(<a name="SeatReservation_ObjectFactory_createLockResponse_LockResponse_"></a> LockResponse value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_LockResponse"> LockResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  Reserve<br /></td><td> createReserve ()<a name="SeatReservation_ObjectFactory_createReserve_"></a><br /> Create an instance of <a href="#SeatReservation_Reserve"> Reserve</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;Reserve&gt;<br /></td><td> createReserve(<a name="SeatReservation_ObjectFactory_createReserve_Reserve_"></a> Reserve value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Reserve"> Reserve</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  ReserveResponse<br /></td><td> createReserveResponse ()<a name="SeatReservation_ObjectFactory_createReserveResponse_"></a><br /> Create an instance of <a href="#SeatReservation_ReserveResponse"> ReserveResponse</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;ReserveResponse&gt;<br /></td><td> createReserveResponse(<a name="SeatReservation_ObjectFactory_createReserveResponse_ReserveResponse_"></a> ReserveResponse value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_ReserveResponse"> ReserveResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  Seat<br /></td><td> createSeat ()<a name="SeatReservation_ObjectFactory_createSeat_"></a><br /> Create an instance of <a href="#SeatReservation_Seat"> Seat</a><br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  JAXBElement&lt;Seat&gt;<br /></td><td> createSeat(<a name="SeatReservation_ObjectFactory_createSeat_Seat_"></a> Seat value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Seat"> Seat</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  JAXBElement&lt;SeatStatus&gt;<br /></td><td> createSeatStatus(<a name="SeatReservation_ObjectFactory_createSeatStatus_SeatStatus_"></a> SeatStatus value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_SeatStatus"> SeatStatus</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  Unlock<br /></td><td> createUnlock ()<a name="SeatReservation_ObjectFactory_createUnlock_"></a><br /> Create an instance of <a href="#SeatReservation_Unlock"> Unlock</a><br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  JAXBElement&lt;Unlock&gt;<br /></td><td> createUnlock(<a name="SeatReservation_ObjectFactory_createUnlock_Unlock_"></a> Unlock value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Unlock"> Unlock</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  UnlockResponse<br /></td><td> createUnlockResponse ()<a name="SeatReservation_ObjectFactory_createUnlockResponse_"></a><br /> Create an instance of <a href="#SeatReservation_UnlockResponse"> UnlockResponse</a><br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  JAXBElement&lt;UnlockResponse&gt;<br /></td><td> createUnlockResponse(<a name="SeatReservation_ObjectFactory_createUnlockResponse_UnlockResponse_"></a> UnlockResponse value )<br /> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_UnlockResponse"> UnlockResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public <br /></td><td> ObjectFactory ()<a name="SeatReservation_ObjectFactory_ObjectFactory_"></a><br /> Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: SeatReservation<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  ArrayOfSeat createArrayOfSeat ()<a name="SeatReservation_ObjectFactory_createArrayOfSeat_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_ArrayOfSeat"> ArrayOfSeat</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;ArrayOfSeat&gt; createArrayOfSeat(<a name="SeatReservation_ObjectFactory_createArrayOfSeat_ArrayOfSeat_"></a> ArrayOfSeat value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_ArrayOfSeat"> ArrayOfSeat</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  Buy createBuy ()<a name="SeatReservation_ObjectFactory_createBuy_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_Buy"> Buy</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;Buy&gt; createBuy(<a name="SeatReservation_ObjectFactory_createBuy_Buy_"></a> Buy value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Buy"> Buy</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  BuyResponse createBuyResponse ()<a name="SeatReservation_ObjectFactory_createBuyResponse_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_BuyResponse"> BuyResponse</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;BuyResponse&gt; createBuyResponse(<a name="SeatReservation_ObjectFactory_createBuyResponse_BuyResponse_"></a> BuyResponse value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_BuyResponse"> BuyResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  CinemaException createCinemaException ()<a name="SeatReservation_ObjectFactory_createCinemaException_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_CinemaException"> CinemaException</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;CinemaException&gt; createCinemaException(<a name="SeatReservation_ObjectFactory_createCinemaException_CinemaException_"></a> CinemaException value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_CinemaException"> CinemaException</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  GetAllSeats createGetAllSeats ()<a name="SeatReservation_ObjectFactory_createGetAllSeats_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_GetAllSeats"> GetAllSeats</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;GetAllSeats&gt; createGetAllSeats(<a name="SeatReservation_ObjectFactory_createGetAllSeats_GetAllSeats_"></a> GetAllSeats value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_GetAllSeats"> GetAllSeats</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  GetAllSeatsResponse createGetAllSeatsResponse ()<a name="SeatReservation_ObjectFactory_createGetAllSeatsResponse_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_GetAllSeatsResponse"> GetAllSeatsResponse</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;GetAllSeatsResponse&gt; createGetAllSeatsResponse(<a name="SeatReservation_ObjectFactory_createGetAllSeatsResponse_GetAllSeatsResponse_"></a> GetAllSeatsResponse value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_GetAllSeatsResponse"> GetAllSeatsResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  GetSeatStatus createGetSeatStatus ()<a name="SeatReservation_ObjectFactory_createGetSeatStatus_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_GetSeatStatus"> GetSeatStatus</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;GetSeatStatus&gt; createGetSeatStatus(<a name="SeatReservation_ObjectFactory_createGetSeatStatus_GetSeatStatus_"></a> GetSeatStatus value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_GetSeatStatus"> GetSeatStatus</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  GetSeatStatusResponse createGetSeatStatusResponse ()<a name="SeatReservation_ObjectFactory_createGetSeatStatusResponse_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_GetSeatStatusResponse"> GetSeatStatusResponse</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;GetSeatStatusResponse&gt; createGetSeatStatusResponse(<a name="SeatReservation_ObjectFactory_createGetSeatStatusResponse_GetSeatStatusResponse_"></a> GetSeatStatusResponse value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_GetSeatStatusResponse"> GetSeatStatusResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  Init createInit ()<a name="SeatReservation_ObjectFactory_createInit_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_Init"> Init</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;Init&gt; createInit(<a name="SeatReservation_ObjectFactory_createInit_Init_"></a> Init value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Init"> Init</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  InitResponse createInitResponse ()<a name="SeatReservation_ObjectFactory_createInitResponse_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_InitResponse"> InitResponse</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;InitResponse&gt; createInitResponse(<a name="SeatReservation_ObjectFactory_createInitResponse_InitResponse_"></a> InitResponse value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_InitResponse"> InitResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  Lock createLock ()<a name="SeatReservation_ObjectFactory_createLock_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_Lock"> Lock</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;Lock&gt; createLock(<a name="SeatReservation_ObjectFactory_createLock_Lock_"></a> Lock value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Lock"> Lock</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  LockResponse createLockResponse ()<a name="SeatReservation_ObjectFactory_createLockResponse_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_LockResponse"> LockResponse</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;LockResponse&gt; createLockResponse(<a name="SeatReservation_ObjectFactory_createLockResponse_LockResponse_"></a> LockResponse value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_LockResponse"> LockResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  Reserve createReserve ()<a name="SeatReservation_ObjectFactory_createReserve_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_Reserve"> Reserve</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;Reserve&gt; createReserve(<a name="SeatReservation_ObjectFactory_createReserve_Reserve_"></a> Reserve value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Reserve"> Reserve</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  ReserveResponse createReserveResponse ()<a name="SeatReservation_ObjectFactory_createReserveResponse_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_ReserveResponse"> ReserveResponse</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;ReserveResponse&gt; createReserveResponse(<a name="SeatReservation_ObjectFactory_createReserveResponse_ReserveResponse_"></a> ReserveResponse value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_ReserveResponse"> ReserveResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  Seat createSeat ()<a name="SeatReservation_ObjectFactory_createSeat_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_Seat"> Seat</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;Seat&gt; createSeat(<a name="SeatReservation_ObjectFactory_createSeat_Seat_"></a> Seat value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Seat"> Seat</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;SeatStatus&gt; createSeatStatus(<a name="SeatReservation_ObjectFactory_createSeatStatus_SeatStatus_"></a> SeatStatus value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_SeatStatus"> SeatStatus</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  Unlock createUnlock ()<a name="SeatReservation_ObjectFactory_createUnlock_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_Unlock"> Unlock</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;Unlock&gt; createUnlock(<a name="SeatReservation_ObjectFactory_createUnlock_Unlock_"></a> Unlock value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_Unlock"> Unlock</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  UnlockResponse createUnlockResponse ()<a name="SeatReservation_ObjectFactory_createUnlockResponse_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <a href="#SeatReservation_UnlockResponse"> UnlockResponse</a><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  JAXBElement&lt;UnlockResponse&gt; createUnlockResponse(<a name="SeatReservation_ObjectFactory_createUnlockResponse_UnlockResponse_"></a> UnlockResponse value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Create an instance of <i> JAXBElement</i><i> &amp;lt;</i><a href="#SeatReservation_UnlockResponse"> UnlockResponse</a><i> &amp;gt;</i> }<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  ObjectFactory ()<a name="SeatReservation_ObjectFactory_ObjectFactory_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: SeatReservation<br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_Reserve"></a><h3>
+			Class: Reserve<br />
+		</h3><br /> Java class for Reserve complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;Reserve&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;lockId&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}string&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  String<br /></td><td> lockId<a name="SeatReservation_Reserve_lockId"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  String<br /></td><td> getLockId ()<a name="SeatReservation_Reserve_getLockId_"></a><br /> Gets the value of the lockId property.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public <br /></td><td> Reserve ()<a name="SeatReservation_Reserve_Reserve_"></a><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setLockId(<a name="SeatReservation_Reserve_setLockId_String_"></a> String value )<br /> Sets the value of the lockId property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  String getLockId ()<a name="SeatReservation_Reserve_getLockId_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the lockId property.<br /><b>Returns:</b><br /> possible object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setLockId(<a name="SeatReservation_Reserve_setLockId_String_"></a> String value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the lockId property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_ReserveResponse"></a><h3>
+			Class: ReserveResponse<br />
+		</h3><br /> Java class for ReserveResponse complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;ReserveResponse&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> ReserveResponse ()<a name="SeatReservation_ReserveResponse_ReserveResponse_"></a><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_Seat"></a><h3>
+			Class: Seat<br />
+		</h3><br /> Java class for Seat complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;Seat&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;Row&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}string&quot;/&gt;<br />         &lt;element name=&quot;Column&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}string&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  String<br /></td><td> column<a name="SeatReservation_Seat_column"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Protected  String<br /></td><td> row<a name="SeatReservation_Seat_row"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  String<br /></td><td> getColumn ()<a name="SeatReservation_Seat_getColumn_"></a><br /> Gets the value of the column property.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  String<br /></td><td> getRow ()<a name="SeatReservation_Seat_getRow_"></a><br /> Gets the value of the row property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> Seat ()<a name="SeatReservation_Seat_Seat_"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  void<br /></td><td> setColumn(<a name="SeatReservation_Seat_setColumn_String_"></a> String value )<br /> Sets the value of the column property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  void<br /></td><td> setRow(<a name="SeatReservation_Seat_setRow_String_"></a> String value )<br /> Sets the value of the row property.<br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  String getColumn ()<a name="SeatReservation_Seat_getColumn_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the column property.<br /><b>Returns:</b><br /> possible object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  String getRow ()<a name="SeatReservation_Seat_getRow_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the row property.<br /><b>Returns:</b><br /> possible object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setColumn(<a name="SeatReservation_Seat_setColumn_String_"></a> String value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the column property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setRow(<a name="SeatReservation_Seat_setRow_String_"></a> String value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the row property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_Unlock"></a><h3>
+			Class: Unlock<br />
+		</h3><br /> Java class for Unlock complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;Unlock&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />         &lt;element name=&quot;lockId&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}string&quot;/&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Fields: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Protected  String<br /></td><td> lockId<a name="SeatReservation_Unlock_lockId"></a><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  String<br /></td><td> getLockId ()<a name="SeatReservation_Unlock_getLockId_"></a><br /> Gets the value of the lockId property.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  void<br /></td><td> setLockId(<a name="SeatReservation_Unlock_setLockId_String_"></a> String value )<br /> Sets the value of the lockId property.<br /><br /></td>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> Unlock ()<a name="SeatReservation_Unlock_Unlock_"></a><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  String getLockId ()<a name="SeatReservation_Unlock_getLockId_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Gets the value of the lockId property.<br /><b>Returns:</b><br /> possible object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  void setLockId(<a name="SeatReservation_Unlock_setLockId_String_"></a> String value )<br /></th>
+			</tr><tr class="altColor">
+				<td> Sets the value of the lockId property.<br /><b>Parameters:</b><br /><i> value</i>  - allowed object is     <br /><i> String</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_UnlockResponse"></a><h3>
+			Class: UnlockResponse<br />
+		</h3><br /> Java class for UnlockResponse complex type. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><i>  &lt;complexType name=&quot;UnlockResponse&quot;&gt;<br />   &lt;complexContent&gt;<br />     &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}anyType&quot;&gt;<br />       &lt;sequence&gt;<br />       &lt;/sequence&gt;<br />     &lt;/restriction&gt;<br />   &lt;/complexContent&gt;<br /> &lt;/complexType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public <br /></td><td> UnlockResponse ()<a name="SeatReservation_UnlockResponse_UnlockResponse_"></a><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_ICinema"></a><h3>
+			Interface: ICinema<br />
+		</h3> This class was generated by the JAX-WS RI. JAX-WS RI 2.2.9-b130926.1035<br /> Generated source version: 2.2<br /><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Package  void<br /></td><td> buy(<a name="SeatReservation_ICinema_buy_String_"></a> String lockId )<br /></td>
+			</tr><tr class="rowColor">
+				<td> Package  ArrayOfSeat<br /></td><td> getAllSeats ()<a name="SeatReservation_ICinema_getAllSeats_"></a><br /></td>
+			</tr><tr class="altColor">
+				<td> Package  SeatStatus<br /></td><td> getSeatStatus(<a name="SeatReservation_ICinema_getSeatStatus_Seat_"></a> Seat seat )<br /></td>
+			</tr><tr class="rowColor">
+				<td> Package  void<br /></td><td> init(<a name="SeatReservation_ICinema_init_int_int_"></a> int columns )<br /></td>
+			</tr><tr class="altColor">
+				<td> Package  String<br /></td><td> lock(<a name="SeatReservation_ICinema_lock_Seat_int_"></a> int count )<br /></td>
+			</tr><tr class="rowColor">
+				<td> Package  void<br /></td><td> reserve(<a name="SeatReservation_ICinema_reserve_String_"></a> String lockId )<br /></td>
+			</tr><tr class="altColor">
+				<td> Package  void<br /></td><td> unlock(<a name="SeatReservation_ICinema_unlock_String_"></a> String lockId )<br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Package  void buy(<a name="SeatReservation_ICinema_buy_String_"></a> String lockId )<br /></th>
+			</tr><tr class="altColor">
+				<td><b>Parameters:</b><br /><i> lockId</i>  - <br /><b>Throws:</b><br /><i> ICinemaBuyCinemaException</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Package  ArrayOfSeat getAllSeats ()<a name="SeatReservation_ICinema_getAllSeats_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td><b>Returns:</b><br /> returns SeatReservation.ArrayOfSeat<br /><b>Throws:</b><br /><i> ICinemaGetAllSeatsCinemaException</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Package  SeatStatus getSeatStatus(<a name="SeatReservation_ICinema_getSeatStatus_Seat_"></a> Seat seat )<br /></th>
+			</tr><tr class="altColor">
+				<td><b>Parameters:</b><br /><i> seat</i>  - <br /><b>Returns:</b><br /> returns SeatReservation.SeatStatus<br /><b>Throws:</b><br /><i> ICinemaGetSeatStatusCinemaException</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Package  void init(<a name="SeatReservation_ICinema_init_int_int_"></a> int columns )<br /></th>
+			</tr><tr class="altColor">
+				<td><b>Parameters:</b><br /><i> columns</i>  - <br /><i> rows</i>  - <br /><b>Throws:</b><br /><i> ICinemaInitCinemaException</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Package  String lock(<a name="SeatReservation_ICinema_lock_Seat_int_"></a> int count )<br /></th>
+			</tr><tr class="altColor">
+				<td><b>Parameters:</b><br /><i> seat</i>  - <br /><i> count</i>  - <br /><b>Returns:</b><br /> returns java.lang.String<br /><b>Throws:</b><br /><i> ICinemaLockCinemaException</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Package  void reserve(<a name="SeatReservation_ICinema_reserve_String_"></a> String lockId )<br /></th>
+			</tr><tr class="altColor">
+				<td><b>Parameters:</b><br /><i> lockId</i>  - <br /><b>Throws:</b><br /><i> ICinemaReserveCinemaException</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Package  void unlock(<a name="SeatReservation_ICinema_unlock_String_"></a> String lockId )<br /></th>
+			</tr><tr class="altColor">
+				<td><b>Parameters:</b><br /><i> lockId</i>  - <br /><b>Throws:</b><br /><i> ICinemaUnlockCinemaException</i><br /><br /><br /></td>
+			</tr>
+		</table><br /><a name="SeatReservation_SeatStatus"></a><h3>
+			Enum: SeatStatus<br />
+		</h3><br /> Java class for SeatStatus. <br /><br /> The following schema fragment specifies the expected content contained within this class. <br /><br />  <br /><i>  &lt;simpleType name=&quot;SeatStatus&quot;&gt;<br />   &lt;restriction base=&quot;{http://www.w3.org/2001/XMLSchema}string&quot;&gt;<br />     &lt;enumeration value=&quot;Free&quot;/&gt;<br />     &lt;enumeration value=&quot;Locked&quot;/&gt;<br />     &lt;enumeration value=&quot;Reserved&quot;/&gt;<br />     &lt;enumeration value=&quot;Sold&quot;/&gt;<br />   &lt;/restriction&gt;<br /> &lt;/simpleType&gt;<br /> <br /></i><br /><a name=""></a><h4>
+			Methods: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  SeatStatus<br /></td><td> fromValue(<a name="SeatReservation_SeatStatus_fromValue_String_"></a> String v )<br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  String<br /></td><td> value ()<a name="SeatReservation_SeatStatus_value_"></a><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  SeatStatus<br /></td><td> valueOf(<a name="SeatReservation_SeatStatus_valueOf_String_"></a> String name )<br /> Returns the enum constant of this type with the specified name.<br /><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  SeatStatus[]<br /></td><td> values ()<a name="SeatReservation_SeatStatus_values_"></a><br /> Returns an array containing the constants of this enum type, inthe order they are declared.<br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  SeatStatus valueOf(<a name="SeatReservation_SeatStatus_valueOf_String_"></a> String name )<br /></th>
+			</tr><tr class="altColor">
+				<td> Returns the enum constant of this type with the specified name.The string must match <br /><i> exactly</i>  an identifier used to declare anenum constant in this type.  (Extraneous whitespace characters are <br />not permitted.)<br /><br /><b>Parameters:</b><br /><i> name</i>  - the name of the enum constant to be returned.<br /><b>Returns:</b><br /> the enum constant with the specified name<br /><b>Throws:</b><br /><i> java.lang.IllegalArgumentException</i>  - if this enum type has no constant with the specified name<br /><i> java.lang.NullPointerException</i>  - if the argument is null<br /><br /><br /></td>
+			</tr>
+		</table><br /><table style="width:70%">
+			<tr class="rowColor">
+				<th> Public  SeatStatus[] values ()<a name="SeatReservation_SeatStatus_values_"></a><br /></th>
+			</tr><tr class="altColor">
+				<td> Returns an array containing the constants of this enum type, inthe order they are declared.  This method may be used to iterate<br />over the constants as follows:<br /><br /><i> for (SeatStatus c : SeatStatus.values())<br />&nbsp;   System.out.println(c);<br /></i><br /><b>Returns:</b><br /> an array containing the constants of this enum type, in the order they are declared<br /><br /><br /></td>
+			</tr>
+		</table><br /><a name=""></a><h4>
+			Enum values: <br />
+		</h4><table style="width:70%">
+			<tr class="rowColor">
+				<th>  <br /></th><th> Name and Description<br /></th>
+			</tr><tr class="altColor">
+				<td> Public  final  static  SeatStatus<br /></td><td> FREE <a name="SeatReservation_SeatStatus_FREE"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  final  static  SeatStatus<br /></td><td> LOCKED <a name="SeatReservation_SeatStatus_LOCKED"></a><br /></td>
+			</tr><tr class="altColor">
+				<td> Public  final  static  SeatStatus<br /></td><td> RESERVED <a name="SeatReservation_SeatStatus_RESERVED"></a><br /></td>
+			</tr><tr class="rowColor">
+				<td> Public  final  static  SeatStatus<br /></td><td> SOLD <a name="SeatReservation_SeatStatus_SOLD"></a><br /></td>
+			</tr>
+		</table><br />
+	</body>
+</html>

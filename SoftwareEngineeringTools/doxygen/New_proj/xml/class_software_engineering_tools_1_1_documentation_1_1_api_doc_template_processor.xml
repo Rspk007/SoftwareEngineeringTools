@@ -1,0 +1,601 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</compoundname>
+    <basecompoundref refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.IApiDocTemplateProcessor</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a06a04683f46523379487f6ca3ef98e16" prot="private" static="no" mutable="no">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_document_template" kindref="compound">DocumentTemplate</ref></type>
+        <definition>DocumentTemplate SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.template</definition>
+        <argsstring></argsstring>
+        <name>template</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="498" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a66288c514ff0575c47b943023b14ba27" prot="private" static="no" mutable="no">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model" kindref="compound">DoxygenModel</ref></type>
+        <definition>DoxygenModel SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.model</definition>
+        <argsstring></argsstring>
+        <name>model</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="499" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="499" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a6ca8d40413d523790fc88011101fc524" prot="private" static="no" mutable="no">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator" kindref="compound">ApiDocGenerator</ref></type>
+        <definition>ApiDocGenerator SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.generator</definition>
+        <argsstring></argsstring>
+        <name>generator</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="500" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="500" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a043f20bab12bdf19f8fc255e15ed99d5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace" kindref="compound">DoxNamespace</ref></type>
+        <definition>DoxNamespace SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.currentNamespace</definition>
+        <argsstring></argsstring>
+        <name>currentNamespace</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="502" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="502" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ac5bcca6abdc13246d764569bf80a6e13" prot="private" static="no" mutable="no">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier" kindref="compound">DoxClassifier</ref></type>
+        <definition>DoxClassifier SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.currentClassifier</definition>
+        <argsstring></argsstring>
+        <name>currentClassifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="503" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="503" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1af6c83eee1460978ef98e0d1647ccd42e" prot="private" static="no" mutable="no">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref></type>
+        <definition>DoxMember SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.currentMember</definition>
+        <argsstring></argsstring>
+        <name>currentMember</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="504" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a9aed6ff8c1e67d0890729384a872246c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.ApiDocTemplateProcessor</definition>
+        <argsstring>(DocumentTemplate template, DoxygenModel model, ApiDocGenerator generator)</argsstring>
+        <name>ApiDocTemplateProcessor</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_document_template" kindref="compound">DocumentTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model" kindref="compound">DoxygenModel</ref></type>
+          <declname>model</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator" kindref="compound">ApiDocGenerator</ref></type>
+          <declname>generator</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="506" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="506" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae1088515a108f7d8123505f1a0b08b8c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Generate</definition>
+        <argsstring>()</argsstring>
+        <name>Generate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="513" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="513" bodyend="519"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae56306dfe19fc37c90d7bda6e5ae6c11" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(DocumentTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1aeadefc56fd447aa38eee217d420bcb5b">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_document_template" kindref="compound">DocumentTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="521" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="521" bodyend="524"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a01b849ba4ed415f4fa67bbcb36ef859f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(SectionTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ae892aa3533e96140da581a46b221cd98">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_section_template" kindref="compound">SectionTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="526" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="526" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ab701a3d14add7be1ebaad9d29cde7456" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.HasContent</definition>
+        <argsstring>(DoxNamespace ns, NamespaceListTemplate template)</argsstring>
+        <name>HasContent</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace" kindref="compound">DoxNamespace</ref></type>
+          <declname>ns</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template" kindref="compound">NamespaceListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="534" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="534" bodyend="538"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a0a01416f28616ff9edbd9710367b59db" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(NamespaceListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a53d63f1c44a104fdec9f61e49e0c7dcf">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template" kindref="compound">NamespaceListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="540" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="540" bodyend="560"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1aa0958873ca19c4f37f8b05f40054b52d" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.SelectClassifier</definition>
+        <argsstring>(DoxClassifier c, ClassifierListTemplate template)</argsstring>
+        <name>SelectClassifier</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier" kindref="compound">DoxClassifier</ref></type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template" kindref="compound">ClassifierListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="562" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="562" bodyend="587"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a54f8532818569c60877e551664b3dbd9" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(ClassifierListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a5f0d36dd289febc323d715a125fc15f5">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template" kindref="compound">ClassifierListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="589" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="589" bodyend="628"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a52bbf819b93b1de93195c510bab35cff" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(InterfaceListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1acadf04e0d3ac14bbea84510b2809869d">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_interface_list_template" kindref="compound">InterfaceListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="630" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="630" bodyend="635"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ac4dbf1e3f14aeff298f95de7cf032063" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(ClassListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a70b2d3982536f4dc7a73d4685597df8c">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_class_list_template" kindref="compound">ClassListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="637" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="637" bodyend="640"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1acd6cb19da89a4354e6626c7071c05452" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(StructListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a968a91389faa21d2720a96a74b6dd34c">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_struct_list_template" kindref="compound">StructListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="642" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="642" bodyend="645"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a76ad3f64733a4db36533118a9faa62f2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(EnumListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a1105bec290673453fdffeb53a4d38c7f">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_enum_list_template" kindref="compound">EnumListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="647" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="647" bodyend="650"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a579d730cf8abdeb3d408175de246f302" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.SelectMember</definition>
+        <argsstring>(DoxMember m, MemberListTemplate template)</argsstring>
+        <name>SelectMember</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template" kindref="compound">MemberListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="652" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="652" bodyend="678"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a0eacba7ada9a30a66d5fb1e91a709046" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(MemberListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ad770e6fe34ab58cbbded9ad37be2e81c">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template" kindref="compound">MemberListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="680" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="680" bodyend="699"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1af5903cd333ca92a454e1c2de6f5b6c93" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(EnumValueListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a6770a31e1adc5d096d4fa9294e7f6bc6">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_enum_value_list_template" kindref="compound">EnumValueListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="701" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="701" bodyend="704"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1adca050a981d318618d4e44e02fc4fe74" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(FieldListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ae30e611547202ab65de3974fcece4e43">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_field_list_template" kindref="compound">FieldListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="706" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="706" bodyend="738"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1afea59c3d70442a0b0024d634ecbd68ae" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(PropertyListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1af100fe16afcf443025e08613a56b0ac2">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_property_list_template" kindref="compound">PropertyListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="740" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="740" bodyend="787"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a2fe910338c97e1180e345c92b338b1ee" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.GetTruePropertys</definition>
+        <argsstring>(DoxMember m, DocTableRow dtr, DocTable des)</argsstring>
+        <name>GetTruePropertys</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref></type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row" kindref="compound">DocTableRow</ref></type>
+          <declname>dtr</declname>
+        </param>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table" kindref="compound">DocTable</ref></type>
+          <declname>des</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Cell of the table</para><para>First row of the description</para><para>Cell of the description </para>        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="788" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="788" bodyend="938"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ad3b2233916dca8cc02c1e5e4b43f4594" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.header_row</definition>
+        <argsstring>(DocTable dt)</argsstring>
+        <name>header_row</name>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table" kindref="compound">DocTable</ref></type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="939" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="939" bodyend="955"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae31b477fc8edbdabaade7bc9cf3688eb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(MethodListTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ae74b5e00a03e1df31282e61fcd5a7814">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_method_list_template" kindref="compound">MethodListTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table" kindref="compound">DocTable</ref> to the description </para>        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="957" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="957" bodyend="1007"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a69c735c5e1216c6183d3f8d831cdd4cc" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(UmlClassDiagramTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1adf6bb8f92c917a16eb0a32883fd5afd7">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template" kindref="compound">UmlClassDiagramTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="1009" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="1009" bodyend="1012"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a3c679371fcf03b80de29d6935c450a8a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(DescriptionTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a5865de6c62f0d7dc01906690b95a8447">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_description_template" kindref="compound">DescriptionTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="1014" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="1014" bodyend="1033"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae6cc526e094e837f0401b5a775833955" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(BriefDescriptionTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a77ae8311b3488d17dffd21f35b64f394">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_brief_description_template" kindref="compound">BriefDescriptionTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="1035" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="1035" bodyend="1054"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a67d6a6cb40c605a6d62acb902e9af204" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void IApiDocTemplateProcessor.</type>
+        <definition>void IApiDocTemplateProcessor. SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor.Process</definition>
+        <argsstring>(TextTemplate template)</argsstring>
+        <name>Process</name>
+        <reimplements refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ad88bb28ed374246d6522f6329f011f35">Process</reimplements>
+        <param>
+          <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_text_template" kindref="compound">TextTemplate</ref></type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="1056" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="1056" bodyend="1062"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="4">
+        <label>SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>IApiDocTemplateProcessor</label>
+        <link refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="6">
+        <label>SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>IApiDocTemplateProcessor</label>
+        <link refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" line="497" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/ApiDocGenerator.cs" bodystart="496" bodyend="1063"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a9aed6ff8c1e67d0890729384a872246c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>ApiDocTemplateProcessor</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ac5bcca6abdc13246d764569bf80a6e13" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>currentClassifier</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1af6c83eee1460978ef98e0d1647ccd42e" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>currentMember</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a043f20bab12bdf19f8fc255e15ed99d5" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>currentNamespace</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae1088515a108f7d8123505f1a0b08b8c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Generate</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a6ca8d40413d523790fc88011101fc524" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>generator</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a2fe910338c97e1180e345c92b338b1ee" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>GetTruePropertys</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ab701a3d14add7be1ebaad9d29cde7456" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>HasContent</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ad3b2233916dca8cc02c1e5e4b43f4594" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>header_row</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a66288c514ff0575c47b943023b14ba27" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>model</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae56306dfe19fc37c90d7bda6e5ae6c11" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a01b849ba4ed415f4fa67bbcb36ef859f" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a0a01416f28616ff9edbd9710367b59db" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a54f8532818569c60877e551664b3dbd9" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a52bbf819b93b1de93195c510bab35cff" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ac4dbf1e3f14aeff298f95de7cf032063" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1acd6cb19da89a4354e6626c7071c05452" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a76ad3f64733a4db36533118a9faa62f2" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a0eacba7ada9a30a66d5fb1e91a709046" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1af5903cd333ca92a454e1c2de6f5b6c93" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1adca050a981d318618d4e44e02fc4fe74" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1afea59c3d70442a0b0024d634ecbd68ae" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae31b477fc8edbdabaade7bc9cf3688eb" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a69c735c5e1216c6183d3f8d831cdd4cc" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a3c679371fcf03b80de29d6935c450a8a" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae6cc526e094e837f0401b5a775833955" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a67d6a6cb40c605a6d62acb902e9af204" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>Process</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1aa0958873ca19c4f37f8b05f40054b52d" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>SelectClassifier</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a579d730cf8abdeb3d408175de246f302" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>SelectMember</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a06a04683f46523379487f6ca3ef98e16" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</scope><name>template</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

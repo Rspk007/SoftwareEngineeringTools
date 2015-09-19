@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_sampling_1_1_marschner_lobb" kind="class" prot="public">
+    <compoundname>Sampling::MarschnerLobb</compoundname>
+    <basecompoundref refid="class_sampling_1_1_volume" prot="public" virt="non-virtual">Sampling::Volume&lt; T &gt;</basecompoundref>
+    <includes refid="_marschner_lobb_8h" local="no">MarschnerLobb.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_sampling_1_1_marschner_lobb_1afae87fa0ea9b525f53166e3b344d1f9b" prot="protected" static="no" mutable="no">
+        <type>T</type>
+        <definition>T f_m</definition>
+        <argsstring></argsstring>
+        <name>f_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" line="25" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sampling_1_1_marschner_lobb_1a8151e53244827a84261ac958567d57f9" prot="protected" static="no" mutable="no">
+        <type>T</type>
+        <definition>T alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" line="26" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sampling_1_1_marschner_lobb_1ab9a9237d3929b45da34ab9eeee080859" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MarschnerLobb</definition>
+        <argsstring>(const T &amp;f_m, const T &amp;alpha, const T &amp;iso, const Material *material)</argsstring>
+        <name>MarschnerLobb</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>f_m</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>iso</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f_m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the F_m parameter of the Marschner-Lobb volume </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the alpha parameter of the Marschner-Lobb volume </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>iso</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the default albedo value for the volume </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" line="35" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" bodystart="81" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sampling_1_1_marschner_lobb_1ab4531e807fbe3c07d4f3186575c673bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setF_m</definition>
+        <argsstring>(const T &amp;f_m)</argsstring>
+        <name>setF_m</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>f_m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the f_m parameter of the Marschner-Lobb function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>f_m parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" line="42" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" bodystart="88" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sampling_1_1_marschner_lobb_1afc57668a3818fae77834d221f8f93432" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T getF_m</definition>
+        <argsstring>() const </argsstring>
+        <name>getF_m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can return the value of the f_m parameter of the Marschner-Lobb function. <simplesect kind="return"><para>- the value of the f_m parameter </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" line="49" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sampling_1_1_marschner_lobb_1a142ba2fa52ae230998a1f72ee25230b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setAlpha</definition>
+        <argsstring>(const T &amp;alpha)</argsstring>
+        <name>setAlpha</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function sets the alpha parameter of the Marschner-Lobb function. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>-</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>alpha parameter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" line="56" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" bodystart="101" bodyend="105"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sampling_1_1_marschner_lobb_1a875c34c88467348fca24419daea5b651" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T getAlpha</definition>
+        <argsstring>() const </argsstring>
+        <name>getAlpha</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function can return the value of the alpha parameter of the Marschner-Lobb function. <simplesect kind="return"><para>- the value of the alpha parameter </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" line="63" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sampling_1_1_marschner_lobb_1ae7fe064de3b279d74867a690bd6f4953" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>T</type>
+        <definition>T getValueAt</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;point, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const </argsstring>
+        <name>getValueAt</name>
+        <reimplements refid="class_sampling_1_1_volume_1aaf6cee9a80b3085218861a5a8d6b34bc">getValueAt</reimplements>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that calculates the value of the Marschner-Lobb function at the position specified by the argument &apos;point&apos;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point where the object must calculate the return value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- the value at the given point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" line="75" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" bodystart="114" bodyend="127"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents the Marschner-Lobb volume. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="124">
+        <label>MarschnerLobb&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_marschner_lobb"/>
+        <childnode refid="125" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>ISampleable&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_i_sampleable"/>
+      </node>
+      <node id="125">
+        <label>Volume&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_volume"/>
+        <childnode refid="126" relation="public-inheritance">
+        </childnode>
+        <childnode refid="127" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>Surface&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_surface"/>
+        <childnode refid="128" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="128">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="136">
+        <label>Point&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_point"/>
+        <childnode refid="137" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="129">
+        <label>MarschnerLobb&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_marschner_lobb"/>
+        <childnode refid="130" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>Material</label>
+        <link refid="struct_visualisation_1_1_material"/>
+        <childnode refid="135" relation="usage">
+          <edgelabel>ka</edgelabel>
+          <edgelabel>ks</edgelabel>
+          <edgelabel>kd</edgelabel>
+        </childnode>
+      </node>
+      <node id="131">
+        <label>ISampleable&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_i_sampleable"/>
+      </node>
+      <node id="130">
+        <label>Volume&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_volume"/>
+        <childnode refid="131" relation="public-inheritance">
+        </childnode>
+        <childnode refid="132" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>Surface&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_surface"/>
+        <childnode refid="133" relation="public-inheritance">
+        </childnode>
+        <childnode refid="134" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+      </node>
+      <node id="137">
+        <label>Primitive</label>
+        <link refid="class_geometry_1_1_primitive"/>
+      </node>
+      <node id="135">
+        <label>Vector&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_vector"/>
+        <childnode refid="136" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" line="22" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/MarschnerLobb.h" bodystart="21" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_sampling_1_1_marschner_lobb_1a8151e53244827a84261ac958567d57f9" prot="protected" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>alpha</name></member>
+      <member refid="class_sampling_1_1_marschner_lobb_1afae87fa0ea9b525f53166e3b344d1f9b" prot="protected" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>f_m</name></member>
+      <member refid="class_sampling_1_1_marschner_lobb_1a875c34c88467348fca24419daea5b651" prot="public" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>getAlpha</name></member>
+      <member refid="class_sampling_1_1_marschner_lobb_1afc57668a3818fae77834d221f8f93432" prot="public" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>getF_m</name></member>
+      <member refid="class_sampling_1_1_volume_1af98bbc751e90a15b59c81ee4c17630b2" prot="public" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>getIso</name></member>
+      <member refid="class_geometry_1_1_surface_1a3d7a6d87e670d2c6415e92a1f0e9feb4" prot="public" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>getMaterial</name></member>
+      <member refid="class_sampling_1_1_volume_1af9134066dc508e3201a1dea2acb755a8" prot="public" virt="virtual"><scope>Sampling::MarschnerLobb</scope><name>getNormal</name></member>
+      <member refid="class_sampling_1_1_marschner_lobb_1ae7fe064de3b279d74867a690bd6f4953" prot="public" virt="virtual"><scope>Sampling::MarschnerLobb</scope><name>getValueAt</name></member>
+      <member refid="class_sampling_1_1_volume_1aae711dcbf18946964b9c42502e9d3377" prot="public" virt="virtual"><scope>Sampling::MarschnerLobb</scope><name>intersect</name></member>
+      <member refid="class_sampling_1_1_volume_1a8c8c997c19f49d10d5028ecd6d94805c" prot="protected" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>iso</name></member>
+      <member refid="class_sampling_1_1_marschner_lobb_1ab9a9237d3929b45da34ab9eeee080859" prot="public" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>MarschnerLobb</name></member>
+      <member refid="class_geometry_1_1_surface_1aa2a46d8387923389a3aad30be0b8a8b5" prot="protected" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>material</name></member>
+      <member refid="class_sampling_1_1_marschner_lobb_1a142ba2fa52ae230998a1f72ee25230b1" prot="public" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>setAlpha</name></member>
+      <member refid="class_sampling_1_1_marschner_lobb_1ab4531e807fbe3c07d4f3186575c673bd" prot="public" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>setF_m</name></member>
+      <member refid="class_sampling_1_1_volume_1a06df2552be7fe124a173741e8ba79770" prot="public" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>setIso</name></member>
+      <member refid="class_geometry_1_1_surface_1a26d09c46a06493cf2d9116991c80f816" prot="public" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>setMaterial</name></member>
+      <member refid="class_geometry_1_1_surface_1a6e1a6ad293d9318f65c2e28c468c66ba" prot="protected" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>Surface</name></member>
+      <member refid="class_geometry_1_1_surface_1a148c9d72f29cf29e7ad5e787e2819057" prot="protected" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>Surface</name></member>
+      <member refid="class_sampling_1_1_volume_1a3a8fada6f2d2b5ce58f6a0ffef34d9f1" prot="protected" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>Volume</name></member>
+      <member refid="class_sampling_1_1_volume_1aefc1e3fc5f3846e8a1f3186e06017b52" prot="protected" virt="non-virtual"><scope>Sampling::MarschnerLobb</scope><name>Volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

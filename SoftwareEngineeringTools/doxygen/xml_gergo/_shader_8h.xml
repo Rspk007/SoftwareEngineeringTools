@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_shader_8h" kind="file">
+    <compoundname>Shader.h</compoundname>
+    <includes refid="_light_8h" local="yes">Light.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includes refid="_material_8h" local="yes">Material.h</includes>
+    <includes refid="_colour_8h" local="yes">Colour.h</includes>
+    <includes refid="_type_operators_8h" local="yes">TypeOperators.h</includes>
+    <includedby refid="_model_space_8h" local="yes">Új mappa/ModelSpace.h</includedby>
+    <includedby refid="_phong_shader_8h" local="yes">Új mappa/PhongShader.h</includedby>
+    <incdepgraph>
+      <node id="551">
+        <label>Új mappa/Shader.h</label>
+        <link refid="Shader.h"/>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="559" relation="include">
+        </childnode>
+        <childnode refid="560" relation="include">
+        </childnode>
+        <childnode refid="561" relation="include">
+        </childnode>
+      </node>
+      <node id="553">
+        <label>Vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="554" relation="include">
+        </childnode>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+      </node>
+      <node id="556">
+        <label>cmath</label>
+      </node>
+      <node id="555">
+        <label>stdexcept</label>
+      </node>
+      <node id="557">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="555" relation="include">
+        </childnode>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="558" relation="include">
+        </childnode>
+      </node>
+      <node id="559">
+        <label>Material.h</label>
+        <link refid="_material_8h"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+      </node>
+      <node id="552">
+        <label>Light.h</label>
+        <link refid="_light_8h"/>
+        <childnode refid="553" relation="include">
+        </childnode>
+      </node>
+      <node id="554">
+        <label>iostream</label>
+      </node>
+      <node id="561">
+        <label>TypeOperators.h</label>
+        <link refid="_type_operators_8h"/>
+      </node>
+      <node id="558">
+        <label>Primitive.h</label>
+        <link refid="_primitive_8h"/>
+      </node>
+      <node id="560">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="562">
+        <label>Új mappa/Shader.h</label>
+        <link refid="Shader.h"/>
+        <childnode refid="563" relation="include">
+        </childnode>
+        <childnode refid="566" relation="include">
+        </childnode>
+      </node>
+      <node id="565">
+        <label>Új mappa/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="564">
+        <label>Új mappa/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="565" relation="include">
+        </childnode>
+      </node>
+      <node id="566">
+        <label>Új mappa/PhongShader.h</label>
+        <link refid="_phong_shader_8h"/>
+        <childnode refid="565" relation="include">
+        </childnode>
+      </node>
+      <node id="563">
+        <label>Új mappa/ModelSpace.h</label>
+        <link refid="_model_space_8h"/>
+        <childnode refid="564" relation="include">
+        </childnode>
+        <childnode refid="565" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_visualisation_1_1_shader" prot="public">Visualisation::Shader</innerclass>
+    <innernamespace refid="namespace_visualisation">Visualisation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>SHADER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHADER_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_light_8h" kindref="compound">Light.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vector_8h" kindref="compound">Vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_material_8h" kindref="compound">Material.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_colour_8h" kindref="compound">Colour.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_type_operators_8h" kindref="compound">TypeOperators.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Geometry;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Visualisation</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="20" refid="class_visualisation_1_1_shader" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_visualisation_1_1_shader" kindref="compound">Shader</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="class_visualisation_1_1_shader_1ab5852b47125ce80509f0341cf1bd1f96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_shader_1ab5852b47125ce80509f0341cf1bd1f96" kindref="member">Shader</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>MEMBER<sp/>FUNCTIONS<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref><sp/>shade(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref>*<sp/>material,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_light" kindref="compound">Light&lt;T&gt;</ref>*<sp/>light,<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>N,<sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>L,<sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>V,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>&amp;<sp/>Toperators<sp/>=<sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>()<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SHADER_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Shader.h"/>
+  </compounddef>
+</doxygen>

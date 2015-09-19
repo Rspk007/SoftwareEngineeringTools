@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_caption" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocCaption</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocCmdGroup</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_caption_1a023a86d07d2247e1136007aad4e0c523" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocCaption.DocCaption</definition>
+        <argsstring>()</argsstring>
+        <name>DocCaption</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="812" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="812" bodyend="815"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="405">
+        <label>DocCmdGroup</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group"/>
+        <childnode refid="406" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="406">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="404">
+        <label>SoftwareEngineeringTools.Documentation.DocCaption</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_caption"/>
+        <childnode refid="405" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="408">
+        <label>DocCmdGroup</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group"/>
+        <childnode refid="409" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="409">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="407">
+        <label>SoftwareEngineeringTools.Documentation.DocCaption</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_caption"/>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="811" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="810" bodyend="816"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group_1ac6f2fb2ec29fc2eeac0f46740b2c5144" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocCaption</scope><name>Commands</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_caption_1a023a86d07d2247e1136007aad4e0c523" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocCaption</scope><name>DocCaption</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocCaption</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group_1adc2876c88d61e89b18cf833132a0def5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocCaption</scope><name>DocCmdGroup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocCaption</scope><name>Kind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

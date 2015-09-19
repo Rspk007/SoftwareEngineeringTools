@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_dox_directory" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxDirectory</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.Compound</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_directory_1a88bce63c9ba403344a733f67159ff687" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory" kindref="compound">DoxDirectory</ref> &gt;</type>
+        <definition>List&lt;DoxDirectory&gt; SoftwareEngineeringTools.Documentation.DoxDirectory.Directories</definition>
+        <argsstring></argsstring>
+        <name>Directories</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="212" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_directory_1aa76527e2b4b70c0badbaa9fbd95a9d11" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_file" kindref="compound">DoxFile</ref> &gt;</type>
+        <definition>List&lt;DoxFile&gt; SoftwareEngineeringTools.Documentation.DoxDirectory.Files</definition>
+        <argsstring></argsstring>
+        <name>Files</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="213" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_dox_directory_1a57e40f117355844005990389a7adc2f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DoxDirectory.DoxDirectory</definition>
+        <argsstring>()</argsstring>
+        <name>DoxDirectory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="215" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="215" bodyend="220"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="324">
+        <label>SoftwareEngineeringTools.Documentation.DoxDirectory</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory"/>
+        <childnode refid="325" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>Compound</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_compound"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="326">
+        <label>SoftwareEngineeringTools.Documentation.DoxDirectory</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory"/>
+        <childnode refid="327" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="327">
+        <label>Compound</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_compound"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="211" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="210" bodyend="221"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a4bfcfda760068c85256a0723b5ce1921" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>BriefDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a4e7df725cc78a016399778b91e261bd0" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>Compound</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a77ca6711192dfb78bcd2f0b513e74b2e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>Description</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory_1a88bce63c9ba403344a733f67159ff687" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>Directories</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory_1a57e40f117355844005990389a7adc2f1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>DoxDirectory</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory_1aa76527e2b4b70c0badbaa9fbd95a9d11" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>Files</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a1394e3961d62b46fa478767c2b267776" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>Identifier</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1ae53780f3f48f262502a939871432292f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1ae491a737dd879c0665bd81a1273af091" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>Location</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1ac03a88be9a7e7a11dd3c12006ae65879" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>Name</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a6682b35f8afccbbecd77f504665b1cb7" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>ProgramListing</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a873e7d81cae2f4cb5c6cca41014cd02d" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>Title</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a2450d96253aafa7fd3384b67b1ab01d8" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxDirectory</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

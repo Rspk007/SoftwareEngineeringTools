@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Testing::TestScenarioResult</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1a60b47271609a2aa0a0eb3021a5ebb988" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Testing.TestScenarioResult.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="142" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1a58554b141c207282fcd65b8b50534a99" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_software_engineering_tools_1_1_testing_1_1_test_command" kindref="compound">TestCommand</ref> &gt;</type>
+        <definition>List&lt;TestCommand&gt; SoftwareEngineeringTools.Testing.TestScenarioResult.Commands</definition>
+        <argsstring></argsstring>
+        <name>Commands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="144" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1ae171a04a0ced528c816ad8b95f566ffb" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result" kindref="compound">TestCaseResult</ref> &gt;</type>
+        <definition>List&lt;TestCaseResult&gt; SoftwareEngineeringTools.Testing.TestScenarioResult.TestCases</definition>
+        <argsstring></argsstring>
+        <name>TestCases</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="146" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="146" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1af24061bb290dd14e4ba3ce804226a4c1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Testing.TestScenarioResult.TestScenarioResult</definition>
+        <argsstring>()</argsstring>
+        <name>TestScenarioResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="148" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="148" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1ad5c0b19852dc0b0611791382d4f3299a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Testing.TestScenarioResult.TestScenarioResult</definition>
+        <argsstring>(string name)</argsstring>
+        <name>TestScenarioResult</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="152" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="152" bodyend="157"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="140" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="139" bodyend="158"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1a58554b141c207282fcd65b8b50534a99" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestScenarioResult</scope><name>Commands</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1a60b47271609a2aa0a0eb3021a5ebb988" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestScenarioResult</scope><name>Name</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1ae171a04a0ced528c816ad8b95f566ffb" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestScenarioResult</scope><name>TestCases</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1af24061bb290dd14e4ba3ce804226a4c1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestScenarioResult</scope><name>TestScenarioResult</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1ad5c0b19852dc0b0611791382d4f3299a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestScenarioResult</scope><name>TestScenarioResult</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespace_visualisation" kind="namespace">
+    <compoundname>Visualisation</compoundname>
+    <innerclass refid="class_visualisation_1_1_camera" prot="public">Visualisation::Camera</innerclass>
+    <innerclass refid="struct_visualisation_1_1_colour" prot="public">Visualisation::Colour</innerclass>
+    <innerclass refid="struct_visualisation_1_1_image_plane" prot="public">Visualisation::ImagePlane</innerclass>
+    <innerclass refid="class_visualisation_1_1_light" prot="public">Visualisation::Light</innerclass>
+    <innerclass refid="struct_visualisation_1_1_material" prot="public">Visualisation::Material</innerclass>
+    <innerclass refid="class_visualisation_1_1_model_space" prot="public">Visualisation::ModelSpace</innerclass>
+    <innerclass refid="class_visualisation_1_1_phong_shader" prot="public">Visualisation::PhongShader</innerclass>
+    <innerclass refid="class_visualisation_1_1_shader" prot="public">Visualisation::Shader</innerclass>
+    <innerclass refid="class_visualisation_1_1_t_g_a_image" prot="public">Visualisation::TGAImage</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_visualisation_1a6f25f8b015ad8a5cfc6e7aacebadc00b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float k_a[]</definition>
+        <argsstring>[]</argsstring>
+        <name>k_a</name>
+        <initializer>= {0.0f, 0.1f, 0.06f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Here is some predefined material to be used in the simulations. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="42" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_visualisation_1a1c1488b44adb118ff86ceb5ec6600eb2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float k_d[]</definition>
+        <argsstring>[]</argsstring>
+        <name>k_d</name>
+        <initializer>= {0.0f, 0.50980392f, 0.50980392f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="44" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_visualisation_1a23d9127bc5584765454a4fa4d635fbbc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float k_s[]</definition>
+        <argsstring>[]</argsstring>
+        <name>k_s</name>
+        <initializer>= {0.50196078f, 0.50196078f, 0.50196078f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="46" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Material.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_visualisation_1a77b9156f3f7a2bf549ad684b6ce3bcdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; float &gt;</type>
+        <definition>Vector&lt;float&gt; Visualisation::K_A</definition>
+        <argsstring>(3, k_a)</argsstring>
+        <name>K_A</name>
+        <param>
+          <type>3</type>
+        </param>
+        <param>
+          <type><ref refid="namespace_visualisation_1a6f25f8b015ad8a5cfc6e7aacebadc00b" kindref="member">k_a</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="43" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_visualisation_1acc8fe63e834a3dc49a2746ac59902f04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; float &gt;</type>
+        <definition>Vector&lt;float&gt; Visualisation::K_D</definition>
+        <argsstring>(3, k_d)</argsstring>
+        <name>K_D</name>
+        <param>
+          <type>3</type>
+        </param>
+        <param>
+          <type><ref refid="namespace_visualisation_1a1c1488b44adb118ff86ceb5ec6600eb2" kindref="member">k_d</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="45" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_visualisation_1a696ad632d066c8888684fe275f1cde85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; float &gt;</type>
+        <definition>Vector&lt;float&gt; Visualisation::K_S</definition>
+        <argsstring>(3, k_s)</argsstring>
+        <name>K_S</name>
+        <param>
+          <type>3</type>
+        </param>
+        <param>
+          <type><ref refid="namespace_visualisation_1a23d9127bc5584765454a4fa4d635fbbc" kindref="member">k_s</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="47" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_visualisation_1a8b565f7ca802e43cee5406f2d6c06206" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref></type>
+        <definition>const Material Visualisation::MATERIAL_CYAN_PLASTIC</definition>
+        <argsstring>(K_A, K_D, K_S, 1.5f)</argsstring>
+        <name>MATERIAL_CYAN_PLASTIC</name>
+        <param>
+          <type><ref refid="namespace_visualisation_1a77b9156f3f7a2bf549ad684b6ce3bcdb" kindref="member">K_A</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespace_visualisation_1acc8fe63e834a3dc49a2746ac59902f04" kindref="member">K_D</ref></type>
+        </param>
+        <param>
+          <type><ref refid="namespace_visualisation_1a696ad632d066c8888684fe275f1cde85" kindref="member">K_S</ref></type>
+        </param>
+        <param>
+          <type>1.</type>
+          <declname>5f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Material.h" line="48" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Camera.h" line="16" column="1"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::LatexGenerator</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocumentGenerator</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a3af2b9e320618ca33e3984be46d0b3bd" prot="private" static="no" mutable="no">
+        <type>TextWriter</type>
+        <definition>TextWriter SoftwareEngineeringTools.Documentation.LatexGenerator.writer</definition>
+        <argsstring></argsstring>
+        <name>writer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="11" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1af521d64f3c283b7b3b5b73ada037885b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.LatexGenerator.paraBegin</definition>
+        <argsstring></argsstring>
+        <name>paraBegin</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="12" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a8cf2d14a21991ea8ed9b2b9a19afa9de" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.LatexGenerator.cellBegin</definition>
+        <argsstring></argsstring>
+        <name>cellBegin</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="13" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a3b7ad18fc4986fe13eebb50e996b6348" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.LatexGenerator.newline</definition>
+        <argsstring></argsstring>
+        <name>newline</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="14" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1abacc15453eb67bce1b159b43b55b755c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.LatexGenerator.LatexGenerator</definition>
+        <argsstring>(string path)</argsstring>
+        <name>LatexGenerator</name>
+        <param>
+          <type>string</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="16" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a993f42bf5ef3a5d1a70abdc180aa8bcf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.LatexGenerator.LatexGenerator</definition>
+        <argsstring>(TextWriter writer)</argsstring>
+        <name>LatexGenerator</name>
+        <param>
+          <type>TextWriter</type>
+          <declname>writer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="22" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="22" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a87139c6552aa29fbfdc20e07175ca9b5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.Dispose</definition>
+        <argsstring>()</argsstring>
+        <name>Dispose</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9fe08809c64a81d6a915169cd655cc3f">Dispose</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="29" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ac29ea32798e08c33a486037bfde4ecde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.SetContent</definition>
+        <argsstring>(bool enabled, int depth)</argsstring>
+        <name>SetContent</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1af39f74148f77d9e036a9a3b284c4d569">SetContent</reimplements>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>depth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="62" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="62" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a0987b0d6682e4edabf9df277a382eecb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.BeginSectionTitle</definition>
+        <argsstring>(int level, string title, string label)</argsstring>
+        <name>BeginSectionTitle</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aa6b7b1a10a275fa3833f79c21ad932f8">BeginSectionTitle</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>level</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>label</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="70" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="70" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a07c29242cafcbc0a0a0ef817ac818ee1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.EndSectionTitle</definition>
+        <argsstring>()</argsstring>
+        <name>EndSectionTitle</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a649acf880cf5cdbdf3fe71924de0954e">EndSectionTitle</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="100" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="100" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9633a779ddcb54100666f79e0de6c168" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.NewParagraph</definition>
+        <argsstring>()</argsstring>
+        <name>NewParagraph</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a589f93438eceb47c5fae148ec40418a6">NewParagraph</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="105" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="105" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a0f9a35a1a27283cdb3d521c10439b9c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.PrintText</definition>
+        <argsstring>(string text, bool insertSpace=true)</argsstring>
+        <name>PrintText</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a17021c5059b0dee77f60d085567d6265">PrintText</reimplements>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>insertSpace</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="121" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="121" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a675486162fd632b87673d1533cce276a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.PrintVerbatimText</definition>
+        <argsstring>(string text)</argsstring>
+        <name>PrintVerbatimText</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9806a5f0d5c0fea55cc7247ca6ea1d70">PrintVerbatimText</reimplements>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="133" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="133" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ad6732108c1739d704defce5722e112ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.BeginMarkup</definition>
+        <argsstring>(DocumentMarkupKind markupKind)</argsstring>
+        <name>BeginMarkup</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9398de502d89f600ac1f8ec72e6f1f48">BeginMarkup</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9" kindref="member">DocumentMarkupKind</ref></type>
+          <declname>markupKind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="142" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="142" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ab7ca15a96f967639bffafc568bd1723c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.EndMarkup</definition>
+        <argsstring>(DocumentMarkupKind markupKind)</argsstring>
+        <name>EndMarkup</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff9fa315e40775e63fd2b4dc184596">EndMarkup</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9" kindref="member">DocumentMarkupKind</ref></type>
+          <declname>markupKind</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="167" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="167" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a013f4974ae15a09e971e8a4ad2d9aca7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.NewLabel</definition>
+        <argsstring>(string id)</argsstring>
+        <name>NewLabel</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6e0fb6c2edbb674ec4f0048ac1984871">NewLabel</reimplements>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="172" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="172" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1aa48cc264ca9a70e82b25c25fd8cbd460" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.BeginReference</definition>
+        <argsstring>(string id, bool url)</argsstring>
+        <name>BeginReference</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aacc6cff53b0298213c5bfbbae5cf39ec">BeginReference</reimplements>
+        <param>
+          <type>string</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>url</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="177" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="177" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a8f91c6a140732071c6aaa2fe0e0cdf5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.EndReference</definition>
+        <argsstring>()</argsstring>
+        <name>EndReference</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6bf9ae60215596599442591d3f8e2636">EndReference</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="182" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7341918f8ef12c497964a3da86681b4a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.BeginList</definition>
+        <argsstring>()</argsstring>
+        <name>BeginList</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ac293a5f636676bbf7f4183e9aa4439e5">BeginList</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="187" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9e77a36261f8f09aa84cf7d15474bf6a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.EndList</definition>
+        <argsstring>()</argsstring>
+        <name>EndList</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a06d3076fc6cb5f27e0573fdbc79aa879">EndList</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="192" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="192" bodyend="195"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a5c8335a734a3a1df797b23fbb660cfdf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.BeginListItem</definition>
+        <argsstring>(int index, string title)</argsstring>
+        <name>BeginListItem</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aebd2eac27c0ff8a1dcb9a9e4914a54b6">BeginListItem</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>title</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="197" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="197" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7f8d2121f9dcec7761f7e6ca0416f30a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.EndListItem</definition>
+        <argsstring>(int index)</argsstring>
+        <name>EndListItem</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6cf51dcd959fe8b91f5278dc508cd704">EndListItem</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="209" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a22a8ae8070617740885509fab8fbb1f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.BeginTable</definition>
+        <argsstring>(int rowCount, int colCount)</argsstring>
+        <name>BeginTable</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0b1b0b9fa405181afcca7297b0c429d7">BeginTable</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowCount</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>colCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="214" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="214" bodyend="238"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a285da4d48fe002d10b25a5355317c89d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.BeginTableRow</definition>
+        <argsstring>(int rowIndex)</argsstring>
+        <name>BeginTableRow</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff1e9792b49b59731026e57040b3d4">BeginTableRow</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="240" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="240" bodyend="243"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a2bdf8d06abfbbd14a61098d04f257811" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.EndTableRow</definition>
+        <argsstring>(int rowIndex)</argsstring>
+        <name>EndTableRow</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0c815504fc6e9d7e2c49f114fdd93a88">EndTableRow</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="245" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="245" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a332122bd834cdb6857fab0d76032ffe8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.BeginTableCell</definition>
+        <argsstring>(int rowIndex, int colIndex, bool head)</argsstring>
+        <name>BeginTableCell</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a142486e159cf18396bad17686c4ece3b">BeginTableCell</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>colIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="250" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="250" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9578ee4b9d513bfcce6b67e60edf2daa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.EndTableCell</definition>
+        <argsstring>(int rowIndex, int colIndex, bool head)</argsstring>
+        <name>EndTableCell</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ad7358d1047a392ce8d23e01d6c541e72">EndTableCell</reimplements>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>rowIndex</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+          <declname>colIndex</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>head</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="268" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="268" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7cce6ca1e8aa6b8cef90411891514e03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.EndTable</definition>
+        <argsstring>()</argsstring>
+        <name>EndTable</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6244abdf686183395fb44339111a7363">EndTable</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="281" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="281" bodyend="287"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a587dd51f6deed0ca5778adafde44f95a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.LatexGenerator.EscapeText</definition>
+        <argsstring>(string text)</argsstring>
+        <name>EscapeText</name>
+        <param>
+          <type>string</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="34" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="34" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a415cd0402059b26675d15c4679013635" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.BeginDocument</definition>
+        <argsstring>()</argsstring>
+        <name>BeginDocument</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6dcea40e796970bba1229a2e513fdb56">BeginDocument</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="41" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="41" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a24103014a84ca959b9df44d9c298af48" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>override void</type>
+        <definition>override void SoftwareEngineeringTools.Documentation.LatexGenerator.EndDocument</definition>
+        <argsstring>()</argsstring>
+        <name>EndDocument</name>
+        <reimplements refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ae367934e4153adfd260dec902d0e69d5">EndDocument</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="56" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="56" bodyend="61"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="482">
+        <label>SoftwareEngineeringTools.Documentation.LatexGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator"/>
+        <childnode refid="483" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="485">
+        <label>IDisposable</label>
+      </node>
+      <node id="483">
+        <label>DocumentGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator"/>
+        <childnode refid="484" relation="public-inheritance">
+        </childnode>
+        <childnode refid="485" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="484">
+        <label>IDocumentGenerator</label>
+        <link refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="486">
+        <label>SoftwareEngineeringTools.Documentation.LatexGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator"/>
+        <childnode refid="487" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="489">
+        <label>IDisposable</label>
+      </node>
+      <node id="487">
+        <label>DocumentGenerator</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator"/>
+        <childnode refid="488" relation="public-inheritance">
+        </childnode>
+        <childnode refid="489" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="488">
+        <label>IDocumentGenerator</label>
+        <link refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" line="10" column="1" bodyfile="C:/SoftwareEngineeringTools/DocumentGeneratorLib/LatexGenerator.cs" bodystart="9" bodyend="288"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a415cd0402059b26675d15c4679013635" prot="protected" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>BeginDocument</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7341918f8ef12c497964a3da86681b4a" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>BeginList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a5c8335a734a3a1df797b23fbb660cfdf" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>BeginListItem</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ad6732108c1739d704defce5722e112ad" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>BeginMarkup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1aa48cc264ca9a70e82b25c25fd8cbd460" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>BeginReference</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a0987b0d6682e4edabf9df277a382eecb" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>BeginSectionTitle</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a22a8ae8070617740885509fab8fbb1f1" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>BeginTable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a332122bd834cdb6857fab0d76032ffe8" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>BeginTableCell</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a285da4d48fe002d10b25a5355317c89d" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>BeginTableRow</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a8cf2d14a21991ea8ed9b2b9a19afa9de" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>cellBegin</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a87139c6552aa29fbfdc20e07175ca9b5" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>Dispose</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a24103014a84ca959b9df44d9c298af48" prot="protected" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EndDocument</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9e77a36261f8f09aa84cf7d15474bf6a" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EndList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7f8d2121f9dcec7761f7e6ca0416f30a" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EndListItem</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ab7ca15a96f967639bffafc568bd1723c" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EndMarkup</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a8f91c6a140732071c6aaa2fe0e0cdf5d" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EndReference</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a07c29242cafcbc0a0a0ef817ac818ee1" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EndSectionTitle</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7cce6ca1e8aa6b8cef90411891514e03" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EndTable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9578ee4b9d513bfcce6b67e60edf2daa" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EndTableCell</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a2bdf8d06abfbbd14a61098d04f257811" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EndTableRow</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a587dd51f6deed0ca5778adafde44f95a" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>EscapeText</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1abacc15453eb67bce1b159b43b55b755c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>LatexGenerator</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a993f42bf5ef3a5d1a70abdc180aa8bcf" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>LatexGenerator</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a013f4974ae15a09e971e8a4ad2d9aca7" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>NewLabel</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a3b7ad18fc4986fe13eebb50e996b6348" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>newline</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9633a779ddcb54100666f79e0de6c168" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>NewParagraph</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1af521d64f3c283b7b3b5b73ada037885b" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>paraBegin</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a0f9a35a1a27283cdb3d521c10439b9c0" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>PrintText</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a675486162fd632b87673d1533cce276a" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>PrintVerbatimText</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ac29ea32798e08c33a486037bfde4ecde" prot="public" virt="virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>SetContent</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a3af2b9e320618ca33e3984be46d0b3bd" prot="private" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::LatexGenerator</scope><name>writer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

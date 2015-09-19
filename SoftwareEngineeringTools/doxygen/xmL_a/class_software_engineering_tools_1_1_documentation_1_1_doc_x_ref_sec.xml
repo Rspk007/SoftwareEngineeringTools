@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocXRefSec</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocCmd</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1add4000dc0ebdf56c3b98e1c2041272c7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_description" kindref="compound">Description</ref></type>
+        <definition>Description SoftwareEngineeringTools.Documentation.DocXRefSec.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="994" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="994" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1ade8835c29857041292035ab076a75758" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DocXRefSec.Id</definition>
+        <argsstring></argsstring>
+        <name>Id</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="995" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="995" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1ad5f128cab197b2d237a5d8481af6173a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; string &gt;</type>
+        <definition>List&lt;string&gt; SoftwareEngineeringTools.Documentation.DocXRefSec.Titles</definition>
+        <argsstring></argsstring>
+        <name>Titles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="993" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="993" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1a780d4b7764aaefd333d59084617bf638" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocXRefSec.DocXRefSec</definition>
+        <argsstring>()</argsstring>
+        <name>DocXRefSec</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="997" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="997" bodyend="1001"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="638">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="637">
+        <label>SoftwareEngineeringTools.Documentation.DocXRefSec</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec"/>
+        <childnode refid="638" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="640">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="639">
+        <label>SoftwareEngineeringTools.Documentation.DocXRefSec</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec"/>
+        <childnode refid="640" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="992" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="991" bodyend="1002"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1add4000dc0ebdf56c3b98e1c2041272c7" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocXRefSec</scope><name>Description</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocXRefSec</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1a780d4b7764aaefd333d59084617bf638" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocXRefSec</scope><name>DocXRefSec</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1ade8835c29857041292035ab076a75758" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocXRefSec</scope><name>Id</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocXRefSec</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1ad5f128cab197b2d237a5d8481af6173a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocXRefSec</scope><name>Titles</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

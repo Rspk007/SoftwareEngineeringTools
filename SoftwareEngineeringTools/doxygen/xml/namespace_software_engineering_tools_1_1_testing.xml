@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespace_software_engineering_tools_1_1_testing" kind="namespace">
+    <compoundname>SoftwareEngineeringTools::Testing</compoundname>
+    <innerclass refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result" prot="public">SoftwareEngineeringTools::Testing::TestCaseResult</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_testing_1_1_test_command" prot="public">SoftwareEngineeringTools::Testing::TestCommand</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result" prot="public">SoftwareEngineeringTools::Testing::TestCommandResult</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_testing_1_1_test_result_i_o" prot="public">SoftwareEngineeringTools::Testing::TestResultIO</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_testing_1_1_test_results" prot="public">SoftwareEngineeringTools::Testing::TestResults</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result" prot="public">SoftwareEngineeringTools::Testing::TestScenarioResult</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_testing_1_1_test_variable_result" prot="public">SoftwareEngineeringTools::Testing::TestVariableResult</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13a" prot="public" static="no">
+        <name>TestCommandKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13aa6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13aa5d5b78699e57104f2fa03bbdf7b9197b" prot="public">
+          <name>Set</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13aac3755e61202abd74da5885d2e9c9160e" prot="public">
+          <name>Call</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13aa060bf2d587991d8f090a1309b285291c" prot="public">
+          <name>Check</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="13" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="12" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="enum" id="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2" prot="public" static="no">
+        <name>TestResultKind</name>
+        <enumvalue id="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2a6adf97f83acf6453d4a6a4b1070f3754" prot="public">
+          <name>None</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2aa0d0628f6b4e4d78d2ffef4d4d1c4b15" prot="public">
+          <name>Passed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2ad7c8c85bf79bbe1b7188497c32c3b0ca" prot="public">
+          <name>Failed</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2a902b0d55fddef6f8d651fe1035b7d4bd" prot="public">
+          <name>Error</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="26" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="25" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="10" column="1"/>
+  </compounddef>
+</doxygen>

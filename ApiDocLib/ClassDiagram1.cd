@@ -1,0 +1,789 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SoftwareEngineeringTools.Documentation.ApiDocConfig" Collapsed="true">
+    <Position X="69" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUAAAAAgSAAEAAAAAAAAAAIAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>ApiDocConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.ApiDocGenerator" Collapsed="true">
+    <Position X="70.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QCAAAAQAAEAACAAAABAAAAAAAAgAACAQKAgAAEAAAAA=</HashCode>
+      <FileName>ApiDocGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.ApiDocTemplateProcessor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="72.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAgAAAAAADAAAAAAAAAAAAEAAAAARgAAGEIEAA=</HashCode>
+      <FileName>ApiDocGenerator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocumentTemplate" Collapsed="true">
+    <Position X="6.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAEIAAAACAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.Template" Collapsed="true">
+    <Position X="15.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAQAAAAAAACBgJAgQAQYAABEAQQABICIACAAAAIAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.SectionTemplate" Collapsed="true">
+    <Position X="6.25" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxygenObjectTemplate" Collapsed="true">
+    <Position X="17.5" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.NamespaceListTemplate" Collapsed="true">
+    <Position X="26.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.ClassifierListTemplate" Collapsed="true">
+    <Position X="12" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.InterfaceListTemplate" Collapsed="true">
+    <Position X="8.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.ClassListTemplate" Collapsed="true">
+    <Position X="10.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.StructListTemplate" Collapsed="true">
+    <Position X="13" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.EnumListTemplate" Collapsed="true">
+    <Position X="15.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.MemberListTemplate" Collapsed="true">
+    <Position X="21" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.EnumValueListTemplate" Collapsed="true">
+    <Position X="17.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.FieldListTemplate" Collapsed="true">
+    <Position X="19.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.PropertyListTemplate" Collapsed="true">
+    <Position X="22" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.MethodListTemplate" Collapsed="true">
+    <Position X="24.25" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DescriptionTemplate" Collapsed="true">
+    <Position X="28.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.BriefDescriptionTemplate" Collapsed="true">
+    <Position X="28.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.UmlClassDiagramTemplate" Collapsed="true">
+    <Position X="1.75" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.TextTemplate" Collapsed="true">
+    <Position X="4" Y="12.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxygenIndex">
+    <Position X="76" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAEAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.CompoundIndex" Collapsed="true">
+    <Position X="74.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACBAAAAAAAAAAAQAAAAAAAAAAAAEQAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.MemberIndex">
+    <Position X="74.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAQAAAAIAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxygenModel" Collapsed="true">
+    <Position X="69" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAACABAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.Compound" Collapsed="true">
+    <Position X="7.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAABgAEAEAAIAAAQAAAAAAAAAgAAAQAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.Location" Collapsed="true">
+    <Position X="72.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAABAAAAAAAAEAAAIAAAAAAABAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxNamespace" Collapsed="true">
+    <Position X="1" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxClassifier" Collapsed="true">
+    <Position X="6.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAABAEACAAAAAIAAAAAAAAAAAAEAAAAEAAAACAI=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxClass" Collapsed="true">
+    <Position X="3.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxInterface" Collapsed="true">
+    <Position X="5.5" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxStruct" Collapsed="true">
+    <Position X="7.75" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxEnum" Collapsed="true">
+    <Position X="10" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxDirectory" Collapsed="true">
+    <Position X="12.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEIA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxFile" Collapsed="true">
+    <Position X="14.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxMember" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAZAAEBiCKQEBAIgBAQwACAQAoAEoQAASAEADE4=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxField" Collapsed="true">
+    <Position X="1" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxProperty" Collapsed="true">
+    <Position X="3.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxMethod" Collapsed="true">
+    <Position X="5.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxFriend" Collapsed="true">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxDefine" Collapsed="true">
+    <Position X="10" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxEnumValue" Collapsed="true">
+    <Position X="12.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.MemberEnum" Collapsed="true">
+    <Position X="14.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxParam" Collapsed="true">
+    <Position X="72.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAggCAAAAAABAAAAAABAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxLinkedTextItem" Collapsed="true">
+    <Position X="1.75" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxText" Collapsed="true">
+    <Position X="2.75" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxReference" Collapsed="true">
+    <Position X="0.5" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAAAIAAACAI=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxLinkedText" Collapsed="true">
+    <Position X="70.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxProgramListing" Collapsed="true">
+    <Position X="74.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxCodeLine" Collapsed="true">
+    <Position X="0.5" Y="17.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxHighlight" Collapsed="true">
+    <Position X="76" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxHighlightText" Collapsed="true">
+    <Position X="69" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACCAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.Description" Collapsed="true">
+    <Position X="62" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAIAAAAAAAAAgAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocSect" Collapsed="true">
+    <Position X="62" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocCmd" Collapsed="true">
+    <Position X="35" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocCmdGroup" Collapsed="true">
+    <Position X="16" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocPara" Collapsed="true">
+    <Position X="8" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocParaList" Collapsed="true">
+    <Position X="37.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocMarkup" Collapsed="true">
+    <Position X="21.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocText" Collapsed="true">
+    <Position X="48.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABACAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocChar" Collapsed="true">
+    <Position X="50.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocEmpty" Collapsed="true">
+    <Position X="57.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocUrlLink" Collapsed="true">
+    <Position X="3.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocAnchor" Collapsed="true">
+    <Position X="10.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocFormula" Collapsed="true">
+    <Position X="17" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocReference" Collapsed="true">
+    <Position X="23.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAAACAAACAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocIndexEntry" Collapsed="true">
+    <Position X="53" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocList" Collapsed="true">
+    <Position X="59.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocListItem" Collapsed="true">
+    <Position X="37.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocSimpleSect" Collapsed="true">
+    <Position X="64.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACEAAAAAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocSimpleSectItem" Collapsed="true">
+    <Position X="41.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocTitle" Collapsed="true">
+    <Position X="5.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocCaption" Collapsed="true">
+    <Position X="12.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocHeading" Collapsed="true">
+    <Position X="19.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocVariableList" Collapsed="true">
+    <Position X="44" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocVariable" Collapsed="true">
+    <Position X="74.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocTable" Collapsed="true">
+    <Position X="55.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAEAAAAAAAAACAAAAAAAAgA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocTableRow" Collapsed="true">
+    <Position X="72.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocTableCell" Collapsed="true">
+    <Position X="39.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocImage" Collapsed="true">
+    <Position X="26" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEQAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocDotFile" Collapsed="true">
+    <Position X="28.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocTocList" Collapsed="true">
+    <Position X="30.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocTocItem" Collapsed="true">
+    <Position X="14.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocLanguage" Collapsed="true">
+    <Position X="35" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocParamList" Collapsed="true">
+    <Position X="46.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocParamListItem" Collapsed="true">
+    <Position X="76" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocParamNameList" Collapsed="true">
+    <Position X="70.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocParamName" Collapsed="true">
+    <Position X="69" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocXRefSec" Collapsed="true">
+    <Position X="66.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocCopy" Collapsed="true">
+    <Position X="62" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DocBlockQuote" Collapsed="true">
+    <Position X="32.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SoftwareEngineeringTools.Documentation.DoxygenParser" Collapsed="true">
+    <Position X="70.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgQlKAEABiEpAAQggBCCAAECiAFBAAICsEQiAGDAA=</HashCode>
+      <FileName>DoxygenParser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="SoftwareEngineeringTools.Documentation.ModelVersion" Collapsed="true">
+    <Position X="69" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAACA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="SoftwareEngineeringTools.Documentation.IApiDocTemplateProcessor" Collapsed="true">
+    <Position X="69" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="SoftwareEngineeringTools.Documentation.Language" Collapsed="true">
+    <Position X="72.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>ApiDocConfig.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.ProgrammingLanguage" Collapsed="true">
+    <Position X="76" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>ApiDocTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.CompoundKind" Collapsed="true">
+    <Position X="69" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAQAAAwAAJAAABAAAAEIAAAAABAAQAACAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.MemberKind" Collapsed="true">
+    <Position X="74.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAQAAACAAIAAgIAAIAACQQAAQAABgA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.ProtectionKind" Collapsed="true">
+    <Position X="69" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEQAAAAEAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.VirtualKind" Collapsed="true">
+    <Position X="70.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQABAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DoxHighlightKind" Collapsed="true">
+    <Position X="70.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAGAAAAAAAAAQAAAAAAACAIAQQAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocKind" Collapsed="true">
+    <Position X="76" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCggAGADAQgAUAAAQMAQAAAAgAAjDAACAAACWAgCEI=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocMarkupKind" Collapsed="true">
+    <Position X="69" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABCAAAAAAAABAAAAAAAAgAAAQAAAYAAg=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocTextKind" Collapsed="true">
+    <Position X="69" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAQAAAAAAEAABAAAADAAAAAAAAgAAAAACAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocCharKind" Collapsed="true">
+    <Position X="70.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQQAAACAGBAAAAAAAAAAIAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocEmptyKind" Collapsed="true">
+    <Position X="72.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wkkBBqJJgAkCACZCJCGjxhYSkjCAAFOxABlRgdGhAAQ=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocRefKind" Collapsed="true">
+    <Position X="74.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocSimpleSectKind" Collapsed="true">
+    <Position X="76" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAABAAAABgAAgAEAABAACABAAAABAAEAkAEIAUA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocImageKind" Collapsed="true">
+    <Position X="74.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAEAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocParamListKind" Collapsed="true">
+    <Position X="72.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAgAQAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="SoftwareEngineeringTools.Documentation.DocParamDir" Collapsed="true">
+    <Position X="70.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Doxygen.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

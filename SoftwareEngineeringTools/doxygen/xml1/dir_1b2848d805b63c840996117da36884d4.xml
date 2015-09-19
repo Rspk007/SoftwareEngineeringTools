@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_1b2848d805b63c840996117da36884d4" kind="dir">
+    <compoundname>C:/SoftwareEngineeringTools/SoftwareEngineeringTools</compoundname>
+    <innerdir refid="dir_df23643c4d0ccae2f4d314ba36191f2c">C:/SoftwareEngineeringTools/SoftwareEngineeringTools/doxygen</innerdir>
+    <innerdir refid="dir_3bfd4e95705c8221371acd55fff2372e">C:/SoftwareEngineeringTools/SoftwareEngineeringTools/obj</innerdir>
+    <innerdir refid="dir_f49ad6141206ea805e386e7867d1efd1">C:/SoftwareEngineeringTools/SoftwareEngineeringTools/Properties</innerdir>
+    <innerfile refid="_program_8cs">Program.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/"/>
+  </compounddef>
+</doxygen>

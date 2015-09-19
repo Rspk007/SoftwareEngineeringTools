@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocParamListItem</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item_1ad01ae5f9eec5ea62d109669011cd1057" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_list" kindref="compound">DocParamNameList</ref> &gt;</type>
+        <definition>List&lt;DocParamNameList&gt; SoftwareEngineeringTools.Documentation.DocParamListItem.ParamNames</definition>
+        <argsstring></argsstring>
+        <name>ParamNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="983" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="983" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item_1a3a9c87ee0dd403127be13ef7b8d6579a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_description" kindref="compound">Description</ref></type>
+        <definition>Description SoftwareEngineeringTools.Documentation.DocParamListItem.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="984" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="984" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item_1a1c659976c8f26af3b73450a4a8a36997" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocParamListItem.DocParamListItem</definition>
+        <argsstring>()</argsstring>
+        <name>DocParamListItem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="986" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="986" bodyend="989"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="982" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="981" bodyend="990"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item_1a3a9c87ee0dd403127be13ef7b8d6579a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocParamListItem</scope><name>Description</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item_1a1c659976c8f26af3b73450a4a8a36997" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocParamListItem</scope><name>DocParamListItem</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item_1ad01ae5f9eec5ea62d109669011cd1057" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocParamListItem</scope><name>ParamNames</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

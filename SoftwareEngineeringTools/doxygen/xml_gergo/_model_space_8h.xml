@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="_model_space_8h" kind="file">
+    <compoundname>ModelSpace.h</compoundname>
+    <includes local="no">set</includes>
+    <includes refid="_bounding_volume_8h" local="yes">BoundingVolume.h</includes>
+    <includes refid="_surface_8h" local="yes">Surface.h</includes>
+    <includes refid="_vector_8h" local="yes">Vector.h</includes>
+    <includes refid="_light_8h" local="yes">Light.h</includes>
+    <includes refid="_colour_8h" local="yes">Colour.h</includes>
+    <includes refid="_shader_8h" local="yes">Shader.h</includes>
+    <includes refid="_intersection_8h" local="yes">Intersection.h</includes>
+    <includes refid="_i_intersectable_8h" local="yes">IIntersectable.h</includes>
+    <includes refid="_type_operators_8h" local="yes">TypeOperators.h</includes>
+    <includedby refid="_camera_8h" local="yes">Új mappa/Camera.h</includedby>
+    <includedby refid="main_8cpp" local="yes">Új mappa/main.cpp</includedby>
+    <incdepgraph>
+      <node id="430">
+        <label>Shader.h</label>
+        <link refid="_shader_8h"/>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+      </node>
+      <node id="419">
+        <label>Vector.h</label>
+        <link refid="_vector_8h"/>
+        <childnode refid="420" relation="include">
+        </childnode>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="423" relation="include">
+        </childnode>
+      </node>
+      <node id="422">
+        <label>cmath</label>
+      </node>
+      <node id="421">
+        <label>stdexcept</label>
+      </node>
+      <node id="423">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="421" relation="include">
+        </childnode>
+        <childnode refid="422" relation="include">
+        </childnode>
+        <childnode refid="418" relation="include">
+        </childnode>
+      </node>
+      <node id="417">
+        <label>Line.h</label>
+        <link refid="_line_8h"/>
+        <childnode refid="418" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+      </node>
+      <node id="415">
+        <label>IIntersectable.h</label>
+        <link refid="_i_intersectable_8h"/>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>IShape.h</label>
+        <link refid="_i_shape_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+      <node id="426">
+        <label>Material.h</label>
+        <link refid="_material_8h"/>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+      <node id="411">
+        <label>Új mappa/ModelSpace.h</label>
+        <link refid="ModelSpace.h"/>
+        <childnode refid="412" relation="include">
+        </childnode>
+        <childnode refid="413" relation="include">
+        </childnode>
+        <childnode refid="427" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="428" relation="include">
+        </childnode>
+        <childnode refid="429" relation="include">
+        </childnode>
+        <childnode refid="430" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+      </node>
+      <node id="428">
+        <label>Light.h</label>
+        <link refid="_light_8h"/>
+        <childnode refid="419" relation="include">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>Ray.h</label>
+        <link refid="_ray_8h"/>
+        <childnode refid="417" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>iostream</label>
+      </node>
+      <node id="424">
+        <label>TypeOperators.h</label>
+        <link refid="_type_operators_8h"/>
+      </node>
+      <node id="413">
+        <label>BoundingVolume.h</label>
+        <link refid="_bounding_volume_8h"/>
+        <childnode refid="414" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>Primitive.h</label>
+        <link refid="_primitive_8h"/>
+      </node>
+      <node id="429">
+        <label>Colour.h</label>
+        <link refid="_colour_8h"/>
+      </node>
+      <node id="412">
+        <label>set</label>
+      </node>
+      <node id="427">
+        <label>Surface.h</label>
+        <link refid="_surface_8h"/>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="425" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+        <childnode refid="424" relation="include">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>Intersection.h</label>
+        <link refid="_intersection_8h"/>
+        <childnode refid="419" relation="include">
+        </childnode>
+        <childnode refid="426" relation="include">
+        </childnode>
+        <childnode refid="415" relation="include">
+        </childnode>
+        <childnode refid="416" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="433">
+        <label>Új mappa/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="432">
+        <label>Új mappa/Camera.h</label>
+        <link refid="_camera_8h"/>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+      <node id="431">
+        <label>Új mappa/ModelSpace.h</label>
+        <link refid="ModelSpace.h"/>
+        <childnode refid="432" relation="include">
+        </childnode>
+        <childnode refid="433" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_visualisation_1_1_model_space" prot="public">Visualisation::ModelSpace</innerclass>
+    <innernamespace refid="namespace_visualisation">Visualisation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MODELSPACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODELSPACE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_bounding_volume_8h" kindref="compound">BoundingVolume.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_surface_8h" kindref="compound">Surface.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_vector_8h" kindref="compound">Vector.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_light_8h" kindref="compound">Light.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_colour_8h" kindref="compound">Colour.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_shader_8h" kindref="compound">Shader.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_intersection_8h" kindref="compound">Intersection.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_i_intersectable_8h" kindref="compound">IIntersectable.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_type_operators_8h" kindref="compound">TypeOperators.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Geometry;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Sampling;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Visualisation</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>type<sp/>of<sp/>the<sp/>coordinates<sp/>in<sp/>the<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_visualisation_1_1_model_space" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_visualisation_1_1_model_space" kindref="compound">ModelSpace</ref></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume&lt;T&gt;</ref>*<sp/>boundingVolume;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>bounding<sp/>volume<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_shader" kindref="compound">Shader&lt;T&gt;</ref>*<sp/>shader;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>shader<sp/>object<sp/>to<sp/>be<sp/>used<sp/>for<sp/>shading<sp/>the<sp/>surfaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref><sp/>background;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>background<sp/>colour<sp/>of<sp/>the<sp/>model<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;const<sp/>Surface&lt;T&gt;*<sp/>&gt;<sp/>objects;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>objects<sp/>in<sp/>the<sp/>model<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;const<sp/>Light&lt;T&gt;*<sp/>&gt;<sp/>lights;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>lightsources</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_model_space" kindref="compound">ModelSpace</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume&lt;T&gt;</ref>*<sp/>boundingVolume,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_shader" kindref="compound">Shader&lt;T&gt;</ref>*<sp/>shader,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref>&amp;<sp/>background<sp/>=<sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref>());</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>MEMBER<sp/>FUNCTIONS<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setBoundingVolume(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume&lt;T&gt;</ref>*<sp/>boundingVolume<sp/>);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume&lt;T&gt;</ref>*<sp/>getBoundingVolume()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setShader(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_shader" kindref="compound">Shader&lt;T&gt;</ref>*<sp/>shader<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_shader" kindref="compound">Shader&lt;T&gt;</ref>*<sp/>getShader()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setBackground(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref>&amp;<sp/>background<sp/>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref><sp/>getBackground()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addObject(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_surface" kindref="compound">Surface&lt;T&gt;</ref>*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeObject(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_surface" kindref="compound">Surface&lt;T&gt;</ref>*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addLight(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_light" kindref="compound">Light&lt;T&gt;</ref>*<sp/>light<sp/>);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>removeLight(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_light" kindref="compound">Light&lt;T&gt;</ref>*<sp/>light<sp/>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref><sp/>getColour(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_ray" kindref="compound">Ray&lt;T&gt;</ref>&amp;<sp/>ray,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>scale,</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>&amp;<sp/>Toperators<sp/>=<sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>()<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection&lt;T&gt;</ref><sp/>getNearestIntersection(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_ray" kindref="compound">Ray&lt;T&gt;</ref>&amp;<sp/>ray,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>scale,</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>&amp;<sp/>Toperators<sp/>=<sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>()<sp/>)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>----<sp/>DEFINITIONS<sp/>----<sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="127" refid="class_visualisation_1_1_model_space_1a088282228a2426627fabcc145a296b73" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_visualisation_1_1_model_space" kindref="compound">ModelSpace&lt;T&gt;::ModelSpace</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume&lt;T&gt;</ref>*<sp/>boundingVolume,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_shader" kindref="compound">Shader&lt;T&gt;</ref>*<sp/>shader,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref>&amp;<sp/>background<sp/>):</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>boundingVolume(boundingVolume),<sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shader(shader),</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>background(background)</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="134" refid="class_visualisation_1_1_model_space_1aa75c43188ef6676e58dacc411d36afda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_model_space_1aa75c43188ef6676e58dacc411d36afda" kindref="member">ModelSpace&lt;T&gt;::setBoundingVolume</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume&lt;T&gt;</ref>*<sp/>boundingVolume<sp/>)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;boundingVolume<sp/>=<sp/>boundingVolume;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="140" refid="class_visualisation_1_1_model_space_1a02ddc295ff120ba5fa6caadb5b37ca91" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume&lt;T&gt;</ref>*<sp/><ref refid="class_visualisation_1_1_model_space_1a02ddc295ff120ba5fa6caadb5b37ca91" kindref="member">ModelSpace&lt;T&gt;::getBoundingVolume</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="141"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>boundingVolume;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="146" refid="class_visualisation_1_1_model_space_1a12ef60c4d01229b52f7450cccdef4484" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_model_space_1a12ef60c4d01229b52f7450cccdef4484" kindref="member">ModelSpace&lt;T&gt;::setShader</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_shader" kindref="compound">Shader&lt;T&gt;</ref>*<sp/>shader<sp/>)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;shader<sp/>=<sp/>shader;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="152" refid="class_visualisation_1_1_model_space_1ab0a6a2215f518afb33ecbfca57d8ffec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_shader" kindref="compound">Shader&lt;T&gt;</ref>*<sp/><ref refid="class_visualisation_1_1_model_space_1ab0a6a2215f518afb33ecbfca57d8ffec" kindref="member">ModelSpace&lt;T&gt;::getShader</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="153"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>shader;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="158" refid="class_visualisation_1_1_model_space_1a463e339c2b252e70ff31456a2c243cf8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_model_space_1a463e339c2b252e70ff31456a2c243cf8" kindref="member">ModelSpace&lt;T&gt;::setBackground</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref>&amp;<sp/>background<sp/>)</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;background<sp/>=<sp/>background;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="164" refid="class_visualisation_1_1_model_space_1a03709018d9b4886b872d175c84d63adf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref><sp/><ref refid="class_visualisation_1_1_model_space_1a03709018d9b4886b872d175c84d63adf" kindref="member">ModelSpace&lt;T&gt;::getBackground</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="165"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>background;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="170" refid="class_visualisation_1_1_model_space_1a33ce733b69b82b6c7cad50fcc752525b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_model_space_1a33ce733b69b82b6c7cad50fcc752525b" kindref="member">ModelSpace&lt;T&gt;::addObject</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_surface" kindref="compound">Surface&lt;T&gt;</ref>*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objects.insert(<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>);<sp/></highlight><highlight class="comment">//<sp/>store<sp/>the<sp/>pointer<sp/>to<sp/>the<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="176" refid="class_visualisation_1_1_model_space_1ad2da63fc69909a91b630b11725871c35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_model_space_1ad2da63fc69909a91b630b11725871c35" kindref="member">ModelSpace&lt;T&gt;::removeObject</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_surface" kindref="compound">Surface&lt;T&gt;</ref>*<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>objects.erase(<sp/></highlight><highlight class="keywordtype">object</highlight><highlight class="normal"><sp/>);<sp/></highlight><highlight class="comment">//<sp/>remove<sp/>the<sp/>pointer<sp/>of<sp/>the<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="182" refid="class_visualisation_1_1_model_space_1a4c60888619e96eb8ca8fb827a84e4a8a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_model_space_1a4c60888619e96eb8ca8fb827a84e4a8a" kindref="member">ModelSpace&lt;T&gt;::addLight</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_light" kindref="compound">Light&lt;T&gt;</ref>*<sp/>light<sp/>)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lights.insert(<sp/>light<sp/>);<sp/></highlight><highlight class="comment">//<sp/>store<sp/>the<sp/>pointer<sp/>to<sp/>the<sp/>light</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="188" refid="class_visualisation_1_1_model_space_1a9a49141300bb2c66206f83c1d068fcec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_model_space_1a9a49141300bb2c66206f83c1d068fcec" kindref="member">ModelSpace&lt;T&gt;::removeLight</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_visualisation_1_1_light" kindref="compound">Light&lt;T&gt;</ref>*<sp/>light<sp/>)</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lights.erase(<sp/>light<sp/>);<sp/></highlight><highlight class="comment">//<sp/>remove<sp/>the<sp/>pointer<sp/>of<sp/>the<sp/>light</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="194" refid="class_visualisation_1_1_model_space_1ab3ae80917c1e3a8b2437cbc57e9c127c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref><sp/><ref refid="class_visualisation_1_1_model_space_1ab3ae80917c1e3a8b2437cbc57e9c127c" kindref="member">ModelSpace&lt;T&gt;::getColour</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_ray" kindref="compound">Ray&lt;T&gt;</ref>&amp;<sp/>ray,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>scale,</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>&amp;<sp/>Toperators)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="196"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection&lt;T&gt;</ref><sp/>intersection<sp/>=<sp/>getNearestIntersection(<sp/>ray,<sp/>scale,<sp/>Toperators<sp/>);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>an<sp/>intersection<sp/>was<sp/>found,<sp/>do<sp/>the<sp/>shading</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>intersection.<ref refid="struct_geometry_1_1_intersection_1ab8d449d29d16e7cbf5997c030c8a401a" kindref="member">obj</ref><sp/>!=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>V<sp/>=<sp/>-ray.<ref refid="class_geometry_1_1_line_1ad79403432a09aebc40318f64daf9df2b" kindref="member">getDirection</ref>();<sp/></highlight><highlight class="comment">//<sp/>compute<sp/>negative<sp/>view<sp/>direction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>N<sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keyword">const<sp/></highlight><highlight class="normal"><ref refid="class_geometry_1_1_surface" kindref="compound">Surface&lt;T&gt;</ref>*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<sp/>intersection.<ref refid="struct_geometry_1_1_intersection_1ab8d449d29d16e7cbf5997c030c8a401a" kindref="member">obj</ref><sp/>)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-&gt;getNormal(<sp/>intersection.<ref refid="struct_geometry_1_1_intersection_1a92c08fdee4c3d7ce4f5180f6222a9a13" kindref="member">position</ref>,<sp/>scale,<sp/>intersection.<ref refid="struct_geometry_1_1_intersection_1a4fc7f59e3113e19697159919a5aad095" kindref="member">value</ref>,<sp/>Toperators<sp/>);<sp/></highlight><highlight class="comment">//<sp/>compute<sp/>normal<sp/>to<sp/>the<sp/>surface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;unsigned int&gt;</ref><sp/>colour(4);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>shading<sp/>for<sp/>each<sp/>lightsource</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;const<sp/>Light&lt;T&gt;*<sp/>&gt;::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(it<sp/>=<sp/>lights.begin();<sp/>it<sp/>!=<sp/>lights.end();<sp/>++<sp/>it)</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;T&gt;</ref><sp/>L<sp/>=<sp/>(*it)-&gt;getPosition()<sp/>-<sp/>intersection.<ref refid="struct_geometry_1_1_intersection_1a92c08fdee4c3d7ce4f5180f6222a9a13" kindref="member">position</ref>;<sp/></highlight><highlight class="comment">//<sp/>compute<sp/>the<sp/>negative<sp/>light<sp/>direction</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>do<sp/>the<sp/>shading<sp/>for<sp/>this<sp/>lightsource</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref><sp/>c<sp/>=<sp/>shader-&gt;shade(<sp/>intersection.<ref refid="struct_geometry_1_1_intersection_1aa2a46d8387923389a3aad30be0b8a8b5" kindref="member">material</ref>,<sp/>(*it),<sp/>N,<sp/>L,<sp/>V,<sp/>Toperators<sp/>);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colour[0]<sp/>+=<sp/>c.<ref refid="struct_visualisation_1_1_colour_1afd7b1ea9ff115205b65e0bffc92946ac" kindref="member">r</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colour[1]<sp/>+=<sp/>c.<ref refid="struct_visualisation_1_1_colour_1a83576af39a9f289a28c1263d61073508" kindref="member">g</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colour[2]<sp/>+=<sp/>c.<ref refid="struct_visualisation_1_1_colour_1a41cede1b4c0d05cff170ad5761f70964" kindref="member">b</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colour[3]<sp/>=<sp/>c.<ref refid="struct_visualisation_1_1_colour_1a24420a9beaac7cee08b5e255a4c29db1" kindref="member">a</ref>;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref>(<sp/>(colour[0]<sp/>&gt;<sp/>255)<sp/>?<sp/>255<sp/>:<sp/>colour[0],</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(colour[1]<sp/>&gt;<sp/>255)<sp/>?<sp/>255<sp/>:<sp/>colour[1],</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(colour[2]<sp/>&gt;<sp/>255)<sp/>?<sp/>255<sp/>:<sp/>colour[2],</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>colour[3]<sp/>);</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>background;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="231" refid="class_visualisation_1_1_model_space_1a924ee2653f2843f730b92e8244438ffc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection&lt;T&gt;</ref><sp/><ref refid="class_visualisation_1_1_model_space_1a924ee2653f2843f730b92e8244438ffc" kindref="member">ModelSpace&lt;T&gt;::getNearestIntersection</ref>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_geometry_1_1_ray" kindref="compound">Ray&lt;T&gt;</ref>&amp;<sp/>ray,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>scale,</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators&lt;T&gt;</ref>&amp;<sp/>Toperators<sp/>)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="233"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection&lt;T&gt;</ref><sp/>nearest;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>bounds<sp/>(intersection<sp/>with<sp/>the<sp/>bounding<sp/>volume)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;Intersection&lt;T&gt;</ref>&gt;<sp/>bounds<sp/>=<sp/>boundingVolume-&gt;intersect(<sp/>ray,<sp/>0,<sp/>T(),<sp/>Toperators<sp/>);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>ray<sp/>intersects<sp/>the<sp/>bounding<sp/>volume</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>bounds.<ref refid="class_geometry_1_1_point_1a0ec9df17ac56bb737d58485bf35eaf74" kindref="member">getDim</ref>()<sp/>!=<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>tnearest<sp/>=<sp/>bounds[1].time<sp/>+<sp/>bounds[1].time;<sp/></highlight><highlight class="comment">//<sp/>the<sp/>nearest<sp/>intersection<sp/>point<sp/>in<sp/>dimension<sp/>time<sp/>so<sp/>far<sp/>(set<sp/>to<sp/>an<sp/>unreachable<sp/>far<sp/>value)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>look<sp/>for<sp/>the<sp/>nearest<sp/>object<sp/>in<sp/>the<sp/>direction<sp/>of<sp/>the<sp/>ray</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;const<sp/>Surface&lt;T&gt;*<sp/>&gt;::iterator<sp/>it;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(it<sp/>=<sp/>objects.begin();<sp/>it<sp/>!=<sp/>objects.end();<sp/>++<sp/>it)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_geometry_1_1_vector" kindref="compound">Vector&lt;Intersection&lt;T&gt;</ref>&gt;<sp/>intersection<sp/>=<sp/>(*it)-&gt;intersect(<sp/>ray,<sp/>&amp;bounds,<sp/>scale,<sp/>Toperators<sp/>);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>there<sp/>is<sp/>an<sp/>intersection<sp/>in<sp/>the<sp/>bounding<sp/>box<sp/>with<sp/>the<sp/>volume</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>intersection.<ref refid="class_geometry_1_1_point_1a0ec9df17ac56bb737d58485bf35eaf74" kindref="member">getDim</ref>()<sp/>&gt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>newly<sp/>found<sp/>intersection<sp/>is<sp/>nearer,<sp/>store<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>Toperators.<ref refid="class_utilities_1_1_type_operators_1ac0c4e4d72daedaf61ac5b3f10832abc2" kindref="member">greaterThan</ref>(<sp/>tnearest,<sp/>intersection[0].time<sp/>)<sp/>)<sp/></highlight><highlight class="comment">//<sp/>t<sp/>&lt;<sp/>tnearest</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nearest<sp/>=<sp/>intersection[0];</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tnearest<sp/>=<sp/>intersection[0].time;</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>nearest;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="265"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>MODELSPACE_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h"/>
+  </compounddef>
+</doxygen>

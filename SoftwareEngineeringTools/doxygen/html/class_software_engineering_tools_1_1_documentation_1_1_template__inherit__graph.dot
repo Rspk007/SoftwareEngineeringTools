@@ -1,0 +1,42 @@
+digraph "SoftwareEngineeringTools.Documentation.Template"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SoftwareEngineeringTools.\lDocumentation.Template\n|+ Items\l+ Leaf\l+ Parent\l|+ Template()\l+ AddBriefDescription()\l+ AddClassifierList()\l+ AddClassList()\l+ AddDescription()\l+ AddEnumList()\l+ AddEnumValueList()\l+ AddFieldList()\l+ AddInterfaceList()\l+ AddMemberList()\l+ AddMethodList()\l+ AddNamespaceList()\l+ AddPropertyList()\l+ AddSection()\l+ AddStructList()\l+ AddText()\l+ AddUmlClassDiagram()\l+ Process()\l+ ProcessItems()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{SoftwareEngineeringTools.\lDocumentation.DescriptionTemplate\n||+ DescriptionTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_description_template.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{SoftwareEngineeringTools.\lDocumentation.BriefDescription\lTemplate\n||+ BriefDescriptionTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_brief_description_template.html"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{SoftwareEngineeringTools.\lDocumentation.DoxygenObjectTemplate\n||+ DoxygenObjectTemplate()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_doxygen_object_template.html"];
+  Node4 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{SoftwareEngineeringTools.\lDocumentation.ClassifierListTemplate\n||+ ClassifierListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template.html"];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{SoftwareEngineeringTools.\lDocumentation.ClassListTemplate\n||+ ClassListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_class_list_template.html"];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node7 [label="{SoftwareEngineeringTools.\lDocumentation.EnumListTemplate\n||+ EnumListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_enum_list_template.html"];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{SoftwareEngineeringTools.\lDocumentation.InterfaceListTemplate\n||+ InterfaceListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_interface_list_template.html"];
+  Node5 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node9 [label="{SoftwareEngineeringTools.\lDocumentation.StructListTemplate\n||+ StructListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_struct_list_template.html"];
+  Node4 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node10 [label="{SoftwareEngineeringTools.\lDocumentation.MemberListTemplate\n|+ GroupByVisibility\l|+ MemberListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_member_list_template.html"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node11 [label="{SoftwareEngineeringTools.\lDocumentation.EnumValueListTemplate\n||+ EnumValueListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_enum_value_list_template.html"];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node12 [label="{SoftwareEngineeringTools.\lDocumentation.FieldListTemplate\n||+ FieldListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_field_list_template.html"];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node13 [label="{SoftwareEngineeringTools.\lDocumentation.MethodListTemplate\n||+ MethodListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_method_list_template.html"];
+  Node10 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node14 [label="{SoftwareEngineeringTools.\lDocumentation.PropertyListTemplate\n||+ PropertyListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_property_list_template.html"];
+  Node4 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node15 [label="{SoftwareEngineeringTools.\lDocumentation.NamespaceListTemplate\n||+ NamespaceListTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template.html"];
+  Node1 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node16 [label="{SoftwareEngineeringTools.\lDocumentation.SectionTemplate\n|+ Title\l|+ SectionTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_section_template.html"];
+  Node16 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node17 [label="{SoftwareEngineeringTools.\lDocumentation.DocumentTemplate\n|+ GroupByKindTemplate\l+ GroupByNamespaceTemplate\l+ ProgrammingLanguage\l|+ DocumentTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_document_template.html"];
+  Node1 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node18 [label="{SoftwareEngineeringTools.\lDocumentation.TextTemplate\n|+ Text\l|+ TextTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_text_template.html"];
+  Node1 -> Node19 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node19 [label="{SoftwareEngineeringTools.\lDocumentation.UmlClassDiagramTemplate\n||+ UmlClassDiagramTemplate()\l+ Process()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template.html"];
+}

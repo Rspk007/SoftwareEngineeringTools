@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_54912a9910d2be8894cb74c0418084ce" kind="dir">
+    <compoundname>C:/SoftwareEngineeringTools/TestReportDocLib</compoundname>
+    <innerdir refid="dir_1b134caaf71203d0581e971e221016d8">C:/SoftwareEngineeringTools/TestReportDocLib/obj</innerdir>
+    <innerdir refid="dir_f034a4b4d84814588e2d808200fa9d92">C:/SoftwareEngineeringTools/TestReportDocLib/Properties</innerdir>
+    <innerfile refid="_test_report_doc_generator_8cs">TestReportDocGenerator.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/TestReportDocLib/"/>
+  </compounddef>
+</doxygen>

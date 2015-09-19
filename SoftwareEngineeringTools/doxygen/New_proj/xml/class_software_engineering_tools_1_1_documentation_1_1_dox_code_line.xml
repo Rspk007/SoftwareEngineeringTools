@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxCodeLine</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxReference</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line_1a2bd76e9ed3fa0de6f3e1b17024126d7e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+        <definition>int SoftwareEngineeringTools.Documentation.DoxCodeLine.LineNumber</definition>
+        <argsstring></argsstring>
+        <name>LineNumber</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="401" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="401" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line_1a6f991a58ace2ff0c216f0a8095081db0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight" kindref="compound">DoxHighlight</ref> &gt;</type>
+        <definition>List&lt;DoxHighlight&gt; SoftwareEngineeringTools.Documentation.DoxCodeLine.Tokens</definition>
+        <argsstring></argsstring>
+        <name>Tokens</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="402" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line_1aa54e6277a83e9fd9a74870e90a0d1130" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DoxCodeLine.DoxCodeLine</definition>
+        <argsstring>()</argsstring>
+        <name>DoxCodeLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="404" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="404" bodyend="407"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="321">
+        <label>DoxLinkedTextItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item"/>
+      </node>
+      <node id="319">
+        <label>SoftwareEngineeringTools.Documentation.DoxCodeLine</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line"/>
+        <childnode refid="320" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="320">
+        <label>DoxReference</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference"/>
+        <childnode refid="321" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="324">
+        <label>DoxLinkedTextItem</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item"/>
+      </node>
+      <node id="322">
+        <label>SoftwareEngineeringTools.Documentation.DoxCodeLine</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line"/>
+        <childnode refid="323" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>DoxReference</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference"/>
+        <childnode refid="324" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="400" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="399" bodyend="408"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1af1adff120d9414e232e8d95edcb3a206" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>Compound</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line_1aa54e6277a83e9fd9a74870e90a0d1130" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>DoxCodeLine</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1ac5ed2eb3dd985eab60870b9c08d4f372" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>External</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line_1a2bd76e9ed3fa0de6f3e1b17024126d7e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>LineNumber</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1adb1f886d99397b8aae2b710d179ce78a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>Member</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1acfca92115ed5987873af1cb404b777a8" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>ProtectionKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item_1a2bb49a433d3cd0bae57d844da0743c7e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>Text</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line_1a6f991a58ace2ff0c216f0a8095081db0" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>Tokens</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1a4a90f69f52eef9dc448ab9224b0bd2ba" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>Tooltip</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1a607a1e892b5e0ab21af53d75a6cad17b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxCodeLine</scope><name>VirtualKind</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_bef933dc04b1eca080cbb39fd2054764" kind="dir">
+    <compoundname>TestReportDocLib</compoundname>
+    <innerdir refid="dir_212f0f7febfcaca721e2351fcdbf8931">obj</innerdir>
+    <innerdir refid="dir_bcb2947e8dc27390acbed545f3b41a1c">Properties</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/TestReportDocLib/"/>
+  </compounddef>
+</doxygen>

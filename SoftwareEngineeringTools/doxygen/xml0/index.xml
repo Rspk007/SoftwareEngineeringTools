@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_first_assignment_1_1_comp_net_first_assignment_main" kind="class"><name>FirstAssignment::CompNetFirstAssignmentMain</name>
+    <member refid="class_first_assignment_1_1_comp_net_first_assignment_main_1afc2e9fe8391e2630a81482f275dcab05" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="class_first_assignment_1_1_display" kind="class"><name>FirstAssignment::Display</name>
+    <member refid="class_first_assignment_1_1_display_1accfe2f91400da5db180669273218f5ad" kind="variable"><name>input</name></member>
+    <member refid="class_first_assignment_1_1_display_1ae5493c585817c68566b0ebb2ab1fcb9f" kind="variable"><name>br</name></member>
+    <member refid="class_first_assignment_1_1_display_1a0ed079aab85a68831bb72a1c62f67599" kind="function"><name>print</name></member>
+    <member refid="class_first_assignment_1_1_display_1a995a9396a18177e292ea932c2ae2694b" kind="function"><name>println</name></member>
+    <member refid="class_first_assignment_1_1_display_1aab4ec7fc4617ac43b99e199dbcfb55a7" kind="function"><name>readInput</name></member>
+  </compound>
+  <compound refid="class_first_assignment_1_1_web_page_analyzer" kind="class"><name>FirstAssignment::WebPageAnalyzer</name>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1aad386977103985798dfd07970a5c9079" kind="variable"><name>webPage</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a2291b3cc0b111e0743b680ea357be40d" kind="variable"><name>IPAddress</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1acd5102128e9dc1d5d6d70b00247c0850" kind="variable"><name>display</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a9e58d50ebb1ce1f15e332b7832c93016" kind="variable"><name>URLList</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a18b13080a562f67b45e53d1017771262" kind="variable"><name>URLIPList</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a7c7c5ef9a693a12830aa64db60625504" kind="variable"><name>safeSourceList</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1aaed0a4c4c15e029314a8ea8f18948cba" kind="variable"><name>dangerousSourceList</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a6d4f8b0e02cd499591ccf77b69d0f688" kind="function"><name>WebPageAnalyzer</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a06e93c3d8f34eab7ff053c7f2d09b847" kind="function"><name>setDisplay</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a841469ac4394d838d1e2866544f88883" kind="function"><name>setWebpage</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1aa4dfe30eb77c38e36c84789c2f4d7b51" kind="function"><name>getWebPageIP</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a0b20478f77ceb57a20808c241ce683bb" kind="function"><name>getWebpageLocation</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a29a625b61259159bfe31246f03936981" kind="function"><name>getURLList</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1a785ddb5bb7ec547c7662b4cfa7cc5770" kind="function"><name>getIPList</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1af2bba1d088f1664a26e1d13f31869582" kind="function"><name>getSafeSourceList</name></member>
+    <member refid="class_first_assignment_1_1_web_page_analyzer_1ae8b6f03c1f54c4fcf3d37c56723333f5" kind="function"><name>getDangerousSourceList</name></member>
+  </compound>
+  <compound refid="namespace_first_assignment" kind="namespace"><name>FirstAssignment</name>
+  </compound>
+  <compound refid="_comp_net_first_assignment_main_8java" kind="file"><name>CompNetFirstAssignmentMain.java</name>
+  </compound>
+  <compound refid="_display_8java" kind="file"><name>Display.java</name>
+  </compound>
+  <compound refid="_web_page_analyzer_8java" kind="file"><name>WebPageAnalyzer.java</name>
+  </compound>
+  <compound refid="dir_8eddd21aa82ffd043538de63932089dc" kind="dir"><name>C:/Users/Jurecska/project/hf/src/FirstAssignment</name>
+  </compound>
+  <compound refid="dir_9c1bf7fb7b59214bbef9d035009acf81" kind="dir"><name>C:/Users/Jurecska/project/hf</name>
+  </compound>
+  <compound refid="dir_c168d44877df5a27ce562cffc24798cb" kind="dir"><name>C:/Users/Jurecska</name>
+  </compound>
+  <compound refid="dir_84f7fab3c47c97489518569f67ae6c23" kind="dir"><name>C:/Users/Jurecska/project</name>
+  </compound>
+  <compound refid="dir_6f5dd01b284d7a4a95322ec5b8c8fdfb" kind="dir"><name>C:/Users/Jurecska/project/hf/src</name>
+  </compound>
+  <compound refid="dir_8ceffd4ee35c3518d4e8bdc7e638efe8" kind="dir"><name>C:/Users</name>
+  </compound>
+</doxygenindex>

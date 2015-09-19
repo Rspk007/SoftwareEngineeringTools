@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_testing_1_1_test_case_result" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Testing::TestCaseResult</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a45cc74e60da35652a786c1f53cacff7a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Testing.TestCaseResult.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="112" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1ab0c2ca15dc89f3d4ff0ade1087cb6d61" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_software_engineering_tools_1_1_testing_1_1_test_variable_result" kindref="compound">TestVariableResult</ref> &gt;</type>
+        <definition>List&lt;TestVariableResult&gt; SoftwareEngineeringTools.Testing.TestCaseResult.Variables</definition>
+        <argsstring></argsstring>
+        <name>Variables</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="114" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a234642830cddb778e4cbff58c11c4b37" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result" kindref="compound">TestCommandResult</ref> &gt;</type>
+        <definition>List&lt;TestCommandResult&gt; SoftwareEngineeringTools.Testing.TestCaseResult.Commands</definition>
+        <argsstring></argsstring>
+        <name>Commands</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="116" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a69e1a0107ef4fe18d2f9adab43cb18e1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2" kindref="member">TestResultKind</ref></type>
+        <definition>TestResultKind SoftwareEngineeringTools.Testing.TestCaseResult.Result</definition>
+        <argsstring></argsstring>
+        <name>Result</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="118" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a46e72de12e8afe5255484cdfcd3849b0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Testing.TestCaseResult.Comment</definition>
+        <argsstring></argsstring>
+        <name>Comment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="120" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1ae433a27ea52af7becce61bb408439672" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Testing.TestCaseResult.TestCaseResult</definition>
+        <argsstring>()</argsstring>
+        <name>TestCaseResult</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="122" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="122" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a567607ee6ddc2722c8853553b5c14cf2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Testing.TestCaseResult.TestCaseResult</definition>
+        <argsstring>(string name, TestResultKind result, string comment)</argsstring>
+        <name>TestCaseResult</name>
+        <param>
+          <type>string</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2" kindref="member">TestResultKind</ref></type>
+          <declname>result</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>comment</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="126" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="126" bodyend="133"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" line="110" column="1" bodyfile="C:/SoftwareEngineeringTools/TestingLib/TestResults.cs" bodystart="109" bodyend="134"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a234642830cddb778e4cbff58c11c4b37" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCaseResult</scope><name>Commands</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a46e72de12e8afe5255484cdfcd3849b0" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCaseResult</scope><name>Comment</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a45cc74e60da35652a786c1f53cacff7a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCaseResult</scope><name>Name</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a69e1a0107ef4fe18d2f9adab43cb18e1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCaseResult</scope><name>Result</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1ae433a27ea52af7becce61bb408439672" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCaseResult</scope><name>TestCaseResult</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a567607ee6ddc2722c8853553b5c14cf2" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCaseResult</scope><name>TestCaseResult</name></member>
+      <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1ab0c2ca15dc89f3d4ff0ade1087cb6d61" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Testing::TestCaseResult</scope><name>Variables</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_doxygen_8cs" kind="file">
+    <compoundname>Doxygen.cs</compoundname>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_compound" prot="public">SoftwareEngineeringTools::Documentation::Compound</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index" prot="public">SoftwareEngineeringTools::Documentation::CompoundIndex</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_description" prot="public">SoftwareEngineeringTools::Documentation::Description</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_anchor" prot="public">SoftwareEngineeringTools::Documentation::DocAnchor</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_block_quote" prot="public">SoftwareEngineeringTools::Documentation::DocBlockQuote</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_caption" prot="public">SoftwareEngineeringTools::Documentation::DocCaption</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_char" prot="public">SoftwareEngineeringTools::Documentation::DocChar</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" prot="public">SoftwareEngineeringTools::Documentation::DocCmd</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group" prot="public">SoftwareEngineeringTools::Documentation::DocCmdGroup</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_copy" prot="public">SoftwareEngineeringTools::Documentation::DocCopy</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_dot_file" prot="public">SoftwareEngineeringTools::Documentation::DocDotFile</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_empty" prot="public">SoftwareEngineeringTools::Documentation::DocEmpty</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_formula" prot="public">SoftwareEngineeringTools::Documentation::DocFormula</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_heading" prot="public">SoftwareEngineeringTools::Documentation::DocHeading</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image" prot="public">SoftwareEngineeringTools::Documentation::DocImage</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_index_entry" prot="public">SoftwareEngineeringTools::Documentation::DocIndexEntry</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language" prot="public">SoftwareEngineeringTools::Documentation::DocLanguage</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list" prot="public">SoftwareEngineeringTools::Documentation::DocList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list_item" prot="public">SoftwareEngineeringTools::Documentation::DocListItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_markup" prot="public">SoftwareEngineeringTools::Documentation::DocMarkup</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para" prot="public">SoftwareEngineeringTools::Documentation::DocPara</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list" prot="public">SoftwareEngineeringTools::Documentation::DocParaList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list" prot="public">SoftwareEngineeringTools::Documentation::DocParamList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item" prot="public">SoftwareEngineeringTools::Documentation::DocParamListItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name" prot="public">SoftwareEngineeringTools::Documentation::DocParamName</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_list" prot="public">SoftwareEngineeringTools::Documentation::DocParamNameList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference" prot="public">SoftwareEngineeringTools::Documentation::DocReference</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_sect" prot="public">SoftwareEngineeringTools::Documentation::DocSect</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect" prot="public">SoftwareEngineeringTools::Documentation::DocSimpleSect</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_item" prot="public">SoftwareEngineeringTools::Documentation::DocSimpleSectItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table" prot="public">SoftwareEngineeringTools::Documentation::DocTable</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_cell" prot="public">SoftwareEngineeringTools::Documentation::DocTableCell</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row" prot="public">SoftwareEngineeringTools::Documentation::DocTableRow</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_text" prot="public">SoftwareEngineeringTools::Documentation::DocText</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_title" prot="public">SoftwareEngineeringTools::Documentation::DocTitle</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_item" prot="public">SoftwareEngineeringTools::Documentation::DocTocItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list" prot="public">SoftwareEngineeringTools::Documentation::DocTocList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_url_link" prot="public">SoftwareEngineeringTools::Documentation::DocUrlLink</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable" prot="public">SoftwareEngineeringTools::Documentation::DocVariable</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list" prot="public">SoftwareEngineeringTools::Documentation::DocVariableList</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec" prot="public">SoftwareEngineeringTools::Documentation::DocXRefSec</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_class" prot="public">SoftwareEngineeringTools::Documentation::DoxClass</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier" prot="public">SoftwareEngineeringTools::Documentation::DoxClassifier</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line" prot="public">SoftwareEngineeringTools::Documentation::DoxCodeLine</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory" prot="public">SoftwareEngineeringTools::Documentation::DoxDirectory</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum" prot="public">SoftwareEngineeringTools::Documentation::DoxEnum</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum_value" prot="public">SoftwareEngineeringTools::Documentation::DoxEnumValue</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_field" prot="public">SoftwareEngineeringTools::Documentation::DoxField</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_file" prot="public">SoftwareEngineeringTools::Documentation::DoxFile</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight" prot="public">SoftwareEngineeringTools::Documentation::DoxHighlight</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text" prot="public">SoftwareEngineeringTools::Documentation::DoxHighlightText</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_interface" prot="public">SoftwareEngineeringTools::Documentation::DoxInterface</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text" prot="public">SoftwareEngineeringTools::Documentation::DoxLinkedText</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item" prot="public">SoftwareEngineeringTools::Documentation::DoxLinkedTextItem</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" prot="public">SoftwareEngineeringTools::Documentation::DoxMember</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_method" prot="public">SoftwareEngineeringTools::Documentation::DoxMethod</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace" prot="public">SoftwareEngineeringTools::Documentation::DoxNamespace</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param" prot="public">SoftwareEngineeringTools::Documentation::DoxParam</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_program_listing" prot="public">SoftwareEngineeringTools::Documentation::DoxProgramListing</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_property" prot="public">SoftwareEngineeringTools::Documentation::DoxProperty</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" prot="public">SoftwareEngineeringTools::Documentation::DoxReference</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_struct" prot="public">SoftwareEngineeringTools::Documentation::DoxStruct</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_dox_text" prot="public">SoftwareEngineeringTools::Documentation::DoxText</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index" prot="public">SoftwareEngineeringTools::Documentation::DoxygenIndex</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model" prot="public">SoftwareEngineeringTools::Documentation::DoxygenModel</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_location" prot="public">SoftwareEngineeringTools::Documentation::Location</innerclass>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_member_index" prot="public">SoftwareEngineeringTools::Documentation::MemberIndex</innerclass>
+    <innerclass refid="struct_software_engineering_tools_1_1_documentation_1_1_model_version" prot="public">SoftwareEngineeringTools::Documentation::ModelVersion</innerclass>
+    <innernamespace refid="namespace_software_engineering_tools_1_1_documentation">SoftwareEngineeringTools::Documentation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs"/>
+  </compounddef>
+</doxygen>

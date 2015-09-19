@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_visualisation_1_1_phong_shader" kind="class" prot="public">
+    <compoundname>Visualisation::PhongShader</compoundname>
+    <basecompoundref refid="class_visualisation_1_1_shader" prot="public" virt="non-virtual">Visualisation::Shader&lt; T &gt;</basecompoundref>
+    <includes refid="_phong_shader_8h" local="no">PhongShader.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_visualisation_1_1_phong_shader_1ad60de4da2e8379b5daf6c05a8dd25c8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>PhongShader</definition>
+        <argsstring>()</argsstring>
+        <name>PhongShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default c&apos;tor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/PhongShader.h" line="27" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/PhongShader.h" bodystart="27" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_phong_shader_1a973bb877dced2645518b16cc3241fced" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref></type>
+        <definition>Colour shade</definition>
+        <argsstring>(const Material *material, const Light&lt; T &gt; *light, Vector&lt; T &gt; N, Vector&lt; T &gt; L, Vector&lt; T &gt; V, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators=Utilities::TypeOperators&lt; T &gt;()) const </argsstring>
+        <name>shade</name>
+        <reimplements refid="class_visualisation_1_1_shader_1ad743e07f30c285dc43ee6cda2b98eb75">shade</reimplements>
+        <param>
+          <type>const <ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_visualisation_1_1_light" kindref="compound">Light</ref>&lt; T &gt; *</type>
+          <declname>light</declname>
+        </param>
+        <param>
+          <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+          <declname>L</declname>
+        </param>
+        <param>
+          <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+          <declname>V</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+          <defval><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that computes the intensity values for each colour channels according to the given parameters. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the material of the surface </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>light</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the lightsource </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- normal of the surface </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>L</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- negative light direction </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- negative ray direction </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- the intensity values for each colour channel </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/PhongShader.h" line="41" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/PhongShader.h" bodystart="49" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents a phong shader implementation. It uses the Phong Reflectance Model. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="147">
+        <label>PhongShader&lt; T &gt;</label>
+        <link refid="class_visualisation_1_1_phong_shader"/>
+        <childnode refid="148" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="148">
+        <label>Shader&lt; T &gt;</label>
+        <link refid="class_visualisation_1_1_shader"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="149">
+        <label>PhongShader&lt; T &gt;</label>
+        <link refid="class_visualisation_1_1_phong_shader"/>
+        <childnode refid="150" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>Shader&lt; T &gt;</label>
+        <link refid="class_visualisation_1_1_shader"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/PhongShader.h" line="22" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/PhongShader.h" bodystart="21" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_visualisation_1_1_phong_shader_1ad60de4da2e8379b5daf6c05a8dd25c8d" prot="public" virt="non-virtual"><scope>Visualisation::PhongShader</scope><name>PhongShader</name></member>
+      <member refid="class_visualisation_1_1_phong_shader_1a973bb877dced2645518b16cc3241fced" prot="public" virt="virtual"><scope>Visualisation::PhongShader</scope><name>shade</name></member>
+      <member refid="class_visualisation_1_1_shader_1ab5852b47125ce80509f0341cf1bd1f96" prot="public" virt="non-virtual"><scope>Visualisation::PhongShader</scope><name>Shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

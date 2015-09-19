@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="struct_visualisation_1_1_image_plane" kind="struct" prot="public">
+    <compoundname>Visualisation::ImagePlane</compoundname>
+    <includes refid="_image_plane_8h" local="no">ImagePlane.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_visualisation_1_1_image_plane_1a6b27b78b9d187dd926ec53a122ad2772" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" line="13" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_image_plane_1a4171bf52fa856bad220dc1111bda1ec5" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T l</definition>
+        <argsstring></argsstring>
+        <name>l</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" line="14" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_image_plane_1a3ff0123200292ec4b7e3e6319d048fa0" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T r</definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" line="14" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_image_plane_1adab634951eeadcd5a7c8840eefbf780f" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" line="15" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_visualisation_1_1_image_plane_1aa8888ec579d37bf1b17d7d5bee3b76c1" prot="public" static="no" mutable="no">
+        <type>T</type>
+        <definition>T t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" line="15" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_visualisation_1_1_image_plane_1a560a456ce61b8a24222b7f32e309a9e4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>ImagePlane</definition>
+        <argsstring>()</argsstring>
+        <name>ImagePlane</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default c&apos;tor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" line="20" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_visualisation_1_1_image_plane_1ae2ef05c4c2b24b984ed6043a76d32c4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ImagePlane</definition>
+        <argsstring>(const T &amp;d, const T &amp;l, const T &amp;r, const T &amp;b, const T &amp;t)</argsstring>
+        <name>ImagePlane</name>
+        <param>
+          <type>const T &amp;</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>l</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" line="25" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" bodystart="31" bodyend="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This struct stores the properties of an image plane to a concrete camera object. </para>    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" line="12" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ImagePlane.h" bodystart="11" bodyend="26"/>
+    <listofallmembers>
+      <member refid="struct_visualisation_1_1_image_plane_1adab634951eeadcd5a7c8840eefbf780f" prot="public" virt="non-virtual"><scope>Visualisation::ImagePlane</scope><name>b</name></member>
+      <member refid="struct_visualisation_1_1_image_plane_1a6b27b78b9d187dd926ec53a122ad2772" prot="public" virt="non-virtual"><scope>Visualisation::ImagePlane</scope><name>d</name></member>
+      <member refid="struct_visualisation_1_1_image_plane_1a560a456ce61b8a24222b7f32e309a9e4" prot="public" virt="non-virtual"><scope>Visualisation::ImagePlane</scope><name>ImagePlane</name></member>
+      <member refid="struct_visualisation_1_1_image_plane_1ae2ef05c4c2b24b984ed6043a76d32c4c" prot="public" virt="non-virtual"><scope>Visualisation::ImagePlane</scope><name>ImagePlane</name></member>
+      <member refid="struct_visualisation_1_1_image_plane_1a4171bf52fa856bad220dc1111bda1ec5" prot="public" virt="non-virtual"><scope>Visualisation::ImagePlane</scope><name>l</name></member>
+      <member refid="struct_visualisation_1_1_image_plane_1a3ff0123200292ec4b7e3e6319d048fa0" prot="public" virt="non-virtual"><scope>Visualisation::ImagePlane</scope><name>r</name></member>
+      <member refid="struct_visualisation_1_1_image_plane_1aa8888ec579d37bf1b17d7d5bee3b76c1" prot="public" virt="non-virtual"><scope>Visualisation::ImagePlane</scope><name>t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

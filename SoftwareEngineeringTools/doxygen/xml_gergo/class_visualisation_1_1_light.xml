@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_visualisation_1_1_light" kind="class" prot="public">
+    <compoundname>Visualisation::Light</compoundname>
+    <includes refid="_light_8h" local="no">Light.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_visualisation_1_1_light_1a92c08fdee4c3d7ce4f5180f6222a9a13" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; position</definition>
+        <argsstring></argsstring>
+        <name>position</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h" line="17" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Light.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_visualisation_1_1_light_1a698096589cf2bca9181d8eb166dc9852" prot="protected" static="no" mutable="no">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt;T&gt; intensity</definition>
+        <argsstring></argsstring>
+        <name>intensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h" line="18" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Light.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_visualisation_1_1_light_1a7f8a7be05225f470c200f7e4ff914a3c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Light</definition>
+        <argsstring>()</argsstring>
+        <name>Light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default c&apos;tor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h" line="24" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Light.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_light_1ac091eb6e677551efd41b02b4839396f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Light</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;position, const Vector&lt; T &gt; &amp;intensity)</argsstring>
+        <name>Light</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>position</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h" line="29" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Light.h" bodystart="61" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_light_1aec0f566b4f80ad1f6bdffabd00fc1c53" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; getPosition</definition>
+        <argsstring>() const </argsstring>
+        <name>getPosition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the position of the lightsource. <simplesect kind="return"><para>- the position of the lightsource </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h" line="37" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Light.h" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_light_1acceeea5f3e89935b9ec259a0d6f78020" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setPosition</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;position)</argsstring>
+        <name>setPosition</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the position of the lightsource. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>position</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new position of the lightsource </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h" line="43" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Light.h" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_light_1ad42cb93f510686e71c32973cba0c3fc3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>Vector&lt; T &gt; getIntensity</definition>
+        <argsstring>() const </argsstring>
+        <name>getIntensity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the intensity of the lightsource. <simplesect kind="return"><para>- the intensity of the lightsource (for each wavelength) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h" line="49" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Light.h" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_light_1a480aa666a77426e1db03b5f310c2d91d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setIntensity</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;intensity)</argsstring>
+        <name>setIntensity</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the intensity of the lightsource. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>intensity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new intensity of the lightsource </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h" line="55" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Light.h" bodystart="84" bodyend="87"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents a lightsource. </para>    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Light.h" line="15" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Light.h" bodystart="14" bodyend="56"/>
+    <listofallmembers>
+      <member refid="class_visualisation_1_1_light_1ad42cb93f510686e71c32973cba0c3fc3" prot="public" virt="non-virtual"><scope>Visualisation::Light</scope><name>getIntensity</name></member>
+      <member refid="class_visualisation_1_1_light_1aec0f566b4f80ad1f6bdffabd00fc1c53" prot="public" virt="non-virtual"><scope>Visualisation::Light</scope><name>getPosition</name></member>
+      <member refid="class_visualisation_1_1_light_1a698096589cf2bca9181d8eb166dc9852" prot="protected" virt="non-virtual"><scope>Visualisation::Light</scope><name>intensity</name></member>
+      <member refid="class_visualisation_1_1_light_1a7f8a7be05225f470c200f7e4ff914a3c" prot="public" virt="non-virtual"><scope>Visualisation::Light</scope><name>Light</name></member>
+      <member refid="class_visualisation_1_1_light_1ac091eb6e677551efd41b02b4839396f3" prot="public" virt="non-virtual"><scope>Visualisation::Light</scope><name>Light</name></member>
+      <member refid="class_visualisation_1_1_light_1a92c08fdee4c3d7ce4f5180f6222a9a13" prot="protected" virt="non-virtual"><scope>Visualisation::Light</scope><name>position</name></member>
+      <member refid="class_visualisation_1_1_light_1a480aa666a77426e1db03b5f310c2d91d" prot="public" virt="non-virtual"><scope>Visualisation::Light</scope><name>setIntensity</name></member>
+      <member refid="class_visualisation_1_1_light_1acceeea5f3e89935b9ec259a0d6f78020" prot="public" virt="non-virtual"><scope>Visualisation::Light</scope><name>setPosition</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,236 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_sampling_1_1_linear_cube_filter" kind="class" prot="public">
+    <compoundname>Sampling::LinearCubeFilter</compoundname>
+    <basecompoundref refid="class_sampling_1_1_filter" prot="public" virt="non-virtual">Sampling::Filter&lt; T &gt;</basecompoundref>
+    <includes refid="_linear_cube_filter_8h" local="no">LinearCubeFilter.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sampling_1_1_linear_cube_filter_1a4aa2860543819ccb8a3da3df8d845037" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LinearCubeFilter</definition>
+        <argsstring>()</argsstring>
+        <name>LinearCubeFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default c&apos;tor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/LinearCubeFilter.h" line="30" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/LinearCubeFilter.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sampling_1_1_linear_cube_filter_1a3d2ff46e5e1c56a695e298c7985d4e7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LinearCubeFilter</definition>
+        <argsstring>(const Volume&lt; T &gt; *filteredObject, const CcGrid&lt; T &gt; *grid)</argsstring>
+        <name>LinearCubeFilter</name>
+        <param>
+          <type>const <ref refid="class_sampling_1_1_volume" kindref="compound">Volume</ref>&lt; T &gt; *</type>
+          <declname>filteredObject</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_cc_grid" kindref="compound">CcGrid</ref>&lt; T &gt; *</type>
+          <declname>grid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with parameters <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filteredObject</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the sampleable object to be filtered </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>grid</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the grid object that is used by this filter </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/LinearCubeFilter.h" line="37" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/LinearCubeFilter.h" bodystart="60" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sampling_1_1_linear_cube_filter_1ae7fe064de3b279d74867a690bd6f4953" prot="public" static="no" const="yes" explicit="no" inline="no" virt="virtual">
+        <type>T</type>
+        <definition>T getValueAt</definition>
+        <argsstring>(const Vector&lt; T &gt; &amp;point, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators) const </argsstring>
+        <name>getValueAt</name>
+        <reimplements refid="class_sampling_1_1_filter_1aaf6cee9a80b3085218861a5a8d6b34bc">getValueAt</reimplements>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt; &amp;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function (inherited from <ref refid="class_sampling_1_1_i_sampleable" kindref="compound">ISampleable</ref>) that calculates the value of the sampleable object at the position specified by the argument &apos;point&apos;. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point where the object must calculate the return value </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- the value at the given point </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/LinearCubeFilter.h" line="49" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/LinearCubeFilter.h" bodystart="65" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents a linear filter. It uses a grid (most recommended a CC grid) to get real values from the filtered object, and at the other points of the space will be linear interpolated. This filter works with CUBES! As filter also implements the interface <ref refid="class_sampling_1_1_i_sampleable" kindref="compound">ISampleable</ref> it can also be filtered. (cascade of filters) </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="95">
+        <label>ISampleable&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_i_sampleable"/>
+      </node>
+      <node id="94">
+        <label>Volume&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_volume"/>
+        <childnode refid="95" relation="public-inheritance">
+        </childnode>
+        <childnode refid="96" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>LinearCubeFilter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_linear_cube_filter"/>
+        <childnode refid="93" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="96">
+        <label>Surface&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_surface"/>
+        <childnode refid="97" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>Filter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_filter"/>
+        <childnode refid="94" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="106">
+        <label>Point&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_point"/>
+        <childnode refid="107" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="104">
+        <label>Material</label>
+        <link refid="struct_visualisation_1_1_material"/>
+        <childnode refid="105" relation="usage">
+          <edgelabel>ka</edgelabel>
+          <edgelabel>ks</edgelabel>
+          <edgelabel>kd</edgelabel>
+        </childnode>
+      </node>
+      <node id="101">
+        <label>ISampleable&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_i_sampleable"/>
+      </node>
+      <node id="100">
+        <label>Volume&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_volume"/>
+        <childnode refid="101" relation="public-inheritance">
+        </childnode>
+        <childnode refid="102" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>LinearCubeFilter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_linear_cube_filter"/>
+        <childnode refid="99" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="102">
+        <label>Surface&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_surface"/>
+        <childnode refid="103" relation="public-inheritance">
+        </childnode>
+        <childnode refid="104" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+      </node>
+      <node id="107">
+        <label>Primitive</label>
+        <link refid="class_geometry_1_1_primitive"/>
+      </node>
+      <node id="99">
+        <label>Filter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_filter"/>
+        <childnode refid="100" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>Vector&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_vector"/>
+        <childnode refid="106" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="103">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/LinearCubeFilter.h" line="25" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/LinearCubeFilter.h" bodystart="24" bodyend="50"/>
+    <listofallmembers>
+      <member refid="class_sampling_1_1_filter_1a8011fcbeb5efeda20bd2dbffbbb70165" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>activate</name></member>
+      <member refid="class_sampling_1_1_filter_1a03c996f9fcf0e10baeb3e700be0c409a" prot="protected" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>active</name></member>
+      <member refid="class_sampling_1_1_filter_1a8308b4bb6079733f4b77ced9d46da7a9" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>deactivate</name></member>
+      <member refid="class_sampling_1_1_filter_1ad724ba04cbde6118ceddbd6635e96eaa" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>Filter</name></member>
+      <member refid="class_sampling_1_1_filter_1a39b9914d0b1a0c54e509d0992facbd4a" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>Filter</name></member>
+      <member refid="class_sampling_1_1_filter_1a20abde6a69cb7dfbe98468203f5848b9" prot="protected" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>filteredObject</name></member>
+      <member refid="class_sampling_1_1_filter_1ae9f51e1d4d767694fc3e192a29ae013e" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>getFilteredObject</name></member>
+      <member refid="class_sampling_1_1_filter_1a361943c043351a96faa13cfd1f126d27" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>getGrid</name></member>
+      <member refid="class_sampling_1_1_volume_1af98bbc751e90a15b59c81ee4c17630b2" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>getIso</name></member>
+      <member refid="class_geometry_1_1_surface_1a3d7a6d87e670d2c6415e92a1f0e9feb4" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>getMaterial</name></member>
+      <member refid="class_sampling_1_1_volume_1af9134066dc508e3201a1dea2acb755a8" prot="public" virt="virtual"><scope>Sampling::LinearCubeFilter</scope><name>getNormal</name></member>
+      <member refid="class_sampling_1_1_linear_cube_filter_1ae7fe064de3b279d74867a690bd6f4953" prot="public" virt="virtual"><scope>Sampling::LinearCubeFilter</scope><name>getValueAt</name></member>
+      <member refid="class_sampling_1_1_filter_1a9ec9b4fce5574a22db09f2a3c8b2f93a" prot="protected" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>grid</name></member>
+      <member refid="class_sampling_1_1_volume_1aae711dcbf18946964b9c42502e9d3377" prot="public" virt="virtual"><scope>Sampling::LinearCubeFilter</scope><name>intersect</name></member>
+      <member refid="class_sampling_1_1_filter_1a22761609071413dcce0632885c820e87" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>isActive</name></member>
+      <member refid="class_sampling_1_1_volume_1a8c8c997c19f49d10d5028ecd6d94805c" prot="protected" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>iso</name></member>
+      <member refid="class_sampling_1_1_linear_cube_filter_1a4aa2860543819ccb8a3da3df8d845037" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>LinearCubeFilter</name></member>
+      <member refid="class_sampling_1_1_linear_cube_filter_1a3d2ff46e5e1c56a695e298c7985d4e7b" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>LinearCubeFilter</name></member>
+      <member refid="class_geometry_1_1_surface_1aa2a46d8387923389a3aad30be0b8a8b5" prot="protected" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>material</name></member>
+      <member refid="class_sampling_1_1_filter_1a04b347c4d1863fb924237689a0312881" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>setFilteredObject</name></member>
+      <member refid="class_sampling_1_1_filter_1a22a66fdf28522c42f8347161ba1ac3fe" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>setGrid</name></member>
+      <member refid="class_sampling_1_1_volume_1a06df2552be7fe124a173741e8ba79770" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>setIso</name></member>
+      <member refid="class_geometry_1_1_surface_1a26d09c46a06493cf2d9116991c80f816" prot="public" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>setMaterial</name></member>
+      <member refid="class_geometry_1_1_surface_1a6e1a6ad293d9318f65c2e28c468c66ba" prot="protected" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>Surface</name></member>
+      <member refid="class_geometry_1_1_surface_1a148c9d72f29cf29e7ad5e787e2819057" prot="protected" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>Surface</name></member>
+      <member refid="class_sampling_1_1_volume_1a3a8fada6f2d2b5ce58f6a0ffef34d9f1" prot="protected" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>Volume</name></member>
+      <member refid="class_sampling_1_1_volume_1aefc1e3fc5f3846e8a1f3186e06017b52" prot="protected" virt="non-virtual"><scope>Sampling::LinearCubeFilter</scope><name>Volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

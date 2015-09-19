@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_variable" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocVariable</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_1a557371e1e88643a632222878c06ebe79" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_title" kindref="compound">DocTitle</ref></type>
+        <definition>DocTitle SoftwareEngineeringTools.Documentation.DocVariable.Entry</definition>
+        <argsstring></argsstring>
+        <name>Entry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="841" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="841" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_1a99e3e7284e92b1e6a93515da3c4d106d" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list_item" kindref="compound">DocListItem</ref></type>
+        <definition>DocListItem SoftwareEngineeringTools.Documentation.DocVariable.Item</definition>
+        <argsstring></argsstring>
+        <name>Item</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="842" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="842" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="632">
+        <label>SoftwareEngineeringTools.Documentation.DocVariable</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable"/>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="840" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="839" bodyend="843"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_1a557371e1e88643a632222878c06ebe79" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocVariable</scope><name>Entry</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_1a99e3e7284e92b1e6a93515da3c4d106d" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocVariable</scope><name>Item</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

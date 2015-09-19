@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_first_assignment_1_1_comp_net_first_assignment_main" kind="class" prot="public">
+    <compoundname>FirstAssignment::CompNetFirstAssignmentMain</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_first_assignment_1_1_comp_net_first_assignment_main_1afc2e9fe8391e2630a81482f275dcab05" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>static void FirstAssignment.CompNetFirstAssignmentMain.main</definition>
+        <argsstring>(String[] args)</argsstring>
+        <name>main</name>
+        <param>
+          <type>String[]</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The main function of the program. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>args</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The console line arguments. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/CompNetFirstAssignmentMain.java" line="16" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/CompNetFirstAssignmentMain.java" bodystart="16" bodyend="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>The Main class of the assignment. It contains the main function.</para><para><simplesect kind="author"><para>GAndris </para></simplesect>
+</para>    </detaileddescription>
+    <location file="C:/Users/Jurecska/project/hf/src/FirstAssignment/CompNetFirstAssignmentMain.java" line="10" column="1" bodyfile="C:/Users/Jurecska/project/hf/src/FirstAssignment/CompNetFirstAssignmentMain.java" bodystart="10" bodyend="96"/>
+    <listofallmembers>
+      <member refid="class_first_assignment_1_1_comp_net_first_assignment_main_1afc2e9fe8391e2630a81482f275dcab05" prot="public" virt="non-virtual"><scope>FirstAssignment::CompNetFirstAssignmentMain</scope><name>main</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

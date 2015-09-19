@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <!-- This page was written by me -->
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+        <meta name="keywords" content=""/>
+        <meta name="description" content=""/>
+    </head>
+    <body>
+		<h1>Test summary</h1>
+		    <table border="0" cellpadding="2" cellspacing="0">
+				<tr>
+					<th></th>
+					<th>Passed</th>
+					<th>Failed</th>
+					<th>Error</th>
+				</tr>
+				<tr>
+					<td><font color="#008000">LoginTest</font></td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td><font color="#808000">InsertMovieTest</font></td>
+					<td>3</td>
+					<td>0</td>
+					<td>0</td>
+				</tr>
+				<tr>
+					<td><font color="#800000">DeleteMovieTest</font></td>
+					<td>2</td>
+					<td>2</td>
+					<td>0</td>
+				</tr>
+			</table>
+		<h1>Test results</h1>
+		<h2>LoginTest</h2>
+		<h3>Successful login (<font color="#008000">Passed</font>)</h3>
+			<p>Open the following URL in a browser: <a href="http://localhost/Movies/">http://localhost/Movies/</a></p>
+			<p>The following page will be displayed: </p>
+			<img src="TestScenario_Results/LoginTest/Successful login/loginScreen.png"/>
+			<p>Type the username "xyz" and password "uvw".</p>
+			<p>Click on the Login button and you will be on the following page:</p>
+			<img src="TestScenario_Results/LoginTest/Successful login/mainScreen.png"/>
+		<h3>Wrong username or password (<font color="#808000">Failed</font>)</h3>
+			<p><font color="#808000">No exception expected but NullReferenceException was thrown.</font></p>
+			<p>Open the following URL in a browser: <a href="http://localhost/Movies/">http://localhost/Movies/</a></p>
+			<p>The following page will be displayed: </p>
+			<img src="TestScenario_Results/LoginTest/Wrong username or password/loginScreen.png"/>
+			<p>Type the username "abc" and password "def".</p>
+			<p>Click on the Login button and you will be on the following page:</p>
+			<img src="TestScenario_Results/LoginTest/Wrong username or password/mainScreen.png"/>
+		<h3>Username required (<font color="#800000">Error</font>)</h3>
+			<p><font color="#800000">UserNameRequiredException expected but NullReferenceException was thrown.</font></p>
+			<p>Open the following URL in a browser: <a href="http://localhost/Movies/">http://localhost/Movies/</a></p>
+			<p>The following page will be displayed: </p>
+			<img src="TestScenario_Results/LoginTest/Username required/loginScreen.png"/>
+			<p>Type the username "" and password "aaa".</p>
+			<p>Click on the Login button and you will be on the following page:</p>
+			<img src="TestScenario_Results/LoginTest/Username required/mainScreen.png"/>
+		<h2>InsertMovieTest</h2>
+		<h2>DeleteMovieTest</h2>
+    </body>
+</html>

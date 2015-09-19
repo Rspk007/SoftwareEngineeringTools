@@ -1,0 +1,442 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_visualisation_1_1_model_space" kind="class" prot="public">
+    <compoundname>Visualisation::ModelSpace</compoundname>
+    <includes refid="_model_space_8h" local="no">ModelSpace.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_visualisation_1_1_model_space_1ac1d2c45b52e431ada0adde7b95eac059" prot="private" static="no" mutable="no">
+        <type>const <ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume</ref>&lt; T &gt; *</type>
+        <definition>const BoundingVolume&lt;T&gt;* boundingVolume</definition>
+        <argsstring></argsstring>
+        <name>boundingVolume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="28" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_visualisation_1_1_model_space_1a173b9e85c52489539a689101b1ea9247" prot="private" static="no" mutable="no">
+        <type>const <ref refid="class_visualisation_1_1_shader" kindref="compound">Shader</ref>&lt; T &gt; *</type>
+        <definition>const Shader&lt;T&gt;* shader</definition>
+        <argsstring></argsstring>
+        <name>shader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="29" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_visualisation_1_1_model_space_1abc6e2c1f7d2f83aa02d907c3c85710c0" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref></type>
+        <definition>Colour background</definition>
+        <argsstring></argsstring>
+        <name>background</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="30" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_visualisation_1_1_model_space_1aab24e9770b54bf3548269441a2f2eafc" prot="private" static="no" mutable="no">
+        <type>std::set&lt; const <ref refid="class_geometry_1_1_surface" kindref="compound">Surface</ref>&lt; T &gt; * &gt;</type>
+        <definition>std::set&lt;const Surface&lt;T&gt;* &gt; objects</definition>
+        <argsstring></argsstring>
+        <name>objects</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="31" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_visualisation_1_1_model_space_1a45a3f05f5ff0687bb6ba389724d41ef9" prot="private" static="no" mutable="no">
+        <type>std::set&lt; const <ref refid="class_visualisation_1_1_light" kindref="compound">Light</ref>&lt; T &gt; * &gt;</type>
+        <definition>std::set&lt;const Light&lt;T&gt;* &gt; lights</definition>
+        <argsstring></argsstring>
+        <name>lights</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="32" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1a088282228a2426627fabcc145a296b73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ModelSpace</definition>
+        <argsstring>(const BoundingVolume&lt; T &gt; *boundingVolume, const Shader&lt; T &gt; *shader, const Colour &amp;background=Colour())</argsstring>
+        <name>ModelSpace</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume</ref>&lt; T &gt; *</type>
+          <declname>boundingVolume</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_visualisation_1_1_shader" kindref="compound">Shader</ref>&lt; T &gt; *</type>
+          <declname>shader</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref> &amp;</type>
+          <declname>background</declname>
+          <defval><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref>()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="38" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="127" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1aa75c43188ef6676e58dacc411d36afda" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBoundingVolume</definition>
+        <argsstring>(const BoundingVolume&lt; T &gt; *boundingVolume)</argsstring>
+        <name>setBoundingVolume</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume</ref>&lt; T &gt; *</type>
+          <declname>boundingVolume</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter method for the bounding volume. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>boundingVolume</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new bounding volume object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="46" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1a02ddc295ff120ba5fa6caadb5b37ca91" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_geometry_1_1_bounding_volume" kindref="compound">BoundingVolume</ref>&lt; T &gt; *</type>
+        <definition>const BoundingVolume&lt; T &gt; * getBoundingVolume</definition>
+        <argsstring>() const </argsstring>
+        <name>getBoundingVolume</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter method for the bounding volume. <simplesect kind="return"><para>- the used bounding volume </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="52" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="140" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1a12ef60c4d01229b52f7450cccdef4484" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setShader</definition>
+        <argsstring>(const Shader&lt; T &gt; *shader)</argsstring>
+        <name>setShader</name>
+        <param>
+          <type>const <ref refid="class_visualisation_1_1_shader" kindref="compound">Shader</ref>&lt; T &gt; *</type>
+          <declname>shader</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter method for the shader object. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new shader object </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="58" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1ab0a6a2215f518afb33ecbfca57d8ffec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="class_visualisation_1_1_shader" kindref="compound">Shader</ref>&lt; T &gt; *</type>
+        <definition>const Shader&lt; T &gt; * getShader</definition>
+        <argsstring>() const </argsstring>
+        <name>getShader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter method for the shader object. <simplesect kind="return"><para>- the used shader object </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="64" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="152" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1a463e339c2b252e70ff31456a2c243cf8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setBackground</definition>
+        <argsstring>(const Colour &amp;background)</argsstring>
+        <name>setBackground</name>
+        <param>
+          <type>const <ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref> &amp;</type>
+          <declname>background</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter method for the background colour. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>shader</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new background colour </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="70" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="158" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1a03709018d9b4886b872d175c84d63adf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref></type>
+        <definition>Colour getBackground</definition>
+        <argsstring>() const </argsstring>
+        <name>getBackground</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter method for the background colour. <simplesect kind="return"><para>- the used background colour </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="76" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="164" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1a33ce733b69b82b6c7cad50fcc752525b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void addObject</definition>
+        <argsstring>(const Surface&lt; T &gt; *object)</argsstring>
+        <name>addObject</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_surface" kindref="compound">Surface</ref>&lt; T &gt; *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Locate a new object in the model space. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new object to be located </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="82" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1ad2da63fc69909a91b630b11725871c35" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void removeObject</definition>
+        <argsstring>(const Surface&lt; T &gt; *object)</argsstring>
+        <name>removeObject</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_surface" kindref="compound">Surface</ref>&lt; T &gt; *</type>
+          <declname>object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove an object from the model space. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>object</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the object to be removed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="88" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="176" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1a4c60888619e96eb8ca8fb827a84e4a8a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void addLight</definition>
+        <argsstring>(const Light&lt; T &gt; *light)</argsstring>
+        <name>addLight</name>
+        <param>
+          <type>const <ref refid="class_visualisation_1_1_light" kindref="compound">Light</ref>&lt; T &gt; *</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Locate a new lightsource in the model space. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>light</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new lightsource to be located </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="94" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="182" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1a9a49141300bb2c66206f83c1d068fcec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void removeLight</definition>
+        <argsstring>(const Light&lt; T &gt; *light)</argsstring>
+        <name>removeLight</name>
+        <param>
+          <type>const <ref refid="class_visualisation_1_1_light" kindref="compound">Light</ref>&lt; T &gt; *</type>
+          <declname>light</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Remove a lightsource from the model space. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>light</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the lightsource to be removed </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="100" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1ab3ae80917c1e3a8b2437cbc57e9c127c" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_visualisation_1_1_colour" kindref="compound">Colour</ref></type>
+        <definition>Colour getColour</definition>
+        <argsstring>(const Ray&lt; T &gt; &amp;ray, const T &amp;scale, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators=Utilities::TypeOperators&lt; T &gt;()) const </argsstring>
+        <name>getColour</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_ray" kindref="compound">Ray</ref>&lt; T &gt; &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+          <defval><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Do the ray tracing and shading for the given ray. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the ray to be traced or casted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the scale value used by the ray casting algorithm </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- the colour value in the model space for this ray </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="109" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="194" bodyend="228"/>
+      </memberdef>
+      <memberdef kind="function" id="class_visualisation_1_1_model_space_1a924ee2653f2843f730b92e8244438ffc" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>&lt; T &gt;</type>
+        <definition>Intersection&lt; T &gt; getNearestIntersection</definition>
+        <argsstring>(const Ray&lt; T &gt; &amp;ray, const T &amp;scale, const Utilities::TypeOperators&lt; T &gt; &amp;Toperators=Utilities::TypeOperators&lt; T &gt;()) const </argsstring>
+        <name>getNearestIntersection</name>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_ray" kindref="compound">Ray</ref>&lt; T &gt; &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+          <defval><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>This function returns the informations about the intersection with the nearest object in the ray direction in the model space. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the ray to be traced or casted </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the scale value used by the ray casting algorithm </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- the intersection object of the nearest intersection </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="120" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="231" bodyend="264"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This class represents the model space where we have to locate our objects. </para>    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" line="26" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/ModelSpace.h" bodystart="25" bodyend="122"/>
+    <listofallmembers>
+      <member refid="class_visualisation_1_1_model_space_1a4c60888619e96eb8ca8fb827a84e4a8a" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>addLight</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a33ce733b69b82b6c7cad50fcc752525b" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>addObject</name></member>
+      <member refid="class_visualisation_1_1_model_space_1abc6e2c1f7d2f83aa02d907c3c85710c0" prot="private" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>background</name></member>
+      <member refid="class_visualisation_1_1_model_space_1ac1d2c45b52e431ada0adde7b95eac059" prot="private" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>boundingVolume</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a03709018d9b4886b872d175c84d63adf" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>getBackground</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a02ddc295ff120ba5fa6caadb5b37ca91" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>getBoundingVolume</name></member>
+      <member refid="class_visualisation_1_1_model_space_1ab3ae80917c1e3a8b2437cbc57e9c127c" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>getColour</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a924ee2653f2843f730b92e8244438ffc" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>getNearestIntersection</name></member>
+      <member refid="class_visualisation_1_1_model_space_1ab0a6a2215f518afb33ecbfca57d8ffec" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>getShader</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a45a3f05f5ff0687bb6ba389724d41ef9" prot="private" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>lights</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a088282228a2426627fabcc145a296b73" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>ModelSpace</name></member>
+      <member refid="class_visualisation_1_1_model_space_1aab24e9770b54bf3548269441a2f2eafc" prot="private" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>objects</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a9a49141300bb2c66206f83c1d068fcec" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>removeLight</name></member>
+      <member refid="class_visualisation_1_1_model_space_1ad2da63fc69909a91b630b11725871c35" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>removeObject</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a463e339c2b252e70ff31456a2c243cf8" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>setBackground</name></member>
+      <member refid="class_visualisation_1_1_model_space_1aa75c43188ef6676e58dacc411d36afda" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>setBoundingVolume</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a12ef60c4d01229b52f7450cccdef4484" prot="public" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>setShader</name></member>
+      <member refid="class_visualisation_1_1_model_space_1a173b9e85c52489539a689101b1ea9247" prot="private" virt="non-virtual"><scope>Visualisation::ModelSpace</scope><name>shader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

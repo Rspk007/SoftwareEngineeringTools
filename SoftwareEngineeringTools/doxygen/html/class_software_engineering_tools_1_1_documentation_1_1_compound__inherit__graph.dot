@@ -1,0 +1,22 @@
+digraph "SoftwareEngineeringTools.Documentation.Compound"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{SoftwareEngineeringTools.\lDocumentation.Compound\n|+ BriefDescription\l+ Description\l+ Identifier\l+ Kind\l+ Location\l+ Name\l+ ProgramListing\l+ Title\l|+ Compound()\l+ ToString()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled" fontcolor="black"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{SoftwareEngineeringTools.\lDocumentation.DoxClassifier\n|+ Abstract\l+ BaseClassifiers\l+ DerivedClassifiers\l+ Final\l+ InnerClassifiers\l+ Members\l+ ProtectionKind\l+ Sealed\l+ TemplateParams\l|+ DoxClassifier()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_classifier.html"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{SoftwareEngineeringTools.\lDocumentation.DoxClass\n||+ DoxClass()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_class.html"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{SoftwareEngineeringTools.\lDocumentation.DoxEnum\n||+ DoxEnum()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_enum.html"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{SoftwareEngineeringTools.\lDocumentation.DoxInterface\n||+ DoxInterface()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_interface.html"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node6 [label="{SoftwareEngineeringTools.\lDocumentation.DoxStruct\n||+ DoxStruct()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_struct.html"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node7 [label="{SoftwareEngineeringTools.\lDocumentation.DoxDirectory\n|+ Directories\l+ Files\l|+ DoxDirectory()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_directory.html"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node8 [label="{SoftwareEngineeringTools.\lDocumentation.DoxFile\n|+ Classifiers\l+ Namespaces\l|+ DoxFile()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_file.html"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node9 [label="{SoftwareEngineeringTools.\lDocumentation.DoxNamespace\n|+ Classifiers\l+ Namespaces\l|+ DoxNamespace()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_dox_namespace.html"];
+}

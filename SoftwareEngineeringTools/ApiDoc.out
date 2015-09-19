@@ -1,0 +1,37 @@
+\BOOKMARK [0][-]{chapter*.1}{Documentation of the enums}{}% 1
+\BOOKMARK [0][-]{chapter*.1}{Documentation of the interfaces}{}% 2
+\BOOKMARK [0][-]{chapter*.1}{Documentation of the classes}{}% 3
+\BOOKMARK [1][-]{section*.2}{Class: AABB}{chapter*.1}% 4
+\BOOKMARK [1][-]{section*.2}{Class: BccGrid}{chapter*.1}% 5
+\BOOKMARK [1][-]{section*.2}{Class: BoundingVolume}{chapter*.1}% 6
+\BOOKMARK [1][-]{section*.2}{Class: CcGrid}{chapter*.1}% 7
+\BOOKMARK [1][-]{section*.2}{Class: Grid}{chapter*.1}% 8
+\BOOKMARK [1][-]{section*.2}{Class: IIntersectable}{chapter*.1}% 9
+\BOOKMARK [1][-]{section*.2}{Class: IShape}{chapter*.1}% 10
+\BOOKMARK [1][-]{section*.2}{Class: Line}{chapter*.1}% 11
+\BOOKMARK [1][-]{section*.2}{Class: Matrix}{chapter*.1}% 12
+\BOOKMARK [1][-]{section*.2}{Class: Plane}{chapter*.1}% 13
+\BOOKMARK [1][-]{section*.2}{Class: Point}{chapter*.1}% 14
+\BOOKMARK [1][-]{section*.2}{Class: Primitive}{chapter*.1}% 15
+\BOOKMARK [1][-]{section*.2}{Class: Ray}{chapter*.1}% 16
+\BOOKMARK [1][-]{section*.2}{Class: Surface}{chapter*.1}% 17
+\BOOKMARK [1][-]{section*.2}{Class: Vector}{chapter*.1}% 18
+\BOOKMARK [1][-]{section*.2}{Class: Filter}{chapter*.1}% 19
+\BOOKMARK [1][-]{section*.2}{Class: ISampleable}{chapter*.1}% 20
+\BOOKMARK [1][-]{section*.2}{Class: LinearCubeFilter}{chapter*.1}% 21
+\BOOKMARK [1][-]{section*.2}{Class: LinearTetraFilter}{chapter*.1}% 22
+\BOOKMARK [1][-]{section*.2}{Class: MarschnerLobb}{chapter*.1}% 23
+\BOOKMARK [1][-]{section*.2}{Class: Volume}{chapter*.1}% 24
+\BOOKMARK [1][-]{section*.2}{Class: FloatOperators}{chapter*.1}% 25
+\BOOKMARK [1][-]{section*.2}{Class: TypeOperators}{chapter*.1}% 26
+\BOOKMARK [1][-]{section*.2}{Class: Camera}{chapter*.1}% 27
+\BOOKMARK [1][-]{section*.2}{Class: Light}{chapter*.1}% 28
+\BOOKMARK [1][-]{section*.2}{Class: ModelSpace}{chapter*.1}% 29
+\BOOKMARK [1][-]{section*.2}{Class: PhongShader}{chapter*.1}% 30
+\BOOKMARK [1][-]{section*.2}{Class: Shader}{chapter*.1}% 31
+\BOOKMARK [1][-]{section*.2}{Class: TGAImage}{chapter*.1}% 32
+\BOOKMARK [0][-]{section*.2}{Documentation of the structs}{}% 33
+\BOOKMARK [1][-]{section*.3}{Struct: Intersection}{section*.2}% 34
+\BOOKMARK [1][-]{section*.3}{Struct: Colour}{section*.2}% 35
+\BOOKMARK [1][-]{section*.3}{Struct: ImagePlane}{section*.2}% 36
+\BOOKMARK [1][-]{section*.3}{Struct: Material}{section*.2}% 37

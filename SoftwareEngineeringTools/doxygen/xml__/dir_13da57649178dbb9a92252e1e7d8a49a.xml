@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_13da57649178dbb9a92252e1e7d8a49a" kind="dir">
+    <compoundname>C:/SoftwareEngineeringTools/DocumentGeneratorLib</compoundname>
+    <innerdir refid="dir_a158c5690225e6e62880cb920f9086ee">C:/SoftwareEngineeringTools/DocumentGeneratorLib/obj</innerdir>
+    <innerdir refid="dir_0d1dd9e0d0afc19c0da55a012fdf937e">C:/SoftwareEngineeringTools/DocumentGeneratorLib/Properties</innerdir>
+    <innerfile refid="_document_exception_8cs">DocumentException.cs</innerfile>
+    <innerfile refid="_document_generator_8cs">DocumentGenerator.cs</innerfile>
+    <innerfile refid="_latex_generator_8cs">LatexGenerator.cs</innerfile>
+    <innerfile refid="_word_generator_8cs">WordGenerator.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/DocumentGeneratorLib/"/>
+  </compounddef>
+</doxygen>

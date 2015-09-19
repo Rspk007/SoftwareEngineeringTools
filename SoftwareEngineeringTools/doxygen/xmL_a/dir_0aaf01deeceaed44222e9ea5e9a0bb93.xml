@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="dir_0aaf01deeceaed44222e9ea5e9a0bb93" kind="dir">
+    <compoundname>obj</compoundname>
+    <innerdir refid="dir_bc617836bde969f85d7d72e9c7055f0e">Debug</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/obj/"/>
+  </compounddef>
+</doxygen>

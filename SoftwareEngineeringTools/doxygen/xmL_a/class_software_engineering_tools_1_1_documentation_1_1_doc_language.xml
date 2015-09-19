@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_doc_language" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DocLanguage</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DocParaList</basecompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_doc_language_1a2f72ea1497ef3060ceab4eb7f1b419fc" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DocLanguage.LanguageId</definition>
+        <argsstring></argsstring>
+        <name>LanguageId</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="927" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="927" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_doc_language_1a1eac6da5efa1b1b3713a527267cb1941" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DocLanguage.DocLanguage</definition>
+        <argsstring>()</argsstring>
+        <name>DocLanguage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="929" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="929" bodyend="932"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="506">
+        <label>DocParaList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list"/>
+        <childnode refid="507" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="507">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="505">
+        <label>SoftwareEngineeringTools.Documentation.DocLanguage</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language"/>
+        <childnode refid="506" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="509">
+        <label>DocParaList</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list"/>
+        <childnode refid="510" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>DocCmd</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd"/>
+      </node>
+      <node id="508">
+        <label>SoftwareEngineeringTools.Documentation.DocLanguage</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language"/>
+        <childnode refid="509" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="926" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="925" bodyend="933"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocLanguage</scope><name>DocCmd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language_1a1eac6da5efa1b1b3713a527267cb1941" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocLanguage</scope><name>DocLanguage</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list_1ad8dbbcf2c31cb83c1d32bda88f3aebe4" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocLanguage</scope><name>DocParaList</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocLanguage</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language_1a2f72ea1497ef3060ceab4eb7f1b419fc" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocLanguage</scope><name>LanguageId</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list_1a0758f3ee3b3bb618b24c793d66c00c3a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DocLanguage</scope><name>Paragraphs</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

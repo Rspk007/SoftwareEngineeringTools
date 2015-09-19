@@ -1,0 +1,646 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxMember</compoundname>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_define" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxDefine</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum_value" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxEnumValue</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_field" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxField</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_friend" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxFriend</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_method" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxMethod</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_property" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxProperty</derivedcompoundref>
+    <derivedcompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_member_enum" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.MemberEnum</derivedcompoundref>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1af9385f70bb9c39e283ce280067b8baf1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxMember.Identifier</definition>
+        <argsstring></argsstring>
+        <name>Identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="238" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acb73cc5a890fa845f8378dbc75248887" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxMember.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="239" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a194d376e6cba04cf08962b9655bdcd7c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3" kindref="member">MemberKind</ref></type>
+        <definition>MemberKind SoftwareEngineeringTools.Documentation.DoxMember.Kind</definition>
+        <argsstring></argsstring>
+        <name>Kind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="240" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ab351c52b2848bc058313dcdc6cf28a88" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param" kindref="compound">DoxParam</ref> &gt;</type>
+        <definition>List&lt;DoxParam&gt; SoftwareEngineeringTools.Documentation.DoxMember.TemplateParams</definition>
+        <argsstring></argsstring>
+        <name>TemplateParams</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="241" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a41432e4c58c8c01199ed6cdc85fe985c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference" kindref="compound">DocReference</ref></type>
+        <definition>DocReference SoftwareEngineeringTools.Documentation.DoxMember.Type</definition>
+        <argsstring></argsstring>
+        <name>Type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="242" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1eb51308b74281eaf7d522c9d4e06632" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxMember.Definition</definition>
+        <argsstring></argsstring>
+        <name>Definition</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="243" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="243" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a832335a27473fb2cd348609854556035" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxMember.ArgsString</definition>
+        <argsstring></argsstring>
+        <name>ArgsString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="244" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a3a6fdbc6523b8aec0841bdc15d7989d7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxMember.Read</definition>
+        <argsstring></argsstring>
+        <name>Read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="245" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1365d972474a2979c3b743adab712344" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxMember.Write</definition>
+        <argsstring></argsstring>
+        <name>Write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="246" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac371e61e89ce19bf524d30efd7b518d1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.DoxMember.BitField</definition>
+        <argsstring></argsstring>
+        <name>BitField</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="247" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1aa37bc34ea6508dbfe714f3ab07bff7ef" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref> &gt;</type>
+        <definition>List&lt;DoxMember&gt; SoftwareEngineeringTools.Documentation.DoxMember.Reimplements</definition>
+        <argsstring></argsstring>
+        <name>Reimplements</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="248" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a33a5f8417e8ad3688c3e64da1661d90e" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kindref="compound">DoxMember</ref> &gt;</type>
+        <definition>List&lt;DoxMember&gt; SoftwareEngineeringTools.Documentation.DoxMember.ReimplementedBy</definition>
+        <argsstring></argsstring>
+        <name>ReimplementedBy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="249" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acfbe71d778fd8cfac409ba43453f0ee4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param" kindref="compound">DoxParam</ref> &gt;</type>
+        <definition>List&lt;DoxParam&gt; SoftwareEngineeringTools.Documentation.DoxMember.Params</definition>
+        <argsstring></argsstring>
+        <name>Params</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="250" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a3b4a9d6d45d4382a792fa1db689d4814" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text" kindref="compound">DoxLinkedText</ref></type>
+        <definition>DoxLinkedText SoftwareEngineeringTools.Documentation.DoxMember.Initializer</definition>
+        <argsstring></argsstring>
+        <name>Initializer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="251" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a9fe1bde6686105a9dd6c0c9910a549e5" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text" kindref="compound">DoxLinkedText</ref></type>
+        <definition>DoxLinkedText SoftwareEngineeringTools.Documentation.DoxMember.Exceptions</definition>
+        <argsstring></argsstring>
+        <name>Exceptions</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="252" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1aba71314188536b49b64189113bd7a8c7" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_description" kindref="compound">Description</ref></type>
+        <definition>Description SoftwareEngineeringTools.Documentation.DoxMember.BriefDescription</definition>
+        <argsstring></argsstring>
+        <name>BriefDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="253" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a70bbb9b6d616ed7ae54d01e671faad1a" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_description" kindref="compound">Description</ref></type>
+        <definition>Description SoftwareEngineeringTools.Documentation.DoxMember.Description</definition>
+        <argsstring></argsstring>
+        <name>Description</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="254" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="254" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac1cf4b21006d18bb9a291a4c4a556a95" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_description" kindref="compound">Description</ref></type>
+        <definition>Description SoftwareEngineeringTools.Documentation.DoxMember.InBodyDescription</definition>
+        <argsstring></argsstring>
+        <name>InBodyDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="255" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1015480bc35f7c3c593953915eb8610c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_description" kindref="compound">Description</ref></type>
+        <definition>Description SoftwareEngineeringTools.Documentation.DoxMember.DetailedDescription</definition>
+        <argsstring></argsstring>
+        <name>DetailedDescription</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="256" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a8add67cbd787bb019b7b0c7fead1f5e1" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_location" kindref="compound">Location</ref></type>
+        <definition>Location SoftwareEngineeringTools.Documentation.DoxMember.Location</definition>
+        <argsstring></argsstring>
+        <name>Location</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="257" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4ab078fa155542c4eb4c0ac661113a86" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" kindref="compound">DoxReference</ref> &gt;</type>
+        <definition>List&lt;DoxReference&gt; SoftwareEngineeringTools.Documentation.DoxMember.References</definition>
+        <argsstring></argsstring>
+        <name>References</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="258" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="258" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a31aaea33b676da9bfc08ac72bbfc4b60" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kindref="member">List</ref>&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" kindref="compound">DoxReference</ref> &gt;</type>
+        <definition>List&lt;DoxReference&gt; SoftwareEngineeringTools.Documentation.DoxMember.ReferencedBy</definition>
+        <argsstring></argsstring>
+        <name>ReferencedBy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="259" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="259" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1e12aca663094e4886ffa64905131542" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040" kindref="member">ProtectionKind</ref></type>
+        <definition>ProtectionKind SoftwareEngineeringTools.Documentation.DoxMember.ProtectionKind</definition>
+        <argsstring></argsstring>
+        <name>ProtectionKind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="260" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="260" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac1fe197cd1631d3005cc8cc098a8f8e0" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Static</definition>
+        <argsstring></argsstring>
+        <name>Static</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="261" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a478632bedd498e8f8e61dfa6e0f22831" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Const</definition>
+        <argsstring></argsstring>
+        <name>Const</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="262" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="262" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1abe888f0db0f72339276c31c9de1e646c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Explicit</definition>
+        <argsstring></argsstring>
+        <name>Explicit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="263" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="263" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a332d236ae4b3488460384d71aa0292c4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Inline</definition>
+        <argsstring></argsstring>
+        <name>Inline</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="264" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="264" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a2701496d26aaf620ea10bc2f019c9444" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626f" kindref="member">VirtualKind</ref></type>
+        <definition>VirtualKind SoftwareEngineeringTools.Documentation.DoxMember.VirtualKind</definition>
+        <argsstring></argsstring>
+        <name>VirtualKind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="265" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="265" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a09bcdd32b6686c94fa9f6d2c84b748c9" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Volatile</definition>
+        <argsstring></argsstring>
+        <name>Volatile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="266" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="266" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a26a1a38c4fa0066238fccd59fe07e96b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Mutable</definition>
+        <argsstring></argsstring>
+        <name>Mutable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="267" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4be4b627d2edf35cadde999039251b78" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Initonly</definition>
+        <argsstring></argsstring>
+        <name>Initonly</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="268" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="268" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a86aa36a2a0fedb126b3ea28a3f15cb99" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Settable</definition>
+        <argsstring></argsstring>
+        <name>Settable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="269" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="269" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a15a1af098da781facc9b519a4b9e59d2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Gettable</definition>
+        <argsstring></argsstring>
+        <name>Gettable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="270" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="270" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acbbd2c091cfc64128719320a1839444f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Final</definition>
+        <argsstring></argsstring>
+        <name>Final</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="271" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="271" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1af4888e13a3903de283573176fff0456f" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Sealed</definition>
+        <argsstring></argsstring>
+        <name>Sealed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="272" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1abb4ca84b97c69c8a03e3d4c1944b10" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.New</definition>
+        <argsstring></argsstring>
+        <name>New</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="273" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="273" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ad343e6c7bcd05756ce2c32b737a67634" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Add</definition>
+        <argsstring></argsstring>
+        <name>Add</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="274" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="274" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac7a045bbb7c9e46cf9d05d33ddba4d7b" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Remove</definition>
+        <argsstring></argsstring>
+        <name>Remove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="275" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="275" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a5c7171ec293e53085550a9a15917b846" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>bool</type>
+        <definition>bool SoftwareEngineeringTools.Documentation.DoxMember.Raise</definition>
+        <argsstring></argsstring>
+        <name>Raise</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="276" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="276" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4c854f8c5483f1a92a6ebd615326a927" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DoxMember.DoxMember</definition>
+        <argsstring>()</argsstring>
+        <name>DoxMember</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="278" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="278" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ae3b4ea987fe5642fd3f2de0161e7f6c5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override string</type>
+        <definition>override string SoftwareEngineeringTools.Documentation.DoxMember.ToString</definition>
+        <argsstring>()</argsstring>
+        <name>ToString</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="288" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="288" bodyend="291"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="377">
+        <label>SoftwareEngineeringTools.Documentation.DoxMethod</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_method"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="372">
+        <label>SoftwareEngineeringTools.Documentation.DoxMember</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member"/>
+      </node>
+      <node id="373">
+        <label>SoftwareEngineeringTools.Documentation.DoxDefine</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_define"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>SoftwareEngineeringTools.Documentation.DoxEnumValue</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum_value"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>SoftwareEngineeringTools.Documentation.DoxField</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_field"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="378">
+        <label>SoftwareEngineeringTools.Documentation.DoxProperty</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_property"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="379">
+        <label>SoftwareEngineeringTools.Documentation.MemberEnum</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_member_enum"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>SoftwareEngineeringTools.Documentation.DoxFriend</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_friend"/>
+        <childnode refid="372" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="237" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="236" bodyend="292"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ad343e6c7bcd05756ce2c32b737a67634" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Add</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a832335a27473fb2cd348609854556035" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>ArgsString</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac371e61e89ce19bf524d30efd7b518d1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>BitField</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1aba71314188536b49b64189113bd7a8c7" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>BriefDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a478632bedd498e8f8e61dfa6e0f22831" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Const</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1eb51308b74281eaf7d522c9d4e06632" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Definition</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a70bbb9b6d616ed7ae54d01e671faad1a" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Description</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1015480bc35f7c3c593953915eb8610c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>DetailedDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4c854f8c5483f1a92a6ebd615326a927" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>DoxMember</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a9fe1bde6686105a9dd6c0c9910a549e5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Exceptions</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1abe888f0db0f72339276c31c9de1e646c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Explicit</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acbbd2c091cfc64128719320a1839444f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Final</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a15a1af098da781facc9b519a4b9e59d2" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Gettable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1af9385f70bb9c39e283ce280067b8baf1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Identifier</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac1cf4b21006d18bb9a291a4c4a556a95" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>InBodyDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a3b4a9d6d45d4382a792fa1db689d4814" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Initializer</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4be4b627d2edf35cadde999039251b78" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Initonly</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a332d236ae4b3488460384d71aa0292c4" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Inline</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a194d376e6cba04cf08962b9655bdcd7c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a8add67cbd787bb019b7b0c7fead1f5e1" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Location</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a26a1a38c4fa0066238fccd59fe07e96b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Mutable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acb73cc5a890fa845f8378dbc75248887" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Name</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1abb4ca84b97c69c8a03e3d4c1944b10" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>New</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acfbe71d778fd8cfac409ba43453f0ee4" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Params</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1e12aca663094e4886ffa64905131542" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>ProtectionKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a5c7171ec293e53085550a9a15917b846" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Raise</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a3a6fdbc6523b8aec0841bdc15d7989d7" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Read</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a31aaea33b676da9bfc08ac72bbfc4b60" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>ReferencedBy</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4ab078fa155542c4eb4c0ac661113a86" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>References</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a33a5f8417e8ad3688c3e64da1661d90e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>ReimplementedBy</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1aa37bc34ea6508dbfe714f3ab07bff7ef" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Reimplements</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac7a045bbb7c9e46cf9d05d33ddba4d7b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Remove</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1af4888e13a3903de283573176fff0456f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Sealed</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a86aa36a2a0fedb126b3ea28a3f15cb99" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Settable</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac1fe197cd1631d3005cc8cc098a8f8e0" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Static</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ab351c52b2848bc058313dcdc6cf28a88" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>TemplateParams</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ae3b4ea987fe5642fd3f2de0161e7f6c5" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>ToString</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a41432e4c58c8c01199ed6cdc85fe985c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Type</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a2701496d26aaf620ea10bc2f019c9444" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>VirtualKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a09bcdd32b6686c94fa9f6d2c84b748c9" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Volatile</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1365d972474a2979c3b743adab712344" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxMember</scope><name>Write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

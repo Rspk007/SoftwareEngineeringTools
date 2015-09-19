@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_4264ac5640d968b688813417a793340a" kind="dir">
+    <compoundname>C:/SoftwareEngineeringTools</compoundname>
+    <innerdir refid="dir_60deef432375180f9128ef42d317f93d">C:/SoftwareEngineeringTools/ApiDocLib</innerdir>
+    <innerdir refid="dir_13da57649178dbb9a92252e1e7d8a49a">C:/SoftwareEngineeringTools/DocumentGeneratorLib</innerdir>
+    <innerdir refid="dir_1b2848d805b63c840996117da36884d4">C:/SoftwareEngineeringTools/SoftwareEngineeringTools</innerdir>
+    <innerdir refid="dir_679f606f6861d2e0d7a997d6e54bba2b">C:/SoftwareEngineeringTools/TestingLib</innerdir>
+    <innerdir refid="dir_54912a9910d2be8894cb74c0418084ce">C:/SoftwareEngineeringTools/TestReportDocLib</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/"/>
+  </compounddef>
+</doxygen>

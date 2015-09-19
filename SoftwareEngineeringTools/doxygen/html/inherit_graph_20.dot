@@ -1,0 +1,7 @@
+digraph "Osztályhierarchia-ábra"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="SoftwareEngineeringTools.\lDocumentation.DoxygenParser",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser.html"];
+}

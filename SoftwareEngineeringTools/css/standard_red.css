@@ -1,0 +1,130 @@
+/*  TwinText Style (c) PTLogica 2002 - 2004  */
+
+ 
+/* Body */
+body{font-family:"Verdana", sans-serif;font-size: 8pt; }
+
+/* Body (Chapter) */
+body.Main{background: #FFFFFF;color: #000000;  margin: 0; }
+
+/*IE 5.5 */
+li, table {  font-family: "Verdana", sans-serif; font-size: 8pt;  }
+
+
+/* Project Title */
+div.ProjectTitle {
+	font-style: italic;
+	font-size: 8pt;
+	font-weight: normal;
+	color: White;
+	text-align: left;
+}
+
+/* Chapter's Title */
+h1{font-family:"Verdana", sans-serif;font-size: 10pt;
+font-weight: bold;text-align: left;margin-left: 0pt;margin-right: 0pt;margin-top: 0px;margin-bottom: 15px; padding-top: 5px;  padding-bottom: 5px;  padding-left: 10px;  background-color: #DC500A;  color: White;border-bottom: 1px solid #999999;}
+
+/* Feedback */
+div.Feedback {
+ 	font-style: italic;
+	font-size: 8pt;
+	font-weight: normal;
+    text-align: right;
+    margin: 0px;
+    padding: 2px;
+    background: #EFEFEF;
+    position: relative; top: -15px; left: 0px;
+}
+
+/* Common to all section text, including first section */
+div.SectionText{margin-left: 10px;margin-right: 10px;margin-top: 10px;margin-bottom: 10px;         }
+
+/* Contents or Summary */
+h2{font-family:"Verdana", sans-serif;font-size: 9pt;font-weight: bold;text-align: left;margin-left: 5px;margin-right: 0pt;margin-top: 5pt;margin-bottom: 2pt;    padding-top: 5px;    padding-bottom: 5px;             }
+
+/* Table of Contents */
+div.Toc{margin-top: 30px;margin-bottom: 30px;    padding: 5px;  margin-left: 30px;  margin-right: 30px;    }
+div.TocLinks{font-weight: normal;text-align: left;margin-left: 0pt;margin-right: 0pt;margin-top: 0pt;margin-bottom: 0pt;}
+ul.TocLinks{}
+li.TocLink{}
+a.TocLink:link{text-decoration: underline;color: blue;background: transparent;  font-weight: normal; }
+a.TocLink:visited{text-decoration: underline;color: blue;background: transparent; font-weight: normal;}
+a.TocLink:hover{text-decoration: underline;color: #0066FF;background: transparent; font-weight: normal;}
+
+
+/* Summary */
+div.Summary{margin-top: 20px;margin-bottom: 40px;    padding: 5px;  margin-left: 20px;  margin-right: 20px; }
+table.SummaryTable{ margin-top: 10px;  margin-bottom: 15px;  background-color: White;      }
+tr.SummaryRow {  }
+td.SummaryLink{font-weight: normal;text-align: left;width: 15%;        padding: 3px;  background: White;  vertical-align: top;             }
+td.SummaryText{text-align: left;      padding: 3px;  background-color: transparent;  background: #EFEFEF;  vertical-align: top;           }
+a.SummaryLink:link{text-decoration: underline;color: blue;background: transparent;  font-weight: normal; }
+a.SummaryLink:visited{text-decoration: underline;color: blue;background: transparent; font-weight: normal;}
+a.SummaryLink:hover{text-decoration: underline;color: #0066FF;background: transparent; font-weight: normal;}
+
+
+/* Sections */
+div.AllSections{margin-top: 0;margin-bottom: 70px;  margin-left: 0;  margin-right: 0;  padding: 0px;   }
+
+div.Section{margin-top: 30px;margin-bottom: 10px;}
+h3{font-family:"Verdana", sans-serif;font-size: 9pt;font-weight: bold;text-align: left;margin-left: 0pt;margin-right: 0pt;margin-top: 5pt;margin-bottom: 10px;border-bottom: 1px solid #DC500A;  padding-left: 10px;  padding-bottom: 2px;  background: transparent;  padding-top: 3px;       }
+
+/* API Box */
+div.Api{font-family:"Courier New", monospace;font-size: 8pt;margin-left: 15px;margin-right: 15px;margin-top: 15px;margin-bottom: 15px;padding: 2px;background: #EFEFEF;color: #000000;  border: 1px solid #999999;    }
+font.ApiName{font-weight: bold;}
+
+/* Section Text Elements */
+h4{font-family:"Verdana", sans-serif;font-size: 8pt;font-weight: bold;margin-left: 0pt;margin-right: 0pt;margin-top: 5pt;margin-bottom: 2pt;  font-style: normal;       }
+pre{font-family:"Courier New", monospace;font-size: 8pt;white-space: pre;margin-top: 7pt;margin-bottom: 7pt;color: #000000;    padding: 5px;  margin-left: 5px;  margin-right: 5px;  background: #EFEFEF;        }
+font.HighText{background: #FFFF00;   }
+ul{}
+li{list-style: disc;}
+a:link{text-decoration: underline;color: #0000FF;background: transparent;}
+a:visited{text-decoration: underline;color: #0000FF;background: transparent;}
+a:hover{text-decoration:underline;color: #0066FF;background: transparent;}
+	
+/* Definitions Table */
+table.DefTable{ margin-left: 20px;  margin-right: 20px;   }
+tr.Def{  }
+td.Def{font-family:"Courier New", monospace;font-size: 8pt;  font-weight: normal;  padding-left: 5px;  padding-right: 5px;  white-space: nowrap;  text-align: left;  vertical-align: top;  background: transparent;  margin: 2px;              }
+td.DefSep{font-family:"Courier New", monospace;font-size: 8pt;padding-right: 5pt;padding-left: 5pt;  text-align: center;  vertical-align: top;  background: transparent;   }
+td.DefText{ text-align: left;  vertical-align: top;  background: transparent;  margin: 2px;       }
+
+/* Copyright */
+div.Copy { padding: 15px;  }
+
+/* Footer */
+div.Footer{   margin-top: 10px;  padding: 5px;    background: #DC500A;  border-top: 1px solid #999999;   color: White;         }
+
+div.SourceLocation{background: transparent;  font-size: 8pt;  margin-bottom: 10px;  margin-left: 10px;  font-family: Verdana, sans-serif;    }
+div.LastGenerated{background: transparent;  font-size: 8pt;  margin-left: 10px;  font-family: Verdana, sans-serif;   }
+
+
+/* Navigation */
+body.Side{background: #EFEFEF;color: Black;  margin: 0px;  padding: 0px;  }
+div.Side{}
+div.SideTitle{ font-weight: bold;  padding: 3px 10px;  font-size: 10pt;  font-family: Verdana, sans-serif;  margin-top: 2px;        }
+div.SideText{ padding: 10px; padding-top: 18px;  }
+div.SideDetail {  padding-top: 1px; }
+ul.SideDetail{ }
+li.SideDetail{ }
+a.SideDetail:link { text-decoration: underline; color: Blue; font-family: Verdana, sans-serif; font-size: 8pt;  font-weight: normal;      }
+a.SideDetail:visited {  text-decoration: underline; color: Blue; font-family: Verdana, sans-serif; font-size: 8pt;  font-weight: normal;  }
+a.SideDetail:hover {  text-decoration: underline; color: #0066FF; font-family: Verdana, sans-serif; font-size: 8pt;  font-weight: normal;  }
+
+table.LinksTable{ padding-left: 10px; }
+tr.SideLink{}
+td.SideLink{}
+a.SideLink:link { text-decoration: underline; color:Blue; font-family: Verdana, sans-serif; font-size: 8pt;  }
+a.SideLink:visited {  text-decoration: underline; color: Blue; font-family: Verdana, sans-serif; font-size: 8pt; }
+a.SideLink:hover {  text-decoration: underline; color: #0066FF; font-family: Verdana, sans-serif; font-size: 8pt; }
+
+
+
+
+
+
+
+
+
+

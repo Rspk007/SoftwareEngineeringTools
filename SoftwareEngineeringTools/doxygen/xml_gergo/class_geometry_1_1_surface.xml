@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_geometry_1_1_surface" kind="class" prot="public" abstract="yes">
+    <compoundname>Geometry::Surface</compoundname>
+    <basecompoundref refid="class_geometry_1_1_i_intersectable" prot="public" virt="non-virtual">Geometry::IIntersectable&lt; T &gt;</basecompoundref>
+    <derivedcompoundref refid="class_sampling_1_1_volume" prot="public" virt="non-virtual">Volume&lt; T &gt;</derivedcompoundref>
+    <includes refid="_surface_8h" local="no">Surface.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_geometry_1_1_surface_1aa2a46d8387923389a3aad30be0b8a8b5" prot="protected" static="no" mutable="no">
+        <type>const <ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>const Material* material</definition>
+        <argsstring></argsstring>
+        <name>material</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" line="23" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_geometry_1_1_surface_1a6e1a6ad293d9318f65c2e28c468c66ba" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Surface</definition>
+        <argsstring>()</argsstring>
+        <name>Surface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>default c&apos;tor </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" line="28" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_surface_1a148c9d72f29cf29e7ad5e787e2819057" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Surface</definition>
+        <argsstring>(const Material *material)</argsstring>
+        <name>Surface</name>
+        <param>
+          <type>const <ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c&apos;tor with arguments </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" line="33" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" bodystart="86" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_geometry_1_1_surface_1a3d7a6d87e670d2c6415e92a1f0e9feb4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref> *</type>
+        <definition>const Material * getMaterial</definition>
+        <argsstring>() const </argsstring>
+        <name>getMaterial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Getter function for the material of the surface. <simplesect kind="return"><para>- the material of the surface </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" line="42" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" bodystart="91" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_surface_1a26d09c46a06493cf2d9116991c80f816" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void setMaterial</definition>
+        <argsstring>(const Material *material)</argsstring>
+        <name>setMaterial</name>
+        <param>
+          <type>const <ref refid="struct_visualisation_1_1_material" kindref="compound">Material</ref> *</type>
+          <declname>material</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Setter function for the material of the surface. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>material</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the new material of the surface </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" line="48" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" bodystart="97" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_surface_1a9f3f940415136a6c508a0d9de1683adb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+        <definition>virtual Vector&lt;T&gt; getNormal</definition>
+        <argsstring>(Vector&lt; T &gt; point, const T &amp;scale, T value=T(), const Utilities::TypeOperators&lt; T &gt; &amp;Toperators=Utilities::TypeOperators&lt; T &gt;()) const =0</argsstring>
+        <name>getNormal</name>
+        <reimplementedby refid="class_sampling_1_1_volume_1af9134066dc508e3201a1dea2acb755a8">getNormal</reimplementedby>
+        <param>
+          <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; T &gt;</type>
+          <declname>point</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>value</declname>
+          <defval>T()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+          <defval><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that can approximate a normal vector to the surface at a given point. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>point</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the point whose normal vector we are interested </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the scale parameter defines the distance from point in each dimension to build the gradient vector </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the value at the point won&apos;t be recomputed, if it&apos;s given in this parameter </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" line="59" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_geometry_1_1_surface_1ab7b27cca569f9eae8628dd93e54c2d3e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>&lt; T &gt; &gt;</type>
+        <definition>virtual Vector&lt;Intersection&lt;T&gt; &gt; intersect</definition>
+        <argsstring>(const Ray&lt; T &gt; &amp;ray, const Vector&lt; Intersection&lt; T &gt;&gt; *bounds=0, const T &amp;scale=T(), const Utilities::TypeOperators&lt; T &gt; &amp;Toperators=Utilities::TypeOperators&lt; T &gt;()) const =0</argsstring>
+        <name>intersect</name>
+        <reimplements refid="class_geometry_1_1_i_intersectable_1ab7b27cca569f9eae8628dd93e54c2d3e">intersect</reimplements>
+        <reimplementedby refid="class_sampling_1_1_volume_1aae711dcbf18946964b9c42502e9d3377">intersect</reimplementedby>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_ray" kindref="compound">Ray</ref>&lt; T &gt; &amp;</type>
+          <declname>ray</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; <ref refid="struct_geometry_1_1_intersection" kindref="compound">Intersection</ref>&lt; T &gt;&gt; *</type>
+          <declname>bounds</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>scale</declname>
+          <defval>T()</defval>
+        </param>
+        <param>
+          <type>const <ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt; &amp;</type>
+          <declname>Toperators</declname>
+          <defval><ref refid="class_utilities_1_1_type_operators" kindref="compound">Utilities::TypeOperators</ref>&lt; T &gt;()</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function that implements the intersection with the concrete object. If no intersection was found, it will return an empty <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>. (0D <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ray</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the intersection ray </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bounds</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the bounds between the intersection will be looked for </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- scale used by ray casting algorithms </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>Toperators</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- the operators object of type T </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>- The collection of intersections in ascending order of dimension time. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" line="74" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This abstract class represents a surface, and it&apos;s properties and operations. </para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="186">
+        <label>LinearTetraFilter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_linear_tetra_filter"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="185">
+        <label>LinearCubeFilter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_linear_cube_filter"/>
+        <childnode refid="184" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>Volume&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_volume"/>
+        <childnode refid="181" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="181">
+        <label>Surface&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_surface"/>
+        <childnode refid="182" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>Filter&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_filter"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="187">
+        <label>MarschnerLobb&lt; T &gt;</label>
+        <link refid="class_sampling_1_1_marschner_lobb"/>
+        <childnode refid="183" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="182">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="192">
+        <label>Point&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_point"/>
+        <childnode refid="193" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="190">
+        <label>Material</label>
+        <link refid="struct_visualisation_1_1_material"/>
+        <childnode refid="191" relation="usage">
+          <edgelabel>ka</edgelabel>
+          <edgelabel>ks</edgelabel>
+          <edgelabel>kd</edgelabel>
+        </childnode>
+      </node>
+      <node id="188">
+        <label>Surface&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_surface"/>
+        <childnode refid="189" relation="public-inheritance">
+        </childnode>
+        <childnode refid="190" relation="usage">
+          <edgelabel>material</edgelabel>
+        </childnode>
+      </node>
+      <node id="193">
+        <label>Primitive</label>
+        <link refid="class_geometry_1_1_primitive"/>
+      </node>
+      <node id="191">
+        <label>Vector&lt; float &gt;</label>
+        <link refid="class_geometry_1_1_vector"/>
+        <childnode refid="192" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>IIntersectable&lt; T &gt;</label>
+        <link refid="class_geometry_1_1_i_intersectable"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" line="21" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Surface.h" bodystart="20" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_geometry_1_1_surface_1a3d7a6d87e670d2c6415e92a1f0e9feb4" prot="public" virt="non-virtual"><scope>Geometry::Surface</scope><name>getMaterial</name></member>
+      <member refid="class_geometry_1_1_surface_1a9f3f940415136a6c508a0d9de1683adb" prot="public" virt="pure-virtual"><scope>Geometry::Surface</scope><name>getNormal</name></member>
+      <member refid="class_geometry_1_1_surface_1ab7b27cca569f9eae8628dd93e54c2d3e" prot="public" virt="pure-virtual"><scope>Geometry::Surface</scope><name>intersect</name></member>
+      <member refid="class_geometry_1_1_surface_1aa2a46d8387923389a3aad30be0b8a8b5" prot="protected" virt="non-virtual"><scope>Geometry::Surface</scope><name>material</name></member>
+      <member refid="class_geometry_1_1_surface_1a26d09c46a06493cf2d9116991c80f816" prot="public" virt="non-virtual"><scope>Geometry::Surface</scope><name>setMaterial</name></member>
+      <member refid="class_geometry_1_1_surface_1a6e1a6ad293d9318f65c2e28c468c66ba" prot="protected" virt="non-virtual"><scope>Geometry::Surface</scope><name>Surface</name></member>
+      <member refid="class_geometry_1_1_surface_1a148c9d72f29cf29e7ad5e787e2819057" prot="protected" virt="non-virtual"><scope>Geometry::Surface</scope><name>Surface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

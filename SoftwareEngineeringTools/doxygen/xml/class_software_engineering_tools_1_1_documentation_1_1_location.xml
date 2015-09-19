@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_location" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::Location</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_location_1a98e8fc3bd0ae61be01ab5071b92f6e3c" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.Location.File</definition>
+        <argsstring></argsstring>
+        <name>File</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="121" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_location_1af7d5f6bd7cf1a468b61bd6e80e73ac01" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+        <definition>int SoftwareEngineeringTools.Documentation.Location.Line</definition>
+        <argsstring></argsstring>
+        <name>Line</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="122" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_location_1a223e6ae79f810e6eebe94ecb9eb554ee" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.Location.BodyFile</definition>
+        <argsstring></argsstring>
+        <name>BodyFile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="123" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_location_1aa4f3164d2444ad20dbc297e3aebaf4d8" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+        <definition>int SoftwareEngineeringTools.Documentation.Location.BodyStart</definition>
+        <argsstring></argsstring>
+        <name>BodyStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="124" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_location_1acc88f52f5a3c4baff9c28b50f93af935" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kindref="member">int</ref></type>
+        <definition>int SoftwareEngineeringTools.Documentation.Location.BodyEnd</definition>
+        <argsstring></argsstring>
+        <name>BodyEnd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="125" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="120" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="119" bodyend="126"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1acc88f52f5a3c4baff9c28b50f93af935" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Location</scope><name>BodyEnd</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1a223e6ae79f810e6eebe94ecb9eb554ee" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Location</scope><name>BodyFile</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1aa4f3164d2444ad20dbc297e3aebaf4d8" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Location</scope><name>BodyStart</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1a98e8fc3bd0ae61be01ab5071b92f6e3c" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Location</scope><name>File</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1af7d5f6bd7cf1a468b61bd6e80e73ac01" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::Location</scope><name>Line</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_4750e921359872ae42edd93a5330cda0" kind="dir">
+    <compoundname>Új mappa</compoundname>
+    <innerfile refid="_a_a_b_b_8h">AABB.h</innerfile>
+    <innerfile refid="_bcc_grid_8h">BccGrid.h</innerfile>
+    <innerfile refid="_bounding_volume_8h">BoundingVolume.h</innerfile>
+    <innerfile refid="_camera_8h">Camera.h</innerfile>
+    <innerfile refid="_cc_grid_8h">CcGrid.h</innerfile>
+    <innerfile refid="_colour_8h">Colour.h</innerfile>
+    <innerfile refid="_constants_8h">Constants.h</innerfile>
+    <innerfile refid="_filter_8h">Filter.h</innerfile>
+    <innerfile refid="_float_operators_8h">FloatOperators.h</innerfile>
+    <innerfile refid="_grid_8h">Grid.h</innerfile>
+    <innerfile refid="_i_intersectable_8h">IIntersectable.h</innerfile>
+    <innerfile refid="_image_plane_8h">ImagePlane.h</innerfile>
+    <innerfile refid="_intersection_8h">Intersection.h</innerfile>
+    <innerfile refid="_i_sampleable_8h">ISampleable.h</innerfile>
+    <innerfile refid="_i_shape_8h">IShape.h</innerfile>
+    <innerfile refid="_light_8h">Light.h</innerfile>
+    <innerfile refid="_line_8h">Line.h</innerfile>
+    <innerfile refid="_linear_cube_filter_8h">LinearCubeFilter.h</innerfile>
+    <innerfile refid="_linear_tetra_filter_8h">LinearTetraFilter.h</innerfile>
+    <innerfile refid="main_8cpp">main.cpp</innerfile>
+    <innerfile refid="_marschner_lobb_8h">MarschnerLobb.h</innerfile>
+    <innerfile refid="_material_8h">Material.h</innerfile>
+    <innerfile refid="_matrix_8h">Matrix.h</innerfile>
+    <innerfile refid="_model_space_8h">ModelSpace.h</innerfile>
+    <innerfile refid="_phong_shader_8h">PhongShader.h</innerfile>
+    <innerfile refid="_plane_8h">Plane.h</innerfile>
+    <innerfile refid="_point_8h">Point.h</innerfile>
+    <innerfile refid="_primitive_8h">Primitive.h</innerfile>
+    <innerfile refid="_ray_8h">Ray.h</innerfile>
+    <innerfile refid="_shader_8h">Shader.h</innerfile>
+    <innerfile refid="_surface_8h">Surface.h</innerfile>
+    <innerfile refid="_t_g_a_image_8cpp">TGAImage.cpp</innerfile>
+    <innerfile refid="_t_g_a_image_8h">TGAImage.h</innerfile>
+    <innerfile refid="_type_operators_8h">TypeOperators.h</innerfile>
+    <innerfile refid="_vector_8h">Vector.h</innerfile>
+    <innerfile refid="_volume_8h">Volume.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.6">
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config" kind="class"><name>SoftwareEngineeringTools::Documentation::ApiDocConfig</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config_1a28c4a000788226ef955db0708ffa740c" kind="property"><name>Language</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config_1a1592c90d26c6499685f3bdaf61195fb0" kind="property"><name>ChapterLevel</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config_1a8742a1155fb24e1e814d9133a9e43e94" kind="property"><name>NamespaceChapter</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config_1a8590299a6080dd2601c062dd79848180" kind="property"><name>ClassifierChapter</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config_1a513b9c1daf2963eedf80612084ed4425" kind="property"><name>InheritanceHierarchyText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config_1a9260aa2d823ddd0311aa41db32769e41" kind="property"><name>InheritanceHierarchyUml</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config_1ae804e23f5afc363b3f884f0b97be574c" kind="property"><name>Syntax</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config_1a3f77c32b76d1e399d84887306bc082ca" kind="property"><name>ProgrammingLanguage</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config_1ac9115d6a7d716fb3db5cf689f19fb1cf" kind="function"><name>ApiDocConfig</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator" kind="class"><name>SoftwareEngineeringTools::Documentation::ApiDocGenerator</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a26b85326394bc0661dd5e70dfafa6f23" kind="variable"><name>dg</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a8b501fd71fe5f0bfcac455ba53edefd6" kind="variable"><name>sectionLevel</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a38d0b57a5fd3a10ce73695874f2df980" kind="property"><name>Template</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1acdb2e8442924e1b733f9bfac3b6785de" kind="property"><name>Model</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1af3563160ca4e416c41488c75d73535da" kind="function"><name>ApiDocGenerator</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a2dc688a3ed6507a6d096a8892e86d154" kind="function"><name>Generate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a6b66e322fd5d2c7362a6bcf6b472714d" kind="function"><name>Log</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a988cd7a92cb0eda5e917c648f53da41a" kind="function"><name>NormalizeName</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a9e249f84ffd24e3052eb273b937d4847" kind="function"><name>PrintSection</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1af58464eec9d1a29cf80b217f96ad3a38" kind="function"><name>PrintDocCmd</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a417b7c3d6e2fb7eaf96c5cc128693e1f" kind="function"><name>NextSectionLevel</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1af71b89e5cacd5f0a6db62cc1989c56a5" kind="function"><name>PreviousSectionLevel</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_generator_1a04ede5421a322b9ae43bb067be59b527" kind="function"><name>NewLabel</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor" kind="class"><name>SoftwareEngineeringTools::Documentation::ApiDocTemplateProcessor</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a06a04683f46523379487f6ca3ef98e16" kind="variable"><name>template</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a66288c514ff0575c47b943023b14ba27" kind="variable"><name>model</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a6ca8d40413d523790fc88011101fc524" kind="variable"><name>generator</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a043f20bab12bdf19f8fc255e15ed99d5" kind="variable"><name>currentNamespace</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ac5bcca6abdc13246d764569bf80a6e13" kind="variable"><name>currentClassifier</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1af6c83eee1460978ef98e0d1647ccd42e" kind="variable"><name>currentMember</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a9aed6ff8c1e67d0890729384a872246c" kind="function"><name>ApiDocTemplateProcessor</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae1088515a108f7d8123505f1a0b08b8c" kind="function"><name>Generate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae56306dfe19fc37c90d7bda6e5ae6c11" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a01b849ba4ed415f4fa67bbcb36ef859f" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ab701a3d14add7be1ebaad9d29cde7456" kind="function"><name>HasContent</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a0a01416f28616ff9edbd9710367b59db" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1aa0958873ca19c4f37f8b05f40054b52d" kind="function"><name>SelectClassifier</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a54f8532818569c60877e551664b3dbd9" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a52bbf819b93b1de93195c510bab35cff" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ac4dbf1e3f14aeff298f95de7cf032063" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1acd6cb19da89a4354e6626c7071c05452" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a76ad3f64733a4db36533118a9faa62f2" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a579d730cf8abdeb3d408175de246f302" kind="function"><name>SelectMember</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a0eacba7ada9a30a66d5fb1e91a709046" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1af5903cd333ca92a454e1c2de6f5b6c93" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1adca050a981d318618d4e44e02fc4fe74" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1afea59c3d70442a0b0024d634ecbd68ae" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae31b477fc8edbdabaade7bc9cf3688eb" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a69c735c5e1216c6183d3f8d831cdd4cc" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a3c679371fcf03b80de29d6935c450a8a" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1ae6cc526e094e837f0401b5a775833955" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_template_processor_1a67d6a6cb40c605a6d62acb902e9af204" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_brief_description_template" kind="class"><name>SoftwareEngineeringTools::Documentation::BriefDescriptionTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_brief_description_template_1a692c38875f55af387e592f5e6181d3ed" kind="function"><name>BriefDescriptionTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_brief_description_template_1a8e800971557ae734f89ac200352402ab" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::ClassifierListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template_1ab6d92fcf3c3f08dcda4a3136a23bbec1" kind="function"><name>ClassifierListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_classifier_list_template_1a119ae8eeb938465c5aaf44780e2f8876" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_class_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::ClassListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_class_list_template_1a722a03a1b38c55ff5bdb88abba363d6f" kind="function"><name>ClassListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_class_list_template_1a310a651d73cc35f939bf302fd5233172" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kind="class"><name>SoftwareEngineeringTools::Documentation::Compound</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a1394e3961d62b46fa478767c2b267776" kind="property"><name>Identifier</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1ac03a88be9a7e7a11dd3c12006ae65879" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a873e7d81cae2f4cb5c6cca41014cd02d" kind="property"><name>Title</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1ae53780f3f48f262502a939871432292f" kind="property"><name>Kind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a4bfcfda760068c85256a0723b5ce1921" kind="property"><name>BriefDescription</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a77ca6711192dfb78bcd2f0b513e74b2e" kind="property"><name>Description</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a6682b35f8afccbbecd77f504665b1cb7" kind="property"><name>ProgramListing</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1ae491a737dd879c0665bd81a1273af091" kind="property"><name>Location</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a4e7df725cc78a016399778b91e261bd0" kind="function"><name>Compound</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a2450d96253aafa7fd3384b67b1ab01d8" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index" kind="class"><name>SoftwareEngineeringTools::Documentation::CompoundIndex</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1a988308311c455fcb89b4b14545300752" kind="property"><name>Identifier</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1af6581fddcc01a475db082ad5ef186d23" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1ab39d7c9817b5bc97122b11bc6ad84ab4" kind="property"><name>Kind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1a7010d81af3c92ae3595c88c89dc0cd49" kind="property"><name>Members</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1a2e6e9b608ac76ec7450c37d64017efa2" kind="property"><name>Compound</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1ae91f253c49b676581d40cbd52f1644e0" kind="function"><name>CompoundIndex</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_description" kind="class"><name>SoftwareEngineeringTools::Documentation::Description</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_description_1a037f99f3a2542aac9a84a820934c3134" kind="property"><name>Title</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_description_1aac9bd87b495aeecf95fe6b696f929cae" kind="property"><name>Paragraphs</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_description_1a77b76a6eb0dde987ea3b919ccd094a25" kind="property"><name>Sections</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_description_1a26bb938e6775c1c7bfeff9ffd6f913f7" kind="property"><name>Internal</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_description_1af6858f1c08f3411ed90e344ba0eac0bd" kind="function"><name>Description</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_description_template" kind="class"><name>SoftwareEngineeringTools::Documentation::DescriptionTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_description_template_1aaf0d52969f8972fec61e23f8d41871e8" kind="function"><name>DescriptionTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_description_template_1aacc8ff3057e26331de9f4f58ae0bc715" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_anchor" kind="class"><name>SoftwareEngineeringTools::Documentation::DocAnchor</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_anchor_1a8fdb6ce785bba95e544fb8a4da679395" kind="property"><name>Id</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_anchor_1aceb07534634cd6613fbd0dfc04d857a4" kind="function"><name>DocAnchor</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_block_quote" kind="class"><name>SoftwareEngineeringTools::Documentation::DocBlockQuote</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_block_quote_1ac44ac51db0231efd5242390f082416de" kind="function"><name>DocBlockQuote</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_caption" kind="class"><name>SoftwareEngineeringTools::Documentation::DocCaption</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_caption_1a023a86d07d2247e1136007aad4e0c523" kind="function"><name>DocCaption</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_char" kind="class"><name>SoftwareEngineeringTools::Documentation::DocChar</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_char_1acfbf2602f5651fee6ce37905604c9f8c" kind="property"><name>CharKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_char_1a5507d77e59a8298e33b42cf03a4fd04f" kind="function"><name>DocChar</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd" kind="class"><name>SoftwareEngineeringTools::Documentation::DocCmd</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1a85998cc3f4e34b4fbd9c825ffd1f72b5" kind="property"><name>Kind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_1aa5883c5254fa81621eb08bf6dcb6d676" kind="function"><name>DocCmd</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group" kind="class"><name>SoftwareEngineeringTools::Documentation::DocCmdGroup</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group_1ac6f2fb2ec29fc2eeac0f46740b2c5144" kind="property"><name>Commands</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_cmd_group_1adc2876c88d61e89b18cf833132a0def5" kind="function"><name>DocCmdGroup</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_copy" kind="class"><name>SoftwareEngineeringTools::Documentation::DocCopy</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_copy_1a28ae090505592eb981df107a0e76e1c5" kind="function"><name>DocCopy</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_dot_file" kind="class"><name>SoftwareEngineeringTools::Documentation::DocDotFile</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_dot_file_1ac362448a9bea0682d1f2aa7887e75e11" kind="property"><name>Id</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_dot_file_1ae447910a47c25d6a8bdce0b849367fe9" kind="function"><name>DocDotFile</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_empty" kind="class"><name>SoftwareEngineeringTools::Documentation::DocEmpty</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_empty_1a193949a8c51dd660fb77a8b6f419f9ea" kind="property"><name>EmptyKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_empty_1adc90b20452309d000ebe98d8b1b1eda5" kind="function"><name>DocEmpty</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_formula" kind="class"><name>SoftwareEngineeringTools::Documentation::DocFormula</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_formula_1af0946e5bef66d6f9ad930939c5ddcc51" kind="property"><name>Id</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_formula_1a12e0223aeac7a696926fa4c0dbbadacd" kind="function"><name>DocFormula</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_heading" kind="class"><name>SoftwareEngineeringTools::Documentation::DocHeading</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_heading_1ab4db448b267cbef63884b9e6686e7e65" kind="property"><name>Level</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_heading_1a99e5ae13865091d9d2db930066de75c6" kind="function"><name>DocHeading</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image" kind="class"><name>SoftwareEngineeringTools::Documentation::DocImage</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1aa73b29c8c230474bd80d01dfa25555ff" kind="property"><name>ImageKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1a18a4f96074d4dad07c0811896dd4305b" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1a697f5c432b0a513b53dec61f66ad43ee" kind="property"><name>Width</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1a13b59f2f69ce4f465c966637480cef6c" kind="property"><name>Height</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_image_1abffb80615eb570220bd038dd88c93ffe" kind="function"><name>DocImage</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_index_entry" kind="class"><name>SoftwareEngineeringTools::Documentation::DocIndexEntry</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_index_entry_1aec1df763bc86dffdc381693aefe66131" kind="property"><name>PrimaryEntry</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_index_entry_1a0c508fb0b715f0eb8709ed6ba728f0ce" kind="property"><name>SecondaryEntry</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_index_entry_1af4d7a6e93f1384f3e1aec974f294986d" kind="function"><name>DocIndexEntry</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language" kind="class"><name>SoftwareEngineeringTools::Documentation::DocLanguage</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language_1a2f72ea1497ef3060ceab4eb7f1b419fc" kind="property"><name>LanguageId</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_language_1a1eac6da5efa1b1b3713a527267cb1941" kind="function"><name>DocLanguage</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list" kind="class"><name>SoftwareEngineeringTools::Documentation::DocList</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list_1ad3fed80c8386c62e26ce7915ff05340c" kind="property"><name>Items</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list_1ada45bf6b3763efd1412e2a0fe49f4547" kind="function"><name>DocList</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list_item" kind="class"><name>SoftwareEngineeringTools::Documentation::DocListItem</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_list_item_1ad174681536e6a05bef68c390cf7da8f9" kind="function"><name>DocListItem</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_markup" kind="class"><name>SoftwareEngineeringTools::Documentation::DocMarkup</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_markup_1aba8537f35f564d8ad7375e2bb736544d" kind="property"><name>MarkupKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_markup_1a061378317e6be3bffeaf80970acb88f0" kind="function"><name>DocMarkup</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para" kind="class"><name>SoftwareEngineeringTools::Documentation::DocPara</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_1af311f79854670eededd4fc6d7525882f" kind="function"><name>DocPara</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list" kind="class"><name>SoftwareEngineeringTools::Documentation::DocParaList</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list_1a0758f3ee3b3bb618b24c793d66c00c3a" kind="property"><name>Paragraphs</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_para_list_1ad8dbbcf2c31cb83c1d32bda88f3aebe4" kind="function"><name>DocParaList</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list" kind="class"><name>SoftwareEngineeringTools::Documentation::DocParamList</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_1a83d72ccd96d99a45780852569978025b" kind="property"><name>ParamListKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_1a2c0a39217a99edd79f005ee66acd3137" kind="property"><name>Params</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_1a73c7e9030279243ecf33ebb17cb5deb5" kind="function"><name>DocParamList</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item" kind="class"><name>SoftwareEngineeringTools::Documentation::DocParamListItem</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item_1ad01ae5f9eec5ea62d109669011cd1057" kind="property"><name>ParamNames</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item_1a3a9c87ee0dd403127be13ef7b8d6579a" kind="property"><name>Description</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_list_item_1a1c659976c8f26af3b73450a4a8a36997" kind="function"><name>DocParamListItem</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name" kind="class"><name>SoftwareEngineeringTools::Documentation::DocParamName</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_1ab7dec2f8730fe0d01e3e58ea7005ea2b" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_1a84eadb221dca0122ae106517972c7ad4" kind="property"><name>Direction</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_list" kind="class"><name>SoftwareEngineeringTools::Documentation::DocParamNameList</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_list_1a75bc981d62487ee28dad2b03813142e5" kind="property"><name>Types</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_list_1aa90f33ac2bc4890276fd27b2c1fa8ddd" kind="property"><name>Names</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_param_name_list_1aadacd4e56816fe6f8f7482c2d0dd45cc" kind="function"><name>DocParamNameList</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference" kind="class"><name>SoftwareEngineeringTools::Documentation::DocReference</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference_1a694938b5ed042c68e220ba01e26bdaf0" kind="property"><name>Compound</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference_1a87ba528136728274b6ace3fac8f4ac5f" kind="property"><name>Member</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference_1afe29145068a009c2e58f661f69038169" kind="property"><name>RefKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference_1a72107943dc98d2883e85b689994d7351" kind="property"><name>External</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_reference_1aff445cccc14cc2765824f67df8ea134a" kind="function"><name>DocReference</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_sect" kind="class"><name>SoftwareEngineeringTools::Documentation::DocSect</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_sect_1af51ffb6e3c0c2d2bad7cfdf4f04895a9" kind="property"><name>Identifier</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_sect_1adce39a3ebfcb0efa91ee3995bd1d022f" kind="function"><name>DocSect</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect" kind="class"><name>SoftwareEngineeringTools::Documentation::DocSimpleSect</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1a6a4b4036b16ccfb60f48c5e7df50ac40" kind="property"><name>SimpleSectKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1a1315d0d038a955a9ba38da4d299f05e2" kind="property"><name>Title</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1ab7d54f32f51a5ee11242cd37f1bd39dc" kind="property"><name>Items</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_1a0a6d8e79010d9e03c6319fef6e08aff7" kind="function"><name>DocSimpleSect</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_item" kind="class"><name>SoftwareEngineeringTools::Documentation::DocSimpleSectItem</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_item_1a04d97114512172cc8c9ac350582c8c22" kind="property"><name>Separator</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_simple_sect_item_1a51b27f8b6bddfb9e1d74e3f74277adeb" kind="function"><name>DocSimpleSectItem</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table" kind="class"><name>SoftwareEngineeringTools::Documentation::DocTable</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a3cacca0fb8c937d9de2c1e9f9527af0e" kind="property"><name>RowCount</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a66bdd113fc822da038a8aa8b5268436d" kind="property"><name>ColCount</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1ab394c3a4a562c8e1fc14ba15181c0a17" kind="property"><name>Caption</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a5da78858e249a4869f87f771bb2c50cf" kind="property"><name>Rows</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_1a834a37e8969331cf2b37a442724b47c8" kind="function"><name>DocTable</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_cell" kind="class"><name>SoftwareEngineeringTools::Documentation::DocTableCell</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_cell_1a7a00159fc2303f32540477f1ea4b7f59" kind="property"><name>IsHeader</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row" kind="class"><name>SoftwareEngineeringTools::Documentation::DocTableRow</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row_1af7846b3111ccb5fc1821cacfdeda7b12" kind="property"><name>Cells</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_table_row_1ae53e40202ea4b80655dc566d4ed8f28d" kind="function"><name>DocTableRow</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_text" kind="class"><name>SoftwareEngineeringTools::Documentation::DocText</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_text_1a048129017e00ecdf66e0e9a698a45638" kind="property"><name>TextKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_text_1aa4692730973fd11f41c63566ddc20f72" kind="property"><name>Text</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_text_1a4ee2262ff9fece2948d9ea0c1764787b" kind="function"><name>DocText</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_title" kind="class"><name>SoftwareEngineeringTools::Documentation::DocTitle</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_title_1a7b4a017d58809fcf76a89141f02f997a" kind="function"><name>DocTitle</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_item" kind="class"><name>SoftwareEngineeringTools::Documentation::DocTocItem</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_item_1a141823f142882df4ad7cd66eefbf834e" kind="property"><name>Id</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_item_1abb7ea48ea2672db86dc03668ed5339fc" kind="function"><name>DocTocItem</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list" kind="class"><name>SoftwareEngineeringTools::Documentation::DocTocList</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list_1a2651cd51e7a7cfd9aeb241ca842316dd" kind="property"><name>Items</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_toc_list_1aa5b4b3df90602c001abc87ca73a805df" kind="function"><name>DocTocList</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception" kind="class"><name>SoftwareEngineeringTools::Documentation::DocumentException</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception_1a58122280f1857a8fbc9f0827ca096d6c" kind="function"><name>DocumentException</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception_1af8026ba267419e75df82a02cd25648a8" kind="function"><name>DocumentException</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_exception_1ac268dd481c1d85bf7abb917c0ca6b9e0" kind="function"><name>DocumentException</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator" kind="class"><name>SoftwareEngineeringTools::Documentation::DocumentGenerator</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9fe08809c64a81d6a915169cd655cc3f" kind="function"><name>Dispose</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aa6b7b1a10a275fa3833f79c21ad932f8" kind="function"><name>BeginSectionTitle</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a649acf880cf5cdbdf3fe71924de0954e" kind="function"><name>EndSectionTitle</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a589f93438eceb47c5fae148ec40418a6" kind="function"><name>NewParagraph</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a17021c5059b0dee77f60d085567d6265" kind="function"><name>PrintText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9806a5f0d5c0fea55cc7247ca6ea1d70" kind="function"><name>PrintVerbatimText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a9398de502d89f600ac1f8ec72e6f1f48" kind="function"><name>BeginMarkup</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff9fa315e40775e63fd2b4dc184596" kind="function"><name>EndMarkup</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6e0fb6c2edbb674ec4f0048ac1984871" kind="function"><name>NewLabel</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aacc6cff53b0298213c5bfbbae5cf39ec" kind="function"><name>BeginReference</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6bf9ae60215596599442591d3f8e2636" kind="function"><name>EndReference</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ac293a5f636676bbf7f4183e9aa4439e5" kind="function"><name>BeginList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a06d3076fc6cb5f27e0573fdbc79aa879" kind="function"><name>EndList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1aebd2eac27c0ff8a1dcb9a9e4914a54b6" kind="function"><name>BeginListItem</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6cf51dcd959fe8b91f5278dc508cd704" kind="function"><name>EndListItem</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0b1b0b9fa405181afcca7297b0c429d7" kind="function"><name>BeginTable</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a11ff1e9792b49b59731026e57040b3d4" kind="function"><name>BeginTableRow</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a0c815504fc6e9d7e2c49f114fdd93a88" kind="function"><name>EndTableRow</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a142486e159cf18396bad17686c4ece3b" kind="function"><name>BeginTableCell</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ad7358d1047a392ce8d23e01d6c541e72" kind="function"><name>EndTableCell</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6244abdf686183395fb44339111a7363" kind="function"><name>EndTable</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1a6dcea40e796970bba1229a2e513fdb56" kind="function"><name>BeginDocument</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_generator_1ae367934e4153adfd260dec902d0e69d5" kind="function"><name>EndDocument</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_document_template" kind="class"><name>SoftwareEngineeringTools::Documentation::DocumentTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_template_1abaeea2816e2833c167ac1ce2433c16f1" kind="property"><name>ProgrammingLanguage</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_template_1af33f12cad0d5b98a85bb608275611919" kind="property"><name>GroupByNamespaceTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_template_1a07eb6079eeac46dbe83ddbfe8f2d2df8" kind="property"><name>GroupByKindTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_template_1a9234016d464726126f6fb6f1991810cc" kind="variable"><name>groupByNamespaceTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_template_1afc1abfdcf98a3e1ecd9350db49db75c8" kind="variable"><name>groupByKindTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_template_1a09ce6109fced0fda2af6f076a075fad6" kind="function"><name>DocumentTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_document_template_1acaca4259f80cb3ee1b853f16c1965f04" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_url_link" kind="class"><name>SoftwareEngineeringTools::Documentation::DocUrlLink</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_url_link_1afe05da6ab54502a4183b0150d349f2f4" kind="property"><name>Url</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_url_link_1a28a7129f175e82999366c320e98dd8e8" kind="function"><name>DocUrlLink</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable" kind="class"><name>SoftwareEngineeringTools::Documentation::DocVariable</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_1a557371e1e88643a632222878c06ebe79" kind="property"><name>Entry</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_1a99e3e7284e92b1e6a93515da3c4d106d" kind="property"><name>Item</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list" kind="class"><name>SoftwareEngineeringTools::Documentation::DocVariableList</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list_1ab46ea15f19c87b8ce4bffd1daa3b057e" kind="property"><name>Variables</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_variable_list_1a32c4a8be02e31c5f6cff125e80632d31" kind="function"><name>DocVariableList</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec" kind="class"><name>SoftwareEngineeringTools::Documentation::DocXRefSec</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1ad5f128cab197b2d237a5d8481af6173a" kind="property"><name>Titles</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1add4000dc0ebdf56c3b98e1c2041272c7" kind="property"><name>Description</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1ade8835c29857041292035ab076a75758" kind="property"><name>Id</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doc_x_ref_sec_1a780d4b7764aaefd333d59084617bf638" kind="function"><name>DocXRefSec</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_class" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxClass</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_class_1a70d107ac98263b17e7e2bcbb48d8dc61" kind="function"><name>DoxClass</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxClassifier</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a5a190c9e6a45e4e4c9a7b2388f65b7f0" kind="property"><name>Members</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a121e4a25f6552af132554ed2e0db9c4f" kind="property"><name>InnerClassifiers</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a90983bfa6218a20b61bd00d1a01a1da4" kind="property"><name>BaseClassifiers</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a3ac73b2daee8779034ef5b5d72ab6211" kind="property"><name>DerivedClassifiers</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1ad84f20e5051e75adedb2899702c94aaa" kind="property"><name>TemplateParams</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a6d87f6a252c40eb3440ac27ec19fe1be" kind="property"><name>ProtectionKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1acd01681eabb4c098acbe02294894762b" kind="property"><name>Final</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a59444045be582a620f4dd2e549309673" kind="property"><name>Sealed</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1aa8ae1560fc7385af43a9af53bf6fdd0d" kind="property"><name>Abstract</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a6d60e2cd975944379eadd31b2dd44570" kind="function"><name>DoxClassifier</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxCodeLine</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line_1a2bd76e9ed3fa0de6f3e1b17024126d7e" kind="property"><name>LineNumber</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line_1a6f991a58ace2ff0c216f0a8095081db0" kind="property"><name>Tokens</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_code_line_1aa54e6277a83e9fd9a74870e90a0d1130" kind="function"><name>DoxCodeLine</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxDirectory</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory_1a88bce63c9ba403344a733f67159ff687" kind="property"><name>Directories</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory_1aa76527e2b4b70c0badbaa9fbd95a9d11" kind="property"><name>Files</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_directory_1a57e40f117355844005990389a7adc2f1" kind="function"><name>DoxDirectory</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxEnum</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum_1a325e606b961be935a8aa4c9c6bd07898" kind="function"><name>DoxEnum</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum_value" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxEnumValue</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum_value_1ab4a2067bd0df322b2735ce84c032449a" kind="function"><name>DoxEnumValue</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_field" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxField</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_field_1a5ce4b2384e224643d8dbfd18612e73c5" kind="function"><name>DoxField</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_file" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxFile</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_file_1a968611bac6fb52fa6aa60f3586aa44fa" kind="property"><name>Classifiers</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_file_1ac65f32ba25c936eb27093d7d0cd2d704" kind="property"><name>Namespaces</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_file_1a8b4d0a5b7282fb5054548c848d7310a2" kind="function"><name>DoxFile</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxHighlight</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_1a8f3b0370587461cf4dc68f558b76df87" kind="property"><name>Kind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_1abcc420fbf26093bfee830c81b6d1f0d2" kind="property"><name>Text</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_1a347420ce54532e345cfcab096e094c60" kind="function"><name>DoxHighlight</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxHighlightText</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text_1abb881a24f22da09b0445870ae92f5705" kind="property"><name>Space</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text_1ad242ac8b899f16d9562e4b3cf0d4ae89" kind="property"><name>Text</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_highlight_text_1aeb0aa6b4874d74f6b8e23ceaef539539" kind="property"><name>Reference</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_interface" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxInterface</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_interface_1a6160aea4a2ce4faabd6ce710c5dfb331" kind="function"><name>DoxInterface</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxLinkedText</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_1a5e47152d5d1606b076d9b83b24340074" kind="property"><name>Items</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_1a9097c26a79fecf802538de4c9c8cc5e4" kind="function"><name>DoxLinkedText</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxLinkedTextItem</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_linked_text_item_1a2bb49a433d3cd0bae57d844da0743c7e" kind="property"><name>Text</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxMember</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1af9385f70bb9c39e283ce280067b8baf1" kind="property"><name>Identifier</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acb73cc5a890fa845f8378dbc75248887" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a194d376e6cba04cf08962b9655bdcd7c" kind="property"><name>Kind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ab351c52b2848bc058313dcdc6cf28a88" kind="property"><name>TemplateParams</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a41432e4c58c8c01199ed6cdc85fe985c" kind="property"><name>Type</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1eb51308b74281eaf7d522c9d4e06632" kind="property"><name>Definition</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a832335a27473fb2cd348609854556035" kind="property"><name>ArgsString</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a3a6fdbc6523b8aec0841bdc15d7989d7" kind="property"><name>Read</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1365d972474a2979c3b743adab712344" kind="property"><name>Write</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac371e61e89ce19bf524d30efd7b518d1" kind="property"><name>BitField</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1aa37bc34ea6508dbfe714f3ab07bff7ef" kind="property"><name>Reimplements</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a33a5f8417e8ad3688c3e64da1661d90e" kind="property"><name>ReimplementedBy</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acfbe71d778fd8cfac409ba43453f0ee4" kind="property"><name>Params</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a3b4a9d6d45d4382a792fa1db689d4814" kind="property"><name>Initializer</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a9fe1bde6686105a9dd6c0c9910a549e5" kind="property"><name>Exceptions</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1aba71314188536b49b64189113bd7a8c7" kind="property"><name>BriefDescription</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a70bbb9b6d616ed7ae54d01e671faad1a" kind="property"><name>Description</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac1cf4b21006d18bb9a291a4c4a556a95" kind="property"><name>InBodyDescription</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a8add67cbd787bb019b7b0c7fead1f5e1" kind="property"><name>Location</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4ab078fa155542c4eb4c0ac661113a86" kind="property"><name>References</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a31aaea33b676da9bfc08ac72bbfc4b60" kind="property"><name>ReferencedBy</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1e12aca663094e4886ffa64905131542" kind="property"><name>ProtectionKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac1fe197cd1631d3005cc8cc098a8f8e0" kind="property"><name>Static</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a478632bedd498e8f8e61dfa6e0f22831" kind="property"><name>Const</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1abe888f0db0f72339276c31c9de1e646c" kind="property"><name>Explicit</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a332d236ae4b3488460384d71aa0292c4" kind="property"><name>Inline</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a2701496d26aaf620ea10bc2f019c9444" kind="property"><name>VirtualKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a09bcdd32b6686c94fa9f6d2c84b748c9" kind="property"><name>Volatile</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a26a1a38c4fa0066238fccd59fe07e96b" kind="property"><name>Mutable</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4be4b627d2edf35cadde999039251b78" kind="property"><name>Initonly</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a86aa36a2a0fedb126b3ea28a3f15cb99" kind="property"><name>Settable</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a15a1af098da781facc9b519a4b9e59d2" kind="property"><name>Gettable</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1acbbd2c091cfc64128719320a1839444f" kind="property"><name>Final</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1af4888e13a3903de283573176fff0456f" kind="property"><name>Sealed</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a1abb4ca84b97c69c8a03e3d4c1944b10" kind="property"><name>New</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ad343e6c7bcd05756ce2c32b737a67634" kind="property"><name>Add</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ac7a045bbb7c9e46cf9d05d33ddba4d7b" kind="property"><name>Remove</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a5c7171ec293e53085550a9a15917b846" kind="property"><name>Raise</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1a4c854f8c5483f1a92a6ebd615326a927" kind="function"><name>DoxMember</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_member_1ae3b4ea987fe5642fd3f2de0161e7f6c5" kind="function"><name>ToString</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_method" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxMethod</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_method_1a83be19465bd6a064277b73a4e5d0f4f8" kind="function"><name>DoxMethod</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxNamespace</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace_1ae5b4d40bbeb72d6f0edb2e32702e9048" kind="property"><name>Namespaces</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace_1a170f5f7f191fda80b5671172155d8cba" kind="property"><name>Classifiers</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_namespace_1a0f396967efcdfb9c5a5ae52b7bbe6154" kind="function"><name>DoxNamespace</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxParam</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param_1ac303701ced7c1c167212c7e7a9724781" kind="property"><name>Type</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param_1aa4851129748220e1e62634c7b9468621" kind="property"><name>DeclarationName</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param_1a0bec35602586da4466d2ab77dfd2d8d1" kind="property"><name>DefinitionName</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param_1a50b5bfe18375627cba43878c9de316d1" kind="property"><name>Array</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param_1a210dc9de3e4f38ef87f9b077ec939045" kind="property"><name>DefaultValue</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_param_1ac8d46b158c50fa461fde98360c9546eb" kind="property"><name>Description</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_program_listing" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxProgramListing</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_program_listing_1ad169b0ac2e37a32a7f8dd91cc03a4f1c" kind="property"><name>CodeLines</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_program_listing_1ae36bb300094d9c1864bec13cc633bbea" kind="function"><name>DoxProgramListing</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_property" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxProperty</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_property_1a4e2e03fabd61a3f9a278ded098304dab" kind="function"><name>DoxProperty</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxReference</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1af1adff120d9414e232e8d95edcb3a206" kind="property"><name>Compound</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1adb1f886d99397b8aae2b710d179ce78a" kind="property"><name>Member</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1acfca92115ed5987873af1cb404b777a8" kind="property"><name>ProtectionKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1a607a1e892b5e0ab21af53d75a6cad17b" kind="property"><name>VirtualKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1ac5ed2eb3dd985eab60870b9c08d4f372" kind="property"><name>External</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_reference_1a4a90f69f52eef9dc448ab9224b0bd2ba" kind="property"><name>Tooltip</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_struct" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxStruct</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_struct_1a0db064c36b5dbedc8693c6965f6f405a" kind="function"><name>DoxStruct</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_dox_text" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxText</name>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxygenIndex</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a88b89adaec87d27c1f8bcc591fad568b" kind="property"><name>CompoundIndexRefs</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a622b810e809f28139b79b1f68219d4a3" kind="property"><name>MemberIndexRefs</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a2404d2a8a639f5a475a044a1ce37f6df" kind="property"><name>Version</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1a947083d15b69cc2e070f905c0e10c129" kind="property"><name>Compounds</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_index_1afe55b8cfea9c3832ed08b9bff3bbc270" kind="function"><name>DoxygenIndex</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxygenModel</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1aca1bd90e5926767d75f0ce49de702d7f" kind="property"><name>CompoundRefs</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1ae96d35852eb333d0653ea4f0f15e1d95" kind="property"><name>MemberRefs</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1a8ec831e8902cd1fde6146631e6bf13c9" kind="property"><name>Version</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1ab07d3d395d1701a66e1d5f6f73ce7d61" kind="property"><name>Compounds</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_model_1a31cf5108804d276a3fdd4389b87066e5" kind="function"><name>DoxygenModel</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_object_template" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxygenObjectTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_object_template_1a497b6fa0ee90a4f7c24ae5595b4371b5" kind="function"><name>DoxygenObjectTemplate</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser" kind="class"><name>SoftwareEngineeringTools::Documentation::DoxygenParser</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6ad6b214d97bac3f13fa67e1f11b30e8" kind="enum"><name>LogKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6ad6b214d97bac3f13fa67e1f11b30e8a4059b0251f66a18cb56f544728796875" kind="enumvalue"><name>Info</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6ad6b214d97bac3f13fa67e1f11b30e8a0eaadb4fcb48a0a0ed7bc9868be9fbaa" kind="enumvalue"><name>Warning</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6ad6b214d97bac3f13fa67e1f11b30e8a902b0d55fddef6f8d651fe1035b7d4bd" kind="enumvalue"><name>Error</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a4de5a48595379cd41d316bab6894d8ee" kind="variable"><name>DocEmptyTags</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a0de2ea89c5e7b3666c8a9f507d56f31b" kind="variable"><name>DocMarkupTags</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab7519bc0117e0960ca3cf56d5f658d6f" kind="variable"><name>DocReferenceTags</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a137acf262f250da3be61817cf8496ba5" kind="variable"><name>currentFileName</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ae8d0d252d0783ea8d98e89aa86dec131" kind="variable"><name>LogFile</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1abfeef404cab333dbfa1602536f94c4e7" kind="property"><name>IndexFile</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a0b088e4a6affa57fa82d10bf05730c6b" kind="property"><name>Index</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab197aca4cd631c97157434f374cc40d6" kind="property"><name>Model</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ade05bc6069a11bd0e2368e9eadbbe30a" kind="function"><name>DoxygenParser</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a3d9f4daab9cac14a6db9706866e9471a" kind="function"><name>Log</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1abd6098588fd37d9e1daa1fe48f5cbcee" kind="function"><name>LoadXml</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aaf0df0e0c9bac0eedc58ba6c7f327dc4" kind="function"><name>Parse</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a64aa3ddfcd697d4b59dac94a9fd83876" kind="function"><name>ParseIndex</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a2fcc322de421beb5477b3af04737f291" kind="function"><name>CreateModelElements</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ac8faf1d350e5ee8d462bcf0b25d37c1b" kind="function"><name>CreateCompound</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab6802c2cd8f35d2ce9a30aa5f4d2b7c2" kind="function"><name>CreateMember</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1abd24cbc0432dfcde455bf197ce5ceb18" kind="function"><name>ParseModel</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a871a51671f008c1c515cab67256db6ae" kind="function"><name>ParseCompound</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a9a6cbaaaef7cf859bd892273cb315b12" kind="function"><name>ParseCompound</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a9e3cf8fb6a1c8626c38b5ecd1a92e94a" kind="function"><name>ParseLocation</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a40590dc1e3e999fda740c47128da1a1d" kind="function"><name>ParseClassifier</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab18d2822675f8ab14ba4318358bd0587" kind="function"><name>ParseCompoundRef</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aa6343362a8aac67a1031ab4fa80501fe" kind="function"><name>ParseRef</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ae72302e2f89d734436f45806d2757133" kind="function"><name>GetVirtualKind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ad3a9825ffe37989922b16c9cf7ebe68d" kind="function"><name>ParseTemplateParamList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aedae025c2aeeff4b4fc22d7bdf5da826" kind="function"><name>ParseParam</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a173f1d1017acd066c9a72ba8ca6f9f3f" kind="function"><name>ParseLinkedText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a31514448cd0043059af51e29ca6e6723" kind="function"><name>ParseRefText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a65cc3f5543a20e948b9e1b58eae59089" kind="function"><name>ParseClass</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a4bb4fab212ba2818fe271e222ecb529d" kind="function"><name>ParseStruct</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ab2030bd5e910940e59c0973c19925dcd" kind="function"><name>ParseInterface</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1ae11e71c043df86c230a08c3a72cc451b" kind="function"><name>ParseEnum</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a36105b21ce31ca63ac2cc667e82b1a43" kind="function"><name>ParseInnerClasses</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a5552887ab986d2fded79437e1e8a8e51" kind="function"><name>ParseInnerNamespaces</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aaaf30c00086620e2cdaa3339313d534d" kind="function"><name>ParseFile</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a221839eabdf920fbc420f49d16887358" kind="function"><name>ParseNamespace</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aa9ef78940358d02e185393a20681aa49" kind="function"><name>ParseDirectory</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a65a5583f8778ea44d00b0b228d384025" kind="function"><name>ParseFiles</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a98557aa3fdebeac438450c12b45b66b7" kind="function"><name>ParseDirectories</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a3596e590466a58d2594074e7ebe7b77b" kind="function"><name>ParseSection</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a6905e29244c9fc4f76ad711d42201028" kind="function"><name>GetBoolAttributeValue</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a65470a175295ac8fb9590417492fc42d" kind="function"><name>CheckMember</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a16e777ec425c17cd3e903e1aab2dc8cc" kind="function"><name>ParseMember</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aa4205e312666b82a6e7f23d0f3403131" kind="function"><name>ParseListing</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a240e32796cc324a886cd0055d7ba3e63" kind="function"><name>ParseDescription</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1aafdc8fe0684f997660f26397bef577b8" kind="function"><name>ParseDocCmdGroup</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a817e3a8506124b1db554a0e9242c7050" kind="function"><name>ParseDocCmd</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a165e5a4f22f7c21a018d94d90b03cf8e" kind="function"><name>ParseDocReference</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_doxygen_parser_1a70904da6ab98823e905e303c45dd59cd" kind="function"><name>FromEnum&lt; TEnum &gt;</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_enum_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::EnumListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_enum_list_template_1a212453829ef5593c4972b33330b75ffd" kind="function"><name>EnumListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_enum_list_template_1ab40ecbc15d3643dcd54cc7c4fdc7a42e" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_enum_value_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::EnumValueListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_enum_value_list_template_1a9bece1c364eecf7a8ee83f4e20407080" kind="function"><name>EnumValueListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_enum_value_list_template_1afe9c0fe4292f4fe2a72e93b9dce44da6" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_field_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::FieldListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_field_list_template_1a87bf6479af861358b746e2c0bbed7289" kind="function"><name>FieldListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_field_list_template_1ac0967577c807c358f3a2bdcab2570f72" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor" kind="interface"><name>SoftwareEngineeringTools::Documentation::IApiDocTemplateProcessor</name>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1aeadefc56fd447aa38eee217d420bcb5b" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ae892aa3533e96140da581a46b221cd98" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a53d63f1c44a104fdec9f61e49e0c7dcf" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a5f0d36dd289febc323d715a125fc15f5" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1acadf04e0d3ac14bbea84510b2809869d" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a70b2d3982536f4dc7a73d4685597df8c" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a968a91389faa21d2720a96a74b6dd34c" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a1105bec290673453fdffeb53a4d38c7f" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ad770e6fe34ab58cbbded9ad37be2e81c" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a6770a31e1adc5d096d4fa9294e7f6bc6" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ae30e611547202ab65de3974fcece4e43" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1af100fe16afcf443025e08613a56b0ac2" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ae74b5e00a03e1df31282e61fcd5a7814" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1adf6bb8f92c917a16eb0a32883fd5afd7" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a5865de6c62f0d7dc01906690b95a8447" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1a77ae8311b3488d17dffd21f35b64f394" kind="function"><name>Process</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_api_doc_template_processor_1ad88bb28ed374246d6522f6329f011f35" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator" kind="interface"><name>SoftwareEngineeringTools::Documentation::IDocumentGenerator</name>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a8f4c05966722692fccdd777204393380" kind="function"><name>BeginSectionTitle</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ad55a14f9d43ac04deeca2dd038f0d0f3" kind="function"><name>EndSectionTitle</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a7a72bc7b1aa079a13a858377a17e6f36" kind="function"><name>NewParagraph</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a7f9eb01667e631ecb1b682db6caabbf7" kind="function"><name>PrintText</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ae34962fbf96a9e96668dcc2c7782db5f" kind="function"><name>PrintVerbatimText</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a3cc12daff5435cee9b1ab979cf16fa02" kind="function"><name>BeginMarkup</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a4d9530cd6d8301f556425393f2548975" kind="function"><name>EndMarkup</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ad185c68d20bd69fc2ca73c3bae2c40b1" kind="function"><name>NewLabel</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a7fa263ab2571b238abf44eca3cf1f0bc" kind="function"><name>BeginReference</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a9ff3eb62a7b4c0cea6c861a1cc91d7a9" kind="function"><name>EndReference</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a8bb16673fa645991c4ff1c27f3fc78c5" kind="function"><name>BeginList</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ab1245da1f965e0970ee6e9ed8f896621" kind="function"><name>EndList</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1aa6c2854f4670d91a3f16ff52b01c1d44" kind="function"><name>BeginListItem</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a2412179b1293273002b7eded51e559b7" kind="function"><name>EndListItem</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a5d8fb01ae06f90081dd3a963bcd9f651" kind="function"><name>BeginTable</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a02fae45bd4fcfa6487bb6bafe640a6a3" kind="function"><name>BeginTableRow</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1a7083a998e1f36b78b63b8b6e44fab464" kind="function"><name>EndTableRow</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1ad66435c1af84d56700e94b5dbc3b9b61" kind="function"><name>BeginTableCell</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1aaf8ae2a4cf6bfe5d9f8ddf5e773a11cd" kind="function"><name>EndTableCell</name></member>
+    <member refid="interface_software_engineering_tools_1_1_documentation_1_1_i_document_generator_1aa60905bc36132ff347199ce77b348276" kind="function"><name>EndTable</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_interface_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::InterfaceListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_interface_list_template_1a2144d407d11c4992779ca081a291855e" kind="function"><name>InterfaceListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_interface_list_template_1a9c3f88c7e8e3444af953ccc3b926ee13" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator" kind="class"><name>SoftwareEngineeringTools::Documentation::LatexGenerator</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a3af2b9e320618ca33e3984be46d0b3bd" kind="variable"><name>writer</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1af521d64f3c283b7b3b5b73ada037885b" kind="variable"><name>paraBegin</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1abacc15453eb67bce1b159b43b55b755c" kind="function"><name>LatexGenerator</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a993f42bf5ef3a5d1a70abdc180aa8bcf" kind="function"><name>LatexGenerator</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a87139c6552aa29fbfdc20e07175ca9b5" kind="function"><name>Dispose</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a0987b0d6682e4edabf9df277a382eecb" kind="function"><name>BeginSectionTitle</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a07c29242cafcbc0a0a0ef817ac818ee1" kind="function"><name>EndSectionTitle</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9633a779ddcb54100666f79e0de6c168" kind="function"><name>NewParagraph</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a0f9a35a1a27283cdb3d521c10439b9c0" kind="function"><name>PrintText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a675486162fd632b87673d1533cce276a" kind="function"><name>PrintVerbatimText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ad6732108c1739d704defce5722e112ad" kind="function"><name>BeginMarkup</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1ab7ca15a96f967639bffafc568bd1723c" kind="function"><name>EndMarkup</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a013f4974ae15a09e971e8a4ad2d9aca7" kind="function"><name>NewLabel</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1aa48cc264ca9a70e82b25c25fd8cbd460" kind="function"><name>BeginReference</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a8f91c6a140732071c6aaa2fe0e0cdf5d" kind="function"><name>EndReference</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7341918f8ef12c497964a3da86681b4a" kind="function"><name>BeginList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9e77a36261f8f09aa84cf7d15474bf6a" kind="function"><name>EndList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a5c8335a734a3a1df797b23fbb660cfdf" kind="function"><name>BeginListItem</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7f8d2121f9dcec7761f7e6ca0416f30a" kind="function"><name>EndListItem</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a22a8ae8070617740885509fab8fbb1f1" kind="function"><name>BeginTable</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a285da4d48fe002d10b25a5355317c89d" kind="function"><name>BeginTableRow</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a2bdf8d06abfbbd14a61098d04f257811" kind="function"><name>EndTableRow</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a332122bd834cdb6857fab0d76032ffe8" kind="function"><name>BeginTableCell</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a9578ee4b9d513bfcce6b67e60edf2daa" kind="function"><name>EndTableCell</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a7cce6ca1e8aa6b8cef90411891514e03" kind="function"><name>EndTable</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a587dd51f6deed0ca5778adafde44f95a" kind="function"><name>EscapeText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a415cd0402059b26675d15c4679013635" kind="function"><name>BeginDocument</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_latex_generator_1a24103014a84ca959b9df44d9c298af48" kind="function"><name>EndDocument</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_location" kind="class"><name>SoftwareEngineeringTools::Documentation::Location</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1a98e8fc3bd0ae61be01ab5071b92f6e3c" kind="property"><name>File</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1af7d5f6bd7cf1a468b61bd6e80e73ac01" kind="property"><name>Line</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1a223e6ae79f810e6eebe94ecb9eb554ee" kind="property"><name>BodyFile</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1aa4f3164d2444ad20dbc297e3aebaf4d8" kind="property"><name>BodyStart</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_location_1acc88f52f5a3c4baff9c28b50f93af935" kind="property"><name>BodyEnd</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_member_index" kind="class"><name>SoftwareEngineeringTools::Documentation::MemberIndex</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_member_index_1a2fc3f24b9bc668135899d3de039c6192" kind="property"><name>Identifier</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_member_index_1a3c095e56c2e89f60e037a1a07dcf1932" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_member_index_1a2964ceaf87097d830c1f78298248f7e9" kind="property"><name>Kind</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_member_index_1a66c8c8c244a1e6f2ca7982f1390b780f" kind="property"><name>Member</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::MemberListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template_1ae4d02d5b68476be52bfabae029c21135" kind="property"><name>GroupByVisibility</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template_1ada574e9d8378fb068508b2222e7caa59" kind="function"><name>MemberListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_member_list_template_1a2aa1b88d7045524e082ad04043905b98" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_method_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::MethodListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_method_list_template_1aa206483174965cab43e383e89c8e76f3" kind="function"><name>MethodListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_method_list_template_1a504360f3018407ed36305b61013b7b04" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="struct_software_engineering_tools_1_1_documentation_1_1_model_version" kind="struct"><name>SoftwareEngineeringTools::Documentation::ModelVersion</name>
+    <member refid="struct_software_engineering_tools_1_1_documentation_1_1_model_version_1a65b4bcf1be26c008edb498b288c2bc80" kind="property"><name>Major</name></member>
+    <member refid="struct_software_engineering_tools_1_1_documentation_1_1_model_version_1a7dd1df3f1dba46b7f459e9b3fc64e65c" kind="property"><name>Minor</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::NamespaceListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template_1a118cc0139f5e8829ed190e3d6cce2581" kind="function"><name>NamespaceListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_namespace_list_template_1a814da49180e02ea143f0337f7a69ff1f" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_program" kind="class"><name>SoftwareEngineeringTools::Program</name>
+    <member refid="class_software_engineering_tools_1_1_program_1a9c39b9f8c3af17bfdfb5d018f6d10b50" kind="function"><name>Main</name></member>
+    <member refid="class_software_engineering_tools_1_1_program_1a310c870769cf7663eb7f09ec6e0b1dbb" kind="function"><name>GenerateTestResults</name></member>
+    <member refid="class_software_engineering_tools_1_1_program_1a2c63ac2791ba20957b0a7013c3843183" kind="function"><name>Generator_Test</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_property_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::PropertyListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_property_list_template_1a578e412f45023f777bde01f8970a0ba3" kind="function"><name>PropertyListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_property_list_template_1a308232062b498b6815f1925c37f65c16" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_section_template" kind="class"><name>SoftwareEngineeringTools::Documentation::SectionTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_section_template_1a59c26c917511184723c57a18b415093e" kind="property"><name>Title</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_section_template_1ab62eccf4428cdfe614b4caceaeb54577" kind="function"><name>SectionTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_section_template_1afbc012c729c09b854cb6e9635ebc5337" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_struct_list_template" kind="class"><name>SoftwareEngineeringTools::Documentation::StructListTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_struct_list_template_1aae3b2571a51d5baa95da7fcaf60a57ca" kind="function"><name>StructListTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_struct_list_template_1ae89463eba79df4d331672e9774a65885" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_template" kind="class"><name>SoftwareEngineeringTools::Documentation::Template</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a7f9bc50ec9f9639c32308d3905ba92a1" kind="property"><name>Leaf</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a66d27db7b9ae8045f5cfad58c6818f39" kind="property"><name>Parent</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a7b00a1e5b8de0528f665f5041ca69797" kind="property"><name>Items</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a584d4577dcd36a27254a3e340cfda808" kind="function"><name>Template</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ab13b45a10b7eb65a0b6c15dbc1318664" kind="function"><name>Process</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a1af5e797aa609a3c851e01f020cb01e6" kind="function"><name>ProcessItems</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a1811e36dbb694edb713597fb9b685698" kind="function"><name>AddSection</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ad37173018ec87606db32b3fcf8a05e10" kind="function"><name>AddNamespaceList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a03533df58d5fbb793ea79936d026d503" kind="function"><name>AddClassifierList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1add1d1b4746d8424d5902edadcbfde0b1" kind="function"><name>AddInterfaceList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ae5451e4d1f252f72f870d5584b9a4a17" kind="function"><name>AddClassList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a06378a401cd0e89dfb9dde97330c236a" kind="function"><name>AddStructList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a1069fe7991d86d1930dfc1195d80f901" kind="function"><name>AddEnumList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a2c022f0860170bb30ff1be6fd569a825" kind="function"><name>AddMemberList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a6203709220eb324eceefe127445de320" kind="function"><name>AddEnumValueList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ac35f8ef04977633d60305d6287801dd2" kind="function"><name>AddFieldList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ae25451886c449522399a348d0b79097b" kind="function"><name>AddPropertyList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a1000cc8bcd19f7cde420ffe4d7c366e8" kind="function"><name>AddMethodList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1acad7b782d4d02ec17bebe0e280fd2423" kind="function"><name>AddDescription</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a3f3d0b0c9e8f137c09cefadee1c81135" kind="function"><name>AddBriefDescription</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a03c7c557faf8c5b066c6c4e096bc1ecb" kind="function"><name>AddUmlClassDiagram</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ab216b0516ac0e543d9c8a4e60641f138" kind="function"><name>AddText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1a5df5cddf05f750b113eb331c663129ff" kind="function"><name>CheckParentOfType&lt; TParent &gt;</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1ae27ff3b5055f89b699cce549e8fd87d9" kind="function"><name>CheckNoParentOfType&lt; TParent &gt;</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_template_1aec4fcc425edcf7fa5e9b476957380e86" kind="function"><name>Add&lt; TItem &gt;</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result" kind="class"><name>SoftwareEngineeringTools::Testing::TestCaseResult</name>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a45cc74e60da35652a786c1f53cacff7a" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1ab0c2ca15dc89f3d4ff0ade1087cb6d61" kind="property"><name>Variables</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a234642830cddb778e4cbff58c11c4b37" kind="property"><name>Commands</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a69e1a0107ef4fe18d2f9adab43cb18e1" kind="property"><name>Result</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a46e72de12e8afe5255484cdfcd3849b0" kind="property"><name>Comment</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1ae433a27ea52af7becce61bb408439672" kind="function"><name>TestCaseResult</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_case_result_1a567607ee6ddc2722c8853553b5c14cf2" kind="function"><name>TestCaseResult</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_testing_1_1_test_command" kind="class"><name>SoftwareEngineeringTools::Testing::TestCommand</name>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_1aac3f92319409b1abb7b6eb9b25ee4550" kind="property"><name>Kind</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_1a42419031b0adefd524c4a2ba3d8cf15f" kind="property"><name>Text</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_1a1cb50fd9f03618741ddaa4e209bbcbb2" kind="function"><name>TestCommand</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_1afbea3989211e3560a048f7f1890d0c22" kind="function"><name>TestCommand</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result" kind="class"><name>SoftwareEngineeringTools::Testing::TestCommandResult</name>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a7f7e746bda7b3cd7cb1125c0e9f805f9" kind="property"><name>Kind</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a2f1d65eb07c34822f08e885f844ca0b2" kind="property"><name>Text</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a17ca5a787ca781abace162b7d7a0a3b9" kind="property"><name>ExpectedValue</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1ae17ea10460ef9dacbd3cbe9345e0f9ed" kind="property"><name>ActualValue</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1aa8ac8fa72a9daa74b028ffafab0fbdd1" kind="property"><name>Result</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1a02274834bcb07e11f6027e5371cacc9c" kind="property"><name>Comment</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1ab9477a5a7793419071f22eb65c225a4f" kind="function"><name>TestCommandResult</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_command_result_1adf3582b7e8c937a2fb27ec29c6c7dc47" kind="function"><name>TestCommandResult</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator" kind="class"><name>SoftwareEngineeringTools::Documentation::TestReportDocGenerator</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1af09960dda823e1f8a1ff00aa305c316a" kind="variable"><name>dg</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1a99ffeb5c0a68c206dd07552de03cb83b" kind="variable"><name>testResults</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1afec6435bdf731581e37380223801af05" kind="function"><name>TestReportDocGenerator</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_test_report_doc_generator_1a9ad34ec49fd12f6e2386ec343fd397ef" kind="function"><name>Generate</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_testing_1_1_test_result_i_o" kind="class"><name>SoftwareEngineeringTools::Testing::TestResultIO</name>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_result_i_o_1a5b7698d8f3e9d5cef0ba629868824756" kind="function"><name>SaveTestResults</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_result_i_o_1a955bfe384c2b89548664dd8d0f176824" kind="function"><name>LoadTestResults</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_testing_1_1_test_results" kind="class"><name>SoftwareEngineeringTools::Testing::TestResults</name>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_results_1af99977749c177523bcc298652bdde8c2" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_results_1ac90e7e412834351717bad9a9ccb39366" kind="property"><name>TestScenarios</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_results_1a62c17df9d573027e25f1405837f7a640" kind="function"><name>TestResults</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_results_1ab58ea4250db18fbc4d527ec8ef66934c" kind="function"><name>TestResults</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result" kind="class"><name>SoftwareEngineeringTools::Testing::TestScenarioResult</name>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1a60b47271609a2aa0a0eb3021a5ebb988" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1a58554b141c207282fcd65b8b50534a99" kind="property"><name>Commands</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1ae171a04a0ced528c816ad8b95f566ffb" kind="property"><name>TestCases</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1af24061bb290dd14e4ba3ce804226a4c1" kind="function"><name>TestScenarioResult</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_scenario_result_1ad5c0b19852dc0b0611791382d4f3299a" kind="function"><name>TestScenarioResult</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_testing_1_1_test_variable_result" kind="class"><name>SoftwareEngineeringTools::Testing::TestVariableResult</name>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_variable_result_1ac2b2e1e50d960902321f03fc0adb6891" kind="property"><name>Name</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_variable_result_1afcdfe7a68f4156c48a145b53f871d56b" kind="property"><name>Value</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_variable_result_1aed2d667b38c81ec25f2f240a45b62fed" kind="function"><name>TestVariableResult</name></member>
+    <member refid="class_software_engineering_tools_1_1_testing_1_1_test_variable_result_1a7ae435b55fb37ac1e16ade2e347e3629" kind="function"><name>TestVariableResult</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_text_template" kind="class"><name>SoftwareEngineeringTools::Documentation::TextTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_text_template_1a78de805f62206a738997a7d6cb591330" kind="property"><name>Text</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_text_template_1a4fffba9c4b4b9c016bad1668c568aca3" kind="function"><name>TextTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_text_template_1a9625c56dd7a837fb77052c37eda17a2b" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template" kind="class"><name>SoftwareEngineeringTools::Documentation::UmlClassDiagramTemplate</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template_1a7ab204291772d530844163ac25e30f6f" kind="function"><name>UmlClassDiagramTemplate</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_uml_class_diagram_template_1a766af41d9501ca75b1020f0e65c173c2" kind="function"><name>Process</name></member>
+  </compound>
+  <compound refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator" kind="class"><name>SoftwareEngineeringTools::Documentation::WordGenerator</name>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a879c280f813f42353af7ad110eab2bd3" kind="variable"><name>path</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a040c6f0ad700192e4520b34a66f7484a" kind="variable"><name>paraBegin</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1ad704997d44ff22d6f9e042ceb8aeaaf9" kind="variable"><name>cellBegin</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a12123e04a00a7af7adef3687b3d53eba" kind="variable"><name>markupStack</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1aab06dcc5d0a7d4ab9029606b6eb28bcb" kind="variable"><name>hyperStack</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1acc728ed6b0a06037cf200d4ebf1b65e7" kind="variable"><name>tableStack</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1ada34bbfafd0cb7576a75fd2c80422fb9" kind="variable"><name>table</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a5ecc36f426af8b0fd7a2ac66718fbd93" kind="variable"><name>word</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a545834ff488b5b230741f3878fb39e33" kind="variable"><name>doc</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1ac76cc43745a376bd9aeecb8e678ecb4b" kind="variable"><name>sel</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1aaf27c34c84c57bd785bde8f5f104644e" kind="variable"><name>book</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a532808d5f647d8cb7bee6c45cfd110fa" kind="variable"><name>normalStyle</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a55aa9cc626f2e6e204e49b274b233e5d" kind="variable"><name>boldedStyle</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a7e03278d159102c59eab9a302ca7146b" kind="variable"><name>verbatimStyle</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a56054cd420c6dc071f83b05bf9cb1dc3" kind="property"><name>ShowWord</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1abf5afac8ad72e919f808bae5dbef4ada" kind="function"><name>WordGenerator</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1adf9f0b03760f695ece98b7c529de9e08" kind="function"><name>Dispose</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1accc00e23ef4d7fa36359715ce4bd3845" kind="function"><name>BeginSectionTitle</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a6742f94e53dbe5073a80742657e6c938" kind="function"><name>EndSectionTitle</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a30e09031fd81ba57185fb44d9b0d5f2f" kind="function"><name>NewParagraph</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1aeea13e32835b1af446a27f4ed4977c5a" kind="function"><name>PrintText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a888eb271c27f9419b29eb38cbd00af66" kind="function"><name>PrintVerbatimText</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a7606e1f460a2b58245d6dd1418058a11" kind="function"><name>BeginMarkup</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1ac480b4e09794677ff4c3abce6455aa32" kind="function"><name>EndMarkup</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1abb9105e0709c711c7199faa29dbf9331" kind="function"><name>NewLabel</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1acdb54490629705960c7544904a96f8b9" kind="function"><name>BeginReference</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a7032d09ad0e77686dd17fd063bfd1c90" kind="function"><name>EndReference</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a8e6c89f64b72dc406aab016d39ee3c60" kind="function"><name>BeginList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a254b01c1abbc805bce33d0827ca12988" kind="function"><name>EndList</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a21cf3f4b0aabac4e3a64b0da78cd0212" kind="function"><name>BeginListItem</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a9ef1000c9b7091ca5d654b79edac09a1" kind="function"><name>EndListItem</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1ad25649a8518696de278f7e7c9e36b86f" kind="function"><name>BeginTable</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a4d8c494b4539d97470ea2117a4534439" kind="function"><name>BeginTableRow</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a4b2bf59e116c66b1122740bfc67c53ec" kind="function"><name>EndTableRow</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a6cca87392b3e19aa9517edf9d9fec1bc" kind="function"><name>BeginTableCell</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a711cd215309963e8548e90ecd98dded4" kind="function"><name>EndTableCell</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1ada6e8d07b97aad9bec46da135423fe99" kind="function"><name>EndTable</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a8bde307f2f0e1951ef630820826d87d0" kind="function"><name>BeginDocument</name></member>
+    <member refid="class_software_engineering_tools_1_1_documentation_1_1_word_generator_1a0aadbc1dd71ab337f09e4e939915666e" kind="function"><name>EndDocument</name></member>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_office_1_1_interop_1_1_word" kind="namespace"><name>Microsoft::Office::Interop::Word</name>
+  </compound>
+  <compound refid="namespace_software_engineering_tools" kind="namespace"><name>SoftwareEngineeringTools</name>
+  </compound>
+  <compound refid="namespace_software_engineering_tools_1_1_documentation" kind="namespace"><name>SoftwareEngineeringTools::Documentation</name>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ab6e4765a967d9dc6f381992efce40c89" kind="enum"><name>Language</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ab6e4765a967d9dc6f381992efce40c89a7b86112ec6401fd8f06ab5251d1a68fe" kind="enumvalue"><name>Hungarian</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ab6e4765a967d9dc6f381992efce40c89a78463a384a5aa4fad5fa73e2f506ecfc" kind="enumvalue"><name>English</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa472de3f279941ba19162a135b8e92d1" kind="enum"><name>ProgrammingLanguage</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa472de3f279941ba19162a135b8e92d1a83925001a044cdfe0c64e9a44345b66d" kind="enumvalue"><name>CSharp</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa472de3f279941ba19162a135b8e92d1ad52387880e1ea22817a72d3759213819" kind="enumvalue"><name>Java</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa472de3f279941ba19162a135b8e92d1adb4a39bf594c9fbcf318dd39ea19fed3" kind="enumvalue"><name>Cpp</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1" kind="enum"><name>CompoundKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a9bd81329febf6efe22788e03ddeaf0af" kind="enumvalue"><name>Class</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a886ef5dbd655a6c97726d7091c6b173e" kind="enumvalue"><name>Struct</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1aaef12e903e606a4895a16b393bfdec8c" kind="enumvalue"><name>Union</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a3c1aac82863ed9e5a9aca8ce687f711d" kind="enumvalue"><name>Interface</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1acf20423ed48998082c20099488a0917c" kind="enumvalue"><name>Enum</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a888a77f5ac0748b6c8001822417df8b6" kind="enumvalue"><name>Protocol</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a3adbdb3ac060038aa0e6e6c138ef9873" kind="enumvalue"><name>Category</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1ab0d4998a26f5b5742ad38c4af8817e32" kind="enumvalue"><name>Exception</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a0b27918290ff5323bea1e3b78a9cf04e" kind="enumvalue"><name>File</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1ab3ba0fe968ce39dcfc6fe8cc0f1b02da" kind="enumvalue"><name>Namespace</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a03937134cedab9078be39a77ee3a48a0" kind="enumvalue"><name>Group</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a193cfc9be3b995831c6af2fea6650e60" kind="enumvalue"><name>Page</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a0a52730597fb4ffa01fc117d9e71e3a9" kind="enumvalue"><name>Example</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aae490e51e07ef6e5540a2f2c04fccbb1a3c4e6dbf3e1df93a734d9959bac9ee94" kind="enumvalue"><name>Dir</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3" kind="enum"><name>MemberKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a9312cc2f02f42764c70c3713f80fe219" kind="enumvalue"><name>Define</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a5ad234cb2cde4266195252a23ca7d84e" kind="enumvalue"><name>Property</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3aa4ecfc70574394990cf17bd83df499f7" kind="enumvalue"><name>Event</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a47c14840d8e15331fa420b9b2f757cd9" kind="enumvalue"><name>Variable</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3ad48e0d4689ad692f867af172e92b7e97" kind="enumvalue"><name>TypeDef</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a29785ae7827639b31b629cc7f9c150e0" kind="enumvalue"><name>EnumValue</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a86408593c34af77fdd90df932f8b5261" kind="enumvalue"><name>Function</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a085fea7abdc5d904fe69a3081efd7398" kind="enumvalue"><name>Signal</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a4ca8a95edcb45a890a2efa4c12cd3c61" kind="enumvalue"><name>Prototype</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a930a91848917f92cf7e2f8d744fa4177" kind="enumvalue"><name>Friend</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3ac73be3410826f90df7d806a711a47efd" kind="enumvalue"><name>Dcop</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aaff72777d8ab337bb7e1d0e3727171b3a9234cc57c43f272b55a94b0069fe62d1" kind="enumvalue"><name>Slot</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040" kind="enum"><name>ProtectionKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040a3d067bedfe2f4677470dd6ccf64d05ed" kind="enumvalue"><name>Public</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040a56f0605c9795b173abd2e34fab7fc164" kind="enumvalue"><name>Protected</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040a47f9082fc380ca62d531096aa1d110f1" kind="enumvalue"><name>Private</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a13e97a0c26548dff4f60343d779c8040a209802fb858e2c83205027dbbb5d9e6c" kind="enumvalue"><name>Package</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626f" kind="enum"><name>VirtualKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626fad2c1d5c91493be25d3edb933c4a9262f" kind="enumvalue"><name>NonVirtual</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626fa615e6f9baca5553d44683a098d342b70" kind="enumvalue"><name>Virtual</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a6be810f460d7a11919f852af4dcd626fae353dbe42c8654f33588d4da0b517469" kind="enumvalue"><name>Abstract</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205" kind="enum"><name>DoxHighlightKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a0be8406951cdfda82f00f79328cf4efc" kind="enumvalue"><name>Comment</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a960b44c579bc2f6818d2daaf9e4c16f0" kind="enumvalue"><name>Normal</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205aee2cf0b15cefb66dee3a04bb3cd59a0f" kind="enumvalue"><name>Preprocessor</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a220f3d3750583b9db48568a0b5b9a5f1" kind="enumvalue"><name>Keyword</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a518f2f556dbcd4a9b514f3b6f5f9c5e0" kind="enumvalue"><name>KeywordType</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205af94816a0a83a1c201f547ea04ad6baeb" kind="enumvalue"><name>KeywordFlow</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a7029cff17180550e1214f19dba74a32a" kind="enumvalue"><name>StringLiteral</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a98aa098aa539430844df084df0365205a616b859bc3920670a4509686f20de06e" kind="enumvalue"><name>CharLiteral</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9" kind="enum"><name>DocKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab5a7adde1af5c87d7fd797b6245c2a39" kind="enumvalue"><name>Description</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab5272fc6223db73c6f142bfa552c70f8" kind="enumvalue"><name>Cmd</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ae8a3dc4c26c1bd72eb0859b2a197a501" kind="enumvalue"><name>CmdGroup</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab8ac40eab9b51da960788ecba0c24588" kind="enumvalue"><name>Para</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9aabb8d55dc31470a576c8585913d43765" kind="enumvalue"><name>ParaList</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ae51e08a727173e8719e480316459991e" kind="enumvalue"><name>Markup</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a9dffbf69ffba8bc38bc4e01abf4b1675" kind="enumvalue"><name>Text</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a8e95e84813830072b7516cfaa7dbc1a9" kind="enumvalue"><name>Char</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ace2c8aed9c2fa0cfbed56cbda4d8bf07" kind="enumvalue"><name>Empty</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a02474157438110314438190c16632d45" kind="enumvalue"><name>UrlLink</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9aa34285645af2703a9501db6fc881e5df" kind="enumvalue"><name>Anchor</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a313a6a3d25aa041ee3dc3cbd65d4f22b" kind="enumvalue"><name>Formula</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a63d5049791d9d79d86e9a108b0a999ca" kind="enumvalue"><name>Reference</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4351521286272888a7b5093834949f33" kind="enumvalue"><name>IndexEntry</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4ee29ca12c7d126654bd0e5275de6135" kind="enumvalue"><name>List</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab332941182f94d378ce2013a80c61075" kind="enumvalue"><name>ListItem</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a325981dd17610d956d4463c5cbf62390" kind="enumvalue"><name>Sect</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a8b73831904852845be75d7fa1321e3e2" kind="enumvalue"><name>SimpleSect</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4687fb4676018516efe4c759df63acdb" kind="enumvalue"><name>SimpleSectItem</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9ab78a3223503896721cca1303f776159b" kind="enumvalue"><name>Title</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a272ba7d164aa836995be6319a698be84" kind="enumvalue"><name>Caption</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a0101316665d4f82adaa26d86fbbb2d6e" kind="enumvalue"><name>Heading</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a214554bc78f178177c21f5576efa7d2a" kind="enumvalue"><name>VariableList</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a51c45b795d5d18a3e4e0c37e8b20a141" kind="enumvalue"><name>Table</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9abe53a0541a6d36f6ecb879fa2c584b08" kind="enumvalue"><name>Image</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a24b282564a61c1885448580755c4408b" kind="enumvalue"><name>DotFile</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a857eabf9a639509040bb2b86925cae3b" kind="enumvalue"><name>TocList</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a7fcd495ac192508fb9b0a6d09d9f48af" kind="enumvalue"><name>TocItem</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a4994a8ffeba4ac3140beb89e8d41f174" kind="enumvalue"><name>Language</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a1ead2a1f0aa1686d20f3697bce2e94d9" kind="enumvalue"><name>ParamList</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9aba6e40007beabe5acc27819a29b589ab" kind="enumvalue"><name>XRefSec</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a5fb63579fc981698f97d55bfecb213ea" kind="enumvalue"><name>Copy</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ae0bccf4f49a76db084c1c316e5954ec9a337311fa1a232ef73ae2dc6c8e5ca5c8" kind="enumvalue"><name>BlockQuote</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183f" kind="enum"><name>DocMarkupKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa114c3050111d8b8ddd830b99ccebd246" kind="enumvalue"><name>Bold</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa43268d52aef2fbd0ba6661b51da1001a" kind="enumvalue"><name>Emphasis</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa0f3e8b2d58097e48c8b7c563a39e1b8d" kind="enumvalue"><name>ComputerOutput</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fab77dd152c7c8f548139fff358b4bcbfa" kind="enumvalue"><name>SubScript</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fac8e556630b23f59e22ca247ba837027d" kind="enumvalue"><name>SuperScript</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa4f1f6016fc9f3f2353c0cc7c67b292bd" kind="enumvalue"><name>Center</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fa2660064e68655415da2628c2ae2f7592" kind="enumvalue"><name>Small</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1aa3643086f24cd1d8ba619a3b0dbb183fab4d91030e8bedef67605e32731df7c31" kind="enumvalue"><name>Preformatted</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2" kind="enum"><name>DocTextKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a4cd8413207629a963225f4314b53adcd" kind="enumvalue"><name>Plain</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a9125d6de13eac2095f2dfc0d817bba12" kind="enumvalue"><name>Verbatim</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a454cbeea19c0c751711204565ee5001c" kind="enumvalue"><name>HtmlOnly</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a879a8ed64e5e0c9af0908b7386f351a8" kind="enumvalue"><name>ManOnly</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2af9c5c67798dd96ac3299ad1be83252a5" kind="enumvalue"><name>XmlOnly</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2ac042ed671e6ae3c82e0c976fb0bb9153" kind="enumvalue"><name>RtfOnly</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2a5dc84bc7c20b95d3b35a8aeccc1ffa41" kind="enumvalue"><name>LatexOnly</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a3ea05a36a124627c06555e31c2a884c2aaf6c6cf7a454b4ef4a850ac4d960a2cc" kind="enumvalue"><name>Dot</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35" kind="enum"><name>DocCharKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a2422db5c30ae25931668ca0d14ceaa54" kind="enumvalue"><name>Umlaut</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a61a2c3bd1a5ca49353ab5fcbf78c68a8" kind="enumvalue"><name>Acute</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35aed24ff8971b1fa43a1efbb386618ce35" kind="enumvalue"><name>Grave</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a08976095181451b11a36c321a2d7c96b" kind="enumvalue"><name>Circ</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a358cfe58715d680d9ab09f82e4010cbc" kind="enumvalue"><name>Slash</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a77a804418d76dc407383a618b60853ab" kind="enumvalue"><name>Tilde</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35a9e3f3a7e242ff57b038edb815c868c3c" kind="enumvalue"><name>Cedil</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a0c5911a87d97bd4d61eaf7e0d5fe2d35ad4db177c94738b72bf9ce61e988ab1f1" kind="enumvalue"><name>Ring</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7" kind="enum"><name>DocEmptyKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a04e54acbb8765a5695b7613cb1a17665" kind="enumvalue"><name>simplesectsep</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a7fa1b685c847251e0527742b59b31ada" kind="enumvalue"><name>linebreak</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ab574250935db3a8ae1c50fea69c9ef3b" kind="enumvalue"><name>hruler</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a12cba3ee81cf4a793796a51b6327c678" kind="enumvalue"><name>copy</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a9ebf51b8e23b419c371e5ebf58d49c71" kind="enumvalue"><name>trademark</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aa2b8ed9c305b8ea86116b603cca78a97" kind="enumvalue"><name>registered</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad2dc2b7362f5989dfa104505710bd2e8" kind="enumvalue"><name>lsquo</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a7a5ec04cbe499d3f84cde5decfe33620" kind="enumvalue"><name>rsquo</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ade9833c3b6907335d6fa8a4ee30266d9" kind="enumvalue"><name>ldquo</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a64c59949a198c53eb96a08187ca66880" kind="enumvalue"><name>rdquo</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a359f7ae1bf74d7a44d4218ac7686c3fb" kind="enumvalue"><name>ndash</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a350c829a6af279898f0c0ca4c599991d" kind="enumvalue"><name>mdash</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a84f7e02d73961232472bde83196f9084" kind="enumvalue"><name>szlig</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a7e15a2f5238d0e23d0ae698495feb64b" kind="enumvalue"><name>nonbreakablespace</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a93b044a94f2831bac55e94a51f26c04e" kind="enumvalue"><name>aelig</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ab61a6417b08bcf8ba0567601af7fb709" kind="enumvalue"><name>AElig</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad9cdb0f6e0d556347c10a8695545a4b5" kind="enumvalue"><name>Gamma</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7adb1f4ab5845def61a83d5df13e0c2397" kind="enumvalue"><name>Delta</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad21c855a168b8f09d1ebb1bc596be927" kind="enumvalue"><name>Theta</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a04a7da3c5b04cad85da1eebb92315b8b" kind="enumvalue"><name>Lambda</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a5c24affd3aba4a2851c3b1bf42b9d3fd" kind="enumvalue"><name>Xi</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a127125672f1e85d1e676d4394d24e066" kind="enumvalue"><name>Pi</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a827faff1bdcfe446237c4d6289abce66" kind="enumvalue"><name>Sigma</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aefbc93c5b70630ff04c9b7ef15cfdc02" kind="enumvalue"><name>Upsilon</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a5a82bece4586ad7cb17ba739a2db7f67" kind="enumvalue"><name>Phi</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ace1cb2d98c19288ad0fc47cbc07a7a6c" kind="enumvalue"><name>Psi</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a39e25ac3d737c46452305eefe324372c" kind="enumvalue"><name>Omega</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a2c1743a391305fbf367df8e4f069f9f9" kind="enumvalue"><name>alpha</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a987bcab01b929eb2c07877b224215c92" kind="enumvalue"><name>beta</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a05b048d7242cb7b8b57cfa3b1d65ecea" kind="enumvalue"><name>gamma</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a63bcabf86a9a991864777c631c5b7617" kind="enumvalue"><name>delta</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a3cd38ab30e1e7002d239dd1a75a6dfa8" kind="enumvalue"><name>epsilon</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ae26026b73cdc3b59012c318ba26b5518" kind="enumvalue"><name>zeta</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aeba021d91b44a97dec2588bbea58a447" kind="enumvalue"><name>eta</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a61a74be60d291cc4678ab46cc1cdaf91" kind="enumvalue"><name>theta</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a57e5fba4ce5b4cb9ffd595beb63e7389" kind="enumvalue"><name>iota</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afe1480ff8b6ed22e7723cda0145ef23d" kind="enumvalue"><name>kappa</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a945f3fc449518a73b9f5f32868db466c" kind="enumvalue"><name>lambda</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a89aa4b196b48c8a13a6549bb1eaebd80" kind="enumvalue"><name>mu</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a0288bde0c2d593f2b5766f61b826a650" kind="enumvalue"><name>nu</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad88468fb83a6d5675fcd2bdcb8fa57bf" kind="enumvalue"><name>xi</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a72ab8af56bddab33b269c5964b26620a" kind="enumvalue"><name>pi</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a843a28dfdc5b2d5463ba2a7b83fdec7c" kind="enumvalue"><name>rho</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ae773536932c61c7ee11944cefde49e30" kind="enumvalue"><name>sigma</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a4580c2740ab6d9222ef06d7c6865583e" kind="enumvalue"><name>tau</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a36ea51c3032c76487abc87f239bffead" kind="enumvalue"><name>upsilon</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7acb7a24bb7528f934b841b34c3a73e0c7" kind="enumvalue"><name>phi</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a1e6086b705c7161eeb93a8b249a5ca7c" kind="enumvalue"><name>chi</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a6115baa419ebbdc15cb267c7bec45d26" kind="enumvalue"><name>psi</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ac6d6bd7ebf806f43c76acc3681703b81" kind="enumvalue"><name>omega</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a2149d7b5f88fa8b7b5e8236f15ca679e" kind="enumvalue"><name>sigmaf</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a590f8e60c02b64a7ae3a064dd47c8869" kind="enumvalue"><name>sect</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a3e9eb617073a0597ec590d7bd0f2a407" kind="enumvalue"><name>deg</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a10f12151ef41361b91ee3fc1065e14d2" kind="enumvalue"><name>prime</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7abe7938e9a87618a98a7b6b47e12aa44b" kind="enumvalue"><name>Prime</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a6d5c88753c87098973c8e945604d1ce1" kind="enumvalue"><name>infin</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aa2e4822a98337283e39f7b60acf85ec9" kind="enumvalue"><name>empty</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a793f33831b72142b115b2e29f38921c4" kind="enumvalue"><name>plusmn</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7af2b798f672d4b42c0359ced11d4f10cd" kind="enumvalue"><name>times</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7adabe6e597b70e5760826aea1dcc564f7" kind="enumvalue"><name>minus</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad055878b0f9a581664b53d615ff0ec94" kind="enumvalue"><name>sdot</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7af4c9385f1902f7334b00b9b4ecd164de" kind="enumvalue"><name>part</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7aa40b9db0a4ab344566e5d1a4c04d8175" kind="enumvalue"><name>nabla</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a88195b2144d1ae920738c1194432f826" kind="enumvalue"><name>radic</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a077c307e128497a814f44395db42f9d1" kind="enumvalue"><name>perp</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a1d623b89683f9ce4e074de1676d12416" kind="enumvalue"><name>sum</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afa7153f7ed1cb6c0fcf2ffb2fac21748" kind="enumvalue"><name>int</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad6e4a9b6646c62fc48baa6dd6150d1f7" kind="enumvalue"><name>prod</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ae9064b74d28acc053231170bb8c858b3" kind="enumvalue"><name>sim</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7af71777de47ae31462ee31723d33c32b0" kind="enumvalue"><name>asymp</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad4f917633649a3c47c7ab917fa990146" kind="enumvalue"><name>ne</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7abbfd8f991129b1d05c8ce817449307c7" kind="enumvalue"><name>equiv</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a23a5b8ab834cb5140fa6665622eb6417" kind="enumvalue"><name>prop</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ad9180594744f870aeefb086982e980bb" kind="enumvalue"><name>le</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a0ba64a0dea00947916dfb6a66866e1ca" kind="enumvalue"><name>ge</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a53b7027347eeaea905d664888fdfe40f" kind="enumvalue"><name>larr</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afc859493bfd7387faa9a9ea032fa55cf" kind="enumvalue"><name>rarr</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a0d9959e8150fc305808d8838e888b622" kind="enumvalue"><name>isin</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a935f754ecc68ca688f61c154c404ed06" kind="enumvalue"><name>notin</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7a64538574dea653366b5e0f3cc38042d8" kind="enumvalue"><name>lceil</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7ab25d6f7fd87f0075c1841cf64f4902f1" kind="enumvalue"><name>rceil</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afd5848a957d6b2749418163ca977ddd5" kind="enumvalue"><name>lfloor</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4a8017aa254d1d05b03db5132b7dd3a7afc071abb127a6e4ffdb7d263ca8a959d" kind="enumvalue"><name>rfloor</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1adb41ca18779eed53175de394c3d2bb67" kind="enum"><name>DocRefKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1adb41ca18779eed53175de394c3d2bb67a26154ea007c65f860de5333a555a56cf" kind="enumvalue"><name>Compound</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1adb41ca18779eed53175de394c3d2bb67a858ba4765e53c712ef672a9570474b1d" kind="enumvalue"><name>Member</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555d" kind="enum"><name>DocSimpleSectKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da4ff2e716a7d06ce5274b4090b39abad3" kind="enumvalue"><name>See</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da988fd738de9c6d177440c5dcf69e73ce" kind="enumvalue"><name>Return</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555daa517747c3d12f99244ae598910d979c5" kind="enumvalue"><name>Author</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da02684cc6b6ea1811a064f475a5fd1d18" kind="enumvalue"><name>Authors</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da34b6cd75171affba6957e308dcbd92be" kind="enumvalue"><name>Version</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da38c50b731f70abc42c8baa3e7399b413" kind="enumvalue"><name>Since</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da44749712dbec183e983dcd78a7736c41" kind="enumvalue"><name>Date</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da3b0649c72650c313a357338dcdfb64ec" kind="enumvalue"><name>Note</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da0eaadb4fcb48a0a0ed7bc9868be9fbaa" kind="enumvalue"><name>Warning</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555dafb55a965b77791b31ffd2bb548f71080" kind="enumvalue"><name>Pre</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da03d947a2158373c3b9d74325850cb8b9" kind="enumvalue"><name>Post</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da6016a2b341113bf496b719905398ecd2" kind="enumvalue"><name>Copyright</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da19c8367b361b73364ac49ad35e5199ab" kind="enumvalue"><name>Invariant</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da91921ada405fd6ba65dff028df047cb6" kind="enumvalue"><name>Remark</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555da2aa97e44cace7cb882c9dcba32940f8f" kind="enumvalue"><name>Attention</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555dacb6c0944022191538e11ec9cbda20ab5" kind="enumvalue"><name>Par</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1afbf354018df4b51c4b26a5cd7182555daa1e7b02dcb26fa3eb3e5f21ccee10233" kind="enumvalue"><name>Rcs</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ab21398cff938858e1d9ebdc672403015" kind="enum"><name>DocImageKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ab21398cff938858e1d9ebdc672403015a3135f4019bee015e2d1ae7f77f9f3f64" kind="enumvalue"><name>Html</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ab21398cff938858e1d9ebdc672403015a08e3b0db5b64cd1da774369814896b78" kind="enumvalue"><name>Latex</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1ab21398cff938858e1d9ebdc672403015aca9a0e8f64d43d81dd7b0225ea1b19c5" kind="enumvalue"><name>Rtf</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15" kind="enum"><name>DocParamListKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15a83f499a540b1323009c200d6f8cc9396" kind="enumvalue"><name>Parameter</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15aef075575efe2059289041f1118338f18" kind="enumvalue"><name>ReturnValue</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15ab0d4998a26f5b5742ad38c4af8817e32" kind="enumvalue"><name>Exception</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a386ec98ace7dcc510b3dc1035c7bfb15a26a8c112add071583da644dba9dd1ba2" kind="enumvalue"><name>TemplateParam</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a1884fb8c74d10c2aa19068ac530df736" kind="enum"><name>DocParamDir</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a1884fb8c74d10c2aa19068ac530df736aefeb369cccbd560588a756610865664c" kind="enumvalue"><name>In</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a1884fb8c74d10c2aa19068ac530df736a7c147cda9e49590f6abe83d118b7353b" kind="enumvalue"><name>Out</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a1884fb8c74d10c2aa19068ac530df736a47a54d9da8952a3980d27488b00a21c1" kind="enumvalue"><name>InOut</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9" kind="enum"><name>DocumentMarkupKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a114c3050111d8b8ddd830b99ccebd246" kind="enumvalue"><name>Bold</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a43268d52aef2fbd0ba6661b51da1001a" kind="enumvalue"><name>Emphasis</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a0f3e8b2d58097e48c8b7c563a39e1b8d" kind="enumvalue"><name>ComputerOutput</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9ab77dd152c7c8f548139fff358b4bcbfa" kind="enumvalue"><name>SubScript</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9ac8e556630b23f59e22ca247ba837027d" kind="enumvalue"><name>SuperScript</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a4f1f6016fc9f3f2353c0cc7c67b292bd" kind="enumvalue"><name>Center</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9a2660064e68655415da2628c2ae2f7592" kind="enumvalue"><name>Small</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_documentation_1a4eed17ca0ed06a8b62b953b063f857d9ab4d91030e8bedef67605e32731df7c31" kind="enumvalue"><name>Preformatted</name></member>
+  </compound>
+  <compound refid="namespace_software_engineering_tools_1_1_testing" kind="namespace"><name>SoftwareEngineeringTools::Testing</name>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13a" kind="enum"><name>TestCommandKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13aa6adf97f83acf6453d4a6a4b1070f3754" kind="enumvalue"><name>None</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13aa5d5b78699e57104f2fa03bbdf7b9197b" kind="enumvalue"><name>Set</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13aac3755e61202abd74da5885d2e9c9160e" kind="enumvalue"><name>Call</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1aa56e9d89003821b285e6eac88565f13aa060bf2d587991d8f090a1309b285291c" kind="enumvalue"><name>Check</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2" kind="enum"><name>TestResultKind</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2a6adf97f83acf6453d4a6a4b1070f3754" kind="enumvalue"><name>None</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2aa0d0628f6b4e4d78d2ffef4d4d1c4b15" kind="enumvalue"><name>Passed</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2ad7c8c85bf79bbe1b7188497c32c3b0ca" kind="enumvalue"><name>Failed</name></member>
+    <member refid="namespace_software_engineering_tools_1_1_testing_1a8aff450bdbdae45d2f8a72713e102ba2a902b0d55fddef6f8d651fe1035b7d4bd" kind="enumvalue"><name>Error</name></member>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_compiler_services" kind="namespace"><name>System::Runtime::CompilerServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_interop_services" kind="namespace"><name>System::Runtime::InteropServices</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization" kind="namespace"><name>System::Runtime::Serialization</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_threading_1_1_tasks" kind="namespace"><name>System::Threading::Tasks</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml" kind="namespace"><name>System::Xml</name>
+  </compound>
+  <compound refid="namespace_system_1_1_xml_1_1_linq" kind="namespace"><name>System::Xml::Linq</name>
+  </compound>
+  <compound refid="_api_doc_config_8cs" kind="file"><name>ApiDocConfig.cs</name>
+  </compound>
+  <compound refid="_api_doc_generator_8cs" kind="file"><name>ApiDocGenerator.cs</name>
+  </compound>
+  <compound refid="_api_doc_template_8cs" kind="file"><name>ApiDocTemplate.cs</name>
+  </compound>
+  <compound refid="_doxygen_8cs" kind="file"><name>Doxygen.cs</name>
+  </compound>
+  <compound refid="_doxygen_parser_8cs" kind="file"><name>DoxygenParser.cs</name>
+  </compound>
+  <compound refid="_api_doc_lib_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_document_generator_lib_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_software_engineering_tools_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_testing_lib_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_test_report_doc_lib_2obj_2_debug_2_temporary_generated_file__036_c0_b5_b-1481-4323-8_d20-8_f5_a_d_c_b23_d92_8cs" kind="file"><name>TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs</name>
+  </compound>
+  <compound refid="_api_doc_lib_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_document_generator_lib_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_software_engineering_tools_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_testing_lib_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_test_report_doc_lib_2obj_2_debug_2_temporary_generated_file__5937a670-0e60-4077-877b-f7221da3dda1_8cs" kind="file"><name>TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs</name>
+  </compound>
+  <compound refid="_api_doc_lib_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_document_generator_lib_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_software_engineering_tools_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_testing_lib_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_test_report_doc_lib_2obj_2_debug_2_temporary_generated_file___e7_a71_f73-0_f8_d-4_b9_b-_b56_e-8_e70_b10_b_c5_d3_8cs" kind="file"><name>TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs</name>
+  </compound>
+  <compound refid="_api_doc_lib_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_document_generator_lib_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_software_engineering_tools_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_testing_lib_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_test_report_doc_lib_2_properties_2_assembly_info_8cs" kind="file"><name>AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_document_exception_8cs" kind="file"><name>DocumentException.cs</name>
+  </compound>
+  <compound refid="_document_generator_8cs" kind="file"><name>DocumentGenerator.cs</name>
+  </compound>
+  <compound refid="_latex_generator_8cs" kind="file"><name>LatexGenerator.cs</name>
+  </compound>
+  <compound refid="_word_generator_8cs" kind="file"><name>WordGenerator.cs</name>
+  </compound>
+  <compound refid="dynsections_8js" kind="file"><name>dynsections.js</name>
+    <member refid="dynsections_8js_1a1922c462474df7dfd18741c961d59a25" kind="function"><name>toggleVisibility</name></member>
+    <member refid="dynsections_8js_1a8f7493ad859d4fbf2523917511ee7177" kind="function"><name>updateStripes</name></member>
+    <member refid="dynsections_8js_1a19f577cc1ba571396a85bb1f48bf4df2" kind="function"><name>toggleLevel</name></member>
+    <member refid="dynsections_8js_1af244da4527af2d845dca04f5656376cd" kind="function"><name>toggleFolder</name></member>
+    <member refid="dynsections_8js_1ac057b640b17ff32af11ced151c9305b4" kind="function"><name>toggleInherit</name></member>
+  </compound>
+  <compound refid="jquery_8js" kind="file"><name>jquery.js</name>
+    <member refid="jquery_8js_1a1d6558865876e1c8cca029fce41a4bdb" kind="variable"><name>bb</name></member>
+    <member refid="jquery_8js_1a38ee4c0b5f4fe2a18d0c783af540d253" kind="variable"><name>L</name></member>
+    <member refid="jquery_8js_1aa4026ad5544b958e54ce5e106fa1c805" kind="variable"><name>b</name></member>
+    <member refid="jquery_8js_1a4fd8ddfab07c8d7c7cae0ab0e052cad3" kind="variable"><name>au</name></member>
+    <member refid="jquery_8js_1a89ad527fcd82c01ebb587332f5b4fcd4" kind="variable"><name>css</name></member>
+    <member refid="jquery_8js_1a88b21f8ba3af86d6981b1da520ece33b" kind="variable"><name>curCSS</name></member>
+    <member refid="jquery_8js_1adc18d83abfd9f87d396e8fd6b6ac0fe1" kind="variable"><name>Z</name></member>
+    <member refid="jquery_8js_1ab26645c014aa005ecedef329ecf58c99" kind="variable"><name>k</name></member>
+    <member refid="jquery_8js_1a6ddf393cc7f9a8828e197bb0d9916c44" kind="variable"><name>ap</name></member>
+    <member refid="jquery_8js_1ae77642f8ef73fb9c20c2a737d956acda" kind="variable"><name>bs</name></member>
+    <member refid="jquery_8js_1af6ee77c71b2c89bdb365145ac5ad1219" kind="variable"><name>bq</name></member>
+    <member refid="jquery_8js_1ad223f5fba68c41c1236671ac5c5b0fcb" kind="variable"><name>aD</name></member>
+    <member refid="jquery_8js_1ac87125cdee1a5e57da4ef619af49bc7d" kind="variable"><name>aZ</name></member>
+    <member refid="jquery_8js_1a8cc6111a5def3ea889157d13fb9a9672" kind="variable"><name>aM</name></member>
+    <member refid="jquery_8js_1a79eb58dc6cdf0aef563d5dc1ded27df5" kind="variable"><name>aQ</name></member>
+    <member refid="jquery_8js_1abce695e0af988ece0826d9ad59b8160d" kind="variable"><name>c</name></member>
+    <member refid="jquery_8js_1aa3ec85d56639a2571aeff4d7e06f1190" kind="variable"><name>prototype</name></member>
+    <member refid="jquery_8js_1a8b88915d3d3a06e98248a89807b077fa" kind="variable"><name>V</name></member>
+    <member refid="jquery_8js_1a96709ee617c39629621377849b5e0a7f" kind="variable"><name>ad</name></member>
+    <member refid="jquery_8js_1a0544c3fe466e421738dae463968b70ba" kind="variable"><name>else</name></member>
+    <member refid="jquery_8js_1aa676d9980e4aff2d9210b4c8e0e1dad9" kind="variable"><name>jQuery</name></member>
+    <member refid="jquery_8js_1a04a8a2bbfa9c15500892b8e5033d625b" kind="variable"><name>window</name></member>
+    <member refid="jquery_8js_1ad0188a1a0e382f892522cfb7dafcc937" kind="function"><name>extend</name></member>
+    <member refid="jquery_8js_1a871ff39db627c54c710a3e9909b8234c" kind="function"><name>each</name></member>
+    <member refid="jquery_8js_1a9db6d45a025ad692282fe23e69eeba43" kind="function"><name>if</name></member>
+    <member refid="jquery_8js_1a2fa551895933fae935a0a6b87282241d" kind="function"><name>b</name></member>
+    <member refid="jquery_8js_1a30d3d2cd5b567c9f31b2aa30b9cb3bb8" kind="function"><name>if</name></member>
+    <member refid="jquery_8js_1a2c54bd8ed7482e89d19331ba61fe221c" kind="function"><name>if</name></member>
+    <member refid="jquery_8js_1a2335e57f79b6acfb6de59c235dc8a83e" kind="function"><name>p</name></member>
+    <member refid="jquery_8js_1a42cbfadee2b4749e8f699ea8d745a0e4" kind="function"><name>if</name></member>
+    <member refid="jquery_8js_1a6fc9115e5c9c910cae480abf0a8c7ae3" kind="function"><name>bh</name></member>
+    <member refid="jquery_8js_1a31b1c836ab707421c59d8f31b49a8f68" kind="function"><name>at</name></member>
+    <member refid="jquery_8js_1ab5b2b69c05d6a629ddd1deebef38735e" kind="function"><name>a0</name></member>
+    <member refid="jquery_8js_1a32214c73aa06d5951f5321466df68ad0" kind="function"><name>each</name></member>
+    <member refid="jquery_8js_1aa6142183da6ef351faf36761e8a8835b" kind="function"><name>extend</name></member>
+    <member refid="jquery_8js_1a4c3eadaa5164016d2c340d495fc6e55e" kind="function"><name>x</name></member>
+    <member refid="jquery_8js_1ad9fda9e3432e66926c2578b06f13525f" kind="function"><name>if</name></member>
+    <member refid="jquery_8js_1a7d370833f2145fc5f6c371e98d754eb4" kind="function"><name>aK</name></member>
+    <member refid="jquery_8js_1ab5582cce20b35070b73869356a852365" kind="function"><name>if</name></member>
+  </compound>
+  <compound refid="all__0_8js" kind="file"><name>all_0.js</name>
+    <member refid="all__0_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__1_8js" kind="file"><name>all_1.js</name>
+    <member refid="all__1_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__2_8js" kind="file"><name>all_2.js</name>
+    <member refid="all__2_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__3_8js" kind="file"><name>all_3.js</name>
+    <member refid="all__3_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__4_8js" kind="file"><name>all_4.js</name>
+    <member refid="all__4_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__5_8js" kind="file"><name>all_5.js</name>
+    <member refid="all__5_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__6_8js" kind="file"><name>all_6.js</name>
+    <member refid="all__6_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__7_8js" kind="file"><name>all_7.js</name>
+    <member refid="all__7_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__8_8js" kind="file"><name>all_8.js</name>
+    <member refid="all__8_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__9_8js" kind="file"><name>all_9.js</name>
+    <member refid="all__9_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__a_8js" kind="file"><name>all_a.js</name>
+    <member refid="all__a_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__b_8js" kind="file"><name>all_b.js</name>
+    <member refid="all__b_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__c_8js" kind="file"><name>all_c.js</name>
+    <member refid="all__c_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__d_8js" kind="file"><name>all_d.js</name>
+    <member refid="all__d_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="all__e_8js" kind="file"><name>all_e.js</name>
+    <member refid="all__e_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__0_8js" kind="file"><name>classes_0.js</name>
+    <member refid="classes__0_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__1_8js" kind="file"><name>classes_1.js</name>
+    <member refid="classes__1_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__2_8js" kind="file"><name>classes_2.js</name>
+    <member refid="classes__2_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__3_8js" kind="file"><name>classes_3.js</name>
+    <member refid="classes__3_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__4_8js" kind="file"><name>classes_4.js</name>
+    <member refid="classes__4_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__5_8js" kind="file"><name>classes_5.js</name>
+    <member refid="classes__5_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__6_8js" kind="file"><name>classes_6.js</name>
+    <member refid="classes__6_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__7_8js" kind="file"><name>classes_7.js</name>
+    <member refid="classes__7_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__8_8js" kind="file"><name>classes_8.js</name>
+    <member refid="classes__8_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__9_8js" kind="file"><name>classes_9.js</name>
+    <member refid="classes__9_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__a_8js" kind="file"><name>classes_a.js</name>
+    <member refid="classes__a_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__b_8js" kind="file"><name>classes_b.js</name>
+    <member refid="classes__b_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__c_8js" kind="file"><name>classes_c.js</name>
+    <member refid="classes__c_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__d_8js" kind="file"><name>classes_d.js</name>
+    <member refid="classes__d_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="classes__e_8js" kind="file"><name>classes_e.js</name>
+    <member refid="classes__e_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="namespaces__0_8js" kind="file"><name>namespaces_0.js</name>
+    <member refid="namespaces__0_8js_1ad01a7523f103d6242ef9b0451861231e" kind="variable"><name>searchData</name></member>
+  </compound>
+  <compound refid="search_8js" kind="file"><name>search.js</name>
+    <member refid="search_8js_1a6250af3c9b54dee6efc5f55f40c78126" kind="variable"><name>indexSectionsWithContent</name></member>
+    <member refid="search_8js_1a77149ceed055c6c6ce40973b5bdc19ad" kind="variable"><name>indexSectionNames</name></member>
+    <member refid="search_8js_1a196a29bd5a5ee7cd5b485e0753a49e57" kind="function"><name>convertToId</name></member>
+    <member refid="search_8js_1a76d24aea0009f892f8ccc31d941c0a2b" kind="function"><name>getXPos</name></member>
+    <member refid="search_8js_1a8d7b405228661d7b6216b6925d2b8a69" kind="function"><name>getYPos</name></member>
+    <member refid="search_8js_1a52066106482f8136aa9e0ec859e8188f" kind="function"><name>SearchBox</name></member>
+    <member refid="search_8js_1a9189b9f7a32b6bc78240f40348f7fe03" kind="function"><name>SearchResults</name></member>
+    <member refid="search_8js_1a98192fa2929bb8e4b0a890a4909ab9b2" kind="function"><name>setKeyActions</name></member>
+    <member refid="search_8js_1a499422fc054a5278ae32801ec0082c56" kind="function"><name>setClassAttr</name></member>
+    <member refid="search_8js_1a6b2c651120de3ed1dcf0d85341d51895" kind="function"><name>createResults</name></member>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_test_results_8cs" kind="file"><name>TestResults.cs</name>
+  </compound>
+  <compound refid="_test_report_doc_generator_8cs" kind="file"><name>TestReportDocGenerator.cs</name>
+  </compound>
+  <compound refid="dir_04a3a2964b5202c6c6124a6d20f634b1" kind="dir"><name>ApiDocLib</name>
+  </compound>
+  <compound refid="dir_8883f50d7a7b8dc5df4889f401983ba1" kind="dir"><name>TestReportDocLib/obj/Debug</name>
+  </compound>
+  <compound refid="dir_d618b3594a8aa59c5b719ff36c6865d7" kind="dir"><name>TestingLib/obj/Debug</name>
+  </compound>
+  <compound refid="dir_1efd4b2fb393e1480149aea093dba9d5" kind="dir"><name>SoftwareEngineeringTools/obj/Debug</name>
+  </compound>
+  <compound refid="dir_0e7969612c5b4a74b80d7aef5b62dec5" kind="dir"><name>DocumentGeneratorLib/obj/Debug</name>
+  </compound>
+  <compound refid="dir_bc617836bde969f85d7d72e9c7055f0e" kind="dir"><name>ApiDocLib/obj/Debug</name>
+  </compound>
+  <compound refid="dir_3ecbb093df845782b472c3f79af92c31" kind="dir"><name>DocumentGeneratorLib</name>
+  </compound>
+  <compound refid="dir_66b7f43bc3859877f259d4e0aad1a8c1" kind="dir"><name>SoftwareEngineeringTools/doxygen</name>
+  </compound>
+  <compound refid="dir_35f968155790319c6012950bf9df1a97" kind="dir"><name>SoftwareEngineeringTools/doxygen/html</name>
+  </compound>
+  <compound refid="dir_212f0f7febfcaca721e2351fcdbf8931" kind="dir"><name>TestReportDocLib/obj</name>
+  </compound>
+  <compound refid="dir_5afe818df48c23c141adcb77ba8e92b4" kind="dir"><name>TestingLib/obj</name>
+  </compound>
+  <compound refid="dir_d235f3ce0b679e6490efd24b146440b8" kind="dir"><name>SoftwareEngineeringTools/obj</name>
+  </compound>
+  <compound refid="dir_3ed93a5f21e16f637c5ab78aa75b924c" kind="dir"><name>DocumentGeneratorLib/obj</name>
+  </compound>
+  <compound refid="dir_0aaf01deeceaed44222e9ea5e9a0bb93" kind="dir"><name>ApiDocLib/obj</name>
+  </compound>
+  <compound refid="dir_bcb2947e8dc27390acbed545f3b41a1c" kind="dir"><name>TestReportDocLib/Properties</name>
+  </compound>
+  <compound refid="dir_24a18558687b9866b33e5c36ca4ed1f9" kind="dir"><name>TestingLib/Properties</name>
+  </compound>
+  <compound refid="dir_937fc5e5080821fd358f38d3c3aa4279" kind="dir"><name>SoftwareEngineeringTools/Properties</name>
+  </compound>
+  <compound refid="dir_0ae392f2db1249f19e0b37021b04257f" kind="dir"><name>DocumentGeneratorLib/Properties</name>
+  </compound>
+  <compound refid="dir_685b153b9a39cbca4bec69e92e5f9b07" kind="dir"><name>ApiDocLib/Properties</name>
+  </compound>
+  <compound refid="dir_b2a4b07cb33391fd7fe24520fded8731" kind="dir"><name>SoftwareEngineeringTools/doxygen/html/search</name>
+  </compound>
+  <compound refid="dir_4264ac5640d968b688813417a793340a" kind="dir"><name>SoftwareEngineeringTools</name>
+  </compound>
+  <compound refid="dir_ce3b594d4a75f6b42a2b2a0c64654e1a" kind="dir"><name>TestingLib</name>
+  </compound>
+  <compound refid="dir_bef933dc04b1eca080cbb39fd2054764" kind="dir"><name>TestReportDocLib</name>
+  </compound>
+</doxygenindex>

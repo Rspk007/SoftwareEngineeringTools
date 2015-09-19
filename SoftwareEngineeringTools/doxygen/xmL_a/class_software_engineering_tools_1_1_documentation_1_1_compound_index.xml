@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_compound_index" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::CompoundIndex</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1a2e6e9b608ac76ec7450c37d64017efa2" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type><ref refid="class_software_engineering_tools_1_1_documentation_1_1_compound" kindref="compound">Compound</ref></type>
+        <definition>Compound SoftwareEngineeringTools.Documentation.CompoundIndex.Compound</definition>
+        <argsstring></argsstring>
+        <name>Compound</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="28" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1a988308311c455fcb89b4b14545300752" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.CompoundIndex.Identifier</definition>
+        <argsstring></argsstring>
+        <name>Identifier</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="24" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1ab39d7c9817b5bc97122b11bc6ad84ab4" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>CompoundKind</type>
+        <definition>CompoundKind SoftwareEngineeringTools.Documentation.CompoundIndex.Kind</definition>
+        <argsstring></argsstring>
+        <name>Kind</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="26" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1a7010d81af3c92ae3595c88c89dc0cd49" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>List&lt; <ref refid="class_software_engineering_tools_1_1_documentation_1_1_member_index" kindref="compound">MemberIndex</ref> &gt;</type>
+        <definition>List&lt;MemberIndex&gt; SoftwareEngineeringTools.Documentation.CompoundIndex.Members</definition>
+        <argsstring></argsstring>
+        <name>Members</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="27" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1af6581fddcc01a475db082ad5ef186d23" prot="public" static="no" readable="no" writable="no" gettable="yes" settable="yes">
+        <type>string</type>
+        <definition>string SoftwareEngineeringTools.Documentation.CompoundIndex.Name</definition>
+        <argsstring></argsstring>
+        <name>Name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="25" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1ae91f253c49b676581d40cbd52f1644e0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.CompoundIndex.CompoundIndex</definition>
+        <argsstring>()</argsstring>
+        <name>CompoundIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="29" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="29" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="380">
+        <label>SoftwareEngineeringTools.Documentation.CompoundIndex</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index"/>
+      </node>
+    </collaborationgraph>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="23" column="1" bodyfile="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="22" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1a2e6e9b608ac76ec7450c37d64017efa2" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::CompoundIndex</scope><name>Compound</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1ae91f253c49b676581d40cbd52f1644e0" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::CompoundIndex</scope><name>CompoundIndex</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1a988308311c455fcb89b4b14545300752" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::CompoundIndex</scope><name>Identifier</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1ab39d7c9817b5bc97122b11bc6ad84ab4" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::CompoundIndex</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1a7010d81af3c92ae3595c88c89dc0cd49" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::CompoundIndex</scope><name>Members</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_index_1af6581fddcc01a475db082ad5ef186d23" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::CompoundIndex</scope><name>Name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

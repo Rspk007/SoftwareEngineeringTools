@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="_api_doc_config_8cs" kind="file">
+    <compoundname>ApiDocConfig.cs</compoundname>
+    <innerclass refid="class_software_engineering_tools_1_1_documentation_1_1_api_doc_config" prot="public">SoftwareEngineeringTools::Documentation::ApiDocConfig</innerclass>
+    <innernamespace refid="namespace_software_engineering_tools_1_1_documentation">SoftwareEngineeringTools::Documentation</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="K:/VersionControl/devtools/trunk/VisualStudio/SoftwareEngineeringTools/ApiDocLib/ApiDocConfig.cs"/>
+  </compounddef>
+</doxygen>

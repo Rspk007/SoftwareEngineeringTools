@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.6">
+  <compounddef id="class_software_engineering_tools_1_1_documentation_1_1_dox_enum" kind="class" prot="public">
+    <compoundname>SoftwareEngineeringTools::Documentation::DoxEnum</compoundname>
+    <basecompoundref refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier" prot="public" virt="non-virtual">SoftwareEngineeringTools.Documentation.DoxClassifier</basecompoundref>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_software_engineering_tools_1_1_documentation_1_1_dox_enum_1a325e606b961be935a8aa4c9c6bd07898" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>SoftwareEngineeringTools.Documentation.DoxEnum.DoxEnum</definition>
+        <argsstring>()</argsstring>
+        <name>DoxEnum</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="204" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="204" bodyend="207"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="329">
+        <label>DoxClassifier</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier"/>
+        <childnode refid="330" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="330">
+        <label>Compound</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_compound"/>
+      </node>
+      <node id="328">
+        <label>SoftwareEngineeringTools.Documentation.DoxEnum</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum"/>
+        <childnode refid="329" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="332">
+        <label>DoxClassifier</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier"/>
+        <childnode refid="333" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="333">
+        <label>Compound</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_compound"/>
+      </node>
+      <node id="331">
+        <label>SoftwareEngineeringTools.Documentation.DoxEnum</label>
+        <link refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum"/>
+        <childnode refid="332" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" line="203" column="1" bodyfile="C:/SoftwareEngineeringTools/ApiDocLib/Doxygen.cs" bodystart="202" bodyend="208"/>
+    <listofallmembers>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1aa8ae1560fc7385af43a9af53bf6fdd0d" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Abstract</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a90983bfa6218a20b61bd00d1a01a1da4" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>BaseClassifiers</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a4bfcfda760068c85256a0723b5ce1921" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>BriefDescription</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a4e7df725cc78a016399778b91e261bd0" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Compound</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a3ac73b2daee8779034ef5b5d72ab6211" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>DerivedClassifiers</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a77ca6711192dfb78bcd2f0b513e74b2e" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Description</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a6d60e2cd975944379eadd31b2dd44570" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>DoxClassifier</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_enum_1a325e606b961be935a8aa4c9c6bd07898" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>DoxEnum</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1acd01681eabb4c098acbe02294894762b" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Final</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a1394e3961d62b46fa478767c2b267776" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Identifier</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a121e4a25f6552af132554ed2e0db9c4f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>InnerClassifiers</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1ae53780f3f48f262502a939871432292f" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Kind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1ae491a737dd879c0665bd81a1273af091" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Location</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a5a190c9e6a45e4e4c9a7b2388f65b7f0" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Members</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1ac03a88be9a7e7a11dd3c12006ae65879" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Name</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a6682b35f8afccbbecd77f504665b1cb7" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>ProgramListing</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a6d87f6a252c40eb3440ac27ec19fe1be" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>ProtectionKind</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1a59444045be582a620f4dd2e549309673" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Sealed</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_dox_classifier_1ad84f20e5051e75adedb2899702c94aaa" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>TemplateParams</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a873e7d81cae2f4cb5c6cca41014cd02d" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>Title</name></member>
+      <member refid="class_software_engineering_tools_1_1_documentation_1_1_compound_1a2450d96253aafa7fd3384b67b1ab01d8" prot="public" virt="non-virtual"><scope>SoftwareEngineeringTools::Documentation::DoxEnum</scope><name>ToString</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

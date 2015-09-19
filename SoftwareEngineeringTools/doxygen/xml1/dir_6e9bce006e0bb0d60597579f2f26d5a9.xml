@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="dir_6e9bce006e0bb0d60597579f2f26d5a9" kind="dir">
+    <compoundname>C:/SoftwareEngineeringTools/SoftwareEngineeringTools/doxygen/html</compoundname>
+    <innerdir refid="dir_45d07c27635eb5813833485c82a24bd6">C:/SoftwareEngineeringTools/SoftwareEngineeringTools/doxygen/html/search</innerdir>
+    <innerfile refid="dynsections_8js">dynsections.js</innerfile>
+    <innerfile refid="jquery_8js">jquery.js</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/SoftwareEngineeringTools/SoftwareEngineeringTools/doxygen/html/"/>
+  </compounddef>
+</doxygen>

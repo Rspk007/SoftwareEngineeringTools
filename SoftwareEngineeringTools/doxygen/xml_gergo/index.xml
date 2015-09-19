@@ -1,0 +1,456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.7">
+  <compound refid="class_geometry_1_1_a_a_b_b" kind="class"><name>Geometry::AABB</name>
+    <member refid="class_geometry_1_1_a_a_b_b_1aa208d421f143ee7d1c3987da538043e0" kind="variable"><name>cornerNear</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1a73dd6c8490ac3e7704472f3d2e9714eb" kind="variable"><name>cornerFar</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1ac9c90479b27ea8d59c674275220a389e" kind="variable"><name>extents</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1abd87d1a03c4fa06e281c83b24a08b8cf" kind="function"><name>AABB</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1a5ad7083826748770cbb479eeef716e62" kind="function"><name>getCorner</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1aa0fa13dd17584cfb58b20ad1c0210a38" kind="function"><name>setCorner</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1afad9994c82c17faf59480d592f84faed" kind="function"><name>getExtents</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1a6335d7a8c9e1cda553d2d73621fcff77" kind="function"><name>operator[]</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1aa4559350d6968f77e8c1d94965770f1e" kind="function"><name>operator[]</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1ab976492875a5b4b96d5953b135f163ba" kind="function"><name>containsPoint</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1a0ed558489fd932d65c18e1fe6ea5d36f" kind="function"><name>fitsPoint</name></member>
+    <member refid="class_geometry_1_1_a_a_b_b_1aae711dcbf18946964b9c42502e9d3377" kind="function"><name>intersect</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_bcc_grid" kind="class"><name>Geometry::BccGrid</name>
+    <member refid="class_geometry_1_1_bcc_grid_1a564dbc30d8aa35bfe9c8d4f3080e6bff" kind="variable"><name>baseCc</name></member>
+    <member refid="class_geometry_1_1_bcc_grid_1a3b4f9de00f6c1bd43ea459473200f137" kind="variable"><name>translatedCc</name></member>
+    <member refid="class_geometry_1_1_bcc_grid_1a454e098d6ce5f7da2d7489b6927a011d" kind="function"><name>BccGrid</name></member>
+    <member refid="class_geometry_1_1_bcc_grid_1a31f75e1d9923ef16f08abfc1fcfa939f" kind="function"><name>setSideLength</name></member>
+    <member refid="class_geometry_1_1_bcc_grid_1ac4cc89dbd0cf8ea48d204b3dda86db72" kind="function"><name>getSideLength</name></member>
+    <member refid="class_geometry_1_1_bcc_grid_1ad4f551157f1aef8e0020c1708e607aed" kind="function"><name>setOrigin</name></member>
+    <member refid="class_geometry_1_1_bcc_grid_1a835c7cb37506f78b00265bdee05795e6" kind="function"><name>getOrigin</name></member>
+    <member refid="class_geometry_1_1_bcc_grid_1a4bbb251dd45b8dab47447f175b8e791c" kind="function"><name>getNearestPoint</name></member>
+    <member refid="class_geometry_1_1_bcc_grid_1a08afd8625c48e19c2f0e14d92eb50167" kind="function"><name>getFirstNeighbourCellVertices</name></member>
+    <member refid="class_geometry_1_1_bcc_grid_1ab4c0f69ae16cd070e5612327aac89159" kind="function"><name>getLerpVertices</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_bounding_volume" kind="class"><name>Geometry::BoundingVolume</name>
+    <member refid="class_geometry_1_1_bounding_volume_1a68b13a7b73dc378f894c8e05b4e0dfd4" kind="function"><name>containsPoint</name></member>
+    <member refid="class_geometry_1_1_bounding_volume_1af76e4d614fde54d8572ff3686b157456" kind="function"><name>fitsPoint</name></member>
+    <member refid="class_geometry_1_1_bounding_volume_1ab7b27cca569f9eae8628dd93e54c2d3e" kind="function"><name>intersect</name></member>
+  </compound>
+  <compound refid="class_visualisation_1_1_camera" kind="class"><name>Visualisation::Camera</name>
+    <member refid="class_visualisation_1_1_camera_1a92c08fdee4c3d7ce4f5180f6222a9a13" kind="variable"><name>position</name></member>
+    <member refid="class_visualisation_1_1_camera_1a638612f355e51566db942352b3d766d3" kind="variable"><name>target</name></member>
+    <member refid="class_visualisation_1_1_camera_1ab9a868c542948837e7c480136ef607a5" kind="variable"><name>up</name></member>
+    <member refid="class_visualisation_1_1_camera_1abe195e06d9db73b3a48108de43801417" kind="variable"><name>w</name></member>
+    <member refid="class_visualisation_1_1_camera_1a45950d62903c61035ae44d3369fa4de6" kind="variable"><name>u</name></member>
+    <member refid="class_visualisation_1_1_camera_1a085dcb77f34a3b67855b945b67193e58" kind="variable"><name>v</name></member>
+    <member refid="class_visualisation_1_1_camera_1a591242bd411b6edc95230b4a50fe29e4" kind="variable"><name>imgPlane</name></member>
+    <member refid="class_visualisation_1_1_camera_1ac643790c550721659e9c65657a946b64" kind="variable"><name>scale</name></member>
+    <member refid="class_visualisation_1_1_camera_1a198510be904c62692e946888a55669b3" kind="function"><name>Camera</name></member>
+    <member refid="class_visualisation_1_1_camera_1ae82c208ee6495d11bd3055cf4db8772a" kind="function"><name>capture</name></member>
+    <member refid="class_visualisation_1_1_camera_1ab7e8c42e2bf86d647287a4f03d91795f" kind="function"><name>getImagePlane</name></member>
+    <member refid="class_visualisation_1_1_camera_1ac59fe71c978d3683f22cbbe25b88fdee" kind="function"><name>setImagePlane</name></member>
+    <member refid="class_visualisation_1_1_camera_1a85e8606eebf3cfd76af7d5ec308152d9" kind="function"><name>getScale</name></member>
+    <member refid="class_visualisation_1_1_camera_1afebb878e948e05d2913a0ec13b9f8b17" kind="function"><name>setScale</name></member>
+    <member refid="class_visualisation_1_1_camera_1aec0f566b4f80ad1f6bdffabd00fc1c53" kind="function"><name>getPosition</name></member>
+    <member refid="class_visualisation_1_1_camera_1acceeea5f3e89935b9ec259a0d6f78020" kind="function"><name>setPosition</name></member>
+    <member refid="class_visualisation_1_1_camera_1a82febe46be55b809f39c09023e9a94fd" kind="function"><name>getTarget</name></member>
+    <member refid="class_visualisation_1_1_camera_1a48faa2830f1ed31f63d0bfb714204279" kind="function"><name>setTarget</name></member>
+    <member refid="class_visualisation_1_1_camera_1a5ce9a3efd30b5f99eea7abc32b7f5030" kind="function"><name>getUpVector</name></member>
+    <member refid="class_visualisation_1_1_camera_1a7156609219c613e7971fe173d09584b4" kind="function"><name>setUpVector</name></member>
+    <member refid="class_visualisation_1_1_camera_1ad7490e67730ec1c91c70618adc0124d3" kind="function"><name>updateCoSys</name></member>
+    <member refid="class_visualisation_1_1_camera_1afd68152de8c52b9e3f0459c413463b0a" kind="function"><name>get3DcrossProd</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_cc_grid" kind="class"><name>Geometry::CcGrid</name>
+    <member refid="class_geometry_1_1_cc_grid_1a5d8fe3fccb91132ff5328f69105bcda2" kind="variable"><name>origin</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1a75b94af80f9cec348d50461cd6823cb7" kind="variable"><name>sideLength</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1a498ab2db3cb1dc1a9fba46068a8b212f" kind="variable"><name>sideLengthHalf</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1a96888b7acc6998682dd39eecd2e1a1e7" kind="function"><name>CcGrid</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1a31f75e1d9923ef16f08abfc1fcfa939f" kind="function"><name>setSideLength</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1ac4cc89dbd0cf8ea48d204b3dda86db72" kind="function"><name>getSideLength</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1a34ad13cdd79d72ee51591dab2b0fc8d2" kind="function"><name>setOrigin</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1a835c7cb37506f78b00265bdee05795e6" kind="function"><name>getOrigin</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1a4bbb251dd45b8dab47447f175b8e791c" kind="function"><name>getNearestPoint</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1a08afd8625c48e19c2f0e14d92eb50167" kind="function"><name>getFirstNeighbourCellVertices</name></member>
+    <member refid="class_geometry_1_1_cc_grid_1ab4c0f69ae16cd070e5612327aac89159" kind="function"><name>getLerpVertices</name></member>
+  </compound>
+  <compound refid="struct_visualisation_1_1_colour" kind="struct"><name>Visualisation::Colour</name>
+    <member refid="struct_visualisation_1_1_colour_1afd7b1ea9ff115205b65e0bffc92946ac" kind="variable"><name>r</name></member>
+    <member refid="struct_visualisation_1_1_colour_1a83576af39a9f289a28c1263d61073508" kind="variable"><name>g</name></member>
+    <member refid="struct_visualisation_1_1_colour_1a41cede1b4c0d05cff170ad5761f70964" kind="variable"><name>b</name></member>
+    <member refid="struct_visualisation_1_1_colour_1a24420a9beaac7cee08b5e255a4c29db1" kind="variable"><name>a</name></member>
+    <member refid="struct_visualisation_1_1_colour_1ae3eec6b1fc1ffafd6e3f907fa9590fdf" kind="function"><name>Colour</name></member>
+    <member refid="struct_visualisation_1_1_colour_1a214e2f82e282989afe4549a07d7d0041" kind="function"><name>Colour</name></member>
+  </compound>
+  <compound refid="class_sampling_1_1_filter" kind="class"><name>Sampling::Filter</name>
+    <member refid="class_sampling_1_1_filter_1a20abde6a69cb7dfbe98468203f5848b9" kind="variable"><name>filteredObject</name></member>
+    <member refid="class_sampling_1_1_filter_1a03c996f9fcf0e10baeb3e700be0c409a" kind="variable"><name>active</name></member>
+    <member refid="class_sampling_1_1_filter_1a9ec9b4fce5574a22db09f2a3c8b2f93a" kind="variable"><name>grid</name></member>
+    <member refid="class_sampling_1_1_filter_1ad724ba04cbde6118ceddbd6635e96eaa" kind="function"><name>Filter</name></member>
+    <member refid="class_sampling_1_1_filter_1a39b9914d0b1a0c54e509d0992facbd4a" kind="function"><name>Filter</name></member>
+    <member refid="class_sampling_1_1_filter_1ae9f51e1d4d767694fc3e192a29ae013e" kind="function"><name>getFilteredObject</name></member>
+    <member refid="class_sampling_1_1_filter_1a04b347c4d1863fb924237689a0312881" kind="function"><name>setFilteredObject</name></member>
+    <member refid="class_sampling_1_1_filter_1a361943c043351a96faa13cfd1f126d27" kind="function"><name>getGrid</name></member>
+    <member refid="class_sampling_1_1_filter_1a22a66fdf28522c42f8347161ba1ac3fe" kind="function"><name>setGrid</name></member>
+    <member refid="class_sampling_1_1_filter_1a8011fcbeb5efeda20bd2dbffbbb70165" kind="function"><name>activate</name></member>
+    <member refid="class_sampling_1_1_filter_1a8308b4bb6079733f4b77ced9d46da7a9" kind="function"><name>deactivate</name></member>
+    <member refid="class_sampling_1_1_filter_1a22761609071413dcce0632885c820e87" kind="function"><name>isActive</name></member>
+    <member refid="class_sampling_1_1_filter_1aaf6cee9a80b3085218861a5a8d6b34bc" kind="function"><name>getValueAt</name></member>
+  </compound>
+  <compound refid="class_utilities_1_1_float_operators" kind="class"><name>Utilities::FloatOperators</name>
+    <member refid="class_utilities_1_1_float_operators_1a8699e9cea9e8bd0b1b3a3bb7d6cf671c" kind="variable"><name>EPS</name></member>
+    <member refid="class_utilities_1_1_float_operators_1a3e605251b6520f5962e85bb4e2f6f97d" kind="function"><name>FloatOperators</name></member>
+    <member refid="class_utilities_1_1_float_operators_1a3634d4c6fb482cced6a9e29784185b82" kind="function"><name>equals</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_grid" kind="class"><name>Geometry::Grid</name>
+    <member refid="class_geometry_1_1_grid_1a2cdc42bd1e012a3b8473d518b7c2f6b0" kind="function"><name>getNearestPoint</name></member>
+    <member refid="class_geometry_1_1_grid_1a7947b840d23ada9abd70df77ce4a9c06" kind="function"><name>getFirstNeighbourCellVertices</name></member>
+    <member refid="class_geometry_1_1_grid_1a43bd5e3ba4d39448cd92477df03b84a2" kind="function"><name>getLerpVertices</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_i_intersectable" kind="class"><name>Geometry::IIntersectable</name>
+    <member refid="class_geometry_1_1_i_intersectable_1ab7b27cca569f9eae8628dd93e54c2d3e" kind="function"><name>intersect</name></member>
+  </compound>
+  <compound refid="struct_visualisation_1_1_image_plane" kind="struct"><name>Visualisation::ImagePlane</name>
+    <member refid="struct_visualisation_1_1_image_plane_1a6b27b78b9d187dd926ec53a122ad2772" kind="variable"><name>d</name></member>
+    <member refid="struct_visualisation_1_1_image_plane_1a4171bf52fa856bad220dc1111bda1ec5" kind="variable"><name>l</name></member>
+    <member refid="struct_visualisation_1_1_image_plane_1a3ff0123200292ec4b7e3e6319d048fa0" kind="variable"><name>r</name></member>
+    <member refid="struct_visualisation_1_1_image_plane_1adab634951eeadcd5a7c8840eefbf780f" kind="variable"><name>b</name></member>
+    <member refid="struct_visualisation_1_1_image_plane_1aa8888ec579d37bf1b17d7d5bee3b76c1" kind="variable"><name>t</name></member>
+    <member refid="struct_visualisation_1_1_image_plane_1a560a456ce61b8a24222b7f32e309a9e4" kind="function"><name>ImagePlane</name></member>
+    <member refid="struct_visualisation_1_1_image_plane_1ae2ef05c4c2b24b984ed6043a76d32c4c" kind="function"><name>ImagePlane</name></member>
+  </compound>
+  <compound refid="struct_geometry_1_1_intersection" kind="struct"><name>Geometry::Intersection</name>
+    <member refid="struct_geometry_1_1_intersection_1ab8d449d29d16e7cbf5997c030c8a401a" kind="variable"><name>obj</name></member>
+    <member refid="struct_geometry_1_1_intersection_1a92c08fdee4c3d7ce4f5180f6222a9a13" kind="variable"><name>position</name></member>
+    <member refid="struct_geometry_1_1_intersection_1a6f88871e9000141586c249d6bb326e51" kind="variable"><name>time</name></member>
+    <member refid="struct_geometry_1_1_intersection_1aa2a46d8387923389a3aad30be0b8a8b5" kind="variable"><name>material</name></member>
+    <member refid="struct_geometry_1_1_intersection_1ab6e431ff5ef4b9a0ccecd75250c8fa9e" kind="variable"><name>ray</name></member>
+    <member refid="struct_geometry_1_1_intersection_1a4fc7f59e3113e19697159919a5aad095" kind="variable"><name>value</name></member>
+    <member refid="struct_geometry_1_1_intersection_1ae8bc77e85ab6570502b0596aac795e84" kind="function"><name>Intersection</name></member>
+    <member refid="struct_geometry_1_1_intersection_1ad248b158cd16092526935f1a93c3ce7c" kind="function"><name>Intersection</name></member>
+  </compound>
+  <compound refid="class_sampling_1_1_i_sampleable" kind="class"><name>Sampling::ISampleable</name>
+    <member refid="class_sampling_1_1_i_sampleable_1aaf6cee9a80b3085218861a5a8d6b34bc" kind="function"><name>getValueAt</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_i_shape" kind="class"><name>Geometry::IShape</name>
+    <member refid="class_geometry_1_1_i_shape_1af76e4d614fde54d8572ff3686b157456" kind="function"><name>fitsPoint</name></member>
+    <member refid="class_geometry_1_1_i_shape_1ab7b27cca569f9eae8628dd93e54c2d3e" kind="function"><name>intersect</name></member>
+  </compound>
+  <compound refid="class_visualisation_1_1_light" kind="class"><name>Visualisation::Light</name>
+    <member refid="class_visualisation_1_1_light_1a92c08fdee4c3d7ce4f5180f6222a9a13" kind="variable"><name>position</name></member>
+    <member refid="class_visualisation_1_1_light_1a698096589cf2bca9181d8eb166dc9852" kind="variable"><name>intensity</name></member>
+    <member refid="class_visualisation_1_1_light_1a7f8a7be05225f470c200f7e4ff914a3c" kind="function"><name>Light</name></member>
+    <member refid="class_visualisation_1_1_light_1ac091eb6e677551efd41b02b4839396f3" kind="function"><name>Light</name></member>
+    <member refid="class_visualisation_1_1_light_1aec0f566b4f80ad1f6bdffabd00fc1c53" kind="function"><name>getPosition</name></member>
+    <member refid="class_visualisation_1_1_light_1acceeea5f3e89935b9ec259a0d6f78020" kind="function"><name>setPosition</name></member>
+    <member refid="class_visualisation_1_1_light_1ad42cb93f510686e71c32973cba0c3fc3" kind="function"><name>getIntensity</name></member>
+    <member refid="class_visualisation_1_1_light_1a480aa666a77426e1db03b5f310c2d91d" kind="function"><name>setIntensity</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_line" kind="class"><name>Geometry::Line</name>
+    <member refid="class_geometry_1_1_line_1ae1e7c02846f1a96c3a21310215d91dd6" kind="variable"><name>dirVector</name></member>
+    <member refid="class_geometry_1_1_line_1ad4e45818b9c5c15da68a84bb59576bd2" kind="variable"><name>point</name></member>
+    <member refid="class_geometry_1_1_line_1abe75f6ce7448a3f3aba4dd98ff4f9d0d" kind="function"><name>Line</name></member>
+    <member refid="class_geometry_1_1_line_1ad79403432a09aebc40318f64daf9df2b" kind="function"><name>getDirection</name></member>
+    <member refid="class_geometry_1_1_line_1a46cadd1148ff6a6ee448d556c8b2a909" kind="function"><name>getNormal</name></member>
+    <member refid="class_geometry_1_1_line_1a0ed558489fd932d65c18e1fe6ea5d36f" kind="function"><name>fitsPoint</name></member>
+  </compound>
+  <compound refid="class_sampling_1_1_linear_cube_filter" kind="class"><name>Sampling::LinearCubeFilter</name>
+    <member refid="class_sampling_1_1_linear_cube_filter_1a4aa2860543819ccb8a3da3df8d845037" kind="function"><name>LinearCubeFilter</name></member>
+    <member refid="class_sampling_1_1_linear_cube_filter_1a3d2ff46e5e1c56a695e298c7985d4e7b" kind="function"><name>LinearCubeFilter</name></member>
+    <member refid="class_sampling_1_1_linear_cube_filter_1ae7fe064de3b279d74867a690bd6f4953" kind="function"><name>getValueAt</name></member>
+  </compound>
+  <compound refid="class_sampling_1_1_linear_tetra_filter" kind="class"><name>Sampling::LinearTetraFilter</name>
+    <member refid="class_sampling_1_1_linear_tetra_filter_1a5cf0b7a08ecd66f914b411f60d89273f" kind="function"><name>LinearTetraFilter</name></member>
+    <member refid="class_sampling_1_1_linear_tetra_filter_1a6b06a8935674a42502ffb246a40b7d2f" kind="function"><name>LinearTetraFilter</name></member>
+    <member refid="class_sampling_1_1_linear_tetra_filter_1ae7fe064de3b279d74867a690bd6f4953" kind="function"><name>getValueAt</name></member>
+  </compound>
+  <compound refid="class_sampling_1_1_marschner_lobb" kind="class"><name>Sampling::MarschnerLobb</name>
+    <member refid="class_sampling_1_1_marschner_lobb_1afae87fa0ea9b525f53166e3b344d1f9b" kind="variable"><name>f_m</name></member>
+    <member refid="class_sampling_1_1_marschner_lobb_1a8151e53244827a84261ac958567d57f9" kind="variable"><name>alpha</name></member>
+    <member refid="class_sampling_1_1_marschner_lobb_1ab9a9237d3929b45da34ab9eeee080859" kind="function"><name>MarschnerLobb</name></member>
+    <member refid="class_sampling_1_1_marschner_lobb_1ab4531e807fbe3c07d4f3186575c673bd" kind="function"><name>setF_m</name></member>
+    <member refid="class_sampling_1_1_marschner_lobb_1afc57668a3818fae77834d221f8f93432" kind="function"><name>getF_m</name></member>
+    <member refid="class_sampling_1_1_marschner_lobb_1a142ba2fa52ae230998a1f72ee25230b1" kind="function"><name>setAlpha</name></member>
+    <member refid="class_sampling_1_1_marschner_lobb_1a875c34c88467348fca24419daea5b651" kind="function"><name>getAlpha</name></member>
+    <member refid="class_sampling_1_1_marschner_lobb_1ae7fe064de3b279d74867a690bd6f4953" kind="function"><name>getValueAt</name></member>
+  </compound>
+  <compound refid="struct_visualisation_1_1_material" kind="struct"><name>Visualisation::Material</name>
+    <member refid="struct_visualisation_1_1_material_1adcbbb333b6d941fddfe1ea6143fa5762" kind="variable"><name>ka</name></member>
+    <member refid="struct_visualisation_1_1_material_1ac5454dea13fcc74f22cabb7c3278be55" kind="variable"><name>kd</name></member>
+    <member refid="struct_visualisation_1_1_material_1a4d9761d66c65f3bcf95f37685c771d0c" kind="variable"><name>ks</name></member>
+    <member refid="struct_visualisation_1_1_material_1ab46d5dac624eb0e9a38071be6291cdb2" kind="variable"><name>n</name></member>
+    <member refid="struct_visualisation_1_1_material_1a18bec5279be0e082ea275e09fe43e4ad" kind="variable"><name>opacity</name></member>
+    <member refid="struct_visualisation_1_1_material_1a59ff61970c48a0fa575db309b6b37019" kind="function"><name>Material</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_matrix" kind="class"><name>Geometry::Matrix</name>
+    <member refid="class_geometry_1_1_matrix_1ab6006ee116558e64a0450ed85571e324" kind="variable"><name>rowVects</name></member>
+    <member refid="class_geometry_1_1_matrix_1a7d46b74409bd32b539089ef4721ea544" kind="variable"><name>n</name></member>
+    <member refid="class_geometry_1_1_matrix_1a4033037df26775dd60840e66d38a08ba" kind="variable"><name>m</name></member>
+    <member refid="class_geometry_1_1_matrix_1acba920a0f45f1897f7d829686e6fc866" kind="function"><name>Matrix</name></member>
+    <member refid="class_geometry_1_1_matrix_1a7acef296df8ffb0fdac4a98ee1ceebb8" kind="function"><name>Matrix</name></member>
+    <member refid="class_geometry_1_1_matrix_1a7f4c5e25b1b023ae9aa954e19df2578b" kind="function"><name>Matrix</name></member>
+    <member refid="class_geometry_1_1_matrix_1a5e72b7c50059bf70eca50ada11a4cf88" kind="function"><name>Matrix</name></member>
+    <member refid="class_geometry_1_1_matrix_1a2249c859d9c3503ec00d3a20fe963842" kind="function"><name>~Matrix</name></member>
+    <member refid="class_geometry_1_1_matrix_1ada86e8057bfee1ecc58f9c697f31e666" kind="function"><name>getHeight</name></member>
+    <member refid="class_geometry_1_1_matrix_1ae7f5205133978fea4b9de9165fef5d34" kind="function"><name>getWidth</name></member>
+    <member refid="class_geometry_1_1_matrix_1a89a6bb46fa0494bfc4517958a6b7f97e" kind="function"><name>isQuad</name></member>
+    <member refid="class_geometry_1_1_matrix_1a023fe3a9126ea5712956732212e2c3b3" kind="function"><name>getTransp</name></member>
+    <member refid="class_geometry_1_1_matrix_1a23c6d59f23f1ac9227af3eed332bc503" kind="function"><name>getGauss</name></member>
+    <member refid="class_geometry_1_1_matrix_1a60f4bc5ba2e3e3641cd8adfe3220ce47" kind="function"><name>getMinor</name></member>
+    <member refid="class_geometry_1_1_matrix_1ab577821468783592ec1e17b9831a745f" kind="function"><name>getDet</name></member>
+    <member refid="class_geometry_1_1_matrix_1af4d2ab764acdc315eeee518996890688" kind="function"><name>getAdj</name></member>
+    <member refid="class_geometry_1_1_matrix_1a0b7e52ecf23c67a0c9b28b0488428467" kind="function"><name>getInv</name></member>
+    <member refid="class_geometry_1_1_matrix_1a979fa9f2ef9ed49fe50843536b80ef64" kind="function"><name>operator=</name></member>
+    <member refid="class_geometry_1_1_matrix_1a3379ea51ab8e20aa8cc9b0e9fed95333" kind="function"><name>operator[]</name></member>
+    <member refid="class_geometry_1_1_matrix_1a59468b5083322ec7ba701c1008d6a36c" kind="function"><name>operator()</name></member>
+    <member refid="class_geometry_1_1_matrix_1a3948cc41be8fbb1c45fc1c5e89b5ad0b" kind="function"><name>operator()</name></member>
+    <member refid="class_geometry_1_1_matrix_1a0505b89eda121fdff45c7a857e485557" kind="function"><name>operator==</name></member>
+    <member refid="class_geometry_1_1_matrix_1a794f46a3822d62168c9892b12f605c9b" kind="function"><name>operator!=</name></member>
+    <member refid="class_geometry_1_1_matrix_1abe1cc06180dac9a63b50c976cfd64177" kind="function"><name>operator-</name></member>
+    <member refid="class_geometry_1_1_matrix_1a780f345c8ffec32c9998dd4ee7bb3f83" kind="function"><name>operator+</name></member>
+    <member refid="class_geometry_1_1_matrix_1aa518bac1257096533b04d8bbc0ef720d" kind="function"><name>operator+=</name></member>
+    <member refid="class_geometry_1_1_matrix_1aafe24c6032210e26b7d5c5de4b465c4a" kind="function"><name>operator-</name></member>
+    <member refid="class_geometry_1_1_matrix_1a269caf81214ddca3d350f4f9abc92e53" kind="function"><name>operator-=</name></member>
+    <member refid="class_geometry_1_1_matrix_1ac89891039ea560e097eb08132f26aa16" kind="function"><name>operator*</name></member>
+    <member refid="class_geometry_1_1_matrix_1a604b5f84ed6de96ab488d2c03eae7547" kind="function"><name>operator*</name></member>
+    <member refid="class_geometry_1_1_matrix_1ad94bc05c753a821e904fac0a1b164b18" kind="function"><name>operator*=</name></member>
+    <member refid="class_geometry_1_1_matrix_1a2b2be23d8d328c53abdc80f175aebc94" kind="function"><name>operator*</name></member>
+    <member refid="class_geometry_1_1_matrix_1a4c45c93b09aefe28888e515b59dac801" kind="function"><name>setHeight</name></member>
+    <member refid="class_geometry_1_1_matrix_1ad17b14cee5af2ebc8012f5d6ba84ae40" kind="function"><name>setWidth</name></member>
+    <member refid="class_geometry_1_1_matrix_1a1f1906594042db4f2f5476d0fbd62dc0" kind="function"><name>getRow</name></member>
+    <member refid="class_geometry_1_1_matrix_1afedf179b5676991a95e6278174614a26" kind="function"><name>getCol</name></member>
+    <member refid="class_geometry_1_1_matrix_1a84c53d147111d22a4169cefcd9df1f2d" kind="function"><name>setRow</name></member>
+    <member refid="class_geometry_1_1_matrix_1a3386131a5370853ac9c36b433ceb8922" kind="function"><name>setCol</name></member>
+    <member refid="class_geometry_1_1_matrix_1a63b3686883388b1c88a567e5ec8076f3" kind="function"><name>operator*</name></member>
+    <member refid="class_geometry_1_1_matrix_1a54ed6b31deb5d960c7c89f723b805053" kind="friend"><name>operator*</name></member>
+    <member refid="class_geometry_1_1_matrix_1a70a651e13f8da005d47a8acf44953897" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="class_visualisation_1_1_model_space" kind="class"><name>Visualisation::ModelSpace</name>
+    <member refid="class_visualisation_1_1_model_space_1ac1d2c45b52e431ada0adde7b95eac059" kind="variable"><name>boundingVolume</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a173b9e85c52489539a689101b1ea9247" kind="variable"><name>shader</name></member>
+    <member refid="class_visualisation_1_1_model_space_1abc6e2c1f7d2f83aa02d907c3c85710c0" kind="variable"><name>background</name></member>
+    <member refid="class_visualisation_1_1_model_space_1aab24e9770b54bf3548269441a2f2eafc" kind="variable"><name>objects</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a45a3f05f5ff0687bb6ba389724d41ef9" kind="variable"><name>lights</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a088282228a2426627fabcc145a296b73" kind="function"><name>ModelSpace</name></member>
+    <member refid="class_visualisation_1_1_model_space_1aa75c43188ef6676e58dacc411d36afda" kind="function"><name>setBoundingVolume</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a02ddc295ff120ba5fa6caadb5b37ca91" kind="function"><name>getBoundingVolume</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a12ef60c4d01229b52f7450cccdef4484" kind="function"><name>setShader</name></member>
+    <member refid="class_visualisation_1_1_model_space_1ab0a6a2215f518afb33ecbfca57d8ffec" kind="function"><name>getShader</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a463e339c2b252e70ff31456a2c243cf8" kind="function"><name>setBackground</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a03709018d9b4886b872d175c84d63adf" kind="function"><name>getBackground</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a33ce733b69b82b6c7cad50fcc752525b" kind="function"><name>addObject</name></member>
+    <member refid="class_visualisation_1_1_model_space_1ad2da63fc69909a91b630b11725871c35" kind="function"><name>removeObject</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a4c60888619e96eb8ca8fb827a84e4a8a" kind="function"><name>addLight</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a9a49141300bb2c66206f83c1d068fcec" kind="function"><name>removeLight</name></member>
+    <member refid="class_visualisation_1_1_model_space_1ab3ae80917c1e3a8b2437cbc57e9c127c" kind="function"><name>getColour</name></member>
+    <member refid="class_visualisation_1_1_model_space_1a924ee2653f2843f730b92e8244438ffc" kind="function"><name>getNearestIntersection</name></member>
+  </compound>
+  <compound refid="class_visualisation_1_1_phong_shader" kind="class"><name>Visualisation::PhongShader</name>
+    <member refid="class_visualisation_1_1_phong_shader_1ad60de4da2e8379b5daf6c05a8dd25c8d" kind="function"><name>PhongShader</name></member>
+    <member refid="class_visualisation_1_1_phong_shader_1a973bb877dced2645518b16cc3241fced" kind="function"><name>shade</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_plane" kind="class"><name>Geometry::Plane</name>
+    <member refid="class_geometry_1_1_plane_1aa7b243864338e643656feeb2fa4ccfbb" kind="variable"><name>normalVector</name></member>
+    <member refid="class_geometry_1_1_plane_1ad4e45818b9c5c15da68a84bb59576bd2" kind="variable"><name>point</name></member>
+    <member refid="class_geometry_1_1_plane_1a242f153285fa75214215c0bd7cf82680" kind="function"><name>Plane</name></member>
+    <member refid="class_geometry_1_1_plane_1a46cadd1148ff6a6ee448d556c8b2a909" kind="function"><name>getNormal</name></member>
+    <member refid="class_geometry_1_1_plane_1a0ed558489fd932d65c18e1fe6ea5d36f" kind="function"><name>fitsPoint</name></member>
+    <member refid="class_geometry_1_1_plane_1aae711dcbf18946964b9c42502e9d3377" kind="function"><name>intersect</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_point" kind="class"><name>Geometry::Point</name>
+    <member refid="class_geometry_1_1_point_1ad335dc2821e58000fb6d0f0ed6ba835f" kind="variable"><name>dim</name></member>
+    <member refid="class_geometry_1_1_point_1a529efcc7ac851fc35b2ac169251d9204" kind="variable"><name>coords</name></member>
+    <member refid="class_geometry_1_1_point_1a2f4d8ea275f33e07b31136fdd34c5c0f" kind="function"><name>Point</name></member>
+    <member refid="class_geometry_1_1_point_1a6c40b949236b5a3a9acd921d253b8249" kind="function"><name>Point</name></member>
+    <member refid="class_geometry_1_1_point_1a61bdd31845ff0ff50ae026c37b8a4486" kind="function"><name>Point</name></member>
+    <member refid="class_geometry_1_1_point_1a383ee92cd12d8fcafc7df62084caf7b2" kind="function"><name>Point</name></member>
+    <member refid="class_geometry_1_1_point_1a7e2e45db495d5d441e5dcb1075925e60" kind="function"><name>~Point</name></member>
+    <member refid="class_geometry_1_1_point_1a0ec9df17ac56bb737d58485bf35eaf74" kind="function"><name>getDim</name></member>
+    <member refid="class_geometry_1_1_point_1ae4e043e657d0526c008a264b583ecfcd" kind="function"><name>setDim</name></member>
+    <member refid="class_geometry_1_1_point_1a3511f63e157f5461231c38eaa7db801a" kind="function"><name>getDistance</name></member>
+    <member refid="class_geometry_1_1_point_1a91533c7b122673f53e41b20c3f4ec7e3" kind="function"><name>operator=</name></member>
+    <member refid="class_geometry_1_1_point_1a6335d7a8c9e1cda553d2d73621fcff77" kind="function"><name>operator[]</name></member>
+    <member refid="class_geometry_1_1_point_1aa4559350d6968f77e8c1d94965770f1e" kind="function"><name>operator[]</name></member>
+    <member refid="class_geometry_1_1_point_1a1f3fdd51f39513a79c907ee69e0fa885" kind="function"><name>operator==</name></member>
+    <member refid="class_geometry_1_1_point_1a02de908c720261092f9384fe46cdc505" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_primitive" kind="class"><name>Geometry::Primitive</name>
+    <member refid="class_geometry_1_1_primitive_1a372847a827bf3fcf09859d22aa98c546" kind="function"><name>Primitive</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_ray" kind="class"><name>Geometry::Ray</name>
+    <member refid="class_geometry_1_1_ray_1a13399949a12a25f2ee3badb55d326957" kind="function"><name>Ray</name></member>
+    <member refid="class_geometry_1_1_ray_1a835c7cb37506f78b00265bdee05795e6" kind="function"><name>getOrigin</name></member>
+    <member refid="class_geometry_1_1_ray_1a0ed558489fd932d65c18e1fe6ea5d36f" kind="function"><name>fitsPoint</name></member>
+  </compound>
+  <compound refid="class_visualisation_1_1_shader" kind="class"><name>Visualisation::Shader</name>
+    <member refid="class_visualisation_1_1_shader_1ab5852b47125ce80509f0341cf1bd1f96" kind="function"><name>Shader</name></member>
+    <member refid="class_visualisation_1_1_shader_1ad743e07f30c285dc43ee6cda2b98eb75" kind="function"><name>shade</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_surface" kind="class"><name>Geometry::Surface</name>
+    <member refid="class_geometry_1_1_surface_1aa2a46d8387923389a3aad30be0b8a8b5" kind="variable"><name>material</name></member>
+    <member refid="class_geometry_1_1_surface_1a6e1a6ad293d9318f65c2e28c468c66ba" kind="function"><name>Surface</name></member>
+    <member refid="class_geometry_1_1_surface_1a148c9d72f29cf29e7ad5e787e2819057" kind="function"><name>Surface</name></member>
+    <member refid="class_geometry_1_1_surface_1a3d7a6d87e670d2c6415e92a1f0e9feb4" kind="function"><name>getMaterial</name></member>
+    <member refid="class_geometry_1_1_surface_1a26d09c46a06493cf2d9116991c80f816" kind="function"><name>setMaterial</name></member>
+    <member refid="class_geometry_1_1_surface_1a9f3f940415136a6c508a0d9de1683adb" kind="function"><name>getNormal</name></member>
+    <member refid="class_geometry_1_1_surface_1ab7b27cca569f9eae8628dd93e54c2d3e" kind="function"><name>intersect</name></member>
+  </compound>
+  <compound refid="class_visualisation_1_1_t_g_a_image" kind="class"><name>Visualisation::TGAImage</name>
+    <member refid="class_visualisation_1_1_t_g_a_image_1a501eb86d8677346bc988dcc36523491d" kind="variable"><name>m_pixels</name></member>
+    <member refid="class_visualisation_1_1_t_g_a_image_1ade8e56e449b6337d0794a6994b27395a" kind="variable"><name>m_height</name></member>
+    <member refid="class_visualisation_1_1_t_g_a_image_1a7e8a40a7e7648acab842f66741a5b9cb" kind="variable"><name>m_width</name></member>
+    <member refid="class_visualisation_1_1_t_g_a_image_1abccaad377e51a135b1d503b741f5a423" kind="function"><name>TGAImage</name></member>
+    <member refid="class_visualisation_1_1_t_g_a_image_1a2ea3e73b8827d9801ceba3b4f660605b" kind="function"><name>TGAImage</name></member>
+    <member refid="class_visualisation_1_1_t_g_a_image_1a0a81640808e5f881d8eca703459781a6" kind="function"><name>WriteImage</name></member>
+    <member refid="class_visualisation_1_1_t_g_a_image_1a459348d235f3f750337868d4eb1cccff" kind="function"><name>getWidth</name></member>
+    <member refid="class_visualisation_1_1_t_g_a_image_1a02f835c0692e2e99f24589cd67513a31" kind="function"><name>getHeight</name></member>
+  </compound>
+  <compound refid="class_utilities_1_1_type_operators" kind="class"><name>Utilities::TypeOperators</name>
+    <member refid="class_utilities_1_1_type_operators_1a01f8ffb315882112eded9817279c652c" kind="function"><name>equals</name></member>
+    <member refid="class_utilities_1_1_type_operators_1ac0c4e4d72daedaf61ac5b3f10832abc2" kind="function"><name>greaterThan</name></member>
+    <member refid="class_utilities_1_1_type_operators_1a01d0fde7f2eb384eadefd35abadf5b12" kind="function"><name>greaterThanOrEquals</name></member>
+    <member refid="class_utilities_1_1_type_operators_1a568333198beb5cf8b2b822ed1f517586" kind="function"><name>abs</name></member>
+    <member refid="class_utilities_1_1_type_operators_1a326e5fe91b362795523b3b705ddd3abe" kind="function"><name>castToInt</name></member>
+  </compound>
+  <compound refid="class_geometry_1_1_vector" kind="class"><name>Geometry::Vector</name>
+    <member refid="class_geometry_1_1_vector_1a161dd947cc220fb28a09f9db73b67483" kind="function"><name>Vector</name></member>
+    <member refid="class_geometry_1_1_vector_1a96419b5b9a2c3b07725b94690aef72ee" kind="function"><name>Vector</name></member>
+    <member refid="class_geometry_1_1_vector_1acf3021033f9ef47e1463826cac57d979" kind="function"><name>Vector</name></member>
+    <member refid="class_geometry_1_1_vector_1ae18a5c54fc21fb5fe69fbfb8e18275f7" kind="function"><name>Vector</name></member>
+    <member refid="class_geometry_1_1_vector_1abd9a214aef1c99357ceaeffb60352ba2" kind="function"><name>Vector</name></member>
+    <member refid="class_geometry_1_1_vector_1aaa9fccd0cb7734271f7a15e5d9dc0d27" kind="function"><name>~Vector</name></member>
+    <member refid="class_geometry_1_1_vector_1a071a16e2751b87f96d737ed29935504f" kind="function"><name>getAbs</name></member>
+    <member refid="class_geometry_1_1_vector_1af79f2ffce20c5ea4419911b8e05ec010" kind="function"><name>getUnit</name></member>
+    <member refid="class_geometry_1_1_vector_1a46cadd1148ff6a6ee448d556c8b2a909" kind="function"><name>getNormal</name></member>
+    <member refid="class_geometry_1_1_vector_1a7159dc27804d89cb3b9a8269c6f886e7" kind="function"><name>multiply</name></member>
+    <member refid="class_geometry_1_1_vector_1a5a1c5bc7156428e3a99ebf29b1cb6a81" kind="function"><name>operator-</name></member>
+    <member refid="class_geometry_1_1_vector_1aefdc7a9f17403901c29166ff904a6622" kind="function"><name>operator+</name></member>
+    <member refid="class_geometry_1_1_vector_1a89fa44215e15be0aac36dcd4b0f7b271" kind="function"><name>operator+=</name></member>
+    <member refid="class_geometry_1_1_vector_1adb3ea8daecc1a317f267016201fd48a8" kind="function"><name>operator-</name></member>
+    <member refid="class_geometry_1_1_vector_1ac22e1b7043ab74b8644187047b716ac9" kind="function"><name>operator-=</name></member>
+    <member refid="class_geometry_1_1_vector_1a6fc6bcceeab50b1cde1f61aa42c6a658" kind="function"><name>operator*</name></member>
+    <member refid="class_geometry_1_1_vector_1af05c0999abc2400be5e94a2104ffb8ab" kind="function"><name>operator*=</name></member>
+    <member refid="class_geometry_1_1_vector_1a6a0e13b8f2c0a47ca1a464247ec22b76" kind="function"><name>operator*</name></member>
+    <member refid="class_geometry_1_1_vector_1a0932eb5431eed6dc92356957b36aa71c" kind="friend"><name>operator*</name></member>
+    <member refid="class_geometry_1_1_vector_1a13477f09efd58ff41e7a1ecef6c16776" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="class_sampling_1_1_volume" kind="class"><name>Sampling::Volume</name>
+    <member refid="class_sampling_1_1_volume_1a8c8c997c19f49d10d5028ecd6d94805c" kind="variable"><name>iso</name></member>
+    <member refid="class_sampling_1_1_volume_1a3a8fada6f2d2b5ce58f6a0ffef34d9f1" kind="function"><name>Volume</name></member>
+    <member refid="class_sampling_1_1_volume_1aefc1e3fc5f3846e8a1f3186e06017b52" kind="function"><name>Volume</name></member>
+    <member refid="class_sampling_1_1_volume_1af98bbc751e90a15b59c81ee4c17630b2" kind="function"><name>getIso</name></member>
+    <member refid="class_sampling_1_1_volume_1a06df2552be7fe124a173741e8ba79770" kind="function"><name>setIso</name></member>
+    <member refid="class_sampling_1_1_volume_1aaf6cee9a80b3085218861a5a8d6b34bc" kind="function"><name>getValueAt</name></member>
+    <member refid="class_sampling_1_1_volume_1af9134066dc508e3201a1dea2acb755a8" kind="function"><name>getNormal</name></member>
+    <member refid="class_sampling_1_1_volume_1aae711dcbf18946964b9c42502e9d3377" kind="function"><name>intersect</name></member>
+  </compound>
+  <compound refid="namespace_constants" kind="namespace"><name>Constants</name>
+    <member refid="namespace_constants_1a952eac791b596a61bba0a133a3bb439f" kind="variable"><name>PI</name></member>
+    <member refid="namespace_constants_1af72cde65c8c61919a406800c83cc405a" kind="variable"><name>SQRT3PER2</name></member>
+    <member refid="namespace_constants_1afe01386a82fedc016455a43c20280a97" kind="variable"><name>EPS</name></member>
+    <member refid="namespace_constants_1a2a2465cdd41a4755301d4ee247449d1e" kind="variable"><name>ML_FM</name></member>
+    <member refid="namespace_constants_1aa006eac16e80c605250da41918c1ede3" kind="variable"><name>ML_ALPHA</name></member>
+    <member refid="namespace_constants_1add93784f94503f27d7d821e9a9bf3ded" kind="variable"><name>ML_ISO</name></member>
+    <member refid="namespace_constants_1a483d920d2dc7b2bc287c698a71f37e33" kind="variable"><name>GRID_SIDELENGTH</name></member>
+    <member refid="namespace_constants_1ae417092bdc7c7f8cb0cd094d96ef5b61" kind="variable"><name>H_RES</name></member>
+    <member refid="namespace_constants_1ab4ffa4d639f6b402cafb60f8a66a1e2e" kind="variable"><name>V_RES</name></member>
+    <member refid="namespace_constants_1a4f159bf187491542eb50806dfdc1110f" kind="variable"><name>SCALE</name></member>
+    <member refid="namespace_constants_1a1a3b68052f0b109e562e7647944a2366" kind="variable"><name>IMGPLANE_D</name></member>
+    <member refid="namespace_constants_1a50838ab1127ceb8d0ddde9aefa1a627f" kind="variable"><name>IMGPLANE_L</name></member>
+    <member refid="namespace_constants_1a401a5aee262e4a428bc2fffc62bdb77f" kind="variable"><name>IMGPLANE_R</name></member>
+    <member refid="namespace_constants_1a8ba6842600e3c0fda4cbb86704a7ffae" kind="variable"><name>IMGPLANE_B</name></member>
+    <member refid="namespace_constants_1a19fe007947c86f93941d4a70a4816988" kind="variable"><name>IMGPLANE_T</name></member>
+  </compound>
+  <compound refid="namespace_geometry" kind="namespace"><name>Geometry</name>
+    <member refid="namespace_geometry_1a7b463af87abce1124511dbacd87d27a4" kind="function"><name>operator*</name></member>
+    <member refid="namespace_geometry_1a5723ea4931ab420e81eb6f3902f2720b" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="namespace_geometry_1ae25dd7dbd12240f8da0bf201b3f8b59f" kind="function"><name>operator*</name></member>
+    <member refid="namespace_geometry_1a68f5da09869a8d103659db4065077758" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespace_sampling" kind="namespace"><name>Sampling</name>
+    <member refid="namespace_sampling_1a42e746bb67d4dac83a4dcf06ad91c73d" kind="function"><name>getParallelepipedVolume</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="namespace_utilities" kind="namespace"><name>Utilities</name>
+  </compound>
+  <compound refid="namespace_visualisation" kind="namespace"><name>Visualisation</name>
+    <member refid="namespace_visualisation_1a6f25f8b015ad8a5cfc6e7aacebadc00b" kind="variable"><name>k_a</name></member>
+    <member refid="namespace_visualisation_1a1c1488b44adb118ff86ceb5ec6600eb2" kind="variable"><name>k_d</name></member>
+    <member refid="namespace_visualisation_1a23d9127bc5584765454a4fa4d635fbbc" kind="variable"><name>k_s</name></member>
+    <member refid="namespace_visualisation_1a77b9156f3f7a2bf549ad684b6ce3bcdb" kind="function"><name>K_A</name></member>
+    <member refid="namespace_visualisation_1acc8fe63e834a3dc49a2746ac59902f04" kind="function"><name>K_D</name></member>
+    <member refid="namespace_visualisation_1a696ad632d066c8888684fe275f1cde85" kind="function"><name>K_S</name></member>
+    <member refid="namespace_visualisation_1a8b565f7ca802e43cee5406f2d6c06206" kind="function"><name>MATERIAL_CYAN_PLASTIC</name></member>
+  </compound>
+  <compound refid="_a_a_b_b_8h" kind="file"><name>AABB.h</name>
+  </compound>
+  <compound refid="_bcc_grid_8h" kind="file"><name>BccGrid.h</name>
+  </compound>
+  <compound refid="_bounding_volume_8h" kind="file"><name>BoundingVolume.h</name>
+  </compound>
+  <compound refid="_camera_8h" kind="file"><name>Camera.h</name>
+    <member refid="_camera_8h_1a7581785cce6d2ade5154b0bb8b822949" kind="define"><name>CAMERA_H_PRINT</name></member>
+  </compound>
+  <compound refid="_cc_grid_8h" kind="file"><name>CcGrid.h</name>
+  </compound>
+  <compound refid="_colour_8h" kind="file"><name>Colour.h</name>
+  </compound>
+  <compound refid="_constants_8h" kind="file"><name>Constants.h</name>
+  </compound>
+  <compound refid="_filter_8h" kind="file"><name>Filter.h</name>
+  </compound>
+  <compound refid="_float_operators_8h" kind="file"><name>FloatOperators.h</name>
+  </compound>
+  <compound refid="_grid_8h" kind="file"><name>Grid.h</name>
+  </compound>
+  <compound refid="_i_intersectable_8h" kind="file"><name>IIntersectable.h</name>
+  </compound>
+  <compound refid="_image_plane_8h" kind="file"><name>ImagePlane.h</name>
+  </compound>
+  <compound refid="_intersection_8h" kind="file"><name>Intersection.h</name>
+  </compound>
+  <compound refid="_i_sampleable_8h" kind="file"><name>ISampleable.h</name>
+  </compound>
+  <compound refid="_i_shape_8h" kind="file"><name>IShape.h</name>
+  </compound>
+  <compound refid="_light_8h" kind="file"><name>Light.h</name>
+  </compound>
+  <compound refid="_line_8h" kind="file"><name>Line.h</name>
+  </compound>
+  <compound refid="_linear_cube_filter_8h" kind="file"><name>LinearCubeFilter.h</name>
+  </compound>
+  <compound refid="_linear_tetra_filter_8h" kind="file"><name>LinearTetraFilter.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1a3c04138a5bfe5d72780bb7e82a18e627" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_marschner_lobb_8h" kind="file"><name>MarschnerLobb.h</name>
+  </compound>
+  <compound refid="_material_8h" kind="file"><name>Material.h</name>
+  </compound>
+  <compound refid="_matrix_8h" kind="file"><name>Matrix.h</name>
+  </compound>
+  <compound refid="_model_space_8h" kind="file"><name>ModelSpace.h</name>
+  </compound>
+  <compound refid="_phong_shader_8h" kind="file"><name>PhongShader.h</name>
+  </compound>
+  <compound refid="_plane_8h" kind="file"><name>Plane.h</name>
+  </compound>
+  <compound refid="_point_8h" kind="file"><name>Point.h</name>
+  </compound>
+  <compound refid="_primitive_8h" kind="file"><name>Primitive.h</name>
+  </compound>
+  <compound refid="_ray_8h" kind="file"><name>Ray.h</name>
+  </compound>
+  <compound refid="_shader_8h" kind="file"><name>Shader.h</name>
+  </compound>
+  <compound refid="_surface_8h" kind="file"><name>Surface.h</name>
+  </compound>
+  <compound refid="_t_g_a_image_8cpp" kind="file"><name>TGAImage.cpp</name>
+  </compound>
+  <compound refid="_t_g_a_image_8h" kind="file"><name>TGAImage.h</name>
+  </compound>
+  <compound refid="_type_operators_8h" kind="file"><name>TypeOperators.h</name>
+  </compound>
+  <compound refid="_vector_8h" kind="file"><name>Vector.h</name>
+  </compound>
+  <compound refid="_volume_8h" kind="file"><name>Volume.h</name>
+  </compound>
+  <compound refid="dir_4750e921359872ae42edd93a5330cda0" kind="dir"><name>Új mappa</name>
+  </compound>
+</doxygenindex>

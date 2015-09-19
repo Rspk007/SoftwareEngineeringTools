@@ -1,0 +1,223 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespace_constants" kind="namespace">
+    <compoundname>Constants</compoundname>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="namespace_constants_1a952eac791b596a61bba0a133a3bb439f" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double PI</definition>
+        <argsstring></argsstring>
+        <name>PI</name>
+        <initializer>= 3.14159265358979</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="10" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1af72cde65c8c61919a406800c83cc405a" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double SQRT3PER2</definition>
+        <argsstring></argsstring>
+        <name>SQRT3PER2</name>
+        <initializer>= 0.86602540378443</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="11" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1afe01386a82fedc016455a43c20280a97" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double EPS</definition>
+        <argsstring></argsstring>
+        <name>EPS</name>
+        <initializer>= 0.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="12" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1a2a2465cdd41a4755301d4ee247449d1e" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double ML_FM</definition>
+        <argsstring></argsstring>
+        <name>ML_FM</name>
+        <initializer>= 6.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="15" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1aa006eac16e80c605250da41918c1ede3" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double ML_ALPHA</definition>
+        <argsstring></argsstring>
+        <name>ML_ALPHA</name>
+        <initializer>= 0.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="16" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1add93784f94503f27d7d821e9a9bf3ded" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double ML_ISO</definition>
+        <argsstring></argsstring>
+        <name>ML_ISO</name>
+        <initializer>= 0.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="17" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1a483d920d2dc7b2bc287c698a71f37e33" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float GRID_SIDELENGTH</definition>
+        <argsstring></argsstring>
+        <name>GRID_SIDELENGTH</name>
+        <initializer>= 0.03125f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="20" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1ae417092bdc7c7f8cb0cd094d96ef5b61" prot="public" static="no" mutable="no">
+        <type>const unsigned short</type>
+        <definition>const unsigned short H_RES</definition>
+        <argsstring></argsstring>
+        <name>H_RES</name>
+        <initializer>= 300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="23" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1ab4ffa4d639f6b402cafb60f8a66a1e2e" prot="public" static="no" mutable="no">
+        <type>const unsigned short</type>
+        <definition>const unsigned short V_RES</definition>
+        <argsstring></argsstring>
+        <name>V_RES</name>
+        <initializer>= 300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="24" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1a4f159bf187491542eb50806dfdc1110f" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double SCALE</definition>
+        <argsstring></argsstring>
+        <name>SCALE</name>
+        <initializer>= 0.001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="26" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1a1a3b68052f0b109e562e7647944a2366" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float IMGPLANE_D</definition>
+        <argsstring></argsstring>
+        <name>IMGPLANE_D</name>
+        <initializer>= 5.5f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="29" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1a50838ab1127ceb8d0ddde9aefa1a627f" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float IMGPLANE_L</definition>
+        <argsstring></argsstring>
+        <name>IMGPLANE_L</name>
+        <initializer>= -1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="30" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1a401a5aee262e4a428bc2fffc62bdb77f" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float IMGPLANE_R</definition>
+        <argsstring></argsstring>
+        <name>IMGPLANE_R</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="31" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1a8ba6842600e3c0fda4cbb86704a7ffae" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float IMGPLANE_B</definition>
+        <argsstring></argsstring>
+        <name>IMGPLANE_B</name>
+        <initializer>= -1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="32" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespace_constants_1a19fe007947c86f93941d4a70a4816988" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float IMGPLANE_T</definition>
+        <argsstring></argsstring>
+        <name>IMGPLANE_T</name>
+        <initializer>= 1.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="33" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/Constants.h" line="9" column="1"/>
+  </compounddef>
+</doxygen>

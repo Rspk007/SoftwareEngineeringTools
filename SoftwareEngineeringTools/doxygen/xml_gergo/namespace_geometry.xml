@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.7">
+  <compounddef id="namespace_geometry" kind="namespace">
+    <compoundname>Geometry</compoundname>
+    <innerclass refid="class_geometry_1_1_a_a_b_b" prot="public">Geometry::AABB</innerclass>
+    <innerclass refid="class_geometry_1_1_bcc_grid" prot="public">Geometry::BccGrid</innerclass>
+    <innerclass refid="class_geometry_1_1_bounding_volume" prot="public">Geometry::BoundingVolume</innerclass>
+    <innerclass refid="class_geometry_1_1_cc_grid" prot="public">Geometry::CcGrid</innerclass>
+    <innerclass refid="class_geometry_1_1_grid" prot="public">Geometry::Grid</innerclass>
+    <innerclass refid="class_geometry_1_1_i_intersectable" prot="public">Geometry::IIntersectable</innerclass>
+    <innerclass refid="struct_geometry_1_1_intersection" prot="public">Geometry::Intersection</innerclass>
+    <innerclass refid="class_geometry_1_1_i_shape" prot="public">Geometry::IShape</innerclass>
+    <innerclass refid="class_geometry_1_1_line" prot="public">Geometry::Line</innerclass>
+    <innerclass refid="class_geometry_1_1_matrix" prot="public">Geometry::Matrix</innerclass>
+    <innerclass refid="class_geometry_1_1_plane" prot="public">Geometry::Plane</innerclass>
+    <innerclass refid="class_geometry_1_1_point" prot="public">Geometry::Point</innerclass>
+    <innerclass refid="class_geometry_1_1_primitive" prot="public">Geometry::Primitive</innerclass>
+    <innerclass refid="class_geometry_1_1_ray" prot="public">Geometry::Ray</innerclass>
+    <innerclass refid="class_geometry_1_1_surface" prot="public">Geometry::Surface</innerclass>
+    <innerclass refid="class_geometry_1_1_vector" prot="public">Geometry::Vector</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespace_geometry_1a7b463af87abce1124511dbacd87d27a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref>&lt; U &gt;</type>
+        <definition>Matrix&lt;U&gt; Geometry::operator*</definition>
+        <argsstring>(const U &amp;scalar, const Matrix&lt; U &gt; &amp;mat)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const U &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref>&lt; U &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="547" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="547" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_geometry_1a5723ea4931ab420e81eb6f3902f2720b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Geometry::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Matrix&lt; U &gt; &amp;mat)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_matrix" kindref="compound">Matrix</ref>&lt; U &gt; &amp;</type>
+          <declname>mat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" line="578" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Matrix.h" bodystart="578" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_geometry_1ae25dd7dbd12240f8da0bf201b3f8b59f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type><ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; U &gt;</type>
+        <definition>Vector&lt;U&gt; Geometry::operator*</definition>
+        <argsstring>(const U &amp;scalar, const Vector&lt; U &gt; &amp;vect)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const U &amp;</type>
+          <declname>scalar</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; U &gt; &amp;</type>
+          <declname>vect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="262" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="262" bodyend="272"/>
+      </memberdef>
+      <memberdef kind="function" id="namespace_geometry_1a68f5da09869a8d103659db4065077758" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Geometry::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const Vector&lt; U &gt; &amp;vect)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_geometry_1_1_vector" kindref="compound">Vector</ref>&lt; U &gt; &amp;</type>
+          <declname>vect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" line="293" column="1" bodyfile="C:/Users/Jurecska/Desktop/Új mappa/Vector.h" bodystart="293" bodyend="304"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Jurecska/Desktop/Új mappa/AABB.h" line="10" column="1"/>
+  </compounddef>
+</doxygen>
