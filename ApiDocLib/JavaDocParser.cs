@@ -11,7 +11,7 @@ using System.Net;
 
 namespace SoftwareEngineeringTools.Documentation
 {
-    public class JavaDocParser
+    public class JavaDocParser : Parser
     {
         private string currentFileName = null;
         private StreamWriter LogFile;

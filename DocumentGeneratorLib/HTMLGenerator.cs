@@ -185,7 +185,7 @@ namespace SoftwareEngineeringTools.Documentation
 
         public override void NewParagraph()
         {
-            pageWriter.WriteBreak();
+            pageWriter.WriteBreak();            
         }
 
         public override void PrintText(string text, bool insertSpace = true)

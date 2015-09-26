@@ -10,7 +10,7 @@ using System.Xml.Linq;
 
 namespace SoftwareEngineeringTools.Documentation
 {
-    public class NetParser
+    public class NetParser : Parser
     {
         private string currentFileName = null;
         private StreamWriter LogFile;
@@ -19,7 +19,7 @@ namespace SoftwareEngineeringTools.Documentation
         /// <summary>
         /// Current path
         /// </summary>
-        public string Path { get; private set; }
+        public string IndexFile { get; private set; }
         private List<string> DllFiles;
         private List<string> XmlFiles;
         public DoxygenIndex Index { get; private set; }
@@ -33,7 +33,7 @@ namespace SoftwareEngineeringTools.Documentation
         /// <param name="logFile">Path of the logfile</param>
         public NetParser(string path, string logFile = null)
         {
-            this.Path = path;             
+            this.IndexFile = path;             
             if (logFile != null) this.LogFile = new StreamWriter(logFile);
             this.Log(LogKind.Info, "Parse started.");
             this.Parse();
@@ -167,9 +167,9 @@ namespace SoftwareEngineeringTools.Documentation
 
         private void Parse()
         {
-            this.DllFiles = System.IO.Directory.GetFiles(this.Path, "*.dll").ToList();
-            this.DllFiles.AddRange(System.IO.Directory.GetFiles(this.Path, "*.exe").ToList()); 
-            this.XmlFiles = System.IO.Directory.GetFiles(this.Path, "*.xml").ToList();
+            this.DllFiles = System.IO.Directory.GetFiles(this.IndexFile, "*.dll").ToList();
+            this.DllFiles.AddRange(System.IO.Directory.GetFiles(this.IndexFile, "*.exe").ToList());
+            this.XmlFiles = System.IO.Directory.GetFiles(this.IndexFile, "*.xml").ToList();
             
             //Exe fileok is dll-ként beolvshatóak
             this.Index = new DoxygenIndex();

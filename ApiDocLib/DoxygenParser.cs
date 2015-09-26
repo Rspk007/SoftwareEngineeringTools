@@ -8,7 +8,7 @@ using System.Xml;
 
 namespace SoftwareEngineeringTools.Documentation
 {
-    public class DoxygenParser
+    public class DoxygenParser : Parser
     {
         private static readonly List<string> DocEmptyTags = new List<string>(Enum.GetNames(typeof(DocEmptyKind)));
         private static readonly List<string> DocMarkupTags = new List<string>(Enum.GetNames(typeof(DocMarkupKind)).Select(e => e.ToLower()));

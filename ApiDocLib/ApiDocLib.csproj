@@ -51,6 +51,7 @@
     <Compile Include="DoxygenParser.cs" />
     <Compile Include="JavaDocParser.cs" />
     <Compile Include="NetParser.cs" />
+    <Compile Include="Parser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ApiDocGenerator.cs" />
   </ItemGroup>
