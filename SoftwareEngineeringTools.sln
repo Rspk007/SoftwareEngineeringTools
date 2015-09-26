@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareEngineeringTools", "SoftwareEngineeringTools\SoftwareEngineeringTools.csproj", "{6E28C502-B632-4538-A380-7FB92C5EDFFD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335} = {537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentGeneratorLib", "DocumentGeneratorLib\DocumentGeneratorLib.csproj", "{057527DD-F28F-4C48-A4EE-5AAF5D2373A1}"
 EndProject
