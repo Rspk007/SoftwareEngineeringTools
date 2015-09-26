@@ -4,9 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoftwareEngineeringTools", "SoftwareEngineeringTools\SoftwareEngineeringTools.csproj", "{6E28C502-B632-4538-A380-7FB92C5EDFFD}"
-	ProjectSection(ProjectDependencies) = postProject
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335} = {537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DocumentGeneratorLib", "DocumentGeneratorLib\DocumentGeneratorLib.csproj", "{057527DD-F28F-4C48-A4EE-5AAF5D2373A1}"
 EndProject
@@ -21,7 +18,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Performance1.psess = Performance1.psess
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WikiReader", "..\MultiWikiParser-master\wem\WikiReader.csproj", "{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WikiReader", "WikiReader\WikiReader.csproj", "{44FFAAFC-2039-450A-8A33-606A4AFD7166}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,16 +80,16 @@ Global
 		{70D8509C-7A03-48A7-9CB2-E9A0EAF0DAFE}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{70D8509C-7A03-48A7-9CB2-E9A0EAF0DAFE}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{70D8509C-7A03-48A7-9CB2-E9A0EAF0DAFE}.Release|x86.ActiveCfg = Release|Any CPU
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Debug|x86.ActiveCfg = Debug|x86
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Debug|x86.Build.0 = Debug|x86
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Release|Any CPU.ActiveCfg = Release|x86
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Release|Mixed Platforms.Build.0 = Release|x86
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Release|x86.ActiveCfg = Release|x86
-		{537E3A24-0CBA-4A2A-B19E-BD76DF3B0335}.Release|x86.Build.0 = Release|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Debug|x86.ActiveCfg = Debug|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Debug|x86.Build.0 = Debug|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Release|Any CPU.ActiveCfg = Release|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Release|Mixed Platforms.Build.0 = Release|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Release|x86.ActiveCfg = Release|x86
+		{44FFAAFC-2039-450A-8A33-606A4AFD7166}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
