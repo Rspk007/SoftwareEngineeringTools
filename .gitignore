@@ -15,6 +15,18 @@ build/
 [Bb]in/
 [Oo]bj/
 
+# Generated files
+*.html
+*.tex
+*.pdf
+*.docx
+
+# Input files
+*.xml
+SoftwareEngineeringTools/css
+SoftwareEngineeringTools/NET
+SoftwareEngineeringTools/javadoc
+
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
 !packages/*/build/
 
