@@ -1,14 +1,39 @@
-﻿
+﻿using System;
 namespace wem
 {
 
 
     public class Converter
     {
+        public static string LinkPreprocess (string markup)
+        {
+            string[] splitvalue = new string[1];
+            splitvalue[0] = "[[";
+            string[] links = markup.Split(splitvalue, StringSplitOptions.None);
+            string fullNormalizedString = "";
+            fullNormalizedString += links[0];
+            for (int i = 1; i < links.Length; i++)
+            {
+                string link = links[i];
+                int separator = link.IndexOf('|');
+                if (separator == -1)
+                {
+                    separator = int.MaxValue;
+                }
+                int endOfBracket = link.IndexOf("]]");
 
+                int normalizeEnd = Math.Min(separator, endOfBracket);
+                string normalizedString = "[[" + link.Substring(0, normalizeEnd).Replace(' ', '_') + link.Substring(normalizeEnd).Replace('|', ' ');
+                fullNormalizedString += normalizedString;
+            }
+            return fullNormalizedString;
+        }
+        
         public static string MediaWikiToXHTML(string markup)
         {
             string retVal = null;
+
+            markup = LinkPreprocess(markup);
 
             using (XhtmlPrinter printer = new XhtmlPrinter())
             {
@@ -61,63 +86,63 @@ namespace wem
         }
 
 
-        public static void MediaWiki2XhtmlFragmentTest()
-        {
+//        public static void MediaWiki2XhtmlFragmentTest()
+//        {
 
 
 
-            System.Console.WriteLine(MediaWikiToXHTML("=== bold ==="));
+//            System.Console.WriteLine(MediaWikiToXHTML("=== bold ==="));
 
-            System.Console.WriteLine(MediaWikiToXHTML("''italic''"));
-
-
-            string table = @"
-{|
-|Orange||Apple||more
-|-
-|Bread||Pie||more
-|-
-|Butter||Ice<br/>cream||and<br/>more
-|}
-";
-
-            System.Console.WriteLine(MediaWikiToXHTML(table));
+//            System.Console.WriteLine(MediaWikiToXHTML("''italic''"));
 
 
-            string enumeration = @"
-# Start each line
-# with a [[Wikipedia:Number_sign|number sign]] (#).
-## More number signs give deeper
-### and deeper
-### levels.
-# Line breaks <br />don't break levels.
-### But jumping levels creates empty space.
-# Blank lines
+//            string table = @"
+//{|
+//|Orange||Apple||more
+//|-
+//|Bread||Pie||more
+//|-
+//|Butter||Ice<br/>cream||and<br/>more
+//|}
+//";
 
-# end the list and start another.
-Any other start also
-ends the list.
-
-<script type=""text/javascript"">
-alert('hello');
-alert(""helläöüo"");
-</script>
-";
-            System.Console.WriteLine(MediaWikiToXHTML(enumeration));
+//            System.Console.WriteLine(MediaWikiToXHTML(table));
 
 
-        }
+//            string enumeration = @"
+//# Start each line
+//# with a [[Wikipedia:Number_sign|number sign]] (#).
+//## More number signs give deeper
+//### and deeper
+//### levels.
+//# Line breaks <br />don't break levels.
+//### But jumping levels creates empty space.
+//# Blank lines
+//
+//# end the list and start another.
+//Any other start also
+//ends the list.
+//
+//<script type=""text/javascript"">
+//alert('hello');
+//alert(""helläöüo"");
+//</script>
+//";
+//            System.Console.WriteLine(MediaWikiToXHTML(enumeration));
 
 
-        public static void MediaWiki2XhtmlFileTest()
-        {
-            string rd = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
-            rd = System.IO.Path.Combine(rd, "../..");
-            rd = System.IO.Path.Combine(rd, "test.htm");
-            rd = System.IO.Path.GetFullPath(rd);
+//        }
 
-            //MediaWiki2XhtmlFile(rd, "MediaWiki Test", TestData.MediaWikiFormatting);
-        }
+
+        //public static void MediaWiki2XhtmlFileTest()
+        //{
+        //    string rd = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location);
+        //    rd = System.IO.Path.Combine(rd, "../..");
+        //    rd = System.IO.Path.Combine(rd, "test.htm");
+        //    rd = System.IO.Path.GetFullPath(rd);
+
+        //    //MediaWiki2XhtmlFile(rd, "MediaWiki Test", TestData.MediaWikiFormatting);
+        //}
 
 
     }

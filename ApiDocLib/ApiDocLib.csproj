@@ -60,6 +60,10 @@
       <Project>{057527dd-f28f-4c48-a4ee-5aaf5d2373a1}</Project>
       <Name>DocumentGeneratorLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WikiReader\WikiReader.csproj">
+      <Project>{44ffaafc-2039-450a-8a33-606a4afd7166}</Project>
+      <Name>WikiReader</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram1.cd" />
