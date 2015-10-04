@@ -12,9 +12,9 @@ namespace SoftwareEngineeringTools
     {
         static void Main(string[] args)
         {
-            
-            int parser = 2; // 0:Doxygen; 1:Java; 2: .NET
-            int generator = 2; //0:Word; 1:Latex; 2:HTML
+
+            int parser = 0; // 0:Doxygen; 1:Java; 2: .NET
+            int generator = 3; //0:Word; 1:Latex; 2:HTML
             if(args.Length == 2)
             {
                 parser = Int32.Parse(args[0]);
@@ -70,6 +70,9 @@ namespace SoftwareEngineeringTools
                     break;
                 case 2:
                     dg = new HTMLGenerator(@"..\..\", HTMLGenerator.GenerateMode.AllInOne, "Java");
+                    break;
+                case 3:
+                    dg = new WikiGenerator(@"..\..\ApiDoc.wiki");
                     break;
                 default:
                     return;

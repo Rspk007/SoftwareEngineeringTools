@@ -28,6 +28,7 @@ namespace wem
             }
             return fullNormalizedString;
         }
+               
         
         public static string MediaWikiToXHTML(string markup)
         {
@@ -48,7 +49,7 @@ namespace wem
                 org.wikimodel.wem.mediawiki.MediaWikiParser mep =
                     new org.wikimodel.wem.mediawiki.MediaWikiParser();
                 mep.parse(rdr, listener);
-                retVal = printer.Text;
+                retVal = printer.Text;                
 
                 rdr.close();
                 rdr = null;
