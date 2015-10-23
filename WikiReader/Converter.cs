@@ -1,5 +1,5 @@
 ﻿using System;
-namespace wem
+namespace SoftwareEngineeringTools.WikiReader
 {
 
 

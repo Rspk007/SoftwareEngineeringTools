@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SoftwareEngineeringTools.Documentation;
 using SoftwareEngineeringTools.Testing;
+using SoftwareEngineeringTools.WikiReader;
 
 namespace SoftwareEngineeringTools
 {
@@ -12,9 +13,11 @@ namespace SoftwareEngineeringTools
     {
         static void Main(string[] args)
         {
-
-            int parser = 0; // 0:Doxygen; 1:Java; 2: .NET
-            int generator = 3; //0:Word; 1:Latex; 2:HTML
+            
+            //AutoItController aic = new AutoItController();
+            //aic.WinRARTest();
+            int parser = 1; // 0:Doxygen; 1:Java; 2: .NET
+            int generator = 3; //0:Word; 1:Latex; 2:HTML, 3:Wiki
             if(args.Length == 2)
             {
                 parser = Int32.Parse(args[0]);
@@ -39,7 +42,7 @@ namespace SoftwareEngineeringTools
                     NetParser np = new NetParser(@"..\..\NET");
                     p.Index = np.Index;
                     p.Model = np.Model;
-                    break;
+                    break;               
                 default:
                     Console.WriteLine("Invalid type.");
                     return;
@@ -72,7 +75,7 @@ namespace SoftwareEngineeringTools
                     dg = new HTMLGenerator(@"..\..\", HTMLGenerator.GenerateMode.AllInOne, "Java");
                     break;
                 case 3:
-                    dg = new WikiGenerator(@"..\..\ApiDoc.wiki");
+                     dg = new WikiGenerator(@"..\..\ApiDoc.wiki");
                     break;
                 default:
                     return;

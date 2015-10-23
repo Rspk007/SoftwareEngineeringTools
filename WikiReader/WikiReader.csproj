@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Antlr4.4.5-alpha002\build\Antlr4.props" Condition="Exists('..\packages\Antlr4.4.5-alpha002\build\Antlr4.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -8,6 +9,8 @@
     <RootNamespace>wem</RootNamespace>
     <AssemblyName>wem</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>b766739f</NuGetPackageImportStamp>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -20,7 +23,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -45,29 +47,29 @@
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr4.Runtime">
+      <HintPath>..\packages\Antlr4.Runtime.4.5-alpha002\lib\net45\Antlr4.Runtime.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
-    <Reference Include="IKVM.Runtime">
-      <HintPath>Libs\IKVM.Runtime.dll</HintPath>
-    </Reference>
     <Reference Include="System.Web" />
-    <Reference Include="wem-2.0.6">
-      <HintPath>Libs\wem-2.0.6.dll</HintPath>
-    </Reference>
-    <Reference Include="IKVM.OpenJDK.Core">
-      <HintPath>Libs\IKVM.OpenJDK.Core.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Converter.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="MediaWikiCompiler.cs" />
+    <Compile Include="MediaWikiProcessor.cs" />
+    <Compile Include="WikiParser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="XhtmlPrinter.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <None Include="Libs\IKVM.Runtime.dll" />
-    <None Include="Libs\wem-2.0.6.dll" />
-    <None Include="Libs\IKVM.OpenJDK.Core.dll" />
+    <Antlr4 Include="MediaWikiLexer.g4">
+      <Generator>MSBuild:Compile</Generator>
+      <CustomToolNamespace>SoftwareEngineeringTools.WikiReader</CustomToolNamespace>
+    </Antlr4>
+    <Antlr4 Include="MediaWikiParser.g4">
+      <Generator>MSBuild:Compile</Generator>
+      <CustomToolNamespace>SoftwareEngineeringTools.WikiReader</CustomToolNamespace>
+    </Antlr4>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
@@ -86,4 +88,18 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ApiDocLib\ApiDocLib.csproj">
+      <Project>{7b5e8d6d-a60d-4996-b547-ad16d726750e}</Project>
+      <Name>ApiDocLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Antlr4.4.5-alpha002\build\Antlr4.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Antlr4.4.5-alpha002\build\Antlr4.props'))" />
+    <Error Condition="!Exists('..\packages\Antlr4.4.5-alpha002\build\Antlr4.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Antlr4.4.5-alpha002\build\Antlr4.targets'))" />
+  </Target>
+  <Import Project="..\packages\Antlr4.4.5-alpha002\build\Antlr4.targets" Condition="Exists('..\packages\Antlr4.4.5-alpha002\build\Antlr4.targets')" />
 </Project>

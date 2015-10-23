@@ -65,6 +65,10 @@
       <Project>{078e3574-28ea-4f27-bfe2-d0746c7810b5}</Project>
       <Name>TestReportDocLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WikiReader\WikiReader.csproj">
+      <Project>{44ffaafc-2039-450a-8a33-606a4afd7166}</Project>
+      <Name>WikiReader</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

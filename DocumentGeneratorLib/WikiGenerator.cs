@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace SoftwareEngineeringTools.Documentation
 {
@@ -42,6 +43,11 @@ namespace SoftwareEngineeringTools.Documentation
             this.writer.Dispose();
             writer = null;
         }
+
+        public string normalize(string input)
+        {
+            return "<nowiki>" + HttpUtility.HtmlEncode(input) + "</nowiki>";
+        }
         public override void BeginSectionTitle(int level, string title, string label)
         {
             writer.WriteLine();            
@@ -53,10 +59,10 @@ namespace SoftwareEngineeringTools.Documentation
             }
             if (label != null && label != string.Empty)
             {
-                String apos = "";
-                writer.Write("<div id=" + apos + label + apos + ">");
+                String apos = "\"";
+                writer.Write(" <div id=" + apos + label + apos + ">");
             }
-            writer.Write(" " + title);
+            writer.Write(" " + normalize(title));
             if (label != null && label != string.Empty)
             {
                 writer.Write("</div>");
@@ -95,11 +101,11 @@ namespace SoftwareEngineeringTools.Documentation
                 writer.Write("| ");
                 referenceBeginned = false;
             }
-            writer.Write(text);            
+            writer.Write(normalize(text));            
         }
         public override void PrintVerbatimText(string text)
         {
-            writer.Write("'''" + text + "'''");            
+            writer.Write("'''" + normalize(text) + "'''");            
         }
         public override void BeginMarkup(DocumentMarkupKind markupKind)
         {
@@ -135,7 +141,7 @@ namespace SoftwareEngineeringTools.Documentation
         }
         public override void NewLabel(string id)
         {
-            String apos = "";
+            String apos = "\"";
             writer.Write("<div id=" + apos + id + apos + "></div>");
         }
         public override void BeginReference(string id, bool url)
@@ -171,7 +177,7 @@ namespace SoftwareEngineeringTools.Documentation
                 writer.Write("*");
                 currentIndex--;
             }
-            writer.Write(title);            
+            writer.Write(normalize(title));            
         }
         public override void EndListItem(int index)
         {
