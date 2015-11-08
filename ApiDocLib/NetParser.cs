@@ -804,7 +804,7 @@ namespace SoftwareEngineeringTools.Documentation
                 {
                     this.Model.MemberRefs.Add(dp.Identifier, dp);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     continue;
                 }
@@ -930,7 +930,7 @@ namespace SoftwareEngineeringTools.Documentation
                 {
                     this.Model.MemberRefs.Add(dp.Identifier, dp);
                 }
-                catch (Exception e)
+                catch (Exception)
                 {
                     continue;
                 }

@@ -16,6 +16,7 @@ namespace SoftwareEngineeringTools.Documentation
         private TextWriter writer;
         private bool referenceBeginned = false;
         private bool onetable = false;
+        private bool url = false;
 
         public WikiGenerator(string path)
         {
@@ -46,7 +47,7 @@ namespace SoftwareEngineeringTools.Documentation
 
         public string normalize(string input)
         {
-            return "<nowiki>" + HttpUtility.HtmlEncode(input) + "</nowiki>";
+            return HttpUtility.HtmlEncode(input).Replace("]", "&rsqb;").Replace("[", "&lsqb;");
         }
         public override void BeginSectionTitle(int level, string title, string label)
         {
@@ -88,14 +89,11 @@ namespace SoftwareEngineeringTools.Documentation
         }
         public override void NewParagraph()
         {
-            if (allowNewLine)
-            {
-                writer.WriteLine();                
-            }
+            writer.WriteLine();  
         }
         public override void PrintText(string text, bool insertSpace = true)
         {
-            text = text.Replace("\r\n", string.Empty).Replace("\n", string.Empty);
+            //text = text.Replace("\r\n", string.Empty).Replace("\n", string.Empty);
             if(referenceBeginned == true)
             {
                 writer.Write("| ");
@@ -119,8 +117,11 @@ namespace SoftwareEngineeringTools.Documentation
                     break;
                 case DocumentMarkupKind.Emphasis:
                     writer.Write("''");
-                    break;                
-
+                    break;    
+                case DocumentMarkupKind.Center:
+                    writer.Write("<center>");
+                    break;
+                    
             }            
         }
         public override void EndMarkup(DocumentMarkupKind markupKind)
@@ -136,6 +137,9 @@ namespace SoftwareEngineeringTools.Documentation
                 case DocumentMarkupKind.Emphasis:
                     writer.Write("''");
                     break;
+                case DocumentMarkupKind.Center:
+                    writer.Write("</center>");
+                    break;
 
             }            
         }
@@ -146,9 +150,10 @@ namespace SoftwareEngineeringTools.Documentation
         }
         public override void BeginReference(string id, bool url)
         {
+            this.url = url;
             if(url)
             {
-                writer.Write(id);
+                writer.Write("["+id+" ");
             }
             else
             {
@@ -159,7 +164,14 @@ namespace SoftwareEngineeringTools.Documentation
         public override void EndReference()
         {
             this.referenceBeginned = false;
-            writer.Write("]]");
+            if (url)
+            {
+                writer.Write(" ]");
+            }
+            else
+            {
+                writer.Write("]]");
+            }
         }
         public override void BeginList() 
         {
@@ -172,21 +184,25 @@ namespace SoftwareEngineeringTools.Documentation
         public override void BeginListItem(int index, string title)
         {
             int currentIndex = index;
-            while (currentIndex > 0)
+            writer.Write("*");
+            //while (currentIndex > 0)
+            //{
+            //    writer.Write("*");
+            //    currentIndex--;
+            //}
+            if (title != null)
             {
-                writer.Write("*");
-                currentIndex--;
+                writer.Write(normalize(title));
             }
-            writer.Write(normalize(title));            
         }
         public override void EndListItem(int index)
         {
             int currentIndex = index;
-            while (currentIndex > 0)
-            {
-                writer.Write("*");
-                currentIndex--;
-            }            
+            //while (currentIndex > 0)
+            //{
+            //    writer.Write("*");
+            //    currentIndex--;
+            //}            
         }
         public override void BeginTable(int rowCount, int colCount)
         {

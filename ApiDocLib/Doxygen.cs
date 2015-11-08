@@ -496,7 +496,8 @@ namespace SoftwareEngineeringTools.Documentation
         ParamList,
         XRefSec,
         Copy,
-        BlockQuote
+        BlockQuote,
+        HtmlTag
     }
 
     public class DocCmd
@@ -738,6 +739,7 @@ namespace SoftwareEngineeringTools.Documentation
         public Compound Compound { get; set; }
         public DoxMember Member { get; set; }
         public DocRefKind RefKind { get; set; }
+        public string referenceID { get; set; }
         public bool? External { get; set; }
 
         public DocReference()
@@ -749,7 +751,8 @@ namespace SoftwareEngineeringTools.Documentation
     public enum DocRefKind
     {
         Compound,
-        Member
+        Member,
+        CustomID
     }
 
     public class DocIndexEntry : DocCmd
@@ -780,6 +783,77 @@ namespace SoftwareEngineeringTools.Documentation
         {
             this.Kind = DocKind.ListItem;
         }
+    }
+
+    public class DocHtmlTag:DocCmd
+    {
+        public HtmlTagType TagType { get; set; }
+        public List<DocIndexEntry> Attributes { get; private set; }
+        public bool isClosing { get; set; }
+
+        public DocHtmlTag()
+        {
+            this.Kind = DocKind.HtmlTag;
+            this.Attributes = new List<DocIndexEntry>();
+        }
+        
+    }
+
+    public enum HtmlTagType
+    {
+        abbr,
+        b,
+        bdi,
+        big,
+        blockquote,
+        br,
+        caption,
+        center,
+        citre,
+        code,
+        dd,
+        del,
+        dfn,
+        div,
+        dl,
+        dt,
+        em,
+        font,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        i,
+        ins,
+        kbd,
+        nowiki,
+        li,
+        ol,
+        p,
+        pre,
+        rb,
+        rp,
+        rt,
+        ruby,
+        s,
+        samp,
+        small,
+        span,
+        strike,
+        strong,
+        sub,
+        sup,
+        table,
+        td,
+        th,
+        tr,
+        tt,
+        u,
+        ul,
+        var
     }
 
     public class DocSimpleSect : DocCmd

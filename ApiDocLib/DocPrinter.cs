@@ -14,7 +14,11 @@ namespace SoftwareEngineeringTools.Documentation
         private int rowindex;
         private DocTable currentTable = null;
         private DocSect currentsection = null;
-
+        public DocPrinter(IDocumentGenerator generator)
+        {
+            this.dg = generator;
+            this.sectionLevel = 0;
+        }
         public DocPrinter (IDocumentGenerator generator, DoxygenModel model)
         {
             this.dg = generator;
@@ -1141,8 +1145,14 @@ namespace SoftwareEngineeringTools.Documentation
             dt.Rows.Add(dtr);
         }
 
+        int depth = 0;
         public void PrintDocCmd(DocCmd cmd)
         {
+            depth++;
+            if(depth > 20)
+            {
+
+            }
             if (cmd == null)
             {
                 throw new ArgumentNullException("cmd");
@@ -1176,6 +1186,8 @@ namespace SoftwareEngineeringTools.Documentation
                         }
                     }
                     break;
+                case DocKind.HtmlTag:
+                    break;                    
                 case DocKind.CmdGroup:
                     DocCmdGroup docCmdGroup = cmd as DocCmdGroup;
                     foreach (var c in docCmdGroup.Commands)
@@ -1314,7 +1326,7 @@ namespace SoftwareEngineeringTools.Documentation
                     break;
                 case DocKind.Reference:
                     DocReference docReference = cmd as DocReference;
-                    if (docReference.Compound != null || docReference.Member != null)
+                    if (docReference.Compound != null || docReference.Member != null || docReference.referenceID != null)
                     {
                         switch (docReference.RefKind)
                         {
@@ -1323,6 +1335,9 @@ namespace SoftwareEngineeringTools.Documentation
                                 break;
                             case DocRefKind.Member:
                                 dg.BeginReference(docReference.Member.Identifier, false);
+                                break;
+                            case DocRefKind.CustomID:
+                                dg.BeginReference(docReference.referenceID, false);
                                 break;
                             default:
                                 this.Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);
@@ -1338,7 +1353,7 @@ namespace SoftwareEngineeringTools.Documentation
                                 this.PrintDocCmd(p);
                             }
                         }
-                        else
+                        else if (docReference.Compound != null || docReference.Member != null)
                         {
                             string name = null;
                             switch (docReference.RefKind)
