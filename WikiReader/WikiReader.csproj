@@ -54,7 +54,6 @@
     <Reference Include="System.Web" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AutoItController.cs" />
     <Compile Include="MediaWikiCompiler.cs" />
     <Compile Include="MediaWikiProcessor.cs" />
     <Compile Include="WikiParser.cs" />
@@ -98,17 +97,10 @@
       <Project>{057527dd-f28f-4c48-a4ee-5aaf5d2373a1}</Project>
       <Name>DocumentGeneratorLib</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <COMReference Include="AutoItX3Lib">
-      <Guid>{F8937E53-D444-4E71-9275-35B64210CC3B}</Guid>
-      <VersionMajor>1</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
+    <ProjectReference Include="..\TestingLib\TestingLib.csproj">
+      <Project>{70d8509c-7a03-48a7-9cb2-e9a0eaf0dafe}</Project>
+      <Name>TestingLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

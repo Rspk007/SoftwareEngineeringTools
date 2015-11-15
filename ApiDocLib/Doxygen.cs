@@ -497,7 +497,9 @@ namespace SoftwareEngineeringTools.Documentation
         XRefSec,
         Copy,
         BlockQuote,
-        HtmlTag
+        HtmlTag,
+        Command,
+        IfCommand
     }
 
     public class DocCmd

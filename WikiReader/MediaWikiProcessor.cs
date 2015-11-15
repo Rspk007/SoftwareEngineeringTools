@@ -1,4 +1,5 @@
 ﻿using SoftwareEngineeringTools.Documentation;
+using SoftwareEngineeringTools.Testing;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,6 +27,9 @@ namespace SoftwareEngineeringTools.WikiReader
         bool isNewSection;
         bool isInMarkup;
         bool headerCell;
+        bool ifCommand = false;
+        IfCommand lastIfCommand;
+        bool isTrue = false;
 
         private enum parentClass
         {
@@ -674,6 +678,7 @@ namespace SoftwareEngineeringTools.WikiReader
         {
             Console.WriteLine("VisitTextLine: " + context.GetText());           
            string Textblock = context.GetText();
+
            // string Textblock = RemoveBetween(RemoveBetween(context.GetText(), '<', '>'),'[',']').Replace("]",string.Empty);
             List<string> normalformatBlocks = new List<string>();
             while (!string.IsNullOrEmpty(Textblock))
@@ -683,15 +688,16 @@ namespace SoftwareEngineeringTools.WikiReader
                 int empBold = Textblock.IndexOf("'''''");
                 int html = Textblock.IndexOf("<");
                 int link = Textblock.IndexOf("[");
+                int command = Textblock.IndexOf("{{");
 
                 if (emp == -1) emp = int.MaxValue;
                 if (bold == -1) bold = int.MaxValue;
                 if (empBold == -1) empBold = int.MaxValue;
                 if (html == -1) html = int.MaxValue;
                 if (link == -1) link = int.MaxValue;
+                if (command == -1) command = int.MaxValue;
 
-
-                int minValue = Math.Min(Math.Min(Math.Min(Math.Min(emp, bold), empBold),html),link);
+                int minValue = Math.Min(command,Math.Min(Math.Min(Math.Min(Math.Min(emp, bold), empBold),html),link));
                 if(minValue == int.MaxValue)
                 {
                     string newTextblock = Textblock;
@@ -729,6 +735,13 @@ namespace SoftwareEngineeringTools.WikiReader
                         string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf(">")+1);
                         normalformatBlocks.Add(newFormatTextblock);
                         Textblock = Textblock.Substring(Textblock.IndexOf(">")+1);
+                    }
+                    else if (command == minValue)
+                    {
+
+                        string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf("}}") + 2);
+                        normalformatBlocks.Add(newFormatTextblock);
+                        Textblock = Textblock.Substring(Textblock.IndexOf("}}") + 2);
                     }
                     else
                     {
@@ -806,7 +819,12 @@ namespace SoftwareEngineeringTools.WikiReader
                             addElementToLastClass(dt);
                             dt = new DocText();
                         }
-                        createHTMLTag(item);
+                        try
+                        {
+                            createHTMLTag(item);
+                        }
+                        catch (Exception)
+                        { }
                     }
                     else if(item.First() == '[')
                     {
@@ -816,6 +834,81 @@ namespace SoftwareEngineeringTools.WikiReader
                             dt = new DocText();
                         }
                         setLinks(item);
+                    }
+                    else if(item.First() == '{')
+                    {
+                        if (!String.IsNullOrEmpty(dt.Text))
+                        {
+                            addElementToLastClass(dt);
+                            dt = new DocText();
+                        }
+                        string commandString = item.Substring(2, item.Length - 4);
+                        List<string> parameters = commandString.Split('|').Skip(1).ToList();
+                        Command newCommand = new Command();
+                        newCommand.CommandName = (Command.commandType)Enum.Parse(typeof(Command.commandType), commandString.Split('|')[0].ToUpper());
+                        if (newCommand.CommandName == Command.commandType.IF)
+                        {
+                            IfCommand currentIfCommand = new IfCommand();
+                            DecisionCommand currentDecisionCommand = new DecisionCommand();
+                            currentDecisionCommand.CommandName = (Command.commandType)Enum.Parse(typeof(Command.commandType), parameters[0]);
+                            currentDecisionCommand.paramters = parameters.Skip(1).ToList();
+                            currentIfCommand.decisionCommand = currentDecisionCommand;
+                            if(ifCommand == false)
+                            {
+                                this.ifCommand = true;
+                                this.isTrue = true;
+                                lastIfCommand = currentIfCommand;
+                                addElementToLastClass(currentIfCommand);
+                            }
+                            else
+                            {
+                                currentIfCommand.parent = lastIfCommand;
+                                if (isTrue)
+                                {
+                                    lastIfCommand.trueCommand.Add(currentIfCommand);
+                                }
+                                else
+                                {
+                                    lastIfCommand.falseCommand.Add(currentIfCommand);
+                                }
+                                lastIfCommand = currentIfCommand;
+                            }
+                            
+                        }
+                        else if (ifCommand == true && newCommand.CommandName != Command.commandType.ELSE && newCommand.CommandName != Command.commandType.ENDIF)
+                        {
+                            newCommand.paramters = parameters;
+                            if(this.isTrue)
+                            {                                
+                                lastIfCommand.trueCommand.Add(newCommand);
+                            }
+                            else
+                            {
+                                lastIfCommand.falseCommand.Add(newCommand);
+                            }
+
+                        }
+                        else if(ifCommand == true && newCommand.CommandName == Command.commandType.ELSE)
+                        {
+                            isTrue = false;
+                        }
+                        else if(ifCommand == true && newCommand.CommandName == Command.commandType.ENDIF)
+                        {
+                            if(lastIfCommand.parent == null)
+                            {
+                                ifCommand = false;
+                            }
+                            else
+                            {
+                                lastIfCommand = lastIfCommand.parent;
+                                
+                            }
+                        }
+                        else
+                        {
+                            newCommand.paramters = parameters;
+                            addElementToLastClass(newCommand);
+                        }
                     }
                     else
                     {                        

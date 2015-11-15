@@ -1,19 +1,17 @@
 ﻿
 using SoftwareEngineeringTools.Documentation;
+using SoftwareEngineeringTools.Testing;
 using System;
 using System.IO;
-using wem;
 namespace SoftwareEngineeringTools.WikiReader
 {
     public class WikiParser
     {
         static void Main(string[] args)
         {
-            AutoItController aic = new AutoItController();
-            aic.test();
             WikiParser wp = new WikiParser(@"..\..\..\ApiDoc.wiki");
             WikiGenerator wg = new WikiGenerator(@"..\..\..\ApiDocOut.wiki");
-            DocPrinter dp = new DocPrinter(wg);
+            TestDocPrinter dp = new TestDocPrinter(wg);
             dp.PrintDocCmd(wp.firstSection);
             wg.Dispose();
         }

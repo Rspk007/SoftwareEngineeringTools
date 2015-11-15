@@ -12,10 +12,8 @@ namespace SoftwareEngineeringTools
     class Program
     {
         static void Main(string[] args)
-        {
-            
-            //AutoItController aic = new AutoItController();
-            //aic.WinRARTest();
+        {            
+
             int parser = 3; // 0:Doxygen; 1:Java; 2: .NET; 3:Wiki
             int generator = 3; //0:Word; 1:Latex; 2:HTML, 3:Wiki
             if(args.Length == 2)
