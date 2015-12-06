@@ -260,5 +260,15 @@ namespace SoftwareEngineeringTools.Documentation
             writer.WriteLine(writer.NewLine + "|}");
             allowNewLine = true;
         }
+
+        public override void AddImage(string path, string Width = null, string Height = null)
+        {
+            writer.Write("[[File:" + path);
+            if(Width != null)
+            {
+                writer.Write("|"+Int32.Parse(Width)+"px");
+            }
+            writer.WriteLine("]]");
+        }
     }
 }

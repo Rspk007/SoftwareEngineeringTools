@@ -41,6 +41,7 @@ namespace SoftwareEngineeringTools.Documentation
         void BeginTableCell(int rowIndex, int colIndex, bool head);
         void EndTableCell(int rowIndex, int colIndex, bool head);
         void EndTable();
+        void AddImage(string path, string Width= null, string Height=null);
     }
 
     public abstract class DocumentGenerator : IDocumentGenerator, IDisposable
@@ -70,5 +71,6 @@ namespace SoftwareEngineeringTools.Documentation
         public abstract void BeginTableCell(int rowIndex, int colIndex, bool head);
         public abstract void EndTableCell(int rowIndex, int colIndex, bool head);
         public abstract void EndTable();
+        public abstract void AddImage(string path, string Width = null, string Height = null);
     }
 }

@@ -745,9 +745,9 @@ namespace SoftwareEngineeringTools.WikiReader
                     }
                     else
                     {
-                        string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf("]]") + 2);
+                        string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf("]") + 1);
                         normalformatBlocks.Add(newFormatTextblock);
-                        Textblock = Textblock.Substring(Textblock.IndexOf("]]") + 2);
+                        Textblock = Textblock.Substring(Textblock.IndexOf("]") + 1);
                     }
                 }                
             }
@@ -846,12 +846,46 @@ namespace SoftwareEngineeringTools.WikiReader
                         List<string> parameters = commandString.Split('|').Skip(1).ToList();
                         Command newCommand = new Command();
                         newCommand.CommandName = (Command.commandType)Enum.Parse(typeof(Command.commandType), commandString.Split('|')[0].ToUpper());
-                        if (newCommand.CommandName == Command.commandType.IF)
+                        if (newCommand.CommandName == Command.commandType.INSERT)
+                        {
+                            DocImage dImage = new DocImage();
+                            foreach (string parameter in parameters)
+                            {
+                                string commandName = parameter.Split('=')[0];
+                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
+                                         switch(commandName)
+                                         {
+                                             case "filePath":
+                                             case "Path":
+                                                 dImage.Path = commandData;
+                                                 break;
+                                             case "Width":
+                                             case "width":
+                                                 dImage.Width = commandData;
+                                                 break;
+                                             case "Height":
+                                             case "height":
+                                                 dImage.Height = commandData;
+                                                 break;
+                                             default:
+                                                 dImage.Name = commandData;
+                                                 break;
+                                         }
+                            }                            
+                            addElementToLastClass(dImage);
+                        }
+                        else if (newCommand.CommandName == Command.commandType.IF)
                         {
                             IfCommand currentIfCommand = new IfCommand();
                             DecisionCommand currentDecisionCommand = new DecisionCommand();
                             currentDecisionCommand.CommandName = (Command.commandType)Enum.Parse(typeof(Command.commandType), parameters[0]);
-                            currentDecisionCommand.paramters = parameters.Skip(1).ToList();
+                            foreach (string parameter in parameters.Skip(1))
+                            {
+                                string commandName = parameter.Split('=')[0];
+                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
+
+                                currentDecisionCommand.paramters.Add(commandName, commandData);
+                            }
                             currentIfCommand.decisionCommand = currentDecisionCommand;
                             if(ifCommand == false)
                             {
@@ -876,8 +910,14 @@ namespace SoftwareEngineeringTools.WikiReader
                             
                         }
                         else if (ifCommand == true && newCommand.CommandName != Command.commandType.ELSE && newCommand.CommandName != Command.commandType.ENDIF)
-                        {
-                            newCommand.paramters = parameters;
+                        {                            
+                            foreach (string parameter in parameters)
+                            {
+                                string commandName = parameter.Split('=')[0];
+                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
+
+                                newCommand.paramters.Add(commandName, commandData);
+                            }
                             if(this.isTrue)
                             {                                
                                 lastIfCommand.trueCommand.Add(newCommand);
@@ -906,7 +946,13 @@ namespace SoftwareEngineeringTools.WikiReader
                         }
                         else
                         {
-                            newCommand.paramters = parameters;
+                            foreach (string parameter in parameters)
+                            {
+                                string commandName = parameter.Split('=')[0];
+                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
+
+                                newCommand.paramters.Add(commandName, commandData);
+                            }
                             addElementToLastClass(newCommand);
                         }
                     }
@@ -944,6 +990,7 @@ namespace SoftwareEngineeringTools.WikiReader
             {
                 DocReference currentReference = new DocReference();
                 currentReference.referenceID = linkData[0];
+                currentReference.External = true;
                 currentReference.RefKind = DocRefKind.CustomID;
                 addElementToLastClass(currentReference);
             }
@@ -951,6 +998,7 @@ namespace SoftwareEngineeringTools.WikiReader
             {
                 DocReference currentReference = new DocReference();
                 currentReference.referenceID = linkData[0];
+                currentReference.External = true;
                 DocText dt = new DocText();
                 dt.Text = linkData[1];
                 currentReference.Commands.Add(dt);

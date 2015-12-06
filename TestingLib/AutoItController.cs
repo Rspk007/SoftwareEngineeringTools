@@ -2,10 +2,12 @@
 using AutoItX3Lib;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace SoftwareEngineeringTools.Testing
 {
@@ -33,13 +35,16 @@ namespace SoftwareEngineeringTools.Testing
             if (au3.WinExists(className, "") == 0)
                 au3.Run(path, "", au3.SW_SHOW);   
             else
-                au3.WinActivate(className, "");           
+                au3.WinActivate(className, "");
+
+            hWnd = au3.WinGetHandle(className, "");
         }
 
         public void write(string title, string controll, string text)
         {
             au3.WinActivate(title, "");
             au3.WinWaitActive(title, "");
+            hWnd = au3.WinGetHandle(title, "");
             au3.ControlSend(title, "", controll, text,1);
         }
 
@@ -47,31 +52,107 @@ namespace SoftwareEngineeringTools.Testing
         {
             au3.WinActivate(title, "");
             au3.WinWaitActive(title, "");
+            hWnd = au3.WinGetHandle(title, "");
             au3.Send(text);
         }
 
         public void click(string title, string controll)
         {
             au3.WinActivate(title, "");
-            au3.WinWaitActive(title, "",10);
+            au3.WinWaitActive(title, "",5);
+            hWnd = au3.WinGetHandle(title, "");
            au3.ControlClick(title, "", controll);
         }
 
         public bool exist(string title)
         {
-            return au3.WinExists(title) != 0;
+            au3.WinWaitActive(title, "", 5);
+            Thread.Sleep(500);
+            return au3.WinExists(title) != 0;           
         }
 
         public void waitActive(string title)
         {
             au3.WinActivate(title, "");
             au3.WinWaitActive(title, "");
+            hWnd = au3.WinGetHandle(title, "");
         }
 
         public void winClose(string title)
         {
             au3.WinClose(title,"");
         }
+
+       
+        public void save (string filePath)
+        {
+            au3.Send("!{PRINTSCREEN}");
+            Thread.Sleep(400);      
+            saveImage(filePath);
+        }
+
+        
+        public void saveImage(string filePath)
+        {
+            if (Clipboard.GetDataObject() != null)
+            {
+                IDataObject data = Clipboard.GetDataObject();
+
+                if (data.GetDataPresent(DataFormats.Bitmap))
+                {
+                    Image image = (Image)data.GetData(DataFormats.Bitmap, true);
+
+                    switch (filePath.Split('.')[1])
+                    {
+                        case "Jpeg":
+                            {
+                                image.Save(filePath, System.Drawing.Imaging.ImageFormat.Jpeg);
+                                break;
+                            }
+                        case "Bmp":
+                            {
+                                image.Save(filePath, System.Drawing.Imaging.ImageFormat.Bmp);
+                                break;
+                            }
+                        case "Gif":
+                            {
+                                image.Save(filePath, System.Drawing.Imaging.ImageFormat.Gif);
+                                break;
+                            }
+                        case "Png":
+                            {
+                                image.Save(filePath, System.Drawing.Imaging.ImageFormat.Png);
+                                break;
+                            }
+                        case "Tiff":
+                            {
+                                image.Save(filePath, System.Drawing.Imaging.ImageFormat.Tiff);
+                                break;
+                            }
+                        case "Exif":
+                            {
+                                image.Save(filePath, System.Drawing.Imaging.ImageFormat.Exif);
+                                break;
+                            }
+                        case "Wmf":
+                            {
+                                image.Save(filePath, System.Drawing.Imaging.ImageFormat.Wmf);
+                                break;
+                            }
+                    }
+                }
+                else
+                {
+                    
+                }
+            }
+            else
+            {
+               
+            } 
+        }
+
+        
 
         public void NotepadTest()
         {            

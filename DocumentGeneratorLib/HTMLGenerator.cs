@@ -370,5 +370,21 @@ namespace SoftwareEngineeringTools.Documentation
         {
             pageWriter.RenderEndTag();
         }
+
+
+        public override void AddImage(string path, string Width = null, string Height = null)
+        {
+            pageWriter.AddAttribute(HtmlTextWriterAttribute.Src, path);
+            if(Width != null)
+            {
+                pageWriter.AddAttribute(HtmlTextWriterAttribute.Width, Width);
+            }
+            if(Height != null)
+            {
+                pageWriter.AddAttribute(HtmlTextWriterAttribute.Height, Height);
+            }
+            pageWriter.RenderBeginTag(HtmlTextWriterTag.Img);
+
+        }
     }
 }

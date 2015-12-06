@@ -133,7 +133,15 @@ namespace SoftwareEngineeringTools.Documentation
             }
             
             String oTemplate = Path.GetFullPath(@"..\..\quickstyles\"+ currentTemplate.ToString() +".dotx");
-            this.doc = this.word.Documents.Add(oTemplate);
+            try
+            {
+                this.doc = this.word.Documents.Add(oTemplate);
+            }
+            catch(Exception)
+            {
+                oTemplate = Path.GetFullPath(@"..\..\..\SoftwareEngineeringTools\quickstyles\" + currentTemplate.ToString() + ".dotx");
+                this.doc = this.word.Documents.Add();
+            }
             //setTableStyle();
             this.word.Visible = ShowWord;
             if (this.doc == null)
@@ -353,7 +361,15 @@ namespace SoftwareEngineeringTools.Documentation
 
         public override void BeginReference(string id, bool url = false)
         {
-            int key = bookmarks.First(c => c.Value == id).Key;
+            string key;
+            if (!url)
+            {
+                key = bookmarks.First(c => c.Value == id).Key.ToString();
+            }
+            else
+            {
+                key = id;
+            }
             this.hyperStack.Add('_' + key);
             this.hyperStack.Add(sel.Start);
             this.hyperStack.Add(url);
@@ -557,6 +573,30 @@ namespace SoftwareEngineeringTools.Documentation
                     return;
             }
             
+        }
+
+        public override void AddImage(string path, string Width= null, string Height=null)
+        {
+            var shape = this.sel.InlineShapes.AddPicture(path);
+            if(Width != null)
+            {
+                try
+                {
+                    shape.Width = Int32.Parse(Width);
+                }
+                catch (FormatException)
+                {}
+            }
+
+            if (Height != null)
+            {
+                try
+                {
+                    shape.Height = Int32.Parse(Height);
+                }
+                catch (FormatException)
+                { }
+            }
         }
     }
 }

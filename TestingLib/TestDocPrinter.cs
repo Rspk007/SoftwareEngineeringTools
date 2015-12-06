@@ -218,6 +218,10 @@ namespace SoftwareEngineeringTools.Testing
                         dg.EndReference();
                     }
                     break;
+                case DocKind.Image:
+                    DocImage docImage = cmd as DocImage;
+                    dg.AddImage(docImage.Path,docImage.Width,docImage.Height);
+                    break;
                 case DocKind.Anchor:
                     DocAnchor docAnchor = cmd as DocAnchor;
                     dg.NewLabel(docAnchor.Id);
@@ -248,7 +252,7 @@ namespace SoftwareEngineeringTools.Testing
                                 dg.BeginReference(docReference.Member.Identifier, false);
                                 break;
                             case DocRefKind.CustomID:
-                                dg.BeginReference(docReference.referenceID, false);
+                                dg.BeginReference(docReference.referenceID, true);
                                 break;
                             default:
                                 this.Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);

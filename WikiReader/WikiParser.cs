@@ -7,10 +7,11 @@ namespace SoftwareEngineeringTools.WikiReader
 {
     public class WikiParser
     {
+        [STAThreadAttribute()]
         static void Main(string[] args)
         {
             WikiParser wp = new WikiParser(@"..\..\..\ApiDoc.wiki");
-            WikiGenerator wg = new WikiGenerator(@"..\..\..\ApiDocOut.wiki");
+            WordGenerator wg = new WordGenerator(@"Test.doc");
             TestDocPrinter dp = new TestDocPrinter(wg);
             dp.PrintDocCmd(wp.firstSection);
             wg.Dispose();

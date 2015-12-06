@@ -293,5 +293,18 @@ namespace SoftwareEngineeringTools.Documentation
             writer.WriteLine(@"\end{tabular}");
             writer.WriteLine(@"\end{center}");
         }
+
+        public override void AddImage(string path, string Width = null, string Height = null)
+        {
+            writer.WriteLine(@"\graphicspath{ {"+ path.Substring(0,path.LastIndexOf("\"")) +"} }");
+            writer.WriteLine(@"\begin{figure}[p]");
+            writer.Write(@"\includegraphics");
+            if(Width != null)
+            {
+                writer.Write("[width=" + Int32.Parse(Width)+"\textwidth]");
+            }
+            writer.WriteLine("{" + path.Substring(path.LastIndexOf("\""))+"}");
+            writer.WriteLine(@"\end{figure}");
+        }
     }
 }
