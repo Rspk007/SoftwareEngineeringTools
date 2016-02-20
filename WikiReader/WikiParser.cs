@@ -7,14 +7,20 @@ namespace SoftwareEngineeringTools.WikiReader
 {
     public class WikiParser
     {
+        public static DocumentGenerator dg;
+
         [STAThreadAttribute()]
         static void Main(string[] args)
         {
             WikiParser wp = new WikiParser(@"..\..\..\ApiDoc.wiki");
-            WordGenerator wg = new WordGenerator(@"Test.doc");
-            TestDocPrinter dp = new TestDocPrinter(wg);
+            //WordGenerator wg = new WordGenerator(@"Test.doc");
+            if(dg == null)
+            {
+                dg = new WordGenerator(@"Test.doc");
+            }
+            TestDocPrinter dp = new TestDocPrinter(dg);
             dp.PrintDocCmd(wp.firstSection);
-            wg.Dispose();
+            dg.Dispose();
         }
         string path;
         DocSect firstSection;
@@ -52,6 +58,11 @@ namespace SoftwareEngineeringTools.WikiReader
         public void addSectionToFirstSection(DocSect newSection)
         {
             this.firstSection.Sections.Add(newSection);
+        }
+
+        public void setDocumentGenerator(DocumentGenerator docg)
+        {
+            dg = docg;
         }
     }
 }

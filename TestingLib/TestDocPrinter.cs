@@ -205,6 +205,8 @@ namespace SoftwareEngineeringTools.Testing
                     break;
                 case DocKind.UrlLink:
                     DocUrlLink docUrlLink = cmd as DocUrlLink;
+                    
+                    
                     dg.BeginReference(docUrlLink.Url, true);
                     try
                     {

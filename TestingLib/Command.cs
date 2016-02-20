@@ -34,6 +34,7 @@ namespace SoftwareEngineeringTools.Testing
             KEYCOMMAND,
             NONE,
             OPEN,
+            OUTPUT,
             SAVE,
             SCREENSHOT,
             WAITACTIVE,

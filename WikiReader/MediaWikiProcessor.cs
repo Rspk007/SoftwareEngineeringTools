@@ -745,9 +745,9 @@ namespace SoftwareEngineeringTools.WikiReader
                     }
                     else
                     {
-                        string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf("]") + 1);
+                        string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf("]") + 2);
                         normalformatBlocks.Add(newFormatTextblock);
-                        Textblock = Textblock.Substring(Textblock.IndexOf("]") + 1);
+                        Textblock = Textblock.Substring(Textblock.IndexOf("]") + 2);
                     }
                 }                
             }
@@ -873,6 +873,104 @@ namespace SoftwareEngineeringTools.WikiReader
                                          }
                             }                            
                             addElementToLastClass(dImage);
+                        }
+                        else if(newCommand.CommandName == Command.commandType.OUTPUT)
+                        {
+                            Dictionary<string,string> outputDatas = new Dictionary<string,string>();
+                            foreach (string parameter in parameters)
+                            {
+                                string commandName = parameter.Split('=')[0];
+                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
+                                outputDatas.Add(commandName, commandData);
+                            }
+                            string type;
+                            outputDatas.TryGetValue("type", out type);
+                            string path;
+                            outputDatas.TryGetValue("path", out path);
+                            DocumentGenerator newGenerator;
+                            switch(type.ToLower())
+                            {
+                                case "word":
+                                case "ms word":
+                                case "microsoft word":    
+                                    string visible;
+                                    string template;
+                                    outputDatas.TryGetValue("visible", out visible);
+                                    outputDatas.TryGetValue("template", out template);
+                                    
+                                    if(visible != null && template != null)
+                                    {
+                                        bool showWord;
+                                        if(visible == "1")
+                                        {
+                                            showWord = true;
+                                        }
+                                        else
+                                        {
+                                            showWord = false;
+                                        }
+                                        try
+                                        {
+                                            newGenerator = new WordGenerator(path, showWord, (WordGenerator.WordTemplate)Enum.Parse(typeof(WordGenerator.WordTemplate), template));
+                                        }
+                                        catch(Exception)
+                                        {
+                                            newGenerator = new WordGenerator(path, showWord);
+                                        }
+                                    }
+                                    else if(visible != null)
+                                    {
+                                        bool showWord;
+                                        if (visible == "1")
+                                        {
+                                            showWord = true;
+                                        }
+                                        else
+                                        {
+                                            showWord = false;
+                                        }
+                                        newGenerator = new WordGenerator(path, showWord);
+                                    }
+                                    else
+                                    {
+                                        newGenerator = new WordGenerator(path);
+                                    }
+                                    this.reader.setDocumentGenerator(newGenerator);
+                                    break;
+                                case "latex":
+                                    newGenerator = new LatexGenerator(path);
+                                    this.reader.setDocumentGenerator(newGenerator);
+                                    break;
+                                case "wiki":
+                                case "wikipedia":
+                                    newGenerator = new WikiGenerator(path);
+                                    this.reader.setDocumentGenerator(newGenerator);
+                                    break;
+                                case "html":
+                                case "web":
+                                    string generateMode;
+                                    string css;
+                                    outputDatas.TryGetValue("generateMode", out generateMode);
+                                    outputDatas.TryGetValue("css", out css);
+                                    if(generateMode != null && css != null)
+                                    {
+                                        try
+                                        {
+                                            newGenerator = new HTMLGenerator(path, (HTMLGenerator.GenerateMode)Enum.Parse(typeof(HTMLGenerator.GenerateMode), generateMode),css);
+                                        }
+                                        catch(Exception)
+                                        {
+                                            newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, css);
+                                        }
+                                    }
+                                    else
+                                    {
+                                        newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, "");
+                                    }
+                                    this.reader.setDocumentGenerator(newGenerator);
+                                    break;
+                            }
+                            
                         }
                         else if (newCommand.CommandName == Command.commandType.IF)
                         {

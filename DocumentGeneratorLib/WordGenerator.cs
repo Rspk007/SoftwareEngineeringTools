@@ -140,7 +140,7 @@ namespace SoftwareEngineeringTools.Documentation
             catch(Exception)
             {
                 oTemplate = Path.GetFullPath(@"..\..\..\SoftwareEngineeringTools\quickstyles\" + currentTemplate.ToString() + ".dotx");
-                this.doc = this.word.Documents.Add();
+                this.doc = this.word.Documents.Add(oTemplate);
             }
             //setTableStyle();
             this.word.Visible = ShowWord;
