@@ -44,7 +44,7 @@ namespace SoftwareEngineeringTools.Documentation
 
         public HTMLGenerator(TextWriter inputWriter, GenerateMode mode, string CSSName)
         {
-            if (indexWriter == null) throw new ArgumentNullException("writer");
+            if (indexWriter == null) throw new ArgumentNullException("inputWriter","Is null.");
             this.textWriter = inputWriter;
             this.mode = mode;
             this.CSSFileName = CSSName;

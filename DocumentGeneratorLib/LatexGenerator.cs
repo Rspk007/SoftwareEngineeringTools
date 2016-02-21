@@ -32,7 +32,7 @@ namespace SoftwareEngineeringTools.Documentation
             this.EndDocument();
         }
 
-        private string EscapeText(string text)
+        private static string EscapeText(string text)
         {
             if (string.IsNullOrEmpty(text)) return string.Empty;
             return text.Replace(@"\", @"\\").Replace(@"{", @"\{").Replace(@"}", @"\}").Replace(@"&", @"\&")
@@ -71,10 +71,10 @@ namespace SoftwareEngineeringTools.Documentation
         public override void BeginSectionTitle(int level, string title, string label)
         {
             writer.WriteLine();
-            title = this.EscapeText(title);
+            title = EscapeText(title);
             if (label != null)
             {
-                writer.WriteLine(@"\hypertarget{" + this.EscapeText(label) + "}{}");
+                writer.WriteLine(@"\hypertarget{" + EscapeText(label) + "}{}");
             }
             switch (level)
             {
@@ -133,7 +133,7 @@ namespace SoftwareEngineeringTools.Documentation
                 newline = false;
             }            
             if (!this.paraBegin && insertSpace) writer.Write(" ");
-            writer.Write(this.EscapeText(text));
+            writer.Write(EscapeText(text));
             this.paraBegin = false;
         }
 
@@ -141,7 +141,7 @@ namespace SoftwareEngineeringTools.Documentation
         {
 
             writer.Write(@"\begin{verbatim}");
-            writer.Write(this.EscapeText(text));
+            writer.Write(EscapeText(text));
             writer.Write(@"\end{verbatim}");
             writer.WriteLine();
             this.paraBegin = true;
@@ -179,12 +179,12 @@ namespace SoftwareEngineeringTools.Documentation
 
         public override void NewLabel(string id)
         {
-            writer.Write(@"\hypertarget{" + this.EscapeText(id) + "}{}");
+            writer.Write(@"\hypertarget{" + EscapeText(id) + "}{}");
         }
 
         public override void BeginReference(string id, bool url)
         {
-            writer.Write(@"\hyperlink{" + this.EscapeText(id) + "}{");
+            writer.Write(@"\hyperlink{" + EscapeText(id) + "}{");
         }
 
         public override void EndReference()
@@ -206,7 +206,7 @@ namespace SoftwareEngineeringTools.Documentation
         {
             if (title != null)
             {
-                writer.WriteLine(@"\item{" + this.EscapeText(title) + "} ");
+                writer.WriteLine(@"\item{" + EscapeText(title) + "} ");
             }
             else
             {

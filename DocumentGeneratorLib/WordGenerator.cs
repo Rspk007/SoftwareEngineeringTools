@@ -406,7 +406,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
         }
 
-        private void ApplyListTemplate(ListGallery listGallery, ListFormat listFormat, int level = 1)
+        private static void ApplyListTemplate(ListGallery listGallery, ListFormat listFormat, int level = 1)
         {
             listFormat.ApplyListTemplateWithLevel(
                 listGallery.ListTemplates[level],
@@ -445,7 +445,7 @@ namespace SoftwareEngineeringTools.Documentation
                 ListFormat listFormat = null;
                 listFormat = sel.Range.ListFormat;
                 sel.Range.Text = title;
-                this.ApplyListTemplate(listGallery, listFormat, 1);
+                ApplyListTemplate(listGallery, listFormat, 1);
                 sel.Range.InsertParagraphAfter();
             }
         }
@@ -456,7 +456,7 @@ namespace SoftwareEngineeringTools.Documentation
             listStack.RemoveAt(listStack.Count - 1);
             ListFormat listFormat = null;
             listFormat = range.ListFormat;
-            this.ApplyListTemplate(listGallery, listFormat, this.depth);
+            ApplyListTemplate(listGallery, listFormat, this.depth);
         }
 
         public override void BeginTable(int rowCount, int colCount)
@@ -575,9 +575,9 @@ namespace SoftwareEngineeringTools.Documentation
             
         }
 
-        public override void AddImage(string path, string Width= null, string Height=null)
+        public override void AddImage(string image_path, string Width= null, string Height=null)
         {
-            var shape = this.sel.InlineShapes.AddPicture(path);
+            var shape = this.sel.InlineShapes.AddPicture(image_path);
             if(Width != null)
             {
                 try

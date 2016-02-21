@@ -5,6 +5,7 @@ using System.Text;
 
 namespace SoftwareEngineeringTools.Documentation
 {
+    
     public class DocumentException : Exception
     {
         public DocumentException()

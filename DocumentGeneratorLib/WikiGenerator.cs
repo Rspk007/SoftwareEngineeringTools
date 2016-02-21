@@ -10,8 +10,6 @@ namespace SoftwareEngineeringTools.Documentation
 {
     public class WikiGenerator : DocumentGenerator
     {
-        private string path;
-        private bool allowNewLine = false;
         private int lastlevel;
         private TextWriter writer;
         private bool referenceBeginned = false;
@@ -20,8 +18,7 @@ namespace SoftwareEngineeringTools.Documentation
 
         public WikiGenerator(string path)
         {
-            this.path = path;
-            this.writer = new StreamWriter(path);
+             this.writer = new StreamWriter(path);
             this.BeginDocument();
         }
 
@@ -45,7 +42,7 @@ namespace SoftwareEngineeringTools.Documentation
             writer = null;
         }
 
-        public string normalize(string input)
+        public static string normalize(string input)
         {
             return HttpUtility.HtmlEncode(input).Replace("]", "&rsqb;").Replace("[", "&lsqb;");
         }
@@ -58,13 +55,13 @@ namespace SoftwareEngineeringTools.Documentation
                 writer.Write("=");
                 currentlevel--;
             }
-            if (label != null && label != string.Empty)
+            if (!String.IsNullOrEmpty(label))
             {
                 String apos = "\"";
                 writer.Write(" <div id=" + apos + label + apos + ">");
             }
             writer.Write(" " + normalize(title));
-            if (label != null && label != string.Empty)
+            if (!String.IsNullOrEmpty(label))
             {
                 writer.Write("</div>");
             }
@@ -148,9 +145,9 @@ namespace SoftwareEngineeringTools.Documentation
             String apos = "\"";
             writer.Write("<div id=" + apos + id + apos + "></div>");
         }
-        public override void BeginReference(string id, bool url)
+        public override void BeginReference(string id, bool is_url)
         {
-            this.url = url;
+            this.url = is_url;
             if(url)
             {
                 writer.Write("["+id+" ");
@@ -183,13 +180,7 @@ namespace SoftwareEngineeringTools.Documentation
         }
         public override void BeginListItem(int index, string title)
         {
-            int currentIndex = index;
             writer.Write("*");
-            //while (currentIndex > 0)
-            //{
-            //    writer.Write("*");
-            //    currentIndex--;
-            //}
             if (title != null)
             {
                 writer.Write(normalize(title));
@@ -197,12 +188,7 @@ namespace SoftwareEngineeringTools.Documentation
         }
         public override void EndListItem(int index)
         {
-            int currentIndex = index;
-            //while (currentIndex > 0)
-            //{
-            //    writer.Write("*");
-            //    currentIndex--;
-            //}            
+       
         }
         public override void BeginTable(int rowCount, int colCount)
         {
@@ -211,7 +197,6 @@ namespace SoftwareEngineeringTools.Documentation
             {
                 onetable = true;
             }
-            allowNewLine = false;
         }
         public override void BeginTableRow(int rowIndex)
         {
@@ -258,12 +243,11 @@ namespace SoftwareEngineeringTools.Documentation
         {
             
             writer.WriteLine(writer.NewLine + "|}");
-            allowNewLine = true;
         }
 
-        public override void AddImage(string path, string Width = null, string Height = null)
+        public override void AddImage(string image_path, string Width = null, string Height = null)
         {
-            writer.Write("[[File:" + path);
+            writer.Write("[[File:" + image_path);
             if(Width != null)
             {
                 writer.Write("|"+Int32.Parse(Width)+"px");
