@@ -571,7 +571,7 @@ namespace SoftwareEngineeringTools.Documentation
             //throw new InvalidOperationException("DocCmd can't be printed!");
         }
 
-        public string NormalizeName(string name)
+        public static string NormalizeName(string name)
         {
             if (name == null)
             {
@@ -1019,7 +1019,7 @@ namespace SoftwareEngineeringTools.Documentation
                     }
                     if (name != null)
                     {
-                        name = this.NormalizeName(name);
+                        name = NormalizeName(name);
                     }
                     new DocText() { TextKind = DocTextKind.Plain, Text = name }.print(dg, sectionLevel);
                 }

@@ -61,7 +61,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
         }
 
-        private XDocument LoadXml(string fileName)
+        private static XDocument LoadXml(string fileName)
         {
             using (StreamReader reader = new StreamReader(fileName))
             {
@@ -83,7 +83,7 @@ namespace SoftwareEngineeringTools.Documentation
         private void ParseIndex()
         {
             this.currentFileName = this.IndexFile;
-            XDocument xdoc = this.LoadXml(this.IndexFile);
+            XDocument xdoc = LoadXml(this.IndexFile);
             XElement root = xdoc.Element("doxygenindex");
             this.Index.Version = root.Attribute("version").Value;
             foreach (var cie in root.Elements())
@@ -320,7 +320,7 @@ namespace SoftwareEngineeringTools.Documentation
             this.currentFileName = fileName;
             try
             {
-                XDocument xdoc = this.LoadXml(fileName);
+                XDocument xdoc = LoadXml(fileName);
              XElement de = xdoc.Element("doxygen");
             XElement cde = de.Element("compounddef");
             if (this.ParseCompound(c, cde))

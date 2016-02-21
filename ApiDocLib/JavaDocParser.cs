@@ -71,7 +71,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
         }
 
-       private string normalizeHtml (String input)
+       private static string normalizeHtml (String input)
         {
             String output = input.Replace("&nbsp;", " ");
             output = output.Replace("&lt;", "<");
@@ -80,7 +80,7 @@ namespace SoftwareEngineeringTools.Documentation
            
         }
 
-        private string getId (string args)
+        private static string getId (string args)
        {
            string[] output = args.Replace("(", string.Empty).Replace(")", string.Empty).Replace("[", "_").Replace("]", string.Empty).Split(' ');
            output = output.Where(c => !String.IsNullOrEmpty(c)).ToArray();
@@ -105,7 +105,6 @@ namespace SoftwareEngineeringTools.Documentation
             DocPara dp = new DocPara();
             DocText dt = new DocText();
             DocPara newPara;
-            bool newParagraph = false;
             foreach (HtmlNode childnode in descNode.ChildNodes.Where(c => c.InnerText != "\r\n"))
             {
                 switch (childnode.Name)
@@ -274,7 +273,7 @@ namespace SoftwareEngineeringTools.Documentation
                 packageDivNode = bodyNode.ChildNodes.First(node => node.Name == "div" && node.Attributes.FirstOrDefault(attr => attr.Name == "class" && attr.Value =="contentContainer")!=null);
             }
             // If the program can't find the package, than it exit with error.
-            catch (InvalidOperationException iox)
+            catch (InvalidOperationException)
             {
                 this.Log(LogKind.Error, "Can't find the packages. Program is terminating.");
                 return;
@@ -285,7 +284,7 @@ namespace SoftwareEngineeringTools.Documentation
             {
                 packageTableNode = packageDivNode.ChildNodes.First(node => node.Name == "table").ChildNodes.First(node => node.Name == "tbody");
             }
-            catch (InvalidOperationException iox)
+            catch (InvalidOperationException)
             {
                 this.Log(LogKind.Error, "Can't find the data of the packages. Program is terminating.");
                 return;
@@ -311,6 +310,11 @@ namespace SoftwareEngineeringTools.Documentation
                 if(desc != null)
                 {
                     String Description = normalizeHtml(desc.InnerText);
+                    DocPara newPara = new DocPara();
+                    DocText desc_text = new DocText();
+                    desc_text.Text = Description;
+                    newPara.Commands.Add(desc_text);
+                    c.Description.Paragraphs.Add(newPara);
                 }
                 
 
@@ -375,7 +379,7 @@ namespace SoftwareEngineeringTools.Documentation
                 compoundListNode = compoundDivNode.ChildNodes.First(node => node.Name == "ul");
             }
             // If the program can't find the list of the compounds, than it exit with error.
-            catch (InvalidOperationException iox)
+            catch (InvalidOperationException)
             {
                 this.Log(LogKind.Error, "Can't find the list of the compounds in the package.");
                 return;

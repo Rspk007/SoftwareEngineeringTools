@@ -94,7 +94,8 @@ namespace SoftwareEngineeringTools.Documentation
         /// </summary>
         /// <param name="fileName">Name of the file</param>
         /// <returns>Return the XDocument representation of the xml file.</returns>
-        private XDocument LoadXml(string fileName)
+        private static 
+            XDocument LoadXml(string fileName)
         {
             using (StreamReader reader = new StreamReader(fileName))
             {
@@ -128,16 +129,16 @@ namespace SoftwareEngineeringTools.Documentation
                     XElement[] insideElements = elements.Elements().ToArray();
                     foreach (var item in insideElements)
                     {
-                        if (item.Name == "summary" && !item.Value.Equals(""))
+                        if (item.Name == "summary" && !String.IsNullOrEmpty(item.Value))
                         {
                             returnString += item.Value.Replace("\n",string.Empty).Replace("  ",string.Empty) + '\n';
                         }
-                        else if (item.Name == "param"&&!item.Value.Equals(""))
+                        else if (item.Name == "param" && !String.IsNullOrEmpty(item.Value))
                         {
                             returnString += item.FirstAttribute.Value.Replace("\n", string.Empty).Replace("  ", string.Empty) + ": ";
                             returnString += item.Value.Replace("\n", string.Empty).Replace("  ", string.Empty) + '\n';
                         }
-                        else if (item.Name == "returns"&&!item.Value.Equals(""))
+                        else if (item.Name == "returns" && !String.IsNullOrEmpty(item.Value))
                         {
                             returnString += "Return: \n";
                             returnString += item.Value.Replace("\n", string.Empty).Replace("  ", string.Empty) + '\n';
@@ -190,7 +191,7 @@ namespace SoftwareEngineeringTools.Documentation
             XDocument xdoc = null;
             try
             {
-                xdoc = this.LoadXml(path.Substring(0, path.Length - 3) + "xml");
+                xdoc = LoadXml(path.Substring(0, path.Length - 3) + "xml");
             }
             catch (Exception)
             {
@@ -524,8 +525,8 @@ namespace SoftwareEngineeringTools.Documentation
                     }
                 }
                 dc.Members.Add(dp);
-                String briefDescription = getDescription(dp.Identifier, DescriptionType.Brief);
-                String detailedDescription = getDescription(dp.Identifier, DescriptionType.Detailed);
+                //String briefDescription = getDescription(dp.Identifier, DescriptionType.Brief);
+                //String detailedDescription = getDescription(dp.Identifier, DescriptionType.Detailed);
                 MemberIndex mi = new MemberIndex();
                 mi.Identifier = dp.Identifier;
                 mi.Kind = dp.Kind;

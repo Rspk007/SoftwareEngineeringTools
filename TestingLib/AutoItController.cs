@@ -64,7 +64,7 @@ namespace SoftwareEngineeringTools.Testing
            au3.ControlClick(title, "", controll);
         }
 
-        public bool exist(string title)
+        public static bool exist(string title)
         {
             au3.WinWaitActive(title, "", 5);
             Thread.Sleep(500);
@@ -78,7 +78,7 @@ namespace SoftwareEngineeringTools.Testing
             hWnd = au3.WinGetHandle(title, "");
         }
 
-        public void winClose(string title)
+        public static void winClose(string title)
         {
             au3.WinClose(title,"");
         }
@@ -92,7 +92,7 @@ namespace SoftwareEngineeringTools.Testing
         }
 
         
-        public void saveImage(string filePath)
+        public static void saveImage(string filePath)
         {
             if (Clipboard.GetDataObject() != null)
             {
@@ -154,7 +154,7 @@ namespace SoftwareEngineeringTools.Testing
 
         
 
-        public void NotepadTest()
+        public static void NotepadTest()
         {            
             if(AutoItX.WinExists("Névtelen") == 0)
             {
@@ -171,7 +171,7 @@ namespace SoftwareEngineeringTools.Testing
             AutoItX.Send("!n");            
         }
 
-        public void WinRARTest()
+        public static void WinRARTest()
         {
             AutoItX.Run(@"C:\Program Files\WinRAR\WinRAR.exe", "");
             AutoItX.WinWaitActive("[CLASS:WinRarWindow]", "", 10);
@@ -190,7 +190,7 @@ namespace SoftwareEngineeringTools.Testing
         /// <summary>
         /// The entry point, or main thread / main loop, of our program
         /// </summary>
-        public void test()
+        public static void test()
         {
             au3 = new AutoItX3();                              //initialize our au3 class library
 

@@ -239,7 +239,7 @@ namespace SoftwareEngineeringTools.Testing
             }
         }
 
-        public ImageFormat getFormat(string extension)
+        public static ImageFormat getFormat(string extension)
         {
             ImageFormat returnImageFormat;
             switch(extension.ToLower())
@@ -276,7 +276,7 @@ namespace SoftwareEngineeringTools.Testing
             return returnImageFormat;
         }
 
-        public void test()
+        public static void test()
         {
             // Create a new instance of the Firefox driver.
 

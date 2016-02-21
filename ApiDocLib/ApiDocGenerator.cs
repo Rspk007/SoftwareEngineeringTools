@@ -27,7 +27,7 @@ namespace SoftwareEngineeringTools.Documentation
             processor.Generate();
         }
 
-        public void Log(string message)
+        public static void Log(string message)
         {
             Console.WriteLine(message);
         }
@@ -170,10 +170,10 @@ namespace SoftwareEngineeringTools.Documentation
                             dg.BeginMarkup(DocumentMarkupKind.ComputerOutput);
                             break;
                         case DocMarkupKind.Preformatted:
-                            this.Log("Not implemeted Markup: Preformatted");
+                            Log("Not implemeted Markup: Preformatted");
                             break;
                         default:
-                            this.Log("Unsupported Markup:" + docMarkup);
+                            Log("Unsupported Markup:" + docMarkup);
                             break;    
                     }
                     try
@@ -206,10 +206,10 @@ namespace SoftwareEngineeringTools.Documentation
                             dg.EndMarkup(DocumentMarkupKind.ComputerOutput);
                             break;
                         case DocMarkupKind.Preformatted:
-                            this.Log("Not implemeted Markup: Preformatted");
+                            Log("Not implemeted Markup: Preformatted");
                             break;
                         default:
-                            this.Log("Unsupported Markup:" + docMarkup);
+                            Log("Unsupported Markup:" + docMarkup);
                             break;    
                         }                        
                     }
@@ -225,17 +225,17 @@ namespace SoftwareEngineeringTools.Documentation
                             dg.PrintVerbatimText(docText.Text);
                             break;
                         default:
-                            this.Log("WARNING: unsupported text kind: DocTextKind." + docText.TextKind);
+                            Log("WARNING: unsupported text kind: DocTextKind." + docText.TextKind);
                             break;
                     }
                     break;
                 case DocKind.Char:
                     DocChar docChar = cmd as DocChar;
-                    this.Log("WARNING: unsupported char kind: DocCharKind." + docChar.CharKind);
+                    Log("WARNING: unsupported char kind: DocCharKind." + docChar.CharKind);
                     break;
                 case DocKind.Empty:
                     DocEmpty docEmpty = cmd as DocEmpty;
-                    this.Log("WARNING: unsupported empty kind: DocEmptyKind." + docEmpty.EmptyKind);
+                    Log("WARNING: unsupported empty kind: DocEmptyKind." + docEmpty.EmptyKind);
                     break;
                 case DocKind.UrlLink:
                     DocUrlLink docUrlLink = cmd as DocUrlLink;
@@ -273,7 +273,7 @@ namespace SoftwareEngineeringTools.Documentation
                                 dg.BeginReference(docReference.Member.Identifier,false);
                                 break;
                             default:
-                                this.Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);
+                                Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);
                                 break;
                         }
                     }
@@ -298,7 +298,7 @@ namespace SoftwareEngineeringTools.Documentation
                                     name = docReference.Member.Name;
                                     break;
                                 default:
-                                    this.Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);
+                                    Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);
                                     break;
                             }
                             if (name != null)
@@ -372,7 +372,7 @@ namespace SoftwareEngineeringTools.Documentation
                                 dg.EndSectionTitle();
                                 break;
                             default:
-                                this.Log("WARNING: unsupported simple section kind: DocSimpleSectKind." + docSimpleSect.SimpleSectKind);
+                                Log("WARNING: unsupported simple section kind: DocSimpleSectKind." + docSimpleSect.SimpleSectKind);
                                 break;
                         }
                     }
@@ -465,7 +465,7 @@ namespace SoftwareEngineeringTools.Documentation
                                     }
                                     catch (Exception e)
                                     {
-                                        this.Log(e.Message);
+                                        Log(e.Message);
                                     }
                                     finally
                                     {
@@ -476,7 +476,7 @@ namespace SoftwareEngineeringTools.Documentation
                             }
                             catch
                             {
-                                this.Log("Error while make table");
+                                Log("Error while make table");
                             }
                             finally
                             {
@@ -491,7 +491,7 @@ namespace SoftwareEngineeringTools.Documentation
                     }
                     break;
                 default:
-                    this.Log("WARNING: unsupported command: DocCmd." + cmd.Kind);
+                    Log("WARNING: unsupported command: DocCmd." + cmd.Kind);
                     break;
             }
         }
@@ -550,7 +550,7 @@ namespace SoftwareEngineeringTools.Documentation
             this.generator.PreviousSectionLevel();
         }
 
-        private bool HasContent(DoxNamespace ns, NamespaceListTemplate template)
+        private static bool HasContent(DoxNamespace ns, NamespaceListTemplate template)
         {
             // TODO
             return ns.Classifiers.Count > 0;
@@ -566,7 +566,7 @@ namespace SoftwareEngineeringTools.Documentation
             foreach (var ns in namespaces)
             {
                 this.currentNamespace = (DoxNamespace)ns;
-                if (this.HasContent(this.currentNamespace, template))
+                if (HasContent(this.currentNamespace, template))
                 {
                     string name = generator.NormalizeName(ns.Name);
                     generator.PrintSection("Namespace: " + name, ns.Identifier);
@@ -578,7 +578,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
         }
 
-        private bool SelectClassifier(DoxClassifier c, ClassifierListTemplate template)
+        private static bool SelectClassifier(DoxClassifier c, ClassifierListTemplate template)
         {
             if (template is InterfaceListTemplate)
             {
@@ -628,7 +628,7 @@ namespace SoftwareEngineeringTools.Documentation
                 }
                 ++i;
             }
-            classifiers.RemoveAll(c => !this.SelectClassifier(c, template));
+            classifiers.RemoveAll(c => !SelectClassifier(c, template));
             classifiers = classifiers.OrderBy(c => c.Name).ToList();
             foreach (var c in classifiers)
             {
@@ -668,7 +668,7 @@ namespace SoftwareEngineeringTools.Documentation
             ((IApiDocTemplateProcessor)this).Process((ClassifierListTemplate)template);
         }
 
-        private bool SelectMember(DoxMember m, MemberListTemplate template)
+        private static bool SelectMember(DoxMember m, MemberListTemplate template)
         {
             if (template is FieldListTemplate)
             {
@@ -700,7 +700,7 @@ namespace SoftwareEngineeringTools.Documentation
         {
             if (this.currentClassifier == null) return;
             List<DoxMember> members = this.currentClassifier.Members.ToList();
-            members.RemoveAll(m => !this.SelectMember(m, template));
+            members.RemoveAll(m => !SelectMember(m, template));
             members = members.OrderBy(m => m.Kind).ThenBy(m => m.Name).ToList();
             DocTable dt = new DocTable();
             header_row(dt);
@@ -754,7 +754,7 @@ namespace SoftwareEngineeringTools.Documentation
             //((IApiDocTemplateProcessor)this).Process((MemberListTemplate)template);   
             if (this.currentClassifier == null) return;
             List<DoxMember> members = this.currentClassifier.Members.ToList();
-            members.RemoveAll(m => !this.SelectMember(m, template));
+            members.RemoveAll(m => !SelectMember(m, template));
             members = members.OrderBy(m => m.Kind).ThenBy(m => m.Name).ToList();
             DocTable dt = new DocTable();
             header_row(dt);
@@ -781,7 +781,7 @@ namespace SoftwareEngineeringTools.Documentation
            // ((IApiDocTemplateProcessor)this).Process((MemberListTemplate)template);
             if (this.currentClassifier == null) return;
             List<DoxMember> members = this.currentClassifier.Members.ToList();
-            members.RemoveAll(m => !this.SelectMember(m, template));
+            members.RemoveAll(m => !SelectMember(m, template));
             members = members.OrderBy(m => m.Kind).ThenBy(m => m.Name).ToList();
             DocTable dt = new DocTable();
             header_row(dt);
@@ -816,7 +816,7 @@ namespace SoftwareEngineeringTools.Documentation
                 
             }
         }
-        void GetTruePropertys(DoxMember m, DocTableRow dtr, DocTable des)
+        static void GetTruePropertys(DoxMember m, DocTableRow dtr, DocTable des)
         {            
             DocPara dp = new DocPara();
             DocTableCell dtc = new DocTableCell(); //! Cell of the table
@@ -978,7 +978,7 @@ namespace SoftwareEngineeringTools.Documentation
             des.Rows.Add(desdtr);
             
         }
-        void header_row(DocTable dt)
+        static void header_row(DocTable dt)
         {
             DocTableRow dtr = new DocTableRow();
             DocTableCell dtc = new DocTableCell();
@@ -1001,7 +1001,7 @@ namespace SoftwareEngineeringTools.Documentation
             //((IApiDocTemplateProcessor)this).Process((MemberListTemplate)template);
             if (this.currentClassifier == null) return;
             List<DoxMember> members = this.currentClassifier.Members.ToList();
-            members.RemoveAll(m => !this.SelectMember(m, template));
+            members.RemoveAll(m => !SelectMember(m, template));
             members = members.OrderBy(m => m.Kind).ThenBy(m => m.Name).ToList();
             List<DocTable> tables = new List<DocTable>();
             DocPara dpara = new DocPara();

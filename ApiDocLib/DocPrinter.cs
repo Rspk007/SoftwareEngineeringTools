@@ -54,7 +54,7 @@ namespace SoftwareEngineeringTools.Documentation
                 ds.Paragraphs.Add(dp);
                 dt.ColCount = 2;
                 dt.RowCount = NameSpaces.Count + 1;
-                this.header_row(dt);
+                header_row(dt);
                 this.currentTable = dt;
             }            
             foreach (DoxNamespace Namespace in NameSpaces)
@@ -78,7 +78,7 @@ namespace SoftwareEngineeringTools.Documentation
         {
             if (detailed == true)
             {
-                string name = this.NormalizeName(ns.Name);
+                string name = NormalizeName(ns.Name);
                 DocSect parentsec = this.currentsection;
                 DocSect ds = new DocSect();
                 ds.Title = "Namespace: " + name;
@@ -137,7 +137,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
             else
             {
-                this.Log("Error DPrint-0: printClassifiers method should get a Namespace or list of classifiers");
+                Log("Error DPrint-0: printClassifiers method should get a Namespace or list of classifiers");
             }
             DocSect parentSect = this.currentsection;
             DocSect ds = new DocSect();
@@ -150,7 +150,7 @@ namespace SoftwareEngineeringTools.Documentation
                 ds.Paragraphs.Add(dp);
                 dt.ColCount = 2;
                 dt.RowCount = classifiers.Count + 1;
-                this.header_row(dt);
+                header_row(dt);
                 this.currentTable = dt;
             }     
             foreach (DoxClassifier classifier in classifiers.Where(classifier => classifier.Members.Count > 0))
@@ -182,7 +182,7 @@ namespace SoftwareEngineeringTools.Documentation
            if (detailed == true)
             {
                 DocSect parentSect = this.currentsection;
-                string name = this.NormalizeName(dc.Name);
+                string name = NormalizeName(dc.Name);
                 DocSect ds = new DocSect();
                 ds.Title = dc.Kind + ": " + name;
                 ds.Identifier = dc.Identifier;
@@ -248,7 +248,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
             else
             {
-                this.Log("Error DPrint-1: printClasses method should get a Namespace or list of classifiers");
+                Log("Error DPrint-1: printClasses method should get a Namespace or list of classifiers");
             }
             DocSect parentSect = this.currentsection;
             DocSect ds = new DocSect();
@@ -261,7 +261,7 @@ namespace SoftwareEngineeringTools.Documentation
                 ds.Paragraphs.Add(dp);
                 dt.ColCount = 2;
                 dt.RowCount = classes.Count + 1;
-                this.header_row(dt);
+                header_row(dt);
                 this.currentTable = dt;
             }
             foreach (DoxClass dc in classes)
@@ -300,7 +300,7 @@ namespace SoftwareEngineeringTools.Documentation
                 {
                     dt.ColCount = 2;
                     dt.RowCount = 2;
-                    this.header_row(dt);
+                    header_row(dt);
                 }
                 else
                 {
@@ -337,7 +337,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
             else
             {
-                this.Log("Error DPrint-2: printInterfaces method should get a Namespace or list of classifiers");
+                Log("Error DPrint-2: printInterfaces method should get a Namespace or list of classifiers");
             }
             DocSect parentSect = this.currentsection;
             DocSect ds = new DocSect();
@@ -350,7 +350,7 @@ namespace SoftwareEngineeringTools.Documentation
                 ds.Paragraphs.Add(dp);
                 dt.ColCount = 2;
                 dt.RowCount = interfaces.Count + 1;
-                this.header_row(dt);
+                header_row(dt);
                 this.currentTable = dt;
             }
             foreach (DoxInterface di in interfaces)
@@ -390,7 +390,7 @@ namespace SoftwareEngineeringTools.Documentation
                 {
                     dt.ColCount = 2;
                     dt.RowCount = 2;
-                    this.header_row(dt);
+                    header_row(dt);
                 }
                 else
                 {
@@ -427,7 +427,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
             else
             {
-                this.Log("Error DPrint-3: printStructs method should get a Namespace or list of classifiers");
+                Log("Error DPrint-3: printStructs method should get a Namespace or list of classifiers");
             }            
             DocSect parentSect = this.currentsection;
             DocSect ds = new DocSect();
@@ -440,7 +440,7 @@ namespace SoftwareEngineeringTools.Documentation
                 ds.Paragraphs.Add(dp);
                 dt.ColCount = 2;
                 dt.RowCount = structs.Count + 1;
-                this.header_row(dt);
+                header_row(dt);
                 this.currentTable = dt;
             }
             foreach (DoxStruct dst in structs)
@@ -479,7 +479,7 @@ namespace SoftwareEngineeringTools.Documentation
                 {
                     dt.ColCount = 2;
                     dt.RowCount = 2;
-                    this.header_row(dt);
+                    header_row(dt);
                 }
                 else
                 {
@@ -518,7 +518,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
             else
             {
-                this.Log("Error DPrint-4: printEnums method should get a Namespace or list of classifiers");
+                Log("Error DPrint-4: printEnums method should get a Namespace or list of classifiers");
             }            
             DocSect parentSect = this.currentsection;
             DocSect ds = new DocSect();
@@ -531,7 +531,7 @@ namespace SoftwareEngineeringTools.Documentation
                 ds.Paragraphs.Add(dp);
                 dt.ColCount = 2;
                 dt.RowCount = enums.Count + 1;
-                this.header_row(dt);
+                header_row(dt);
                 this.currentTable = dt;
             }
             foreach (DoxEnum dc in enums)
@@ -571,7 +571,7 @@ namespace SoftwareEngineeringTools.Documentation
                 {
                     dt.ColCount = 2;
                     dt.RowCount = 2;
-                    this.header_row(dt);
+                    header_row(dt);
                 }
                 else
                 {
@@ -609,7 +609,7 @@ namespace SoftwareEngineeringTools.Documentation
             }            
             else
             {
-                this.Log("Error DPrint-5: printMembers method should get a DoxClassifier or list of DoxMembers");
+                Log("Error DPrint-5: printMembers method should get a DoxClassifier or list of DoxMembers");
             }
 
             if(members.Count == 0)
@@ -624,7 +624,7 @@ namespace SoftwareEngineeringTools.Documentation
             dt.ColCount = 2;
             dt.RowCount = members.Count+1;
             rowindex = 1;
-            this.header_row(dt);
+            header_row(dt);
             this.currentTable = dt;
             this.currentsection = ds;
             foreach (DoxMember member in members)
@@ -860,7 +860,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
             else
             {
-                this.Log("Error DPrint-6: printFields method should get a DoxClassifier or list of DoxMembers");
+               Log("Error DPrint-6: printFields method should get a DoxClassifier or list of DoxMembers");
             }
             if (fields.Count == 0)
             {
@@ -874,7 +874,7 @@ namespace SoftwareEngineeringTools.Documentation
             dt.ColCount = 2;
             dt.RowCount = fields.Count+1;
             rowindex = 1;
-            this.header_row(dt);
+            header_row(dt);
             this.currentTable = dt;
             foreach (DoxField member in fields)
             {
@@ -919,7 +919,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
             else
             {
-                this.Log("Error DPrint-7: printMethods method should get a DoxClassifier or list of DoxMembers");
+                Log("Error DPrint-7: printMethods method should get a DoxClassifier or list of DoxMembers");
             }
 
             if (methods.Count == 0)
@@ -934,7 +934,7 @@ namespace SoftwareEngineeringTools.Documentation
             dt.ColCount = 2;
             dt.RowCount = methods.Count + 1;
             rowindex = 1;
-            this.header_row(dt);
+            header_row(dt);
             this.currentTable = dt;
             foreach (DoxMethod member in methods)
             {
@@ -979,7 +979,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
             else
             {
-                this.Log("Error DPrint-8: printEnumValues method should get a DoxClassifier or list of DoxMembers");
+                Log("Error DPrint-8: printEnumValues method should get a DoxClassifier or list of DoxMembers");
             }
             if (enumValues.Count == 0)
             {
@@ -993,7 +993,7 @@ namespace SoftwareEngineeringTools.Documentation
             dt.ColCount = 2;
             dt.RowCount = enumValues.Count + 1;
             rowindex = 1;
-            this.header_row(dt);
+            header_row(dt);
             this.currentTable = dt;
             foreach (DoxEnumValue member in enumValues)
             {
@@ -1038,7 +1038,7 @@ namespace SoftwareEngineeringTools.Documentation
             }
             else
             {
-                this.Log("Error DPrint-8: printEnumValues method should get a DoxClassifier or list of DoxMembers");
+                Log("Error DPrint-8: printEnumValues method should get a DoxClassifier or list of DoxMembers");
             }
             if (properties.Count == 0)
             {
@@ -1052,7 +1052,7 @@ namespace SoftwareEngineeringTools.Documentation
             dt.ColCount = 2;
             dt.RowCount = properties.Count + 1;
             rowindex = 1;
-            this.header_row(dt);
+            header_row(dt);
             this.currentTable = dt;
             foreach (DoxProperty member in properties)
             {
@@ -1084,7 +1084,7 @@ namespace SoftwareEngineeringTools.Documentation
             printMember(dp, detailed);
         }
 
-        private string NormalizeName(string name)
+        private static string NormalizeName(string name)
         {
             if (name == null)
             {
@@ -1107,7 +1107,7 @@ namespace SoftwareEngineeringTools.Documentation
             //return name.Replace("::", ".");
             
         }
-        public string GetPackage(string name)
+        public static string GetPackage(string name)
         {
 
             int index = name.LastIndexOf(":");
@@ -1122,12 +1122,12 @@ namespace SoftwareEngineeringTools.Documentation
             //return name.Replace("::", ".");           
         }
 
-        public void Log(string message)
+        public static void Log(string message)
         {
             Console.WriteLine(message);
         }
 
-        private void header_row(DocTable dt)
+        private static  void header_row(DocTable dt)
         {
             DocTableRow dtr = new DocTableRow();
             DocTableCell dtc = new DocTableCell();
@@ -1237,7 +1237,7 @@ namespace SoftwareEngineeringTools.Documentation
                             dg.BeginMarkup(DocumentMarkupKind.Preformatted);
                             break;
                         default:
-                            this.Log("Unsupported Markup:" + docMarkup);
+                            Log("Unsupported Markup:" + docMarkup);
                             break;
                     }
                     try
@@ -1273,7 +1273,7 @@ namespace SoftwareEngineeringTools.Documentation
                                 dg.EndMarkup(DocumentMarkupKind.Preformatted);
                                 break;
                             default:
-                                this.Log("Unsupported Markup:" + docMarkup);
+                                Log("Unsupported Markup:" + docMarkup);
                                 break;
                         }
                     }
@@ -1289,17 +1289,17 @@ namespace SoftwareEngineeringTools.Documentation
                             dg.PrintVerbatimText(docText.Text);
                             break;
                         default:
-                            this.Log("WARNING: unsupported text kind: DocTextKind." + docText.TextKind);
+                            Log("WARNING: unsupported text kind: DocTextKind." + docText.TextKind);
                             break;
                     }
                     break;
                 case DocKind.Char:
                     DocChar docChar = cmd as DocChar;
-                    this.Log("WARNING: unsupported char kind: DocCharKind." + docChar.CharKind);
+                    Log("WARNING: unsupported char kind: DocCharKind." + docChar.CharKind);
                     break;
                 case DocKind.Empty:
                     DocEmpty docEmpty = cmd as DocEmpty;
-                    this.Log("WARNING: unsupported empty kind: DocEmptyKind." + docEmpty.EmptyKind);
+                    Log("WARNING: unsupported empty kind: DocEmptyKind." + docEmpty.EmptyKind);
                     break;
                 case DocKind.UrlLink:
                     DocUrlLink docUrlLink = cmd as DocUrlLink;
@@ -1340,7 +1340,7 @@ namespace SoftwareEngineeringTools.Documentation
                                 dg.BeginReference(docReference.referenceID, false);
                                 break;
                             default:
-                                this.Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);
+                                Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);
                                 break;
                         }
                     }
@@ -1365,12 +1365,12 @@ namespace SoftwareEngineeringTools.Documentation
                                     name = docReference.Member.Name;
                                     break;
                                 default:
-                                    this.Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);
+                                    Log("WARNING: unsupported reference kind: DocRefKind." + docReference.RefKind);
                                     break;
                             }
                             if (name != null)
                             {
-                                name = this.NormalizeName(name);
+                                name = NormalizeName(name);
                             }
                             this.PrintDocCmd(new DocText() { TextKind = DocTextKind.Plain, Text = name });
                         }
@@ -1439,7 +1439,7 @@ namespace SoftwareEngineeringTools.Documentation
                                 dg.EndSectionTitle();
                                 break;
                             default:
-                                this.Log("WARNING: unsupported simple section kind: DocSimpleSectKind." + docSimpleSect.SimpleSectKind);
+                                Log("WARNING: unsupported simple section kind: DocSimpleSectKind." + docSimpleSect.SimpleSectKind);
                                 break;
                         }
                     }
@@ -1532,7 +1532,7 @@ namespace SoftwareEngineeringTools.Documentation
                                     }
                                     catch (Exception e)
                                     {
-                                        this.Log(e.Message);
+                                        Log(e.Message);
                                     }
                                     finally
                                     {
@@ -1543,7 +1543,7 @@ namespace SoftwareEngineeringTools.Documentation
                             }
                             catch
                             {
-                                this.Log("Error while make table");
+                                Log("Error while make table");
                             }
                             finally
                             {
@@ -1558,7 +1558,7 @@ namespace SoftwareEngineeringTools.Documentation
                     }
                     break;
                 default:
-                    this.Log("WARNING: unsupported command: DocCmd." + cmd.Kind);
+                    Log("WARNING: unsupported command: DocCmd." + cmd.Kind);
                     break;
             }
         }
