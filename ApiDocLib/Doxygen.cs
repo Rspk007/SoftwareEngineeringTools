@@ -7,8 +7,8 @@ namespace SoftwareEngineeringTools.Documentation
 {
     public class DoxygenIndex
     {
-        public Dictionary<string,CompoundIndex> CompoundIndexRefs { get; private set; }
-        public Dictionary<string,MemberIndex> MemberIndexRefs { get; private set; }
+        public Dictionary<string, CompoundIndex> CompoundIndexRefs { get; private set; }
+        public Dictionary<string, MemberIndex> MemberIndexRefs { get; private set; }
         public string Version { get; set; }
         public List<CompoundIndex> Compounds { get; private set; }
         public DoxygenIndex()
@@ -303,7 +303,7 @@ namespace SoftwareEngineeringTools.Documentation
     {
         public DoxProperty()
         {
-            this.Kind = MemberKind.Property;           
+            this.Kind = MemberKind.Property;
         }
     }
 
@@ -450,6 +450,34 @@ namespace SoftwareEngineeringTools.Documentation
             this.Paragraphs = new List<DocPara>();
             this.Sections = new List<DocSect>();
         }
+
+        public void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            if (Title != null)
+            {
+                dg.BeginSectionTitle(sectionLevel, Title, null);
+                dg.EndSectionTitle();
+                sectionLevel = sectionLevel + 1;
+            }
+            try
+            {
+                foreach (var para in Paragraphs)
+                {
+                    para.print(dg, sectionLevel);
+                }
+                foreach (var sect in Sections)
+                {
+                    sect.print(dg, sectionLevel);
+                }
+            }
+            finally
+            {
+                if (Title != null)
+                {
+                    sectionLevel = sectionLevel - 1;
+                }
+            }
+        }
     }
 
     public class DocSect : Description
@@ -459,6 +487,33 @@ namespace SoftwareEngineeringTools.Documentation
         public DocSect()
         {
             this.Kind = DocKind.Sect;
+        }
+        public void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            if (Title != null)
+            {
+                dg.BeginSectionTitle(sectionLevel, Title, Identifier);
+                dg.EndSectionTitle();
+                sectionLevel = sectionLevel + 1;
+            }
+            try
+            {
+                foreach (var p in Paragraphs)
+                {
+                    p.print(dg, sectionLevel);
+                }
+                foreach (var s in Sections)
+                {
+                    s.print(dg, sectionLevel);
+                }
+            }
+            finally
+            {
+                if (Title != null)
+                {
+                    sectionLevel--;
+                }
+            }
         }
     }
 
@@ -510,16 +565,53 @@ namespace SoftwareEngineeringTools.Documentation
         {
             this.Kind = DocKind.Cmd;
         }
+
+       public virtual void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            //throw new InvalidOperationException("DocCmd can't be printed!");
+        }
+
+        public string NormalizeName(string name)
+        {
+            if (name == null)
+            {
+                throw new ArgumentNullException("name");
+            }
+
+            int index = name.LastIndexOf(":");
+            if (index > 0)
+            {
+                return name.Substring(index + 1);
+            }
+            else if (name.LastIndexOf('.') > 0)
+            {
+                return name.Substring(name.LastIndexOf('.') + 1);
+            }
+            else
+            {
+                return name;
+            }
+            //return name.Replace("::", ".");
+
+        }
     }
 
     public class DocCmdGroup : DocCmd
     {
         public List<DocCmd> Commands { get; private set; }
 
-        public DocCmdGroup() 
+        public DocCmdGroup()
         {
             this.Kind = DocKind.CmdGroup;
             this.Commands = new List<DocCmd>();
+        }
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            foreach (var command in Commands)
+            {
+                command.print(dg, sectionLevel);
+                
+            }
         }
     }
 
@@ -528,6 +620,15 @@ namespace SoftwareEngineeringTools.Documentation
         public DocPara()
         {
             this.Kind = DocKind.Para;
+        }
+
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            foreach (var c in Commands)
+            {
+                c.print(dg, sectionLevel);  
+            }
+            dg.NewParagraph();
         }
     }
 
@@ -540,6 +641,14 @@ namespace SoftwareEngineeringTools.Documentation
             this.Kind = DocKind.ParaList;
             this.Paragraphs = new List<DocPara>();
         }
+
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            foreach (var p in Paragraphs)
+            {
+                p.print(dg, sectionLevel);
+            }
+        }
     }
 
     public class DocMarkup : DocCmdGroup
@@ -549,6 +658,73 @@ namespace SoftwareEngineeringTools.Documentation
         public DocMarkup()
         {
             this.Kind = DocKind.Markup;
+        }
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            switch (MarkupKind)
+            {
+                case DocMarkupKind.Bold:
+                    dg.BeginMarkup(DocumentMarkupKind.Bold);
+                    break;
+                case DocMarkupKind.Emphasis:
+                    dg.BeginMarkup(DocumentMarkupKind.Emphasis);
+                    break;
+                case DocMarkupKind.SubScript:
+                    dg.BeginMarkup(DocumentMarkupKind.SubScript);
+                    break;
+                case DocMarkupKind.SuperScript:
+                    dg.BeginMarkup(DocumentMarkupKind.SuperScript);
+                    break;
+                case DocMarkupKind.Center:
+                    dg.BeginMarkup(DocumentMarkupKind.Center);
+                    break;
+                case DocMarkupKind.ComputerOutput:
+                    dg.BeginMarkup(DocumentMarkupKind.ComputerOutput);
+                    break;
+                case DocMarkupKind.Preformatted:
+                    dg.BeginMarkup(DocumentMarkupKind.Preformatted);
+                    break;
+                default:
+                    Console.WriteLine("Unsupported Markup:" + this.MarkupKind);
+                    break;
+            }
+            try
+            {
+                foreach (var Command in Commands)
+                {
+                    Command.print(dg, sectionLevel);
+                }
+            }
+            finally
+            {
+                switch (MarkupKind)
+                {
+                    case DocMarkupKind.Bold:
+                        dg.EndMarkup(DocumentMarkupKind.Bold);
+                        break;
+                    case DocMarkupKind.Emphasis:
+                        dg.EndMarkup(DocumentMarkupKind.Emphasis);
+                        break;
+                    case DocMarkupKind.SubScript:
+                        dg.EndMarkup(DocumentMarkupKind.SubScript);
+                        break;
+                    case DocMarkupKind.SuperScript:
+                        dg.EndMarkup(DocumentMarkupKind.SuperScript);
+                        break;
+                    case DocMarkupKind.Center:
+                        dg.EndMarkup(DocumentMarkupKind.Center);
+                        break;
+                    case DocMarkupKind.ComputerOutput:
+                        dg.EndMarkup(DocumentMarkupKind.ComputerOutput);
+                        break;
+                    case DocMarkupKind.Preformatted:
+                        dg.EndMarkup(DocumentMarkupKind.Preformatted);
+                        break;
+                    default:
+                        Console.WriteLine("Unsupported Markup:" + this.MarkupKind);
+                        break;
+                }
+            }
         }
     }
 
@@ -561,6 +737,22 @@ namespace SoftwareEngineeringTools.Documentation
         {
             this.Kind = DocKind.Text;
         }
+
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            switch (TextKind)
+            {
+                case DocTextKind.Plain:
+                    dg.PrintText(Text);
+                    break;
+                case DocTextKind.Verbatim:
+                    dg.PrintVerbatimText(Text);
+                    break;
+                default:
+                    Console.WriteLine("WARNING: unsupported text kind:" + TextKind);
+                    break;
+            }
+        }
     }
 
     public class DocChar : DocCmd
@@ -571,6 +763,10 @@ namespace SoftwareEngineeringTools.Documentation
         {
             this.Kind = DocKind.Char;
         }
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            Console.WriteLine("WARNING: unsupported text kind:" + CharKind);
+        }
     }
 
     public class DocEmpty : DocCmd
@@ -580,6 +776,10 @@ namespace SoftwareEngineeringTools.Documentation
         public DocEmpty()
         {
             this.Kind = DocKind.Empty;
+        }
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            Console.WriteLine("WARNING: unsupported empty kind: DocEmptyKind." + EmptyKind);
         }
     }
 
@@ -714,6 +914,22 @@ namespace SoftwareEngineeringTools.Documentation
         {
             this.Kind = DocKind.UrlLink;
         }
+
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            dg.BeginReference(Url, true);
+            try
+            {
+                foreach (var command in Commands)
+                {
+                    command.print(dg, sectionLevel);
+                }
+            }
+            finally
+            {
+                dg.EndReference();
+            }
+        }
     }
 
     public class DocAnchor : DocCmdGroup
@@ -723,6 +939,14 @@ namespace SoftwareEngineeringTools.Documentation
         public DocAnchor()
         {
             this.Kind = DocKind.Anchor;
+        }
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            dg.NewLabel(Id);
+            foreach (var command in Commands)
+            {
+                command.print(dg, sectionLevel);
+            }
         }
     }
 
@@ -747,6 +971,63 @@ namespace SoftwareEngineeringTools.Documentation
         public DocReference()
         {
             this.Kind = DocKind.Reference;
+        }
+
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            if (Compound != null || Member != null || referenceID != null)
+            {
+                switch (RefKind)
+                {
+                    case DocRefKind.Compound:
+                        dg.BeginReference(Compound.Identifier, false);
+                        break;
+                    case DocRefKind.Member:
+                        dg.BeginReference(Member.Identifier, false);
+                        break;
+                    case DocRefKind.CustomID:
+                        dg.BeginReference(referenceID, true);
+                        break;
+                    default:
+                        Console.WriteLine("WARNING: unsupported reference kind: " + RefKind);
+                        break;
+                }
+            }
+            try
+            {
+                if (Commands.Count > 0)
+                {
+                    foreach (var command in Commands)
+                    {
+                        command.print(dg, sectionLevel);
+                    }
+                }
+                else if (Compound != null || Member != null)
+                {
+                    string name = null;
+                    switch (RefKind)
+                    {
+                        case DocRefKind.Compound:
+                            name = Compound.Name;
+                            break;
+                        case DocRefKind.Member:
+                            name = Member.Name;
+                            break;
+                        default:
+                            Console.WriteLine("WARNING: unsupported reference kind: DocRefKind." + RefKind);
+                            break;
+                    }
+                    if (name != null)
+                    {
+                        name = this.NormalizeName(name);
+                    }
+                    new DocText() { TextKind = DocTextKind.Plain, Text = name }.print(dg, sectionLevel);
+                }
+            }
+            finally
+            {
+                dg.EndReference();
+            }
         }
     }
 
@@ -777,6 +1058,36 @@ namespace SoftwareEngineeringTools.Documentation
             this.Kind = DocKind.List;
             this.Items = new List<DocListItem>();
         }
+
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            dg.BeginList();
+            try
+            {
+                int listItemIndex = 0;
+                foreach (var li in Items)
+                {
+                    dg.BeginListItem(listItemIndex, null);
+                    try
+                    {
+                        foreach (var p in li.Paragraphs)
+                        {
+                            p.print(dg, sectionLevel);
+                        }
+                    }
+                    finally
+                    {
+                        dg.EndListItem(listItemIndex);
+                    }
+                    ++listItemIndex;
+                }
+            }
+            finally
+            {
+                dg.EndList();
+            }
+        }
+
     }
 
     public class DocListItem : DocParaList
@@ -787,7 +1098,7 @@ namespace SoftwareEngineeringTools.Documentation
         }
     }
 
-    public class DocHtmlTag:DocCmd
+    public class DocHtmlTag : DocCmd
     {
         public HtmlTagType TagType { get; set; }
         public List<DocIndexEntry> Attributes { get; private set; }
@@ -798,7 +1109,7 @@ namespace SoftwareEngineeringTools.Documentation
             this.Kind = DocKind.HtmlTag;
             this.Attributes = new List<DocIndexEntry>();
         }
-        
+
     }
 
     public enum HtmlTagType
@@ -868,6 +1179,55 @@ namespace SoftwareEngineeringTools.Documentation
         {
             this.Kind = DocKind.SimpleSect;
         }
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            if (Title != null)
+            {
+                dg.BeginSectionTitle(sectionLevel, Title, null);
+                dg.EndSectionTitle();
+            }
+            else
+            {
+                switch (SimpleSectKind)
+                {
+                    case DocSimpleSectKind.See:
+                    case DocSimpleSectKind.Return:
+                    case DocSimpleSectKind.Author:
+                    case DocSimpleSectKind.Authors:
+                    case DocSimpleSectKind.Version:
+                    case DocSimpleSectKind.Since:
+                    case DocSimpleSectKind.Date:
+                    case DocSimpleSectKind.Note:
+                    case DocSimpleSectKind.Warning:
+                    case DocSimpleSectKind.Pre:
+                    case DocSimpleSectKind.Post:
+                    case DocSimpleSectKind.Copyright:
+                    case DocSimpleSectKind.Invariant:
+                    case DocSimpleSectKind.Remark:
+                    case DocSimpleSectKind.Attention:
+                    case DocSimpleSectKind.Par:
+                    case DocSimpleSectKind.Rcs:
+                        dg.BeginSectionTitle(sectionLevel, SimpleSectKind.ToString(), null);
+                        dg.EndSectionTitle();
+                        break;
+                    default:
+                        Console.WriteLine("WARNING: unsupported simple section kind: DocSimpleSectKind." + SimpleSectKind);
+                        break;
+                }
+            }
+            sectionLevel++;
+            try
+            {
+                foreach (var item in Items)
+                {
+                    item.print(dg, sectionLevel);
+                }
+            }
+            finally
+            {
+                sectionLevel--;
+            }
+        }
     }
 
     public enum DocSimpleSectKind
@@ -899,6 +1259,17 @@ namespace SoftwareEngineeringTools.Documentation
         {
             this.Kind = DocKind.SimpleSectItem;
         }
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            foreach (var p in Paragraphs)
+            {
+                p.print(dg, sectionLevel);
+            }
+            if (Separator != null)
+            {
+                Separator.print(dg, sectionLevel);
+            }
+        }
     }
 
     public class DocTitle : DocCmdGroup
@@ -924,6 +1295,18 @@ namespace SoftwareEngineeringTools.Documentation
         public DocHeading()
         {
             this.Kind = DocKind.Heading;
+        }
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            if (Commands.Count > 0)
+            {
+                dg.BeginSectionTitle(sectionLevel, "", null);
+                foreach (var c in Commands)
+                {
+                    c.print(dg, sectionLevel);
+                }
+                dg.EndSectionTitle();
+            }
         }
     }
 
@@ -956,6 +1339,57 @@ namespace SoftwareEngineeringTools.Documentation
             this.Kind = DocKind.Table;
             this.Rows = new List<DocTableRow>();
         }
+
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            dg.BeginTable(RowCount, ColCount);
+            try
+            {
+                int rowIndex = 0;
+                foreach (var tr in Rows)
+                {
+                    dg.BeginTableRow(rowIndex);
+                    try
+                    {
+                        int colIndex = 0;
+                        foreach (var tc in tr.Cells)
+                        {
+
+                            dg.BeginTableCell(rowIndex, colIndex, tc.IsHeader);
+                            try
+                            {
+                                foreach (var p in tc.Paragraphs)
+                                {
+                                    p.print(dg, sectionLevel);
+                                }
+                            }
+                            catch (Exception e)
+                            {
+                                Console.WriteLine(e.Message);
+                            }
+                            finally
+                            {
+                                dg.EndTableCell(rowIndex, colIndex, tc.IsHeader);
+                            }
+                            ++colIndex;
+                        }
+                    }
+                    catch
+                    {
+                        Console.WriteLine("Error while make table");
+                    }
+                    finally
+                    {
+                        dg.EndTableRow(rowIndex);
+                        ++rowIndex;
+                    }
+                }
+            }
+            finally
+            {
+                dg.EndTable();
+            }
+        }
     }
 
     public class DocTableRow
@@ -984,6 +1418,11 @@ namespace SoftwareEngineeringTools.Documentation
         public DocImage()
         {
             this.Kind = DocKind.Image;
+        }
+
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {
+            dg.AddImage(Path, Width, Height);
         }
     }
 

@@ -18,8 +18,9 @@ namespace SoftwareEngineeringTools.WikiReader
             {
                 dg = new WordGenerator(@"Test.doc");
             }
-            TestDocPrinter dp = new TestDocPrinter(dg);
-            dp.PrintDocCmd(wp.firstSection);
+            wp.firstSection.print(dg, 0);
+            /*TestDocPrinter dp = new TestDocPrinter(dg);
+            dp.PrintDocCmd(wp.firstSection);*/
             dg.Dispose();
         }
         string path;

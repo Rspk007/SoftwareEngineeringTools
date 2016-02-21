@@ -595,7 +595,7 @@ namespace SoftwareEngineeringTools.Documentation
                     shape.Height = Int32.Parse(Height);
                 }
                 catch (FormatException)
-                { }
+                {}
             }
         }
     }

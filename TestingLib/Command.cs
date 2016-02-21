@@ -47,6 +47,12 @@ namespace SoftwareEngineeringTools.Testing
             this.Kind = DocKind.Command;
 
         }
+
+        public override void print(IDocumentGenerator dg, int sectionLevel)
+        {            
+            this.execute();
+        }
+
         public void execute()
         {
             switch (this.CommandName)
@@ -220,7 +226,7 @@ namespace SoftwareEngineeringTools.Testing
         public List<Command> falseCommand;
 
         public IfCommand()
-        {
+        {            
             this.trueCommand = new List<Command>();
             this.falseCommand = new List<Command>();
             this.CommandName = commandType.IF;
