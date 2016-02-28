@@ -365,12 +365,13 @@ namespace SoftwareEngineeringTools.Documentation
             if (!url)
             {
                 key = bookmarks.First(c => c.Value == id).Key.ToString();
+                hyperStack.Add('_' + key);
             }
             else
             {
                 key = id;
-            }
-            this.hyperStack.Add('_' + key);
+                hyperStack.Add(key);
+            }            
             this.hyperStack.Add(sel.Start);
             this.hyperStack.Add(url);
         }

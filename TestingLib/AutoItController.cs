@@ -1,12 +1,8 @@
 ﻿using AutoIt;
 using AutoItX3Lib;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SoftwareEngineeringTools.Testing
@@ -64,7 +60,7 @@ namespace SoftwareEngineeringTools.Testing
            au3.ControlClick(title, "", controll);
         }
 
-        public static bool exist(string title)
+        public bool exist(string title)
         {
             au3.WinWaitActive(title, "", 5);
             Thread.Sleep(500);
@@ -78,7 +74,7 @@ namespace SoftwareEngineeringTools.Testing
             hWnd = au3.WinGetHandle(title, "");
         }
 
-        public static void winClose(string title)
+        public void winClose(string title)
         {
             au3.WinClose(title,"");
         }
@@ -92,7 +88,7 @@ namespace SoftwareEngineeringTools.Testing
         }
 
         
-        public static void saveImage(string filePath)
+        public void saveImage(string filePath)
         {
             if (Clipboard.GetDataObject() != null)
             {
