@@ -683,21 +683,21 @@ namespace SoftwareEngineeringTools.WikiReader
             List<string> normalformatBlocks = new List<string>();
             while (!string.IsNullOrEmpty(Textblock))
             {
-                int emp = Textblock.IndexOf("''");
-                int bold = Textblock.IndexOf("'''");
-                int empBold = Textblock.IndexOf("'''''");
-                int html = Textblock.IndexOf("<");
-                int link = Textblock.IndexOf("[");
-                int command = Textblock.IndexOf("{{");
+                int empDepth = Textblock.IndexOf("''");
+                int boldDepth = Textblock.IndexOf("'''");
+                int empBoldDepth = Textblock.IndexOf("'''''");
+                int htmlDepth = Textblock.IndexOf("<");
+                int linkDepth = Textblock.IndexOf("[");
+                int commandDepth = Textblock.IndexOf("{{");
 
-                if (emp == -1) emp = int.MaxValue;
-                if (bold == -1) bold = int.MaxValue;
-                if (empBold == -1) empBold = int.MaxValue;
-                if (html == -1) html = int.MaxValue;
-                if (link == -1) link = int.MaxValue;
-                if (command == -1) command = int.MaxValue;
+                if (empDepth == -1) empDepth = int.MaxValue;
+                if (boldDepth == -1) boldDepth = int.MaxValue;
+                if (empBoldDepth == -1) empBoldDepth = int.MaxValue;
+                if (htmlDepth == -1) htmlDepth = int.MaxValue;
+                if (linkDepth == -1) linkDepth = int.MaxValue;
+                if (commandDepth == -1) commandDepth = int.MaxValue;
 
-                int minValue = Math.Min(command,Math.Min(Math.Min(Math.Min(Math.Min(emp, bold), empBold),html),link));
+                int minValue = Math.Min(commandDepth,Math.Min(Math.Min(Math.Min(Math.Min(empDepth, boldDepth), empBoldDepth),htmlDepth),linkDepth));
                 if(minValue == int.MaxValue)
                 {
                     string newTextblock = Textblock;
@@ -707,36 +707,36 @@ namespace SoftwareEngineeringTools.WikiReader
                 else
                 {
                     string newTextblock = Textblock.Substring(0, minValue);
-                    if (!String.IsNullOrWhiteSpace(newTextblock))
+                    if (!string.IsNullOrWhiteSpace(newTextblock))
                     {
                         normalformatBlocks.Add(newTextblock);
                     }                    
                     Textblock = Textblock.Substring(minValue);
-                    if(empBold == minValue)
+                    if(empBoldDepth == minValue)
                     {
                         string newFormatTextblock = Textblock.Substring(0, Textblock.Substring(5).IndexOf("'''''") + 10);
                         normalformatBlocks.Add(newFormatTextblock);
                         Textblock = Textblock.Substring(Textblock.Substring(5).IndexOf("'''''") + 10);
                     }
-                    else if (bold == minValue)
+                    else if (boldDepth == minValue)
                     {
                         string newFormatTextblock = Textblock.Substring(0, Textblock.Substring(3).IndexOf("'''") + 6);
                         normalformatBlocks.Add(newFormatTextblock);
                         Textblock = Textblock.Substring(Textblock.Substring(3).IndexOf("'''") + 6);
                     }
-                    else if(emp == minValue)
+                    else if(empDepth == minValue)
                     {
                         string newFormatTextblock = Textblock.Substring(0, Textblock.Substring(2).IndexOf("''") + 4);
                         normalformatBlocks.Add(newFormatTextblock);
                         Textblock = Textblock.Substring(Textblock.Substring(2).IndexOf("''") + 4);
                     }                    
-                    else if (html == minValue)
+                    else if (htmlDepth == minValue)
                     {
                         string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf(">")+1);
                         normalformatBlocks.Add(newFormatTextblock);
                         Textblock = Textblock.Substring(Textblock.IndexOf(">")+1);
                     }
-                    else if (command == minValue)
+                    else if (commandDepth == minValue)
                     {
 
                         string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf("}}") + 2);
@@ -845,7 +845,40 @@ namespace SoftwareEngineeringTools.WikiReader
                         string commandString = item.Substring(2, item.Length - 4);
                         List<string> parameters = commandString.Split('|').Skip(1).ToList();
                         Command newCommand = new Command();
-                        newCommand.CommandName = (Command.commandType)Enum.Parse(typeof(Command.commandType), commandString.Split('|')[0].ToUpper());
+                        Command.commandType currentCommandType = (Command.commandType)Enum.Parse(typeof(Command.commandType), commandString.Split('|')[0].ToUpper());
+                        switch (currentCommandType)
+                        {
+                            case Command.commandType.CLICK:
+                                newCommand = new ClickCommand();
+                                break;
+                            case Command.commandType.CLOSE:
+                                newCommand = new CloseCommand();
+                                break;
+                            case Command.commandType.INIT:
+                                newCommand = new InitCommand();
+                                break;
+                            case Command.commandType.KEYCOMMAND:
+                                newCommand = new KeyCommand();
+                                break;
+                            case Command.commandType.OPEN:
+                                newCommand = new OpenCommand();
+                                break;
+                            case Command.commandType.SAVE:
+                                newCommand = new SaveCommand();
+                                break;
+                            case Command.commandType.WAITACTIVE:
+                                newCommand = new WaitActiveCommand();
+                                break;
+                            case Command.commandType.WRITE:
+                                newCommand = new WriteCommand();
+                                break;
+                            default:
+                                break;
+                        }
+                        if (newCommand.CommandName == Command.commandType.NONE)
+                        {
+                            newCommand.CommandName = currentCommandType;
+                        }
                         if (newCommand.CommandName == Command.commandType.INSERT)
                         {
                             DocImage dImage = new DocImage();
@@ -1061,7 +1094,7 @@ namespace SoftwareEngineeringTools.WikiReader
                     
                 }
             }
-            if (!String.IsNullOrEmpty(dt.Text))
+            if (!string.IsNullOrEmpty(dt.Text))
             {
                 addElementToLastClass(dt);
                 dt = new DocText();
