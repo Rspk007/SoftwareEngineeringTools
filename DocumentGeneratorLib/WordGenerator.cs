@@ -344,6 +344,12 @@ namespace SoftwareEngineeringTools.Documentation
                     range.Font.Name = "Courier New";
                     range.Font.Size = this.normalStyle.Font.Size - 2;
                     break;
+                case DocumentMarkupKind.Fail:
+                    range.Font.Shading.BackgroundPatternColor = (WdColor)(229 + 0x100 * 0 + 0x10000 * 50);
+                    break;
+                case DocumentMarkupKind.Success:
+                    range.Font.Shading.BackgroundPatternColor = (WdColor)(133 + 0x100 * 250 + 0x10000 * 133);
+                    break;
                 default:
                     throw new DocumentException("Invalid DocumentMarkupKind: " + markupKind);
             }

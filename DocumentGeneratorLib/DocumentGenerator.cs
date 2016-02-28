@@ -15,7 +15,9 @@ namespace SoftwareEngineeringTools.Documentation
         SuperScript,
         Center,
         Small,
-        Preformatted
+        Preformatted,
+        Success,
+        Fail
     }
 
     public interface IDocumentGenerator

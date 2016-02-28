@@ -224,6 +224,71 @@ namespace SoftwareEngineeringTools.Testing
             webdriver.Close();            
         }
 
+        public string read(string controll)
+        {
+            string[] findBy = controll.Split(':', ';');
+            IWebElement query;
+            IList<IWebElement> queries = new List<IWebElement>();
+            for (int i = 0; i < findBy.Count(); i = i + 2)
+            {
+                string type = findBy[i].Replace(" ", string.Empty);
+                string searchsequence = findBy[i + 1];
+                if (type.ToLower() == "id")
+                {
+                    query = webdriver.FindElement(By.Id(searchsequence));
+                    break;
+                }
+                else if (type.ToLower() == "classname")
+                {
+                    if (queries.Count == 0)
+                    {
+                        queries = webdriver.FindElements(By.ClassName(searchsequence));
+                    }
+                    else
+                    {
+                        queries = queries.Where(webelement => webelement.GetAttribute("class") == searchsequence).ToList();
+                    }
+
+                }
+                else if (type.ToLower() == "tagname")
+                {
+                    if (queries.Count == 0)
+                    {
+                        queries = webdriver.FindElements(By.TagName(searchsequence));
+                    }
+                    else
+                    {
+                        queries = queries.Where(webelement => webelement.TagName == searchsequence).ToList();
+                    }
+                }
+                else if (type.ToLower() == "name")
+                {
+                    if (queries.Count == 0)
+                    {
+                        queries = webdriver.FindElements(By.Name(searchsequence));
+                    }
+                    else
+                    {
+                        queries = queries.Where(webelement => webelement.GetAttribute("name") == searchsequence).ToList();
+                    }
+                }
+            }
+            if (queries.Count == 1)
+            {
+                query = queries.First();
+            }
+            else if (queries.Count > 0)
+            {
+                Console.WriteLine("Controll isn't enought specific! The first of the matching elements will be selected");
+                query = queries.First();
+            }
+            else
+            {
+                throw new NotFoundException();
+            }
+            return query.Text;
+        }
+
         public void save(string filePath)
         {
             try

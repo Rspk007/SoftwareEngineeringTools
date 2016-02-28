@@ -166,6 +166,12 @@ namespace SoftwareEngineeringTools.Documentation
                 case DocumentMarkupKind.SuperScript:
                     writer.Write(@"^{");
                     break;
+                case DocumentMarkupKind.Fail:
+                    writer.Write(@"\colorbox[rgb]{0.89,0,0.19}{");
+                    break;
+                case DocumentMarkupKind.Success:
+                    writer.Write(@"\colorbox[rgb]{0.52,0.98,0.6}{");
+                    break;
                 default:
                     throw new DocumentException("Invalid DocumentMarkupKind: " + markupKind);
             }

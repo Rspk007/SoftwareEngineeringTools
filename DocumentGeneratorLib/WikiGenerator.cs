@@ -118,7 +118,12 @@ namespace SoftwareEngineeringTools.Documentation
                 case DocumentMarkupKind.Center:
                     writer.Write("<center>");
                     break;
-                    
+                case DocumentMarkupKind.Success:
+                    writer.Write(" <span style=\"background: #85FA99\">");
+                    break;
+                case DocumentMarkupKind.Fail:
+                    writer.Write(" <span style=\"background: #FA8589\">");
+                    break;
             }            
         }
         public override void EndMarkup(DocumentMarkupKind markupKind)
@@ -136,6 +141,10 @@ namespace SoftwareEngineeringTools.Documentation
                     break;
                 case DocumentMarkupKind.Center:
                     writer.Write("</center>");
+                    break;
+                case DocumentMarkupKind.Success:
+                case DocumentMarkupKind.Fail:
+                    writer.Write(" </span>");
                     break;
 
             }            

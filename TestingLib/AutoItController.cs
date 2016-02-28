@@ -79,6 +79,11 @@ namespace SoftwareEngineeringTools.Testing
             au3.WinClose(title,"");
         }
 
+        public string read(string title, string controll)
+        {
+
+        }
+
        
         public void save (string filePath)
         {

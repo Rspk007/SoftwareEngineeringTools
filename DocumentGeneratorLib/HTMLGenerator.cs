@@ -243,6 +243,14 @@ namespace SoftwareEngineeringTools.Documentation
                 case DocumentMarkupKind.Preformatted:
                     pageWriter.RenderBeginTag(HtmlTextWriterTag.Pre);
                     break;
+                case DocumentMarkupKind.Fail:
+                    pageWriter.AddAttribute(HtmlTextWriterAttribute.Style, "background - color:#FA8589;");
+                    pageWriter.RenderBeginTag(HtmlTextWriterTag.Span);
+                    break;
+                case DocumentMarkupKind.Success:
+                    pageWriter.AddAttribute(HtmlTextWriterAttribute.Style, "background - color:#85FA99;");
+                    pageWriter.RenderBeginTag(HtmlTextWriterTag.Span);
+                    break;
                 default:
                     throw new DocumentException("Invalid DocumentMarkupKind: " + markupKind);
             }
@@ -271,6 +279,12 @@ namespace SoftwareEngineeringTools.Documentation
                     pageWriter.RenderEndTag();
                     break;
                 case DocumentMarkupKind.Preformatted:
+                    pageWriter.RenderEndTag();
+                    break;
+                case DocumentMarkupKind.Fail:
+                    pageWriter.RenderEndTag();
+                    break;
+                case DocumentMarkupKind.Success:
                     pageWriter.RenderEndTag();
                     break;
                 default:
