@@ -1,5 +1,6 @@
 ﻿using AutoIt;
 using AutoItX3Lib;
+using SoftwareEngineeringTools.Documentation;
 using System;
 using System.Drawing;
 using System.Threading;
@@ -14,12 +15,14 @@ namespace SoftwareEngineeringTools.Testing
         static bool threadshouldexecute = true;         //only execute thread 2 while this equals true
         static int i = 0;                               //our incrementer
         string hWnd;
+        bool writeAfterRead;
 
         public AutoItController()
         {
             au3 = new AutoItX3();                              //initialize our au3 class library
             au3.AutoItSetOption("WinTitleMatchMode", 2);                        //advanced window matching
             hWnd = "";                                                   //let's use a window handle
+            writeAfterRead = true;
         }
         /// <summary>
         /// Use AutoIt to open the given program. If it exist, than only activate it
@@ -79,12 +82,33 @@ namespace SoftwareEngineeringTools.Testing
             au3.WinClose(title,"");
         }
 
-        public string read(string title, string controll)
+        public string read(string title, string controll, IDocumentGenerator dg)
         {
+            throw new NotImplementedException();
+        }
+
+        public void testIfEqual(string title, string controll, string testValue, IDocumentGenerator dg)
+        {
+            writeAfterRead = false;
+            string result = read(title, controll, dg);
+            if (result.Equals(testValue))
+            {
+                dg.BeginMarkup(DocumentMarkupKind.Success);
+                dg.PrintText(testValue);
+                dg.EndMarkup(DocumentMarkupKind.Success);
+            }
+            else
+            {
+                dg.BeginMarkup(DocumentMarkupKind.Fail);
+                dg.PrintText(testValue);
+                dg.BeginMarkup(DocumentMarkupKind.Emphasis);
+                dg.PrintText(" " + result);
+                dg.EndMarkup(DocumentMarkupKind.Emphasis);
+                dg.EndMarkup(DocumentMarkupKind.Fail);
+            }
 
         }
 
-       
         public void save (string filePath)
         {
             au3.Send("!{PRINTSCREEN}");

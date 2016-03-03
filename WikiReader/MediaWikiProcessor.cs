@@ -14,7 +14,6 @@ namespace SoftwareEngineeringTools.WikiReader
         WikiParser reader;
         DocSect currentSection;
         DocPara currentParagraph;
-        DocCmd current;
         DocSect[] allSection;
         DocTable currentTable;
         DocTableRow currentTableRow;
@@ -23,9 +22,6 @@ namespace SoftwareEngineeringTools.WikiReader
         DocAnchor currentAnchor;
         DocList currentList;
         int currentDepth;
-        int currentListDepth;
-        bool isNewSection;
-        bool isInMarkup;
         bool headerCell;
         bool ifCommand = false;
         IfCommand lastIfCommand;
@@ -47,8 +43,6 @@ namespace SoftwareEngineeringTools.WikiReader
         {
             this.reader = reader;
             this.allSection = new DocSect[7];
-            isNewSection = false;
-            isInMarkup = false;
         }    
    
         private void addElementToLastClass(DocCmd Element)
@@ -124,7 +118,6 @@ namespace SoftwareEngineeringTools.WikiReader
         private void resetAllCurrentVariable()
         {
            currentParagraph = null;
-           current = null;
            currentTable = null;
            currentTableRow = null;
            currentTableCell = null;
@@ -332,7 +325,7 @@ namespace SoftwareEngineeringTools.WikiReader
         }
         public override object VisitHtmlTag(MediaWikiParser.HtmlTagContext context)
         {
-                      
+            Console.WriteLine("VisitHtmlTag: " + context.GetText());
             String HtmlTag = context.GetText().Substring(1);
             //if (HtmlTag.Substring(0, 1) != "/" && HtmlTag.Substring(HtmlTag.Length - 2, 2) != "/>")
             //{
@@ -490,6 +483,7 @@ namespace SoftwareEngineeringTools.WikiReader
         }
         public override object VisitHtmlTagClose(MediaWikiParser.HtmlTagCloseContext context)
         {
+            Console.WriteLine("VisitHtmlTagClose: " + context.GetText());
             return base.VisitHtmlTagClose(context);
         }
         public override object VisitHtmlTagEmpty(MediaWikiParser.HtmlTagEmptyContext context)
@@ -499,10 +493,12 @@ namespace SoftwareEngineeringTools.WikiReader
         }
         public override object VisitHtmlTagName(MediaWikiParser.HtmlTagNameContext context)
         {
+            Console.WriteLine("VisitHtmlTagName: " + context.GetText());
             return base.VisitHtmlTagName(context);
         }
         public override object VisitHtmlTagOpen(MediaWikiParser.HtmlTagOpenContext context)
         {
+            Console.WriteLine("VisitHtmlTagOpen: " + context.GetText());
             return base.VisitHtmlTagOpen(context);
         }
         public override object VisitInlineText(MediaWikiParser.InlineTextContext context)
@@ -648,6 +644,7 @@ namespace SoftwareEngineeringTools.WikiReader
         }
         public override object VisitTableRow(MediaWikiParser.TableRowContext context)
         {
+            Console.WriteLine("VisitTableRow: " + context.GetText());
             headerCell = false;
             currentTable.RowCount = currentTable.RowCount+1;
             DocTableRow dtr = new DocTableRow();
@@ -657,6 +654,7 @@ namespace SoftwareEngineeringTools.WikiReader
         }
         public override object VisitTableRows(MediaWikiParser.TableRowsContext context)
         {
+            Console.WriteLine("VisitTableRows: " + context.GetText());
             return base.VisitTableRows(context);
         }
         public override object VisitTableSingleCell(MediaWikiParser.TableSingleCellContext context)
@@ -843,79 +841,48 @@ namespace SoftwareEngineeringTools.WikiReader
                             dt = new DocText();
                         }
                         string commandString = item.Substring(2, item.Length - 4);
-                        List<string> parameters = commandString.Split('|').Skip(1).ToList();
+                        //List<string> parameters = commandString.Split('|').Skip(1).ToList();
+
                         Command newCommand = new Command();
-                        Command.commandType currentCommandType = (Command.commandType)Enum.Parse(typeof(Command.commandType), commandString.Split('|')[0].ToUpper());
-                        switch (currentCommandType)
-                        {
-                            case Command.commandType.CLICK:
-                                newCommand = new ClickCommand();
-                                break;
-                            case Command.commandType.CLOSE:
-                                newCommand = new CloseCommand();
-                                break;
-                            case Command.commandType.INIT:
-                                newCommand = new InitCommand();
-                                break;
-                            case Command.commandType.KEYCOMMAND:
-                                newCommand = new KeyCommand();
-                                break;
-                            case Command.commandType.OPEN:
-                                newCommand = new OpenCommand();
-                                break;
-                            case Command.commandType.SAVE:
-                                newCommand = new SaveCommand();
-                                break;
-                            case Command.commandType.WAITACTIVE:
-                                newCommand = new WaitActiveCommand();
-                                break;
-                            case Command.commandType.WRITE:
-                                newCommand = new WriteCommand();
-                                break;
-                            default:
-                                break;
-                        }
-                        if (newCommand.CommandName == Command.commandType.NONE)
-                        {
-                            newCommand.CommandName = currentCommandType;
-                        }
-                        if (newCommand.CommandName == Command.commandType.INSERT)
+                        newCommand.commandName = commandString.Split('(')[0];
+                        newCommand.parameter = commandString.Split('(')[1];
+                        newCommand.parameter = newCommand.parameter.Substring(0, newCommand.parameter.Length - 1);
+                        Command.commandType currentCommandType = (Command.commandType)Enum.Parse(typeof(Command.commandType), commandString.Split('|')[0].ToUpper());                   
+                        if (newCommand.commandName.ToLower() == "insert")
                         {
                             DocImage dImage = new DocImage();
-                            foreach (string parameter in parameters)
+                            foreach (var variable in newCommand.parameter.Split(','))
                             {
-                                string commandName = parameter.Split('=')[0];
-                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
-                                         switch(commandName)
-                                         {
-                                             case "filePath":
-                                             case "Path":
-                                                 dImage.Path = commandData;
-                                                 break;
-                                             case "Width":
-                                             case "width":
-                                                 dImage.Width = commandData;
-                                                 break;
-                                             case "Height":
-                                             case "height":
-                                                 dImage.Height = commandData;
-                                                 break;
-                                             default:
-                                                 dImage.Name = commandData;
-                                                 break;
-                                         }
-                            }                            
+                                string paramName = variable.Split(':')[0].ToLower();
+                                string paramValue = variable.Split(':')[1];
+                                switch (paramName)
+                                {
+                                    case "filepath":
+                                    case "Path":
+                                        dImage.Path = paramValue;
+                                        break;
+                                    case "width":
+                                        dImage.Width = paramValue;
+                                        break;
+                                    case "height":
+                                        dImage.Height = paramValue;
+                                        break;
+                                    default:
+                                        dImage.Name = paramValue;
+                                        break;
+                                }
+                            }                          
                             addElementToLastClass(dImage);
                         }
-                        else if(newCommand.CommandName == Command.commandType.OUTPUT)
+                        else if(newCommand.commandName.ToLower() == "output")
                         {
                             Dictionary<string,string> outputDatas = new Dictionary<string,string>();
-                            foreach (string parameter in parameters)
+                            foreach (var variable in newCommand.parameter.Split(','))
                             {
-                                string commandName = parameter.Split('=')[0];
-                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
-                                outputDatas.Add(commandName, commandData);
-                            }
+                                string paramName = variable.Split(':')[0].ToLower();
+                                string paramValue = variable.Split(':')[1];
+                                outputDatas.Add(paramName, paramValue);
+                            }                                
                             string type;
                             outputDatas.TryGetValue("type", out type);
                             string path;
@@ -1005,23 +972,24 @@ namespace SoftwareEngineeringTools.WikiReader
                             }
                             
                         }
-                        else if (newCommand.CommandName == Command.commandType.IF)
+                        else if (newCommand.commandName.ToLower() == "if")
                         {
                             IfCommand currentIfCommand = new IfCommand();
                             DecisionCommand currentDecisionCommand = new DecisionCommand();
-                            currentDecisionCommand.CommandName = (Command.commandType)Enum.Parse(typeof(Command.commandType), parameters[0]);
-                            foreach (string parameter in parameters.Skip(1))
+                            Dictionary<string, string> outputDatas = new Dictionary<string, string>();
+                            string insideParamater = newCommand.parameter.Split('(')[1];
+                            insideParamater = insideParamater.Substring(0, insideParamater.Length - 1);
+                            foreach (var variable in insideParamater.Split(','))
                             {
-                                string commandName = parameter.Split('=')[0];
-                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
-
-                                currentDecisionCommand.paramters.Add(commandName, commandData);
-                            }
+                                string paramName = variable.Split(':')[0].ToLower();
+                                string paramValue = variable.Split(':')[1];
+                                Command.variables.Add(paramName, paramValue);
+                            }                            
                             currentIfCommand.decisionCommand = currentDecisionCommand;
                             if(ifCommand == false)
                             {
-                                this.ifCommand = true;
-                                this.isTrue = true;
+                                ifCommand = true;
+                                isTrue = true;
                                 lastIfCommand = currentIfCommand;
                                 addElementToLastClass(currentIfCommand);
                             }
@@ -1041,15 +1009,9 @@ namespace SoftwareEngineeringTools.WikiReader
                             
                         }
                         else if (ifCommand == true && newCommand.CommandName != Command.commandType.ELSE && newCommand.CommandName != Command.commandType.ENDIF)
-                        {                            
-                            foreach (string parameter in parameters)
-                            {
-                                string commandName = parameter.Split('=')[0];
-                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
-
-                                newCommand.paramters.Add(commandName, commandData);
-                            }
-                            if(this.isTrue)
+                        {                         
+                            
+                            if(isTrue)
                             {                                
                                 lastIfCommand.trueCommand.Add(newCommand);
                             }
@@ -1076,14 +1038,7 @@ namespace SoftwareEngineeringTools.WikiReader
                             }
                         }
                         else
-                        {
-                            foreach (string parameter in parameters)
-                            {
-                                string commandName = parameter.Split('=')[0];
-                                string commandData = parameter.Split('=')[1].Replace("\"", string.Empty);
-
-                                newCommand.paramters.Add(commandName, commandData);
-                            }
+                        {                            
                             addElementToLastClass(newCommand);
                         }
                     }

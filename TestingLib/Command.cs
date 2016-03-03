@@ -1,18 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 using SoftwareEngineeringTools.Documentation;
+using System.Reflection;
 
 namespace SoftwareEngineeringTools.Testing
 {
     public class Command : DocCmd
     {
         public commandType CommandName;
-        public Dictionary<string, string> paramters;
+        public static Dictionary<string, string> variables;
+        public Dictionary<string, object> paramteters;
         public static string Title;
         public static controllerType Controller;
         protected static AutoItController aic;
         protected static SeleniumController sc;
+        public string commandName { get; set; }
+        public string parameter { get; set; }
+
         public enum controllerType
         {
             AUTOIT,
@@ -41,9 +47,14 @@ namespace SoftwareEngineeringTools.Testing
             WRITE
         }
 
+        public void addParamteter(string name, string value)
+        {
+            variables.Add(name, value);
+        }
+
         public Command()
         {
-            paramters = new Dictionary<string, string>();
+            variables = new Dictionary<string, string>();
             Kind = DocKind.Command;
             CommandName = commandType.NONE;
 
@@ -56,354 +67,84 @@ namespace SoftwareEngineeringTools.Testing
 
         public virtual void execute(IDocumentGenerator dg, int sectionLevel)
         {
-            throw new InvalidOperationException();
-        }
-    }
-    public class ClickCommand : Command
-    {
-        public ClickCommand() : base()
-        {
-            CommandName = commandType.CLICK;            
-        }
-        public override void execute(IDocumentGenerator dg, int sectionLevel)
-        {
-            string title = "";
-            string controll = "";
-
-            paramters.TryGetValue("title", out title);
-            paramters.TryGetValue("controll", out controll);
-
-            if (string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(Title))
+            Type type;
+            if (sc == null && aic == null)
             {
-                title = Title;
+                type = typeof(Command);
+            }
+            else if(sc == null)
+            {
+                type = typeof(AutoItController);
             }
             else
             {
-                Title = title;
-            }
-            if (Controller == controllerType.SELENIUM)
+                type = typeof(SeleniumController);
+            }            
+            MethodInfo method = type.GetMethod(commandName);
+            paramteters = new Dictionary<string, object>();
+            paramteters.Add("dg", dg);
+            foreach (var variable in parameter.Split(','))
             {
+                string paramName = variable.Split(':')[0];
+                string paramValue = variable.Split(':')[1];
+                if(paramValue.StartsWith("$"))
+                {
+                    variables.TryGetValue(paramValue.Substring(1), out paramValue);
+                }
+                paramteters.Add(paramName, paramValue);
+            }
+            var arguments = method.GetParameters().Select(p => paramteters[p.Name]).ToArray();
+            string result = (string)method.Invoke(this, arguments);
+            Console.WriteLine(result);
+        }
 
-                sc.click(title, controll);
+        public void init(string type, string browserType)
+        {
+            if (type.ToUpper() == "SELENIUM")
+            {
+                try
+                {
+                    sc = new SeleniumController((SeleniumController.BrowserType)Enum.Parse(typeof(SeleniumController.BrowserType), browserType));
+                }
+                catch (ArgumentException)
+                {
+                    Console.WriteLine("Invalid browser type:" + browserType);
+                }
             }
             else
             {
-                aic.click(title, controll);
+                throw new NotImplementedException();
             }
         }
-    }
-
-    public class ReadCommand : Command
-    {
-        public ReadCommand(): base()
+        public void open(string path, string className)
         {
-            CommandName = commandType.READ;
-        }
-
-        public override void execute(IDocumentGenerator dg, int sectionLevel)
-        {
-            string title = "";
-            string controll = "";
-            paramters.TryGetValue("title", out title);
-            paramters.TryGetValue("controll", out controll);
-
-            if (string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(Title))
-            {
-                title = Title;
-            }
-            else
-            {
-                Title = title;
-            }
-
-            if (Controller == controllerType.SELENIUM)
-            {
-                sc.read(controll);
-            }
-            else
-            {
-                aic.read(title, controll);
-            }
-        }
-    }
-
-    public class TestIfEqualCommand : Command
-    {
-        public string testValue { get; set; }
-        public TestIfEqualCommand() : base()
-        {
-            CommandName = commandType.TESTIFEQUAL;
-        }
-
-        public override void execute(IDocumentGenerator dg, int sectionLevel)
-        {
-            string title = "";
-            string controll = "";
-            paramters.TryGetValue("title", out title);
-            paramters.TryGetValue("controll", out controll);
-            if (string.IsNullOrEmpty(testValue))
-            {
-                string testValue;
-                paramters.TryGetValue("value", out testValue);
-                this.testValue = testValue;
-            }
-
-            if (string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(Title))
-            {
-                title = Title;
-            }
-            else
-            {
-                Title = title;
-            }
-            string result;
-            if (Controller == controllerType.SELENIUM)
-            {
-                result = sc.read(controll);                
-            }
-            else
-            {
-                result = aic.read(title, controll);
-            }
-
-            if (result.Equals(testValue))
-            {
-                dg.BeginMarkup(DocumentMarkupKind.Success);
-                dg.PrintText(testValue);
-                dg.EndMarkup(DocumentMarkupKind.Success);
-            }
-            else
-            {
-                dg.BeginMarkup(DocumentMarkupKind.Fail);
-                dg.PrintText(testValue);
-                dg.EndMarkup(DocumentMarkupKind.Fail);
-            }
-        }
-    }
-
-        public class CloseCommand : Command
-        {
-            public CloseCommand() : base()
-            {
-                CommandName = commandType.CLOSE;
-            }
-            public override void execute(IDocumentGenerator dg, int sectionLevel)
-            {
-                string title = "";
-                paramters.TryGetValue("title", out title);
-
-                if (string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(Title))
-                {
-                    title = Title;
-                }
-                else
-                {
-                    Title = title;
-                }
-
-                if (Controller == controllerType.SELENIUM)
-                {
-                    sc.winClose(title);
-                }
-                else
-                {
-                    aic.winClose(title);
-                }
-            }
-        }
-
-        public class InitCommand : Command
-        {
-            public InitCommand() : base()
-            {
-                CommandName = commandType.INIT;
-            }
-            public override void execute(IDocumentGenerator dg, int sectionLevel)
-            {
-                string type = "";
-                string browserType = "";
-
-                paramters.TryGetValue("type", out type);
-                paramters.TryGetValue("browserType", out browserType);
-                if (type.ToUpper() == "SELENIUM")
-                {
-                    try
-                    {
-                        sc = new SeleniumController((SeleniumController.BrowserType)Enum.Parse(typeof(SeleniumController.BrowserType), browserType));
-                    }
-                    catch (ArgumentException)
-                    {
-                        Console.WriteLine("Invalid browser type:");
-                    }
-                }
-                else
-                {
-                    throw new NotImplementedException();
-                }
-            }
-        }
-
-        public class KeyCommand : Command
-        {
-            public KeyCommand() : base()
-            {
-                CommandName = commandType.KEYCOMMAND;
-            }
-            public override void execute(IDocumentGenerator dg, int sectionLevel)
-            {
-                string title = "";
-                string text = "";
-                paramters.TryGetValue("title", out title);
-                paramters.TryGetValue("text", out text);
-
-                if (string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(Title))
-                {
-                    title = Title;
-                }
-                else
-                {
-                    Title = title;
-                }
-
-                if (Controller == controllerType.SELENIUM)
-                {
-                    sc.keyCommand("", text);
-                }
-                else
-                {
-                    aic.keyCommand(title, text);
-                }
-            }
-        }
-
-        public class OpenCommand : Command
-        {
-            public OpenCommand() : base()
-            {
-                CommandName = commandType.OPEN;
-            }
-            public override void execute(IDocumentGenerator dg, int sectionLevel)
-            {
-                Uri uriResult;
-                string path;
-                string className;
-
-                paramters.TryGetValue("path", out path);
-                paramters.TryGetValue("className", out className);
-                bool result = Uri.TryCreate(path, UriKind.Absolute, out uriResult)
+            Uri uriResult;
+            bool result = Uri.TryCreate(path, UriKind.Absolute, out uriResult)
                     && (uriResult.Scheme == Uri.UriSchemeHttp
                     || uriResult.Scheme == Uri.UriSchemeHttps);
-                if (result)
-                {
-                    Controller = controllerType.SELENIUM;
-                    if (sc == null)
-                    {
-                        sc = new SeleniumController();
-                    }
-                    sc.open(path);
-                }
-                else
-                {
-                    Controller = controllerType.AUTOIT;
-                    aic = new AutoItController();
-                    aic.open(path, className);
-                }
-            }
-        }
-
-        public class SaveCommand : Command
-        {
-            public SaveCommand() : base()
+            if (result)
             {
-                CommandName = commandType.SAVE;
+                Controller = controllerType.SELENIUM;
+                if (sc == null)
+                {
+                    sc = new SeleniumController();
+                }
+                sc.open(path);
             }
-            public override void execute(IDocumentGenerator dg, int sectionLevel)
+            else
             {
-                string filePath;
-
-                paramters.TryGetValue("filePath", out filePath);
-                if (Controller == controllerType.SELENIUM)
-                {
-                    sc.save(filePath);
-                }
-                else
-                {
-                    aic.save(filePath);
-                }
+                Controller = controllerType.AUTOIT;
+                aic = new AutoItController();
+                aic.open(path, className);
             }
-        }
+        }      
 
-        public class WaitActiveCommand : Command
-        {
-            public WaitActiveCommand() : base()
-            {
-                CommandName = commandType.WAITACTIVE;
-            }
-            public override void execute(IDocumentGenerator dg, int sectionLevel)
-            {
-                string title = "";
-                paramters.TryGetValue("title", out title);
-
-                if (string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(Title))
-                {
-                    title = Title;
-                }
-                else
-                {
-                    Title = title;
-                }
-
-                if (Controller == controllerType.SELENIUM)
-                {
-                    sc.waitActive(title);
-                }
-                else
-                {
-                    aic.waitActive(title);
-                }
-            }
-        }
-        public class WriteCommand : Command
-        {
-            public WriteCommand() : base()
-            {
-                CommandName = commandType.WRITE;
-            }
-            public override void execute(IDocumentGenerator dg, int sectionLevel)
-            {
-                string title = "";
-                string controll = "";
-                string text = "";
-
-                paramters.TryGetValue("title", out title);
-                paramters.TryGetValue("controll", out controll);
-                paramters.TryGetValue("text", out text);
-
-                if (string.IsNullOrEmpty(title) && !string.IsNullOrEmpty(Title))
-                {
-                    title = Title;
-                }
-                else
-                {
-                    Title = title;
-                }
-
-                if (Controller == controllerType.SELENIUM)
-                {
-                    sc.write("", controll, text);
-                }
-                else
-                {
-                    aic.write(title, controll, text);
-                }
-            }
-        }
-
+    }
         public class DecisionCommand : Command
         {
             public DecisionCommand()
             {
-                this.CommandName = commandType.EXIST;
+                CommandName = commandType.EXIST;
             }
 
             public bool execute()
@@ -415,7 +156,7 @@ namespace SoftwareEngineeringTools.Testing
                 else
                 {
                     string title;
-                    paramters.TryGetValue("title", out title);
+                    variables.TryGetValue("title", out title);
                     return aic.exist(title);
                 }
             }

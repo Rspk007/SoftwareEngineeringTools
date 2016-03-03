@@ -14,6 +14,7 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Chrome;
 using System.Drawing.Imaging;
+using SoftwareEngineeringTools.Documentation;
 
 namespace SoftwareEngineeringTools.Testing
 {
@@ -30,10 +31,12 @@ namespace SoftwareEngineeringTools.Testing
         }
         BrowserType currentBrowserType;
         IWebDriver webdriver;
+        bool writeAfterRead;
 
         public SeleniumController()
         {
             currentBrowserType = BrowserType.HtmlUnit;
+            writeAfterRead = true;
         }
 
         public SeleniumController(BrowserType type)
@@ -60,7 +63,7 @@ namespace SoftwareEngineeringTools.Testing
             }
         }
 
-        public void open(string path, string className="")
+        public void open(string path)
         {
             if(webdriver == null)
             {
@@ -72,7 +75,7 @@ namespace SoftwareEngineeringTools.Testing
        
         }
 
-        public void write(string title, string controll, string text)
+        public void write(string controll, string text)
         {
             string[] findBy = controll.Split(':', ';');
             IWebElement query;
@@ -137,13 +140,13 @@ namespace SoftwareEngineeringTools.Testing
             query.SendKeys(text);            
         }
 
-        public void keyCommand(string title, string text)
+        public void keyCommand(string text)
         {
             IWebElement query = webdriver.FindElement(By.TagName("html"));
             query.SendKeys(text);
         }
 
-        public void click(string title, string controll)
+        public void click(string controll)
         {
             string[] findBy = controll.Split(':', ';');
             IWebElement query;
@@ -219,12 +222,12 @@ namespace SoftwareEngineeringTools.Testing
             WebDriverWait wait = new WebDriverWait(webdriver, TimeSpan.FromSeconds(60));
             wait.Until((d) => { return d.Title.ToLower().Contains(title.ToLower()); });
         }
-        public void winClose(string title)
+        public void winClose()
         {
             webdriver.Close();            
         }
 
-        public string read(string controll)
+        public string read(string controll, IDocumentGenerator dg)
         {
             string[] findBy = controll.Split(':', ';');
             IWebElement query;
@@ -286,7 +289,37 @@ namespace SoftwareEngineeringTools.Testing
             {
                 throw new NotFoundException();
             }
-            return query.Text;
+            if (writeAfterRead)
+            {
+                dg.PrintText(query.Text);
+                return null;
+            }
+            else
+            {
+                return query.Text;
+            }
+        }
+
+        public void testIfEqual(string title, string controll, string testValue, IDocumentGenerator dg)
+        {
+            writeAfterRead = false;
+            string result = read(controll, dg);
+            if (result.Equals(testValue))
+            {
+                dg.BeginMarkup(DocumentMarkupKind.Success);
+                dg.PrintText(testValue);
+                dg.EndMarkup(DocumentMarkupKind.Success);
+            }
+            else
+            {
+                dg.BeginMarkup(DocumentMarkupKind.Fail);
+                dg.PrintText(testValue);
+                dg.BeginMarkup(DocumentMarkupKind.Emphasis);
+                dg.PrintText(" " + result);
+                dg.EndMarkup(DocumentMarkupKind.Emphasis);
+                dg.EndMarkup(DocumentMarkupKind.Fail);
+            }
+
         }
 
         public void save(string filePath)
