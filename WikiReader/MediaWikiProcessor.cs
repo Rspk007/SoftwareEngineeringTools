@@ -846,19 +846,18 @@ namespace SoftwareEngineeringTools.WikiReader
                         Command newCommand = new Command();
                         newCommand.commandName = commandString.Split('(')[0];
                         newCommand.parameter = commandString.Split('(')[1];
-                        newCommand.parameter = newCommand.parameter.Substring(0, newCommand.parameter.Length - 1);
-                        Command.commandType currentCommandType = (Command.commandType)Enum.Parse(typeof(Command.commandType), commandString.Split('|')[0].ToUpper());                   
+                        newCommand.parameter = newCommand.parameter.Substring(0, newCommand.parameter.Length - 1);                 
                         if (newCommand.commandName.ToLower() == "insert")
                         {
                             DocImage dImage = new DocImage();
                             foreach (var variable in newCommand.parameter.Split(','))
                             {
-                                string paramName = variable.Split(':')[0].ToLower();
-                                string paramValue = variable.Split(':')[1];
+                                string paramName = variable.Split('=')[0].ToLower();
+                                string paramValue = variable.Split('=')[1];
                                 switch (paramName)
                                 {
                                     case "filepath":
-                                    case "Path":
+                                    case "path":
                                         dImage.Path = paramValue;
                                         break;
                                     case "width":
@@ -879,8 +878,8 @@ namespace SoftwareEngineeringTools.WikiReader
                             Dictionary<string,string> outputDatas = new Dictionary<string,string>();
                             foreach (var variable in newCommand.parameter.Split(','))
                             {
-                                string paramName = variable.Split(':')[0].ToLower();
-                                string paramValue = variable.Split(':')[1];
+                                string paramName = variable.Split('=')[0].ToLower();
+                                string paramValue = variable.Split('=')[1];
                                 outputDatas.Add(paramName, paramValue);
                             }                                
                             string type;
@@ -981,8 +980,8 @@ namespace SoftwareEngineeringTools.WikiReader
                             insideParamater = insideParamater.Substring(0, insideParamater.Length - 1);
                             foreach (var variable in insideParamater.Split(','))
                             {
-                                string paramName = variable.Split(':')[0].ToLower();
-                                string paramValue = variable.Split(':')[1];
+                                string paramName = variable.Split('=')[0].ToLower();
+                                string paramValue = variable.Split('=')[1];
                                 Command.variables.Add(paramName, paramValue);
                             }                            
                             currentIfCommand.decisionCommand = currentDecisionCommand;

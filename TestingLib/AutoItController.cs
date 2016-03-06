@@ -77,7 +77,7 @@ namespace SoftwareEngineeringTools.Testing
             hWnd = au3.WinGetHandle(title, "");
         }
 
-        public void winClose(string title)
+        public void close(string title)
         {
             au3.WinClose(title,"");
         }

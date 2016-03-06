@@ -81,12 +81,17 @@ namespace SoftwareEngineeringTools.Testing
                 type = typeof(SeleniumController);
             }            
             MethodInfo method = type.GetMethod(commandName);
+            if(method == null)
+            {
+                Console.WriteLine("Invalid commandname: "+commandName +". This command will be skipped.");
+                return;
+            }
             paramteters = new Dictionary<string, object>();
             paramteters.Add("dg", dg);
-            foreach (var variable in parameter.Split(','))
+            foreach (var variable in parameter.Split(',').Where(p => !string.IsNullOrEmpty(p)))
             {
-                string paramName = variable.Split(':')[0];
-                string paramValue = variable.Split(':')[1];
+                string paramName = variable.Split('=')[0];
+                string paramValue = variable.Split('=')[1];
                 if(paramValue.StartsWith("$"))
                 {
                     variables.TryGetValue(paramValue.Substring(1), out paramValue);
@@ -94,7 +99,19 @@ namespace SoftwareEngineeringTools.Testing
                 paramteters.Add(paramName, paramValue);
             }
             var arguments = method.GetParameters().Select(p => paramteters[p.Name]).ToArray();
-            string result = (string)method.Invoke(this, arguments);
+            string result;
+            if (sc == null && aic == null)
+            {
+                 result = (string)method.Invoke(this, arguments);
+            }
+            else if (sc == null)
+            {
+                 result = (string)method.Invoke(aic, arguments);
+            }
+            else
+            {
+                 result = (string)method.Invoke(sc, arguments);
+            }
             Console.WriteLine(result);
         }
 

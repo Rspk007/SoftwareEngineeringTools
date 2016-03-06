@@ -222,7 +222,7 @@ namespace SoftwareEngineeringTools.Testing
             WebDriverWait wait = new WebDriverWait(webdriver, TimeSpan.FromSeconds(60));
             wait.Until((d) => { return d.Title.ToLower().Contains(title.ToLower()); });
         }
-        public void winClose()
+        public void close()
         {
             webdriver.Close();            
         }
