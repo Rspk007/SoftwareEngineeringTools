@@ -26,6 +26,7 @@ namespace SoftwareEngineeringTools.WikiReader
         bool ifCommand = false;
         IfCommand lastIfCommand;
         bool isTrue = false;
+        bool markupStart = false;
 
         private enum parentClass
         {
@@ -484,6 +485,26 @@ namespace SoftwareEngineeringTools.WikiReader
         public override object VisitHtmlTagClose(MediaWikiParser.HtmlTagCloseContext context)
         {
             Console.WriteLine("VisitHtmlTagClose: " + context.GetText());
+            string HtmlTag = context.GetText().Replace("<",string.Empty).Replace(">",string.Empty);
+            DocHtmlTag currentHtmlTag = new DocHtmlTag();
+            currentHtmlTag.isClosing = true;
+            String[] HtmlTagParts = HtmlTag.Substring(1, HtmlTag.Length-1).Split(' ');
+            currentHtmlTag.TagType = (HtmlTagType)Enum.Parse(typeof(HtmlTagType), HtmlTagParts[0]);
+            foreach (var Attribute in HtmlTagParts.Skip(1).ToArray())
+            {
+                String[] NameAndValue = Attribute.Split('=');
+                DocIndexEntry currentAttribute = new DocIndexEntry();
+                currentAttribute.PrimaryEntry = NameAndValue[0];
+                currentAttribute.SecondaryEntry = NameAndValue[1].Substring(1, NameAndValue[1].Length - 3);
+                currentHtmlTag.Attributes.Add(currentAttribute);
+            }
+            previousClass = lastClass;
+            bool succesProcessing = tryProcess(currentHtmlTag);
+            lastClass = previousClass;
+            if (!succesProcessing)
+            {
+                addElementToLastClass(currentHtmlTag);
+            }
             return base.VisitHtmlTagClose(context);
         }
         public override object VisitHtmlTagEmpty(MediaWikiParser.HtmlTagEmptyContext context)
@@ -499,6 +520,25 @@ namespace SoftwareEngineeringTools.WikiReader
         public override object VisitHtmlTagOpen(MediaWikiParser.HtmlTagOpenContext context)
         {
             Console.WriteLine("VisitHtmlTagOpen: " + context.GetText());
+            string HtmlTag = context.GetText().Replace("<", string.Empty).Replace(">", string.Empty);
+            DocHtmlTag currentHtmlTag = new DocHtmlTag();
+            currentHtmlTag.isClosing = false;
+            String[] HtmlTagParts = HtmlTag.Split(' ');
+            currentHtmlTag.TagType = (HtmlTagType)Enum.Parse(typeof(HtmlTagType), HtmlTagParts[0]);
+            foreach (var Attribute in HtmlTagParts.Skip(1).ToArray())
+            {
+                String[] NameAndValue = Attribute.Split('=');
+                DocIndexEntry currentAttribute = new DocIndexEntry();
+                currentAttribute.PrimaryEntry = NameAndValue[0];
+                currentAttribute.SecondaryEntry = NameAndValue[1].Substring(1, NameAndValue[1].Length - 3);
+                currentHtmlTag.Attributes.Add(currentAttribute);
+            }
+            previousClass = lastClass;
+            bool succesProcessing = tryProcess(currentHtmlTag);
+            if (!succesProcessing)
+            {
+                addElementToLastClass(currentHtmlTag);
+            }
             return base.VisitHtmlTagOpen(context);
         }
         public override object VisitInlineText(MediaWikiParser.InlineTextContext context)
@@ -509,6 +549,12 @@ namespace SoftwareEngineeringTools.WikiReader
         public override object VisitInlineTextElement(MediaWikiParser.InlineTextElementContext context)
         {
             Console.WriteLine("VisitInlineTextElement: " + context.GetText());
+            string text = context.GetText();
+            if (text[0] != '\'' && text[0] != '{' && text[0] != '[')
+            {
+                DocText dt = new DocText() { TextKind = DocTextKind.Plain, Text = text };
+                addElementToLastClass(dt);
+            }            
             return base.VisitInlineTextElement(context);
         }
         public override object VisitInlineTextElements(MediaWikiParser.InlineTextElementsContext context)
@@ -674,386 +720,7 @@ namespace SoftwareEngineeringTools.WikiReader
         }
         public override object VisitTextLine(MediaWikiParser.TextLineContext context)
         {
-            Console.WriteLine("VisitTextLine: " + context.GetText());           
-           string Textblock = context.GetText();
-
-           // string Textblock = RemoveBetween(RemoveBetween(context.GetText(), '<', '>'),'[',']').Replace("]",string.Empty);
-            List<string> normalformatBlocks = new List<string>();
-            while (!string.IsNullOrEmpty(Textblock))
-            {
-                int empDepth = Textblock.IndexOf("''");
-                int boldDepth = Textblock.IndexOf("'''");
-                int empBoldDepth = Textblock.IndexOf("'''''");
-                int htmlDepth = Textblock.IndexOf("<");
-                int linkDepth = Textblock.IndexOf("[");
-                int commandDepth = Textblock.IndexOf("{{");
-
-                if (empDepth == -1) empDepth = int.MaxValue;
-                if (boldDepth == -1) boldDepth = int.MaxValue;
-                if (empBoldDepth == -1) empBoldDepth = int.MaxValue;
-                if (htmlDepth == -1) htmlDepth = int.MaxValue;
-                if (linkDepth == -1) linkDepth = int.MaxValue;
-                if (commandDepth == -1) commandDepth = int.MaxValue;
-
-                int minValue = Math.Min(commandDepth,Math.Min(Math.Min(Math.Min(Math.Min(empDepth, boldDepth), empBoldDepth),htmlDepth),linkDepth));
-                if(minValue == int.MaxValue)
-                {
-                    string newTextblock = Textblock;
-                    normalformatBlocks.Add(newTextblock);
-                    Textblock = "";
-                }
-                else
-                {
-                    string newTextblock = Textblock.Substring(0, minValue);
-                    if (!string.IsNullOrWhiteSpace(newTextblock))
-                    {
-                        normalformatBlocks.Add(newTextblock);
-                    }                    
-                    Textblock = Textblock.Substring(minValue);
-                    if(empBoldDepth == minValue)
-                    {
-                        string newFormatTextblock = Textblock.Substring(0, Textblock.Substring(5).IndexOf("'''''") + 10);
-                        normalformatBlocks.Add(newFormatTextblock);
-                        Textblock = Textblock.Substring(Textblock.Substring(5).IndexOf("'''''") + 10);
-                    }
-                    else if (boldDepth == minValue)
-                    {
-                        string newFormatTextblock = Textblock.Substring(0, Textblock.Substring(3).IndexOf("'''") + 6);
-                        normalformatBlocks.Add(newFormatTextblock);
-                        Textblock = Textblock.Substring(Textblock.Substring(3).IndexOf("'''") + 6);
-                    }
-                    else if(empDepth == minValue)
-                    {
-                        string newFormatTextblock = Textblock.Substring(0, Textblock.Substring(2).IndexOf("''") + 4);
-                        normalformatBlocks.Add(newFormatTextblock);
-                        Textblock = Textblock.Substring(Textblock.Substring(2).IndexOf("''") + 4);
-                    }                    
-                    else if (htmlDepth == minValue)
-                    {
-                        string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf(">")+1);
-                        normalformatBlocks.Add(newFormatTextblock);
-                        Textblock = Textblock.Substring(Textblock.IndexOf(">")+1);
-                    }
-                    else if (commandDepth == minValue)
-                    {
-
-                        string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf("}}") + 2);
-                        normalformatBlocks.Add(newFormatTextblock);
-                        Textblock = Textblock.Substring(Textblock.IndexOf("}}") + 2);
-                    }
-                    else
-                    {
-                        string newFormatTextblock = Textblock.Substring(0, Textblock.IndexOf("]") + 2);
-                        normalformatBlocks.Add(newFormatTextblock);
-                        Textblock = Textblock.Substring(Textblock.IndexOf("]") + 2);
-                    }
-                }                
-            }
-
-
-
-            DocText dt = new DocText();
-            foreach (var item in normalformatBlocks)
-            {
-                if (!String.IsNullOrWhiteSpace(item))
-                {
-                    if(item.First() == '\'')
-                    {
-                        if(!String.IsNullOrEmpty(dt.Text))
-                        {
-                            addElementToLastClass(dt);
-                            dt = new DocText();
-                        }
-                        int count = -1;
-                        foreach (char c in item)
-                        {
-                            if (c == '\'')
-                            {
-                                count++;
-                            }
-                            else
-                            {
-                                break;
-                            }
-                        }
-
-                        switch (count)
-                        {
-                            case 1:
-                                DocMarkup dm = new DocMarkup();
-                                dm.MarkupKind = DocMarkupKind.Emphasis;
-                                DocText newdt = new DocText();
-                                newdt.Text = item.Replace("\'",string.Empty);
-                                dm.Commands.Add(newdt);
-                                addElementToLastClass(dm);
-                                break;
-                            case 2:
-                                dm = new DocMarkup();
-                                dm.MarkupKind = DocMarkupKind.Bold;
-                                newdt = new DocText();
-                                newdt.Text = item.Replace("\'", string.Empty);
-                                dm.Commands.Add(newdt);
-                                addElementToLastClass(dm);
-                                break;
-                            case 4:
-                                dm = new DocMarkup();
-                                dm.MarkupKind = DocMarkupKind.Bold;
-                                DocMarkup dm2 = new DocMarkup();
-                                dm.MarkupKind = DocMarkupKind.Emphasis;
-                                newdt = new DocText();
-                                newdt.Text = item.Replace("\'",string.Empty);
-                                dm2.Commands.Add(newdt);
-                                dm.Commands.Add(dm2);
-                                addElementToLastClass(dm);
-                                break;
-                            default:
-                                break;
-                        }
-                    }
-                    else if(item.First() == '<')
-                    {
-                        if (!String.IsNullOrEmpty(dt.Text))
-                        {
-                            addElementToLastClass(dt);
-                            dt = new DocText();
-                        }
-                        try
-                        {
-                            createHTMLTag(item);
-                        }
-                        catch (Exception)
-                        { }
-                    }
-                    else if(item.First() == '[')
-                    {
-                        if (!String.IsNullOrEmpty(dt.Text))
-                        {
-                            addElementToLastClass(dt);
-                            dt = new DocText();
-                        }
-                        setLinks(item);
-                    }
-                    else if(item.First() == '{')
-                    {
-                        if (!String.IsNullOrEmpty(dt.Text))
-                        {
-                            addElementToLastClass(dt);
-                            dt = new DocText();
-                        }
-                        string commandString = item.Substring(2, item.Length - 4);
-                        //List<string> parameters = commandString.Split('|').Skip(1).ToList();
-
-                        Command newCommand = new Command();
-                        newCommand.commandName = commandString.Split('(')[0];
-                        newCommand.parameter = commandString.Split('(')[1];
-                        newCommand.parameter = newCommand.parameter.Substring(0, newCommand.parameter.Length - 1);                 
-                        if (newCommand.commandName.ToLower() == "insert")
-                        {
-                            DocImage dImage = new DocImage();
-                            foreach (var variable in newCommand.parameter.Split(','))
-                            {
-                                string paramName = variable.Split('=')[0].ToLower();
-                                string paramValue = variable.Split('=')[1];
-                                switch (paramName)
-                                {
-                                    case "filepath":
-                                    case "path":
-                                        dImage.Path = paramValue;
-                                        break;
-                                    case "width":
-                                        dImage.Width = paramValue;
-                                        break;
-                                    case "height":
-                                        dImage.Height = paramValue;
-                                        break;
-                                    default:
-                                        dImage.Name = paramValue;
-                                        break;
-                                }
-                            }                          
-                            addElementToLastClass(dImage);
-                        }
-                        else if(newCommand.commandName.ToLower() == "output")
-                        {
-                            Dictionary<string,string> outputDatas = new Dictionary<string,string>();
-                            foreach (var variable in newCommand.parameter.Split(','))
-                            {
-                                string paramName = variable.Split('=')[0].ToLower();
-                                string paramValue = variable.Split('=')[1];
-                                outputDatas.Add(paramName, paramValue);
-                            }                                
-                            string type;
-                            outputDatas.TryGetValue("type", out type);
-                            string path;
-                            outputDatas.TryGetValue("path", out path);
-                            DocumentGenerator newGenerator;
-                            switch(type.ToLower())
-                            {
-                                case "word":
-                                case "ms word":
-                                case "microsoft word":    
-                                    string visible;
-                                    string template;
-                                    outputDatas.TryGetValue("visible", out visible);
-                                    outputDatas.TryGetValue("template", out template);
-                                    
-                                    if(visible != null && template != null)
-                                    {
-                                        bool showWord;
-                                        if(visible == "1")
-                                        {
-                                            showWord = true;
-                                        }
-                                        else
-                                        {
-                                            showWord = false;
-                                        }
-                                        try
-                                        {
-                                            newGenerator = new WordGenerator(path, showWord, (WordGenerator.WordTemplate)Enum.Parse(typeof(WordGenerator.WordTemplate), template));
-                                        }
-                                        catch(Exception)
-                                        {
-                                            newGenerator = new WordGenerator(path, showWord);
-                                        }
-                                    }
-                                    else if(visible != null)
-                                    {
-                                        bool showWord;
-                                        if (visible == "1")
-                                        {
-                                            showWord = true;
-                                        }
-                                        else
-                                        {
-                                            showWord = false;
-                                        }
-                                        newGenerator = new WordGenerator(path, showWord);
-                                    }
-                                    else
-                                    {
-                                        newGenerator = new WordGenerator(path);
-                                    }
-                                    this.reader.setDocumentGenerator(newGenerator);
-                                    break;
-                                case "latex":
-                                    newGenerator = new LatexGenerator(path);
-                                    this.reader.setDocumentGenerator(newGenerator);
-                                    break;
-                                case "wiki":
-                                case "wikipedia":
-                                    newGenerator = new WikiGenerator(path);
-                                    this.reader.setDocumentGenerator(newGenerator);
-                                    break;
-                                case "html":
-                                case "web":
-                                    string generateMode;
-                                    string css;
-                                    outputDatas.TryGetValue("generateMode", out generateMode);
-                                    outputDatas.TryGetValue("css", out css);
-                                    if(generateMode != null && css != null)
-                                    {
-                                        try
-                                        {
-                                            newGenerator = new HTMLGenerator(path, (HTMLGenerator.GenerateMode)Enum.Parse(typeof(HTMLGenerator.GenerateMode), generateMode),css);
-                                        }
-                                        catch(Exception)
-                                        {
-                                            newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, css);
-                                        }
-                                    }
-                                    else
-                                    {
-                                        newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, "");
-                                    }
-                                    this.reader.setDocumentGenerator(newGenerator);
-                                    break;
-                            }
-                            
-                        }
-                        else if (newCommand.commandName.ToLower() == "if")
-                        {
-                            IfCommand currentIfCommand = new IfCommand();
-                            DecisionCommand currentDecisionCommand = new DecisionCommand();
-                            Dictionary<string, string> outputDatas = new Dictionary<string, string>();
-                            string insideParamater = newCommand.parameter.Split('(')[1];
-                            insideParamater = insideParamater.Substring(0, insideParamater.Length - 1);
-                            foreach (var variable in insideParamater.Split(','))
-                            {
-                                string paramName = variable.Split('=')[0].ToLower();
-                                string paramValue = variable.Split('=')[1];
-                                Command.variables.Add(paramName, paramValue);
-                            }                            
-                            currentIfCommand.decisionCommand = currentDecisionCommand;
-                            if(ifCommand == false)
-                            {
-                                ifCommand = true;
-                                isTrue = true;
-                                lastIfCommand = currentIfCommand;
-                                addElementToLastClass(currentIfCommand);
-                            }
-                            else
-                            {
-                                currentIfCommand.parent = lastIfCommand;
-                                if (isTrue)
-                                {
-                                    lastIfCommand.trueCommand.Add(currentIfCommand);
-                                }
-                                else
-                                {
-                                    lastIfCommand.falseCommand.Add(currentIfCommand);
-                                }
-                                lastIfCommand = currentIfCommand;
-                            }
-                            
-                        }
-                        else if (ifCommand == true && newCommand.CommandName != Command.commandType.ELSE && newCommand.CommandName != Command.commandType.ENDIF)
-                        {                         
-                            
-                            if(isTrue)
-                            {                                
-                                lastIfCommand.trueCommand.Add(newCommand);
-                            }
-                            else
-                            {
-                                lastIfCommand.falseCommand.Add(newCommand);
-                            }
-
-                        }
-                        else if(ifCommand == true && newCommand.CommandName == Command.commandType.ELSE)
-                        {
-                            isTrue = false;
-                        }
-                        else if(ifCommand == true && newCommand.CommandName == Command.commandType.ENDIF)
-                        {
-                            if(lastIfCommand.parent == null)
-                            {
-                                ifCommand = false;
-                            }
-                            else
-                            {
-                                lastIfCommand = lastIfCommand.parent;
-                                
-                            }
-                        }
-                        else
-                        {                            
-                            addElementToLastClass(newCommand);
-                        }
-                    }
-                    else
-                    {                        
-                        dt.Text += item+' ';                        
-                    }
-                    
-                }
-            }
-            if (!string.IsNullOrEmpty(dt.Text))
-            {
-                addElementToLastClass(dt);
-                dt = new DocText();
-            }
-           
+            Console.WriteLine("VisitTextLine: " + context.GetText()); 
             return base.VisitTextLine(context);
         }
         public override object VisitWikiExternalLink(MediaWikiParser.WikiExternalLinkContext context)
@@ -1064,18 +731,55 @@ namespace SoftwareEngineeringTools.WikiReader
         public override object VisitWikiFormat(MediaWikiParser.WikiFormatContext context)
         {
             Console.WriteLine("VisitWikiFormat: " + context.GetText());
+            if(markupStart)
+            {
+                markupStart = false;
+                lastClass = previousClass;
+            }
+            else
+            {
+                markupStart = true;
+                switch (context.GetText().Length)
+                {
+                    case 2:
+                        DocMarkup dm = new DocMarkup();
+                        dm.MarkupKind = DocMarkupKind.Emphasis;
+                        addElementToLastClass(dm);
+                        currentMarkup = dm;
+                        break;
+                    case 3:
+                        dm = new DocMarkup();
+                        dm.MarkupKind = DocMarkupKind.Bold;
+                        addElementToLastClass(dm);
+                        currentMarkup = dm;
+                        break;
+                    case 5:
+                        dm = new DocMarkup();
+                        dm.MarkupKind = DocMarkupKind.Bold;
+                        DocMarkup dm2 = new DocMarkup();
+                        dm.MarkupKind = DocMarkupKind.Emphasis;
+                        dm.Commands.Add(dm2);
+                        addElementToLastClass(dm);
+                        currentMarkup = dm2;
+                        break;
+                    default:
+                        break;
+                }
+                previousClass = lastClass;
+                lastClass = parentClass.MARKUP;
+            }            
             return base.VisitWikiFormat(context);
         }
-
-        private void setLinks(string linkText)
+        
+        public override object VisitWikiInternalLink(MediaWikiParser.WikiInternalLinkContext context)
         {
-            string linkString = linkText.Replace("[", string.Empty).Replace("]", string.Empty);
+            Console.WriteLine("VisitWikiInternalLink: " + context.GetText());
+            string linkString = context.GetText().Replace("[", string.Empty).Replace("]", string.Empty);
             string[] linkData = linkString.Split('|');
             if (linkData.Count() == 1)
             {
                 DocReference currentReference = new DocReference();
                 currentReference.referenceID = linkData[0];
-                currentReference.External = true;
                 currentReference.RefKind = DocRefKind.CustomID;
                 addElementToLastClass(currentReference);
             }
@@ -1083,36 +787,12 @@ namespace SoftwareEngineeringTools.WikiReader
             {
                 DocReference currentReference = new DocReference();
                 currentReference.referenceID = linkData[0];
-                currentReference.External = true;
                 DocText dt = new DocText();
                 dt.Text = linkData[1];
                 currentReference.Commands.Add(dt);
                 currentReference.RefKind = DocRefKind.CustomID;
                 addElementToLastClass(currentReference);
             }
-        }
-        public override object VisitWikiInternalLink(MediaWikiParser.WikiInternalLinkContext context)
-        {
-            Console.WriteLine("VisitWikiInternalLink: " + context.GetText());
-            //string linkString = context.GetText().Replace("[", string.Empty).Replace("]", string.Empty);
-            //string[] linkData = linkString.Split('|');
-            //if(linkData.Count()==1)
-            //{
-            //    DocReference currentReference = new DocReference();
-            //    currentReference.referenceID = linkData[0];
-            //    currentReference.RefKind = DocRefKind.CustomID;
-            //    addElementToLastClass(currentReference);
-            //}
-            //else
-            //{
-            //    DocReference currentReference = new DocReference();
-            //    currentReference.referenceID = linkData[0];
-            //    DocText dt = new DocText();
-            //    dt.Text = linkData[1];
-            //    currentReference.Commands.Add(dt);
-            //    currentReference.RefKind = DocRefKind.CustomID;
-            //    addElementToLastClass(currentReference);
-            //}
             return base.VisitWikiInternalLink(context);
         }
         public override object VisitWikiLink(MediaWikiParser.WikiLinkContext context)
@@ -1123,8 +803,215 @@ namespace SoftwareEngineeringTools.WikiReader
         public override object VisitWikiTemplate(MediaWikiParser.WikiTemplateContext context)
         {
             Console.WriteLine("VisitWikiTemplate: " + context.GetText());
-            string command = context.GetText().Replace("{", string.Empty);
-            return base.VisitWikiTemplate(context);
+            string item = context.GetText();
+            string commandString = item.Substring(2, item.Length - 4);
+            if (commandString.Split('(').Length == 1)
+            {
+                string paramName = commandString.Split('=')[0];
+                string paramValue = commandString.Split('=')[1];
+                Command.variables.Add(paramName, paramValue);
+            }
+            else
+            {
+                Command newCommand = new Command();
+                newCommand.commandName = commandString.Split('(')[0];
+                newCommand.parameter = commandString.Split('(')[1];
+                newCommand.parameter = newCommand.parameter.Substring(0, newCommand.parameter.Length - 1);
+                if (newCommand.commandName.ToLower() == "insert")
+                {
+                    DocImage dImage = new DocImage();
+                    foreach (var variable in newCommand.parameter.Split(','))
+                    {
+                        string paramName = variable.Split('=')[0].ToLower();
+                        string paramValue = variable.Split('=')[1];
+                        switch (paramName)
+                        {
+                            case "filepath":
+                            case "path":
+                                dImage.Path = paramValue;
+                                break;
+                            case "width":
+                                dImage.Width = paramValue;
+                                break;
+                            case "height":
+                                dImage.Height = paramValue;
+                                break;
+                            default:
+                                dImage.Name = paramValue;
+                                break;
+                        }
+                    }
+                    addElementToLastClass(dImage);
+                }
+                else if (newCommand.commandName.ToLower() == "output")
+                {
+                    Dictionary<string, string> outputDatas = new Dictionary<string, string>();
+                    foreach (var variable in newCommand.parameter.Split(','))
+                    {
+                        string paramName = variable.Split('=')[0].ToLower();
+                        string paramValue = variable.Split('=')[1];
+                        outputDatas.Add(paramName, paramValue);
+                    }
+                    string type;
+                    outputDatas.TryGetValue("type", out type);
+                    string path;
+                    outputDatas.TryGetValue("path", out path);
+                    DocumentGenerator newGenerator;
+                    switch (type.ToLower())
+                    {
+                        case "word":
+                        case "ms word":
+                        case "microsoft word":
+                            string visible;
+                            string template;
+                            outputDatas.TryGetValue("visible", out visible);
+                            outputDatas.TryGetValue("template", out template);
+
+                            if (visible != null && template != null)
+                            {
+                                bool showWord;
+                                if (visible == "1")
+                                {
+                                    showWord = true;
+                                }
+                                else
+                                {
+                                    showWord = false;
+                                }
+                                try
+                                {
+                                    newGenerator = new WordGenerator(path, showWord, (WordGenerator.WordTemplate)Enum.Parse(typeof(WordGenerator.WordTemplate), template));
+                                }
+                                catch (Exception)
+                                {
+                                    newGenerator = new WordGenerator(path, showWord);
+                                }
+                            }
+                            else if (visible != null)
+                            {
+                                bool showWord;
+                                if (visible == "1")
+                                {
+                                    showWord = true;
+                                }
+                                else
+                                {
+                                    showWord = false;
+                                }
+                                newGenerator = new WordGenerator(path, showWord);
+                            }
+                            else
+                            {
+                                newGenerator = new WordGenerator(path);
+                            }
+                            this.reader.setDocumentGenerator(newGenerator);
+                            break;
+                        case "latex":
+                            newGenerator = new LatexGenerator(path);
+                            this.reader.setDocumentGenerator(newGenerator);
+                            break;
+                        case "wiki":
+                        case "wikipedia":
+                            newGenerator = new WikiGenerator(path);
+                            this.reader.setDocumentGenerator(newGenerator);
+                            break;
+                        case "html":
+                        case "web":
+                            string generateMode;
+                            string css;
+                            outputDatas.TryGetValue("generateMode", out generateMode);
+                            outputDatas.TryGetValue("css", out css);
+                            if (generateMode != null && css != null)
+                            {
+                                try
+                                {
+                                    newGenerator = new HTMLGenerator(path, (HTMLGenerator.GenerateMode)Enum.Parse(typeof(HTMLGenerator.GenerateMode), generateMode), css);
+                                }
+                                catch (Exception)
+                                {
+                                    newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, css);
+                                }
+                            }
+                            else
+                            {
+                                newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, "");
+                            }
+                            this.reader.setDocumentGenerator(newGenerator);
+                            break;
+                    }
+
+                }
+                else if (newCommand.commandName.ToLower() == "if")
+                {
+                    IfCommand currentIfCommand = new IfCommand();
+                    DecisionCommand currentDecisionCommand = new DecisionCommand();
+                    Dictionary<string, string> outputDatas = new Dictionary<string, string>();
+                    string insideParamater = newCommand.parameter.Split('(')[1];
+                    insideParamater = insideParamater.Substring(0, insideParamater.Length - 1);
+                    foreach (var variable in insideParamater.Split(','))
+                    {
+                        string paramName = variable.Split('=')[0].ToLower();
+                        string paramValue = variable.Split('=')[1];
+                        Command.variables.Add(paramName, paramValue);
+                    }
+                    currentIfCommand.decisionCommand = currentDecisionCommand;
+                    if (ifCommand == false)
+                    {
+                        ifCommand = true;
+                        isTrue = true;
+                        lastIfCommand = currentIfCommand;
+                        addElementToLastClass(currentIfCommand);
+                    }
+                    else
+                    {
+                        currentIfCommand.parent = lastIfCommand;
+                        if (isTrue)
+                        {
+                            lastIfCommand.trueCommand.Add(currentIfCommand);
+                        }
+                        else
+                        {
+                            lastIfCommand.falseCommand.Add(currentIfCommand);
+                        }
+                        lastIfCommand = currentIfCommand;
+                    }
+
+                }
+                else if (ifCommand == true && newCommand.CommandName != Command.commandType.ELSE && newCommand.CommandName != Command.commandType.ENDIF)
+                {
+
+                    if (isTrue)
+                    {
+                        lastIfCommand.trueCommand.Add(newCommand);
+                    }
+                    else
+                    {
+                        lastIfCommand.falseCommand.Add(newCommand);
+                    }
+
+                }
+                else if (ifCommand == true && newCommand.CommandName == Command.commandType.ELSE)
+                {
+                    isTrue = false;
+                }
+                else if (ifCommand == true && newCommand.CommandName == Command.commandType.ENDIF)
+                {
+                    if (lastIfCommand.parent == null)
+                    {
+                        ifCommand = false;
+                    }
+                    else
+                    {
+                        lastIfCommand = lastIfCommand.parent;
+
+                    }
+                }
+                else
+                {
+                    addElementToLastClass(newCommand);
+                }
+            }
+                return base.VisitWikiTemplate(context);
         }
         public override object VisitWikiTemplateParam(MediaWikiParser.WikiTemplateParamContext context)
         {
@@ -1132,5 +1019,4 @@ namespace SoftwareEngineeringTools.WikiReader
             return base.VisitWikiTemplateParam(context);
         }
     }
-
 }
