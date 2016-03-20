@@ -27,6 +27,11 @@ namespace SoftwareEngineeringTools.WikiReader
         IfCommand lastIfCommand;
         bool isTrue = false;
         bool markupStart = false;
+        bool isTableCommand = false;
+        string tableCommandName;
+        string tableCommandParameter;
+        string tableCommandTemplateParameter;
+        string[] parameterSequence;
 
         private enum parentClass
         {
@@ -179,11 +184,24 @@ namespace SoftwareEngineeringTools.WikiReader
         public override object VisitCellText(MediaWikiParser.CellTextContext context)
         {
             Console.WriteLine("VisitCellText: " + context.GetText());
+            string text = RemoveBetween(context.GetText(),'{','}');
+            text = text.Replace("}",string.Empty);
+            DocText cellText = new DocText { TextKind = DocTextKind.Plain, Text = text };
+            if (currentTableCell.Paragraphs.Count == 0)
+            {
+                currentTableCell.Paragraphs.Add(new DocPara { });
+            }
+            currentTableCell.Paragraphs.Last().Commands.Add(cellText);
+            if (isTableCommand && !currentTableCell.IsHeader)
+            {
+                string parameter = parameterSequence[currentTableRow.Cells.Count - 1];
+                tableCommandParameter = tableCommandParameter.Replace(parameter, text);
+            }
+
             return base.VisitCellText(context);
         }
         public override object VisitCellTextElement(MediaWikiParser.CellTextElementContext context)
-        {  
-            
+        {              
             Console.WriteLine("VisitCellTextElement: " + context.GetText());            
             return base.VisitCellTextElement(context);
         }
@@ -623,7 +641,8 @@ namespace SoftwareEngineeringTools.WikiReader
         public override object VisitParagraph(MediaWikiParser.ParagraphContext context)
         {
             Console.WriteLine("VisitParagraph: " + context.GetText());
-            if(currentParagraph.Commands.Count>0)
+            lastClass = parentClass.SECTION;
+            if (currentParagraph.Commands.Count>0)
             {
                 currentParagraph = new DocPara();
                 addElementToLastClass(currentParagraph);
@@ -638,11 +657,12 @@ namespace SoftwareEngineeringTools.WikiReader
         public override object VisitTable(MediaWikiParser.TableContext context)
         {
             Console.WriteLine("VisitTable: " + context.GetText());
-            if(currentTable != null)
-            {
-                currentParagraph.Commands.Add(currentTable);
-            }
+            //if(currentTable != null)
+            //{
             currentTable = new DocTable();
+            currentParagraph.Commands.Add(currentTable);
+            //}
+            
             lastClass = parentClass.CELL;
             headerCell = false;
             return base.VisitTable(context);
@@ -675,6 +695,9 @@ namespace SoftwareEngineeringTools.WikiReader
             Console.WriteLine("VisitTableFirstRow: " + context.GetText());
             string rowdata = context.GetText();
             int numberOfColumn = rowdata.Split(new[] { "!!" }, StringSplitOptions.None).Count();
+            int numberOfColumn2 = rowdata.Replace("!!", string.Empty).Split(new[] { "!" }, StringSplitOptions.None).Count()-1;
+            if (numberOfColumn2 > numberOfColumn)
+                numberOfColumn = numberOfColumn2;
             currentTable.ColCount = numberOfColumn;
             currentTable.RowCount = 1;
             DocTableRow dtr = new DocTableRow();
@@ -688,14 +711,29 @@ namespace SoftwareEngineeringTools.WikiReader
             Console.WriteLine("VisitTableHeaderCells: " + context.GetText());
             return base.VisitTableHeaderCells(context);
         }
+
+        public void createCommand()
+        {
+            Command currentTableCommand = new Command();
+            currentTableCommand.commandName = tableCommandName;
+            currentTableCommand.parameter = tableCommandParameter;
+            currentTableRow.Cells.Last().Paragraphs.Last().Commands.Add(currentTableCommand);
+        }
+
         public override object VisitTableRow(MediaWikiParser.TableRowContext context)
         {
             Console.WriteLine("VisitTableRow: " + context.GetText());
+            if (tableCommandParameter != null)
+            {
+                createCommand();
+            }
+            tableCommandParameter = tableCommandTemplateParameter;
+
             headerCell = false;
             currentTable.RowCount = currentTable.RowCount+1;
             DocTableRow dtr = new DocTableRow();
             currentTableRow = dtr;
-            currentTable.Rows.Add(currentTableRow);
+            currentTable.Rows.Add(currentTableRow);           
             return base.VisitTableRow(context);
         }
         public override object VisitTableRows(MediaWikiParser.TableRowsContext context)
@@ -795,6 +833,105 @@ namespace SoftwareEngineeringTools.WikiReader
             }
             return base.VisitWikiInternalLink(context);
         }
+
+        public void setOutput(Command newCommand)
+        {
+            Dictionary<string, string> outputDatas = new Dictionary<string, string>();
+            foreach (var variable in newCommand.parameter.Split(','))
+            {
+                string paramName = variable.Split('=')[0].ToLower();
+                string paramValue = variable.Split('=')[1];
+                outputDatas.Add(paramName, paramValue);
+            }
+            string type;
+            outputDatas.TryGetValue("type", out type);
+            string path;
+            outputDatas.TryGetValue("path", out path);
+            DocumentGenerator newGenerator;
+            switch (type.ToLower())
+            {
+                case "word":
+                case "ms word":
+                case "microsoft word":
+                    string visible;
+                    string template;
+                    outputDatas.TryGetValue("visible", out visible);
+                    outputDatas.TryGetValue("template", out template);
+
+                    if (visible != null && template != null)
+                    {
+                        bool showWord;
+                        if (visible == "1")
+                        {
+                            showWord = true;
+                        }
+                        else
+                        {
+                            showWord = false;
+                        }
+                        try
+                        {
+                            newGenerator = new WordGenerator(path, showWord, (WordGenerator.WordTemplate)Enum.Parse(typeof(WordGenerator.WordTemplate), template));
+                        }
+                        catch (Exception)
+                        {
+                            newGenerator = new WordGenerator(path, showWord);
+                        }
+                    }
+                    else if (visible != null)
+                    {
+                        bool showWord;
+                        if (visible == "1")
+                        {
+                            showWord = true;
+                        }
+                        else
+                        {
+                            showWord = false;
+                        }
+                        newGenerator = new WordGenerator(path, showWord);
+                    }
+                    else
+                    {
+                        newGenerator = new WordGenerator(path);
+                    }
+                    this.reader.setDocumentGenerator(newGenerator);
+                    break;
+                case "latex":
+                    newGenerator = new LatexGenerator(path);
+                    this.reader.setDocumentGenerator(newGenerator);
+                    break;
+                case "wiki":
+                case "wikipedia":
+                    newGenerator = new WikiGenerator(path);
+                    this.reader.setDocumentGenerator(newGenerator);
+                    break;
+                case "html":
+                case "web":
+                    string generateMode;
+                    string css;
+                    outputDatas.TryGetValue("generateMode", out generateMode);
+                    outputDatas.TryGetValue("css", out css);
+                    if (generateMode != null && css != null)
+                    {
+                        try
+                        {
+                            newGenerator = new HTMLGenerator(path, (HTMLGenerator.GenerateMode)Enum.Parse(typeof(HTMLGenerator.GenerateMode), generateMode), css);
+                        }
+                        catch (Exception)
+                        {
+                            newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, css);
+                        }
+                    }
+                    else
+                    {
+                        newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, "");
+                    }
+                    this.reader.setDocumentGenerator(newGenerator);
+                    break;
+            }
+            }
+
         public override object VisitWikiLink(MediaWikiParser.WikiLinkContext context)
         {
             Console.WriteLine("VisitWikiLink: " + context.GetText());
@@ -805,213 +942,146 @@ namespace SoftwareEngineeringTools.WikiReader
             Console.WriteLine("VisitWikiTemplate: " + context.GetText());
             string item = context.GetText();
             string commandString = item.Substring(2, item.Length - 4);
-            if (commandString.Split('(').Length == 1)
+            if (isTableCommand && commandString != "tableend")
             {
-                string paramName = commandString.Split('=')[0];
-                string paramValue = commandString.Split('=')[1];
-                Command.variables.Add(paramName, paramValue);
+                for (int i = 0; i < parameterSequence.Length; i++)
+                {
+                    if (string.IsNullOrEmpty(parameterSequence[i]))
+                    {
+                        parameterSequence[i] = commandString;
+                        break;
+                    }
+                }
+            }
+            else if(isTableCommand)
+            {
+                createCommand();
+                isTableCommand = false;
             }
             else
             {
-                Command newCommand = new Command();
-                newCommand.commandName = commandString.Split('(')[0];
-                newCommand.parameter = commandString.Split('(')[1];
-                newCommand.parameter = newCommand.parameter.Substring(0, newCommand.parameter.Length - 1);
-                if (newCommand.commandName.ToLower() == "insert")
+                if (commandString.Split('(').Length == 1)
                 {
-                    DocImage dImage = new DocImage();
-                    foreach (var variable in newCommand.parameter.Split(','))
-                    {
-                        string paramName = variable.Split('=')[0].ToLower();
-                        string paramValue = variable.Split('=')[1];
-                        switch (paramName)
-                        {
-                            case "filepath":
-                            case "path":
-                                dImage.Path = paramValue;
-                                break;
-                            case "width":
-                                dImage.Width = paramValue;
-                                break;
-                            case "height":
-                                dImage.Height = paramValue;
-                                break;
-                            default:
-                                dImage.Name = paramValue;
-                                break;
-                        }
-                    }
-                    addElementToLastClass(dImage);
-                }
-                else if (newCommand.commandName.ToLower() == "output")
-                {
-                    Dictionary<string, string> outputDatas = new Dictionary<string, string>();
-                    foreach (var variable in newCommand.parameter.Split(','))
-                    {
-                        string paramName = variable.Split('=')[0].ToLower();
-                        string paramValue = variable.Split('=')[1];
-                        outputDatas.Add(paramName, paramValue);
-                    }
-                    string type;
-                    outputDatas.TryGetValue("type", out type);
-                    string path;
-                    outputDatas.TryGetValue("path", out path);
-                    DocumentGenerator newGenerator;
-                    switch (type.ToLower())
-                    {
-                        case "word":
-                        case "ms word":
-                        case "microsoft word":
-                            string visible;
-                            string template;
-                            outputDatas.TryGetValue("visible", out visible);
-                            outputDatas.TryGetValue("template", out template);
-
-                            if (visible != null && template != null)
-                            {
-                                bool showWord;
-                                if (visible == "1")
-                                {
-                                    showWord = true;
-                                }
-                                else
-                                {
-                                    showWord = false;
-                                }
-                                try
-                                {
-                                    newGenerator = new WordGenerator(path, showWord, (WordGenerator.WordTemplate)Enum.Parse(typeof(WordGenerator.WordTemplate), template));
-                                }
-                                catch (Exception)
-                                {
-                                    newGenerator = new WordGenerator(path, showWord);
-                                }
-                            }
-                            else if (visible != null)
-                            {
-                                bool showWord;
-                                if (visible == "1")
-                                {
-                                    showWord = true;
-                                }
-                                else
-                                {
-                                    showWord = false;
-                                }
-                                newGenerator = new WordGenerator(path, showWord);
-                            }
-                            else
-                            {
-                                newGenerator = new WordGenerator(path);
-                            }
-                            this.reader.setDocumentGenerator(newGenerator);
-                            break;
-                        case "latex":
-                            newGenerator = new LatexGenerator(path);
-                            this.reader.setDocumentGenerator(newGenerator);
-                            break;
-                        case "wiki":
-                        case "wikipedia":
-                            newGenerator = new WikiGenerator(path);
-                            this.reader.setDocumentGenerator(newGenerator);
-                            break;
-                        case "html":
-                        case "web":
-                            string generateMode;
-                            string css;
-                            outputDatas.TryGetValue("generateMode", out generateMode);
-                            outputDatas.TryGetValue("css", out css);
-                            if (generateMode != null && css != null)
-                            {
-                                try
-                                {
-                                    newGenerator = new HTMLGenerator(path, (HTMLGenerator.GenerateMode)Enum.Parse(typeof(HTMLGenerator.GenerateMode), generateMode), css);
-                                }
-                                catch (Exception)
-                                {
-                                    newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, css);
-                                }
-                            }
-                            else
-                            {
-                                newGenerator = new HTMLGenerator(path, HTMLGenerator.GenerateMode.AllInOne, "");
-                            }
-                            this.reader.setDocumentGenerator(newGenerator);
-                            break;
-                    }
-
-                }
-                else if (newCommand.commandName.ToLower() == "if")
-                {
-                    IfCommand currentIfCommand = new IfCommand();
-                    DecisionCommand currentDecisionCommand = new DecisionCommand();
-                    Dictionary<string, string> outputDatas = new Dictionary<string, string>();
-                    string insideParamater = newCommand.parameter.Split('(')[1];
-                    insideParamater = insideParamater.Substring(0, insideParamater.Length - 1);
-                    foreach (var variable in insideParamater.Split(','))
-                    {
-                        string paramName = variable.Split('=')[0].ToLower();
-                        string paramValue = variable.Split('=')[1];
-                        Command.variables.Add(paramName, paramValue);
-                    }
-                    currentIfCommand.decisionCommand = currentDecisionCommand;
-                    if (ifCommand == false)
-                    {
-                        ifCommand = true;
-                        isTrue = true;
-                        lastIfCommand = currentIfCommand;
-                        addElementToLastClass(currentIfCommand);
-                    }
-                    else
-                    {
-                        currentIfCommand.parent = lastIfCommand;
-                        if (isTrue)
-                        {
-                            lastIfCommand.trueCommand.Add(currentIfCommand);
-                        }
-                        else
-                        {
-                            lastIfCommand.falseCommand.Add(currentIfCommand);
-                        }
-                        lastIfCommand = currentIfCommand;
-                    }
-
-                }
-                else if (ifCommand == true && newCommand.CommandName != Command.commandType.ELSE && newCommand.CommandName != Command.commandType.ENDIF)
-                {
-
-                    if (isTrue)
-                    {
-                        lastIfCommand.trueCommand.Add(newCommand);
-                    }
-                    else
-                    {
-                        lastIfCommand.falseCommand.Add(newCommand);
-                    }
-
-                }
-                else if (ifCommand == true && newCommand.CommandName == Command.commandType.ELSE)
-                {
-                    isTrue = false;
-                }
-                else if (ifCommand == true && newCommand.CommandName == Command.commandType.ENDIF)
-                {
-                    if (lastIfCommand.parent == null)
-                    {
-                        ifCommand = false;
-                    }
-                    else
-                    {
-                        lastIfCommand = lastIfCommand.parent;
-
-                    }
+                    string paramName = commandString.Split('=')[0];
+                    string paramValue = commandString.Split('=')[1];
+                    Command.variables.Add(paramName, paramValue);
                 }
                 else
                 {
-                    addElementToLastClass(newCommand);
+                    Command newCommand = new Command();
+                    newCommand.commandName = commandString.Split('(')[0];
+                    newCommand.parameter = commandString.Remove(0, commandString.Split('(')[0].Length+1);
+                    newCommand.parameter = newCommand.parameter.Substring(0, newCommand.parameter.Length - 1);
+                    if (newCommand.commandName.ToLower() == "insert")
+                    {
+                        DocImage dImage = new DocImage();
+                        foreach (var variable in newCommand.parameter.Split(','))
+                        {
+                            string paramName = variable.Split('=')[0].ToLower();
+                            string paramValue = variable.Split('=')[1];
+                            switch (paramName)
+                            {
+                                case "filepath":
+                                case "path":
+                                    dImage.Path = paramValue;
+                                    break;
+                                case "width":
+                                    dImage.Width = paramValue;
+                                    break;
+                                case "height":
+                                    dImage.Height = paramValue;
+                                    break;
+                                default:
+                                    dImage.Name = paramValue;
+                                    break;
+                            }
+                        }
+                        addElementToLastClass(dImage);
+                    }
+                    else if (newCommand.commandName.ToLower() == "output")
+                    {
+                        setOutput(newCommand);
+                    }
+                    else if (newCommand.commandName.ToLower() == "tablestart")
+                    {
+                        tableCommandName = newCommand.parameter.Split('(')[0];
+                        tableCommandTemplateParameter = newCommand.parameter.Split('(')[1];
+                        tableCommandTemplateParameter = tableCommandTemplateParameter.Substring(0, tableCommandTemplateParameter.Length - 1);
+                        parameterSequence = new string[tableCommandTemplateParameter.Split(',').Length];
+                        isTableCommand = true;
+                    }
+                    else if (newCommand.commandName.ToLower() == "if")
+                    {
+                        IfCommand currentIfCommand = new IfCommand();
+                        DecisionCommand currentDecisionCommand = new DecisionCommand();
+                        Dictionary<string, string> outputDatas = new Dictionary<string, string>();
+                        string insideParamater = newCommand.parameter.Split('(')[1];
+                        insideParamater = insideParamater.Substring(0, insideParamater.Length - 1);
+                        foreach (var variable in insideParamater.Split(','))
+                        {
+                            string paramName = variable.Split('=')[0].ToLower();
+                            string paramValue = variable.Split('=')[1];
+                            Command.variables.Add(paramName, paramValue);
+                        }
+                        currentIfCommand.decisionCommand = currentDecisionCommand;
+                        if (ifCommand == false)
+                        {
+                            ifCommand = true;
+                            isTrue = true;
+                            lastIfCommand = currentIfCommand;
+                            addElementToLastClass(currentIfCommand);
+                        }
+                        else
+                        {
+                            currentIfCommand.parent = lastIfCommand;
+                            if (isTrue)
+                            {
+                                lastIfCommand.trueCommand.Add(currentIfCommand);
+                            }
+                            else
+                            {
+                                lastIfCommand.falseCommand.Add(currentIfCommand);
+                            }
+                            lastIfCommand = currentIfCommand;
+                        }
+
+                    }
+                    else if (ifCommand == true && newCommand.CommandName != Command.commandType.ELSE && newCommand.CommandName != Command.commandType.ENDIF)
+                    {
+
+                        if (isTrue)
+                        {
+                            lastIfCommand.trueCommand.Add(newCommand);
+                        }
+                        else
+                        {
+                            lastIfCommand.falseCommand.Add(newCommand);
+                        }
+
+                    }
+                    else if (ifCommand == true && newCommand.CommandName == Command.commandType.ELSE)
+                    {
+                        isTrue = false;
+                    }
+                    else if (ifCommand == true && newCommand.CommandName == Command.commandType.ENDIF)
+                    {
+                        if (lastIfCommand.parent == null)
+                        {
+                            ifCommand = false;
+                        }
+                        else
+                        {
+                            lastIfCommand = lastIfCommand.parent;
+
+                        }
+                    }
+                    else
+                    {
+                        addElementToLastClass(newCommand);
+                    }
                 }
             }
-                return base.VisitWikiTemplate(context);
+            return base.VisitWikiTemplate(context);
         }
         public override object VisitWikiTemplateParam(MediaWikiParser.WikiTemplateParamContext context)
         {

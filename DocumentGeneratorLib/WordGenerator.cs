@@ -263,24 +263,8 @@ namespace SoftwareEngineeringTools.Documentation
             if (newLine)
             {
                 sel.TypeParagraph();
-            }
-            //if (cellBegin)
-            //{
-            //    //tableStack.Add(text);   
-            //    //if (newLine)
-            //    //{
-            //    //    CellRange.Text = CellRange.Text.Substring(0, CellRange.Text.Length - 3) + +'\r' + text; ;
-            //    //}
-            //    //else
-            //    //{
-            //    //    CellRange.Text = CellRange.Text.Substring(0, CellRange.Text.Length - 2) + text;
-            //    //}
-            //}
-            //else
-            //{
-                //if (!this.paraBegin && insertSpace) sel.TypeText(" ")            
-                sel.TypeText(text);
-            //}
+            }      
+            sel.TypeText(text);
             newLine = false;
         }
 
@@ -319,23 +303,31 @@ namespace SoftwareEngineeringTools.Documentation
             dynamic start = this.markupStack[this.markupStack.Count - 1];
             this.markupStack.RemoveAt(this.markupStack.Count - 1);
             dynamic range = doc.Range(start, end);
+            sel.TypeText(" ");
+            dynamic afterrange = doc.Range(end, end+1);
             switch (markupKind)
             {
                 case DocumentMarkupKind.Bold:
                     range.Font.Bold = true;
+                    afterrange.Font.Bold = false;
                     break;
                 case DocumentMarkupKind.Emphasis:
                     range.Font.Italic = true;
+                    afterrange.Font.Italic = false;
                     break;
                 case DocumentMarkupKind.Small:
                     range.Font.Name = "Courier New";
                     range.Font.Size = this.normalStyle.Font.Size - 2;
+                    afterrange.Font.Name = normalStyle.Font.Name;
+                    afterrange.Font.Size = normalStyle.Font.Size;
                     break;
                 case DocumentMarkupKind.SubScript:
                     range.Font.Subscript = true;
+                    afterrange.Font.Subscript = false;
                     break;
                 case DocumentMarkupKind.SuperScript:
                     range.Font.Superscript = true;
+                    afterrange.Font.Superscript = false;
                     break;
                 case DocumentMarkupKind.Center:
                     range.ParagraphFormat.Alignment = WdParagraphAlignment.wdAlignParagraphCenter;
@@ -343,16 +335,21 @@ namespace SoftwareEngineeringTools.Documentation
                 case DocumentMarkupKind.ComputerOutput:
                     range.Font.Name = "Courier New";
                     range.Font.Size = this.normalStyle.Font.Size - 2;
+                    afterrange.Font.Name = normalStyle.Font.Name;
+                    afterrange.Font.Size = normalStyle.Font.Size;
                     break;
                 case DocumentMarkupKind.Fail:
                     range.Font.Shading.BackgroundPatternColor = 229 + 0x100 * 0 + 0x10000 * 50;
+                    afterrange.Font.Shading.BackgroundPatternColor = normalStyle.Font.Shading.BackgroundPatternColor;
                     break;
                 case DocumentMarkupKind.Success:
                     range.Font.Shading.BackgroundPatternColor = 133 + 0x100 * 250 + 0x10000 * 133;
+                    afterrange.Font.Shading.BackgroundPatternColor = normalStyle.Font.Shading.BackgroundPatternColor;
                     break;
                 default:
                     throw new DocumentException("Invalid DocumentMarkupKind: " + markupKind);
             }
+            sel.delete(WdUnits.wdCharacter, 1);
         }
 
         public override void NewLabel(string id)

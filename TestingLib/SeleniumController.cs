@@ -300,7 +300,7 @@ namespace SoftwareEngineeringTools.Testing
             }
         }
 
-        public void testIfEqual(string title, string controll, string testValue, IDocumentGenerator dg)
+        public void testIfEqual(string controll, string testValue, IDocumentGenerator dg)
         {
             writeAfterRead = false;
             string result = read(controll, dg);
